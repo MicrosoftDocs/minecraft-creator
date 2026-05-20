@@ -23,7 +23,18 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "slot",
+      "title": "Equipment Slot",
+      "description": "Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1."
+    },
+    {
+      "id": "dispensable",
+      "dataType": "boolean",
+      "isDeprecated": true
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:wearable",
     "title": "Item Wearable",
@@ -82,5 +93,7 @@
       }
     ],
     "samples": {}
-  }
+  },
+  "description": "Sets the wearable item component, which allows an item to be worn by a player in a specified equipment slot.",
+  "note": "Valid equipment slots are: slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.armor.body, and slot.weapon.offhand. When a non-hand armor slot is used, the max stack size is automatically set to 1."
 }

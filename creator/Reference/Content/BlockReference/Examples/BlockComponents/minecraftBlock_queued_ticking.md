@@ -22,7 +22,7 @@ Triggers the specified event, either once, or at a regular interval equal to a n
 |:----------|:-------------|:----|:-----------|
 | interval_range | *not set* | Array of strings | A range of values, specified in ticks, that will be used to decide the interval between times this event triggers. | 
 | looping | true | Boolean true/false | Does the event loop? | 
-| on_tick | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event that will be triggered once or on an interval. | 
+| on_tick | *not set* | Minecraft Event Trigger | The event that will be triggered once or on an interval. | 
 
 ### interval_range
 

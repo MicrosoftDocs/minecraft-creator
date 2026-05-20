@@ -114,7 +114,7 @@
       {
         "id": "isolated_physics",
         "title": "Isolated Physics",
-        "description": "[EXPERIMENTAL] If true, this projectile will not be affected by outside forces such as friction and drag.",
+        "description": "If true, this projectile will not be affected by outside forces such as friction and drag.",
         "defaultValue": true,
         "dataType": "boolean"
       },
@@ -167,7 +167,7 @@
       {
         "id": "owner_launch_immunity_ticks",
         "title": "Owner Launch Immunity Ticks",
-        "description": "[EXPERIMENTAL] Number of ticks after launch during which the projectile cannot hit its owner",
+        "description": "Number of ticks after launch during which the projectile cannot hit its owner",
         "defaultValue": 5,
         "dataType": "int"
       },

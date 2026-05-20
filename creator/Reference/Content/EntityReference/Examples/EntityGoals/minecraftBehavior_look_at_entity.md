@@ -23,7 +23,7 @@ Compels an entity to look at a specific entity by rotating the `head` bone pose 
 | filters (Filters) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filters](#filters) item | Filter to determine the conditions for this mob to look at the entity | Evocation Illager: `{"test":"is_family","subject":"other","value":"mob"}` | 
 | filters (Alternate 1) | *not set* | Object |  |  | 
 | look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at the nearest entity. | Evocation Illager: `8`, Vex: `6` | 
-| look_time | {"max":4,"min":2} | [Look Time](#item-components-floatrange) item | Time range to look at the nearest entity. |  | 
+| look_time | {"max":4,"min":2} | [Look Time](#item-floatrange) item | Time range to look at the nearest entity. |  | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Evocation Illager: `10`, Vex: `9` | 
 | probability | 0.019999999552965164 | Decimal number | The probability of looking at the target. A value of 1.00 is 100%. Value must be <= 1. | Vex: `0.02` | 
 
@@ -49,11 +49,11 @@ Compels an entity to look at a specific entity by rotating the `head` bone pose 
 | test | *not set* | String | The name of the test to apply. | 
 | value | *not set* | Object | The value being compared with the test. | 
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `look_time`
 

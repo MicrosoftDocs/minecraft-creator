@@ -15,7 +15,7 @@ Adds a rider to the entity.
 > [!Note]
 > Requires the following component in order to work properly:
 > 
-> * [Rideable (minecraft:rideable)](../EntityComponents/minecraftComponent_rideable.md)
+> * [Rideable (minecraft:rideable)](./minecraftComponent_rideable.md)
 > 
 
 ## Add Rider Properties

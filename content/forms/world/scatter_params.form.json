@@ -505,5 +505,6 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "id": "Scatter Params"
 }

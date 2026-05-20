@@ -51,8 +51,8 @@ Specifies which Y coordinate of the structure is considered its ground level. Th
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| block_allowlist|block_whitelist | *not set* | Array of strings |  | 
-| only_check_intersection_for_motion_blocking_blocks | *not set* | Boolean true/false | If true, only motion-blocking blocks within the structure are checked for intersections with blocks in "block_allowlist|block_whitelist". | 
+| block_allowlist\|block_whitelist | *not set* | Array of strings |  | 
+| only_check_intersection_for_motion_blocking_blocks | *not set* | Boolean true/false | If true, only motion-blocking blocks within the structure are checked for intersections with blocks in "block_allowlist\|block_whitelist". | 
 
 ##### only_check_intersection_for_motion_blocking_blocks
 

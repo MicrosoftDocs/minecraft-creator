@@ -22,7 +22,7 @@ Allows an entity to move around a target.If the entity is too close(i.e.closer t
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | destination_pos_spread_degrees | 90 | Decimal number | This angle (in degrees) is used for controlling the spread when picking a destination position behind the target. | Breeze: `360` | 
-| destination_position_range | {"max":8,"min":4} | [Destination Position Range](#item-components-floatrange) item | The range of distances from the target entity within which the goal should look for a position to move the owner entity to. | Breeze: `[4,8]` | 
+| destination_position_range | {"max":8,"min":4} | [Destination Position Range](#item-floatrange) item | The range of distances from the target entity within which the goal should look for a position to move the owner entity to. | Breeze: `[4,8]` | 
 | filters (Filters) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filters](#filters) item | Conditions that need to be met for the behavior to start. | Breeze: `{"all_of":[{"test":"on_ground","value":true},{"operator":"<=","test":"target_distance","subject":"self","value":24}]}` | 
 | filters (Alternate 1) | *not set* | Object |  |  | 
 | height_difference_limit | 10 | Decimal number | Distance in height (in blocks) between the owner entity and the target has to be less than this value when owner checks if it is too close and should move away from the target. |  | 
@@ -48,11 +48,11 @@ Distance in height (in blocks) between the owner entity and the target has to be
 | look | Look | |
 | move | Move | |
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `destination_position_range`
 

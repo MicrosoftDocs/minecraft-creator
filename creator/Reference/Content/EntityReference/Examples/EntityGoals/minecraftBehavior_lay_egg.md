@@ -281,6 +281,8 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | freeze | Freeze | |
 | fuse | Fuse | |
 | gallop | Gallop | |
+| geyser_continuous_eruption_active | Geyser continuous eruption active | |
+| geyser_continuous_eruption_start | Geyser continuous eruption start | |
 | geyser_eruption_active | Geyser eruption active | |
 | geyser_eruption_start | Geyser eruption start | |
 | glass | Glass | |

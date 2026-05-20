@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has custom destruction particles"
+            "text": "defines particle effects when a block is destroyed"
           }
         ]
       }

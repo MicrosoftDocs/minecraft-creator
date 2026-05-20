@@ -16,12 +16,12 @@ Determines what enchantments can be applied to the item. Not all enchantments wi
 > The following enchantment slot types that can be set for the value of `slot`: sword, bow, pickaxe, armor_head, armor_torso, armor_legs, armor_feet.
 
 
-## Item Components Enchantable Properties
+## Item Enchantable Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| slot | *not set* | String | Specifies which types of enchantments can be applied. | Chestplate: `"armor_torso"`, My Boots: `"armor_feet"`, My Helm: `"armor_head"` | 
-| value | *not set* | Integer number | Specifies the value of the enchantment (minimum of 0). | Chestplate: `10` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| slot | *not set* | String | Specifies which types of enchantments can be applied. | 
+| value | *not set* | Integer number | Specifies the value of the enchantment (minimum of 0). | 
 
 ### slot
 
@@ -29,43 +29,3 @@ Specifies which types of enchantments can be applied. For example, `bow` would a
 
 
 ## Samples
-
-#### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
-
-
-```json
-"minecraft:enchantable": {
-  "value": 10,
-  "slot": "armor_torso"
-}
-```
-
-#### [My Boots](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_boots.json)
-
-
-```json
-"minecraft:enchantable": {
-  "value": 10,
-  "slot": "armor_feet"
-}
-```
-
-#### [My Helm](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_helm.json)
-
-
-```json
-"minecraft:enchantable": {
-  "value": 10,
-  "slot": "armor_head"
-}
-```
-
-#### [My Leggings](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_leggings.json)
-
-
-```json
-"minecraft:enchantable": {
-  "value": 10,
-  "slot": "armor_legs"
-}
-```

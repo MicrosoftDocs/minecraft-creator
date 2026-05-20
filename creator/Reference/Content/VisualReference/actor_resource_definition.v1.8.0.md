@@ -16,7 +16,7 @@ ms.date: 02/11/2025
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | format_version | *not set* | Version |  | 
-| minecraft:(client_entity|attachable) | *not set* | [(client Entity|attachable)](#client-entity|attachable) item |  | 
+| minecraft:(client_entity\|attachable) | *not set* | [(client Entity|attachable)](#client-entityattachable) item |  | 
 
 ### (client Entity|attachable)
 

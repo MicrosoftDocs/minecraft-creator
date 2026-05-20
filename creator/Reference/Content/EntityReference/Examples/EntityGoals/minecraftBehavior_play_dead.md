@@ -25,7 +25,7 @@ Allows this entity to pretend to be dead to avoid being targeted by attackers.
 | filters (Alternate 1) | *not set* | Object |  | 
 | force_below_health | 0 | Integer number | The amount of health at which damage will cause the mob to play dead. | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
-| random_damage_range | {"max":0,"min":0} | [Random Damage Range](#item-components-intrange) item | The range of damage that may cause the goal to start depending on randomness. | 
+| random_damage_range | {"max":0,"min":0} | [Random Damage Range](#item-intrange) item | The range of damage that may cause the goal to start depending on randomness. | 
 | random_start_chance | 1 | Decimal number | The likelihood of this goal starting upon taking damage. | 
 
 ### random_damage_range
@@ -97,11 +97,11 @@ The range of damage that may cause the goal to start depending on randomness. Da
 | test | *not set* | String | The name of the test to apply. | 
 | value | *not set* | Object | The value being compared with the test. | 
 
-### Item Components IntRange
-Has minimum and maximum integer values.
+### Item IntRange
+Specifies an integer range between minimum and maximum values for item properties requiring whole numbers. Used for stack count variations, discrete charge levels, or quantity ranges in loot tables. Ensures values stay within valid bounds for countable item properties.
 
 
-#### Item Components IntRange Properties
+#### Item IntRange Properties
 
 **JSON path:** `random_damage_range`
 

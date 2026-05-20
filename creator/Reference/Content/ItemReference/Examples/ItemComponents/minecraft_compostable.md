@@ -16,8 +16,10 @@ Specifies that an item is compostable and provides the chance of creating a comp
 > This item requires a format version of at least 1.21.60.
 
 
-## Item Components Compostable Properties
+## Item Compostable Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | composting_chance | *not set* | Integer number | The chance of this item to create a layer upon composting with the composter. Valid value range is 1 - 100 inclusive Value must be >= 1. Value must be <= 100. | 
+
+## Samples

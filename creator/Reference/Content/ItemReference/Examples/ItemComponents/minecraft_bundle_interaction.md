@@ -22,7 +22,7 @@ Enables the bundle-specific interaction scheme and tooltip for an item.
 > This item requires a format version of at least 1.21.40.
 
 
-## Item Components Bundle Interaction Properties
+## Item Bundle Interaction Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

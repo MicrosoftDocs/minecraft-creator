@@ -177,7 +177,7 @@
           "max": 40,
           "min": 20
         },
-        "subFormId": "item_components/intrange"
+        "subFormId": "item/intrange"
       },
       {
         "id": "max_angle_of_view_horizontal",

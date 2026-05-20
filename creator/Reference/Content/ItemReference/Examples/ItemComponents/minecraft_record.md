@@ -13,13 +13,13 @@ ms.date: 02/11/2025
 Used by record items to play music.
 
 
-## Item Components Record Properties
+## Item Record Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| comparator_signal | 1 | Integer number | Specifies signal strength for comparator blocks to use, from 1 - 13. | My Sword Singing: `1` | 
-| duration | 0 | Decimal number | Specifies duration of sound event in seconds, float value. | My Sword Singing: `5` | 
-| sound_event | undefined | [Sound Event](#sound-event-choices) choices | Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic. | My Sword Singing: `"pre_ram.screamer"` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| comparator_signal | 1 | Integer number | Specifies signal strength for comparator blocks to use, from 1 - 13. | 
+| duration | 0 | Decimal number | Specifies duration of sound event in seconds, float value. | 
+| sound_event | undefined | [Sound Event](#sound-event-choices) choices | Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic. | 
 
 ### Sound Event choices
 
@@ -262,6 +262,8 @@ Used by record items to play music.
 | freeze | Freeze | |
 | fuse | Fuse | |
 | gallop | Gallop | |
+| geyser_continuous_eruption_active | Geyser continuous eruption active | |
+| geyser_continuous_eruption_start | Geyser continuous eruption start | |
 | geyser_eruption_active | Geyser eruption active | |
 | geyser_eruption_start | Geyser eruption start | |
 | glass | Glass | |
@@ -599,16 +601,5 @@ Used by record items to play music.
   "comparator_signal": 1,
   "duration": 5,
   "sound_event": "ambient.tame"
-}
-```
-
-#### [My Sword Singing](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_singing.json)
-
-
-```json
-"minecraft:record": {
-  "comparator_signal": 1,
-  "duration": 5,
-  "sound_event": "pre_ram.screamer"
 }
 ```

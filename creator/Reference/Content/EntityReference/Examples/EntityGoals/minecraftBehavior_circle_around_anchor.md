@@ -20,13 +20,13 @@ Causes an entity to circle around an anchor point placed near a point or target.
 | angle_change | 15 | Decimal number | Number of degrees to change this entity's facing by, when the entity selects its next anchor point. |  | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | goal_radius | 0.5 | Decimal number | Maximum distance from the anchor-point in which this entity considers itself to have reached the anchor point. | Phantom: `1` | 
-| height_above_target_range | {"max":0,"min":0} | [Height Above Target Range](#item-components-floatrange) item | The number of blocks above the target that the next anchor point can be set. | Phantom: `{"min":20,"max":40}` | 
+| height_above_target_range | {"max":0,"min":0} | [Height Above Target Range](#item-floatrange) item | The number of blocks above the target that the next anchor point can be set. | Phantom: `{"min":20,"max":40}` | 
 | height_adjustment_chance | 0.0028570001013576984 | Decimal number | Percent chance to determine how often to increase or decrease the current height around the anchor point. |  | 
-| height_offset_range | {"max":0,"min":0} | [Height Offset Range](#item-components-floatrange) item | Vertical distance from the anchor point this entity must stay within, upon a successful height adjustment. | Phantom: `{"min":-4,"max":5}` | 
+| height_offset_range | {"max":0,"min":0} | [Height Offset Range](#item-floatrange) item | Vertical distance from the anchor point this entity must stay within, upon a successful height adjustment. | Phantom: `{"min":-4,"max":5}` | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Phantom: `3` | 
 | radius_adjustment_chance | 0.004000000189989805 | Decimal number | Percent chance to determine how often to increase the size of the current movement radius around the anchor point. |  | 
 | radius_change | 1 | Decimal number | The number of blocks to increase the current movement radius by, upon successful "radius_adjustment_chance". |  | 
-| radius_range | {"max":15,"min":5} | [Radius Range](#item-components-floatrange) item | Horizontal distance from the anchor point this entity must stay within upon a successful radius adjustment. |  | 
+| radius_range | {"max":15,"min":5} | [Radius Range](#item-floatrange) item | Horizontal distance from the anchor point this entity must stay within upon a successful radius adjustment. |  | 
 | speed_multiplier | 1 | Decimal number | Multiplies the speed at which this entity travels to its next desired position. |  | 
 
 ### goal_radius
@@ -62,11 +62,11 @@ Horizontal distance from the anchor point this entity must stay within upon a su
 | look | Look | |
 | move | Move | |
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `height_above_target_range`
 

@@ -49,5 +49,21 @@
         }
       ]
     }
+  },
+  "description": "Determines which tags are included on a given item",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "do_swing_animation": false,
+          "launch_power_scale": 1,
+          "max_draw_duration": 0,
+          "max_launch_power": 1,
+          "min_draw_duration": 0,
+          "scale_power_by_draw_duration": false
+        }
+      }
+    ]
   }
 }

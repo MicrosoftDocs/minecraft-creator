@@ -18,9 +18,9 @@ Fires an event when this behavior starts, then waits for a duration before stopp
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  | Sniffer: `["move","look"]` | 
-| cooldown_range (Item Components FloatRange) | {"max":0,"min":0} | [Cooldown Range](#item-components-floatrange) item | Goal cooldown range in seconds. Can be a range object or a single number. | Sniffer: `{"min":400,"max":500}` | 
+| cooldown_range (Item FloatRange) | {"max":0,"min":0} | [Cooldown Range](#item-floatrange) item | Goal cooldown range in seconds. Can be a range object or a single number. | Sniffer: `{"min":400,"max":500}` | 
 | cooldown_range (as Decimal number) | *not set* | Decimal number |  |  | 
-| duration_range (Item Components FloatRange) | {"max":0,"min":0} | [Duration Range](#item-components-floatrange) item | Goal duration range in seconds. Can be a range object or a single number. | Sniffer: `{"min":2,"max":2}` | 
+| duration_range (Item FloatRange) | {"max":0,"min":0} | [Duration Range](#item-floatrange) item | Goal duration range in seconds. Can be a range object or a single number. | Sniffer: `{"min":2,"max":2}` | 
 | duration_range (as Decimal number) | *not set* | Decimal number |  |  | 
 | on_end | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [End](#entity-actordefinitiontrigger) item | Event(s) to run when the goal ends. | Sniffer: `{"event":"on_scenting_success","target":"self"}` | 
 | on_start | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Start](#entity-actordefinitiontrigger) item | Event(s) to run when the goal starts. |  | 
@@ -34,11 +34,11 @@ Fires an event when this behavior starts, then waits for a duration before stopp
 | look | Look | |
 | move | Move | |
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `cooldown_range`
 

@@ -275,7 +275,7 @@
           "max": 2,
           "min": -2
         },
-        "subFormId": "item_components/intrange"
+        "subFormId": "item/intrange"
       },
       {
         "id": "y_range",
@@ -286,7 +286,7 @@
           "max": 3,
           "min": 0
         },
-        "subFormId": "item_components/intrange"
+        "subFormId": "item/intrange"
       }
     ],
     "samples": {}

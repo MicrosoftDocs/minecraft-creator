@@ -1019,6 +1019,14 @@
             "title": "Gallop"
           },
           {
+            "id": "geyser_continuous_eruption_active",
+            "title": "Geyser continuous eruption active"
+          },
+          {
+            "id": "geyser_continuous_eruption_start",
+            "title": "Geyser continuous eruption start"
+          },
+          {
             "id": "geyser_eruption_active",
             "title": "Geyser eruption active"
           },
@@ -2370,7 +2378,7 @@
           "min": 1
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       },
       {
         "id": "on_celebration_end_event",
@@ -2409,7 +2417,7 @@
           "min": 2
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item_components/floatrange"
+        "subFormId": "item/floatrange"
       }
     ],
     "samples": {}

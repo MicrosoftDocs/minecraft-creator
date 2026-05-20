@@ -4116,19 +4116,6 @@
         "dataType": "object"
       },
       {
-        "id": "minecraft:memory_behavior.move_to_position",
-        "title": "Move To Position Minecraft Memory Behavior",
-        "description": "Allows the mob to move to a target position. Using memories, the mob will try to stick to the original target position it chose until that position is removed. Requires a FindBlockSensor.",
-        "dataType": "object",
-        "subFormId": "entity/minecraft_memory_behavior_move_to_position"
-      },
-      {
-        "id": "minecraft:memory_sensor.find_nearest_block",
-        "title": "Find Nearest Block Minecraft Memory Sensor",
-        "description": "Dynamic value",
-        "dataType": "object"
-      },
-      {
         "id": "minecraft:memory_sensor.find_nearest_entity",
         "title": "Find Nearest Entity Minecraft Memory Sensor",
         "description": "Dynamic value",

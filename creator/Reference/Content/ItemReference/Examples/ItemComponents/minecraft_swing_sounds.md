@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Overrides the swing sounds emitted by the user.
 
 
-## Item Components Swing Sounds Properties
+## Item Swing Sounds Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -262,6 +262,8 @@ Overrides the swing sounds emitted by the user.
 | freeze | Freeze | |
 | fuse | Fuse | |
 | gallop | Gallop | |
+| geyser_continuous_eruption_active | Geyser continuous eruption active | |
+| geyser_continuous_eruption_start | Geyser continuous eruption start | |
 | geyser_eruption_active | Geyser eruption active | |
 | geyser_eruption_start | Geyser eruption start | |
 | glass | Glass | |
@@ -590,3 +592,5 @@ Overrides the swing sounds emitted by the user.
 | water | Water | |
 | whine | Whine | |
 | wind_charge.burst | Wind charge.burst | |
+
+## Samples

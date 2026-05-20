@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has random position offset"
+            "text": "defines random position offset for block rendering"
           }
         ]
       }
@@ -30,7 +30,7 @@
           },
           "steps": 0
         },
-        "subFormId": "block_components/range_and_steps"
+        "subFormId": "block/range_and_steps"
       },
       {
         "id": "y",
@@ -43,7 +43,7 @@
           },
           "steps": 0
         },
-        "subFormId": "block_components/range_and_steps"
+        "subFormId": "block/range_and_steps"
       },
       {
         "id": "z",
@@ -56,7 +56,7 @@
           },
           "steps": 0
         },
-        "subFormId": "block_components/range_and_steps"
+        "subFormId": "block/range_and_steps"
       }
     ]
   }

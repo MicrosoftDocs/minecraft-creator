@@ -6,7 +6,7 @@
         "tokens": [
           {
             "type": "literal",
-            "text": "has explosion resistance"
+            "text": "defines explosion resistance for a block"
           }
         ]
       }

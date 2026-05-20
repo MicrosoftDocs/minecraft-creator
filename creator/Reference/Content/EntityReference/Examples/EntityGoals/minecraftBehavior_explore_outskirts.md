@@ -16,7 +16,7 @@ Allows the entity to first travel to a random point on the outskirts of the vill
 > Requires the following components in order to work properly:
 > 
 > * [Dweller (minecraft:dweller)](../EntityComponents/minecraftComponent_dweller.md)
-> * [Navigation (minecraft:navigation)](../EntityComponents/minecraftComponent_navigation.md)
+> * Navigation (minecraft:navigation)
 > 
 
 ## Entity Explore Outskirts Behavior Properties

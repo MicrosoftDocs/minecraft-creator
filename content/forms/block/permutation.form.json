@@ -23,7 +23,7 @@
         "title": "Components",
         "dataType": "object",
         "technicalDescription": "Blocks with precipitation interactions \"snowlogging\" must have collision box disabled",
-        "subFormId": "block_components/components",
+        "subFormId": "block/components",
         "isRequired": true
       },
       {

@@ -14,6 +14,23 @@
         "defaultValue": false
       },
       {
+        "id": "extra_knockback_approach",
+        "title": "ExtraKnockbackApproach",
+        "description": "Defines the approach for combining extra knockback from enchantments or sprinting:\n- \"reapply_default\": Reapplies knockback again with default knockback parameters, i.e. values not defined by this component.\n- \"multiply_reduced\": Multiplies the extra knockback with the first knockback and a reduction factor, and adds it to the first knockback.",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "multiply_reduced",
+            "title": "Multiply reduced"
+          },
+          {
+            "id": "reapply_default",
+            "title": "Reapply default"
+          }
+        ],
+        "defaultValue": "reapply_default"
+      },
+      {
         "id": "filter",
         "description": "Filter for the entity type that will be affected by these knockback rules.",
         "dataType": "object",

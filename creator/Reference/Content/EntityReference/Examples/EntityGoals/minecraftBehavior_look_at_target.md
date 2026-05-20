@@ -15,8 +15,8 @@ Compels an entity to look at the target by rotating the head bone pose within a 
 > [!Note]
 > Requires a target in order to work properly. Entities can generate targets via one of the following behaviors:
 > 
-> * [minecraft:behavior.nearest_attackable_target](../EntityGoals/minecraftBehavior_nearest_attackable_target.md)
-> * [minecraft:behavior.hurt_by_target](../EntityGoals/minecraftBehavior_hurt_by_target.md)
+> * [Nearest Attackable Target Behavior (minecraft:behavior.nearest_attackable_target)](./minecraftBehavior_nearest_attackable_target.md)
+> * [Hurt By Target Behavior (minecraft:behavior.hurt_by_target)](./minecraftBehavior_hurt_by_target.md)
 
 ## Entity Look At Target Behavior Properties
 
@@ -26,7 +26,7 @@ Compels an entity to look at the target by rotating the head bone pose within a 
 | angle_of_view_vertical | 360 | Integer number | The angle in degrees that the mob can see rotated on the X-axis (up-down). Value must be <= 360. |  | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at the nearest entity. | Axe Turret: `12`, Bow Turret: `19`, Crossbow Turret: `15` | 
-| look_time | {"max":4,"min":2} | [Look Time](#item-components-floatrange) item | Time range to look at the nearest entity. | Axe Turret: `[1,5]` | 
+| look_time | {"max":4,"min":2} | [Look Time](#item-floatrange) item | Time range to look at the nearest entity. | Axe Turret: `[1,5]` | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Wither: `5`, Axe Turret: `2`, Bow Turret: `1` | 
 | probability | 0.019999999552965164 | Decimal number | The probability of looking at the target. A value of 1.00 is 100%. Value must be <= 1. | Axe Turret: `1` | 
 
@@ -38,11 +38,11 @@ Compels an entity to look at the target by rotating the head bone pose within a 
 | look | Look | |
 | move | Move | |
 
-### Item Components FloatRange
-Has minimum and maximum float values.
+### Item FloatRange
+Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
 
 
-#### Item Components FloatRange Properties
+#### Item FloatRange Properties
 
 **JSON path:** `look_time`
 

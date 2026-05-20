@@ -1,0 +1,193 @@
+{
+  "id": "minecraft:instrument_sound",
+  "description": "[Note: This component is currently experimental]. This defines what sound will play based on above or below relative position to a note block. An instrument can be assigned to the \"up\" and \"down\" block faces. If either face is undefined, or the component is omitted, it will use its default value (\"up\" = \"note.harp\" and \"down\" = \"note.none\"). While both faces do not need to be defined, at least one face needs to be defined for the component to be valid. \"note.none\" can be used to specify no sound for a face.",
+  "isExperimental": true,
+  "requiredExperiment": "Upcoming Creator Features",
+  "fields": [
+    {
+      "id": "up",
+      "title": "Up",
+      "description": "The instrument sound that plays when the note block is below this block (the block's up face is exposed to the note block). Use \"note.none\" to specify no sound for this face.",
+      "dataType": "stringEnum",
+      "defaultValue": "note.harp",
+      "mustMatchChoices": true,
+      "enumValues": [
+        "note.harp",
+        "note.bd",
+        "note.snare",
+        "note.hat",
+        "note.bassattack",
+        "note.flute",
+        "note.bell",
+        "note.guitar",
+        "note.chime",
+        "note.xylophone",
+        "note.iron_xylophone",
+        "note.cow_bell",
+        "note.didgeridoo",
+        "note.bit",
+        "note.banjo",
+        "note.pling",
+        "note.trumpet",
+        "note.trumpet_exposed",
+        "note.trumpet_weathered",
+        "note.trumpet_oxidized",
+        "note.zombie",
+        "note.skeleton",
+        "note.creeper",
+        "note.enderdragon",
+        "note.witherskeleton",
+        "note.piglin",
+        "note.none"
+      ]
+    },
+    {
+      "id": "down",
+      "title": "Down",
+      "description": "The instrument sound that plays when the note block is above this block (the block's down face is exposed to the note block). Use \"note.none\" to specify no sound for this face.",
+      "dataType": "stringEnum",
+      "defaultValue": "note.none",
+      "mustMatchChoices": true,
+      "enumValues": [
+        "note.harp",
+        "note.bd",
+        "note.snare",
+        "note.hat",
+        "note.bassattack",
+        "note.flute",
+        "note.bell",
+        "note.guitar",
+        "note.chime",
+        "note.xylophone",
+        "note.iron_xylophone",
+        "note.cow_bell",
+        "note.didgeridoo",
+        "note.bit",
+        "note.banjo",
+        "note.pling",
+        "note.trumpet",
+        "note.trumpet_exposed",
+        "note.trumpet_weathered",
+        "note.trumpet_oxidized",
+        "note.zombie",
+        "note.skeleton",
+        "note.creeper",
+        "note.enderdragon",
+        "note.witherskeleton",
+        "note.piglin",
+        "note.none"
+      ]
+    }
+  ],
+  "samples": {
+    "Instrument defined for both faces": [
+      {
+        "path": "default",
+        "content": {
+          "up": "note.bassattack",
+          "down": "note.bit"
+        }
+      }
+    ],
+    "Instrument defined for up face": [
+      {
+        "path": "default",
+        "content": {
+          "up": "note.xylophone"
+        }
+      }
+    ],
+    "Instrument defined for down face": [
+      {
+        "path": "default",
+        "content": {
+          "down": "note.banjo"
+        }
+      }
+    ],
+    "Instrument defined with no sound for up face": [
+      {
+        "path": "default",
+        "content": {
+          "up": "note.none",
+          "down": "note.banjo"
+        }
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:instrument_sound",
+    "title": "Instrument Sound",
+    "description": "This defines what sound will play based on above or below relative position to a note block.\nAn instrument can be assigned to the \"up\" and \"down\" faces where at least one face needs to be defined for the component to be valid.\nAn undefined face will use its default value: \"up\" = \"note.harp\" and \"down\" = \"note.none\".\n\"note.none\" can be used to specify no sound for a face.",
+    "fields": [
+      {
+        "id": "up",
+        "title": "Up",
+        "dataType": "stringEnum",
+        "enumValues": [
+          "note.harp",
+          "note.bd",
+          "note.snare",
+          "note.hat",
+          "note.bassattack",
+          "note.flute",
+          "note.bell",
+          "note.guitar",
+          "note.chime",
+          "note.xylophone",
+          "note.iron_xylophone",
+          "note.cow_bell",
+          "note.didgeridoo",
+          "note.bit",
+          "note.banjo",
+          "note.pling",
+          "note.trumpet",
+          "note.trumpet_exposed",
+          "note.trumpet_weathered",
+          "note.trumpet_oxidized",
+          "note.zombie",
+          "note.skeleton",
+          "note.creeper",
+          "note.enderdragon",
+          "note.witherskeleton",
+          "note.piglin",
+          "note.none"
+        ]
+      },
+      {
+        "id": "down",
+        "title": "Down",
+        "dataType": "stringEnum",
+        "enumValues": [
+          "note.harp",
+          "note.bd",
+          "note.snare",
+          "note.hat",
+          "note.bassattack",
+          "note.flute",
+          "note.bell",
+          "note.guitar",
+          "note.chime",
+          "note.xylophone",
+          "note.iron_xylophone",
+          "note.cow_bell",
+          "note.didgeridoo",
+          "note.bit",
+          "note.banjo",
+          "note.pling",
+          "note.trumpet",
+          "note.trumpet_exposed",
+          "note.trumpet_weathered",
+          "note.trumpet_oxidized",
+          "note.zombie",
+          "note.skeleton",
+          "note.creeper",
+          "note.enderdragon",
+          "note.witherskeleton",
+          "note.piglin",
+          "note.none"
+        ]
+      }
+    ]
+  }
+}

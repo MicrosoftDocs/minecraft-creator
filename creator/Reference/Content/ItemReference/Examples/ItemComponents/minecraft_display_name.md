@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Sets the item display name within Minecraft: Bedrock Edition. This component may also be used to pull from the localization file by referencing a key from it.
 
 
-## Item Components Display Name Properties
+## Item Display Name Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -79,50 +79,5 @@ At sample with localication key:
 ```json
 "minecraft:display_name": {
   "value": "item.wind_charge.name"
-}
-```
-
-#### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
-
-
-```json
-"minecraft:display_name": {
-  "value": "My Custom Armor"
-}
-```
-
-#### [Goo](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/goo.json)
-
-
-```json
-"minecraft:display_name": {
-  "value": "Weird Goo"
-}
-```
-
-#### [My Boots](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_boots.json)
-
-
-```json
-"minecraft:display_name": {
-  "value": "My Custom Boots"
-}
-```
-
-#### [My Helm](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_helm.json)
-
-
-```json
-"minecraft:display_name": {
-  "value": "My Custom Helmet"
-}
-```
-
-#### [My Leggings](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_leggings.json)
-
-
-```json
-"minecraft:display_name": {
-  "value": "My Custom Leggings"
 }
 ```

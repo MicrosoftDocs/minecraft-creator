@@ -15,7 +15,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item_components/intrange"
+        "subFormId": "item/intrange"
       },
       {
         "id": "entity_to_spawn",

@@ -130,7 +130,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [squid](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/squid.json) | 8977 | 17 |
 | [stray](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/stray.json) | 1116974 | 46 |
 | [strider](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/strider.json) | 4989 | 125 |
-| sulfur_cube | 2969 | 153 |
+| [sulfur_cube](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/sulfur_cube.json) | 2969 | 153 |
 | [tadpole](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/tadpole.json) | 9093 | 133 |
 | [thrown_trident](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/thrown_trident.json) | 12582985 | 73 |
 | [tnt](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/tnt.json) | 65 | 65 |
