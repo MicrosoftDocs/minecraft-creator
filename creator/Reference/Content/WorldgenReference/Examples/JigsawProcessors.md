@@ -48,7 +48,7 @@ A list of processors of [processor_type](#processor_type) that will be run when 
     "blocks": ["<block_name>", ...]
   },
   { 
-    "processor_type": "minecraft:block_ignore", 
+    "processor_type": "minecraft:protected_blocks", 
     "value": "<block_tag>"
   },
   { 
