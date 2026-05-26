@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Structures Panel
 description: "An overview of the Structures Panel part of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/02/2025
+ms.date: 05/18/2026
 ---
 
 # Structures
@@ -18,7 +18,6 @@ The Structures Panel is routinely synchronized, so you'll also be able to see an
 
 The Structures panel isn't added to the Action Bar by default. Click the **+** button to add it.
 
-
 ## Saving a structure
 
 1. Select the area or structure in the world you want to save.
@@ -27,6 +26,8 @@ The Structures panel isn't added to the Action Bar by default. Click the **+** b
 
 3. From Structures, name your structure and click **New from Clipboard**.
 
+> [!TIP]
+> When editing a Prefab template, changes to structure offset, rotation, and mirror settings are auto-saved. There is no manual save button — your modifications are persisted automatically after a brief delay.
 
 ## Placing a structure
 
@@ -44,30 +45,28 @@ Use our built in structure management tools to help you find structures faster:
 
 - **Tags**
 
-    Add or edit tags to group related items and make them easier to find when searching for your older structures. Tags can also help create areas in your worlds that have the same look/feel (like a village made with similar blocks and buildings).
+  Add or edit tags to group related items and make them easier to find when searching for your older structures. Tags can also help create areas in your worlds that have the same look/feel (like a village made with similar blocks and buildings).
 
-- **Search** 
+- **Search**
 
-    You can refine your search by filtering by display name or ID pattern, tags (i.e. "roofs", "terrain", ets), or source (i.e. project, world/Level, Behavior Pack, or file-imported entries).
+  You can refine your search by filtering by display name or ID pattern, tags (i.e. "roofs", "terrain", ets), or source (i.e. project, world/level, Behavior Pack, or file-imported entries).
 
-- **Naming** 
+- **Naming**
 
-    You can rename structures to help you remember them later. You can also use the naming tool to delete previously saved structures.
-
+  You can rename structures to help you remember them later. You can also use the naming tool to delete previously saved structures.
 
 ## Keyboard shortcuts
 
 These shortcuts support common Structures workflows. Check out [Editor Hotkeys](../BedrockEditor/EditorKeyboardInputs.md) for a full list of shortcuts.
 
-| Name | Shortcut | Description |
-|:----|:----|:----|
-| Copy Selection | Ctrl+C | Copies the current selection to the clipboard |
-| Paste Preview | Ctrl+Shift+V | Opens Paste Preview from clipboard |
-| Paste at Cursor (Paste Preview) | Ctrl+F | Commits the paste at the cursor target |
-| Clear Preview (Paste Preview) | Ctrl+D | Clears the current preview |
-| Rotate Preview Clockwise (Paste Preview) | R | While in Paste Preview |
-| Rotate Preview Counter Clockwise (Paste Preview) | Shift+R | While in Paste Preview |
+| Name                                             | Shortcut     | Description                                   |
+| :----------------------------------------------- | :----------- | :-------------------------------------------- |
+| Copy Selection                                   | Ctrl+C       | Copies the current selection to the clipboard |
+| Paste Preview                                    | Ctrl+Shift+V | Opens Paste Preview from clipboard            |
+| Paste at Cursor (Paste Preview)                  | Ctrl+F       | Commits the paste at the cursor target        |
+| Clear Preview (Paste Preview)                    | Ctrl+D       | Clears the current preview                    |
+| Rotate Preview Clockwise (Paste Preview)         | R            | While in Paste Preview                        |
+| Rotate Preview Counter Clockwise (Paste Preview) | Shift+R      | While in Paste Preview                        |
 
 > [!NOTE]
 > Paste Preview also supports moving and mirroring the preview with arrow keys, PgUp/PgDn, X, and Z. Refer to the Paste Preview section in Editor Hotkeys for the complete list.
-

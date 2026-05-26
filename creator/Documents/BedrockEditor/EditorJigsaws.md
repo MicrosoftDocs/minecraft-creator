@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Jigsaws
 description: "An overview of Jigsaws in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 02/09/2026
+ms.date: 05/18/2026
 ---
 
 # Jigsaws
@@ -39,8 +39,9 @@ Configure these settings in the **Generate** section of the Jigsaws panel:
 1. Open the Jigsaws panel from the action bar or from the **View** menu.
 
 2. Use the **Jigsaw Collection** dropdown to select an existing collection, or click the **+** button to create a new one.
-    > [!NOTE]
-    > the Jigsaw Collection is a named container that holds one or more template pools. Collection names must be alphanumeric (letters, numbers, underscores only).
+
+   > [!NOTE]
+   > The Jigsaw Collection is a named container that holds one or more template pools. Collection names must be alphanumeric (letters, numbers, underscores only). Collection names are case-insensitive — for example, "MyPool" and "mypool" are treated as the same name.
 
 3. To delete a collection, click the trash icon next to the dropdown.
 
@@ -57,10 +58,14 @@ A template pool is a named set of one or more structure pieces with weighted pro
 1. Click the **+** button on a template pool folder to add a new piece.
 
 2. For each piece, select a **Structure** from the dropdown (populated from structures in your project) and set a **Weight** (1–20).
-    > [!NOTE]
-    > A piece's weight controls the likelihood that it's selected during generation (**range: 1–20**).
+
+   > [!NOTE]
+   > A piece's weight controls the likelihood that it's selected during generation.
 
 3. You can remove pieces using the trash icon on each entry.
+
+> [!TIP]
+> Changes to structure selection and weight are auto-saved. There is no manual save step for pool modifications.
 
 ### Exporting the jigsaw(s)
 

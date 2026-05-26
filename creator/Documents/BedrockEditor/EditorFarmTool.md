@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Farm Tool
 description: "An overview of the Farm Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/19/2025
+ms.date: 05/18/2026
 ---
 
 # Farm Tool
@@ -19,7 +19,7 @@ Use Farm to quickly generate a complete farm layout with crops, optional animals
 
 ## Details
 
-- **Crops**: Check the box for each crop you want to grow on your farm. Available crops: Wheat, Potato, Beetroot, Pumpkin, and Carrot. Crops will be placed randomly within the farm area.
+- **Crops**: Check the box for each crop you want to grow on your farm. Available crops: Wheat, Potato, Beetroot, Pumpkin, Carrot, and Melon. Crops will be placed randomly within the farm area.
 
 - **Animals**: Check the box for each type of animal that you want to include on your farm. Available animals: Cow, Sheep, and Pig. Animals will be placed in random quantities.
 
@@ -34,13 +34,14 @@ Use Farm to quickly generate a complete farm layout with crops, optional animals
 #### Using the farm generator tool:
 
 1. Open Farm by selecting it from the tool rail on the left side of the Editor.
-    > [!Tip]
-    > Pressing **Ctrl+P** also switches to Farm.
+
+   > [!Tip]
+   > Pressing **Ctrl+P** also switches to Farm.
 
 2. Choose the crops, animals, size, fence, and irrigation settings that you want for your farm.
 
 3. Click a block on the ground to place a farm with that block at its center.
-    > [!TIP]
-    > For best results, place on relatively flat terrain. You can use Terrain or Flatten mode to prep the area first.
+   > [!TIP]
+   > For best results, place on relatively flat terrain. You can use Terrain or Flatten mode to prep the area first.
 
 ![Animation of the farm tool.](Media/GIFs/FarmTool.gif)

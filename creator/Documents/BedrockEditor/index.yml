@@ -15,8 +15,8 @@ metadata:
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
+  # Cards and links should be based on top customer tasks or top subjects
+  # Start card title with a verb
   # Card (optional)
   - title: Learn about Bedrock Editor
     linkLists:
@@ -33,11 +33,13 @@ landingContent:
           - text: Action Bar
             url: EditorActionBar.md
           - text: Settings
-            url: EditorSettings.md  
+            url: EditorSettings.md
+          - text: Custom Dimensions
+            url: EditorCustomDimensions.md
           - text: Paste Preview
             url: EditorPastePreview.md
   - title: Tools
-    linkLists:            
+    linkLists:
       - linkListType: reference
         links:
           - text: Selection Tool
@@ -45,19 +47,23 @@ landingContent:
           - text: Brush Tool
             url: EditorBrushTool.md
           - text: Extrude Tool
-            url: EditorExtrudeTool.md  
+            url: EditorExtrudeTool.md
           - text: Farm Tool
-            url: EditorFarmTool.md    
+            url: EditorFarmTool.md
           - text: Fill Tool
-            url: EditorFillTool.md 
+            url: EditorFillTool.md
+          - text: Fill Biomes Tool
+            url: EditorFillBiomesTool.md
+          - text: Custom Mesh Tool
+            url: EditorCustomMeshTool.md
           - text: Repeater Tool
-            url: EditorRepeaterTool.md 
+            url: EditorRepeaterTool.md
           - text: Terrain Tool
-            url: EditorTerrainTool.md   
+            url: EditorTerrainTool.md
           - text: Summon Tool
             url: EditorSummonTool.md
   - title: Inspectors and Panels
-    linkLists:            
+    linkLists:
       - linkListType: reference
         links:
           - text: Block Inspector
@@ -65,9 +71,9 @@ landingContent:
           - text: Entity Inspector
             url: EditorEntityInspector.md
           - text: Structures
-            url: EditorStructures.md    
+            url: EditorStructures.md
           - text: Workbench
-            url: EditorWorkbench.md               
+            url: EditorWorkbench.md
   - title: Working with Bedrock Editor
     linkLists:
       - linkListType: get-started
