@@ -25,7 +25,7 @@ This item can also be represented as a `Boolean true/false`.
 
 ### explosion_resistance
 
-Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance.
+Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A value of 0 means it will easily explode; larger numbers increase level of resistance.
 
 
 ## Samples

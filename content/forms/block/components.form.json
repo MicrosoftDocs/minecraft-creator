@@ -153,7 +153,7 @@
         "title": "Minecraft Block Entity",
         "description": "Adds per-instance metadata for this block.",
         "dataType": "object",
-        "subFormId": "block/block_entity"
+        "subFormId": "block/minecraft_block_entity"
       },
       {
         "id": "minecraft:breathability",

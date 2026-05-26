@@ -1107,8 +1107,8 @@ Sets the item as a food component, allowing it to be edible to the player.
 | effects | *not set* | Array of [Effects](#effects) items |  | AppleEnchanted: `[{"name":"regeneration","chance":1,"duration":30,"amplifier":1},{"name":"absorption","chance":1,"duration":120,"amplifier":3},{"name":"resistance","chance":1,"duration":300,"amplifier":0},{"name":"fire_resistance","chance":1,"duration":300,"amplifier":0}]`, Chicken: `[{"name":"hunger","chance":0.3,"duration":30,"amplifier":0}]` | 
 | is_meat | *not set* | String |  |  | 
 | nutrition | 0 | Integer number | Value that is added to the entity's nutrition when the item is used. Default is set to 0. | Apple: `4`, Baked Potato: `5`, Beef: `3` | 
-| on_use_action | *not set* | Minecraft Event Trigger |  |  | 
-| on_use_range | *not set* | Minecraft Event Trigger |  |  | 
+| on_use_action | *not set* | [Minecraft Event Trigger](../../../EntityReference/Examples/Definitions/NestedTables/triggers.md) |  |  | 
+| on_use_range | *not set* | [Minecraft Event Trigger](../../../EntityReference/Examples/Definitions/NestedTables/triggers.md) |  |  | 
 | saturation_modifier | 0.6000000238418579 | Decimal number | saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6. | Apple: `0.3`, AppleEnchanted: `"supernatural"`, Baked Potato: `"normal"` | 
 | using_converts_to (Using Converts To) | {} | String | When used, converts to the item specified by the string in this field. Default does not convert item. | Beetroot Soup: `"bowl"`, Honey Bottle: `"glass_bottle"` | 
 | using_converts_to (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
