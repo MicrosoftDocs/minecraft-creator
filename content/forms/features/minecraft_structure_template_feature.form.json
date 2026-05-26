@@ -230,7 +230,7 @@
                     "id": "only_check_intersection_for_motion_blocking_blocks",
                     "title": "Only Check Intersection For Motion Blocking Blocks",
                     "description": "If true, only motion-blocking blocks within the structure are checked for intersections with blocks in \"block_allowlist|block_whitelist\". If false, all blocks in the structure except empty ones are checked for intersections, including air.",
-                    "isRequired": true
+                    "isRequired": false
                   }
                 ]
               }

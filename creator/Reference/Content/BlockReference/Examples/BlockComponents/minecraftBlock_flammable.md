@@ -10,7 +10,7 @@ ms.date: 02/11/2025
 
 # Block Components Documentation - minecraft:flammable
 
-Describes the flammable properties for this block. If set to true, default values are used (catch: 5, destroy: 20, same as planks). If set to false, or if this component is omitted, the block will not be able to catch on fire naturally from neighbors, but it can still be directly ignited.
+Describes the flammable properties for this block. If set to true, default values are used (catch: 5, destroy: 20). Note that the default value of lava_flammable is false for backwards compatibility. If set to false, or if this component is omitted, the block will not be able to catch on fire naturally from neighbors, but it can still be directly ignited.
 
 ## Alternate Simple Representations
 
