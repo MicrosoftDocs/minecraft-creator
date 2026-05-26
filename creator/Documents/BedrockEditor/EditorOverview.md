@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Overview
 description: "An overview of the parts of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/09/2025
+ms.date: 05/18/2026
 ---
 
 # Editor Overview
@@ -36,7 +36,7 @@ In this manual, you will learn the following:
 
 To get started, you need the following:
 
-- A Windows 10 (or higher) computer with Minecraft Bedrock Editor 
+- A Windows 10 (or higher) computer with Minecraft Bedrock Editor
 - Keyboard and mouse
 
 > [!IMPORTANT]
@@ -58,7 +58,10 @@ Export settings will apply when you export as a playable world from the Editor (
 
 ![Image of the Minecraft Editor configuration page](Media/editor_overview_project_settings.png)
 
-New projects load with a Welcome/Quick Start screen. If you close it and you want it open again, go to the Help menu and select Quick Start.
+New projects load with a Welcome screen. If you close it and you want it open again, go to the **Help** menu and select **What's New**.
+
+> [!TIP]
+> The **What's New** panel shows information about the latest Editor update, including new tools and features.
 
 ## First Things First: UI Settings
 
@@ -68,9 +71,9 @@ Go to the **File** menu and select **UI Settings**.
 
 ![Editor User Interface appearance settings showing UI scale, font, and theme drop-down menus](Media/editor_overview_ui_settings.png)
 
->- UI Scale - Makes the menu bar and windows larger or smaller in relation to the project world.
->- Font - Changes the size of the text in the windows.
->- Theme - Changes the colors used in the UI.
+> - UI Scale - Makes the menu bar and windows larger or smaller in relation to the project world.
+> - Font - Changes the size of the text in the windows.
+> - Theme - Changes the colors used in the UI.
 
 After you make a selection from the UI Settings menu, your changes are reflected immediately.
 
@@ -88,23 +91,24 @@ Click the double "up arrows" in the corner to collapse the windows upwards so yo
 
 If you do want to close the window, click the X in the corner. Some windows can be re-opened with a keyboard shortcut.
 
-## Welcome/Quick Start
+## What's New
 
 ![Animation of the parts of the Quick Start Welcome screen](Media/editor_quick_start.png)
 
-|Tab  |Content  |
-|:-------|:---------|
-| Introduction | Welcome to Minecraft Editor, a tool designed to help you create stunning worlds in Bedrock with ease. <br> <br> You may find these links helpful on your journey: <br> <br> <ul> <li> [Documentation](https://aka.ms/BedrockEditorDocs) </li> <li> [Report problems and give feedback](https://aka.ms/BedrockEditorFeedback) </li> <li> [Editor Community](https://aka.ms/BedrockEditorCommunity) </li></ul> <br>  To reopen Quick Start, you can find it under the 'Help' menu.|
-| Movement | To navigate in the Editor, you'll need a keyboard and mouse. Trackpads or controllers aren't recommended. <br> <br> To move around in Editor: <br> <br><ul> <li> Hold down the right mouse button to look around. </li><li> While holding the right mouse button, move horizontally with `WASD` and vertically with `SHIFT` and `SPACE`. </li></ul> |
-|Tools|You can find tools on the left rail. Each tool allows you to edit your world in different ways. <br> <br>Click on the Information button ("i") at the top right corner of each tool to learn more about how it works.|
-|Actions|Actions are shortcuts that live at the top of your screen. Hit the “+” button in the Action Bar to customize which are displayed.<br> <br>At the top center of your screen is the Block Hotbar. Click once to change the active block, click twice to open the Block Picker to customize the Hotbar.<br> <br> You can create a new Hotbar by clicking the Hotbar Menu button to the right.
+| Tab          | Content                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Introduction | Welcome to Minecraft Editor, a tool designed to help you create stunning worlds in Bedrock with ease. <br> <br> You may find these links helpful on your journey: <br> <br> <ul> <li> [Documentation](https://aka.ms/BedrockEditorDocs) </li> <li> [Report problems and give feedback](https://aka.ms/BedrockEditorFeedback) </li> <li> [Editor Community](https://aka.ms/BedrockEditorCommunity) </li></ul> <br> To reopen What's New, you can find it under the 'Help' menu. |
+| Movement     | To navigate in the Editor, you'll need a keyboard and mouse. Trackpads or controllers aren't recommended. <br> <br> To move around in Editor: <br> <br><ul> <li> Hold down the right mouse button to look around. </li><li> While holding the right mouse button, move horizontally with `WASD` and vertically with `SHIFT` and `SPACE`. </li></ul>                                                                                                                            |
+| Tools        | You can find tools on the left rail. Each tool allows you to edit your world in different ways. <br> <br>Click on the Information button ("i") at the top right corner of each tool to learn more about how it works.                                                                                                                                                                                                                                                          |
+| Actions      | Actions are shortcuts that live at the top of your screen. Hit the “+” button in the Action Bar to customize which are displayed.<br> <br>At the top center of your screen is the Block Hotbar. Click once to change the active block, click twice to open the Block Picker to customize the Hotbar.<br> <br> You can create a new Hotbar by clicking the Hotbar Menu button to the right.                                                                                     |
+
 |
 
 ## Movement
 
 Before we dive into the Tool Mode UI, you might want to take a moment to familiarize yourself with how to look around and move around in the different modes.
 
-- Unlock the camera: In Tool mode, hold down the right mouse button to look around. In Crosshair Mode, you do not need to hold down the right mouse button.  
+- Unlock the camera: In Tool mode, hold down the right mouse button to look around. In Crosshair Mode, you do not need to hold down the right mouse button.
 
 - Moving around: In Tool Mode, hold the right mouse button down while you press `W`, `A`, `S`, `D`, `Space`, and `Shift` keys. You do not need to hold down the right mouse button to use the same keys to move around in Crosshair Mode.
 
