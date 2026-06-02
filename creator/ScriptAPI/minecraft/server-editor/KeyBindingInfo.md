@@ -16,4 +16,6 @@ Additional information about key binding.
     uniqueId: string;
     label?: string;
     tooltip?: string;
+    bindingCategory?: string;
+    bindingPriority?: number;
 };`

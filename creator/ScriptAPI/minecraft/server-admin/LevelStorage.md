@@ -24,6 +24,7 @@ saveHold(): void
 Disables the server writing to the world files and begins creating a snapshot.
   
 Notes:
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*LevelStorageSaveStateChangeError*](LevelStorageSaveStateChangeError.md)
 
@@ -37,6 +38,7 @@ Returns the path and size of every file in the current snapshot if a snapshot is
 **Returns** [*LevelStorageQuerySnapshotFile*](LevelStorageQuerySnapshotFile.md)[]
   
 Notes:
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*LevelStorageSaveStateChangeError*](LevelStorageSaveStateChangeError.md)
 
@@ -48,5 +50,6 @@ saveResume(): void
 Re-enables server writing world state to files and removes snapshot.
   
 Notes:
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*LevelStorageSaveStateChangeError*](LevelStorageSaveStateChangeError.md)

@@ -13,26 +13,21 @@ ms.date: 02/11/2025
 Allows the mob to drink potions based on specified environment conditions.
 
 
-## Drink Potion Behavior Properties
+## Entity Drink Potion Behavior Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| potions | *not set* | Array of [Potions](#potions) items | A list of potions that this entity can drink. Each potion entry has the following parameters: | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  | 
+| potions | [] | Array of objects | A list of potions that this entity can drink. Each potion entry has the following parameters: | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
 | speed_modifier | 0 | Decimal number | The movement speed modifier to apply to the entity while it is drinking a potion. A value of 0 represents no change in speed. | 
 
-### Potions
-A list of potions that this entity can drink. Each potion entry has the following parameters:
+### Control Flags choices
 
-
-#### Potions Properties
-
-**JSON path:** `potions`
-
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| chance | 1 | Decimal number | The percent chance (from 0.0 to 1.0) of this potion being selected when searching for a potion to use. | 
-| filters | *not set* | Minecraft filter | The filters to use when determining if this potion can be selected. | 
-| id | -1 | Integer number | The registry ID of the potion to use | 
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples

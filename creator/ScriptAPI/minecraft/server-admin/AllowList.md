@@ -23,6 +23,7 @@ Notes:
 
 ## Methods
 - [add](#add)
+- [clear](#clear)
 - [contains](#contains)
 - [reloadFile](#reloadfile)
 - [remove](#remove)
@@ -40,8 +41,19 @@ Adds a player to the server's allow list.
   Player or player name that should be added to the allow list.
   
 Notes:
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*AllowListModificationError*](AllowListModificationError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
+
+### **clear**
+`
+clear(): void
+`
+
+Clears the allow list, removing all entries.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
 
 ### **contains**
 `
@@ -69,6 +81,7 @@ reloadFile(): void
 Reloads the server's allow list from disk.
   
 Notes:
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*AllowListFileReloadError*](AllowListFileReloadError.md)
 
@@ -85,5 +98,6 @@ Removes a player from the server's allow list.
   Player or player name that should be removed from the allow list.
   
 Notes:
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*AllowListModificationError*](AllowListModificationError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)

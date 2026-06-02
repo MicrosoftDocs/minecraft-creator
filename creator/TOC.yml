@@ -629,13 +629,21 @@
               href: Documents/BedrockServer/scripting.md
     - name: Reference Documentation
       items:
-        - name: Commands
-          href: Reference/Content/CommandsReference/Examples/Commands/TOC.yml
-        - name: Script APIs
-          href: ScriptAPI/TOC.yml
-        - name: Prior Versions of Script APIs
-          href: PriorScriptAPI/TOC.yml
-        - name: Behavior Pack JSON Files
+      - name: Reference Overview
+        href: Reference/index.yml
+      - name: Commands
+        href: Reference/Content/CommandsReference/Examples/Commands/TOC.yml
+      - name: Script APIs
+        href: ScriptAPI/TOC.yml
+      - name: Prior Versions of Script APIs
+        href: PriorScriptAPI/TOC.yml
+      - name: Behavior Pack JSON Files
+        items:
+        - name: Pack Manifest JSON (Behavior or Resource or Skin)
+          href: Reference/Content/AddonsReference/PackManifest.md
+        - name: Biome JSON
+          href: Reference/Content/BiomesReference/Examples/Components/TOC.yml
+        - name: Block JSON
           items:
             - name: Pack Manifest JSON (Behavior or Resource or Skin)
               href: Reference/Content/AddonsReference/PackManifest.md

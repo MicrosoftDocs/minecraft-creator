@@ -13,11 +13,21 @@ ms.date: 02/11/2025
 Allows an entity to charge and use their held item.
 
 
-## Charge Held Item Behavior Properties
+## Entity Charge Held Item Behavior Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| items | NA | Array of strings | The list of items that can be used to charge the held item. This list is required and must have at least one item in it. | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  | 
+| items | NA | String | The list of items that can be used to charge the held item. This list is required and must have at least one item in it. Value must have at least 1 items. | 
+| items (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples

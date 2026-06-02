@@ -93,17 +93,12 @@ Type: [*GameRules*](GameRules.md)
 
 Type: *boolean*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **primitiveShapesManager**
 `read-only primitiveShapesManager: PrimitiveShapesManager;`
 
 Manager for adding and removing primitive text objects in the world.
 
 Type: [*PrimitiveShapesManager*](PrimitiveShapesManager.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **scoreboard**
 `read-only scoreboard: Scoreboard;`
@@ -151,9 +146,7 @@ Type: [*TickingAreaManager*](TickingAreaManager.md)
 - [getEntity](#getentity)
 - [getLootTableManager](#getloottablemanager)
 - [getMoonPhase](#getmoonphase)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getPackSettings](#getpacksettings)
-::: moniker-end
 - [getPlayers](#getplayers)
 - [getTimeOfDay](#gettimeofday)
 - [playMusic](#playmusic)
@@ -414,7 +407,6 @@ Returns the MoonPhase for the current time.
 
 **Returns** [*MoonPhase*](MoonPhase.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getPackSettings**
 `
 getPackSettings(): Record<string, boolean | number | string>
@@ -423,13 +415,9 @@ getPackSettings(): Record<string, boolean | number | string>
 Returns a map of pack setting name and value pairs.
 
 **Returns** Record<*string*, *boolean* | *number* | *string*>
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can be called in early-execution mode.
-::: moniker-end
 
 ### **getPlayers**
 `

@@ -76,6 +76,8 @@
       href: minecraft/server/BookErrorReason.md
     - name: ButtonState
       href: minecraft/server/ButtonState.md
+    - name: CameraShakeType
+      href: minecraft/server/CameraShakeType.md
     - name: CommandPermissionLevel
       href: minecraft/server/CommandPermissionLevel.md
     - name: CompoundBlockVolumeAction
@@ -270,6 +272,8 @@
       href: minecraft/server/BlockExplodeAfterEventSignal.md
     - name: BlockFluidContainerComponent
       href: minecraft/server/BlockFluidContainerComponent.md
+    - name: BlockInstrumentComponent
+      href: minecraft/server/BlockInstrumentComponent.md
     - name: BlockInventoryComponent
       href: minecraft/server/BlockInventoryComponent.md
     - name: BlockLocationIterator
@@ -308,6 +312,8 @@
       href: minecraft/server/ButtonPushAfterEventSignal.md
     - name: Camera
       href: minecraft/server/Camera.md
+    - name: CarryOverBlockEntityDataFunction
+      href: minecraft/server/CarryOverBlockEntityDataFunction.md
     - name: CatmullRomSpline
       href: minecraft/server/CatmullRomSpline.md
     - name: ChatSendAfterEvent
@@ -594,10 +600,18 @@
       href: minecraft/server/EntityStartSneakingAfterEvent.md
     - name: EntityStartSneakingAfterEventSignal
       href: minecraft/server/EntityStartSneakingAfterEventSignal.md
+    - name: EntityStopSneakingAfterEvent
+      href: minecraft/server/EntityStopSneakingAfterEvent.md
+    - name: EntityStopSneakingAfterEventSignal
+      href: minecraft/server/EntityStopSneakingAfterEventSignal.md
     - name: EntityStrengthComponent
       href: minecraft/server/EntityStrengthComponent.md
     - name: EntityTameableComponent
       href: minecraft/server/EntityTameableComponent.md
+    - name: EntityTamedAfterEvent
+      href: minecraft/server/EntityTamedAfterEvent.md
+    - name: EntityTamedAfterEventSignal
+      href: minecraft/server/EntityTamedAfterEventSignal.md
     - name: EntityTameMountComponent
       href: minecraft/server/EntityTameMountComponent.md
     - name: EntityType
@@ -650,6 +664,8 @@
       href: minecraft/server/IsBabyCondition.md
     - name: ISerializable
       href: minecraft/server/ISerializable.md
+    - name: ItemBlockDynamicPropertiesComponent
+      href: minecraft/server/ItemBlockDynamicPropertiesComponent.md
     - name: ItemBookComponent
       href: minecraft/server/ItemBookComponent.md
     - name: ItemCompleteUseAfterEvent
@@ -986,6 +1002,12 @@
       href: minecraft/server/ShutdownEvent.md
     - name: SmeltItemFunction
       href: minecraft/server/SmeltItemFunction.md
+    - name: SoundCompletedAfterEvent
+      href: minecraft/server/SoundCompletedAfterEvent.md
+    - name: SoundCompletedAfterEventSignal
+      href: minecraft/server/SoundCompletedAfterEventSignal.md
+    - name: SoundDurationInfo
+      href: minecraft/server/SoundDurationInfo.md
     - name: SoundInstance
       href: minecraft/server/SoundInstance.md
     - name: SpecificEnchantFunction
@@ -1066,6 +1088,8 @@
       href: minecraft/server/BlockFilter.md
     - name: BlockHitInformation
       href: minecraft/server/BlockHitInformation.md
+    - name: BlockQueryOptions
+      href: minecraft/server/BlockQueryOptions.md
     - name: BlockRaycastHit
       href: minecraft/server/BlockRaycastHit.md
     - name: BlockRaycastOptions
@@ -1088,6 +1112,8 @@
       href: minecraft/server/CameraSetPosOptions.md
     - name: CameraSetRotOptions
       href: minecraft/server/CameraSetRotOptions.md
+    - name: CameraShakeOptions
+      href: minecraft/server/CameraShakeOptions.md
     - name: CameraTargetOptions
       href: minecraft/server/CameraTargetOptions.md
     - name: CompoundBlockVolumeItem
@@ -1154,6 +1180,8 @@
       href: minecraft/server/EntityRaycastOptions.md
     - name: EntitySneakingChangedEventOptions
       href: minecraft/server/EntitySneakingChangedEventOptions.md
+    - name: EntityTamedEventFilter
+      href: minecraft/server/EntityTamedEventFilter.md
     - name: EntityVisibilityRules
       href: minecraft/server/EntityVisibilityRules.md
     - name: EqualsComparison
@@ -1340,6 +1368,8 @@
       href: minecraft/server-editor/CoreActionBarItemType.md
     - name: CoreBrushShapeType
       href: minecraft/server-editor/CoreBrushShapeType.md
+    - name: CoreInputBindingCategory
+      href: minecraft/server-editor/CoreInputBindingCategory.md
     - name: CoreMenuType
       href: minecraft/server-editor/CoreMenuType.md
     - name: CoreModalDialogType

@@ -6,24 +6,213 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.SoundInstance Class
 description: Contents of the @minecraft/server.SoundInstance class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # SoundInstance Class
 
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+Represents a handle to a sound that has been played. The handle is required to control the sound while it is playing (for example, to call `stop`, `setVolume`, `setPitch`, `fade`, or `seekTo`). Infinitely-looping sounds (started with `loop: -1`) stop automatically when the last `SoundInstance` reference is dropped; retain the handle for as long as the sound should keep playing.
 
-Represents a handle to a sound that has been played.
+## Properties
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **durationInfo**
+`read-only durationInfo?: SoundDurationInfo;`
+
+Gets duration and playback information for this sound.
+
+Type: [*SoundDurationInfo*](SoundDurationInfo.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **id**
+`read-only id: string;`
+
+Unique identifier of this sound instance.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **recipient**
+`read-only recipient?: Player;`
+
+Gets the player this sound was played for.
+
+Type: [*Player*](Player.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **soundEventId**
+`read-only soundEventId: string;`
+
+Gets the identifier of the sound event this instance was started with.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
+- [fade](#fade)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [pause](#pause)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [resume](#resume)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [seekTo](#seekto)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [setPitch](#setpitch)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [setVolume](#setvolume)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [stop](#stop)
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **fade**
+`
+fade(duration: number, targetVolume: number): void
+`
+
+Fades this sound instance from its current volume to the target volume over the specified duration. To fade in from silence, call `setVolume(0.0)` first; to fade out, pass a target volume of `0.0`.
+
+#### **Parameters**
+- **duration**: *number*
+  * Minimum Bound: `0`
+  
+  Duration of the fade in seconds. Must be non-negative.
+- **targetVolume**: *number*
+  * Minimum Bound: `0`
+  
+  Volume to fade to. Must be non-negative.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **pause**
+`
+pause(): void
+`
+
+Pauses this sound.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **resume**
+`
+resume(): void
+`
+
+Resumes this sound after a pause.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **seekTo**
+`
+seekTo(seconds: number): void
+`
+
+Sets the playback position of this sound instance.
+
+#### **Parameters**
+- **seconds**: *number*
+  * Minimum Bound: `0`
+  
+  Position to seek to in seconds. Must be non-negative.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setPitch**
+`
+setPitch(pitch: number): void
+`
+
+Sets the pitch of this sound instance.
+
+#### **Parameters**
+- **pitch**: *number*
+  * Bounds: [`0.009999999776482582`, `10`]
+  
+  Pitch multiplier between 0.01 and 10.0. A value of 1.0 is normal pitch.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setVolume**
+`
+setVolume(volume: number): void
+`
+
+Sets the volume of this sound instance.
+
+#### **Parameters**
+- **volume**: *number*
+  * Bounds: [`0`, `10`]
+  
+  Volume level between 0.0 and 10.0.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
 ### **stop**
 `
 stop(): void
 `
 
-Stops this sound from playing.
+Stops this sound instance from playing.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+::: moniker-end

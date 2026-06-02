@@ -1,127 +1,114 @@
 ### YamlMime:Landing
 
-title: JSON Reference Documentation # < 60 chars
-summary: "Landing page containing all JSON documentation for Minecraft: Bedrock Edition." # < 160 chars
+title: Reference Documentation Overview # < 60 chars
+summary: "Highlights of the reference documentation material for Minecraft: Bedrock Edition." # < 160 chars
 
 metadata:
-  title: JSON Reference Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: "Landing page containing all JSON documentation for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
+  title: Reference Documentation Overview # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Highlights of the reference documentation material for Minecraft: Bedrock Edition." # Required; article description that is displayed in search results. < 160 chars.
   ms.service: minecraft-bedrock-edition
   ms.topic: landing-page # Required
-  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  author: chipotle #Required; your GitHub user alias, with correct capitalization.
   ms.author: mikeam #Required; microsoft alias of author; team alias.
-  ms.date: 08/27/2021 #Required; mm/dd/yyyy format.
+  ms.date: 05/21/2026 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
+  # Cards and links should be based on top customer tasks or top subjects
+  # Start card title with a verb
   # Card (comment to space cards)
-  - title: Vanilla Listings
-    linkLists:
-      - linkListType: overview
-        links:
-           - text: Vanilla Listings Documentation Homepage
-             url: Content/VanillaListingsReference/index.yml
-      - linkListType: reference
-        links:
-           - text: Vanilla Blocks
-             url: Content/VanillaListingsReference/Blocks.md
-           - text: Vanilla Entities
-             url: Content/VanillaListingsReference/Entities.md
-           - text: Vanilla Items
-             url: Content/VanillaListingsReference/Items.md
-  # Card (comment to space cards)
-  - title: Blocks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Blocks JSON Documentation Homepage
-            url: Content/blockreference/index.yml
-          - text: Block States and Permutations
-            url: Content/blockreference/Examples/BlockStatesAndPermutations.md
-      - linkListType: reference
-        links:
-          - text: Block Components List
-            url: Content/blockreference/Examples/BlockComponents/BlockComponentsList.md
-  # Card (comment to space cards)
-  - title: Entities
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Entity JSON Documentation Homepage
-            url: Content/entityreference/index.yml
-          - text: Entity JSON Introduction
-            url: Content/entityreference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md
-          - text: Spawn Rules and Data-Driven Spawning
-            url:  Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
-      - linkListType: reference
-        links:
-          - text: AI Goal Component List
-            url: Content/entityreference/Examples/AIGoalList.md
-          - text: Components List
-            url: Content/entityreference/Examples/ComponentList.md
-          - text: Filters List
-            url: Content/entityreference/Examples/FilterList.md
-          - text: Built-in Events List
-            url: Content/entityreference/Examples/EventList.md
-          - text: Entity Event Actions JSON List
-            url: Content/entityreference/Examples/EventActions.md
-          - text: Trigger List
-            url: Content/entityreference/Examples/TriggerList.md
-          - text: Entity JSON ID List
-            url: Content/entityreference/Examples/ClientEntityDocumentation/IDLists.md
-  # Card (comment to space cards)
-  - title: Items
+  - title: Commands
     linkLists:
       - linkListType: reference
         links:
-          - text: Item Components List
-            url: Content/itemreference/Examples/ItemComponentList.md
-  # Card (optional)
+          - text: Command List
+            url: Content/CommandsReference/Examples/CommandList.md
+          - text: Popular Commands
+            url: ../Documents/CommandsPopularCommands.md
+  - title: Script APIs
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: minecraft/common
+            url: ../ScriptAPI/minecraft/common/minecraft-common.md
+          - text: minecraft/diagnostics
+            url: ../ScriptAPI/minecraft/diagnostics/minecraft-diagnostics.md
+          - text: minecraft/server
+            url: ../ScriptAPI/minecraft/server/minecraft-server.md
+          - text: minecraft/server-graphics
+            url: ../ScriptAPI/minecraft/server-graphics/minecraft-server-graphics.md
+          - text: minecraft/server-ui
+            url: ../ScriptAPI/minecraft/server-ui/minecraft-server-ui.md
   - title: Molang
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: overview
         links:
           - text: Introduction to Molang
-            url: Content/molangreference/Examples/MolangConcepts/MolangIntroduction.md
+            url: ../Documents/molang/introduction.md
+          - text: Practical Molang
+            url: ../Documents/molang/practical-molang.md
           - text: Domain Examples
             url: Content/molangreference/Examples/MolangConcepts/DomainExamples.md
       - linkListType: reference
         links:
+          - text: Molang Syntax Guide
+            url: ../Documents/molang/syntax-guide.md
           - text: Query Functions
             url: Content/molangreference/Examples/MolangConcepts/QueryFunctions.md
           - text: Experimental Query Functions
             url: Content/molangreference/Examples/MolangConcepts/ExperimentalQueryFunctions.md
-  # Card (optional)
-  - title: Recipes
+  - title: Behavior Packs
     linkLists:
       - linkListType: reference
         links:
-          - text: Recipe Definition List
-            url: Content/recipereference/Examples/RecipeDefinitionList.md
-          - text: Furnace Recipe
-            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Furnace.md
-          - text: Shaped Recipe
-            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Shaped.md
-          - text: Shapeless Recipe
-            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md
-          - text: Potion Brewing Recipe
-            url: Content/recipereference/Examples/RecipeDefinitions/minecraftRecipe_PotionBrewing.md
-  # Card (optional)
-  - title: Schemas
+          - text: Biome Components
+            url: Content/BiomesReference/Examples/ComponentList.md
+          - text: Block Components
+            url: Content/BlockReference/Examples/BlockComponents/BlockComponentsList.md
+          - text: Entity Components
+            url: Content/EntityReference/Examples/ComponentList.md
+          - text: AI Goal Components
+            url: Content/entityreference/Examples/AIGoalList.md
+          - text: Entity Filters
+            url: Content/entityreference/Examples/FilterList.md
+          - text: Entity Events
+            url: Content/entityreference/Examples/EventList.md
+          - text: Entity Event Actions
+            url: Content/entityreference/Examples/EventActions.md
+          - text: Entity Trigger
+            url: Content/entityreference/Examples/TriggerList.md
+          - text: Item Components
+            url: Content/itemreference/Examples/ItemComponentList.md
+          - text: Features Components
+            url: Content/FeaturesReference/Examples/FeatureList.md
+  - title: Resource Packs
     linkLists:
       - linkListType: reference
         links:
-          - text: Schema Documentation Homepage
-            url: Content/schemasreference/index.yml
-          - text: Schema List
-            url: Content/schemasreference/schemas/TOC.yml
-  # Card (comment to space cards)
-  - title: Texture Sets
+          - text: blocks.json File
+            url: Content/BlockReference/Examples/BlockJsonFileStructure.md
+          - text: Animations
+            url: ../Documents/Animations/AnimationsOverview.md
+          - text: Animation Controllers
+            url: ../Documents/Animations/AnimationController.md
+          - text: Client Biome Components
+            url: Content/ClientBiomesReference/Examples/ComponentList.md
+          - text: Fog JSON
+            url: Content/FogsReference/fogs.md
+          - text: Particle Components
+            url: Content/ParticlesReference/ParticleComponentList.md
+          - text: Texture Set JSON
+            url: Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md
+  - title: Vanilla Reference
     linkLists:
-      - linkListType: overview
+      - linkListType: reference
         links:
-           - text: Introduction to Texture Sets
-             url: Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md
+          - text: Block Identifiers
+            url: Content/VanillaListingsReference/Blocks.md
+          - text: Entity Identifiers
+            url: Content/VanillaListingsReference/Entities.md
+          - text: Item Identifiers
+            url: Content/VanillaListingsReference/Items.md
+          - text: Entity Damage Sources
+            url: Content/VanillaListingsReference/AddonEntityDamageSources.md

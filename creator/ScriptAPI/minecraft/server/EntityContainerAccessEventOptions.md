@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityContainerAccessEventOptions Interface
 description: Contents of the @minecraft/server.EntityContainerAccessEventOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityContainerAccessEventOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Options used to filter entity container access events.
 

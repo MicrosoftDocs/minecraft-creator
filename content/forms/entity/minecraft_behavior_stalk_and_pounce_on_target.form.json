@@ -100,5 +100,160 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.stalk_and_pounce_on_target",
+    "title": "Entity Stalk And Pounce On Target Behavior",
+    "description": "Allows a mob to stalk a target, then once within range pounce onto a target, on success the target will be attacked dealing damage defined by the attack component. On failure, the mob will risk getting stuck",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "interest_time",
+        "title": "Interest Time",
+        "description": "The amount of time the mob will be interested before pouncing. This happens when the mob is within range of pouncing",
+        "dataType": "float",
+        "defaultValue": 2
+      },
+      {
+        "id": "leap_dist",
+        "title": "Leap Dist",
+        "description": "The distance in blocks the mob jumps in the direction of its target",
+        "dataType": "float",
+        "defaultValue": 0.800000011920929
+      },
+      {
+        "id": "leap_height",
+        "title": "Leap Height",
+        "description": "The height in blocks the mob jumps when leaping at its target",
+        "dataType": "float",
+        "defaultValue": 0.8999999761581421
+      },
+      {
+        "id": "max_stalk_dist",
+        "title": "Max Stalk Dist",
+        "description": "The maximum distance away a target can be before the mob gives up on stalking",
+        "dataType": "float",
+        "defaultValue": 10
+      },
+      {
+        "id": "pounce_max_dist",
+        "title": "Pounce Max Dist",
+        "description": "The maximum distance away from the target in blocks to begin pouncing at the target",
+        "dataType": "float",
+        "defaultValue": 5
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "set_persistent",
+        "title": "Set Persistent",
+        "description": "Allows the actor to be set to persist upon targeting a player",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "stalk_speed",
+        "title": "Stalk Speed",
+        "description": "The movement speed in which you stalk your target",
+        "dataType": "float",
+        "defaultValue": 1.2000000476837158
+      },
+      {
+        "id": "strike_dist",
+        "title": "Strike Dist",
+        "description": "The max distance away from the target when landing from the pounce that will still result in damaging the target",
+        "dataType": "float",
+        "defaultValue": 2
+      },
+      {
+        "id": "stuck_blocks",
+        "description": "Blocks that the mob can get stuck in after a pounce.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "stuck_blocks",
+          "title": "Stuck Blocks",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "stuck_blocks",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "stuck_time",
+        "title": "Stuck Time",
+        "description": "The amount of time the mob will be stuck if they fail and land on a block they can be stuck on",
+        "dataType": "float",
+        "defaultValue": 2
+      }
+    ],
+    "samples": {}
   }
 }

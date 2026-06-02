@@ -247,7 +247,7 @@ Gets all the blocks in a volume that satisfy the filter.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*, [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*UnloadedChunksError*](UnloadedChunksError.md)
 
 ### **getEntities**
 `
@@ -472,7 +472,7 @@ Notes:
 
 ### **playSound**
 `
-playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
+playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): SoundInstance
 `
 
 Plays a sound for all players.
@@ -487,11 +487,13 @@ Plays a sound for all players.
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
   
   Additional options for configuring additional effects for the sound.
+
+**Returns** [*SoundInstance*](SoundInstance.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
 ### **runCommand**
 `

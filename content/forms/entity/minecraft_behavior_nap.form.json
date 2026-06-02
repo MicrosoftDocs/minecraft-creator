@@ -68,5 +68,183 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.nap",
+    "title": "Entity Nap Behavior",
+    "description": "Allows mobs to occassionally stop and take a nap under certain conditions.",
+    "fields": [
+      {
+        "id": "can_nap_filters",
+        "description": "Conditions that need to be met for the entity to nap",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "can_nap_filters",
+          "title": "Can Nap Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "can_nap_filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_max",
+        "title": "Cooldown Max",
+        "description": "Maximum time in seconds the mob has to wait before using the goal again",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "cooldown_min",
+        "title": "Cooldown Min",
+        "description": "Minimum time in seconds the mob has to wait before using the goal again",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "mob_detect_dist",
+        "title": "Mob Detect Dist",
+        "description": "The block distance in x and z that will be checked for mobs that this mob detects",
+        "dataType": "float",
+        "defaultValue": 6
+      },
+      {
+        "id": "mob_detect_height",
+        "title": "Mob Detect Height",
+        "description": "The block distance in y that will be checked for mobs that this mob detects",
+        "dataType": "float",
+        "defaultValue": 6
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "wake_mob_exceptions",
+        "description": "Filters for mobs that will not wake this entity from napping",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "wake_mob_exceptions",
+          "title": "Wake Mob Exceptions",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "wake_mob_exceptions",
+            "dataType": "object"
+          }
+        ]
+      }
+    ],
+    "samples": {}
   }
 }

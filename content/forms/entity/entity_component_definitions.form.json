@@ -2336,8 +2336,9 @@
       {
         "id": "minecraft:behavior.beg",
         "title": "Beg Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows this mob to look at and follow the player that holds food they like.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_beg"
       },
       {
         "id": "minecraft:behavior.break_door",
@@ -2377,8 +2378,9 @@
       {
         "id": "minecraft:behavior.charge_held_item",
         "title": "Charge Held Item Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows an entity to charge and use their held item.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_charge_held_item"
       },
       {
         "id": "minecraft:behavior.circle_around_anchor",
@@ -2502,8 +2504,9 @@
       {
         "id": "minecraft:behavior.drink_potion",
         "title": "Drink Potion Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to drink potions based on specified environment conditions.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_drink_potion"
       },
       {
         "id": "minecraft:behavior.drop_item_for",
@@ -2515,8 +2518,9 @@
       {
         "id": "minecraft:behavior.eat_block",
         "title": "Eat Block Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the entity to consume a block, replace the eaten block with another block, and trigger an event as a result.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_eat_block"
       },
       {
         "id": "minecraft:behavior.eat_carried_item",
@@ -2623,8 +2627,9 @@
       {
         "id": "minecraft:behavior.float_wander",
         "title": "Float Wander Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to float around like the Ghast.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_float_wander"
       },
       {
         "id": "minecraft:behavior.follow_caravan",
@@ -2754,8 +2759,9 @@
       {
         "id": "minecraft:behavior.knockback_roar",
         "title": "Knockback Roar Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to perform a damaging knockback that affects all nearby entities.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_knockback_roar"
       },
       {
         "id": "minecraft:behavior.lay_down",
@@ -2774,8 +2780,9 @@
       {
         "id": "minecraft:behavior.leap_at_target",
         "title": "Leap At Target Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows monsters to jump at and attack their target. Can only be used by hostile mobs.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_leap_at_target"
       },
       {
         "id": "minecraft:behavior.look_at_entity",
@@ -2871,8 +2878,9 @@
       {
         "id": "minecraft:behavior.move_to_block",
         "title": "Move To Block Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows mob to move towards a block.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_move_to_block"
       },
       {
         "id": "minecraft:behavior.move_to_land",
@@ -2947,8 +2955,9 @@
       {
         "id": "minecraft:behavior.nap",
         "title": "Nap Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows mobs to occassionally stop and take a nap under certain conditions.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_nap"
       },
       {
         "id": "minecraft:behavior.nearest_attackable_target",
@@ -3134,8 +3143,9 @@
       {
         "id": "minecraft:behavior.ranged_attack",
         "title": "Ranged Attack Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows an entity to attack by using ranged shots. \"charge_shoot_trigger\" must be greater than 0 to enable charged up burst-shot attacks. Requires minecraft:shooter to define projectile behaviour.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_ranged_attack"
       },
       {
         "id": "minecraft:behavior.receive_love",
@@ -3209,14 +3219,16 @@
       {
         "id": "minecraft:behavior.silverfish_merge_with_stone",
         "title": "Silverfish Merge With Stone Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to go into stone blocks like Silverfish do. Currently it can only be used by Silverfish.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_silverfish_merge_with_stone"
       },
       {
         "id": "minecraft:behavior.silverfish_wake_up_friends",
         "title": "Silverfish Wake Up Friends Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to alert mobs in nearby blocks to come out. Currently it can only be used by Silverfish.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_silverfish_wake_up_friends"
       },
       {
         "id": "minecraft:behavior.skeleton_horse_trap",
@@ -3263,8 +3275,9 @@
       {
         "id": "minecraft:behavior.snacking",
         "title": "Snacking Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to take a load off and snack on food that it found nearby.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_snacking"
       },
       {
         "id": "minecraft:behavior.sneeze",
@@ -3290,38 +3303,44 @@
       {
         "id": "minecraft:behavior.squid_dive",
         "title": "Squid Dive Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the squid to dive down in water. Can only be used by the Squid.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_squid_dive"
       },
       {
         "id": "minecraft:behavior.squid_flee",
         "title": "Squid Flee Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the squid to swim away. Can only be used by the Squid.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_squid_flee"
       },
       {
         "id": "minecraft:behavior.squid_idle",
         "title": "Squid Idle Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the squid to swim in place idly. Can only be used by the Squid.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_squid_idle"
       },
       {
         "id": "minecraft:behavior.squid_move_away_from_ground",
         "title": "Squid Move Away From Ground Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the squid to move away from ground blocks and back to water. Can only be used by the Squid.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_squid_move_away_from_ground"
       },
       {
         "id": "minecraft:behavior.squid_out_of_water",
         "title": "Squid Out Of Water Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the squid to stick to the ground when outside water. Can only be used by the Squid.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_squid_out_of_water"
       },
       {
         "id": "minecraft:behavior.stalk_and_pounce_on_target",
         "title": "Stalk And Pounce On Target Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows a mob to stalk a target, then once within range pounce onto a target, on success the target will be attacked dealing damage defined by the attack component. On failure, the mob will risk getting stuck",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_stalk_and_pounce_on_target"
       },
       {
         "id": "minecraft:behavior.stay_near_noteblock",
@@ -3361,8 +3380,9 @@
       {
         "id": "minecraft:behavior.summon_entity",
         "title": "Summon Entity Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to attack the player by summoning other entities.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_summon_entity"
       },
       {
         "id": "minecraft:behavior.swell",
@@ -4112,18 +4132,6 @@
       {
         "id": "minecraft:memory_behavior.follow_target",
         "title": "Follow Target Minecraft Memory Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
-      },
-      {
-        "id": "minecraft:memory_sensor.find_nearest_entity",
-        "title": "Find Nearest Entity Minecraft Memory Sensor",
-        "description": "Dynamic value",
-        "dataType": "object"
-      },
-      {
-        "id": "minecraft:memory_sensor.find_nearest_entity_from",
-        "title": "Find Nearest Entity From Minecraft Memory Sensor",
         "description": "Dynamic value",
         "dataType": "object"
       },

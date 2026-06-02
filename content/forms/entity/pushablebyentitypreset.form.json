@@ -80,7 +80,7 @@
       {
         "id": "max_kick_speed",
         "title": "Max Kick Speed",
-        "description": "Maximum speed the ball can be kicked at, regardless of how fast the pushing entity is moving. Only used when push_mode is \"ball\".",
+        "description": "Maximum speed the entity can be pushed back at, regardless of how fast the pushing entity is moving. Only used when push_mode is \"ball\".",
         "dataType": "float",
         "defaultValue": 0.5
       },
@@ -94,7 +94,7 @@
       {
         "id": "min_kick_speed",
         "title": "Min Kick Speed",
-        "description": "Minimum speed the ball will be kicked at, regardless of how slowly the pushing entity is moving. Only used when push_mode is \"ball\".",
+        "description": "Minimum speed the the entity will be pushed back at, regardless of how slowly the pushing entity is moving. Only used when push_mode is \"ball\".",
         "dataType": "float",
         "defaultValue": 0
       },
@@ -122,7 +122,7 @@
       {
         "id": "push_mode",
         "title": "PushMode",
-        "description": "Defines the type of push vector calculation applied to the entity:\n- \"none\": The entity cannot be pushed.\n- \"default\": Standard push calculation used by most entities.\n- \"legacy_boat\": Legacy push calculation historically used by boats. Includes dampened forces and sneak-based cancellation.\n- \"legacy_minecart\": Legacy push calculation historically used by minecarts. Includes alignment-based collision handling and velocity averaging.- \"ball\": Push calculation for ball-like entities. The ball is kicked in the direction of the pushing entity's movement, with force based on their movement speed.",
+        "description": "Defines the type of push vector calculation applied to the entity:\n- \"none\": The entity cannot be pushed.\n- \"default\": Standard push calculations used by most entities.\n- \"legacy_boat\": Legacy push calculations historically used by boats. Includes dampened forces and sneak-based cancellation.\n- \"legacy_minecart\": Legacy push calculations historically used by minecarts. Includes alignment-based collision handling and velocity averaging.- \"ball\": Push calculation resulting in a behavior similar to kicking a ball. The entity is propelled in the direction of the pusher’s movement, with force scaled by their speed.",
         "dataType": "string",
         "choices": [
           {
@@ -163,6 +163,13 @@
         "defaultValue": 1
       },
       {
+        "id": "require_collision_overlap",
+        "title": "Require Collision Overlap",
+        "description": "When true, entities will not push each other unless their collision boxes overlap.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
         "id": "strength_multiplier",
         "title": "Strength Multiplier",
         "description": "Multiplier applied to the push strength. Higher values result in stronger pushes.",
@@ -172,7 +179,7 @@
       {
         "id": "vertical_kick_multiplier",
         "title": "Vertical Kick Multiplier",
-        "description": "Multiplier for the upward force applied when the ball is kicked while on the ground. A value of 0 keeps the ball flat. Only used when push_mode is \"ball\".",
+        "description": "Multiplier for the upward force applied when the entity is pushed while on the ground. A value of 0 keeps the entity flat. Only used when push_mode is \"ball\".",
         "dataType": "float",
         "defaultValue": 0.30000001192092896
       }

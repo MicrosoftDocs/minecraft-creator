@@ -20,6 +20,18 @@ Location of the sound; if not specified, the sound is played near a player.
 
 Type: [*Vector3*](Vector3.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **loopCount**
+`loopCount?: number;`
+
+Number of additional times to repeat the sound after the initial play. `0` (the default) plays the sound once, `-1` loops it forever, and a positive integer `N` plays the sound `N + 1` times in total. For example, `loopCount: 1` plays the sound twice. The loop count is fixed when the sound starts and cannot be changed afterward. When using `-1`, see `SoundInstance` for handle lifetime requirements.
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **pitch**
 `pitch?: number;`
 

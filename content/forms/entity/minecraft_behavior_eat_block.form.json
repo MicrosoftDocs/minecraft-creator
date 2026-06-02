@@ -21,7 +21,7 @@
       {
         "id": "eat_and_replace_block_pairs",
         "title": "Eat And Replace Block Pairs",
-        "description": "A collection of pairs of blocks; the first (\"eat_block\")is the block the entity should eat, the second (\"replace_block\") is the block that should replace the eaten block.",
+        "description": "A collection of pairs of blocks; the first (\"eat_block\") is the block the entity should eat, the second (\"replace_block\") is the block that should replace the eaten block.",
         "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [
@@ -107,6 +107,205 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
               "content": 6
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
+          "content": {
+            "priority": 6,
+            "success_chance": "query.is_baby ? 0.02 : 0.001",
+            "time_until_eat": 1.8,
+            "eat_and_replace_block_pairs": [
+              {
+                "eat_block": "grass",
+                "replace_block": "dirt"
+              },
+              {
+                "eat_block": "tallgrass",
+                "replace_block": "air"
+              },
+              {
+                "eat_block": "short_dry_grass",
+                "replace_block": "air"
+              },
+              {
+                "eat_block": "tall_dry_grass",
+                "replace_block": "air"
+              }
+            ],
+            "on_eat": {
+              "event": "minecraft:on_eat_block",
+              "target": "self"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.eat_block",
+    "title": "Entity Eat Block Behavior",
+    "description": "Allows the entity to consume a block, replace the eaten block with another block, and trigger an event as a result.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "eat_and_replace_block_pairs",
+        "title": "Eat And Replace Block Pairs",
+        "description": "A collection of pairs of blocks; the first (\"eat_block\") is the block the entity should eat, the second (\"replace_block\") is the block that should replace the eaten block.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/eatandreplaceblockpair",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sheep.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
+              "content": [
+                {
+                  "eat_block": "grass",
+                  "replace_block": "dirt"
+                },
+                {
+                  "eat_block": "tallgrass",
+                  "replace_block": "air"
+                },
+                {
+                  "eat_block": "short_dry_grass",
+                  "replace_block": "air"
+                },
+                {
+                  "eat_block": "tall_dry_grass",
+                  "replace_block": "air"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_eat",
+        "title": "Eat",
+        "description": "The event to trigger when the block eating animation has completed.",
+        "dataType": "object",
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger",
+        "samples": {
+          "/vanilla/behavior_pack/entities/sheep.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
+              "content": {
+                "event": "minecraft:on_eat_block",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sheep.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "success_chance",
+        "title": "Success Chance",
+        "description": "A molang expression defining the success chance the entity has to consume a block.",
+        "dataType": "keyedStringCollection",
+        "defaultValue": 0.019999999552965164,
+        "alternates": [
+          {
+            "id": "success_chance",
+            "dataType": "keyedObjectCollection",
+            "readOnly": true,
+            "subForm": {
+              "id": "success_chance",
+              "title": "Success Chance",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": "string",
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": "int",
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "success_chance",
+            "dataType": "float"
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/sheep.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
+              "content": "query.is_baby ? 0.02 : 0.001"
+            }
+          ]
+        }
+      },
+      {
+        "id": "time_until_eat",
+        "title": "Time Until Eat",
+        "description": "The amount of time (in seconds) it takes for the block to be eaten upon a successful eat attempt.",
+        "dataType": "float",
+        "defaultValue": 1.7999999523162842,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sheep.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.eat_block/",
+              "content": 1.8
             }
           ]
         }

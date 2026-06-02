@@ -19,7 +19,7 @@ description: Changelog of the `@minecraft/server-ui` module
 - [1.0.0](#100)
 
 ## 2.2.0-beta
-#### Added module peer dependency `@minecraft/server@2.9.0-beta`
+#### Added module peer dependency `@minecraft/server@2.10.0-beta`
 ## 2.1.0
 #### Added *[`CustomForm`](CustomForm.md)*
 #### Added *[`MessageBox`](MessageBox.md)*
