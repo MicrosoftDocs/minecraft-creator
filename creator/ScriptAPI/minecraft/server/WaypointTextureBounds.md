@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.WaypointTextureBounds Interface
 description: Contents of the @minecraft/server.WaypointTextureBounds class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WaypointTextureBounds Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Defines a texture and the distance range in which it should be displayed. Used within a [*@minecraft/server.WaypointTextureSelector*](../../../scriptapi/minecraft/server/WaypointTextureSelector.md) to create distance-based texture switching.
 

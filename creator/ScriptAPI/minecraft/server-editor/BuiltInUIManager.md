@@ -19,6 +19,7 @@ Represents a UI session for a given player
 - [navigateToSamples](#navigatetosamples)
 - [saveAndExit](#saveandexit)
 - [showUpdateInformation](#showupdateinformation)
+- [updateControlHelpPanelVisibility](#updatecontrolhelppanelvisibility)
 - [updateLogPanelVisibility](#updatelogpanelvisibility)
 - [updateUISettingsPanelVisibility](#updateuisettingspanelvisibility)
 
@@ -82,6 +83,18 @@ showUpdateInformation(): void
 `
 
 Shows update information for the current version
+
+**Returns** *void*
+
+### **updateControlHelpPanelVisibility**
+`
+updateControlHelpPanelVisibility(visibility: boolean): void
+`
+
+Updates the visibility of the Control Help panel
+
+#### **Parameters**
+- **visibility**: *boolean*
 
 **Returns** *void*
 

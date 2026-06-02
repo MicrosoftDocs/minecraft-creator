@@ -21,9 +21,10 @@ description: Contents of the @minecraft/server.BlockComponent class.
 - [*BlockPistonComponent*](BlockPistonComponent.md)
 - [*BlockRecordPlayerComponent*](BlockRecordPlayerComponent.md)
 - [*BlockSignComponent*](BlockSignComponent.md)
+- [*BlockDynamicPropertiesComponent*](BlockDynamicPropertiesComponent.md)
+- [*BlockInstrumentComponent*](BlockInstrumentComponent.md)
 - [*BlockPrecipitationInteractionsComponent*](BlockPrecipitationInteractionsComponent.md)
 - [*BlockRedstoneProducerComponent*](BlockRedstoneProducerComponent.md)
-- [*BlockDynamicPropertiesComponent*](BlockDynamicPropertiesComponent.md)
 
 Base type for components associated with blocks.
 

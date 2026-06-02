@@ -12,6 +12,8 @@ description: Contents of the @minecraft/server.ItemComponentTypes enumeration.
 The types of item components that are accessible via function ItemStack.getComponent.
 
 ## Constants
+### **BlockDynamicProperties**
+`BlockDynamicProperties = "minecraft:block_actor_dynamic_properties"`
 ### **Book**
 `Book = "minecraft:book"`
 

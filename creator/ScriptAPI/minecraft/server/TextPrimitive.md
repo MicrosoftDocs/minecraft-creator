@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.TextPrimitive Class
 description: Contents of the @minecraft/server.TextPrimitive class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # TextPrimitive Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*PrimitiveShape*](PrimitiveShape.md)

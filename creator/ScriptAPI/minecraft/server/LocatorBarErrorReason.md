@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.LocatorBarErrorReason Enumeration
 description: Contents of the @minecraft/server.LocatorBarErrorReason enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # LocatorBarErrorReason Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Enum representing the different reasons why a locator bar operation may fail.
 

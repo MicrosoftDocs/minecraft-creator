@@ -67,9 +67,7 @@ Type: *string*
 - [isChunkLoaded](#ischunkloaded)
 - [placeFeature](#placefeature)
 - [placeFeatureRule](#placefeaturerule)
-::: moniker range="=minecraft-bedrock-experimental"
 - [playSound](#playsound)
-::: moniker-end
 - [runCommand](#runcommand)
 - [setBlockPermutation](#setblockpermutation)
 - [setBlockType](#setblocktype)
@@ -85,9 +83,6 @@ Type: *string*
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [stopSound](#stopsound)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-stable"
-- [playSound](#playsound)
 ::: moniker-end
 
 ### **containsBiomes**
@@ -371,27 +366,27 @@ Notes:
 
 ### **getBlocks**
 `
-getBlocks(volume: BlockVolumeBase, filter: BlockFilter, allowUnloadedChunks?: boolean): ListBlockVolume
+getBlocks(volume: BlockVolumeBase, options: BlockQueryOptions, allowUnloadedChunks?: boolean): ListBlockVolume
 `
 
-Gets all the blocks in a volume that satisfy the filter.
+Gets all the blocks in a volume that satisfy the block query options.
 
 #### **Parameters**
 - **volume**: [*BlockVolumeBase*](BlockVolumeBase.md)
   
   Volume of blocks that will be checked.
-- **filter**: [*BlockFilter*](BlockFilter.md)
+- **options**: [*BlockQueryOptions*](BlockQueryOptions.md)
   
-  Block filter that will be checked against each block in the volume.
+  Block query options including filter criteria and optional closest/farthest distance sorting from a location.
 - **allowUnloadedChunks**?: *boolean* = `false`
   
   If set to true will suppress the UnloadedChunksError if some or all of the block volume is outside of the loaded chunks. Will only check the block locations that are within the loaded chunks in the volume.
 
-**Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns the ListBlockVolume that contains all the block locations that satisfied the block filter.
+**Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns the ListBlockVolume that contains all the block locations that satisfied the block query options.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*, [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*UnloadedChunksError*](UnloadedChunksError.md)
 
 ### **getEntities**
 `
@@ -701,7 +696,6 @@ Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playSound**
 `
 playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): SoundInstance
@@ -721,15 +715,11 @@ Plays a sound for all players.
   Additional options for configuring additional effects for the sound.
 
 **Returns** [*SoundInstance*](SoundInstance.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
-::: moniker-end
 
 ### **runCommand**
 `
@@ -1073,29 +1063,4 @@ Stops a sound from playing for all players.
   
 Notes:
 - This function can't be called in restricted-execution mode.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-stable"
-### **playSound**
-`
-playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
-`
-
-Plays a sound for all players.
-
-#### **Parameters**
-- **soundId**: *string*
-  
-  Identifier of the sound.
-- **location**: [*Vector3*](Vector3.md)
-  
-  Location of the sound.
-- **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
-  
-  Additional options for configuring additional effects for the sound.
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 ::: moniker-end

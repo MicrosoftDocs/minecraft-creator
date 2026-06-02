@@ -10,8 +10,29 @@ description: Contents of the @minecraft/server-editor.IGlobalInputManager class.
 # IGlobalInputManager Interface
 
 ## Methods
+- [registerBindingCategory](#registerbindingcategory)
 - [registerKeyBinding](#registerkeybinding)
 - [setMouseIcon](#setmouseicon)
+
+### **registerBindingCategory**
+`
+registerBindingCategory(id: string, label: string, order: number): void
+`
+
+Register a named control category for display in the Control Help panel.
+
+#### **Parameters**
+- **id**: *string*
+  
+  Unique category identifier (use a {@link CoreInputBindingCategory} value or a custom string).
+- **label**: *string*
+  
+  Localized display name shown as the group heading.
+- **order**: *number*
+  
+  Numeric sort order; lower values appear first.
+
+**Returns** *void*
 
 ### **registerKeyBinding**
 `

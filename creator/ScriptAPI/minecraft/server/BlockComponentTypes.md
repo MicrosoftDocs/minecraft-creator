@@ -16,6 +16,8 @@ The types of block components that are accessible via function Block.getComponen
 `DynamicProperties = "minecraft:dynamic_properties"`
 ### **FluidContainer**
 `FluidContainer = "minecraft:fluid_container"`
+### **Instrument**
+`Instrument = "minecraft:instrument_sound"`
 ### **Inventory**
 `Inventory = "minecraft:inventory"`
 

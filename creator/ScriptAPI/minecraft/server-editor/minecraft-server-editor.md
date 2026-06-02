@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.30-beta.32 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.40-beta.20 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -46,6 +46,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.30-
 - [ContinuousActionState](ContinuousActionState.md)
 - [CoreActionBarItemType](CoreActionBarItemType.md)
 - [CoreBrushShapeType](CoreBrushShapeType.md)
+- [CoreInputBindingCategory](CoreInputBindingCategory.md)
 - [CoreMenuType](CoreMenuType.md)
 - [CoreModalDialogType](CoreModalDialogType.md)
 - [CursorControlMode](CursorControlMode.md)

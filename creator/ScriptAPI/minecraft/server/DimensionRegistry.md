@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.DimensionRegistry Class
 description: Contents of the @minecraft/server.DimensionRegistry class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # DimensionRegistry Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Provides the functionality for registering custom dimensions. Custom dimensions can only be registered during the system startup event.
 
