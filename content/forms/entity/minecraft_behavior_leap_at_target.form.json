@@ -107,5 +107,113 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.leap_at_target",
+    "title": "Entity Leap At Target Behavior",
+    "description": "Allows monsters to jump at and attack their target. Can only be used by hostile mobs.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "must_be_on_ground",
+        "title": "Must Be On Ground",
+        "description": "If true, the mob will only jump at its target if its on the ground. Setting it to false will allow it to jump even if its already in the air",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.leap_at_target/",
+              "content": 4
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.leap_at_target/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "set_persistent",
+        "title": "Set Persistent",
+        "description": "Allows the actor to be set to persist upon targeting a player",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "yd",
+        "title": "Yd",
+        "description": "The height in blocks the mob jumps when leaping at its target",
+        "dataType": "float",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.leap_at_target/",
+              "content": 0.4
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.leap_at_target/",
+              "content": 0.4
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.leap_at_target/",
+          "content": {
+            "must_be_on_ground": false,
+            "priority": 4,
+            "yd": 0.4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.leap_at_target/",
+          "content": {
+            "must_be_on_ground": false,
+            "priority": 4,
+            "yd": 0.4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.leap_at_target/",
+          "content": {
+            "must_be_on_ground": false,
+            "priority": 4,
+            "yd": 0.4
+          }
+        }
+      ]
+    }
   }
 }

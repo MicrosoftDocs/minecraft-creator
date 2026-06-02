@@ -18,10 +18,19 @@ Allows the squid to swim in place idly.
 > * Squid (minecraft:squid)
 > 
 
-## Squid Idle Behavior Properties
+## Entity Squid Idle Behavior Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples

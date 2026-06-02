@@ -121,5 +121,232 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.knockback_roar",
+    "title": "Entity Knockback Roar Behavior",
+    "description": "Allows the mob to perform a damaging knockback that affects all nearby entities.",
+    "fields": [
+      {
+        "id": "attack_time",
+        "title": "Attack Time",
+        "description": "The delay after which the knockback occurs (in seconds).",
+        "dataType": "float",
+        "defaultValue": 0.5
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time (in seconds) the mob has to wait before using the goal again.",
+        "dataType": "float",
+        "defaultValue": 0.10000000149011612
+      },
+      {
+        "id": "damage_filters",
+        "description": "The list of conditions another entity must meet to be a valid target to apply damage to.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "damage_filters",
+          "title": "Damage Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "damage_filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "The max duration of the roar (in seconds).",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "knockback_damage",
+        "title": "Knockback Damage",
+        "description": "The damage dealt by the knockback roar.",
+        "dataType": "int",
+        "defaultValue": 6
+      },
+      {
+        "id": "knockback_filters",
+        "description": "The list of conditions another entity must meet to be a valid target to apply knockback to.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "knockback_filters",
+          "title": "Knockback Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "knockback_filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "knockback_height_cap",
+        "title": "Knockback Height Cap",
+        "description": "The maximum height for vertical knockback.",
+        "dataType": "float",
+        "defaultValue": 0.4000000059604645
+      },
+      {
+        "id": "knockback_horizontal_strength",
+        "title": "Knockback Horizontal Strength",
+        "description": "The strength of the horizontal knockback.",
+        "dataType": "int",
+        "defaultValue": 4
+      },
+      {
+        "id": "knockback_range",
+        "title": "Knockback Range",
+        "description": "The radius (in blocks) of the knockback effect.",
+        "dataType": "int",
+        "defaultValue": 4
+      },
+      {
+        "id": "knockback_vertical_strength",
+        "title": "Knockback Vertical Strength",
+        "description": "The strength of the vertical knockback.",
+        "dataType": "int",
+        "defaultValue": 4
+      },
+      {
+        "id": "on_roar_end",
+        "title": "Roar End",
+        "description": "Event that is triggered when the roar ends.",
+        "dataType": "object",
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "samples": {}
   }
 }

@@ -166,7 +166,7 @@
               "dataType": "object",
               "id": "item_display_transforms",
               "title": "Item Display Transforms",
-              "description": "Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: [\"gui\", \"firstperson_righthand\", \"firstperson_lefthand\", \"thirdperson_righthand\", \"thirdperson_lefthand\", \"ground\", \"fixed\", \"head\", \"embedded\"].",
+              "description": "Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: [\"gui\", \"firstperson_righthand\", \"firstperson_lefthand\", \"thirdperson_righthand\", \"thirdperson_lefthand\", \"ground\", \"fixed\", \"head\", \"embedded\", \"shelf\"].",
               "isRequired": false,
               "subForm": {
                 "fields": [
@@ -501,6 +501,46 @@
                     "dataType": "object",
                     "id": "embedded",
                     "title": "Embedded",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": "stringArray",
+                          "id": "translation",
+                          "title": "Translation",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": "stringArray",
+                          "id": "rotation",
+                          "title": "Rotation",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": "stringArray",
+                          "id": "scale",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": "stringArray",
+                          "id": "rotation_pivot",
+                          "title": "Rotation Pivot",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": "stringArray",
+                          "id": "scale_pivot",
+                          "title": "Scale Pivot",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": "object",
+                    "id": "shelf",
+                    "title": "Shelf",
                     "isRequired": false,
                     "subForm": {
                       "fields": [

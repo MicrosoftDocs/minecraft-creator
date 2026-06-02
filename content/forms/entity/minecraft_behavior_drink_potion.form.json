@@ -102,5 +102,54 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.drink_potion",
+    "title": "Entity Drink Potion Behavior",
+    "description": "Allows the mob to drink potions based on specified environment conditions.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "potions",
+        "title": "Potions",
+        "description": "A list of potions that this entity can drink. Each potion entry has the following parameters:",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/drinkpotiongoaldefinition_potiondata"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_modifier",
+        "title": "Speed Modifier",
+        "description": "The movement speed modifier to apply to the entity while it is drinking a potion. A value of 0 represents no change in speed.",
+        "dataType": "float",
+        "defaultValue": 0
+      }
+    ],
+    "samples": {}
   }
 }

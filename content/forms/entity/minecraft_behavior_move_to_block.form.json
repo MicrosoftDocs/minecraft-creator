@@ -112,5 +112,233 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.move_to_block",
+    "title": "Entity Move To Block Behavior",
+    "description": "Allows mob to move towards a block.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot.",
+        "dataType": "float",
+        "defaultValue": 0.5
+      },
+      {
+        "id": "on_reach",
+        "title": "Reach",
+        "description": "Event to run on block reached.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "on_stay_completed",
+        "title": "Stay Completed",
+        "description": "Event to run on completing a stay of stay_duration at the block.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "description": "The height in blocks that the mob will look for the block.",
+        "dataType": "int",
+        "defaultValue": 1
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "The distance in blocks that the mob will look for the block.",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal.",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "start_chance",
+        "title": "Start Chance",
+        "description": "Chance to start the behavior (applied after each random tick_interval).",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "stay_duration",
+        "title": "Stay Duration",
+        "description": "Number of ticks needed to complete a stay at the block.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "target_block_filters",
+        "description": "Conditions that need to be met for a block to be a valid target.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "target_block_filters",
+          "title": "Target Block Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "target_block_filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "target_blocks",
+        "title": "Target Blocks",
+        "description": "Block types to move to.",
+        "dataType": "string",
+        "defaultValue": [],
+        "alternates": [
+          {
+            "id": "target_blocks",
+            "dataType": "keyedStringCollection"
+          }
+        ]
+      },
+      {
+        "id": "target_offset",
+        "title": "Target Offset",
+        "description": "Offset to add to the selected target position.",
+        "dataType": "numberArray",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "alternates": [
+          {
+            "id": "target_offset",
+            "dataType": "object",
+            "subForm": {
+              "id": "target_offset",
+              "title": "Target Offset",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "target_selection_method",
+        "title": "Target Selection Method",
+        "description": "Kind of block to find fitting the specification. Valid values are \"random\" and \"nearest\".",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "nearest",
+            "title": "Nearest"
+          },
+          {
+            "id": "random",
+            "title": "Random"
+          }
+        ],
+        "defaultValue": "nearest"
+      },
+      {
+        "id": "tick_interval",
+        "title": "Tick Interval",
+        "description": "Average interval in ticks to try to run this behavior.",
+        "dataType": "int",
+        "defaultValue": 20
+      }
+    ],
+    "samples": {}
   }
 }

@@ -38,7 +38,7 @@ Defines a geometry document (bones, cubes, and UV mappings) with format_version 
 
 #### item_display_transforms
 
-Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: ["gui", "firstperson_righthand", "firstperson_lefthand", "thirdperson_righthand", "thirdperson_lefthand", "ground", "fixed", "head", "embedded"].
+Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: ["gui", "firstperson_righthand", "firstperson_lefthand", "thirdperson_righthand", "thirdperson_lefthand", "ground", "fixed", "head", "embedded", "shelf"].
 
 
 #### Bones
@@ -217,6 +217,7 @@ If set to "true", the geometry will have a depth of one pixel (in entity space, 
 | ground | *not set* | [Ground](#ground) item |  | 
 | gui | *not set* | [Gui](#gui) item |  | 
 | head | *not set* | [Head](#head) item |  | 
+| shelf | *not set* | [Shelf](#shelf) item |  | 
 | thirdperson_lefthand | *not set* | [Thirdperson Lefthand](#thirdperson-lefthand) item |  | 
 | thirdperson_righthand | *not set* | [Thirdperson Righthand](#thirdperson-righthand) item |  | 
 
@@ -270,6 +271,11 @@ Same structure as [Embedded](#embedded).
 | translation | *not set* | Array of strings |  | 
 
 ##### Head
+
+Same structure as [Embedded](#embedded).
+
+
+##### Shelf
 
 Same structure as [Embedded](#embedded).
 

@@ -18,14 +18,23 @@ Allows monsters to jump at and attack their target. Can only be used by hostile 
 > * [Nearest Attackable Target Behavior (minecraft:behavior.nearest_attackable_target)](./minecraftBehavior_nearest_attackable_target.md)
 > * [Hurt By Target Behavior (minecraft:behavior.hurt_by_target)](./minecraftBehavior_hurt_by_target.md)
 
-## Leap At Target Behavior Properties
+## Entity Leap At Target Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | must_be_on_ground | true | Boolean true/false | If true, the mob will only jump at its target if its on the ground. Setting it to false will allow it to jump even if its already in the air |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cave Spider: `4` | 
+| priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cave Spider: `4` | 
 | set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player |  | 
 | yd | 0 | Decimal number | The height in blocks the mob jumps when leaping at its target | Cave Spider: `0.4` | 
+
+### Control Flags choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| jump | Jump | |
+| look | Look | |
+| move | Move | |
 
 ## Samples
 
