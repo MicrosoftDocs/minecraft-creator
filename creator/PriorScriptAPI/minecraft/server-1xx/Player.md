@@ -301,7 +301,7 @@ Notes:
 
 ### **playSound**
 `
-playSound(soundId: string, soundOptions?: PlayerSoundOptions): void
+playSound(soundId: string, soundOptions?: PlayerSoundOptions): SoundInstance
 `
 
 Plays a sound that only this particular player can hear.
@@ -311,10 +311,13 @@ Plays a sound that only this particular player can hear.
 - **soundOptions**?: [*PlayerSoundOptions*](PlayerSoundOptions.md) = `null`
   
   Additional optional options for the sound.
+
+**Returns** [*SoundInstance*](SoundInstance.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
 
 #### Examples
 

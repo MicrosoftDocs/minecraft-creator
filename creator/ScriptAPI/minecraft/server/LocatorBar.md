@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.LocatorBar Class
 description: Contents of the @minecraft/server.LocatorBar class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # LocatorBar Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages the collection of waypoints displayed on a player's locator bar. Allows adding, removing, and querying waypoints with a maximum capacity limit.
 

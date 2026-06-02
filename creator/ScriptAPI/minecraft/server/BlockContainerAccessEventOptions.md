@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.BlockContainerAccessEventOptions Interface
 description: Contents of the @minecraft/server.BlockContainerAccessEventOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockContainerAccessEventOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Options used to filter block container access events.
 

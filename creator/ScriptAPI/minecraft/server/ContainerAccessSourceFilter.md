@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.ContainerAccessSourceFilter Interface
 description: Contents of the @minecraft/server.ContainerAccessSourceFilter class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ContainerAccessSourceFilter Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Options for use when filtering container access sources.
 

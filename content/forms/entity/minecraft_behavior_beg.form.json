@@ -46,5 +46,70 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.beg",
+    "title": "Entity Beg Behavior",
+    "description": "Allows this mob to look at and follow the player that holds food they like.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "items",
+        "title": "Items",
+        "description": "List of items that this mob likes",
+        "dataType": "string",
+        "defaultValue": [],
+        "alternates": [
+          {
+            "id": "items",
+            "dataType": "keyedStringCollection"
+          }
+        ]
+      },
+      {
+        "id": "look_distance",
+        "title": "Look Distance",
+        "description": "Distance in blocks the mob will beg from",
+        "dataType": "float",
+        "defaultValue": 8
+      },
+      {
+        "id": "look_time",
+        "title": "Look Time",
+        "description": "The range of time in seconds this mob will stare at the player holding a food they like, begging for it",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 4,
+          "min": 2
+        },
+        "subFormId": "item/intrange"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "samples": {}
   }
 }

@@ -1,0 +1,24 @@
+{
+  "id": "EatAndReplaceBlockPair",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "EatAndReplaceBlockPair",
+    "title": "Entity EatAndReplaceBlockPair",
+    "fields": [
+      {
+        "id": "eat_block",
+        "title": "Eat Block",
+        "description": "The block the entity should eat.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "replace_block",
+        "title": "Replace Block",
+        "description": "The block that should replace the eaten block.",
+        "dataType": "string",
+        "defaultValue": ""
+      }
+    ]
+  }
+}

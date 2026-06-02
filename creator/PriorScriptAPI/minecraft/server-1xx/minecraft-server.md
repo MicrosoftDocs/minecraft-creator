@@ -355,6 +355,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ScriptEventCommandMessageAfterEvent](ScriptEventCommandMessageAfterEvent.md)
 - [ScriptEventCommandMessageAfterEventSignal](ScriptEventCommandMessageAfterEventSignal.md)
 - [Seat](Seat.md)
+- [SoundInstance](SoundInstance.md)
 - [Structure](Structure.md)
 - [StructureManager](StructureManager.md)
 - [System](System.md)

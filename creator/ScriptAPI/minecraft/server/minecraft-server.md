@@ -17,13 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.7.0"
+    "version": "2.8.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.30-beta.32 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.40-beta.20 of Minecraft.
 
 ## Available Versions
-- `2.9.0-beta`
+- `2.10.0-beta`
+- `2.8.0`
 - `2.7.0`
 - `2.6.0`
 - `2.5.0`
@@ -65,6 +66,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockVolumeIntersection](BlockVolumeIntersection.md)
 - [BookErrorReason](BookErrorReason.md)
 - [ButtonState](ButtonState.md)
+- [CameraShakeType](CameraShakeType.md)
 - [CommandPermissionLevel](CommandPermissionLevel.md)
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
 - [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
@@ -175,6 +177,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
 - [BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)
 - [BlockFluidContainerComponent](BlockFluidContainerComponent.md)
+- [BlockInstrumentComponent](BlockInstrumentComponent.md)
 - [BlockInventoryComponent](BlockInventoryComponent.md)
 - [BlockLocationIterator](BlockLocationIterator.md)
 - [BlockMapColorComponent](BlockMapColorComponent.md)
@@ -194,6 +197,7 @@ The following API versions are from a major version that is documented here: [*@
 - [ButtonPushAfterEvent](ButtonPushAfterEvent.md)
 - [ButtonPushAfterEventSignal](ButtonPushAfterEventSignal.md)
 - [Camera](Camera.md)
+- [CarryOverBlockEntityDataFunction](CarryOverBlockEntityDataFunction.md)
 - [CatmullRomSpline](CatmullRomSpline.md)
 - [ChatSendAfterEvent](ChatSendAfterEvent.md)
 - [ChatSendAfterEventSignal](ChatSendAfterEventSignal.md)
@@ -337,8 +341,12 @@ The following API versions are from a major version that is documented here: [*@
 - [EntitySpawnAfterEventSignal](EntitySpawnAfterEventSignal.md)
 - [EntityStartSneakingAfterEvent](EntityStartSneakingAfterEvent.md)
 - [EntityStartSneakingAfterEventSignal](EntityStartSneakingAfterEventSignal.md)
+- [EntityStopSneakingAfterEvent](EntityStopSneakingAfterEvent.md)
+- [EntityStopSneakingAfterEventSignal](EntityStopSneakingAfterEventSignal.md)
 - [EntityStrengthComponent](EntityStrengthComponent.md)
 - [EntityTameableComponent](EntityTameableComponent.md)
+- [EntityTamedAfterEvent](EntityTamedAfterEvent.md)
+- [EntityTamedAfterEventSignal](EntityTamedAfterEventSignal.md)
 - [EntityTameMountComponent](EntityTameMountComponent.md)
 - [EntityType](EntityType.md)
 - [EntityTypeFamilyComponent](EntityTypeFamilyComponent.md)
@@ -365,6 +373,7 @@ The following API versions are from a major version that is documented here: [*@
 - [InputInfo](InputInfo.md)
 - [IsBabyCondition](IsBabyCondition.md)
 - [ISerializable](ISerializable.md)
+- [ItemBlockDynamicPropertiesComponent](ItemBlockDynamicPropertiesComponent.md)
 - [ItemBookComponent](ItemBookComponent.md)
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
@@ -533,6 +542,9 @@ The following API versions are from a major version that is documented here: [*@
 - [ShutdownBeforeEventSignal](ShutdownBeforeEventSignal.md)
 - [ShutdownEvent](ShutdownEvent.md)
 - [SmeltItemFunction](SmeltItemFunction.md)
+- [SoundCompletedAfterEvent](SoundCompletedAfterEvent.md)
+- [SoundCompletedAfterEventSignal](SoundCompletedAfterEventSignal.md)
+- [SoundDurationInfo](SoundDurationInfo.md)
 - [SoundInstance](SoundInstance.md)
 - [SpecificEnchantFunction](SpecificEnchantFunction.md)
 - [StartupBeforeEventSignal](StartupBeforeEventSignal.md)
@@ -575,6 +587,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockFillOptions](BlockFillOptions.md)
 - [BlockFilter](BlockFilter.md)
 - [BlockHitInformation](BlockHitInformation.md)
+- [BlockQueryOptions](BlockQueryOptions.md)
 - [BlockRaycastHit](BlockRaycastHit.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
 - [CameraAttachOptions](CameraAttachOptions.md)
@@ -586,6 +599,7 @@ The following API versions are from a major version that is documented here: [*@
 - [CameraSetLocationOptions](CameraSetLocationOptions.md)
 - [CameraSetPosOptions](CameraSetPosOptions.md)
 - [CameraSetRotOptions](CameraSetRotOptions.md)
+- [CameraShakeOptions](CameraShakeOptions.md)
 - [CameraTargetOptions](CameraTargetOptions.md)
 - [CompoundBlockVolumeItem](CompoundBlockVolumeItem.md)
 - [ContainerAccessSource](ContainerAccessSource.md)
@@ -619,6 +633,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityRaycastHit](EntityRaycastHit.md)
 - [EntityRaycastOptions](EntityRaycastOptions.md)
 - [EntitySneakingChangedEventOptions](EntitySneakingChangedEventOptions.md)
+- [EntityTamedEventFilter](EntityTamedEventFilter.md)
 - [EntityVisibilityRules](EntityVisibilityRules.md)
 - [EqualsComparison](EqualsComparison.md)
 - [ExplosionOptions](ExplosionOptions.md)

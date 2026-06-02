@@ -41,6 +41,7 @@ reloadCDNConfig(): void
 Reloads the cdn configuration from disk.
   
 Notes:
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -52,6 +53,7 @@ reloadPermissions(): void
 Reloads the permissions for the server from disk.
   
 Notes:
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -63,6 +65,7 @@ reloadScriptingConfig(): void
 Reloads the script configuration for the server from disk.
   
 Notes:
+- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
@@ -72,3 +75,6 @@ stopServer(): void
 `
 
 Shuts down the dedicated server.
+  
+Notes:
+- This function can't be called in restricted-execution mode.

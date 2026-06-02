@@ -16,9 +16,7 @@ Manager for Structure related APIs. Includes APIs for creating, getting, placing
 - [createFromWorld](#createfromworld)
 - [delete](#delete)
 - [get](#get)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getPackStructureIds](#getpackstructureids)
-::: moniker-end
 - [getWorldStructureIds](#getworldstructureids)
 - [place](#place)
 - [placeJigsaw](#placejigsaw)
@@ -112,7 +110,6 @@ Gets a Structure that is saved to memory or the world.
 Notes:
 - This function can't be called in restricted-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getPackStructureIds**
 `
 getPackStructureIds(): string[]
@@ -121,13 +118,9 @@ getPackStructureIds(): string[]
 Returns a list of all structures contained in behavior packs. Does not include structures saved to the world or in memory.
 
 **Returns** *string*[] - The list of structure identifiers.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
-::: moniker-end
 
 ### **getWorldStructureIds**
 `

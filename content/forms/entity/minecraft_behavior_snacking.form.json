@@ -53,5 +53,72 @@
         "dataType": "int"
       }
     ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.snacking",
+    "title": "Entity Snacking Behavior",
+    "description": "Allows the mob to take a load off and snack on food that it found nearby.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "items",
+        "title": "Items",
+        "description": "Items that we are interested in snacking on",
+        "dataType": "string",
+        "defaultValue": [],
+        "alternates": [
+          {
+            "id": "items",
+            "dataType": "keyedStringCollection"
+          }
+        ]
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "snacking_cooldown",
+        "title": "Snacking Cooldown",
+        "description": "The cooldown time in seconds before the mob is able to snack again",
+        "dataType": "float",
+        "defaultValue": 7.5
+      },
+      {
+        "id": "snacking_cooldown_min",
+        "title": "Snacking Cooldown Min",
+        "description": "The minimum time in seconds before the mob is able to snack again",
+        "dataType": "float",
+        "defaultValue": 0.5
+      },
+      {
+        "id": "snacking_stop_chance",
+        "title": "Snacking Stop Chance",
+        "description": "This is the chance that the mob will stop snacking, from 0 to 1",
+        "dataType": "float",
+        "defaultValue": 0.0016666667070239782
+      }
+    ]
   }
 }

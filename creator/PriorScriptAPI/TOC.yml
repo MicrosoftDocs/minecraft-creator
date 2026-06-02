@@ -600,6 +600,8 @@
       href: minecraft/server-1xx/ScriptEventCommandMessageAfterEventSignal.md
     - name: Seat
       href: minecraft/server-1xx/Seat.md
+    - name: SoundInstance
+      href: minecraft/server-1xx/SoundInstance.md
     - name: Structure
       href: minecraft/server-1xx/Structure.md
     - name: StructureManager

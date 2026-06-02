@@ -1,0 +1,82 @@
+{
+  "id": "DrinkPotionGoalDefinition_PotionData",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "DrinkPotionGoalDefinition_PotionData",
+    "title": "Entity DrinkPotionGoalDefinition PotionData",
+    "fields": [
+      {
+        "id": "chance",
+        "title": "Chance",
+        "description": "The percent chance (from 0.0 to 1.0) of this potion being selected when searching for a potion to use.",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "filters",
+        "description": "The filters to use when determining if this potion can be selected.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "id",
+        "title": "Id",
+        "description": "The registry ID of the potion to use",
+        "dataType": "int",
+        "defaultValue": -1
+      }
+    ]
+  }
+}

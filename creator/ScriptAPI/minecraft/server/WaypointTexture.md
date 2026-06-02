@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.WaypointTexture Enumeration
 description: Contents of the @minecraft/server.WaypointTexture enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WaypointTexture Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Enum representing different texture icons that can be displayed for waypoints on the locator bar.
 

@@ -34,5 +34,53 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.charge_held_item",
+    "title": "Entity Charge Held Item Behavior",
+    "description": "Allows an entity to charge and use their held item.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ]
+      },
+      {
+        "id": "items",
+        "title": "Items",
+        "description": "The list of items that can be used to charge the held item. This list is required and must have at least one item in it.",
+        "dataType": "string",
+        "minLength": 1,
+        "alternates": [
+          {
+            "id": "items",
+            "dataType": "keyedStringCollection"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "samples": {}
   }
 }

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityVisibilityRules Interface
 description: Contents of the @minecraft/server.EntityVisibilityRules class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityVisibilityRules Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Controls when a waypoint is visible based on the state of the entity it tracks. These rules allow filtering waypoint visibility by entity conditions like sneaking, invisibility, and death state.
 

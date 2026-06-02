@@ -10,6 +10,7 @@ description: Contents of the @minecraft/server.LootItemFunction class.
 # LootItemFunction Class
 
 ## Classes that extend LootItemFunction
+- [*CarryOverBlockEntityDataFunction*](CarryOverBlockEntityDataFunction.md)
 - [*EnchantRandomEquipmentFunction*](EnchantRandomEquipmentFunction.md)
 - [*EnchantRandomlyFunction*](EnchantRandomlyFunction.md)
 - [*EnchantWithLevelsFunction*](EnchantWithLevelsFunction.md)
