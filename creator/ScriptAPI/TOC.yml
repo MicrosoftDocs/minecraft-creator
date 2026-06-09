@@ -172,6 +172,8 @@
       href: minecraft/server/PlayerInventoryType.md
     - name: PlayerPermissionLevel
       href: minecraft/server/PlayerPermissionLevel.md
+    - name: PlayerSplitScreenSlot
+      href: minecraft/server/PlayerSplitScreenSlot.md
     - name: PlayerWaypointsMode
       href: minecraft/server/PlayerWaypointsMode.md
     - name: ScoreboardIdentityType
@@ -434,8 +436,6 @@
       href: minecraft/server/EntityFloatsInLiquidComponent.md
     - name: EntityFlyingSpeedComponent
       href: minecraft/server/EntityFlyingSpeedComponent.md
-    - name: EntityFogComponent
-      href: minecraft/server/EntityFogComponent.md
     - name: EntityFrictionModifierComponent
       href: minecraft/server/EntityFrictionModifierComponent.md
     - name: EntityHasMarkVariantCondition
@@ -612,6 +612,10 @@
       href: minecraft/server/EntityTamedAfterEvent.md
     - name: EntityTamedAfterEventSignal
       href: minecraft/server/EntityTamedAfterEventSignal.md
+    - name: EntityTamedBeforeEvent
+      href: minecraft/server/EntityTamedBeforeEvent.md
+    - name: EntityTamedBeforeEventSignal
+      href: minecraft/server/EntityTamedBeforeEventSignal.md
     - name: EntityTameMountComponent
       href: minecraft/server/EntityTameMountComponent.md
     - name: EntityType
@@ -652,6 +656,8 @@
       href: minecraft/server/FillContainerFunction.md
     - name: FluidContainer
       href: minecraft/server/FluidContainer.md
+    - name: FogSettings
+      href: minecraft/server/FogSettings.md
     - name: GameRuleChangeAfterEvent
       href: minecraft/server/GameRuleChangeAfterEvent.md
     - name: GameRuleChangeAfterEventSignal

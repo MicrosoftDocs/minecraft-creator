@@ -4,47 +4,24 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.EntityFogComponent Class
-description: Contents of the @minecraft/server.EntityFogComponent class.
+title: minecraft/server.FogSettings Class
+description: Contents of the @minecraft/server.FogSettings class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# EntityFogComponent Class
+# FogSettings Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-## Extends
-- [*EntityComponent*](EntityComponent.md)
-
 Provides access to the fog definitions stack of a player entity, allowing scripts to push, pop, remove, and query active fog definitions.
 
 ## Methods
-- [applyStack](#applystack)
 - [getStack](#getstack)
 - [getTags](#gettags)
 - [pop](#pop)
 - [push](#push)
 - [remove](#remove)
-
-### **applyStack**
-`
-applyStack(fogIds: string[], tag?: string): void
-`
-
-Sets the player's fog stack to the given list of fog identifiers, replacing any existing entries.
-
-#### **Parameters**
-- **fogIds**: *string*[]
-  
-  A stack of fog definition identifiers to set on the player's fog stack (e.g. ['minecraft:fog_bamboo_jungle']). Maximum of 16 entries.
-- **tag**?: *string* = `null`
-  
-  An optional tag to associate with the new entries, used to target them with pop or remove.
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-  - Throws [*EntityFogComponentError*](EntityFogComponentError.md), [*InvalidEntityError*](InvalidEntityError.md)
+- [setStack](#setstack)
 
 ### **getStack**
 `
@@ -113,7 +90,7 @@ Pushes a new fog definition onto the player's fog stack.
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
-  - Throws [*EntityFogComponentError*](EntityFogComponentError.md), [*InvalidEntityError*](InvalidEntityError.md)
+  - Throws [*FogSettingsError*](FogSettingsError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **remove**
 `
@@ -134,9 +111,22 @@ Notes:
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
-## Constants
+### **setStack**
+`
+setStack(fogIds: string[], tag?: string): void
+`
 
-### **componentId**
-`static read-only componentId = "minecraft:player.fog";`
+Sets the player's fog stack to the given list of fog identifiers, replacing any existing entries.
 
-Type: *string*
+#### **Parameters**
+- **fogIds**: *string*[]
+  
+  A stack of fog definition identifiers to set on the player's fog stack (e.g. ['minecraft:fog_bamboo_jungle']). Maximum of 16 entries.
+- **tag**?: *string* = `null`
+  
+  An optional tag to associate with the new entries, used to target them with pop or remove.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*FogSettingsError*](FogSettingsError.md), [*InvalidEntityError*](InvalidEntityError.md)

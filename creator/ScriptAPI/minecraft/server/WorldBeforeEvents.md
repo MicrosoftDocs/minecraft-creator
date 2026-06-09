@@ -107,6 +107,21 @@ Type: [*EntityRemoveBeforeEventSignal*](EntityRemoveBeforeEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **entityTamed**
+`read-only entityTamed: EntityTamedBeforeEventSignal;`
+
+Fires before an entity is tamed.
+
+Type: [*EntityTamedBeforeEventSignal*](EntityTamedBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **explosion**
 `read-only explosion: ExplosionBeforeEventSignal;`
 

@@ -22,6 +22,12 @@ Base type for BlockVolumes.
 - [getBoundingBox](#getboundingbox)
 ::: moniker-end
 - [getCapacity](#getcapacity)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getClosest](#getclosest)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getFarthest](#getfarthest)
+::: moniker-end
 - [getMax](#getmax)
 - [getMin](#getmin)
 - [getSpan](#getspan)
@@ -62,6 +68,58 @@ getCapacity(): number
 Return the capacity (volume) of the BlockVolume (W*D*H)
 
 **Returns** *number*
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getClosest**
+`
+getClosest(count: number, location: Vector3): Vector3[]
+`
+
+Returns a list of block positions within the volume that are closest to a given location, sorted by distance (nearest first)
+
+#### **Parameters**
+- **count**: *number*
+  
+  Number of closest positions to return
+- **location**: [*Vector3*](Vector3.md)
+  
+  Position to measure distance from
+
+**Returns** [*Vector3*](Vector3.md)[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getFarthest**
+`
+getFarthest(count: number, location: Vector3): Vector3[]
+`
+
+Returns a list of block positions within the volume that are farthest from a given location, sorted by distance (farthest first)
+
+#### **Parameters**
+- **count**: *number*
+  
+  Number of farthest positions to return
+- **location**: [*Vector3*](Vector3.md)
+  
+  Position to measure distance from
+
+**Returns** [*Vector3*](Vector3.md)[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
+::: moniker-end
 
 ### **getMax**
 `

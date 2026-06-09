@@ -101,7 +101,6 @@ type EntityComponentTypeMap = {
   'minecraft:npc': EntityNpcComponent;
   'minecraft:onfire': EntityOnFireComponent;
   'minecraft:player.exhaustion': EntityExhaustionComponent;
-  'minecraft:player.fog': EntityFogComponent;
   'minecraft:player.hunger': EntityHungerComponent;
   'minecraft:player.saturation': EntitySaturationComponent;
   'minecraft:projectile': EntityProjectileComponent;
@@ -136,7 +135,6 @@ type EntityComponentTypeMap = {
   'npc': EntityNpcComponent;
   'onfire': EntityOnFireComponent;
   'player.exhaustion': EntityExhaustionComponent;
-  'player.fog': EntityFogComponent;
   'player.hunger': EntityHungerComponent;
   'player.saturation': EntitySaturationComponent;
   'projectile': EntityProjectileComponent;
