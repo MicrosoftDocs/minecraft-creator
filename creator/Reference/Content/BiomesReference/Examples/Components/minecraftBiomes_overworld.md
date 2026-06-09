@@ -55,12 +55,20 @@ Same structure as [Foundation Material (Foundation Material)](#foundation-materi
 
 ### Sea Material (Sea Material)
 
-Same structure as [Foundation Material (Foundation Material)](#foundation-material-foundation-material).
+#### Sea Material Properties
 
+**JSON path:** `sea_material`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | Object | Name of the block | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. | 
+| states (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
+| states (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
 
 ### Top Material (Top Material)
 
-Same structure as [Foundation Material (Foundation Material)](#foundation-material-foundation-material).
+Same structure as [Sea Material (Sea Material)](#sea-material-sea-material).
 
 
 ### Type choices

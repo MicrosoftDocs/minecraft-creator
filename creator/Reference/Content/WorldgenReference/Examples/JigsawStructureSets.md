@@ -1,127 +1,72 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Jigsaw Structure Sets Documentation 
-description: "A reference document about Jigsaw Structure Sets"
+title: "Jigsaw Structures Documentation - minecraft:structure_set"
+description: "Describes the minecraft:structure_set jigsaw json"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Jigsaw Structure Sets
+# Jigsaw Structures Documentation - minecraft:structure_set
 
-A Structure Set contains a set of Jigsaw Structures and rules for how those structures should be placed in the world relative to other instances of structures from the same set. Each structure within a set is paired with a weight that influences how frequently it is chosen.
-
-## Properties
-
-|Name       |Default Value |Requirement Status |Type |Description |Example Values |
-|:----------|:-------------|:------------------|:----|:-----------|:------------- |
-| [description](#description) | *not set* | Required | JSON Object | Object containing the identifier of the Structure Set. This MUST contain an identifier.  | `"description": { "identifier": "test:trail_ruins_structure_sets" }` |
-| [placement](#placement) | *not set* | Required | JSON Object | Describes where structures in the set spawn relative to one another. | (go to section) |
-| [structures](#structures) | *not set* | Required | JSON Object | A weighted list of Jigsaw Structure identifiers. Structures will be randomly chosen from this set during world generation. | (go to section) |
+Defines a structure set that controls the placement and distribution of structures in the world. A Structure Set contains a set of Jigsaw Structures and rules for how those structures should be placed in the world relative to other instances of structures from the same set. Each structure within a set is paired with a weight that influences how frequently it is chosen.
 
 
-## description
-Object containing the identifier of the Structure Set. This MUST contain an identifier.
+## Structure Set Properties
 
-### Properties
-|Name       |Default Value |Requirement Status |Type |Description |Example Values |
-|:----------|:-------------|:------------------|:----|:-----------|:------------- |
-| identifier | *not set* | Required | String | Identifier of the Structure Set |  `"identifier": "test:trail_ruins_structure_set"` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | String | The format version of this structure set definition. | 
+| minecraft:structure_set | *not set* | [Structure Set](#structure-set) item | The structure set definition. | 
 
-```json
-"description": {
-  "identifier": "test:trail_ruins_structure_sets"
-}
-```
+### Structure Set
 
-## placement
-Object of five properties that determine how structures in the set spawn relative to one another. 
+#### Structure Set Definition Properties
 
-### Properties
-|Name       |Default Value |Requirement Status |Type |Description |Example Values |
-|:----------|:-------------|:------------------|:----|:-----------|:------------- |
-| [type](#type) | `"random_spread"` | Required | String | Type of algorithm that controls how structures in the set are placed relative to one another.  | `"type": "minecraft:random_spread"`  | 
-| [salt](#salt) | *not set* | Required | int32_t | Seed used for the random generator to provide a unique scatter pattern. | `"salt": 83469867`  | 
-| [separation](#separation) | *not set* | Required | uint16_t | Padding (in chunks) within each grid cell. | `"separation": 8`  | 
-| [spacing](#spacing) | *not set* | Required | uint16_t | Grid cell size (in chunks) to use when generating the structure. | `"spacing": 34`  | 
-| [spread_type](#spread_type) | `"linear"` | Required | String | Randomness algorithm used when placing structures. | `"spread_type": "linear"`  | 
+**JSON path:** `minecraft:structure_set`
 
-```json
-"placement": {
-  "type": "minecraft:random_spread",
-  "salt": 83469867,
-  "separation": 8,
-  "spacing": 34,
-  "spread_type": "linear"
-}
-```
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#structure-set-description) item | The description block containing the structure set identifier. | 
+| placement | *not set* | [Placement](#placement) item | Defines how structures in this set are placed in the world. | 
+| structures | *not set* | Array of [Structures](#jigsawstructureset-structure) items | Array of structures in this set with their relative weights. | 
 
-### type
-Type of algorithm that controls how structures in the set are placed relative to one another. 
->[!NOTE]
-> Currently, the only placement type supported is `"random_spread"`, which scatters structures randomly with a given separation and spacing.
+#### Structure Set Description
+Identifies the Structure Set. The identifier set here groups one or more Jigsaw Structures under a shared placement strategy and is referenced when configuring world generation.
 
-### salt
-Seed used for the random generator to provide a unique scatter pattern. 
-This is used to prevent overlap in the case where multiple structure sets use the same placement values.
 
-### separation
-Padding (in chunks) within each grid cell. 
-Structures will not generate within the padded area.  
+##### Structure Set Description Properties
 
-### spacing
-Grid cell size (in chunks) to use when generating the structure. 
-Structures will attempt to generate at a random position within each cell.
+**JSON path:** `minecraft:structure_set > description`
 
-### spread_type
-Randomness algorithm used when placing structures.  
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | Identifier of the Jigsaw Structure Set. | 
 
-#### Properties
-|Name       |Default Value |Requirement Status |Type |Description |Example Values |
-|:----------|:-------------|:------------------|:----|:-----------|:------------- |
-| linear | *not set* | Required | String | Basic randomness: `rand(x)` | `"spread_type": "linear"`  | 
-| triangle | *not set* | Required | String | Average of 2 randoms: `(rand(x) + rand(x)) / 2` | `"spread_type": "triangle"`  | 
+#### Placement
 
- 
-## structures
-A weighted list of Jigsaw Structure identifiers. Structures will be randomly chosen from this set during world generation.
+##### Placement Properties
 
-### Properties
-|Name       |Default Value |Requirement Status |Type |Description |Example Values |
-|:----------|:-------------|:------------------|:----|:-----------|:------------- |
-| [structure](#structure) | *not set* | Required | String | Identifier of the Jigsaw Structure. | `"structure": "test:jigsaw"`  | 
-| [weight](#weight) | *not set* | Required | String | Weight of the Jigsaw Structure in the set. Higher weights are more likely to be selected. | `"weight": 1`  | 
+**JSON path:** `minecraft:structure_set > placement`
 
-```json
-"structures": [
-  {
-    "structure": "test:jigsaw",
-    "weight": 1
-  }
-]
-```
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| salt | *not set* | Integer number | Seed used for the random generator to provide a unique scatter pattern. This is used to prevent overlap when multiple structure sets share the same placement values. | 
+| separation | 8 | Integer number | Padding (in chunks) within each grid cell. Structures will not generate within the padded area. | 
+| spacing | 34 | Integer number | Grid cell size (in chunks) used when generating the structure. Structures will attempt to generate at a random position within each cell. Must be greater than separation. | 
+| spread_type | linear | String | How structures spread within the grid. Valid values: 'linear', 'triangular'. | 
+| type | *not set* | String | The placement algorithm type. Valid values: 'minecraft:random_spread', 'minecraft:concentric_rings'. | 
 
-## Example Structure Set JSON
+#### JigsawStructureSet Structure
+JigsawStructureSet Structure.
 
-```json
-{ 
-  "format_version": "1.21.20", 
-  "minecraft:structure_set": { 
-    "description": { 
-      "identifier": "minecraft:trail_ruins" 
-    }, 
-    "placement": { 
-      "type": "minecraft:random_spread", 
-      "salt": 83469867, 
-      "separation": 8, 
-      "spacing": 34, 
-      "spread_type": "linear" 
-    }, 
-    "structures": [ 
-      { 
-        "structure": "minecraft:trail_ruins", 
-        "weight": 1 
-      } 
-    ] 
-  } 
-} 
-```
+
+##### JigsawStructureSet Structure Properties
+
+**JSON path:** `minecraft:structure_set > structures`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| structure | *not set* | String | Identifier of the Jigsaw Structure. | 
+| weight | *not set* | Integer number | Weight of the Jigsaw Structure in the set. Higher weights are more likely to be selected. | 

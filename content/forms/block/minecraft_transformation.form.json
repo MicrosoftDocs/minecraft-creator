@@ -52,5 +52,216 @@
         "dataType": "point3"
       }
     ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "Transformation",
+    "title": "Block Transformation",
+    "fields": [
+      {
+        "id": "rotation",
+        "title": "Rotation",
+        "description": "The block's rotation in increments of 90 degrees",
+        "dataType": "numberArray",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "alternates": [
+          {
+            "id": "rotation",
+            "dataType": "object",
+            "subForm": {
+              "id": "rotation",
+              "title": "Rotation",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "rotation_pivot",
+        "title": "Rotation Pivot",
+        "description": "The block's rotation pivot",
+        "dataType": "numberArray",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "alternates": [
+          {
+            "id": "rotation_pivot",
+            "dataType": "object",
+            "subForm": {
+              "id": "rotation_pivot",
+              "title": "Rotation Pivot",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "scale",
+        "title": "Scale",
+        "description": "The block's scale",
+        "dataType": "numberArray",
+        "defaultValue": [
+          1,
+          1,
+          1
+        ],
+        "alternates": [
+          {
+            "id": "scale",
+            "dataType": "object",
+            "subForm": {
+              "id": "scale",
+              "title": "Scale",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "scale_pivot",
+        "title": "Scale Pivot",
+        "description": "The block's scale pivot",
+        "dataType": "numberArray",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "alternates": [
+          {
+            "id": "scale_pivot",
+            "dataType": "object",
+            "subForm": {
+              "id": "scale_pivot",
+              "title": "Scale Pivot",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "translation",
+        "title": "Translation",
+        "description": "The block's translation",
+        "dataType": "numberArray",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "alternates": [
+          {
+            "id": "translation",
+            "dataType": "object",
+            "subForm": {
+              "id": "translation",
+              "title": "Translation",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
   }
 }

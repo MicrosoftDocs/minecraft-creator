@@ -54,12 +54,20 @@ Same structure as [Beach Material (Beach Material)](#beach-material-beach-materi
 
 ### Foundation Material (Foundation Material)
 
-Same structure as [Beach Material (Beach Material)](#beach-material-beach-material).
+#### Foundation Material Properties
 
+**JSON path:** `foundation_material`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | Object | Name of the block | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. | 
+| states (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
+| states (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
 
 ### Sea Material (Sea Material)
 
-Same structure as [Beach Material (Beach Material)](#beach-material-beach-material).
+Same structure as [Foundation Material (Foundation Material)](#foundation-material-foundation-material).
 
 
 ### Type choices

@@ -2,7 +2,7 @@
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "TemplatePool",
   "title": "Template Pool",
-  "description": "Defines a template pool containing structure elements that can be connected via jigsaw blocks.",
+  "description": "Defines a template pool containing structure elements that can be connected via jigsaw blocks. Template Pools are groups of related structure templates with assigned weights and processors. During world generation, the Jigsaw Structure's start_pool specifies which Template Pool to use first. A Structure Template is then randomly chosen from the pool and placed as the first structure piece. Jigsaw Blocks within the placed structure may also specify Template Pools from which subsequent structure pieces are placed recursively until the Jigsaw Structure becomes fully generated.",
   "summarizer": {
     "phrases": [
       {
@@ -43,7 +43,7 @@
           {
             "id": "elements",
             "title": "Elements",
-            "description": "Array of pool elements that can be selected when generating structures.",
+            "description": "Array of pool elements that can be selected when generating structures. Each entry pairs an element configuration with a weight controlling the likelihood of selection.",
             "dataType": "objectArray",
             "isRequired": true,
             "subForm": {
@@ -52,7 +52,7 @@
                 {
                   "id": "element",
                   "title": "Element",
-                  "description": "The structure element configuration.",
+                  "description": "The structure element configuration. The fields that apply depend on the element_type. Each variant has its own reference page: [Single](JigsawPoolElementSingle.md), [Legacy Single](JigsawPoolElementLegacySingle.md), [Feature](JigsawPoolElementFeature.md), [List](JigsawPoolElementList.md), [Empty](JigsawPoolElementEmpty.md).",
                   "dataType": "object",
                   "isRequired": true,
                   "subForm": {
@@ -61,20 +61,59 @@
                       {
                         "id": "element_type",
                         "title": "Element Type",
-                        "description": "The type of pool element. Valid values: 'minecraft:single_pool_element', 'minecraft:list_pool_element', 'minecraft:feature_pool_element', 'minecraft:empty_pool_element', 'minecraft:legacy_single_pool_element'.",
+                        "description": "The type of pool element, which determines what other fields are valid on this element.",
                         "dataType": "string",
-                        "isRequired": true
+                        "isRequired": true,
+                        "choices": [
+                          {
+                            "id": "minecraft:single_pool_element",
+                            "title": "Single Pool Element",
+                            "description": "Places a single structure template. Requires 'location'; optionally accepts 'processors' and 'projection'. See [Single Pool Element](JigsawPoolElementSingle.md) for the full field reference."
+                          },
+                          {
+                            "id": "minecraft:legacy_single_pool_element",
+                            "title": "Legacy Single Pool Element",
+                            "description": "Variant of single_pool_element used for legacy-format structure files. Same field set as single_pool_element. See [Legacy Single Pool Element](JigsawPoolElementLegacySingle.md)."
+                          },
+                          {
+                            "id": "minecraft:feature_pool_element",
+                            "title": "Feature Pool Element",
+                            "description": "Places a Feature (from the Features Reference) as part of the Jigsaw Structure. Requires 'feature'. See [Feature Pool Element](JigsawPoolElementFeature.md) for details and examples."
+                          },
+                          {
+                            "id": "minecraft:list_pool_element",
+                            "title": "List Pool Element",
+                            "description": "Composes several pool elements together so they are placed as a group. Requires 'elements'. See [List Pool Element](JigsawPoolElementList.md)."
+                          },
+                          {
+                            "id": "minecraft:empty_pool_element",
+                            "title": "Empty Pool Element",
+                            "description": "Takes no additional fields. When chosen, places nothing in the world. Useful as a weighted 'do nothing' option. See [Empty Pool Element](JigsawPoolElementEmpty.md)."
+                          }
+                        ]
                       },
                       {
                         "id": "location",
                         "title": "Location",
-                        "description": "Path to the structure template file, relative to the structures folder.",
+                        "description": "Path to the structure template file, relative to the behavior pack's structures folder. Used by minecraft:single_pool_element and minecraft:legacy_single_pool_element.",
                         "dataType": "string"
+                      },
+                      {
+                        "id": "feature",
+                        "title": "Feature",
+                        "description": "Identifier of the Feature to place when this element is chosen. Used by minecraft:feature_pool_element. Example: 'minecraft:eyeblossom_feature'.",
+                        "dataType": "string"
+                      },
+                      {
+                        "id": "elements",
+                        "title": "Elements (nested)",
+                        "description": "Nested array of pool element configurations composed together as a single element. Used by minecraft:list_pool_element.",
+                        "dataType": "objectArray"
                       },
                       {
                         "id": "processors",
                         "title": "Processors",
-                        "description": "Identifier of the processor list to apply to this element, or inline processor configuration.",
+                        "description": "Identifier of the processor list to apply to this element, or an inline processor configuration. Applicable to minecraft:single_pool_element and minecraft:legacy_single_pool_element.",
                         "dataType": "string",
                         "alternates": [
                           {
@@ -87,9 +126,21 @@
                       {
                         "id": "projection",
                         "title": "Projection",
-                        "description": "How the element projects onto terrain. Valid values: 'rigid', 'terrain_matching'.",
+                        "description": "How the element projects onto terrain. 'rigid' places without height adjustment; 'terrain_matching' adjusts blocks along the Y axis to match the ground. See the Terrain Matching Tips & FAQ for more guidance.",
                         "dataType": "string",
-                        "defaultValue": "rigid"
+                        "defaultValue": "rigid",
+                        "choices": [
+                          {
+                            "id": "rigid",
+                            "title": "Rigid",
+                            "description": "Structures are placed without any height adjustment."
+                          },
+                          {
+                            "id": "terrain_matching",
+                            "title": "Terrain Matching",
+                            "description": "Structures are placed relative to the terrain height. Structure blocks will adjust along the Y axis to match the ground."
+                          }
+                        ]
                       }
                     ]
                   }
@@ -97,10 +148,12 @@
                 {
                   "id": "weight",
                   "title": "Weight",
-                  "description": "The relative weight for selecting this element. Higher weights are more likely to be chosen.",
+                  "description": "The relative weight for selecting this element. Valid range is 1 to 200 inclusive. Weighted probability is calculated by comparing the individual weight with the total weight of all weights in the pool added together. For example, two elements with weights of 1 and 3 (total 4) will have 25% and 75% chances respectively.",
+                  "note": "A large weight does not mean a large probability. Weights of 10 and 30 yield the same probabilities as 1 and 3, but the smaller numbers are more performant under the hood. Prefer the smallest weights that express the ratio you want.",
                   "dataType": "int",
                   "defaultValue": 1,
-                  "minValue": 1
+                  "minValue": 1,
+                  "maxValue": 200
                 }
               ]
             }

@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "JigsawBlockEntityModifier",
+  "title": "Block Entity Modifier",
+  "description": "Optional modifier applied to the output block's block-entity data when all predicates in a rule match.",
+  "fields": [
+    {
+      "id": "type",
+      "title": "Type",
+      "description": "The kind of block entity modifier.",
+      "dataType": "string",
+      "isRequired": true,
+      "defaultValue": "minecraft:passthrough",
+      "choices": [
+        {
+          "id": "minecraft:passthrough",
+          "title": "Passthrough",
+          "description": "No modification is performed. Default."
+        },
+        {
+          "id": "minecraft:append_loot",
+          "title": "Append Loot",
+          "description": "Sets a loot table on the output block, so the block in the world will be replaced by a block drawn from that loot table. Requires 'loot_table'."
+        },
+        {
+          "id": "minecraft:clear",
+          "title": "Clear",
+          "description": "Clears existing block-entity data on the output block."
+        }
+      ]
+    },
+    {
+      "id": "loot_table",
+      "title": "Loot Table",
+      "description": "Path to the loot table JSON file (used by 'minecraft:append_loot').",
+      "dataType": "string"
+    }
+  ]
+}

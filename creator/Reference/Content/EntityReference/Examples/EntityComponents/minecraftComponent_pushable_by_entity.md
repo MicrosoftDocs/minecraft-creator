@@ -29,22 +29,24 @@ Allows an entity to be pushed by other entities.
 |:----------|:-------------|:----|:-----------|
 | filters (Filters) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filters](#filters) item | Conditions that must be met for this preset to be applied. | 
 | filters (Alternate 1) | *not set* | Object |  | 
-| kick_distance_threshold | 1.2999999523162842 | Decimal number | Maximum horizontal distance at which another entity can kick this entity. Only used when push_mode is "ball". | 
 | kick_speed_scale | 2 | Decimal number | Multiplier applied to the pushing entity's movement speed to determine kick force. Only used when push_mode is "ball". | 
-| max_kick_speed | 0.5 | Decimal number | Maximum speed the ball can be kicked at, regardless of how fast the pushing entity is moving. Only used when push_mode is "ball". | 
-| min_distance | 0.009999999776482582 | Decimal number | Minimum distance between two entities for push forces to be applied. Entities closer than this will not push each other. | 
-| min_kick_speed | 0 | Decimal number | Minimum speed the ball will be kicked at, regardless of how slowly the pushing entity is moving. Only used when push_mode is "ball". | 
+| max_distance | 3.4028234663852886e+38 | Decimal number | Maximum horizontal distance between the center of the pushed entity and the collision of the pushing entity for push forces to be applied. Entities further apart than this will not push each other. | 
+| max_kick_speed | 0.5 | Decimal number | Maximum speed the entity can be pushed back at, regardless of how fast the pushing entity is moving. Only used when push_mode is "ball". | 
+| min_distance | 0.009999999776482582 | Decimal number | Minimum horizontal distance between the centers of the two entities for push forces to be applied. Entities closer than this will not push each other. | 
+| min_kick_speed | 0 | Decimal number | Minimum speed the the entity will be pushed back at, regardless of how slowly the pushing entity is moving. Only used when push_mode is "ball". | 
+| play_sound | false | Boolean true/false | If the "pushed_by_player" sound should be played when the entity is pushed by any other entity (despite the sound name). | 
 | play_sound_cooldown_in_seconds | 0.20000000298023224 | Decimal number | Cooldown in seconds between sounds. A lower number results in more sounds. | 
 | play_sound_impulse_threshold | 0.20000000298023224 | Decimal number | Minimum change of velocity needed to trigger the push sound. A lower value means higher sensitivity. | 
-| push_mode | default | [Push Mode](#push-mode-choices) choices | Defines the type of push vector calculation applied to the entity: - "default": Standard push calculation used by most entities. | 
+| push_mode | default | [Push Mode](#push-mode-choices) choices | Defines the type of push vector calculation applied to the entity: - "none": The entity cannot be pushed. | 
 | push_scale_other | 1 | Decimal number | Scales how much push force this entity applies to the other entity when colliding. A value of 1.0 applies full force, 0.5 applies half. | 
 | push_scale_self | 1 | Decimal number | Scales how much this entity pushes itself away when colliding with another entity. A value of 1.0 applies full force, 0.5 applies half. | 
+| require_collision_overlap | true | Boolean true/false | When true, entities will not push each other unless their collision boxes overlap. | 
 | strength_multiplier | 0.05000000074505806 | Decimal number | Multiplier applied to the push strength. Higher values result in stronger pushes. | 
-| vertical_kick_multiplier | 0.30000001192092896 | Decimal number | Multiplier for the upward force applied when the ball is kicked while on the ground. A value of 0 keeps the ball flat. Only used when push_mode is "ball". | 
+| vertical_kick_multiplier | 0.30000001192092896 | Decimal number | Multiplier for the upward force applied when the entity is pushed while on the ground. A value of 0 keeps the entity flat. Only used when push_mode is "ball". | 
 
 #### push_mode
 
-Defines the type of push vector calculation applied to the entity: - "default": Standard push calculation used by most entities. - "legacy_boat": Legacy push calculation historically used by boats. Includes dampened forces and sneak-based cancellation. - "legacy_minecart": Legacy push calculation historically used by minecarts. Includes alignment-based collision handling and velocity averaging.- "ball": Push calculation for ball-like entities. The ball is kicked in the direction of the pushing entity's movement, with force based on their movement speed.
+Defines the type of push vector calculation applied to the entity: - "none": The entity cannot be pushed. - "default": Standard push calculations used by most entities. - "legacy_boat": Legacy push calculations historically used by boats. Includes dampened forces and sneak-based cancellation. - "legacy_minecart": Legacy push calculations historically used by minecarts. Includes alignment-based collision handling and velocity averaging.- "ball": Push calculation resulting in a behavior similar to kicking a ball. The entity is propelled in the direction of the pusher’s movement, with force scaled by their speed.
 
 
 #### Filters
@@ -69,6 +71,7 @@ Defines the type of push vector calculation applied to the entity: - "default": 
 | default | Default | |
 | legacy_boat | Legacy boat | |
 | legacy_minecart | Legacy minecart | |
+| none | None | |
 
 ## Samples
 

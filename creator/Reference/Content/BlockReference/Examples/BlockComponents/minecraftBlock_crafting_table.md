@@ -10,15 +10,15 @@ ms.date: 02/11/2025
 
 # Block Components Documentation - minecraft:crafting_table
 
-Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. This component supports only "recipe_shaped" and "recipe_shapeless" typed recipes and not others like "recipe_furnace" or "recipe_brewing_mix". If there are two recipes for one item, the recipe book will pick the first that was parsed. If two input recipes are the same, crafting may assert and the resulting item may vary.
+Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes.
 
 
-## Crafting Table Properties
+## Block Crafting Table Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| crafting_tags | *not set* | Array of strings | Defines the tags recipes should define to be crafted on this table. Limited to 64 tags. Each tag is limited to 64 characters. | 
-| table_name | *not set* | Localizable String | Specifies the language file key that maps to what text will be displayed in the UI of this table. | 
+| crafting_tags | *not set* | Array of strings | Defines the tags recipes should define to be crafted on this table. Limited to 64 tags. Each tag is limited to 64 characters. Value must have at most 64 items. | 
+| table_name |  | String | Specifies the language file key that maps to what text will be displayed in the UI of this table. | 
 
 ### table_name
 

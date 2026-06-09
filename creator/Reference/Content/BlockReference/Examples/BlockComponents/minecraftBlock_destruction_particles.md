@@ -16,13 +16,13 @@ ms.date: 02/11/2025
 > This item requires a format version of at least 1.21.80.
 
 
-## Destruction Particles Properties
+## Block Destruction Particles Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| particle_count | *not set* | Integer number | Optional, number of particles to spawn of destruction. Default is 100, maximum is 255 inclusively | 
-| texture | *not set* | String | The texture name used for the particle. | 
-| tint_method | *not set* | [Tint Method](#tint-method-choices) choices | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. | 
+| particle_count | 100 | Integer number | Sets number of particles to spawn on block destruction. Value must be <= 255. | 
+| texture |  | String | The texture name used for the particle. | 
+| tint_method | none | [Tint Method](#tint-method-choices) choices | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. | 
 
 ### Tint Method choices
 

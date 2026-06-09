@@ -53,7 +53,7 @@ Any components that this Biome uses.
 | minecraft:overworld_height | *not set* | [Overworld Height](#biome-overworld-height) item | Noise parameters used to drive terrain height in the Overworld. | 
 | minecraft:partially_frozen | *not set* | Object | Component will impact the temperature in a frozen biome, causing some areas to not be frozen. Ex: patchy ice, patchy snow | 
 | minecraft:replace_biomes | *not set* | [Replace Biomes](#biome-replace-biomes) item | Replaces a specified portion of one or more Minecraft biomes. | 
-| minecraft:subsurface_builder | *not set* | [Subsurface Builder](#biome-surface-builder) item | Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. | 
+| minecraft:subsurface_builder | *not set* | [Subsurface Builder](#subsurface-builder) item | Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. | 
 | minecraft:surface_builder | *not set* | [Surface Builder](#biome-surface-builder) item | Controls materials used for terrain generation. | 
 | minecraft:surface_material_adjustments | *not set* | [Surface Material Adjustments](#biome-surface-material-adjustments) item | Specify fine-detail changes to blocks used in terrain generation (based on a noise function). | 
 | minecraft:tags | *not set* | [Tags](#biome-tags) item | Attach arbitrary string tags to this biome. | 
@@ -117,7 +117,7 @@ Probability that creatures will spawn within the biome when a chunk is generated
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| probability | *not set* | Decimal number | Probabiltity between [0.0, 0.75] of creatures spawning within the biome on chunk generation. Value must be <= 0.75. | 
+| probability | *not set* | Decimal number | Probability between [0.0, 0.75] of creatures spawning within the biome on chunk generation. Value must be <= 0.75. | 
 
 ##### Biome Humidity
 Forces a biome to ether always be humid or never humid. Humidity effects the spread chance, and spread rate of fire in the biome.
@@ -334,13 +334,25 @@ Represents the replacement information used to determine the placement of the ov
 Scaling value used to alter the frequency of replacement attempts. A lower frequency will mean a bigger contiguous biome area that occurs less often. A higher frequency will mean smaller contiguous biome areas that occur more often. Must be in the range (0.0, 100.0]. Value must be <= 100. Value must be > 0.
 
 
+##### Subsurface Builder
+Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. Note, however, that pre-existing surface builder types' processing have not been updated to accommodate the ability to specify them for sub-terrain height ranges, which may lead to unexpected results when using them.
+
+
+###### Subsurface Builder Properties
+
+**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| builder | *not set* | Object | Controls block types and strategy used for terrain generation. | 
+
 ##### Biome Surface Builder
 Controls materials used for terrain generation.
 
 
 ###### Biome Surface Builder Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -357,7 +369,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 
 ###### Biome Overworld Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -378,7 +390,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 
 ###### Foundation Material Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder > foundation_material`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder > foundation_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -396,7 +408,7 @@ Same structure as [Foundation Material (Foundation Material)](#foundation-materi
 
 ###### Sea Floor Material Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder > sea_floor_material`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder > sea_floor_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -438,7 +450,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 
 ###### Biome Mesa Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -465,7 +477,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 
 ###### Clay Material Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder > clay_material`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder > clay_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -485,7 +497,7 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 
 ###### Biome Swamp Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -514,7 +526,7 @@ Generates surface on blocks with non-solid blocks above or below.
 
 ###### Biome Capped Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -534,7 +546,7 @@ Generates surface on blocks with non-solid blocks above or below.
 
 ###### Beach Material Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder > beach_material`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder > beach_material`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -552,7 +564,7 @@ Same structure as [Beach Material (Beach Material)](#beach-material-beach-materi
 
 ###### Floor Materials Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder > floor_materials`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder > floor_materials`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -567,7 +579,7 @@ Marks a biome as using End dimension terrain generation. Biomes with this compon
 
 ###### Biome The End Properties
 
-**JSON path:** `minecraft:biome > components > minecraft:subsurface_builder > builder`
+**JSON path:** `minecraft:biome > components > minecraft:surface_builder > builder`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
