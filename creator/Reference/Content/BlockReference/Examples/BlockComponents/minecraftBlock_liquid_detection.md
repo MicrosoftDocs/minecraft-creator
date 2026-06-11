@@ -11,17 +11,17 @@ ms.date: 02/11/2025
 # Block Components Documentation - minecraft:liquid_detection
 
 The definitions for how a block behaves when detecting liquid. Only one rule definition is allowed per liquid type - if multiple are specified, the first will be used and the rest will be ignored.
-Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60).
 
 > [!Note]
 > This item requires a format version of at least 1.21.60.
 
 
-## Liquid Detection Properties
+## Block Liquid Detection Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | can_contain_liquid | false | Boolean true/false | Whether this block can contain the liquid. For example, if the liquid type is `water`, this means the block can be waterlogged. | 
+| detection_rules | *not set* | Array of [Detection Rules](#block-detection-rule) items |  | 
 | liquid_type | water | String | The type of liquid this detection rule is for. Currently, `water` is the only supported liquid type. If this field is omitted, `water` will be the liquid type by default. | 
 | on_liquid_touches | blocking | Minecraft Event Trigger | How the block reacts to flowing water. | 
 | stops_liquid_flowing_from_direction | *not set* | Array of strings | When a block contains a liquid, controls the directions in which the liquid can't flow out from the block. | 
@@ -39,6 +39,48 @@ When a block contains a liquid, controls the directions in which the liquid can'
 
 Whether this block uses the encompassing collider to visually clip the liquid. The encompassing collider is the smallest single AABB that contains all of the block's colliders. A liquid's base visual shape is ALWAYS a quad, they do not have more subdivisions. When use_liquid_clipping is TRUE, the game will attempt to reduce the visible volume of water if the collision shape allows it. Eg. a wall will turn the water base shape into a rectangle on the side of the incoming water. When use_liquid_clipping is FALSE, the game will preserve the water base shape as a full square, no matter what the collision shape of the block they share space with is.
 
+
+### Block Detection Rule
+
+#### Block Detection Rule Properties
+
+**JSON path:** `detection_rules`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| can_contain_liquid | false | Boolean true/false | Whether this block can contain the liquid. For example, if the liquid type is `water`, this means the block can be waterlogged. | 
+| liquid_type | water | [Liquid Type](#liquid-type-choices) choices | The type of liquid this detection rule is for. Currently, `water` is the only supported liquid type. If this field is omitted, `water` will be the liquid type by default. | 
+| on_liquid_touches | blocking | [Liquid Touches](#liquid-touches-choices) choices | How the block reacts to flowing water. | 
+| stops_liquid_flowing_from_direction | [] | Object | When a block contains a liquid, controls the directions in which the liquid can't flow out from the block. | 
+| use_liquid_clipping | false | Boolean true/false | Whether this block uses the encompassing collider to visually clip the liquid. | 
+
+#### on_liquid_touches
+
+How the block reacts to flowing water. Must be one of the following options: "blocking" - The default value for this field. The block stops the liquid from flowing. "broken" - The block is destroyed completely. "popped" - The block is destroyed and its item is spawned. "no_reaction" - The block is unaffected; visually, the liquid will flow through the block.
+
+#### stops_liquid_flowing_from_direction
+
+When a block contains a liquid, controls the directions in which the liquid can't flow out from the block. Also controls the directions in which a block can stop liquid flowing into it if `no_reaction` is set for the `on_liquid_touches` field. Can be a list of the following directions: "up", "down", "north", "south", "east", "west". The default is an empty list; this means that liquid can flow out of all directions by default.
+
+#### use_liquid_clipping
+
+Whether this block uses the encompassing collider to visually clip the liquid. The encompassing collider is the smallest single AABB that contains all of the block's colliders. A liquid's base visual shape is ALWAYS a quad, they do not have more subdivisions. When use_liquid_clipping is TRUE, the game will attempt to reduce the visible volume of water if the collision shape allows it. Eg. a wall will turn the water base shape into a rectangle on the side of the incoming water. When use_liquid_clipping is FALSE, the game will preserve the water base shape as a full square, no matter what the collision shape of the block they share space with is.
+
+
+### Liquid Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| water | Water | |
+
+### Liquid Touches choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| blocking | Blocking | |
+| broken | Broken | |
+| no_reaction | No reaction | |
+| popped | Popped | |
 
 ## Samples
 

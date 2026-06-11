@@ -404,6 +404,8 @@
           href: Documents/animationsandcontrollers.md
         - name: Creating a Goblin Chef Entity
           href: Documents/MakerSeriesMakingTheGoblinChef.md
+        - name: Entity Versioning and Upgrading
+          href: Documents/entity-versioning.md
         - name: Animations and Rendering
           items:
             - name: Animations Overview

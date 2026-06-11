@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "JigsawPositionPredicate",
+  "title": "Position Predicate",
+  "description": "A PositionRule is a predicate (test) applied to the world block's position relative to the structure's world origin.",
+  "fields": [
+    {
+      "id": "predicate_type",
+      "title": "Predicate Type",
+      "description": "The kind of positional predicate.",
+      "dataType": "string",
+      "isRequired": true,
+      "choices": [
+        {
+          "id": "minecraft:always_true",
+          "title": "Always True",
+          "description": "The test is skipped and assumed true."
+        },
+        {
+          "id": "minecraft:axis_aligned_linear_pos",
+          "title": "Axis Aligned Linear Position",
+          "description": "Validates a block based on its linear distance along a chosen axis from the structure's origin. max_chance must be greater than min_chance."
+        }
+      ]
+    },
+    {
+      "id": "axis",
+      "title": "Axis",
+      "description": "Axis along which to measure distance. Used by 'axis_aligned_linear_pos'.",
+      "dataType": "string",
+      "choices": [
+        { "id": "x", "title": "X" },
+        { "id": "y", "title": "Y" },
+        { "id": "z", "title": "Z" }
+      ]
+    },
+    {
+      "id": "min_chance",
+      "title": "Min Chance",
+      "description": "Lower bound of the matching probability. Must be in [0, 1).",
+      "dataType": "float",
+      "defaultValue": 0,
+      "minValue": 0,
+      "maxValue": 1
+    },
+    {
+      "id": "max_chance",
+      "title": "Max Chance",
+      "description": "Upper bound of the matching probability. Must be in [0, 1) and greater than min_chance.",
+      "dataType": "float",
+      "defaultValue": 1,
+      "minValue": 0,
+      "maxValue": 1
+    },
+    {
+      "id": "min_dist",
+      "title": "Min Distance",
+      "description": "Minimum distance from the structure origin along the chosen axis. Must be greater than 0.",
+      "dataType": "int",
+      "defaultValue": 0,
+      "minValue": 0
+    },
+    {
+      "id": "max_dist",
+      "title": "Max Distance",
+      "description": "Maximum distance from the structure origin along the chosen axis. Must be greater than 0.",
+      "dataType": "int",
+      "defaultValue": 1,
+      "minValue": 1
+    }
+  ]
+}

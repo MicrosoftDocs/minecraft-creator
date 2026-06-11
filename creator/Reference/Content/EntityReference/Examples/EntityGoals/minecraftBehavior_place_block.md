@@ -10,6 +10,14 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:behavior.place_block
 
+## Contents
+
+- [Can Place](#can-place)
+- [Entity ActorDefinitionTrigger](#entity-actordefinitiontrigger)
+- [Placeable Carried Blocks](#placeable-carried-blocks)
+- [Entity PlaceBlockGoalWeightedBlockDescriptor](#entity-placeblockgoalweightedblockdescriptor)
+- [Item IntRange](#item-intrange)
+
 AI goal that makes entities place blocks into the world, like Endermen placing their carried block or snow golems leaving snow trails. Configure which blocks can be placed, where they can be placed, and how often the entity attempts placement. Creates mobs that modify the environment.
 
 
@@ -27,7 +35,7 @@ AI goal that makes entities place blocks into the world, like Endermen placing t
 | placeable_carried_blocks (as String) | *not set* | String |  | 
 | placeable_carried_blocks (as Object) | *not set* | Object |  | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
-| randomly_placeable_blocks | [] | Array of objects | Weighted block descriptors for which blocks should be randomly placed, if empty the entity will try to place its carried block from placeable_carried_blocks. | 
+| randomly_placeable_blocks | [] | Array of [Randomly Placeable Blocks](#entity-placeblockgoalweightedblockdescriptor) items | Weighted block descriptors for which blocks should be randomly placed, if empty the entity will try to place its carried block from placeable_carried_blocks. | 
 | xz_range | {"max":2,"min":-2} | [Xz Range](#item-intrange) item | XZ range from which the entity will try and place blocks in. | 
 | y_range | {"max":3,"min":0} | [y Range](#item-intrange) item | Y range from which the entity will try and place blocks in. | 
 
@@ -115,6 +123,49 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | states (as String) | *not set* | String |  | 
 | states (as Boolean true/false) | *not set* | Boolean true/false |  | 
 | tags |  | String |  | 
+
+### Entity PlaceBlockGoalWeightedBlockDescriptor
+
+#### Entity PlaceBlockGoalWeightedBlockDescriptor Properties
+
+**JSON path:** `randomly_placeable_blocks`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| block (Block) | {"name":"","states":{},"tags":""} | [Block](#block) item | Block descriptor for this entry. | 
+| block (as String) | *not set* | String |  | 
+| block (Alternate 2) | *not set* | Object |  | 
+| filter (Filter) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filter](#filter) item | Filter for if this entry should be randomly selected from. Self, Target, and Block are set. | 
+| filter (Alternate 1) | *not set* | Object |  | 
+| weight | 1 | Integer number | Weight for this entry. | 
+
+#### Block
+
+##### Block Properties
+
+**JSON path:** `randomly_placeable_blocks > block`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name |  | String |  | 
+| states | {} | Integer number |  | 
+| states (as String) | *not set* | String |  | 
+| states (as Boolean true/false) | *not set* | Boolean true/false |  | 
+| tags |  | String |  | 
+
+#### Filter
+
+##### Filter Properties
+
+**JSON path:** `randomly_placeable_blocks > filter`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| domain | *not set* | Object | The domain the test should be performed in. | 
+| operator | *not set* | Object | The comparison to apply with 'value'. | 
+| subject | *not set* | Object | The subject of this filter test. | 
+| test | *not set* | String | The name of the test to apply. | 
+| value | *not set* | Object | The value being compared with the test. | 
 
 ### Item IntRange
 Specifies an integer range between minimum and maximum values for item properties requiring whole numbers. Used for stack count variations, discrete charge levels, or quantity ranges in loot tables. Ensures values stay within valid bounds for countable item properties.

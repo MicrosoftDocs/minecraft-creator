@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "JigsawBlockSpecifier",
+  "title": "Block Specifier",
+  "description": "Specifies a particular block state. Can be a bare block-name string, or a JSON object naming the block and (optionally) its block-state properties.",
+  "fields": [
+    {
+      "id": "name",
+      "title": "Name",
+      "description": "Block identifier (for example 'minecraft:gravel').",
+      "dataType": "string",
+      "isRequired": true
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "Block-state properties as a JSON object. Property values may be boolean, integer, or string.",
+      "dataType": "object"
+    }
+  ]
+}

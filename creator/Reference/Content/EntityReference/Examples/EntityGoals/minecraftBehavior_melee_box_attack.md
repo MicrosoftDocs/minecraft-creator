@@ -19,7 +19,7 @@ Allows an entity to deal damage through a melee attack with reach calculations b
 |:----------|:-------------|:----|:-----------|:------------- |
 | attack_once | false | Boolean true/false | Allows the mob to perform this melee attack behavior only once during its lifetime. |  | 
 | attack_types |  | String | Defines the entity types this entity will attack. |  | 
-| can_spread_on_fire | false | Boolean true/false | Allows the mob, if on fire and empty handed, to ignite its target upon a successful attack. |  | 
+| can_spread_on_fire | false | Boolean true/false | Allows the mob, if on fire and empty handed, to ignite its target upon a successful attack. | Drowned: `true` | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | cooldown_time | 1 | Decimal number | Cooldown time, in seconds, between consecutive attacks. |  | 
 | horizontal_reach | 0.800000011920929 | Decimal number | The attack reach of the mob will be a box with the size of the mobs bounds increased by this value in all horizontal directions. |  | 
@@ -35,7 +35,7 @@ Allows an entity to deal damage through a melee attack with reach calculations b
 | path_outer_boundary | 32 | Decimal number | Distance at which to increase attack path recalculation by "outer_boundary_time_increase". |  | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Blaze: `3`, Bogged: `4`, Dolphin: `2` | 
 | random_stop_interval | 0 | Integer number | Defines a 1-in-N chance for the mob to stop its current attack, where N equals "random_stop_interval". | Cave Spider: `100` | 
-| require_complete_path | false | Boolean true/false | Specifies whether a full navigation path from the mob to the target is required. |  | 
+| require_complete_path | false | Boolean true/false | Specifies whether a full navigation path from the mob to the target is required. | Drowned: `true` | 
 | speed_multiplier | 1 | Decimal number | Multiplier applied to the mob's movement speed when moving toward its target. | Bogged: `1.25` | 
 | track_target | false | Boolean true/false | Allows the mob to track its target even if it lacks a hard-coded sensing component. | Bogged: `true` | 
 | x_max_rotation | 30 | Decimal number | Maximum rotation, in degrees, on the X-axis while the mob is trying to look at its target. |  | 
@@ -148,5 +148,16 @@ At /minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavio
 "minecraft:behavior.melee_box_attack": {
   "priority": 2,
   "track_target": true
+}
+```
+
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+
+```json
+"minecraft:behavior.melee_box_attack": {
+  "can_spread_on_fire": true,
+  "require_complete_path": true,
+  "priority": 3
 }
 ```

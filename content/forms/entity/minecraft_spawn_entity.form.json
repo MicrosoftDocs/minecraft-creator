@@ -446,6 +446,19 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:drowned_rider/minecraft:spawn_entity/",
+              "content": {
+                "max_wait_time": 0,
+                "min_wait_time": 0,
+                "num_to_spawn": 1,
+                "single_use": true,
+                "spawn_entity": "minecraft:zombie_nautilus",
+                "spawn_event": "minecraft:entity_spawned"
+              }
+            }
+          ],
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
               "path": "/minecraft:entity/component_groups/sniffer_pregnant/minecraft:spawn_entity/",
@@ -532,6 +545,21 @@
                 ]
               }
             ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:drowned_rider/minecraft:spawn_entity/",
+          "content": {
+            "entities": {
+              "max_wait_time": 0,
+              "min_wait_time": 0,
+              "num_to_spawn": 1,
+              "single_use": true,
+              "spawn_entity": "minecraft:zombie_nautilus",
+              "spawn_event": "minecraft:entity_spawned"
+            }
           }
         }
       ],

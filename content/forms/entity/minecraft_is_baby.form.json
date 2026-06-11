@@ -38,15 +38,15 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/goat.json": [
+      "/vanilla/behavior_pack/entities/drowned.json": [
         {
-          "path": "/minecraft:entity/component_groups/goat_baby/minecraft:is_baby/",
+          "path": "/minecraft:entity/component_groups/minecraft:baby_drowned/minecraft:is_baby/",
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/llama.json": [
+      "/vanilla/behavior_pack/entities/goat.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:is_baby/",
+          "path": "/minecraft:entity/component_groups/goat_baby/minecraft:is_baby/",
           "content": {}
         }
       ]

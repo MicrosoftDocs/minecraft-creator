@@ -178,9 +178,9 @@
               "content": 5
             }
           ],
-          "/vanilla/behavior_pack/entities/shulker.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
               "content": 3
             }
           ]
@@ -199,9 +199,9 @@
               "content": 3
             }
           ],
-          "/vanilla/behavior_pack/entities/shulker.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
               "content": 1
             }
           ]
@@ -228,6 +228,12 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:behavior.ranged_attack/",
               "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 10
             }
           ],
           "/vanilla/behavior_pack/entities/llama.json": [
@@ -349,7 +355,15 @@
         "title": "Swing",
         "description": "If a swing animation (using variable.attack_time) exists, this causes the actor to swing their arm(s) upon firing the ranged attack.",
         "defaultValue": false,
-        "dataType": "boolean"
+        "dataType": "boolean",
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "target_in_sight_time",
@@ -382,6 +396,12 @@
           "/vanilla/behavior_pack/entities/blaze.json": [
             {
               "path": "/minecraft:entity/component_groups/ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
               "content": 3
             }
           ],
@@ -442,6 +462,18 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+          "content": {
+            "attack_interval_max": 3,
+            "attack_interval_min": 1,
+            "attack_radius": 10,
+            "priority": 3,
+            "swing": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/llama.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
@@ -477,16 +509,6 @@
             "attack_interval": 2.5,
             "attack_radius": 15,
             "priority": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/shulker.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
-          "content": {
-            "attack_interval_max": 3,
-            "attack_interval_min": 1,
-            "attack_radius": 15
           }
         }
       ]
@@ -558,6 +580,12 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:behavior.ranged_attack/",
               "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 10
             }
           ],
           "/vanilla/behavior_pack/entities/llama.json": [
@@ -709,6 +737,12 @@
               "content": 3
             }
           ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 3
+            }
+          ],
           "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
@@ -763,7 +797,15 @@
         "title": "Swing",
         "description": "If a swing animation (using variable.attack_time) exists, this causes the actor to swing their arm(s) upon firing the ranged attack.",
         "dataType": "boolean",
-        "defaultValue": false
+        "defaultValue": false,
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "target_in_sight_time",
@@ -803,9 +845,9 @@
               "content": 5
             }
           ],
-          "/vanilla/behavior_pack/entities/shulker.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
               "content": 3
             }
           ]
@@ -822,9 +864,9 @@
               "content": 3
             }
           ],
-          "/vanilla/behavior_pack/entities/shulker.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
               "content": 1
             }
           ]
@@ -865,6 +907,18 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+          "content": {
+            "attack_interval_max": 3,
+            "attack_interval_min": 1,
+            "attack_radius": 10,
+            "priority": 3,
+            "swing": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/llama.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
@@ -900,16 +954,6 @@
             "attack_interval": 2.5,
             "attack_radius": 15,
             "priority": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/shulker.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
-          "content": {
-            "attack_interval_max": 3,
-            "attack_interval_min": 1,
-            "attack_radius": 15
           }
         }
       ]

@@ -27,6 +27,13 @@ An identifier that can be used to identify a player across sessions.
 
 Type: *string*
 
+### **splitScreenSlot**
+`read-only splitScreenSlot?: minecraftserver.PlayerSplitScreenSlot;`
+
+The split screen slot of the joining player or undefined if the player is not in a split screen session.
+
+Type: [*@minecraft/server.PlayerSplitScreenSlot*](../../../scriptapi/minecraft/server/PlayerSplitScreenSlot.md)
+
 ## Methods
 - [allowJoin](#allowjoin)
 - [disallowJoin](#disallowjoin)

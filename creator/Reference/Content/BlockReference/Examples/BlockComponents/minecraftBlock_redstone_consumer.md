@@ -10,11 +10,10 @@ ms.date: 02/11/2025
 
 # Block Components Documentation - minecraft:redstone_consumer
 
-A component describing how a block can consume and potentially propogate a redstone signal. This component is not available for block permutations.
-Experimental toggles required: Upcoming Creator Features (in format versions before 1.26.0).
+A component describing how a block can consume and potentially propagate a redstone signal. This component is not available for block permutations.
 
 
-## Redstone Consumer Properties
+## Block Redstone Consumer Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -23,7 +22,7 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 
 ### min_power
 
-Optional minimum value for incoming signal strength. If signal strength is greater than or equal to this value then the 'onRedstoneUpdate' event is sent to Scripts. Defaults to 0 meaning event is always emitted.
+Optional minimum value for incoming signal strength. If signal strength is greater than or equal to this value then the 'onRedstoneUpdate' event is sent to Scripts. Defaults to 0 meaning event is always emitted. Value must be <= 15.
 
 
 ## Samples

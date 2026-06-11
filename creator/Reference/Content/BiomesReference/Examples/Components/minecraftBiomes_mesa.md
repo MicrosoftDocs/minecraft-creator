@@ -51,8 +51,16 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 
 ### Foundation Material (Foundation Material)
 
-Same structure as [Clay Material (Clay Material)](#clay-material-clay-material).
+#### Foundation Material Properties
 
+**JSON path:** `foundation_material`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| name | *not set* | Object | Name of the block | 
+| states | {} | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. | 
+| states (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
+| states (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
 
 ### Hard Clay Material (Hard Clay Material)
 
@@ -61,22 +69,22 @@ Same structure as [Clay Material (Clay Material)](#clay-material-clay-material).
 
 ### Mid Material (Mid Material)
 
-Same structure as [Clay Material (Clay Material)](#clay-material-clay-material).
+Same structure as [Foundation Material (Foundation Material)](#foundation-material-foundation-material).
 
 
 ### Sea Floor Material (Sea Floor Material)
 
-Same structure as [Clay Material (Clay Material)](#clay-material-clay-material).
+Same structure as [Foundation Material (Foundation Material)](#foundation-material-foundation-material).
 
 
 ### Sea Material (Sea Material)
 
-Same structure as [Clay Material (Clay Material)](#clay-material-clay-material).
+Same structure as [Foundation Material (Foundation Material)](#foundation-material-foundation-material).
 
 
 ### Top Material (Top Material)
 
-Same structure as [Clay Material (Clay Material)](#clay-material-clay-material).
+Same structure as [Foundation Material (Foundation Material)](#foundation-material-foundation-material).
 
 
 ### Type choices

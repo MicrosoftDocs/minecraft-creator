@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "PoolElementEmpty",
+  "title": "Empty Pool Element",
+  "description": "Pool element that places nothing when chosen. Useful as a weighted 'do nothing' option so that some attempts at jigsaw expansion deliberately leave a connection unresolved (for example, to vary structure size or to open optional branches).",
+  "fields": [
+    {
+      "id": "element_type",
+      "title": "Element Type",
+      "description": "Must be 'minecraft:empty_pool_element' for this element variant.",
+      "dataType": "string",
+      "isRequired": true,
+      "choices": [
+        { "id": "minecraft:empty_pool_element", "title": "Empty Pool Element" }
+      ]
+    }
+  ]
+}

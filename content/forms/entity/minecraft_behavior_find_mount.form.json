@@ -55,6 +55,12 @@
         "defaultValue": 0,
         "dataType": "int",
         "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:drowned_jockey/minecraft:behavior.find_mount/",
+              "content": 15
+            }
+          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
@@ -77,6 +83,12 @@
         "defaultValue": 0,
         "dataType": "float",
         "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:drowned_jockey/minecraft:behavior.find_mount/",
+              "content": 16
+            }
+          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
@@ -92,6 +104,12 @@
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
         "dataType": "int",
         "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:drowned_jockey/minecraft:behavior.find_mount/",
+              "content": 1
+            }
+          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
@@ -99,9 +117,33 @@
             }
           ]
         }
+      },
+      {
+        "id": "max_failed_attempts",
+        "title": "Max Failed Attempts",
+        "dataType": "number",
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:drowned_jockey/minecraft:behavior.find_mount/",
+              "content": 20
+            }
+          ]
+        }
       }
     ],
     "samples": {
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:drowned_jockey/minecraft:behavior.find_mount/",
+          "content": {
+            "max_failed_attempts": 20,
+            "priority": 1,
+            "start_delay": 15,
+            "within_radius": 16
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/parrot.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
@@ -162,7 +204,15 @@
         "title": "Max Failed Attempts",
         "description": "Number of attempts to find mount",
         "dataType": "int",
-        "defaultValue": 20
+        "defaultValue": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:drowned_jockey/minecraft:behavior.find_mount/",
+              "content": 20
+            }
+          ]
+        }
       },
       {
         "id": "mount_distance",
@@ -185,6 +235,12 @@
         "dataType": "int",
         "defaultValue": 0,
         "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:drowned_jockey/minecraft:behavior.find_mount/",
+              "content": 1
+            }
+          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
@@ -200,6 +256,12 @@
         "dataType": "int",
         "defaultValue": 0,
         "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:drowned_jockey/minecraft:behavior.find_mount/",
+              "content": 15
+            }
+          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
@@ -222,6 +284,12 @@
         "dataType": "float",
         "defaultValue": 0,
         "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:drowned_jockey/minecraft:behavior.find_mount/",
+              "content": 16
+            }
+          ],
           "/vanilla/behavior_pack/entities/parrot.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",
@@ -232,6 +300,17 @@
       }
     ],
     "samples": {
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:drowned_jockey/minecraft:behavior.find_mount/",
+          "content": {
+            "max_failed_attempts": 20,
+            "priority": 1,
+            "start_delay": 15,
+            "within_radius": 16
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/parrot.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:behavior.find_mount/",

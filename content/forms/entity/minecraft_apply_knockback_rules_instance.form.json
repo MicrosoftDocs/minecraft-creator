@@ -16,7 +16,7 @@
       {
         "id": "extra_knockback_approach",
         "title": "ExtraKnockbackApproach",
-        "description": "Defines the approach for combining extra knockback from enchantments or sprinting:\n- \"reapply_default\": Reapplies knockback again with default knockback parameters, i.e. values not defined by this component.\n- \"multiply_reduced\": Multiplies the extra knockback with the first knockback and a reduction factor, and adds it to the first knockback.",
+        "description": "Defines the approach for combining extra knockback from enchantments or sprinting:\n- \"reapply_default\": Reapplies knockback again with default knockback parameters, i.e. values not defined by this component.\n- \"multiply_reduced\": Multiplies the extra knockback with the base knockback and a reduction factor, and adds it to the base knockback.",
         "dataType": "string",
         "choices": [
           {
@@ -89,13 +89,6 @@
         ]
       },
       {
-        "id": "horizontal_hit_angle_scale",
-        "title": "Horizontal Hit Angle Scale",
-        "description": "Scaling factor to angle the knockback horizontally based on the attacker's aim direction.",
-        "dataType": "float",
-        "defaultValue": 0
-      },
-      {
         "id": "horizontal_power",
         "title": "Horizontal Power",
         "description": "Power with which a target should be knocked backwards.",
@@ -103,17 +96,21 @@
         "defaultValue": 1
       },
       {
-        "id": "scale_previous_velocity",
-        "title": "Scale Previous Velocity",
-        "description": "Scaling factor to apply to the target's velocity before applying knockback.",
-        "dataType": "float",
-        "defaultValue": 0.5,
-        "validity": [
+        "id": "knockback_mode",
+        "title": "KnockbackMode",
+        "description": "Defines how knockback is applied to the target:\n- \"relative_horizontal\": Applies knockback along the horizontal direction from the attacker to the target.\n- \"hit_direction\": Applies knockback based on the hit direction and the point of impact (e.g. hits to the bottom of the entity or from below push it upward, hits on the left side of the entity push it to the right).",
+        "dataType": "string",
+        "choices": [
           {
-            "comparison": "<=",
-            "value": 1
+            "id": "hit_direction",
+            "title": "Hit direction"
+          },
+          {
+            "id": "relative_horizontal",
+            "title": "Relative horizontal"
           }
-        ]
+        ],
+        "defaultValue": "relative_horizontal"
       },
       {
         "id": "scale_with_damage",
@@ -123,24 +120,11 @@
         "defaultValue": false
       },
       {
-        "id": "vertical_hit_angle_scale",
-        "title": "Vertical Hit Angle Scale",
-        "description": "Scaling factor to angle the knockback vertically based on the attacker's aim direction.",
+        "id": "slowdown_scale",
+        "title": "Slowdown Scale",
+        "description": "Scaling factor to apply to the target's velocity before applying knockback.",
         "dataType": "float",
-        "defaultValue": 0,
-        "validity": [
-          {
-            "comparison": "<=",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "id": "vertical_position_angle_scale",
-        "title": "Vertical Position Angle Scale",
-        "description": "Scaling factor to angle the knockback vertically based on the difference in the attacker's feet position to the target's feet position.",
-        "dataType": "float",
-        "defaultValue": 0,
+        "defaultValue": 0.5,
         "validity": [
           {
             "comparison": "<=",

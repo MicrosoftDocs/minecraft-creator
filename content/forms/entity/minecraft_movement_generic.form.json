@@ -26,6 +26,13 @@
         "dataType": "float"
       }
     ],
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.generic/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

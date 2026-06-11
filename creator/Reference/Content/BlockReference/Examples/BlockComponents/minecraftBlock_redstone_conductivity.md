@@ -10,11 +10,10 @@ ms.date: 02/11/2025
 
 # Block Components Documentation - minecraft:redstone_conductivity
 
-The basic redstone properties of a block; if the component is not provided the default values are used. Requires 1.21.30 format version and above.
-Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.30).
+The basic redstone properties of a block. If the component is not provided the default values are used.
 
 
-## Redstone Conductivity Properties
+## Block Redstone Conductivity Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

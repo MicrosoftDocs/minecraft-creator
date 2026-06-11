@@ -20,9 +20,9 @@ If added to a block, indicates that it produces a redstone signal.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| connected_faces | *not set* | [Connected Faces](#connected-faces-choices) choices | The list of faces that are considered connected to the circuit. If a face is not connected, it will not provide power to the block touching that face. By default, all faces are connected. | 
-| power | *not set* | Integer number | The strength of the redstone signal produced by this block. Valid values are from 0 to 15, where 0 means no signal and 15 is the maximum signal strength. | 
-| strongly_powered_face | *not set* | String | The block touching this face will become strongly powered with the signal level strength of 'power'. | 
+| connected_faces | [down, up, north, south, west, east] | [Connected Faces](#connected-faces-choices) choices | The list of faces that are considered connected to the circuit. If a face is not connected, it will not provide power to the block touching that face. By default, all faces are connected. | 
+| power | *not set* | Integer number | The strength of the redstone signal produced by this block. Valid values are from 0 to 15, where 0 means no signal and 15 is the maximum signal strength. Value must be <= 15. | 
+| strongly_powered_face | *not set* | [Strongly Powered Face](#connected-faces-choices) choices | The block touching this face will become strongly powered with the signal level strength of 'power'. | 
 | transform_relative | false | Boolean true/false | If true, the `strongly_powered_face` and `connected_faces` properties will be rotated according to the 'minecraft:transformation' component. | 
 
 ### strongly_powered_face

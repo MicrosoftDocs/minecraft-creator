@@ -17,14 +17,14 @@ Defines the entity's range within which it can see or sense other entities to ta
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| inside_range | 1 | Decimal number | Maximum distance in blocks that another entity will be considered in the 'inside' range | Blaze: `2` | 
+| inside_range | 1 | Decimal number | Maximum distance in blocks that another entity will be considered in the 'inside' range | Blaze: `2`, Drowned: `3` | 
 | must_see | false | Boolean true/false | Whether the other entity needs to be visible to trigger 'inside' events | Blaze: `true` | 
-| on_inside_range | *not set* | Object | Event to call when an entity gets in the inside range. Can be an object with event and target properties, or a simple event string. | Blaze: `{"event":"switch_to_melee","target":"self"}` | 
+| on_inside_range | *not set* | Object | Event to call when an entity gets in the inside range. Can be an object with event and target properties, or a simple event string. | Blaze: `{"event":"switch_to_melee","target":"self"}`, Drowned: `{"event":"minecraft:switch_to_melee","target":"self"}` | 
 | on_inside_range (as String) | *not set* | String |  |  | 
-| on_outside_range | *not set* | Object | Event to call when an entity gets outside the outside range. Can be an object with event and target properties, or a simple event string. | Blaze: `{"event":"switch_to_ranged","target":"self"}` | 
+| on_outside_range | *not set* | Object | Event to call when an entity gets outside the outside range. Can be an object with event and target properties, or a simple event string. | Blaze: `{"event":"switch_to_ranged","target":"self"}`, Drowned: `{"event":"minecraft:switch_to_ranged","target":"self"}` | 
 | on_outside_range (as String) | *not set* | String |  |  | 
 | on_vision_lost_inside_range | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when an entity exits visual range. Can specify 'event' for the name of the event and 'target' for the target of the event |  | 
-| outside_range | 5 | Decimal number | Maximum distance in blocks that another entity will be considered in the 'outside' range | Blaze: `3` | 
+| outside_range | 5 | Decimal number | Maximum distance in blocks that another entity will be considered in the 'outside' range | Blaze: `3`, Drowned: `5` | 
 
 ## Samples
 
@@ -44,5 +44,23 @@ Defines the entity's range within which it can see or sense other entities to ta
     "event": "switch_to_ranged",
     "target": "self"
   }
+}
+```
+
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+
+```json
+"minecraft:target_nearby_sensor": {
+  "inside_range": 3,
+  "on_inside_range": {
+    "event": "minecraft:switch_to_melee",
+    "target": "self"
+  },
+  "on_outside_range": {
+    "event": "minecraft:switch_to_ranged",
+    "target": "self"
+  },
+  "outside_range": 5
 }
 ```

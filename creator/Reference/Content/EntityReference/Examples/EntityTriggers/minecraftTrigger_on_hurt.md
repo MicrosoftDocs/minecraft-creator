@@ -13,13 +13,48 @@ ms.date: 02/11/2025
 Adds a trigger to call when this entity takes damage.
 
 
-## On Hurt Properties
+## Entity On Hurt Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String | The event to run when the conditions for this trigger are met. | Blaze: `"minecraft:on_hurt_event"`, Ender Crystal: `"minecraft:crystal_explode"` | 
-| filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. |  | 
-| target | self | String | The target of the event. | Blaze: `"self"` | 
+| event |  | String | The event to run when the conditions for this trigger are met. | Blaze: `"minecraft:on_hurt_event"`, Ender Crystal: `"minecraft:crystal_explode"` | 
+| filters (Filters) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filters](#filters) item | Filters allow data objects to specify test criteria which allows their use. |  | 
+| filters (Alternate 1) | *not set* | Object |  |  | 
+| target | self | [Target](#target-choices) choices | The target of the event. | Blaze: `"self"` | 
+
+### filters
+
+Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.
+
+
+### Filters
+
+#### Filters Properties
+
+**JSON path:** `filters`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| domain | *not set* | Object | The domain the test should be performed in. | 
+| operator | *not set* | Object | The comparison to apply with 'value'. | 
+| subject | *not set* | Object | The subject of this filter test. | 
+| test | *not set* | String | The name of the test to apply. | 
+| value | *not set* | Object | The value being compared with the test. | 
+
+### Target choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| baby | Baby | |
+| block | Block | |
+| damager | Damager | |
+| holder | Holder | |
+| item | Item | |
+| other | Other | |
+| parent | Parent | |
+| player | Player | |
+| self | Self | |
+| target | Target | |
 
 ## Samples
 

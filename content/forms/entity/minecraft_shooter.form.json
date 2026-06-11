@@ -105,16 +105,6 @@
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
               "content": 26
             }
-          ],
-          "/vanilla/behavior_pack/entities/parched.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
-              "content": 35
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
-              "content": 35
-            }
           ]
         }
       },
@@ -138,6 +128,12 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
               "content": "minecraft:arrow"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:shooter/",
+              "content": "minecraft:thrown_trident"
             }
           ],
           "/vanilla/behavior_pack/entities/ender_dragon.json": [
@@ -189,6 +185,12 @@
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
               "content": "bow"
             }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:shooter/",
+              "content": "item.trident.throw"
+            }
           ]
         }
       }
@@ -220,6 +222,15 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:shooter/",
+          "content": {
+            "def": "minecraft:thrown_trident",
+            "sound": "item.trident.throw"
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/ender_dragon.json": [
         {
           "path": "/minecraft:entity/component_groups/dragon_flying/minecraft:shooter/",
@@ -233,24 +244,6 @@
           "path": "/minecraft:entity/components/minecraft:shooter/",
           "content": {
             "def": "minecraft:llama_spit"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/parched.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:shooter/",
-          "content": {
-            "aux_val": 35,
-            "def": "minecraft:arrow",
-            "sound": "bow"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:shooter/",
-          "content": {
-            "aux_val": 35,
-            "def": "minecraft:arrow",
-            "sound": "bow"
           }
         }
       ]

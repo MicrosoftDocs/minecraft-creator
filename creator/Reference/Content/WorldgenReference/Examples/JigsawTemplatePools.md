@@ -1,113 +1,103 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Jigsaw Template Pool Documentation 
-description: "A reference document about Jigsaw JSON Template Pools"
+title: "Jigsaw Structures Documentation - minecraft:template_pool"
+description: "Describes the minecraft:template_pool jigsaw json"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Jigsaw Template Pool 
+# Jigsaw Structures Documentation - minecraft:template_pool
 
-Template Pools are groups of related structure templates with assigned weights and processors. During world generation, the Jigsaw Structure "Start Pool" specifies which Template Pool to use first. A Structure Template is then randomly chosen from the pool and placed as the first structure piece. Jigsaw Blocks within the placed structure may also specify Template Pools from which subsequent structure pieces are placed recursively until the Jigsaw Structure becomes fully generated. 
+Defines a template pool containing structure elements that can be connected via jigsaw blocks. Template Pools are groups of related structure templates with assigned weights and processors. During world generation, the Jigsaw Structure's start_pool specifies which Template Pool to use first. A Structure Template is then randomly chosen from the pool and placed as the first structure piece. Jigsaw Blocks within the placed structure may also specify Template Pools from which subsequent structure pieces are placed recursively until the Jigsaw Structure becomes fully generated.
 
-## Properties 
 
-| Name| Default Value| Requirement Status| Type| Description| 
-| ----| -------------| ------------------| ----| -----------|
-| [description](#description) | *not set* | Required | JSON Object | Description information of the template pool such as the identifier. |
-| [elements](#elements) | *not set* | Required | Array of JSON Objects | An array of pool elements. |
-| fallback | `minecraft:empty` | Optional | String | Fallback template pool to use if no element in the pool can be placed successfully. |
+## Template Pool Properties
 
-## Description
-| Name| Default Value| Requirement Status| Type| Description|
-| ----| -------------| ------------------| ----| -----------|
-| identifier | *not set* | Required | String | Identifier of the template pool. This is used by both the start_pool property of the Jigsaw Structure JSON and the Jigsaw Block's Target Pool field. |
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| format_version | *not set* | String | The format version of this template pool definition. | 
+| minecraft:template_pool | *not set* | [Template Pool](#template-pool) item | The template pool definition. | 
 
-## Elements
+### Template Pool
 
-An array of pool element objects that each are a grouping of a Structure Template and its weight that determines the likelihood of the element being chosen.
+#### Template Pool Definition Properties
 
-### Properties
+**JSON path:** `minecraft:template_pool`
 
-| Name| Default Value| Requirement Status| Type| Description|
-| ----| -------------| ------------------| ----| -----------|
-| [element](#element) | *not set* | Required | JSON Object | The templated element object. |
-| [weight](#weight) | *not set* | Required | Positive Integer | The weighted probability of choosing the element from the pool. 1 to 200 inclusive. |
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| description | *not set* | [Description](#template-pool-description) item | The description block containing the template pool identifier. | 
+| elements | *not set* | Array of [Elements](#elements) items | Array of pool elements that can be selected when generating structures. Each entry pairs an element configuration with a weight controlling the likelihood of selection. | 
+| fallback | *not set* | String | Optional fallback pool identifier to use when no elements can be placed. | 
 
-## Element
+#### Template Pool Description
+Identifies the template pool. The identifier set here is what other definitions reference: the Jigsaw Structure's start_pool, a Jigsaw Block's target pool, and any pool_aliases targets all match against this value.
 
-A templated pool element object that depending on the element type will contain additional properties.
 
-### Properties
+##### Template Pool Description Properties
 
-| Name| Default Value| Requirement Status| Type| Description|
-| ----| -------------| ------------------| ----| -----------|
-| element_type | *not set* | Required | String | The type of element. Supported types include [minecraft:single_pool_element](#minecraftsingle_pool_element) and [minecraft:empty_pool_element](#minecraftempty_pool_element). |
+**JSON path:** `minecraft:template_pool > description`
 
-## minecraft:single_pool_element
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| identifier | *not set* | String | Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates. | 
 
-### Properties
-| Name| Default Value| Requirement Status| Type| Description|
-| ----| -------------| ------------------| ----| -----------|
-| location | *not set* | Required | String | The path of the structure file. This path is relative to the behavior pack's "structures" folder. |
-| [processors](./JigsawProcessors.md) | *not set* | Optional | String | The identifier of the processor list to use when placing the structure. See [Jigsaw Processor List Documentation](./JigsawProcessors.md)|
-| [projection](#projection) | "minecraft:rigid" | Optional | String | Specifies how structures should be placed relative to the terrain. |
+#### Elements
 
-## minecraft:empty_pool_element
-Will place nothing when it is chosen.
+##### Pool Element Entry Properties
 
-## Projection
-Projection determines if and how the structure will adjust according to the terrain when placed.
-See [Terrain Matching Tips & FAQ](../../../../Documents/Structures/TerrainMatchingTips.md) for more guidance.
+**JSON path:** `minecraft:template_pool > elements`
 
-### Properties
-| Name| Description|
-| ----| -------------|
-| minecraft:rigid | Structures are placed without any height adjustment. |
-| minecraft:terrain_matching | Structures are placed relative to the terrain height. Structure blocks will adjust along the Y axis to match the ground. |
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| element | *not set* | [Element](#element) item | The structure element configuration. | 
+| weight | 1 | Integer number | The relative weight for selecting this element. | 
 
-## Weight
-The weighted probability of choosing the element from the pool. 1 to 200 inclusive. For example, a template pool containing 2 structures with weights of 1 and 3 will have a 25% and 75% chance of being chosen respectively.
->[!Tip]
->A large weight does not mean a large probability. Weighted probability is calculated by comparing the individual weight with the total weight of all the weights added together (denominator).
->
->For example, a template pool containing 2 structures with weights of 1 and 3 (total weight of 4) will have a 25% (1/4) and 75% (3/4) chance of being chosen respectively.
->While weights of 10 and 30 would lead to the same probability, under the hood it would not be as performant.
+##### element
 
-### Example JSON 
+The structure element configuration. The fields that apply depend on the element_type. Each variant has its own reference page: [Single](JigsawPoolElementSingle.md), [Legacy Single](JigsawPoolElementLegacySingle.md), [Feature](JigsawPoolElementFeature.md), [List](JigsawPoolElementList.md), [Empty](JigsawPoolElementEmpty.md).
 
-```json
-{
-  "format_version": "1.21.20", 
-  "minecraft:template_pool": { 
-    "description": { 
-      "identifier": "minecraft:trail_ruins/tower/tower_top" 
-    }, 
-    "elements": [ 
-      { 
-        "element": { 
-          "element_type": "minecraft:single_pool_element", 
-          "location": "minecraft:trail_ruins/tower/tower_top_1", 
-          "processors": "minecraft:trail_ruins_tower_top_archaeology" 
-        }, 
-        "weight": 2
-      }, 
-      { 
-        "element": { 
-          "element_type": "minecraft:single_pool_element", 
-          "location": "minecraft:trail_ruins/tower/tower_top_2", 
-          "processors": "minecraft:trail_ruins_tower_top_archaeology",
-          "projection": "minecraft:terrain_matching" 
-        }, 
-        "weight": 3
-      },
-      {
-        "element": {
-          "element_type": "minecraft:empty_pool_element"
-        },
-        "weight": 1
-      }
-    ] 
-  } 
-} 
-```
+##### weight
+
+The relative weight for selecting this element. Valid range is 1 to 200 inclusive. Weighted probability is calculated by comparing the individual weight with the total weight of all weights in the pool added together. For example, two elements with weights of 1 and 3 (total 4) will have 25% and 75% chances respectively. A large weight does not mean a large probability. Weights of 10 and 30 yield the same probabilities as 1 and 3, but the smaller numbers are more performant under the hood. Prefer the smallest weights that express the ratio you want.
+
+
+##### Element
+
+###### Pool Element Properties
+
+**JSON path:** `minecraft:template_pool > elements > element`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| element_type | *not set* | [Element Type](#element-type-choices) choices | The type of pool element, which determines what other fields are valid on this element. | 
+| elements | *not set* | Array of objects | Nested array of pool element configurations composed together as a single element. Used by minecraft:list_pool_element. | 
+| feature | *not set* | String | Identifier of the Feature to place when this element is chosen. Used by minecraft:feature_pool_element. Example: 'minecraft:eyeblossom_feature'. | 
+| location | *not set* | String | Path to the structure template file, relative to the behavior pack's structures folder. Used by minecraft:single_pool_element and minecraft:legacy_single_pool_element. | 
+| processors | *not set* | String | Identifier of the processor list to apply to this element, or an inline processor configuration. Applicable to minecraft:single_pool_element and minecraft:legacy_single_pool_element. | 
+| processors (as Object) | *not set* | Object | Inline processor configuration. | 
+| projection | rigid | [Projection](#projection-choices) choices | How the element projects onto terrain. | 
+
+###### projection
+
+How the element projects onto terrain. 'rigid' places without height adjustment; 'terrain_matching' adjusts blocks along the Y axis to match the ground. See the Terrain Matching Tips & FAQ for more guidance.
+
+
+### Element Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| minecraft:single_pool_element | Single Pool Element | Places a single structure template. Requires 'location'; optionally accepts 'processors' and 'projection'. See [Single Pool Element](JigsawPoolElementSingle.md) for the full field reference.|
+| minecraft:legacy_single_pool_element | Legacy Single Pool Element | Variant of single_pool_element used for legacy-format structure files. Same field set as single_pool_element. See [Legacy Single Pool Element](JigsawPoolElementLegacySingle.md).|
+| minecraft:feature_pool_element | Feature Pool Element | Places a Feature (from the Features Reference) as part of the Jigsaw Structure. Requires 'feature'. See [Feature Pool Element](JigsawPoolElementFeature.md) for details and examples.|
+| minecraft:list_pool_element | List Pool Element | Composes several pool elements together so they are placed as a group. Requires 'elements'. See [List Pool Element](JigsawPoolElementList.md).|
+| minecraft:empty_pool_element | Empty Pool Element | Takes no additional fields. When chosen, places nothing in the world. Useful as a weighted 'do nothing' option. See [Empty Pool Element](JigsawPoolElementEmpty.md).|
+
+### Projection choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| rigid | Rigid | Structures are placed without any height adjustment.|
+| terrain_matching | Terrain Matching | Structures are placed relative to the terrain height. Structure blocks will adjust along the Y axis to match the ground.|

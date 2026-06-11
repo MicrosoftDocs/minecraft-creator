@@ -69,5 +69,20 @@
         }
       }
     ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "Placement Filter",
+    "title": "Block Placement Filter",
+    "fields": [
+      {
+        "id": "conditions",
+        "title": "Conditions",
+        "description": "List of conditions where the block can be placed/survive",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "maxLength": 64,
+        "subFormId": "block/placement_condition"
+      }
+    ]
   }
 }

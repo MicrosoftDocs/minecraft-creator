@@ -84,16 +84,6 @@
               "dataType": "float"
             }
           ]
-        },
-        "samples": {
-          "/vanilla/behavior_pack/entities/goat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:offspring/",
-              "content": {
-                "variant": 0
-              }
-            }
-          ]
         }
       },
       {
@@ -126,19 +116,19 @@
               }
             }
           ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:offspring/",
+              "content": {
+                "minecraft:drowned": "minecraft:drowned"
+              }
+            }
+          ],
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:offspring/",
               "content": {
                 "minecraft:frog": "minecraft:tadpole"
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/goat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:offspring/",
-              "content": {
-                "minecraft:goat": "minecraft:goat"
               }
             }
           ]
@@ -226,25 +216,22 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:offspring/",
+          "content": {
+            "offspring_pairs": {
+              "minecraft:drowned": "minecraft:drowned"
+            }
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/frog.json": [
         {
           "path": "/minecraft:entity/components/minecraft:offspring/",
           "content": {
             "offspring_pairs": {
               "minecraft:frog": "minecraft:tadpole"
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/goat.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:offspring/",
-          "content": {
-            "offspring_pairs": {
-              "minecraft:goat": "minecraft:goat"
-            },
-            "mutation_factor": {
-              "variant": 0
             }
           }
         }

@@ -21,6 +21,7 @@ ms.date: 02/11/2025
 - [Biome Overworld Generation Rules](#biome-overworld-generation-rules)
 - [Biome Overworld Height](#biome-overworld-height)
 - [Biome Replace Biomes](#biome-replace-biomes)
+- [Subsurface Builder](#subsurface-builder)
 - [Biome Surface Builder](#biome-surface-builder)
 - [Biome Surface Material Adjustments](#biome-surface-material-adjustments)
 - [Biome Tags](#biome-tags)
@@ -43,7 +44,7 @@ Any components that this Biome uses.
 | minecraft:overworld_height | *not set* | [Overworld Height](#biome-overworld-height) item | Noise parameters used to drive terrain height in the Overworld. | 
 | minecraft:partially_frozen | *not set* | Object | Component will impact the temperature in a frozen biome, causing some areas to not be frozen. Ex: patchy ice, patchy snow | 
 | minecraft:replace_biomes | *not set* | [Replace Biomes](#biome-replace-biomes) item | Replaces a specified portion of one or more Minecraft biomes. | 
-| minecraft:subsurface_builder | *not set* | Object | Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. | 
+| minecraft:subsurface_builder | *not set* | [Subsurface Builder](#subsurface-builder) item | Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. | 
 | minecraft:surface_builder | *not set* | [Surface Builder](#biome-surface-builder) item | Controls materials used for terrain generation. | 
 | minecraft:surface_material_adjustments | *not set* | [Surface Material Adjustments](#biome-surface-material-adjustments) item | Specify fine-detail changes to blocks used in terrain generation (based on a noise function). | 
 | minecraft:tags | *not set* | [Tags](#biome-tags) item | Attach arbitrary string tags to this biome. | 
@@ -107,7 +108,7 @@ Probability that creatures will spawn within the biome when a chunk is generated
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| probability | *not set* | Decimal number | Probabiltity between [0.0, 0.75] of creatures spawning within the biome on chunk generation. Value must be <= 0.75. | 
+| probability | *not set* | Decimal number | Probability between [0.0, 0.75] of creatures spawning within the biome on chunk generation. Value must be <= 0.75. | 
 
 ### Biome Humidity
 Forces a biome to ether always be humid or never humid. Humidity effects the spread chance, and spread rate of fire in the biome.
@@ -323,6 +324,18 @@ Represents the replacement information used to determine the placement of the ov
 
 Scaling value used to alter the frequency of replacement attempts. A lower frequency will mean a bigger contiguous biome area that occurs less often. A higher frequency will mean smaller contiguous biome areas that occur more often. Must be in the range (0.0, 100.0]. Value must be <= 100. Value must be > 0.
 
+
+### Subsurface Builder
+Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. Note, however, that pre-existing surface builder types' processing have not been updated to accommodate the ability to specify them for sub-terrain height ranges, which may lead to unexpected results when using them.
+
+
+#### Subsurface Builder Properties
+
+**JSON path:** `minecraft:subsurface_builder`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| builder | *not set* | Object | Controls block types and strategy used for terrain generation. | 
 
 ### Biome Surface Builder
 Controls materials used for terrain generation.

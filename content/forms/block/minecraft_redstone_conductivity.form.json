@@ -33,5 +33,26 @@
         "dataType": "boolean"
       }
     ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "Redstone Conductivity",
+    "title": "Block Redstone Conductivity",
+    "description": "The basic redstone properties of a block. If the component is not provided the default values are used.",
+    "fields": [
+      {
+        "id": "allows_wire_to_step_down",
+        "title": "Allows Wire To Step Down",
+        "description": "Specifies if redstone wire can stair-step downward on the block.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "redstone_conductor",
+        "title": "Redstone Conductor",
+        "description": "Specifies if the block can be powered by redstone.",
+        "dataType": "boolean",
+        "defaultValue": false
+      }
+    ]
   }
 }

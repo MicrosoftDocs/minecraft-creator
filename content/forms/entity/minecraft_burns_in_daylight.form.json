@@ -31,6 +31,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/magma_cube.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
@@ -44,12 +50,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/stray.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
           "content": {}
@@ -105,6 +105,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/magma_cube.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
@@ -118,12 +124,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/stray.json": [
         {
           "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
           "content": {}

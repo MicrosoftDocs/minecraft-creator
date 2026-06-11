@@ -10,12 +10,20 @@ ms.date: 02/11/2025
 
 # Block Components Documentation - minecraft:precipitation_interactions
 
-Component that determines how the block will interact with rain and snow
-Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.120).
+Determines interactions the block will have with different precipitations. Three possible values: obrain, obstruct_rain_accumulate_snow and none.
 
 
-## Precipitation Interactions Properties
+## Block Precipitation Interactions Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| precipitation_behavior | accumulate snow | String | What behavior should the block have. Three possible values: obrain, obstruct_rain_accumulate_snow and none | 
+| precipitation_behavior | accumulate snow | [Precipitation Behavior](#precipitation-behavior-choices) choices | What behavior should the block have. Possible values: obrain, obstruct_rain_accumulate_snow, snowlogging, and none | 
+
+### Precipitation Behavior choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| none | None | |
+| obstruct_rain | Obstruct rain | |
+| obstruct_rain_accumulate_snow | Obstruct rain accumulate snow | |
+| snowlogging | Snowlogging | |

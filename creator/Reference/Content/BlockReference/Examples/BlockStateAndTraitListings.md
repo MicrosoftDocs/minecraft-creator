@@ -4,7 +4,7 @@ ms.author: mikeam
 title: Default Minecraft Block States and Traits
 description: A listing of default Minecraft block states and traits
 ms.service: minecraft-bedrock-edition
-ms.date: 11/06/2025
+ms.date: 06/02/2026
 ---
 
 # Default Block States and Traits
@@ -312,6 +312,95 @@ These are the block states that can be enabled through `minecraft:connection`
         }
       }
     ]
+  }
+}
+```
+
+### minecraft:multi_block
+
+Adds the `minecraft:multi_block_part` states to a block to define the block as a multi-block composed of multiple block parts. Defining this trait on your block means you cannot define any other trait except `minecraft:placement_direction` trait to set the `minecraft:cardinal_direction` state.
+
+This state requires Minecraft Bedrock version 1.26.10 and above. Before version 1.26.40, the experimental toggle "Upcoming Creator Features" is required.
+
+#### Multi-block properties
+
+| Name | Type | Default Value | Description |
+|:----------|:-------------|:----|:-----------|
+| enabled_states | Array | | Which states to enable. The only valid (and required) value is `minecraft:multi_block_part`. |
+| parts | Integer | 2 | Optional property to define number of block parts. Valid values are `2, 3, 4`. |
+| direction | String | "up" | Required property to define direction to place the block parts. Valid values are `"up", "down", "north", "south", "west", "east"`. |
+
+#### Multi-block block states
+
+These are the block states that can be enabled through `minecraft:multi_block`.
+
+| Block State Name| Type | Valid Values | Description |
+|:----------|:---------|:----------|:--------|
+| minecraft:multi_block_part | Integer | 0/1/2/3 | Number of the block part composing the multi-block. Added when the `enabled_states` value `multi_block_part` is used. |
+
+#### Multi-block example
+
+```json
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+	"description": {
+	  "identifier": "multi_block:my_block",
+	  "traits": {
+		"minecraft:multi_block": {
+		  "enabled_states": [
+			"minecraft:multi_block_part"
+		  ],
+		  "parts": 3,
+		  "direction": "up"
+		}
+	  }
+	},
+	"components": {
+	  "minecraft:collision_box": true,
+	  "minecraft:selection_box": true,
+	  "minecraft:movable": {
+		"movement_type": "popped"
+	  }
+	},
+	"permutations": [
+	  {
+		"condition": "q.block_state('minecraft:multi_block_part') == 0",
+		"components": {
+		  "minecraft:geometry": "geometry.part_0",
+		  "minecraft:material_instances": {
+			"*": {
+			  "texture": "my_block_texture_0",
+			  "render_method": "opaque"
+			}
+		  }
+		}
+	  },
+	  {
+		"condition": "q.block_state('minecraft:multi_block_part') == 1",
+		"components": {
+		  "minecraft:geometry": "geometry.part_1",
+		  "minecraft:material_instances": {
+			"*": {
+			  "texture": "my_block_texture_1",
+			  "render_method": "opaque"
+			}
+		  }
+		}
+	  },
+	  {
+		"condition": "q.block_state('minecraft:multi_block_part') == 2",
+		"components": {
+		  "minecraft:geometry": "geometry.part_2",
+		  "minecraft:material_instances": {
+			"*": {
+			  "texture": "my_block_texture_2",
+			  "render_method": "opaque"
+			}
+		  }
+		}
+	  }
+	]
   }
 }
 ```
