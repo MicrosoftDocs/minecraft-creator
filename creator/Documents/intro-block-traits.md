@@ -4,7 +4,7 @@ ms.author: mikeam
 title: Using Block Traits
 description: "An introduction to using block traits with your custom blocks to inherit functionality from Vanilla blocks."
 ms.service: minecraft-bedrock-edition
-ms.date: 11/04/2025
+ms.date: 06/02/2026
 ---
 
 # Using Block Traits
@@ -17,6 +17,12 @@ You've made a custom block, and now you'd like to give it some triggers or event
 
 - By using the `minecraft:connection` trait to set the `minecraft:cardinal_connections` state, you can create fence-like blocks.
 
+- By using the `minecraft:multi_block` trait to set the `minecraft:multi_block_part` state, you can create blocks that are composed of multiple block parts but act as a single block, like beds or doors.
+
+> [!IMPORTANT]
+>
+> Setting `minecraft:mult_block` on your block means you cannot add any other trait to it except the `minecraft:placement_direction` trait to set the `minecraft:cardinal_direction` state.
+
 ## Kinds of block traits
 
 Currently, there are three block traits you can use:
@@ -24,6 +30,7 @@ Currently, there are three block traits you can use:
 - [`placement_direction`](../Reference/Content/BlockReference/Examples/traits/placement_direction.md) contains information about the direction the player is facing when the block is placed.
 - [`placement_position`](../Reference/Content/BlockReference/Examples/traits/placement_position.md) contains information about where the player placed the block in relation to other blocks.
 - [`connection`](../Reference/Content/BlockReference/Examples/traits/connection.md) contains information about whether the block is connected to other blocks, and if so, on what faces.
+- [`multi_block`](../Reference/Content/BlockReference/Examples/traits/multi_block.md) contains information about whether the block is composed of multiple block parts that act as a single block.
 
 > [!IMPORTANT]
 > The `connection` trait requires Bedrock Edition 1.21.130 or higher, and currently requires that the "Upcoming Creator Features" experimental toggle is set on.
@@ -269,4 +276,5 @@ This block uses both the `minecraft:cardinal_direction` and `minecraft:facing_di
 - [`placement_direction`](../Reference/Content/BlockReference/Examples/traits/placement_direction.md) reference with example
 - [`placement_position`](../Reference/Content/BlockReference/Examples/traits/placement_position.md) reference with example
 - [`connection`](../Reference/Content/BlockReference/Examples/traits/connection.md) reference with example
+- [`multi_block`](../Reference/Content/BlockReference/Examples/traits/multi_block.md) reference with example
 - [Default Block States and Traits](../Reference/Content/BlockReference/Examples/BlockStateAndTraitListings.md)

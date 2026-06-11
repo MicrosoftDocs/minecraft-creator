@@ -15,9 +15,10 @@ Configures what distance an entity must fall onto this block to cause the `onEnt
 
 ## Entity Fall On Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| minimum_fall_distance | 1 | Decimal number | The minimum distance in blocks that an entity needs to fall before events are raised. | Fall Distance Of 2 Blocks: `2` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| min_fall_distance | 0 | Decimal number | The minimum distance in blocks that an actor needs to fall before events are triggered. | 
+| minimum_fall_distance | 1 | Decimal number | The minimum distance in blocks that an entity needs to fall before events are raised. | 
 
 ## Samples
 

@@ -12,7 +12,7 @@
   href: minecraftBlock_collision_box.md
 - name: minecraft:connection_rule
   href: minecraftBlock_connection_rule.md
-- name: minecraft:crafting_table
+- name: Crafting Table
   href: minecraftBlock_crafting_table.md
 - name: minecraft:destroy_time
   href: minecraftBlock_destroy_time.md
@@ -20,7 +20,7 @@
   href: minecraftBlock_destructible_by_explosion.md
 - name: minecraft:destructible_by_mining
   href: minecraftBlock_destructible_by_mining.md
-- name: minecraft:destruction_particles
+- name: Destruction Particles
   href: minecraftBlock_destruction_particles.md
 - name: minecraft:display_name
   href: minecraftBlock_display_name.md
@@ -40,13 +40,13 @@
   href: minecraftBlock_geometry.md
 - name: minecraft:instrument_sound
   href: minecraftBlock_instrument_sound.md
-- name: minecraft:item_visual
+- name: Item Visual
   href: minecraftBlock_item_visual.md
 - name: minecraft:light_dampening
   href: minecraftBlock_light_dampening.md
 - name: minecraft:light_emission
   href: minecraftBlock_light_emission.md
-- name: minecraft:liquid_detection
+- name: Liquid Detection
   href: minecraftBlock_liquid_detection.md
 - name: minecraft:loot
   href: minecraftBlock_loot.md
@@ -56,13 +56,13 @@
   href: minecraftBlock_material_instances.md
 - name: minecraft:movable
   href: minecraftBlock_movable.md
-- name: minecraft:placement_filter
+- name: Placement Filter
   href: minecraftBlock_placement_filter.md
 - name: minecraft:precipitation_interactions
   href: minecraftBlock_precipitation_interactions.md
 - name: minecraft:random_offset
   href: minecraftBlock_random_offset.md
-- name: minecraft:redstone_conductivity
+- name: Redstone Conductivity
   href: minecraftBlock_redstone_conductivity.md
 - name: minecraft:redstone_consumer
   href: minecraftBlock_redstone_consumer.md
@@ -76,5 +76,5 @@
   href: minecraftBlock_support.md
 - name: minecraft:tick
   href: minecraftBlock_tick.md
-- name: minecraft:transformation
+- name: Transformation
   href: minecraftBlock_transformation.md

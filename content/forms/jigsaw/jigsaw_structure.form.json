@@ -2,7 +2,10 @@
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "JigsawStructure",
   "title": "Jigsaw Structure",
-  "description": "Defines a jigsaw structure that generates in the world using template pools and structure sets.",
+  "description": "Defines a jigsaw structure that generates in the world using template pools and structure sets. A Jigsaw Structure is a dynamic, modular structure composed of multiple Structure Templates connected via Jigsaw Blocks. Each Structure Template contains Jigsaw Blocks that define how it can connect to other templates and where those connections should occur; these blocks act as connectors, enabling the structure to grow by attaching new pieces. Construction begins by placing a single template; any Jigsaw Blocks within it are added to a pending list, and the system recursively expands the structure by resolving those connections until the specified max_depth is reached. Examples of Jigsaw Structures include Trail Ruins and Trial Chambers.",
+  "note": "Currently only Trail Ruins can be modified via JSON with the Data-Driven Jigsaw Structure Experimental Toggle turned on. Other Jigsaw Structures such as Villages and Bastions use a legacy version of the Jigsaw Structure System and cannot be modified via JSON.",
+  "note2": "This generation process can be relatively time consuming depending on the complexity and quantity of Jigsaw Blocks in any given template.",
+  "technicalDescription": "The overall behavior and placement of a Jigsaw Structure in the world are governed by its Jigsaw Structure JSON, which defines generation rules and constraints. For more info, see the Introduction to Jigsaw Structures documentation.",
   "summarizer": {
     "phrases": [
       {
@@ -35,7 +38,7 @@
           {
             "id": "description",
             "title": "Description",
-            "description": "The description block containing the structure identifier.",
+            "description": "The description block containing the structure identifier. Must include a namespace; the 'minecraft' namespace must not be used unless overriding a vanilla structure.",
             "dataType": "object",
             "isRequired": true,
             "subFormId": "jigsaw/jigsawstructuredefinition_description"
@@ -43,106 +46,176 @@
           {
             "id": "biome_filters",
             "title": "Biome Filters",
-            "description": "Array of filter conditions that determine which biomes can generate this structure.",
+            "description": "Array of filter conditions that determine which biomes can generate this structure. Biome filters are a type of Entity Filter that iterate only over biomes; most useful is the 'has_biome_tag' test paired with a value naming the biome tag to match.",
+            "note": "Jigsaw structures may behave unpredictably in dimensions other than the Overworld. Target Jigsaw Structures to overworld-specific biomes to prevent them from appearing unintentionally in other dimensions.",
             "dataType": "objectArray",
             "subFormId": "entityfilters/filter_test"
           },
           {
             "id": "step",
             "title": "Generation Step",
-            "description": "The world generation step during which this structure generates. Valid values: 'raw_generation', 'lakes', 'local_modifications', 'underground_structures', 'surface_structures', 'strongholds', 'underground_ores', 'underground_decoration', 'fluid_springs', 'vegetal_decoration', 'top_layer_modification'.",
+            "description": "The world generation step during which this structure generates. This is used as a grouping concept to keep similar world-generation features bundled together and to order structures against each other.",
             "dataType": "string",
-            "isRequired": true
+            "isRequired": true,
+            "choices": [
+              {
+                "id": "raw_generation",
+                "title": "Raw Generation",
+                "description": "Step 1."
+              },
+              { "id": "lakes", "title": "Lakes", "description": "Step 2." },
+              {
+                "id": "local_modifications",
+                "title": "Local Modifications",
+                "description": "Step 3."
+              },
+              {
+                "id": "underground_structures",
+                "title": "Underground Structures",
+                "description": "Step 4. Used by Trail Ruins."
+              },
+              {
+                "id": "surface_structures",
+                "title": "Surface Structures",
+                "description": "Step 5."
+              },
+              {
+                "id": "strongholds",
+                "title": "Strongholds",
+                "description": "Step 6."
+              },
+              {
+                "id": "underground_ores",
+                "title": "Underground Ores",
+                "description": "Step 7."
+              },
+              {
+                "id": "underground_decoration",
+                "title": "Underground Decoration",
+                "description": "Step 8."
+              },
+              {
+                "id": "fluid_springs",
+                "title": "Fluid Springs",
+                "description": "Step 9."
+              },
+              {
+                "id": "vegetal_decoration",
+                "title": "Vegetal Decoration",
+                "description": "Step 10."
+              },
+              {
+                "id": "top_layer_modification",
+                "title": "Top Layer Modification",
+                "description": "Step 11."
+              }
+            ]
           },
           {
             "id": "terrain_adaptation",
             "title": "Terrain Adaptation",
-            "description": "How the structure adapts to terrain. Valid values: 'none', 'beard_thin', 'beard_box', 'bury', 'encapsulate'.",
-            "dataType": "string"
+            "description": "How the terrain should adapt relative to the generated Jigsaw Structure. 'Beard' refers to mass added below structures that would otherwise float in air.",
+            "dataType": "string",
+            "defaultValue": "none",
+            "choices": [
+              {
+                "id": "none",
+                "title": "None",
+                "description": "Do not adjust ambient block density."
+              },
+              {
+                "id": "bury",
+                "title": "Bury",
+                "description": "Ambient block density is added to all pieces of the structure, but only within the Y bounds of its starting piece. Ideal for structures that need to bury below the surface while letting another set of pieces stick up through the terrain uncovered."
+              },
+              {
+                "id": "beard_thin",
+                "title": "Beard (Thin)",
+                "description": "Ambient block density is added below the structure and block density is reduced just above the ground."
+              },
+              {
+                "id": "beard_box",
+                "title": "Beard (Box)",
+                "description": "Ambient block density is added below the structure, and block density is reduced within the entire box the structure occupies."
+              },
+              {
+                "id": "encapsulate",
+                "title": "Encapsulate",
+                "description": "Ambient block density is added all around every piece of the structure."
+              }
+            ]
           },
           {
             "id": "start_pool",
             "title": "Start Pool",
-            "description": "The identifier of the template pool to use as the starting point for structure generation.",
+            "description": "Identifier of the Template Pool to use as the starting point for structure generation. A Structure Template is randomly chosen from this pool and placed as the first piece.",
             "dataType": "string",
             "isRequired": true
           },
           {
-            "id": "max_depth",
-            "title": "Maximum Depth",
-            "description": "Maximum recursion depth for jigsaw piece connections. Higher values allow more complex structures.",
-            "dataType": "int",
-            "defaultValue": 7,
-            "minValue": 1,
-            "maxValue": 20
+            "id": "start_jigsaw_name",
+            "title": "Start Jigsaw Name",
+            "description": "The name of the Jigsaw Block from the start_pool to be placed first. Optional.",
+            "dataType": "string"
           },
           {
-            "id": "max_distance_from_center",
-            "title": "Maximum Distance From Center",
-            "description": "Maximum horizontal and vertical distance pieces can generate from the structure center.",
-            "dataType": "object",
-            "subForm": {
-              "id": "max_distance",
-              "fields": [
-                {
-                  "id": "horizontal",
-                  "title": "Horizontal",
-                  "description": "Maximum horizontal distance in blocks.",
-                  "dataType": "int",
-                  "defaultValue": 80
-                },
-                {
-                  "id": "vertical",
-                  "title": "Vertical",
-                  "description": "Maximum vertical distance in blocks.",
-                  "dataType": "int",
-                  "defaultValue": 80
-                }
-              ]
-            }
+            "id": "max_depth",
+            "title": "Maximum Depth",
+            "description": "Maximum recursion depth for jigsaw piece connections. For example, a road structure with max_depth of 5 will have paths at most 5 templates long in any direction from the origin.",
+            "dataType": "int",
+            "isRequired": true,
+            "defaultValue": 7,
+            "minValue": 0,
+            "maxValue": 20
           },
           {
             "id": "start_height",
             "title": "Start Height",
-            "description": "The height at which the structure starts generating.",
+            "description": "Height provider that gives the offset at which the structure's start_pool should begin generating. This is an offset from the heightmap_projection; when heightmap_projection is set, the 'absolute' Vertical Anchor is recommended for ease of use.",
             "dataType": "object",
+            "isRequired": true,
             "subForm": {
               "id": "start_height",
               "fields": [
                 {
                   "id": "type",
                   "title": "Type",
-                  "description": "Height provider type. Valid values: 'constant', 'uniform', 'biased_to_bottom', 'very_biased_to_bottom', 'trapezoid', 'weighted_list'.",
-                  "dataType": "string"
+                  "description": "Height provider type. Determines the rest of the parameters in this object.",
+                  "dataType": "string",
+                  "isRequired": true,
+                  "choices": [
+                    {
+                      "id": "constant",
+                      "title": "Constant",
+                      "description": "Single constant anchor point. Use 'value' to specify the Vertical Anchor."
+                    },
+                    {
+                      "id": "uniform",
+                      "title": "Uniform",
+                      "description": "Uniform distribution of possible anchor points. Use 'min' and 'max' (each a Vertical Anchor) to bound the range."
+                    }
+                  ]
                 },
                 {
                   "id": "value",
                   "title": "Value",
-                  "description": "The height value or configuration.",
+                  "description": "The Vertical Anchor to use as the constant height. Used only when type is 'constant'.",
                   "dataType": "object",
-                  "subForm": {
-                    "id": "height_value",
-                    "fields": [
-                      {
-                        "id": "absolute",
-                        "title": "Absolute",
-                        "description": "Fixed Y coordinate.",
-                        "dataType": "int"
-                      },
-                      {
-                        "id": "above_bottom",
-                        "title": "Above Bottom",
-                        "description": "Distance above world bottom.",
-                        "dataType": "int"
-                      },
-                      {
-                        "id": "below_top",
-                        "title": "Below Top",
-                        "description": "Distance below world top.",
-                        "dataType": "int"
-                      }
-                    ]
-                  }
+                  "subFormId": "jigsaw/jigsaw_vertical_anchor"
+                },
+                {
+                  "id": "min",
+                  "title": "Min",
+                  "description": "The Vertical Anchor to use as the minimum of the uniform distribution. Used only when type is 'uniform'.",
+                  "dataType": "object",
+                  "subFormId": "jigsaw/jigsaw_vertical_anchor"
+                },
+                {
+                  "id": "max",
+                  "title": "Max",
+                  "description": "The Vertical Anchor to use as the maximum of the uniform distribution. Used only when type is 'uniform'.",
+                  "dataType": "object",
+                  "subFormId": "jigsaw/jigsaw_vertical_anchor"
                 }
               ]
             }
@@ -150,8 +223,168 @@
           {
             "id": "heightmap_projection",
             "title": "Heightmap Projection",
-            "description": "Which heightmap to use for surface placement. Valid values: 'world_surface', 'world_surface_wg', 'ocean_floor', 'ocean_floor_wg', 'motion_blocking', 'motion_blocking_no_leaves'.",
-            "dataType": "string"
+            "description": "Heightmap to use when determining the starting height.",
+            "dataType": "string",
+            "defaultValue": "none",
+            "choices": [
+              {
+                "id": "none",
+                "title": "None",
+                "description": "Do not perform any heightmap projection; begin generating from a Y of 0."
+              },
+              {
+                "id": "world_surface",
+                "title": "World Surface",
+                "description": "Begin generating relative to the first non-air block encountered from the top down."
+              },
+              {
+                "id": "ocean_floor",
+                "title": "Ocean Floor",
+                "description": "Begin generating relative to the first motion-blocking block encountered from the top down."
+              }
+            ]
+          },
+          {
+            "id": "dimension_padding",
+            "title": "Dimension Padding",
+            "description": "Padding at the top and bottom of the dimension when placing the structure. Prevents the structure from creating holes in the bedrock or being cut off at the top. May be a positive integer (applied to both bounds) or an object specifying 'top' and 'bottom' separately.",
+            "dataType": "int",
+            "defaultValue": 0,
+            "alternates": [
+              {
+                "id": "dimension_padding",
+                "dataType": "object",
+                "description": "Separate top/bottom padding values.",
+                "subForm": {
+                  "id": "dimension_padding",
+                  "fields": [
+                    {
+                      "id": "bottom",
+                      "title": "Bottom",
+                      "description": "Distance in blocks from the bottom of the dimension that may not be used by the Jigsaw Structure.",
+                      "dataType": "int",
+                      "defaultValue": 0,
+                      "minValue": 0
+                    },
+                    {
+                      "id": "top",
+                      "title": "Top",
+                      "description": "Distance in blocks from the top of the dimension that may not be used by the Jigsaw Structure.",
+                      "dataType": "int",
+                      "defaultValue": 0,
+                      "minValue": 0
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "max_distance_from_center",
+            "title": "Maximum Distance From Center",
+            "description": "Maximum horizontal and vertical distance from jigsaw pieces to the structure start.",
+            "dataType": "object",
+            "subForm": {
+              "id": "max_distance",
+              "fields": [
+                {
+                  "id": "horizontal",
+                  "title": "Horizontal",
+                  "description": "Maximum horizontal distance in blocks. Must be between 1 and 128 inclusive.",
+                  "dataType": "int",
+                  "isRequired": true,
+                  "defaultValue": 80,
+                  "minValue": 1,
+                  "maxValue": 128
+                },
+                {
+                  "id": "vertical",
+                  "title": "Vertical",
+                  "description": "Maximum vertical distance in blocks. Must be greater than 1.",
+                  "dataType": "int",
+                  "defaultValue": 80,
+                  "minValue": 2
+                }
+              ]
+            }
+          },
+          {
+            "id": "pool_aliases",
+            "title": "Pool Aliases",
+            "description": "Rewires jigsaw pool connections by redirecting pool references within an individual structure. Allows thematic substitution across a full structure. For example, an alias 'chambers/melee' can be replaced by 'chambers/melee/normal', 'chambers/melee/poison', or 'chambers/melee/wither' which are specialized Template Pools.",
+            "dataType": "objectArray",
+            "subForm": {
+              "id": "pool_alias",
+              "fields": [
+                {
+                  "id": "type",
+                  "title": "Type",
+                  "description": "The type of pool alias, which determines what other fields are valid.",
+                  "dataType": "string",
+                  "isRequired": true,
+                  "choices": [
+                    {
+                      "id": "direct",
+                      "title": "Direct",
+                      "description": "Replaces a single alias with a single target. Requires 'alias' and 'target'."
+                    },
+                    {
+                      "id": "random",
+                      "title": "Random",
+                      "description": "Replaces an alias with one of a weighted random list of targets. Requires 'alias' and 'targets'."
+                    },
+                    {
+                      "id": "random_group",
+                      "title": "Random Group",
+                      "description": "Selects one of several groups of aliases via a weighted random list. Requires 'groups'. Groups may contain 'direct' or 'random' aliases (not nested 'random_group')."
+                    }
+                  ]
+                },
+                {
+                  "id": "alias",
+                  "title": "Alias",
+                  "description": "Identifier of the Template Pool to replace. Used by 'direct' and 'random' aliases.",
+                  "dataType": "string"
+                },
+                {
+                  "id": "target",
+                  "title": "Target",
+                  "description": "Identifier of the Template Pool to substitute when matched. Used by 'direct' aliases.",
+                  "dataType": "string"
+                },
+                {
+                  "id": "targets",
+                  "title": "Targets",
+                  "description": "A weighted random list of potential Template Pools to choose from when the alias matches. Each entry has a 'data' (the target pool identifier) and a positive 'weight'. Used by 'random' aliases.",
+                  "dataType": "objectArray"
+                },
+                {
+                  "id": "groups",
+                  "title": "Groups",
+                  "description": "A weighted random list of groups of aliases. Each entry has a 'data' (an array of nested 'direct' or 'random' alias items) and a positive 'weight'. Used by 'random_group' aliases.",
+                  "dataType": "objectArray"
+                }
+              ]
+            }
+          },
+          {
+            "id": "liquid_settings",
+            "title": "Liquid Settings",
+            "description": "How to handle waterloggable blocks that overlap with existing liquid in the world.",
+            "dataType": "string",
+            "defaultValue": "apply_waterlogging",
+            "choices": [
+              {
+                "id": "apply_waterlogging",
+                "title": "Apply Waterlogging",
+                "description": "Waterloggable blocks become waterlogged where they overlap existing liquid."
+              },
+              {
+                "id": "ignore_waterlogging",
+                "title": "Ignore Waterlogging",
+                "description": "Do not waterlog any waterloggable blocks that overlap existing liquid."
+              }
+            ]
           }
         ]
       }

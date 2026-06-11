@@ -32,24 +32,24 @@ List of all components used in this item.
 |:----------|:-------------|:----|:-----------|
 | minecraft:allow_off_hand | *not set* | Boolean true/false | The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory. | 
 | minecraft:allow_off_hand (Allow Off Hand) | *not set* | [Allow Off Hand (Allow Off Hand)](#allow-off-hand-allow-off-hand) item |  | 
-| minecraft:block_placer | *not set* | [Block Placer](#item-components-block-placer) item | Items with the block_placer component will place a block when used. This component can also be used instead of the "minecraft:icon" component to render the referenced block as the item icon. | 
-| minecraft:bundle_interaction | *not set* | [Bundle Interaction](#item-components-bundle-interaction) item | [EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a "minecraft:storage_item" component. | 
+| minecraft:block_placer | *not set* | [Block Placer](#item-block-placer) item | Items with the block_placer component will place a block when used. This component can also be used instead of the "minecraft:icon" component to render the referenced block as the item icon. | 
+| minecraft:bundle_interaction | *not set* | [Bundle Interaction](#item-bundle-interaction) item | [EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a "minecraft:storage_item" component. | 
 | minecraft:can_destroy_in_creative | *not set* | Boolean true/false | The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode. | 
 | minecraft:can_destroy_in_creative (Can Destroy In Creative) | *not set* | [Can Destroy In Creative (Can Destroy In Creative)](#can-destroy-in-creative-can-destroy-in-creative) item |  | 
-| minecraft:compostable | *not set* | [Compostable](#item-components-compostable) item | Specifies that an item is compostable and provides the chance of creating a composting layer in the composter | 
-| minecraft:cooldown | *not set* | [Cooldown](#item-components-cooldown) item | Adds a cooldown to the item so that, after performing an action of the specified "type", all items with a "minecraft:cooldown" component in the same "category" become unable to perform that same type of action for the number of seconds defined in "duration". | 
+| minecraft:compostable | *not set* | [Compostable](#item-compostable) item | Specifies that an item is compostable and provides the chance of creating a composting layer in the composter | 
+| minecraft:cooldown | *not set* | [Cooldown](#item-cooldown) item | Adds a cooldown to the item so that, after performing an action of the specified "type", all items with a "minecraft:cooldown" component in the same "category" become unable to perform that same type of action for the number of seconds defined in "duration". | 
 | minecraft:custom_components | *not set* | Object | Specifies an array of custom components defined in a script that should be added to this item. | 
 | minecraft:damage | *not set* | Integer number | The damage component determines how much extra damage the item does on attack. | 
 | minecraft:damage (Damage) | *not set* | [Damage (Damage)](#damage-damage) item |  | 
-| minecraft:damage_absorption | *not set* | [Damage Absorption](#item-components-damage-absorption) item | It allows an item to absorb damage that would otherwise be dealt to its wearer. | 
-| minecraft:digger | *not set* | [Digger](#item-components-digger) item | Digger item component specifies how quickly this item can dig specific blocks. | 
-| minecraft:display_name | *not set* | [Display Name](#item-components-display-name) item | The display_name item component specifies the text shown whenever an item's name is displayed, like in hover text. | 
-| minecraft:durability | *not set* | [Durability](#item-components-durability) item | The durability item component specifies how much damage the item takes before breaking, and allows the item to be combined to repair or augment them. | 
-| minecraft:durability_sensor | *not set* | [Durability Sensor](#item-components-durability-sensor) item | Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component. | 
-| minecraft:dyeable | *not set* | [Dyeable](#item-components-dyeable) item |  | 
-| minecraft:enchantable | *not set* | [Enchantable](#item-components-enchantable) item | The enchantable component specifies what enchantments can be applied to the item. Not all enchantments will have an effect on all item components. | 
-| minecraft:entity_placer | *not set* | [Entity Placer](#item-components-entity-placer) item | The entity_placer item component specifies the blocks that the item can be placed on. | 
-| minecraft:food | *not set* | [Food](#item-components-food) item | When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly. | 
+| minecraft:damage_absorption | *not set* | [Damage Absorption](#item-damage-absorption) item | It allows an item to absorb damage that would otherwise be dealt to its wearer. | 
+| minecraft:digger | *not set* | [Digger](#item-digger) item | Digger item component specifies how quickly this item can dig specific blocks. | 
+| minecraft:display_name | *not set* | [Display Name](#item-display-name) item | The display_name item component specifies the text shown whenever an item's name is displayed, like in hover text. | 
+| minecraft:durability | *not set* | [Durability](#item-durability) item | The durability item component specifies how much damage the item takes before breaking, and allows the item to be combined to repair or augment them. | 
+| minecraft:durability_sensor | *not set* | [Durability Sensor](#item-durability-sensor) item | Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component. | 
+| minecraft:dyeable | *not set* | [Dyeable](#item-dyeable) item |  | 
+| minecraft:enchantable | *not set* | [Enchantable](#item-enchantable) item | The enchantable component specifies what enchantments can be applied to the item. Not all enchantments will have an effect on all item components. | 
+| minecraft:entity_placer | *not set* | [Entity Placer](#item-entity-placer) item | The entity_placer item component specifies the blocks that the item can be placed on. | 
+| minecraft:food | *not set* | [Food](#item-food) item | When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly. | 
 | minecraft:fuel | *not set* | Decimal number | Fuel item component allows this item to be used as fuel in a furnace to 'cook' other items. | 
 | minecraft:fuel (Fuel) | *not set* | [Fuel (Fuel)](#fuel-fuel) item |  | 
 | minecraft:glint | *not set* | Boolean true/false | The glint component determines whether the item has the enchanted glint render effect on it. | 
@@ -66,25 +66,25 @@ List of all components used in this item.
 | minecraft:liquid_clipped (Liquid Clipped) | *not set* | [Liquid Clipped (Liquid Clipped)](#liquid-clipped-liquid-clipped) item |  | 
 | minecraft:max_stack_size | *not set* | Integer number | The max_stack_size component specifies how many of the item can be stacked together. | 
 | minecraft:max_stack_size (Max Stack Size) | *not set* | [Max Stack Size (Max Stack Size)](#max-stack-size-max-stack-size) item |  | 
-| minecraft:projectile | *not set* | [Projectile](#item-components-projectile) item | Projectile items shoot out, like an arrow. | 
+| minecraft:projectile | *not set* | [Projectile](#item-projectile) item | Projectile items shoot out, like an arrow. | 
 | minecraft:rarity | *not set* | String | Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item. | 
 | minecraft:rarity (Rarity) | *not set* | [Rarity (Rarity)](#rarity-rarity) item |  | 
-| minecraft:record | *not set* | [Record](#item-components-record) item | Record Item Component. Used by record items to play music. | 
-| minecraft:repairable | *not set* | [Repairable](#item-components-repairable) item | The repairable item component specifies which items can be used to repair this item, along with how much durability is gained. | 
-| minecraft:shooter | *not set* | [Shooter](#item-components-shooter) item | Shooter Item Component. | 
+| minecraft:record | *not set* | [Record](#item-record) item | Record Item Component. Used by record items to play music. | 
+| minecraft:repairable | *not set* | [Repairable](#item-repairable) item | The repairable item component specifies which items can be used to repair this item, along with how much durability is gained. | 
+| minecraft:shooter | *not set* | [Shooter](#item-shooter) item | Shooter Item Component. | 
 | minecraft:should_despawn | *not set* | Boolean true/false | Should_despawn component determines if the item should eventually despawn while floating in the world | 
 | minecraft:should_despawn (Should Despawn) | *not set* | [Should Despawn (Should Despawn)](#should-despawn-should-despawn) item |  | 
 | minecraft:stacked_by_data | *not set* | Boolean true/false | The stacked_by_data component determines whether the same items with different aux values can stack. Also defines whether the item entities can merge while floating in the world. | 
 | minecraft:stacked_by_data (Stacked By Data) | *not set* | [Stacked By Data (Stacked By Data)](#stacked-by-data-stacked-by-data) item |  | 
-| minecraft:storage_item | *not set* | [Storage Item](#item-components-storage-item) item | [EXPERIMENTAL] Storage Items can be used by other components to store other items within this item. | 
-| minecraft:storage_weight_limit | *not set* | [Storage Weight Limit](#item-components-storage-weight-limit) item | Specifies the maximum weight limit that a storage item can hold | 
-| minecraft:storage_weight_modifier | *not set* | [Storage Weight Modifier](#item-components-storage-weight-modifier) item | Specifies the maximum weight limit that a storage item can hold | 
-| minecraft:tags | *not set* | [Tags](#item-components-tags) item | The tags component specifies which tags an item has on it. | 
-| minecraft:throwable | *not set* | [Throwable](#item-components-throwable) item | Throwable items can be thrown by the player, such as a snowball. | 
+| minecraft:storage_item | *not set* | [Storage Item](#item-storage-item) item | [EXPERIMENTAL] Storage Items can be used by other components to store other items within this item. | 
+| minecraft:storage_weight_limit | *not set* | [Storage Weight Limit](#item-storage-weight-limit) item | Specifies the maximum weight limit that a storage item can hold | 
+| minecraft:storage_weight_modifier | *not set* | [Storage Weight Modifier](#item-storage-weight-modifier) item | Specifies the maximum weight limit that a storage item can hold | 
+| minecraft:tags | *not set* | [Tags](#item-tags) item | The tags component specifies which tags an item has on it. | 
+| minecraft:throwable | *not set* | [Throwable](#item-throwable) item | Throwable items can be thrown by the player, such as a snowball. | 
 | minecraft:use_animation | *not set* | String | Use_animation specifies which animation is played when the player uses the item. | 
 | minecraft:use_animation (Use Animation) | *not set* | [Use Animation (Use Animation)](#use-animation-use-animation) item |  | 
-| minecraft:use_modifiers | *not set* | [Use Modifiers](#item-components-use-modifiers) item | Modifies use behavior, including how long the item takes to use and the player's movement speed. | 
-| minecraft:wearable | *not set* | [Wearable](#item-components-wearable) item | Wearable items can be worn by a player in the head, chest, legs, feet, or off-hand slots. | 
+| minecraft:use_modifiers | *not set* | [Use Modifiers](#item-use-modifiers) item | Modifies use behavior, including how long the item takes to use and the player's movement speed. | 
+| minecraft:wearable | *not set* | [Wearable](#item-wearable) item | Wearable items can be worn by a player in the head, chest, legs, feet, or off-hand slots. | 
 
 #### minecraft:cooldown
 
@@ -109,7 +109,7 @@ This component is a boolean or string that determines if the interact button is 
 |:----------|:-------------|:----|:-----------|
 | value | false | Boolean true/false | Determines whether the item can be placed in the off hand slot. | 
 
-#### Item Components Block Placer
+#### Item Block Placer
 Sets the item as a placer item component for blocks. Items with this component will place a block when used.
 
 > [!Note]
@@ -119,18 +119,18 @@ Sets the item as a placer item component for blocks. Items with this component w
 > This item requires a format version of at least 1.21.50.
 
 
-##### Item Components Block Placer Properties
+##### Item Block Placer Properties
 
 **JSON path:** `components > minecraft:block_placer`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| aligned_placement | false | Boolean true/false | If true, block placement through this item will be aligned while holding the interaction button down. Defaults to false. |  | 
-| block | *not set* | Object | Defines the block that will be placed. | My Sword Singing: `"minecraft:dirt"` | 
-| replace_block_item | false | Boolean true/false | If true, the item will be registered as the item for this block. |  | 
-| use_on (Use On) | [] | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. Value must have at most 256 items. | My Sword Singing: `["dirt","grass","anvil"]` | 
-| use_on (as String) | *not set* | String |  |  | 
-| use_on (as Object) | *not set* | Object |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| aligned_placement | false | Boolean true/false | If true, block placement through this item will be aligned while holding the interaction button down. Defaults to false. | 
+| block | *not set* | Object | Defines the block that will be placed. | 
+| replace_block_item | false | Boolean true/false | If true, the item will be registered as the item for this block. | 
+| use_on (Use On) | [] | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. Value must have at most 256 items. | 
+| use_on (as String) | *not set* | String |  | 
+| use_on (as Object) | *not set* | Object |  | 
 
 ##### replace_block_item
 
@@ -151,7 +151,7 @@ If true, the item will be registered as the item for this block. This item will 
 | states (as Boolean true/false) | *not set* | Boolean true/false |  | 
 | tags |  | String |  | 
 
-#### Item Components Bundle Interaction
+#### Item Bundle Interaction
 Enables the bundle-specific interaction scheme and tooltip for an item.
 
 > [!Note]
@@ -164,7 +164,7 @@ Enables the bundle-specific interaction scheme and tooltip for an item.
 > This item requires a format version of at least 1.21.40.
 
 
-##### Item Components Bundle Interaction Properties
+##### Item Bundle Interaction Properties
 
 **JSON path:** `components > minecraft:bundle_interaction`
 
@@ -177,14 +177,14 @@ Enables the bundle-specific interaction scheme and tooltip for an item.
 Same structure as [Allow Off Hand (Allow Off Hand)](#allow-off-hand-allow-off-hand).
 
 
-#### Item Components Compostable
+#### Item Compostable
 Specifies that an item is compostable and provides the chance of creating a composting layer in the composter.
 
 > [!Note]
 > This item requires a format version of at least 1.21.60.
 
 
-##### Item Components Compostable Properties
+##### Item Compostable Properties
 
 **JSON path:** `components > minecraft:compostable`
 
@@ -192,19 +192,19 @@ Specifies that an item is compostable and provides the chance of creating a comp
 |:----------|:-------------|:----|:-----------|
 | composting_chance | *not set* | Integer number | The chance of this item to create a layer upon composting with the composter. Valid value range is 1 - 100 inclusive Value must be >= 1. Value must be <= 100. | 
 
-#### Item Components Cooldown
+#### Item Cooldown
 Adds a cooldown to an item, preventing it from being used again for a specified duration. Items sharing the same category will enter cooldown together when any one of them is used.
 
 
-##### Item Components Cooldown Properties
+##### Item Cooldown Properties
 
 **JSON path:** `components > minecraft:cooldown`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| category | *not set* | String | A string identifier that groups items together. When an item with a cooldown is used, all items sharing the same category also enter cooldown. | Wind Charge: `"wind_charge"` | 
-| duration | *not set* | Decimal number | The duration of time in seconds that items with the matching category will spend cooling down before becoming usable again. | Wind Charge: `0.5` | 
-| type | use | [Type](#type-choices) choices | The type of action that triggers the cooldown. Use 'use' for items consumed on use, or 'attack' for weapons. Default is 'use'. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| category | *not set* | String | A string identifier that groups items together. When an item with a cooldown is used, all items sharing the same category also enter cooldown. | 
+| duration | *not set* | Decimal number | The duration of time in seconds that items with the matching category will spend cooling down before becoming usable again. | 
+| type | use | [Type](#type-choices) choices | The type of action that triggers the cooldown. Use 'use' for items consumed on use, or 'attack' for weapons. Default is 'use'. | 
 
 ### Type choices
 
@@ -223,11 +223,11 @@ Adds a cooldown to an item, preventing it from being used again for a specified 
 |:----------|:-------------|:----|:-----------|
 | value | 0 | Integer number | Specifies how much extra damage the item does, must be a positive number. | 
 
-#### Item Components Damage Absorption
+#### Item Damage Absorption
 It allows an item to absorb damage that would otherwise be dealt to its wearer. For this to happen, the item needs to be equipped in an armor slot. The absorbed damage reduces the item's durability, with any excess damage being ignored. Because of this, the item also needs a `minecraft:durability` component.
 
 
-##### Item Components Damage Absorption Properties
+##### Item Damage Absorption Properties
 
 **JSON path:** `components > minecraft:damage_absorption`
 
@@ -235,24 +235,24 @@ It allows an item to absorb damage that would otherwise be dealt to its wearer. 
 |:----------|:-------------|:----|:-----------|
 | absorbable_causes | *not set* | Array of strings | List of damage causes that can be absorbed by the item. By default, no damage cause is absorbed. Value must have at least 1 items. | 
 
-#### Item Components Digger
+#### Item Digger
 Configures an item as a digging tool, allowing it to break specific blocks faster than normal. Define which blocks are affected and the speed multiplier for each.
 
 
-##### Item Components Digger Properties
+##### Item Digger Properties
 
 **JSON path:** `components > minecraft:digger`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| destroy_speeds | [] | Array of [Destroy Speeds](#item-components-blockinfo) items | An array of objects that define which blocks this item can dig and at what speed. Each entry specifies a block (by ID or tag query) and a speed multiplier. | 
+| destroy_speeds | [] | Array of [Destroy Speeds](#item-blockinfo) items | An array of objects that define which blocks this item can dig and at what speed. Each entry specifies a block (by ID or tag query) and a speed multiplier. | 
 | use_efficiency | false | Boolean true/false | When true, the Efficiency enchantment will increase the dig speed of this item. Default is false. | 
 
-##### Item Components BlockInfo
-Has block and digging speed configuration.
+##### Item BlockInfo
+Associates a block type with a custom digging speed multiplier for the minecraft:digger component. Map blocks to speed values so pickaxes mine stone quickly, axes chop wood faster, and custom tools excel at specific materials. Enables tool specialization matching vanilla Minecraft conventions.
 
 
-###### Item Components BlockInfo Properties
+###### Item BlockInfo Properties
 
 **JSON path:** `components > minecraft:digger > destroy_speeds`
 
@@ -277,11 +277,11 @@ Has block and digging speed configuration.
 | states (as Boolean true/false) | *not set* | Boolean true/false |  | 
 | tags |  | String |  | 
 
-#### Item Components Display Name
+#### Item Display Name
 Sets the item display name within Minecraft: Bedrock Edition. This component may also be used to pull from the localization file by referencing a key from it.
 
 
-##### Item Components Display Name Properties
+##### Item Display Name Properties
 
 **JSON path:** `components > minecraft:display_name`
 
@@ -289,29 +289,29 @@ Sets the item display name within Minecraft: Bedrock Edition. This component may
 |:----------|:-------------|:----|:-----------|:------------- |
 | value |  | String | Name shown for an item. | Apple: `"item.apple.name"`, Breeze Rod: `"item.breeze_rod.name"`, Ominous Trial Key: `"item.ominous_trial_key.name"` | 
 
-#### Item Components Durability
+#### Item Durability
 Sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table.
 
 
-##### Item Components Durability Properties
+##### Item Durability Properties
 
 **JSON path:** `components > minecraft:durability`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| damage_chance | {"max":100,"min":100} | [Damage Chance](#item-components-intrange) item | Specifies the percentage chance of this item losing durability. | My Sword Chuck: `{"min":10,"max":50}`, My Sword Singing: `{"min":0,"max":0}`, My Sword Weak: `{"min":100,"max":100}` | 
-| max_durability | *not set* | Integer number | Max durability is the amount of damage that this item can take before breaking. This is a required parameter and has a minimum of 0. | Chestplate: `200`, My Sword Chuck: `10`, My Sword Singing: `1000` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| damage_chance | {"max":100,"min":100} | [Damage Chance](#item-intrange) item | Specifies the percentage chance of this item losing durability. | 
+| max_durability | *not set* | Integer number | Max durability is the amount of damage that this item can take before breaking. This is a required parameter and has a minimum of 0. | 
 
 ##### damage_chance
 
 Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value.  Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected.
 
 
-##### Item Components IntRange
-Has minimum and maximum integer values.
+##### Item IntRange
+Specifies an integer range between minimum and maximum values for item properties requiring whole numbers. Used for stack count variations, discrete charge levels, or quantity ranges in loot tables. Ensures values stay within valid bounds for countable item properties.
 
 
-###### Item Components IntRange Properties
+###### Item IntRange Properties
 
 **JSON path:** `components > minecraft:durability > damage_chance`
 
@@ -320,19 +320,17 @@ Has minimum and maximum integer values.
 | max | 0 | Integer number |  | 
 | min | 0 | Integer number |  | 
 
-#### Item Components Durability Sensor
+#### Item Durability Sensor
 Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component.
 
 
-##### Item Components Durability Sensor Properties
+##### Item Durability Sensor Properties
 
 **JSON path:** `components > minecraft:durability_sensor`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| durability | *not set* | Integer number | The effects are emitted when the item durability value is less than or equal to this value. | 
-| durability_thresholds | *not set* | Array of [Durability Thresholds](#item-components-durability-sensor-durability-threshold) items | The list of both durability thresholds and effects emitted when each threshold is met. | 
-| particle_type | *not set* | String | Particle effect to emit when the threshold is met. | 
+| durability_thresholds | *not set* | Array of [Durability Thresholds](#item-durability-sensor-durability-threshold) items | The list of both durability thresholds and effects emitted when each threshold is met. | 
 | sound_event | *not set* | String | Sound effect to emit when the threshold is met. | 
 
 ##### durability_thresholds
@@ -340,11 +338,11 @@ Enables an item to emit effects when it receives damage. Because of this, the it
 The list of both durability thresholds and effects emitted when each threshold is met. When multiple thresholds are met, only the threshold with the lowest durability after applying the damage is considered. Value must have at least 1 items.
 
 
-##### Item Components Durability Sensor Durability Threshold
+##### Item Durability Sensor Durability Threshold
 Defines both the durability threshold, and the effects emitted when that threshold is met.
 
 
-###### Item Components Durability Sensor Durability Threshold Properties
+###### Item Durability Sensor Durability Threshold Properties
 
 **JSON path:** `components > minecraft:durability_sensor > durability_thresholds`
 
@@ -594,10 +592,12 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | bubble.up | Bubble.up | |
 | bubble.upinside | Bubble.upinside | |
 | bucket.empty.fish | Bucket.empty.fish | |
+| bucket.empty.land_animal | Bucket.empty.land animal | |
 | bucket.empty.lava | Bucket.empty.lava | |
 | bucket.empty.powder_snow | Bucket.empty.powder snow | |
 | bucket.empty.water | Bucket.empty.water | |
 | bucket.fill.fish | Bucket.fill.fish | |
+| bucket.fill.land_animal | Bucket.fill.land animal | |
 | bucket.fill.lava | Bucket.fill.lava | |
 | bucket.fill.powder_snow | Bucket.fill.powder snow | |
 | bucket.fill.water | Bucket.fill.water | |
@@ -692,6 +692,10 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | freeze | Freeze | |
 | fuse | Fuse | |
 | gallop | Gallop | |
+| geyser_continuous_eruption_active | Geyser continuous eruption active | |
+| geyser_continuous_eruption_start | Geyser continuous eruption start | |
+| geyser_eruption_active | Geyser eruption active | |
+| geyser_eruption_start | Geyser eruption start | |
 | glass | Glass | |
 | glow_squid.ink_squirt | Glow squid.ink squirt | |
 | glowstick.use | Glowstick.use | |
@@ -912,6 +916,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | record.13 | Record.13 | |
 | record.5 | Record.5 | |
 | record.blocks | Record.blocks | |
+| record.bounce | Record.bounce | |
 | record.cat | Record.cat | |
 | record.chirp | Record.chirp | |
 | record.creator | Record.creator | |
@@ -920,6 +925,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | record.lava_chicken | Record.lava chicken | |
 | record.mall | Record.mall | |
 | record.mellohi | Record.mellohi | |
+| record.null | Record.null | |
 | record.otherside | Record.otherside | |
 | record.pigstep | Record.pigstep | |
 | record.precipice | Record.precipice | |
@@ -1017,60 +1023,60 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | whine | Whine | |
 | wind_charge.burst | Wind charge.burst | |
 
-#### Item Components Dyeable
-enables custom items to be dyed in cauldrons. To use the dyeable component, the format version on the item and the attachable needs to have a format_version of 1.21.30 or greater.
+#### Item Dyeable
+Enables players to dye this item using dyes in a crafting grid, like leather armor. Configure the default color when undyed. The item stores its color in NBT data and renders with the player-chosen tint, enabling customizable cosmetic appearances for armor and equipment.
 
 > [!Note]
 > This item requires a format version of at least 1.21.30.
 
 
-##### Item Components Dyeable Properties
+##### Item Dyeable Properties
 
 **JSON path:** `components > minecraft:dyeable`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| default_color | [255, 255, 255] | String | default_color | 
+| default_color | [255, 255, 255] | String |  | 
 | default_color (as Array of numbers) | *not set* | Array of numbers |  | 
 
-#### Item Components Enchantable
+#### Item Enchantable
 Determines what enchantments can be applied to the item. Not all enchantments will have an effect on all item components.
 
 > [!Note]
 > The following enchantment slot types that can be set for the value of `slot`: sword, bow, pickaxe, armor_head, armor_torso, armor_legs, armor_feet.
 
 
-##### Item Components Enchantable Properties
+##### Item Enchantable Properties
 
 **JSON path:** `components > minecraft:enchantable`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| slot | *not set* | String | Specifies which types of enchantments can be applied. | Chestplate: `"armor_torso"`, My Boots: `"armor_feet"`, My Helm: `"armor_head"` | 
-| value | *not set* | Integer number | Specifies the value of the enchantment (minimum of 0). | Chestplate: `10` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| slot | *not set* | String | Specifies which types of enchantments can be applied. | 
+| value | *not set* | Integer number | Specifies the value of the enchantment (minimum of 0). | 
 
 ##### slot
 
 Specifies which types of enchantments can be applied. For example, `bow` would allow this item to be enchanted as if it were a bow. Value must match a regular expression pattern of "none|all|g_armor|armor_head|armor_torso|armor_feet|armor_legs|sword|bow|spear|crossbow|melee_spear|g_tool|hoe|shears|flintsteel|shield|g_digging|axe|pickaxe|shovel|fishing_rod|carrot_stick|elytra|cosmetic_head".
 
 
-#### Item Components Entity Placer
+#### Item Entity Placer
 Allows an item to place entities into the world. Additionally, in version 1.19.80 and above, the component allows the item to set the spawn type of a monster spawner.
 
 
-##### Item Components Entity Placer Properties
+##### Item Entity Placer Properties
 
 **JSON path:** `components > minecraft:entity_placer`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| dispense_on (Dispense On) | [] | Array of [Dispense On](#dispense-on) items | List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed. |  | 
-| dispense_on (as String) | *not set* | String |  |  | 
-| dispense_on (as Object) | *not set* | Object |  |  | 
-| entity |  | Object | The entity to be placed in the world. Value must match a regular expression pattern of "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". | My Sword Turtle: `"minecraft:turtle"` | 
-| use_on (Use On) | [] | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. | My Sword Turtle: `["minecraft:sand"]` | 
-| use_on (as String) | *not set* | String |  |  | 
-| use_on (as Object) | *not set* | Object |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| dispense_on (Dispense On) | [] | Array of [Dispense On](#dispense-on) items | List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed. | 
+| dispense_on (as String) | *not set* | String |  | 
+| dispense_on (as Object) | *not set* | Object |  | 
+| entity |  | Object | The entity to be placed in the world. Value must match a regular expression pattern of "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". | 
+| use_on (Use On) | [] | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. | 
+| use_on (as String) | *not set* | String |  | 
+| use_on (as Object) | *not set* | Object |  | 
 
 ##### Dispense On
 
@@ -1086,51 +1092,32 @@ Allows an item to place entities into the world. Additionally, in version 1.19.8
 | states (as Boolean true/false) | *not set* | Boolean true/false |  | 
 | tags |  | String |  | 
 
-#### Item Components Food
+#### Item Food
 Sets the item as a food component, allowing it to be edible to the player.
 
 > [!Note]
 > Requires the following component in order to work properly:
 > 
-> * [Use Modifier (minecraft:use_modifier)](./minecraft_use_modifier.md)
+> * [Use Modifiers (minecraft:use_modifiers)](./minecraft_use_modifiers.md)
 > 
 
-##### Item Components Food Properties
+##### Item Food Properties
 
 **JSON path:** `components > minecraft:food`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| can_always_eat | false | Boolean true/false | If true you can always eat this item (even when not hungry). Default is set to false. | AppleEnchanted: `true` | 
-| cooldown_time | *not set* | Decimal number |  |  | 
-| cooldown_type | *not set* | String |  |  | 
-| effects | *not set* | Array of [Effects](#effects) items |  | AppleEnchanted: `[{"name":"regeneration","chance":1,"duration":30,"amplifier":1},{"name":"absorption","chance":1,"duration":120,"amplifier":3},{"name":"resistance","chance":1,"duration":300,"amplifier":0},{"name":"fire_resistance","chance":1,"duration":300,"amplifier":0}]`, Chicken: `[{"name":"hunger","chance":0.3,"duration":30,"amplifier":0}]` | 
-| is_meat | *not set* | String |  |  | 
-| nutrition | 0 | Integer number | Value that is added to the entity's nutrition when the item is used. Default is set to 0. | Apple: `4`, Baked Potato: `5`, Beef: `3` | 
-| on_use_action | *not set* | [Minecraft Event Trigger](../../../EntityReference/Examples/Definitions/NestedTables/triggers.md) |  |  | 
-| on_use_range | *not set* | [Minecraft Event Trigger](../../../EntityReference/Examples/Definitions/NestedTables/triggers.md) |  |  | 
-| saturation_modifier | 0.6000000238418579 | Decimal number | saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6. | Apple: `0.3`, AppleEnchanted: `"supernatural"`, Baked Potato: `"normal"` | 
-| using_converts_to (Using Converts To) | {} | String | When used, converts to the item specified by the string in this field. Default does not convert item. | Beetroot Soup: `"bowl"`, Honey Bottle: `"glass_bottle"` | 
-| using_converts_to (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
-| remove_effects | *not set* | Array of strings | Deprecated - no longer in use. |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| can_always_eat | false | Boolean true/false | If true you can always eat this item (even when not hungry). Default is set to false. | 
+| nutrition | 0 | Integer number | Value that is added to the entity's nutrition when the item is used. Default is set to 0. | 
+| saturation_modifier | 0.6000000238418579 | Decimal number | saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6. | 
+| using_converts_to | {} | String | When used, converts to the item specified by the string in this field. Default does not convert item. | 
+| using_converts_to (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
+| remove_effects | *not set* | Array of strings | Deprecated - no longer in use. | 
 
 ##### remove_effects
 
 Deprecated - no longer in use. Array of effect names to remove when eating this food. This property was deprecated and is no longer supported in newer versions. This property no longer works after format versions of at least 1.20.0. This property was available in versions 1.14 through 1.18 but has been removed in later versions.
 
-
-##### Effects
-
-###### Effects Properties
-
-**JSON path:** `components > minecraft:food > effects`
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| amplifier | *not set* | Decimal number |  | AppleEnchanted: `1` | 
-| chance | *not set* | Decimal number |  | AppleEnchanted: `1` | 
-| duration | *not set* | Decimal number |  | AppleEnchanted: `30` | 
-| name | *not set* | String |  | AppleEnchanted: `"regeneration"` | 
 
 #### Fuel (Fuel)
 
@@ -1154,7 +1141,7 @@ Same structure as [Allow Off Hand (Allow Off Hand)](#allow-off-hand-allow-off-ha
 
 #### Hover Text Color (Hover Text Color)
 
-Same structure as [Item Components Display Name](#item-components-display-name).
+Same structure as [Item Display Name](#item-display-name).
 
 
 #### Icon (Icon)
@@ -1182,50 +1169,50 @@ Same structure as [Allow Off Hand (Allow Off Hand)](#allow-off-hand-allow-off-ha
 Same structure as [Damage (Damage)](#damage-damage).
 
 
-#### Item Components Projectile
+#### Item Projectile
 Defines an item as a projectile that can be shot from dispensers or used as ammunition with minecraft:shooter. When combined with minecraft:throwable, this component specifies which entity is spawned when the item is thrown.
 
 
-##### Item Components Projectile Properties
+##### Item Projectile Properties
 
 **JSON path:** `components > minecraft:projectile`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| minimum_critical_power | 0 | Decimal number | Specifies how long a player must charge a projectile for it to critically hit. | My Sword Chuck: `1.25` | 
-| projectile_entity | *not set* | String | Which entity is to be fired as a projectile. Value must match a regular expression pattern of "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". | Wind Charge: `"wind_charge_projectile"`, My Sword Chuck: `"minecraft:snowball"` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| minimum_critical_power | 0 | Decimal number | Specifies how long a player must charge a projectile for it to critically hit. | 
+| projectile_entity | *not set* | String | Which entity is to be fired as a projectile. Value must match a regular expression pattern of "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". | 
 
 #### Rarity (Rarity)
 
-Same structure as [Item Components Display Name](#item-components-display-name).
+Same structure as [Item Display Name](#item-display-name).
 
 
-#### Item Components Record
+#### Item Record
 Used by record items to play music.
 
 
-##### Item Components Record Properties
+##### Item Record Properties
 
 **JSON path:** `components > minecraft:record`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| comparator_signal | 1 | Integer number | Specifies signal strength for comparator blocks to use, from 1 - 13. | My Sword Singing: `1` | 
-| duration | 0 | Decimal number | Specifies duration of sound event in seconds, float value. | My Sword Singing: `5` | 
-| sound_event | undefined | [Sound Event](#sound-event-choices) choices | Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic. | My Sword Singing: `"pre_ram.screamer"` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| comparator_signal | 1 | Integer number | Specifies signal strength for comparator blocks to use, from 1 - 13. | 
+| duration | 0 | Decimal number | Specifies duration of sound event in seconds, float value. | 
+| sound_event | undefined | [Sound Event](#sound-event-choices) choices | Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic. | 
 
-#### Item Components Repairable
+#### Item Repairable
 Defines the items that can be used to repair a defined item, and the amount of durability each item restores upon repair. Each entry needs to define a list of strings for 'items' that can be used for the repair and an optional 'repair_amount' for how much durability is repaired.
 
 
-##### Item Components Repairable Properties
+##### Item Repairable Properties
 
 **JSON path:** `components > minecraft:repairable`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| repair_items | [] | String | List of repair item entries. Each entry needs to define a list of strings for `items` that can be used for the repair and an optional `repair_amount` for how much durability is gained. | Chestplate: `[{"items":["minecraft:stick"],"repair_amount":"context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"}]`, My Sword Chuck: `[{"items":["minecraft:diamond"],"repair_amount":"query.max_durability * 0.25"}]` | 
-| repair_items (Repair Items) | *not set* | [Repair Items (Repair Items)](#repair-items-repair-items) item |  |  | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| repair_items | [] | String | List of repair item entries. Each entry needs to define a list of strings for `items` that can be used for the repair and an optional `repair_amount` for how much durability is gained. | 
+| repair_items (Repair Items) | *not set* | [Repair Items (Repair Items)](#repair-items-repair-items) item |  | 
 
 ##### Repair Items (Repair Items)
 
@@ -1252,7 +1239,7 @@ Defines the items that can be used to repair a defined item, and the amount of d
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
 
-#### Item Components Shooter
+#### Item Shooter
 Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have the minecraft:use_modifiers component in order to function properly.
 
 > [!Note]
@@ -1267,27 +1254,27 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 > * [Projectile (minecraft:projectile)](./minecraft_projectile.md)
 > 
 
-##### Item Components Shooter Properties
+##### Item Shooter Properties
 
 **JSON path:** `components > minecraft:shooter`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| ammunition | [] | Array of [Ammunition](#item-components-ammunition) items | A list of ammunition entries that define which items can be used as projectiles for this shooter. | My Sword Shoot: `[{"item":"minecraft:snowball","use_offhand":true,"search_inventory":true,"use_in_creative":true}]` | 
-| charge_on_draw | false | Boolean true/false | When true, the shooter begins charging when the player starts drawing, similar to a crossbow. Default is false. |  | 
-| max_draw_duration | 0 | Decimal number | The maximum time in seconds that a player can draw the shooter before it automatically fires or reaches maximum power. Default is 0. | My Sword Shoot: `1` | 
-| scale_power_by_draw_duration | false | Boolean true/false | When true, the projectile's launch power increases based on how long the player holds the use button before releasing. Default is false. | My Sword Shoot: `true` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| ammunition | [] | Array of [Ammunition](#item-ammunition) items | A list of ammunition entries that define which items can be used as projectiles for this shooter. | 
+| charge_on_draw | false | Boolean true/false | When true, the shooter begins charging when the player starts drawing, similar to a crossbow. Default is false. | 
+| max_draw_duration | 0 | Decimal number | The maximum time in seconds that a player can draw the shooter before it automatically fires or reaches maximum power. Default is 0. | 
+| scale_power_by_draw_duration | false | Boolean true/false | When true, the projectile's launch power increases based on how long the player holds the use button before releasing. Default is false. | 
 
 ##### ammunition
 
 A list of ammunition entries that define which items can be used as projectiles for this shooter. Each entry specifies the item, whether to search the offhand, inventory, and whether to use in creative mode.
 
 
-##### Item Components Ammunition
-Is ammunition for a shooter item.
+##### Item Ammunition
+Configures this item as ammunition consumed by ranged weapons like bows and crossbows. Reference compatible shooter items and specify search behavior for inventory slots. When players use the associated weapon, this item is consumed and its projectile is launched.
 
 
-###### Item Components Ammunition Properties
+###### Item Ammunition Properties
 
 **JSON path:** `components > minecraft:shooter > ammunition`
 
@@ -1309,7 +1296,7 @@ Same structure as [Allow Off Hand (Allow Off Hand)](#allow-off-hand-allow-off-ha
 Same structure as [Allow Off Hand (Allow Off Hand)](#allow-off-hand-allow-off-hand).
 
 
-#### Item Components Storage Item
+#### Item Storage Item
 Enables an item to store data of the dynamic container associated with it. A dynamic container is a container for storing items that is linked to an item instead of a block or an entity.
 
 > [!Note]
@@ -1319,7 +1306,7 @@ Enables an item to store data of the dynamic container associated with it. A dyn
 > This item requires a format version of at least 1.21.40.
 
 
-##### Item Components Storage Item Properties
+##### Item Storage Item Properties
 
 **JSON path:** `components > minecraft:storage_item`
 
@@ -1331,38 +1318,36 @@ Enables an item to store data of the dynamic container associated with it. A dyn
 | banned_items | [] | String | List of items that are not allowed in this Storage Item. | Black Bundle: `["minecraft:shulker_box","minecraft:undyed_shulker_box"]` | 
 | banned_items (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
 | max_slots | 64 | Integer number | The maximum allowed weight of the sum of all contained items. Maximum is 64. Default is 64. Value must be <= 64. | Black Bundle: `64` | 
-| max_weight_limit | *not set* | Decimal number |  | Black Bundle: `64` | 
-| weight_in_storage_item | *not set* | Decimal number |  | Black Bundle: `4` | 
 
-#### Item Components Storage Weight Limit
+#### Item Storage Weight Limit
 Specifies the maximum weight limit that a storage item can hold.
 
 
-##### Item Components Storage Weight Limit Properties
+##### Item Storage Weight Limit Properties
 
 **JSON path:** `components > minecraft:storage_weight_limit`
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| max_weight_limit | 64 | Integer number | The maximum allowed weight of the sum of all contained items. Maximum is 64. Default is 64. Value must be <= 64. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max_weight_limit | 64 | Integer number | The maximum allowed weight of the sum of all contained items. Maximum is 64. Default is 64. Value must be <= 64. | Black Bundle: `64` | 
 
-#### Item Components Storage Weight Modifier
+#### Item Storage Weight Modifier
 Specifies the maximum weight limit that a storage item can hold.
 
 
-##### Item Components Storage Weight Modifier Properties
+##### Item Storage Weight Modifier Properties
 
 **JSON path:** `components > minecraft:storage_weight_modifier`
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| weight_in_storage_item | 4 | Integer number | The weight of this item when inside another Storage Item. Default is 4. 0 means item is not allowed in another Storage Item. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| weight_in_storage_item | 4 | Integer number | The weight of this item when inside another Storage Item. Default is 4. 0 means item is not allowed in another Storage Item. | Black Bundle: `4` | 
 
-#### Item Components Tags
+#### Item Tags
 Determines which tags are included on a given item.
 
 
-##### Item Components Tags Properties
+##### Item Tags Properties
 
 **JSON path:** `components > minecraft:tags`
 
@@ -1370,36 +1355,36 @@ Determines which tags are included on a given item.
 |:----------|:-------------|:----|:-----------|:------------- |
 | tags | [] | Array of strings | An array that can contain multiple item tags. | Apple: `["minecraft:is_food"]` | 
 
-#### Item Components Throwable
+#### Item Throwable
 Makes an item throwable by the player, similar to a snowball or ender pearl. Use with minecraft:projectile to specify which entity is spawned when thrown.
 
 > [!Note]
 > Combine with minecraft:projectile to define the projectile entity. For charged throws (like tridents), set scale_power_by_draw_duration to true and configure min/max draw durations.
 
 
-##### Item Components Throwable Properties
+##### Item Throwable Properties
 
 **JSON path:** `components > minecraft:throwable`
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | do_swing_animation | false | Boolean true/false | Determines whether the item should use the swing animation when thrown. Default is set to false. | Wind Charge: `true` | 
-| launch_power_scale | 1 | Decimal number | The scale at which the power of the throw increases. Default is set to 1.0. | Wind Charge: `1.5`, My Sword Chuck: `1` | 
+| launch_power_scale | 1 | Decimal number | The scale at which the power of the throw increases. Default is set to 1.0. | Wind Charge: `1.5` | 
 | max_draw_duration | 0 | Decimal number | The maximum duration to draw a throwable item. Default is set to 0.0. |  | 
-| max_launch_power | 1 | Decimal number | The maximum power to launch the throwable item. Default is set to 1.0. | Wind Charge: `1.5`, My Sword Chuck: `1` | 
+| max_launch_power | 1 | Decimal number | The maximum power to launch the throwable item. Default is set to 1.0. | Wind Charge: `1.5` | 
 | min_draw_duration | 0 | Decimal number | The minimum duration to draw a throwable item. Default is set to 0.0. |  | 
 | scale_power_by_draw_duration | false | Boolean true/false | Whether or not the power of the throw increases with duration charged. Default is set to false. |  | 
 
 #### Use Animation (Use Animation)
 
-Same structure as [Item Components Display Name](#item-components-display-name).
+Same structure as [Item Display Name](#item-display-name).
 
 
-#### Item Components Use Modifiers
+#### Item Use Modifiers
 Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food.
 
 
-##### Item Components Use Modifiers Properties
+##### Item Use Modifiers Properties
 
 **JSON path:** `components > minecraft:use_modifiers`
 
@@ -1408,7 +1393,7 @@ Determines how long an item takes to use in combination with components such as 
 | emit_vibrations | true | Boolean true/false | Whether vibrations are emitted when the item starts or stops being used. |  | 
 | movement_modifier | *not set* | Decimal number | Multiplier applied to the player's movement speed while the item is in use. Value must be <= 1. | Apple: `0.35` | 
 | start_sound | *not set* | [Start Sound](#sound-event-choices) choices | Sound played when the item starts being used. |  | 
-| start_using | if_first | [Start Using](#start-using-choices) choices | Controls how using the item triggers start using behavior. "if_first" only starts if no other component has started using yet; "always" always restarts using. Defaults to "if_first". |  | 
+| start_using | if_first | [Start Using](#start-using-choices) choices | Controls how using the item triggers start using behavior. "if_first" only starts if no other component has started using yet; "always" always restarts using. Defaults to "if_first". | Apple: `"always"` | 
 | use_duration | 0 | Decimal number | Time, in seconds, that the item takes to use. | Apple: `1.6` | 
 
 ### Start Using choices
@@ -1418,23 +1403,23 @@ Determines how long an item takes to use in combination with components such as 
 | always | Always | |
 | if_first | If first | |
 
-#### Item Components Wearable
+#### Item Wearable
 Sets the wearable item component, which allows an item to be worn by a player in a specified equipment slot.
 
 > [!Note]
 > Valid equipment slots are: slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.armor.body, and slot.weapon.offhand. When a non-hand armor slot is used, the max stack size is automatically set to 1.
 
 
-##### Item Components Wearable Properties
+##### Item Wearable Properties
 
 **JSON path:** `components > minecraft:wearable`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| hides_player_location | false | Boolean true/false | Determines whether the Player's location is hidden on Locator Maps and the Locator Bar when the wearable item is worn. Default is false. |  | 
-| protection | 0 | Integer number | How much protection the wearable item provides. Default is set to 0. |  | 
-| slot | *not set* | [Slot](#slot-choices) choices | Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1. | Chestplate: `"slot.armor.chest"`, Crown: `"slot.armor.head"`, My Boots: `"slot.armor.feet"` | 
-| dispensable | *not set* | Boolean true/false |  | Chestplate: `true` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| hides_player_location | false | Boolean true/false | Determines whether the Player's location is hidden on Locator Maps and the Locator Bar when the wearable item is worn. Default is false. | 
+| protection | 0 | Integer number | How much protection the wearable item provides. Default is set to 0. | 
+| slot | *not set* | [Slot](#slot-choices) choices | Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1. | 
+| dispensable | *not set* | Boolean true/false |  | 
 
 ### Slot choices
 

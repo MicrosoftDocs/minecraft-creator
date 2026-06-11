@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.8.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.40-beta.20 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.40-beta.23 of Minecraft.
 
 ## Available Versions
 - `2.10.0-beta`
@@ -114,6 +114,7 @@ The following API versions are from a major version that is documented here: [*@
 - [PlatformType](PlatformType.md)
 - [PlayerInventoryType](PlayerInventoryType.md)
 - [PlayerPermissionLevel](PlayerPermissionLevel.md)
+- [PlayerSplitScreenSlot](PlayerSplitScreenSlot.md)
 - [PlayerWaypointsMode](PlayerWaypointsMode.md)
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
 - [ScriptEventSource](ScriptEventSource.md)
@@ -258,7 +259,6 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityFireImmuneComponent](EntityFireImmuneComponent.md)
 - [EntityFloatsInLiquidComponent](EntityFloatsInLiquidComponent.md)
 - [EntityFlyingSpeedComponent](EntityFlyingSpeedComponent.md)
-- [EntityFogComponent](EntityFogComponent.md)
 - [EntityFrictionModifierComponent](EntityFrictionModifierComponent.md)
 - [EntityHasMarkVariantCondition](EntityHasMarkVariantCondition.md)
 - [EntityHasVariantCondition](EntityHasVariantCondition.md)
@@ -347,6 +347,8 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityTameableComponent](EntityTameableComponent.md)
 - [EntityTamedAfterEvent](EntityTamedAfterEvent.md)
 - [EntityTamedAfterEventSignal](EntityTamedAfterEventSignal.md)
+- [EntityTamedBeforeEvent](EntityTamedBeforeEvent.md)
+- [EntityTamedBeforeEventSignal](EntityTamedBeforeEventSignal.md)
 - [EntityTameMountComponent](EntityTameMountComponent.md)
 - [EntityType](EntityType.md)
 - [EntityTypeFamilyComponent](EntityTypeFamilyComponent.md)
@@ -367,6 +369,7 @@ The following API versions are from a major version that is documented here: [*@
 - [FeedItemEffect](FeedItemEffect.md)
 - [FillContainerFunction](FillContainerFunction.md)
 - [FluidContainer](FluidContainer.md)
+- [FogSettings](FogSettings.md)
 - [GameRuleChangeAfterEvent](GameRuleChangeAfterEvent.md)
 - [GameRuleChangeAfterEventSignal](GameRuleChangeAfterEventSignal.md)
 - [GameRules](GameRules.md)
@@ -702,8 +705,8 @@ The following API versions are from a major version that is documented here: [*@
 - [EnchantmentLevelOutOfBoundsError](EnchantmentLevelOutOfBoundsError.md)
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
-- [EntityFogComponentError](EntityFogComponentError.md)
 - [EntitySpawnError](EntitySpawnError.md)
+- [FogSettingsError](FogSettingsError.md)
 - [InvalidBlockComponentError](InvalidBlockComponentError.md)
 - [InvalidContainerError](InvalidContainerError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)

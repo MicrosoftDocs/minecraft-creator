@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "PoolElementFeature",
+  "title": "Feature Pool Element",
+  "description": "Pool element that places a Feature (from the Features Reference) as part of a Jigsaw Structure, instead of placing a structure template. Useful for inserting procedurally generated decorations such as trees, plants, or ore patches into jigsaw layouts.",
+  "fields": [
+    {
+      "id": "element_type",
+      "title": "Element Type",
+      "description": "Must be 'minecraft:feature_pool_element' for this element variant.",
+      "dataType": "string",
+      "isRequired": true,
+      "choices": [
+        {
+          "id": "minecraft:feature_pool_element",
+          "title": "Feature Pool Element"
+        }
+      ]
+    },
+    {
+      "id": "feature",
+      "title": "Feature",
+      "description": "Identifier of the Feature to place when this element is chosen. Example: 'minecraft:eyeblossom_feature'.",
+      "dataType": "string",
+      "isRequired": true
+    },
+    {
+      "id": "projection",
+      "title": "Projection",
+      "description": "How the feature projects onto terrain.",
+      "dataType": "string",
+      "defaultValue": "rigid",
+      "choices": [
+        {
+          "id": "rigid",
+          "title": "Rigid",
+          "description": "Placed without height adjustment."
+        },
+        {
+          "id": "terrain_matching",
+          "title": "Terrain Matching",
+          "description": "Placed relative to terrain height."
+        }
+      ]
+    }
+  ]
+}

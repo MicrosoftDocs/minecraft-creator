@@ -18,9 +18,11 @@ Represents a UI session for a given player
 - [navigateToPauseScreen](#navigatetopausescreen)
 - [navigateToSamples](#navigatetosamples)
 - [saveAndExit](#saveandexit)
+- [showKeyboardSettings](#showkeyboardsettings)
 - [showUpdateInformation](#showupdateinformation)
 - [updateControlHelpPanelVisibility](#updatecontrolhelppanelvisibility)
 - [updateLogPanelVisibility](#updatelogpanelvisibility)
+- [updateStructurePanelVisibility](#updatestructurepanelvisibility)
 - [updateUISettingsPanelVisibility](#updateuisettingspanelvisibility)
 
 ### **activateTutorial**
@@ -77,6 +79,15 @@ Saves levels & exits back to Editor main menu.
 
 **Returns** *void*
 
+### **showKeyboardSettings**
+`
+showKeyboardSettings(): void
+`
+
+Shows the Keyboard Settings modal
+
+**Returns** *void*
+
 ### **showUpdateInformation**
 `
 showUpdateInformation(): void
@@ -104,6 +115,18 @@ updateLogPanelVisibility(visibility: boolean): void
 `
 
 Updates the visibility of the log panel
+
+#### **Parameters**
+- **visibility**: *boolean*
+
+**Returns** *void*
+
+### **updateStructurePanelVisibility**
+`
+updateStructurePanelVisibility(visibility: boolean): void
+`
+
+Updates the visibility of the Structure panel
 
 #### **Parameters**
 - **visibility**: *boolean*

@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "PoolElementLegacySingle",
+  "title": "Legacy Single Pool Element",
+  "description": "Variant of single_pool_element used for legacy-format structure files. Same field set as Single Pool Element; differs only in how the underlying structure file is interpreted.",
+  "fields": [
+    {
+      "id": "element_type",
+      "title": "Element Type",
+      "description": "Must be 'minecraft:legacy_single_pool_element' for this element variant.",
+      "dataType": "string",
+      "isRequired": true,
+      "choices": [
+        {
+          "id": "minecraft:legacy_single_pool_element",
+          "title": "Legacy Single Pool Element"
+        }
+      ]
+    },
+    {
+      "id": "location",
+      "title": "Location",
+      "description": "Path to the structure template file, relative to the behavior pack's structures folder.",
+      "dataType": "string",
+      "isRequired": true
+    },
+    {
+      "id": "processors",
+      "title": "Processors",
+      "description": "Identifier of the processor list to apply to this element, or an inline processor configuration. Optional.",
+      "dataType": "string",
+      "alternates": [
+        {
+          "id": "processors",
+          "dataType": "object",
+          "description": "Inline processor configuration."
+        }
+      ]
+    },
+    {
+      "id": "projection",
+      "title": "Projection",
+      "description": "How the element projects onto terrain.",
+      "dataType": "string",
+      "defaultValue": "rigid",
+      "choices": [
+        {
+          "id": "rigid",
+          "title": "Rigid",
+          "description": "Placed without height adjustment."
+        },
+        {
+          "id": "terrain_matching",
+          "title": "Terrain Matching",
+          "description": "Placed relative to terrain height; blocks adjust along the Y axis to match the ground."
+        }
+      ]
+    }
+  ]
+}

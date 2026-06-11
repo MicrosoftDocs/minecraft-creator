@@ -108,6 +108,18 @@ Type: [*CommandPermissionLevel*](CommandPermissionLevel.md)
 Notes:
   - This property can't be edited in restricted-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **fogSettings**
+`read-only fogSettings: FogSettings;`
+
+Contains methods for manipulating the render distance fog settings of a Player.
+
+Type: [*FogSettings*](FogSettings.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **graphicsMode**
 `read-only graphicsMode: GraphicsMode;`
 
@@ -210,20 +222,11 @@ Type: [*ScreenDisplay*](ScreenDisplay.md)
 Notes:
   - This property can throw errors when used.
 
-### **playerPermissionLevel**
-`read-only playerPermissionLevel: PlayerPermissionLevel;`
-
-Type: [*PlayerPermissionLevel*](PlayerPermissionLevel.md)
-
-Notes:
-  - This property can throw errors when used.
-    - Throws [*InvalidEntityError*](InvalidEntityError.md)
-
 ::: moniker range="=minecraft-bedrock-experimental"
-### **playfabId**
-`read-only playfabId: string;`
+### **persistentId**
+`read-only persistentId: string;`
 
-Gets the player's Playfab ID.
+An identifier that can be used to identify a player across sessions.
 
 Type: *string*
 
@@ -234,6 +237,15 @@ Notes:
   - This property can throw errors when used.
     - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
 ::: moniker-end
+
+### **playerPermissionLevel**
+`read-only playerPermissionLevel: PlayerPermissionLevel;`
+
+Type: [*PlayerPermissionLevel*](PlayerPermissionLevel.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **selectedSlotIndex**
 `selectedSlotIndex: number;`
@@ -278,6 +290,9 @@ Notes:
 - [getPing](#getping)
 ::: moniker-end
 - [getSpawnPoint](#getspawnpoint)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getSplitScreenSlot](#getsplitscreenslot)
+::: moniker-end
 - [getTotalXp](#gettotalxp)
 - [playMusic](#playmusic)
 - [playSound](#playsound)
@@ -444,7 +459,6 @@ Gets the player's ping in milliseconds.
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
 ::: moniker-end
@@ -460,6 +474,24 @@ Gets the current spawn point of the player.
   
 Notes:
 - This function can throw errors.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getSplitScreenSlot**
+`
+getSplitScreenSlot(): PlayerSplitScreenSlot | undefined
+`
+
+Returns the split screen slot of the player.
+
+**Returns** [*PlayerSplitScreenSlot*](PlayerSplitScreenSlot.md) | *undefined* - The split screen slot of the player or undefined if the player is not in a split screen session.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
 
 ### **getTotalXp**
 `

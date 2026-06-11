@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "PoolElementSingle",
+  "title": "Single Pool Element",
+  "description": "Pool element that places a single Structure Template (.mcstructure file) when chosen.",
+  "fields": [
+    {
+      "id": "element_type",
+      "title": "Element Type",
+      "description": "Must be 'minecraft:single_pool_element' for this element variant.",
+      "dataType": "string",
+      "isRequired": true,
+      "choices": [
+        {
+          "id": "minecraft:single_pool_element",
+          "title": "Single Pool Element"
+        }
+      ]
+    },
+    {
+      "id": "location",
+      "title": "Location",
+      "description": "Path to the structure template file, relative to the behavior pack's structures folder. Example: 'minecraft:trail_ruins/tower/tower_top_1'.",
+      "dataType": "string",
+      "isRequired": true
+    },
+    {
+      "id": "processors",
+      "title": "Processors",
+      "description": "Identifier of the processor list to apply to this element, or an inline processor configuration. Optional.",
+      "dataType": "string",
+      "alternates": [
+        {
+          "id": "processors",
+          "dataType": "object",
+          "description": "Inline processor configuration."
+        }
+      ]
+    },
+    {
+      "id": "projection",
+      "title": "Projection",
+      "description": "How the element projects onto terrain.",
+      "dataType": "string",
+      "defaultValue": "rigid",
+      "choices": [
+        {
+          "id": "rigid",
+          "title": "Rigid",
+          "description": "Placed without height adjustment."
+        },
+        {
+          "id": "terrain_matching",
+          "title": "Terrain Matching",
+          "description": "Placed relative to terrain height; blocks adjust along the Y axis to match the ground."
+        }
+      ]
+    }
+  ]
+}

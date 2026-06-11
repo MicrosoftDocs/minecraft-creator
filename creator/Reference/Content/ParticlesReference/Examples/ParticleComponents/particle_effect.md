@@ -371,21 +371,9 @@ Emits particles from random positions within the attached entity's axis-aligned 
 | surface_only | false | Boolean true/false |  | 
 
 #### Client Particles Emitter Shape Point
-Emits all particles from a single point in space, offset from the emitter origin. This is the simplest and most common emission shape—all particles spawn at the same location and spread outward based on their initial velocity. Used for torches, candles, sparks, magic projectile cores, and any effect with a focused emission source.
 
+Same structure as [Client Particles Emitter Shape Custom](#client-particles-emitter-shape-custom).
 
-##### Client Particles Emitter Shape Point Properties
-
-**JSON path:** `components > minecraft:emitter_shape_point`
-
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| direction | *not set* | Molang array | The direction of particle emission, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
-| direction (Direction) | *not set* | Key/item pairs of [Direction (Direction)](#direction-direction) items |  | 
-| direction (as Decimal number) | *not set* | Decimal number |  | 
-| offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
-| offset (Offset) | *not set* | Key/item pairs of [Offset (Offset)](#offset-offset) items |  | 
-| offset (as Decimal number) | *not set* | Decimal number |  | 
 
 #### Client Particles Emitter Shape Sphere
 Emits particles from random positions within a spherical volume. Configure the radius to set sphere size and surface_only to restrict spawns to the outer shell. Direction can be inward, outward, or custom. Ideal for explosions, magical orbs, bubble columns, mob spawn effects, and any effect needing uniform 3D distribution.

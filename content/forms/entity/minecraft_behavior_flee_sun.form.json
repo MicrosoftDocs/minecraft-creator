@@ -32,7 +32,7 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
               "content": 1
@@ -53,16 +53,16 @@
               "content": 2
             }
           ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+              "content": 2
+            }
+          ],
           "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
               "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/skeleton.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
-              "content": 2
             }
           ]
         }
@@ -70,6 +70,15 @@
     ],
     "samples": {
       "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
           "content": {
@@ -144,16 +153,16 @@
               "content": 2
             }
           ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+              "content": 2
+            }
+          ],
           "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
               "content": 3
-            }
-          ],
-          "/vanilla/behavior_pack/entities/skeleton.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
-              "content": 2
             }
           ]
         }
@@ -171,7 +180,7 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
               "content": 1
@@ -182,6 +191,15 @@
     ],
     "samples": {
       "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.flee_sun/",
           "content": {

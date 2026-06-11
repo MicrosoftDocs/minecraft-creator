@@ -4,11 +4,11 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.EntityFogComponentError Class
-description: Contents of the @minecraft/server.EntityFogComponentError class.
+title: minecraft/server.FogSettingsError Class
+description: Contents of the @minecraft/server.FogSettingsError class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# EntityFogComponentError Class
+# FogSettingsError Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -16,4 +16,4 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - *Error*
 
-Error thrown by [*@minecraft/server.EntityFogComponent*](../../../scriptapi/minecraft/server/EntityFogComponent.md) operations when the fog stack limit is exceeded or an invalid fog identifier is provided.
+Error thrown by [*@minecraft/server.FogSettings*](../../../scriptapi/minecraft/server/FogSettings.md) operations when the fog stack limit is exceeded or an invalid fog identifier is provided.

@@ -1,10 +1,15 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "title": "Jigsaw Structure Description",
+  "description": "Identifies the Jigsaw Structure. The identifier set here is what other definitions reference: Structure Sets list this identifier in their 'structures' weighted list, and commands such as /locate use it to find an instance in the world. Must include a namespace; the 'minecraft' namespace must not be used unless overriding a vanilla structure.",
   "summarizer": {
     "phrases": [
       {
         "tokens": [
-          { "type": "literal", "text": "identifies a jigsaw structure definition" }
+          {
+            "type": "literal",
+            "text": "identifies a jigsaw structure definition"
+          }
         ]
       }
     ]

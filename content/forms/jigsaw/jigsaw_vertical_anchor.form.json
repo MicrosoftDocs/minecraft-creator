@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "JigsawVerticalAnchor",
+  "title": "Vertical Anchor",
+  "description": "A vertical anchor defines a point in the dimension to offset from. Used as the 'value' (for constant height providers) or as 'min' and 'max' bounds (for uniform height providers). Exactly one of the four anchor properties below should be set.",
+  "fields": [
+    {
+      "id": "absolute",
+      "title": "Absolute",
+      "description": "An absolute Y coordinate.",
+      "dataType": "int"
+    },
+    {
+      "id": "above_bottom",
+      "title": "Above Bottom",
+      "description": "A relative height above the bottom of the dimension. Must be positive.",
+      "dataType": "int",
+      "minValue": 0
+    },
+    {
+      "id": "below_top",
+      "title": "Below Top",
+      "description": "A relative height below the top of the dimension. Must be positive.",
+      "dataType": "int",
+      "minValue": 0
+    },
+    {
+      "id": "from_sea",
+      "title": "From Sea",
+      "description": "A relative height starting at the dimension's sea level.",
+      "dataType": "int"
+    }
+  ]
+}

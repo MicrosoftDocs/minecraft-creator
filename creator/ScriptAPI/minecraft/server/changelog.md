@@ -94,6 +94,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
+- Added function *[`getClosest`](BlockVolumeBase.md#getclosest)*
+- Added function *[`getFarthest`](BlockVolumeBase.md#getfarthest)*
 #### Changed *[`Camera`](Camera.md)*
 - Added function *[`addShake`](Camera.md#addshake)*
 - Added function *[`setCameraWithEase`](Camera.md#setcamerawithease)*
@@ -124,7 +126,6 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
-#### Added *[`EntityFogComponent`](EntityFogComponent.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Added *[`EntityStartSneakingAfterEvent`](EntityStartSneakingAfterEvent.md)*
 #### Added *[`EntityStartSneakingAfterEventSignal`](EntityStartSneakingAfterEventSignal.md)*
@@ -132,10 +133,13 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityStopSneakingAfterEventSignal`](EntityStopSneakingAfterEventSignal.md)*
 #### Added *[`EntityTamedAfterEvent`](EntityTamedAfterEvent.md)*
 #### Added *[`EntityTamedAfterEventSignal`](EntityTamedAfterEventSignal.md)*
+#### Added *[`EntityTamedBeforeEvent`](EntityTamedBeforeEvent.md)*
+#### Added *[`EntityTamedBeforeEventSignal`](EntityTamedBeforeEventSignal.md)*
 #### Changed *[`EntityTypes`](EntityTypes.md)*
 - Changed function *[`get`](EntityTypes.md#get)*
   - Changed return type from [*EntityType*](EntityType.md) to *EntityType* | *undefined*
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
+#### Added *[`FogSettings`](FogSettings.md)*
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`playerWaypoints`](GameRules.md#playerwaypoints)*
 #### Added *[`ItemBlockDynamicPropertiesComponent`](ItemBlockDynamicPropertiesComponent.md)*
@@ -149,9 +153,11 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatMessagePrefix`](Player.md#chatmessageprefix)*
 - Added property *[`chatNamePrefix`](Player.md#chatnameprefix)*
 - Added property *[`chatNameSuffix`](Player.md#chatnamesuffix)*
-- Added property *[`playfabId`](Player.md#playfabid)*
+- Added property *[`fogSettings`](Player.md#fogsettings)*
+- Added property *[`persistentId`](Player.md#persistentid)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getPing`](Player.md#getping)*
+- Added function *[`getSplitScreenSlot`](Player.md#getsplitscreenslot)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
 - Added function *[`stopSound`](Player.md#stopsound)*
@@ -207,6 +213,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`soundCompleted`](WorldAfterEvents.md#soundcompleted)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
+- Added property *[`entityTamed`](WorldBeforeEvents.md#entitytamed)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
 - Added value `DynamicProperties`
@@ -218,13 +225,13 @@ description: Changelog of the `@minecraft/server` module
 - Added value `UnexpectedEnumName`
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Added value `Npc`
-- Added value `Fog`
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)
 - Added value `PlayerWaypoints`
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `BlockDynamicProperties`
+#### Added enum [`PlayerSplitScreenSlot`](PlayerSplitScreenSlot.md)
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 ## 2.8.0

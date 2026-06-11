@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "JigsawBlockPredicate",
+  "title": "Block Predicate",
+  "description": "A BlockRule is a predicate (test) applied to a block. The 'predicate_type' determines the test and what other fields are valid.",
+  "fields": [
+    {
+      "id": "predicate_type",
+      "title": "Predicate Type",
+      "description": "The kind of block predicate.",
+      "dataType": "string",
+      "isRequired": true,
+      "defaultValue": "minecraft:always_true",
+      "choices": [
+        {
+          "id": "minecraft:always_true",
+          "title": "Always True",
+          "description": "The test is skipped and assumed true. Default predicate if none specified."
+        },
+        {
+          "id": "minecraft:block_match",
+          "title": "Block Match",
+          "description": "Matches if the block is exactly the given block name. Requires 'block'."
+        },
+        {
+          "id": "minecraft:random_block_match",
+          "title": "Random Block Match",
+          "description": "Matches if the block equals 'block' AND a random roll passes 'probability' (0-1). Use minecraft:block_match if it should always match."
+        },
+        {
+          "id": "minecraft:blockstate_match",
+          "title": "Blockstate Match",
+          "description": "Matches if the block matches the given BlockSpecifier (name + states). Requires 'block_state'."
+        },
+        {
+          "id": "minecraft:random_blockstate_match",
+          "title": "Random Blockstate Match",
+          "description": "Matches if the block matches the BlockSpecifier AND a random roll passes 'probability' (0-1). Requires 'block_state' and 'probability'."
+        },
+        {
+          "id": "minecraft:tag_match",
+          "title": "Tag Match",
+          "description": "Matches if the block carries the given block tag. Requires 'tag'."
+        }
+      ]
+    },
+    {
+      "id": "block",
+      "title": "Block",
+      "description": "Block identifier to match. Used by 'block_match' and 'random_block_match'.",
+      "dataType": "string"
+    },
+    {
+      "id": "block_state",
+      "title": "Block State",
+      "description": "BlockSpecifier to match (name plus optional states). Used by 'blockstate_match' and 'random_blockstate_match'.",
+      "dataType": "object",
+      "subFormId": "jigsaw/jigsaw_block_specifier"
+    },
+    {
+      "id": "tag",
+      "title": "Tag",
+      "description": "Block tag to match. Used by 'tag_match'.",
+      "dataType": "string"
+    },
+    {
+      "id": "probability",
+      "title": "Probability",
+      "description": "Probability of matching, in the range [0, 1]. Used by 'random_block_match' and 'random_blockstate_match'.",
+      "dataType": "float",
+      "minValue": 0,
+      "maxValue": 1
+    }
+  ]
+}

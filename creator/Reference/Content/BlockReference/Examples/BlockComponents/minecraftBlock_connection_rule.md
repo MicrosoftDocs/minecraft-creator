@@ -11,20 +11,28 @@ ms.date: 02/11/2025
 # Block Components Documentation - minecraft:connection_rule
 
 Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block.
-Experimental toggles required: Upcoming Creator Features (in format versions before 1.26.0).
 
 
-## Connection Rule Properties
+## Block Connection Rule Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| accepts_connections_from | all | String | The type of block allowed to connect to this block. | 
-| enabled_directions | ['north', 'south', 'east', 'west'] | Array of strings | The cardinal directions that connection is enabled for: `north`, `south`, `east`, and `west`. | 
+| accepts_connections_from | all | [Accepts Connections From](#accepts-connections-from-choices) choices | The type of block allowed to connect to this block. Note that the "only_fences" option allows connections from all Vanilla fences excluding NetherBrick. | 
+| enabled_directions | [south, north, east, west] | [Enabled Directions](#enabled-directions-choices) choices | The cardinal directions that connection is enabled for. Note that if "none" is specified for "accepts_connections_from", this field will not be used. | 
 
-### accepts_connections_from
+### Accepts Connections From choices
 
-The type of block allowed to connect to this block. Currently, the options are: `all` (default), `only_fences`, and `none`. Note that the `only_fences` option allows connections from all Vanilla fences excluding NetherBrick.
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| all | All | |
+| none | None | |
+| only_fences | Only fences | |
 
-### enabled_directions
+### Enabled Directions choices
 
-The cardinal directions that connection is enabled for: `north`, `south`, `east`, and `west`. All directions are enabled by default. Note that if `none` is specified for `accepts_connections_from`, this field will not be used.
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| east | East | |
+| north | North | |
+| south | South | |
+| west | West | |

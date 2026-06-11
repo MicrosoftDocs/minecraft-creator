@@ -2,7 +2,7 @@
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "StructureSet",
   "title": "Structure Set",
-  "description": "Defines a structure set that controls the placement and distribution of structures in the world.",
+  "description": "Defines a structure set that controls the placement and distribution of structures in the world. A Structure Set contains a set of Jigsaw Structures and rules for how those structures should be placed in the world relative to other instances of structures from the same set. Each structure within a set is paired with a weight that influences how frequently it is chosen.",
   "summarizer": {
     "phrases": [
       {
@@ -59,14 +59,14 @@
                 {
                   "id": "salt",
                   "title": "Salt",
-                  "description": "A seed modifier for randomization. Each structure set should use a unique salt.",
+                  "description": "Seed used for the random generator to provide a unique scatter pattern. This is used to prevent overlap when multiple structure sets share the same placement values.",
                   "dataType": "int",
                   "isRequired": true
                 },
                 {
                   "id": "separation",
                   "title": "Separation",
-                  "description": "Minimum distance in chunks between structure placements.",
+                  "description": "Padding (in chunks) within each grid cell. Structures will not generate within the padded area.",
                   "dataType": "int",
                   "defaultValue": 8,
                   "minValue": 1
@@ -74,7 +74,7 @@
                 {
                   "id": "spacing",
                   "title": "Spacing",
-                  "description": "Average distance in chunks between structure placements. Must be greater than separation.",
+                  "description": "Grid cell size (in chunks) used when generating the structure. Structures will attempt to generate at a random position within each cell. Must be greater than separation.",
                   "dataType": "int",
                   "defaultValue": 34,
                   "minValue": 2

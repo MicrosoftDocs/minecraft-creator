@@ -166,7 +166,7 @@
         "title": "Minecraft Chest Obstruction",
         "description": "This defines how a block reacts to a chest being opened underneath it.",
         "dataType": "object",
-        "subFormId": "block/chest_obstruction"
+        "subFormId": "block/minecraft_chest_obstruction"
       },
       {
         "id": "minecraft:collision_box",
@@ -282,14 +282,14 @@
         "title": "Minecraft Connection Rule",
         "description": "Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block.",
         "dataType": "object",
-        "subFormId": "block/connection_rule"
+        "subFormId": "block/minecraft_connection_rule"
       },
       {
         "id": "minecraft:crafting_table",
         "title": "Minecraft Crafting Table",
         "description": "Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes.",
         "dataType": "object",
-        "subFormId": "block/crafting_table"
+        "subFormId": "block/minecraft_crafting_table"
       },
       {
         "id": "minecraft:destructible_by_explosion",
@@ -354,7 +354,7 @@
         "title": "Minecraft Destruction Particles",
         "description": "Sets the particles that will be used when block is destroyed. This component can be omitted.",
         "dataType": "object",
-        "subFormId": "block/destruction_particles"
+        "subFormId": "block/minecraft_destruction_particles"
       },
       {
         "id": "minecraft:display_name",
@@ -367,14 +367,14 @@
         "title": "Minecraft Embedded Visual",
         "description": "This defines how a block embedded into an other block renders. Eg. a block in a flowerpot.",
         "dataType": "object",
-        "subFormId": "block/embedded_visual"
+        "subFormId": "block/minecraft_embedded_visual"
       },
       {
         "id": "minecraft:entity_fall_on",
         "title": "Minecraft Entity Fall On",
         "description": "Configures the behavior of an entity falling on this block. The minimum distance in blocks that an actor needs to fall before events are triggered.",
         "dataType": "object",
-        "subFormId": "block/entity_fall_on"
+        "subFormId": "block/minecraft_entity_fall_on"
       },
       {
         "id": "minecraft:flammable",
@@ -556,7 +556,7 @@
         "title": "Minecraft Item Visual",
         "description": "The \"minecraft:geometry\" component and \"minecraft:material_instances\" component of an item. Can be used instead of having separated component for each.",
         "dataType": "object",
-        "subFormId": "block/item_visual"
+        "subFormId": "block/minecraft_item_visual"
       },
       {
         "id": "minecraft:leashable",
@@ -582,7 +582,7 @@
         "title": "Minecraft Liquid Detection",
         "description": "The definitions for how a block behaves when detecting liquid. Only one rule definition is allowed per liquid type - if multiple are specified, the first will be used and the rest will be ignored.",
         "dataType": "object",
-        "subFormId": "block/liquid_detection"
+        "subFormId": "block/minecraft_liquid_detection"
       },
       {
         "id": "minecraft:loot",
@@ -670,7 +670,7 @@
         "title": "Minecraft Movable",
         "description": "This defines how a block reacts to being moved by another block like a piston.",
         "dataType": "object",
-        "subFormId": "block/movable"
+        "subFormId": "block/minecraft_movable"
       },
       {
         "id": "minecraft:on_fall_on",
@@ -718,14 +718,14 @@
         "id": "minecraft:placement_filter",
         "title": "Minecraft Placement Filter",
         "dataType": "object",
-        "subFormId": "block/placement_filter"
+        "subFormId": "block/minecraft_placement_filter"
       },
       {
         "id": "minecraft:precipitation_interactions",
         "title": "Minecraft Precipitation Interactions",
         "description": "Determines interactions the block will have with different precipitations. Three possible values: obrain, obstruct_rain_accumulate_snow and none",
         "dataType": "object",
-        "subFormId": "block/precipitation_interactions"
+        "subFormId": "block/minecraft_precipitation_interactions"
       },
       {
         "id": "minecraft:queued_ticking",
@@ -738,7 +738,7 @@
         "title": "Minecraft Random Offset",
         "description": "This component defines a random offset for the block, seeded based on the block's position and the specified range and steps. It affects the block's rendered position, outline, and collision.\nIf the random offset causes the collision box to extend beyond the bounds of a cube, the offset range will automatically adjust to keep the collision box within the cube.\nCulling for this block is performed without considering the random offset.",
         "dataType": "object",
-        "subFormId": "block/random_offset"
+        "subFormId": "block/minecraft_random_offset"
       },
       {
         "id": "minecraft:random_ticking",
@@ -751,21 +751,21 @@
         "title": "Minecraft Redstone Conductivity",
         "description": "The basic redstone properties of a block. If the component is not provided the default values are used.",
         "dataType": "object",
-        "subFormId": "block/redstone_conductivity"
+        "subFormId": "block/minecraft_redstone_conductivity"
       },
       {
         "id": "minecraft:redstone_consumer",
         "title": "Minecraft Redstone Consumer",
         "description": "A component describing how a block can consume and potentially propagate a redstone signal. This component is not available for block permutations.",
         "dataType": "object",
-        "subFormId": "block/redstone_consumer"
+        "subFormId": "block/minecraft_redstone_consumer"
       },
       {
         "id": "minecraft:redstone_producer",
         "title": "Minecraft Redstone Producer",
         "description": "The definitions for how a block can produce a redstone signal.",
         "dataType": "object",
-        "subFormId": "block/redstone_producer"
+        "subFormId": "block/minecraft_redstone_producer"
       },
       {
         "id": "minecraft:replaceable",
@@ -881,7 +881,7 @@
         "title": "Minecraft Support",
         "description": "Defines the support shape of the block. Currently only allows for blocks to have the same shape as a Vanilla fence and Vanilla stair. To work with custom stairs, requires the use of \"minecraft:vertical_half\" and \"minecraft:cardinal_direction\" or \"minecraft:facing_direction\" which can be set through the \"minecraft:placement_direction\" block trait. Custom blocks without this component will default to unit cube support. The type of support shape for this block. Currently, the options are: \"fence\" and \"stair\".",
         "dataType": "object",
-        "subFormId": "block/support"
+        "subFormId": "block/minecraft_support"
       },
       {
         "id": "minecraft:tags",
@@ -893,13 +893,13 @@
         "id": "minecraft:tick",
         "title": "Minecraft Tick",
         "dataType": "object",
-        "subFormId": "block/tick"
+        "subFormId": "block/minecraft_tick"
       },
       {
         "id": "minecraft:transformation",
         "title": "Minecraft Transformation",
         "dataType": "object",
-        "subFormId": "block/transformation"
+        "subFormId": "block/minecraft_transformation"
       },
       {
         "id": "minecraft:unit_cube",

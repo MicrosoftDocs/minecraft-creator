@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "PoolElementList",
+  "title": "List Pool Element",
+  "description": "Pool element that composes several other pool elements together. When chosen, all listed elements are placed as a group rather than picking one. Useful for bundling related pieces that must always appear together.",
+  "fields": [
+    {
+      "id": "element_type",
+      "title": "Element Type",
+      "description": "Must be 'minecraft:list_pool_element' for this element variant.",
+      "dataType": "string",
+      "isRequired": true,
+      "choices": [
+        { "id": "minecraft:list_pool_element", "title": "List Pool Element" }
+      ]
+    },
+    {
+      "id": "elements",
+      "title": "Elements",
+      "description": "Nested array of pool element configurations to compose. Each entry follows the same shape as a normal pool element (Single, Legacy Single, Feature, or Empty). Nesting another List Pool Element is not supported.",
+      "dataType": "objectArray",
+      "isRequired": true
+    },
+    {
+      "id": "projection",
+      "title": "Projection",
+      "description": "How the composed group projects onto terrain.",
+      "dataType": "string",
+      "defaultValue": "rigid",
+      "choices": [
+        {
+          "id": "rigid",
+          "title": "Rigid",
+          "description": "Placed without height adjustment."
+        },
+        {
+          "id": "terrain_matching",
+          "title": "Terrain Matching",
+          "description": "Placed relative to terrain height."
+        }
+      ]
+    }
+  ]
+}

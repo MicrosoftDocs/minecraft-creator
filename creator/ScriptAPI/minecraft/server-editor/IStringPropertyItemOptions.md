@@ -16,6 +16,13 @@ Optional properties for String property item
 
 ## Properties
 
+### **filterProfanity**
+`filterProfanity?: boolean;`
+
+If true, profanity filtering will be applied on blur and a warning modal will be shown. The field value will be cleared if profanity is detected.
+
+Type: *boolean*
+
 ### **hasClearButton**
 `hasClearButton?: boolean;`
 
