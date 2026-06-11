@@ -119,7 +119,7 @@
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": true
@@ -144,6 +144,17 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": [
+                {
+                  "tags": "q.all_tags('minecraft:is_spear')"
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": [
+                "minecraft:glow_ink_sac",
                 {
                   "tags": "q.all_tags('minecraft:is_spear')"
                 }
@@ -181,7 +192,7 @@
               "content": 2
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 2
@@ -208,7 +219,7 @@
               "content": 3
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 3
@@ -241,7 +252,7 @@
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": true
@@ -268,7 +279,7 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 1
@@ -300,6 +311,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 6
             }
           ],
           "/vanilla/behavior_pack/entities/parched.json": [
@@ -378,6 +395,25 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "can_pickup_any_item": true,
+            "excluded_items": [
+              "minecraft:glow_ink_sac",
+              {
+                "tags": "q.all_tags('minecraft:is_spear')"
+              }
+            ],
+            "pickup_based_on_chance": true,
+            "goal_radius": 2,
+            "priority": 6,
+            "max_dist": 3,
+            "speed_multiplier": 1
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/parched.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
@@ -397,24 +433,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "can_pickup_any_item": true,
-            "excluded_items": [
-              {
-                "tags": "q.all_tags('minecraft:is_spear')"
-              }
-            ],
-            "pickup_based_on_chance": true,
-            "goal_radius": 2,
-            "priority": 5,
-            "max_dist": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/stray.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
           "content": {
@@ -452,7 +470,7 @@
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": true
@@ -517,6 +535,17 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": [
+                "minecraft:glow_ink_sac",
+                {
+                  "tags": "q.all_tags('minecraft:is_spear')"
+                }
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/parched.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
@@ -548,7 +577,7 @@
               "content": 2
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 2
@@ -575,7 +604,7 @@
               "content": 3
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 3
@@ -638,7 +667,7 @@
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": true
@@ -677,6 +706,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 6
             }
           ],
           "/vanilla/behavior_pack/entities/parched.json": [
@@ -727,7 +762,7 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/parched.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 1
@@ -785,6 +820,25 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "can_pickup_any_item": true,
+            "excluded_items": [
+              "minecraft:glow_ink_sac",
+              {
+                "tags": "q.all_tags('minecraft:is_spear')"
+              }
+            ],
+            "pickup_based_on_chance": true,
+            "goal_radius": 2,
+            "priority": 6,
+            "max_dist": 3,
+            "speed_multiplier": 1
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/parched.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
@@ -804,24 +858,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "can_pickup_any_item": true,
-            "excluded_items": [
-              {
-                "tags": "q.all_tags('minecraft:is_spear')"
-              }
-            ],
-            "pickup_based_on_chance": true,
-            "goal_radius": 2,
-            "priority": 5,
-            "max_dist": 3,
-            "speed_multiplier": 1
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/stray.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
           "content": {

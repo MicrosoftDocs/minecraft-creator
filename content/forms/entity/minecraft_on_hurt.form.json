@@ -93,5 +93,172 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:on_hurt",
+    "title": "Entity On Hurt",
+    "description": "Adds a trigger to call when this entity takes damage.",
+    "fields": [
+      {
+        "id": "event",
+        "title": "Event",
+        "dataType": "string",
+        "defaultValue": "",
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_hurt/",
+              "content": "minecraft:on_hurt_event"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ender_crystal.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_hurt/",
+              "content": "minecraft:crystal_explode"
+            }
+          ]
+        }
+      },
+      {
+        "id": "filters",
+        "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "target",
+        "title": "FilterSubject",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "baby",
+            "title": "Baby"
+          },
+          {
+            "id": "block",
+            "title": "Block"
+          },
+          {
+            "id": "damager",
+            "title": "Damager"
+          },
+          {
+            "id": "holder",
+            "title": "Holder"
+          },
+          {
+            "id": "item",
+            "title": "Item"
+          },
+          {
+            "id": "other",
+            "title": "Other"
+          },
+          {
+            "id": "parent",
+            "title": "Parent"
+          },
+          {
+            "id": "player",
+            "title": "Player"
+          },
+          {
+            "id": "self",
+            "title": "Self"
+          },
+          {
+            "id": "target",
+            "title": "Target"
+          }
+        ],
+        "defaultValue": "self",
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_hurt/",
+              "content": "self"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ender_crystal.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_hurt/",
+              "content": "self"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:on_hurt/",
+          "content": {
+            "event": "minecraft:on_hurt_event",
+            "target": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ender_crystal.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:on_hurt/",
+          "content": {
+            "event": "minecraft:crystal_explode",
+            "target": "self"
+          }
+        }
+      ]
+    }
   }
 }

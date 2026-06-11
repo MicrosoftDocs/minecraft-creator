@@ -12,6 +12,7 @@ ms.date: 02/11/2025
 
 | Entity Filter Types | Description |
 |:-----|:----------|
+| [actor_has_item_with_enchantment_in_slot](Filters/actor_has_item_with_enchantment_in_slot.md)| Tests that an actor has an item equipped with a given enchantment. |
 | [actor_health](Filters/actor_health.md)| Tests the health of the subject. |
 | [all_slots_empty](Filters/all_slots_empty.md)| Returns true when the designated equipment location for the subject entity is completely empty. |
 | [any_slot_empty](Filters/any_slot_empty.md)| Returns true when the designated equipment location for the subject entity has any empty slot. |

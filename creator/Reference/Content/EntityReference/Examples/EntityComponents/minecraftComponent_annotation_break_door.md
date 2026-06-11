@@ -24,3 +24,10 @@ Allows an entity to break doors, assuming that that flags set up for the compone
 | min_difficulty | hard | String from a list of choices | The minimum difficulty that the world must be on for this entity to break doors. | 
 
 ## Samples
+
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+
+```json
+"minecraft:annotation.break_door": {}
+```

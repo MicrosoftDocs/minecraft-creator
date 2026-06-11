@@ -21,18 +21,20 @@ Intance of rules definition.
 | extra_knockback_approach | reapply_default | [Extra Knockback Approach](#extra-knockback-approach-choices) choices | Defines the approach for combining extra knockback from enchantments or sprinting: - "reapply_default": Reapplies knockback again with default knockback parameters, i. | 
 | filter (Filter) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filter](#filter) item | Filter for the entity type that will be affected by these knockback rules. | 
 | filter (Alternate 1) | *not set* | Object |  | 
-| horizontal_hit_angle_scale | 0 | Decimal number | Scaling factor to angle the knockback horizontally based on the attacker's aim direction. | 
 | horizontal_power | 1 | Decimal number | Power with which a target should be knocked backwards. | 
-| scale_previous_velocity | 0.5 | Decimal number | Scaling factor to apply to the target's velocity before applying knockback. Value must be <= 1. | 
+| knockback_mode | relative_horizontal | [Knockback Mode](#knockback-mode-choices) choices | Defines how knockback is applied to the target: - "relative_horizontal": Applies knockback along the horizontal direction from the attacker to the target. | 
 | scale_with_damage | false | Boolean true/false | Scaling factor to the magnitude of knockback based on the inverse square of the damage. | 
-| vertical_hit_angle_scale | 0 | Decimal number | Scaling factor to angle the knockback vertically based on the attacker's aim direction. Value must be <= 1. | 
-| vertical_position_angle_scale | 0 | Decimal number | Scaling factor to angle the knockback vertically based on the difference in the attacker's feet position to the target's feet position. Value must be <= 1. | 
+| slowdown_scale | 0.5 | Decimal number | Scaling factor to apply to the target's velocity before applying knockback. Value must be <= 1. | 
 | vertical_power | 0.4000000059604645 | Decimal number | Power with which a target should be knocked upwards. | 
 | vertical_velocity_cap | 0.4000000059604645 | Decimal number | Maximum allowed Y velocity after target's knockback rules have been evaluated. | 
 
 ### extra_knockback_approach
 
-Defines the approach for combining extra knockback from enchantments or sprinting: - "reapply_default": Reapplies knockback again with default knockback parameters, i.e. values not defined by this component. - "multiply_reduced": Multiplies the extra knockback with the first knockback and a reduction factor, and adds it to the first knockback.
+Defines the approach for combining extra knockback from enchantments or sprinting: - "reapply_default": Reapplies knockback again with default knockback parameters, i.e. values not defined by this component. - "multiply_reduced": Multiplies the extra knockback with the base knockback and a reduction factor, and adds it to the base knockback.
+
+### knockback_mode
+
+Defines how knockback is applied to the target: - "relative_horizontal": Applies knockback along the horizontal direction from the attacker to the target. - "hit_direction": Applies knockback based on the hit direction and the point of impact (e.g. hits to the bottom of the entity or from below push it upward, hits on the left side of the entity push it to the right).
 
 
 ### Extra Knockback Approach choices
@@ -55,3 +57,10 @@ Defines the approach for combining extra knockback from enchantments or sprintin
 | subject | *not set* | Object | The subject of this filter test. | 
 | test | *not set* | String | The name of the test to apply. | 
 | value | *not set* | Object | The value being compared with the test. | 
+
+### Knockback Mode choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| hit_direction | Hit direction | |
+| relative_horizontal | Relative horizontal | |

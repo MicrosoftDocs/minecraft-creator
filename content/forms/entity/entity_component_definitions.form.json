@@ -4300,8 +4300,9 @@
       {
         "id": "minecraft:on_death",
         "title": "Minecraft On Death",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Adds a trigger to call on this entity's death.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_on_death"
       },
       {
         "id": "minecraft:on_equipment_changed",
@@ -4313,56 +4314,65 @@
       {
         "id": "minecraft:on_friendly_anger",
         "title": "Minecraft On Friendly Anger",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Adds a trigger that will run when a nearby entity of the same type as this entity becomes Angry.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_on_friendly_anger"
       },
       {
         "id": "minecraft:on_hurt",
         "title": "Minecraft On Hurt",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Adds a trigger to call when this entity takes damage.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_on_hurt"
       },
       {
         "id": "minecraft:on_hurt_by_player",
         "title": "Minecraft On Hurt By Player",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Adds a trigger to call when this entity is attacked by the player.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_on_hurt_by_player"
       },
       {
         "id": "minecraft:on_ignite",
         "title": "Minecraft On Ignite",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Adds a trigger to call when this entity is set on fire.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_on_ignite"
       },
       {
         "id": "minecraft:on_start_landing",
         "title": "Minecraft On Start Landing",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Only usable by the Ender Dragon. Adds a trigger to call when this entity lands.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_on_start_landing"
       },
       {
         "id": "minecraft:on_start_takeoff",
         "title": "Minecraft On Start Takeoff",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Only usable by the Ender Dragon. Adds a trigger to call when this entity starts flying.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_on_start_takeoff"
       },
       {
         "id": "minecraft:on_target_acquired",
         "title": "Minecraft On Target Acquired",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Adds a trigger to call when this entity finds a target.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_on_target_acquired"
       },
       {
         "id": "minecraft:on_target_escape",
         "title": "Minecraft On Target Escape",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Adds a trigger to call when this entity loses the target it currently has.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_on_target_escape"
       },
       {
         "id": "minecraft:on_wake_with_owner",
         "title": "Minecraft On Wake With Owner",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Adds a trigger to call when this pet's owner awakes after sleeping with the pet.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_on_wake_with_owner"
       },
       {
         "id": "minecraft:out_of_control",

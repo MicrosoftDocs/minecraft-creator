@@ -1,5 +1,7 @@
 - name: Entity Filter List
   href: ../FilterList.md
+- name: actor_has_item_with_enchantment_in_slot
+  href: actor_has_item_with_enchantment_in_slot.md
 - name: actor_health
   href: actor_health.md
 - name: all_slots_empty

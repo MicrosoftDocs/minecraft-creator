@@ -71,6 +71,13 @@
         "dataType": "string"
       }
     ],
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:can_break_doors/minecraft:annotation.break_door/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

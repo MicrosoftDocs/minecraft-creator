@@ -23,7 +23,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:acacia_button | button_pressed_bit, facing_direction |
 | minecraft:acacia_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:acacia_double_slab | minecraft:vertical_half |
-| minecraft:acacia_fence |  |
+| minecraft:acacia_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:acacia_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:acacia_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:acacia_leaves | persistent_bit, update_bit |
@@ -60,7 +60,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:bamboo_button | button_pressed_bit, facing_direction |
 | minecraft:bamboo_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:bamboo_double_slab | minecraft:vertical_half |
-| minecraft:bamboo_fence |  |
+| minecraft:bamboo_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:bamboo_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:bamboo_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:bamboo_mosaic |  |
@@ -90,7 +90,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:birch_button | button_pressed_bit, facing_direction |
 | minecraft:birch_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:birch_double_slab | minecraft:vertical_half |
-| minecraft:birch_fence |  |
+| minecraft:birch_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:birch_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:birch_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:birch_leaves | persistent_bit, update_bit |
@@ -189,7 +189,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cherry_button | button_pressed_bit, facing_direction |
 | minecraft:cherry_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:cherry_double_slab | minecraft:vertical_half |
-| minecraft:cherry_fence |  |
+| minecraft:cherry_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:cherry_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:cherry_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:cherry_leaves | persistent_bit, update_bit |
@@ -283,7 +283,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:crimson_button | button_pressed_bit, facing_direction |
 | minecraft:crimson_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:crimson_double_slab | minecraft:vertical_half |
-| minecraft:crimson_fence |  |
+| minecraft:crimson_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:crimson_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:crimson_fungus |  |
 | minecraft:crimson_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
@@ -325,7 +325,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:dark_oak_button | button_pressed_bit, facing_direction |
 | minecraft:dark_oak_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:dark_oak_double_slab | minecraft:vertical_half |
-| minecraft:dark_oak_fence |  |
+| minecraft:dark_oak_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:dark_oak_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:dark_oak_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:dark_oak_leaves | persistent_bit, update_bit |
@@ -685,7 +685,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:jungle_button | button_pressed_bit, facing_direction |
 | minecraft:jungle_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:jungle_double_slab | minecraft:vertical_half |
-| minecraft:jungle_fence |  |
+| minecraft:jungle_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:jungle_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:jungle_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:jungle_leaves | persistent_bit, update_bit |
@@ -788,7 +788,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mangrove_button | button_pressed_bit, facing_direction |
 | minecraft:mangrove_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:mangrove_double_slab | minecraft:vertical_half |
-| minecraft:mangrove_fence |  |
+| minecraft:mangrove_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:mangrove_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:mangrove_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:mangrove_leaves | persistent_bit, update_bit |
@@ -835,7 +835,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mycelium |  |
 | minecraft:nether_brick |  |
 | minecraft:nether_brick_double_slab | minecraft:vertical_half |
-| minecraft:nether_brick_fence |  |
+| minecraft:nether_brick_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:nether_brick_slab | minecraft:vertical_half |
 | minecraft:nether_brick_stairs | upside_down_bit, weirdo_direction |
 | minecraft:nether_brick_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
@@ -850,7 +850,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:normal_stone_stairs | upside_down_bit, weirdo_direction |
 | minecraft:noteblock |  |
 | minecraft:oak_double_slab | minecraft:vertical_half |
-| minecraft:oak_fence |  |
+| minecraft:oak_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:oak_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:oak_leaves | persistent_bit, update_bit |
 | minecraft:oak_log | pillar_axis |
@@ -901,7 +901,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:pale_oak_button | button_pressed_bit, facing_direction |
 | minecraft:pale_oak_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:pale_oak_double_slab | minecraft:vertical_half |
-| minecraft:pale_oak_fence |  |
+| minecraft:pale_oak_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:pale_oak_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:pale_oak_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:pale_oak_leaves | persistent_bit, update_bit |
@@ -1131,7 +1131,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:spruce_button | button_pressed_bit, facing_direction |
 | minecraft:spruce_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:spruce_double_slab | minecraft:vertical_half |
-| minecraft:spruce_fence |  |
+| minecraft:spruce_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:spruce_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:spruce_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:spruce_leaves | persistent_bit, update_bit |
@@ -1247,7 +1247,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:warped_button | button_pressed_bit, facing_direction |
 | minecraft:warped_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:warped_double_slab | minecraft:vertical_half |
-| minecraft:warped_fence |  |
+| minecraft:warped_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:warped_fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:warped_fungus |  |
 | minecraft:warped_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |

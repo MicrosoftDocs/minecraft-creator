@@ -37,6 +37,12 @@
               "content": "minecraft:become_angry"
             }
           ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+              "content": "minecraft:has_target"
+            }
+          ],
           "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
@@ -57,12 +63,6 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:on_target_acquired/",
               "content": "minecraft:on_anger"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/silverfish.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:silverfish_calm/minecraft:on_target_acquired/",
-              "content": "minecraft:become_angry"
             }
           ]
         }
@@ -102,13 +102,13 @@
         "defaultValue": "self",
         "dataType": "string",
         "samples": {
-          "/vanilla/behavior_pack/entities/llama.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
               "content": "self"
             }
           ],
-          "/vanilla/behavior_pack/entities/magma_cube.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
               "content": "self"
@@ -123,6 +123,15 @@
           "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:on_target_acquired/",
           "content": {
             "event": "minecraft:become_angry"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+          "content": {
+            "event": "minecraft:has_target",
+            "target": "self"
           }
         }
       ],
@@ -174,12 +183,262 @@
             "target": "self"
           }
         }
-      ],
-      "/vanilla/behavior_pack/entities/silverfish.json": [
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:on_target_acquired",
+    "title": "Entity On Target Acquired",
+    "description": "Adds a trigger to call when this entity finds a target.",
+    "fields": [
+      {
+        "id": "event",
+        "title": "Event",
+        "dataType": "string",
+        "defaultValue": "",
+        "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:on_target_acquired/",
+              "content": "minecraft:become_angry"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+              "content": "minecraft:has_target"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+              "content": "minecraft:mad_at_wolf"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/magma_cube.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+              "content": "minecraft:become_aggressive"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/polar_bear.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby_wild/minecraft:on_target_acquired/",
+              "content": "minecraft:on_scared"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:on_target_acquired/",
+              "content": "minecraft:on_anger"
+            }
+          ]
+        }
+      },
+      {
+        "id": "filters",
+        "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "target",
+                    "value": "wolf"
+                  },
+                  {
+                    "test": "has_component",
+                    "subject": "target",
+                    "operator": "!=",
+                    "value": "minecraft:is_tamed"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "target",
+        "title": "FilterSubject",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "baby",
+            "title": "Baby"
+          },
+          {
+            "id": "block",
+            "title": "Block"
+          },
+          {
+            "id": "damager",
+            "title": "Damager"
+          },
+          {
+            "id": "holder",
+            "title": "Holder"
+          },
+          {
+            "id": "item",
+            "title": "Item"
+          },
+          {
+            "id": "other",
+            "title": "Other"
+          },
+          {
+            "id": "parent",
+            "title": "Parent"
+          },
+          {
+            "id": "player",
+            "title": "Player"
+          },
+          {
+            "id": "self",
+            "title": "Self"
+          },
+          {
+            "id": "target",
+            "title": "Target"
+          }
+        ],
+        "defaultValue": "self",
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+              "content": "self"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+              "content": "self"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:silverfish_calm/minecraft:on_target_acquired/",
+          "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:on_target_acquired/",
           "content": {
-            "event": "minecraft:become_angry",
+            "event": "minecraft:become_angry"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+          "content": {
+            "event": "minecraft:has_target",
+            "target": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+          "content": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "target",
+                  "value": "wolf"
+                },
+                {
+                  "test": "has_component",
+                  "subject": "target",
+                  "operator": "!=",
+                  "value": "minecraft:is_tamed"
+                }
+              ]
+            },
+            "event": "minecraft:mad_at_wolf",
+            "target": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
+          "content": {
+            "event": "minecraft:become_aggressive",
+            "target": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby_wild/minecraft:on_target_acquired/",
+          "content": {
+            "event": "minecraft:on_scared",
+            "target": "self"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:on_target_acquired/",
+          "content": {
+            "event": "minecraft:on_anger",
             "target": "self"
           }
         }

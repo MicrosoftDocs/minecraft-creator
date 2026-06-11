@@ -46,5 +46,125 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:on_death",
+    "title": "Entity On Death",
+    "description": "Adds a trigger to call on this entity's death.",
+    "fields": [
+      {
+        "id": "event",
+        "title": "Event",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "filters",
+        "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "target",
+        "title": "FilterSubject",
+        "dataType": "string",
+        "choices": [
+          {
+            "id": "baby",
+            "title": "Baby"
+          },
+          {
+            "id": "block",
+            "title": "Block"
+          },
+          {
+            "id": "damager",
+            "title": "Damager"
+          },
+          {
+            "id": "holder",
+            "title": "Holder"
+          },
+          {
+            "id": "item",
+            "title": "Item"
+          },
+          {
+            "id": "other",
+            "title": "Other"
+          },
+          {
+            "id": "parent",
+            "title": "Parent"
+          },
+          {
+            "id": "player",
+            "title": "Player"
+          },
+          {
+            "id": "self",
+            "title": "Self"
+          },
+          {
+            "id": "target",
+            "title": "Target"
+          }
+        ],
+        "defaultValue": "self"
+      }
+    ],
+    "samples": {}
   }
 }
