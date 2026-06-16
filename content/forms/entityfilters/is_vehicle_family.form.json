@@ -13,6 +13,7 @@
     ]
   },
   "id": "is_vehicle_family",
+  "versionIntroduced": "1.21.90",
   "fields": [],
   "tags": [
     "conditional",

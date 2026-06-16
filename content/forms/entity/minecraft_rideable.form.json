@@ -171,6 +171,7 @@
     },
     {
       "id": "dismount_mode",
+      "versionIntroduced": "1.21.80",
       "choices": [
         {
           "id": "default",
@@ -196,10 +197,16 @@
         "fields": [
           {
             "id": "third_person_camera_radius",
+            "title": "Third Person Camera Radius",
+            "description": "Camera radius to use for this seat when in third person or third person front camera. Overrides the default third-person camera distance for riders in this seat.",
+            "dataType": "float",
             "versionIntroduced": "1.21.80"
           },
           {
             "id": "camera_relax_distance_smoothing",
+            "title": "Camera Relax Distance Smoothing",
+            "description": "Adds springiness to camera movement when the camera moves back to its radius after being pushed closer to the player by an obstacle.",
+            "dataType": "float",
             "versionIntroduced": "1.21.80"
           },
           {

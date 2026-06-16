@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:geode_feature",
+  "versionIntroduced": "1.20.30",
   "description": "generates a rock formation to simulate a geode. Each layer of, and block within, the geode can be replaced. Succeeds if at least one block within the geode is placed. Fails if all blocks within the geode fail to be placed.",
   "summarizer": {
     "phrases": [

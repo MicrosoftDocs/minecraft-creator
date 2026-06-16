@@ -27,6 +27,8 @@
     ]
   },
   "id": "minecraft:village_type",
+  "versionIntroduced": "1.26.0",
+  "note": "Biome component added in 1.26.0 that determines the type of village (default, desert, ice, savanna, or taiga) that generates in this biome.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:village_type",

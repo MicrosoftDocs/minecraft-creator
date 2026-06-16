@@ -12,7 +12,16 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "lay_seconds",
+      "title": "Lay Seconds",
+      "description": "Duration of the laying egg process in seconds.",
+      "defaultValue": 10,
+      "dataType": "float",
+      "note": "From 1.26.10 onward, `lay_seconds` only accepts values greater than or equal to 0; entity JSON with negative values will fail to load."
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.lay_egg",
     "title": "Lay Egg Behavior",

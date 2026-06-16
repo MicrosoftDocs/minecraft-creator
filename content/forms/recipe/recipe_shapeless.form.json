@@ -49,6 +49,7 @@
     ]
   },
   "fields": [],
+  "note": "Starting in 1.19.40, ingredient entries may specify a 'tag' instead of an 'item', allowing the recipe to accept any item that belongs to the named item tag.",
   "generated_doNotEdit": {
     "id": "recipe_shapeless",
     "fields": [

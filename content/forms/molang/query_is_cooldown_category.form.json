@@ -13,6 +13,8 @@
     ]
   },
   "id": "query.is_cooldown_category",
+  "versionIntroduced": "1.20.60",
+  "note": "Available without an experimental toggle starting in 1.20.60. Referenced as `query.is_cooldown_type` in some early 1.20.60 release notes.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_cooldown_category",

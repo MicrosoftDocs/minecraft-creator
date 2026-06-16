@@ -9,8 +9,9 @@
       }
     ]
   },
+  "id": "minecraft:input_air_controlled",
+  "versionIntroduced": "1.21.90",
   "fields": [],
-  "isExperimental": true,
   "generated_doNotEdit": {
     "id": "minecraft:input_air_controlled",
     "title": "Input Air Controlled",

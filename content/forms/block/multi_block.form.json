@@ -1,5 +1,9 @@
 {
   "id": "Multi Block",
+  "versionIntroduced": "1.26.10",
+  "isExperimental": true,
+  "requiredExperiment": "Upcoming Creator Features",
+  "note": "Added in 1.26.10 behind the Upcoming Creator Features experiment. Lets a single block definition span multiple block positions (2-4 parts) and treats all parts as a unified block (like Doors). Enables the `minecraft:multi_block_part` state; `direction` controls whether parts stack `up` or `down`. When `minecraft:selection_box` is `true`, individual part AABBs are combined into one outline. Requires `minecraft:movable` defined outside permutations (with `movement_type` set to `popped` or `immovable`); `minecraft:placement_filter` cannot be defined in permutations.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Multi Block",

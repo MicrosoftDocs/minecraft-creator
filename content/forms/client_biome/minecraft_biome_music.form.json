@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:biome_music",
+  "versionIntroduced": "1.21.50",
   "summarizer": {
     "phrases": [
       {
@@ -13,7 +14,15 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "volume_multiplier",
+      "title": "Volume Multiplier",
+      "description": "Multiplier gradually applied to music volume when the audio listener is inside this biome. Must be between 0 and 1, inclusive.",
+      "dataType": "float",
+      "versionIntroduced": "1.21.50"
+    }
+  ],
   "title": "Minecraft Biome Music",
   "description": "Affects how music plays within the biome",
   "generatedFromSchema_doNotEdit": {

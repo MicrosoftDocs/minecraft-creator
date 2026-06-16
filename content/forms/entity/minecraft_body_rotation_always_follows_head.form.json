@@ -13,6 +13,7 @@
     ]
   },
   "id": "minecraft:body_rotation_always_follows_head",
+  "versionIntroduced": "1.21.90",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:body_rotation_always_follows_head",

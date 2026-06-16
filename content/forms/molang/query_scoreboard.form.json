@@ -13,6 +13,8 @@
     ]
   },
   "id": "query.scoreboard",
+  "versionIntroduced": "1.20.70",
+  "note": "Available without experimental toggle in 1.20.70. Limited to server-side queries only.",
   "fields": [],
   "description": "Returns the specified scoreboard value for this entity. Available only with behavior packs. Takes one argument - the name of the scoreboard entry for this entity.",
   "generated_doNotEdit": {

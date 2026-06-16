@@ -96,5 +96,7 @@
         "isRequired": true
       }
     ]
-  }
+  },
+  "versionIntroduced": "1.21.110",
+  "note": "Custom partial biome replacement is available without experimental toggle in 1.21.110."
 }

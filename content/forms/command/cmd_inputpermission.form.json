@@ -2,6 +2,8 @@
   "id": "cmd_inputpermission",
   "title": "inputpermission",
   "description": "Optionally enables or disables input permissions for a player.",
+  "versionIntroduced": "1.19.80",
+  "note": "Added in 1.19.80. Sets or queries a player's camera or movement input permission; useful for cutscenes and non-interactive sequences.",
   "fields": [
     {
       "id": "option",

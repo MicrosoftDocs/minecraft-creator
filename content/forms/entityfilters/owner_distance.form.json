@@ -12,6 +12,7 @@
       }
     ]
   },
+  "versionIntroduced": "1.21.20",
   "fields": [],
   "tags": [
     "conditional",

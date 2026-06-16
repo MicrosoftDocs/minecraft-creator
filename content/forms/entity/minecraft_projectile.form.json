@@ -16,6 +16,25 @@
     {
       "id": "catch_fire",
       "description": "Determines whether the entity hit will be set on fire. Note: the presence of this field in the component definition causes targets to catch fire regardless of the value set. To prevent fire, remove this field entirely from the component."
+    },
+    {
+      "id": "reflect_on_hurt",
+      "title": "Reflect On Hurt",
+      "description": "If true, this projectile will be reflected back when hit by another projectile or by taking damage.",
+      "defaultValue": false,
+      "dataType": "boolean",
+      "note": "From 1.26.0, every projectile reflects projectiles that have `reflect_on_hurt: true` on hit, in addition to the existing damage-based reflection."
+    },
+    {
+      "id": "isolated_physics",
+      "title": "Isolated Physics",
+      "description": "If true, this projectile is not affected by outside forces such as friction and drag.",
+      "defaultValue": true,
+      "dataType": "boolean",
+      "versionIntroduced": "1.26.20",
+      "isExperimental": true,
+      "requiredExperiment": "Custom Projectiles",
+      "note": "Available under the Custom Projectiles experimental toggle starting in format version 1.26.20."
     }
   ],
   "generated_doNotEdit": {

@@ -18,6 +18,7 @@
   ],
   "description": "The description identifier of the geometry and material used to render the item of this block.",
   "versionIntroduced": "1.21.60",
+  "note": "Fixed in 1.26.10: a client crash on world load caused by an out-of-bounds `minecraft:geometry` value inside `minecraft:item_visual` no longer occurs.",
   "samples": {
     "sample": [
       {

@@ -12,10 +12,38 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "rotation_pivot",
+      "title": "Rotation Pivot",
+      "description": "The point to apply rotation around.",
+      "dataType": "point3",
+      "defaultValue": [
+        0,
+        0,
+        0
+      ],
+      "versionIntroduced": "1.21.0"
+    },
+    {
+      "id": "scale_pivot",
+      "title": "Scale Pivot",
+      "description": "The point to apply scale around.",
+      "dataType": "point3",
+      "defaultValue": [
+        0,
+        0,
+        0
+      ],
+      "versionIntroduced": "1.21.0"
+    }
+  ],
   "tags": [
     "visual"
   ],
+  "versionIntroduced": "1.19.80",
+  "note": "Added in 1.19.80 as a replacement for the previous block rotation component, adding support for scaling and translation in addition to rotation. May be added to the whole block and/or to individual block permutations.",
+  "note2": "Added rotation_pivot and scale_pivot attributes in 1.21.0 to support pivoted rotation and scale operations.",
   "generated_doNotEdit": {
     "id": "minecraft:transformation",
     "title": "Transformation",

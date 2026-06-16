@@ -2,6 +2,7 @@
   "id": "cmd_clone",
   "title": "clone",
   "description": "Clones a set of blocks from one region to another.",
+  "note": "As of 1.19.70, the legacy numeric block `data` value parameter is no longer supported. Use a block states array instead.",
   "fields": [
     {
       "id": "begin",

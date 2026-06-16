@@ -13,7 +13,17 @@
     ]
   },
   "id": "Material Instance",
-  "fields": [],
+  "fields": [
+    {
+      "id": "alpha_masked_tint",
+      "title": "Alpha Masked Tint",
+      "description": "If true, the tint is multiplied by the alpha channel of the texture (similar to grass_block's sides). Requires a `tint_method` other than `none` and a `render_method` set to `opaque`.",
+      "defaultValue": false,
+      "dataType": "boolean",
+      "versionIntroduced": "1.26.0",
+      "note": "Available without the Upcoming Creator Features experimental toggle starting in 1.26.0."
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Material Instance",
     "title": "Block Material Instance",

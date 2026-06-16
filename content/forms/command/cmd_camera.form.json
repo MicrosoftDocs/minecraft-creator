@@ -1,7 +1,9 @@
 {
   "id": "cmd_camera",
   "title": "camera",
+  "versionIntroduced": "1.20.30",
   "description": "Transforms the camera for the selected player(s) to a different perspective.",
+  "note": "In 1.26.0, the experimental Creator Camera toggle adds the `play_spline` keyword to `/camera`, which plays a spline defined under `camera/splines/` in a behavior pack. Splines only play on the `minecraft:free` camera preset.",
   "fields": [
     {
       "id": "players",
@@ -356,7 +358,8 @@
       "type": "string",
       "isOptional": false,
       "description": "Sets a custom field of view with optional easing.",
-      "commandType": "FOV_SET"
+      "commandType": "FOV_SET",
+      "versionIntroduced": "1.21.110"
     },
     {
       "id": "fov_value",
@@ -364,7 +367,8 @@
       "type": "string",
       "isOptional": false,
       "subFormId": "type_val",
-      "commandType": "VAL"
+      "commandType": "VAL",
+      "versionIntroduced": "1.21.110"
     },
     {
       "id": "foveasetime",
@@ -372,14 +376,16 @@
       "type": "string",
       "isOptional": true,
       "subFormId": "type_val",
-      "commandType": "VAL"
+      "commandType": "VAL",
+      "versionIntroduced": "1.21.110"
     },
     {
       "id": "foveasetype",
       "title": "fovEaseType",
       "type": "string",
       "isOptional": true,
-      "commandType": "EASING"
+      "commandType": "EASING",
+      "versionIntroduced": "1.21.110"
     },
     {
       "id": "fov_clear",
@@ -387,7 +393,8 @@
       "type": "string",
       "isOptional": false,
       "description": "Resets the field of view back to the default value.",
-      "commandType": "FOV_CLEAR"
+      "commandType": "FOV_CLEAR",
+      "versionIntroduced": "1.21.110"
     }
   ],
   "overloads": [

@@ -13,6 +13,7 @@
     ]
   },
   "id": "query.leashed_entity_count",
+  "versionIntroduced": "1.21.80",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.leashed_entity_count",

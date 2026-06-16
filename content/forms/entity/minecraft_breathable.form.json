@@ -246,6 +246,14 @@
       "description": "List of blocks this entity cannot breathe in, in addition to the selected items above.",
       "dataType": "stringArray",
       "lookupId": "blockType"
+    },
+    {
+      "id": "can_dehydrate",
+      "title": "Can Dehydrate",
+      "description": "If true, entities that only breathe water (for example, fish) will take dehydration damage when out of water.",
+      "dataType": "boolean",
+      "defaultValue": false,
+      "versionIntroduced": "1.21.130"
     }
   ],
   "generated_doNotEdit": {

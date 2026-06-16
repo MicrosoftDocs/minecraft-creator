@@ -13,6 +13,9 @@
     ]
   },
   "id": "minecraft:precipitation_interactions",
+  "versionIntroduced": "1.21.120",
+  "note": "In format version 1.26.30, the `snow_log_no_collision` value for `precipitation_behavior` was renamed to `snowlogging` (the legacy value still parses but is deprecated). Snow logging itself requires `format_version` 1.21.120 or newer.",
+  "note2": "The `snow_log_no_collision` value for `precipitation_behavior` (which lets custom blocks be covered by snow) was first added in 1.26.20 under the Upcoming Creator Features experiment, then renamed to `snowlogging` in 1.26.30.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:precipitation_interactions",

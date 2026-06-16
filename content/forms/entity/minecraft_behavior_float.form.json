@@ -64,7 +64,24 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "chance_per_tick_to_float",
+      "title": "Chance Per Tick To Float",
+      "description": "Probability per tick (0-1) that the entity will attempt to float when in water. Lower values produce slower, more deliberate floating behavior.",
+      "dataType": "float",
+      "defaultValue": 0.8,
+      "versionIntroduced": "1.21.130"
+    },
+    {
+      "id": "time_under_water_to_dismount_passengers",
+      "title": "Time Under Water To Dismount Passengers",
+      "description": "Time in seconds the entity must spend with its head underwater before any passengers are dismounted. A value of 0 dismounts passengers as soon as the entity's head submerges.",
+      "dataType": "float",
+      "defaultValue": 0,
+      "versionIntroduced": "1.21.130"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.float",
     "title": "Float Behavior",

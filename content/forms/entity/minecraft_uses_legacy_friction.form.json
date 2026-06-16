@@ -1,5 +1,7 @@
 {
   "id": "minecraft:uses_legacy_friction",
+  "versionIntroduced": "1.26.20",
+  "note": "Added in 1.26.20 alongside the `minecraft:friction_modifier` behavior fix. Adding this component opts an entity back into the legacy (pre-1.26.20) friction calculations, which also partially affected air and liquid drag. Entities whose `format_version` is older than 1.26.20 receive this component automatically so that existing content keeps its prior behavior.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:uses_legacy_friction",

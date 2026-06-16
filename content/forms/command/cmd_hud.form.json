@@ -1,6 +1,7 @@
 {
   "id": "cmd_hud",
   "title": "hud",
+  "versionIntroduced": "1.20.80",
   "description": "Configures whether elements of the on-screen display (alternately known as the 'heads up display', or 'HUD') are visible on the screen.",
   "fields": [
     {

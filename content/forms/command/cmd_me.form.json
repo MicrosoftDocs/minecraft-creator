@@ -2,6 +2,7 @@
   "id": "cmd_me",
   "title": "me",
   "description": "Displays a message about yourself.",
+  "note": "In 1.21.60, the message text supports input glyph replacement. For example, `:_input_key.jump:` is rendered as `JUMP` on keyboard or as a glyph on a gamepad.",
   "fields": [
     {
       "id": "message",

@@ -1,5 +1,6 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "versionIntroduced": "1.20.0",
   "description": "Allows this item to be used as fuel in a furnace to 'cook' other items.",
   "summarizer": {
     "phrases": [

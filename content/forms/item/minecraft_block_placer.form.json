@@ -23,7 +23,16 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "aligned_placement",
+      "title": "Aligned Placement",
+      "description": "When true, block placement through this item is aligned while the interaction button is held down. Supported from `format_version` 1.26.0 onward.",
+      "defaultValue": false,
+      "dataType": "boolean",
+      "versionIntroduced": "1.26.10"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:block_placer",
     "title": "Item Block Placer",

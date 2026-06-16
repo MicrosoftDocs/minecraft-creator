@@ -42,6 +42,7 @@
     ]
   },
   "description": "How entities heal",
+  "note": "From 1.21.130, each entry in `items` accepts an optional `result_item` field. On a successful heal, the consumed item is replaced in the player's inventory with the specified item.",
   "fields": [
     {
       "id": "force_use",

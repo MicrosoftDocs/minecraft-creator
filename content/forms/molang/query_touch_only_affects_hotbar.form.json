@@ -14,6 +14,7 @@
   },
   "id": "query.touch_only_affects_hotbar",
   "fields": [],
+  "versionIntroduced": "1.21.60",
   "generated_doNotEdit": {
     "id": "query.touch_only_affects_hotbar",
     "title": "Touch Only Affects Hotbar",

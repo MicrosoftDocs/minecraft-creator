@@ -1,6 +1,7 @@
 {
   "id": "cmd_controlscheme",
   "title": "controlscheme",
+  "versionIntroduced": "1.21.90",
   "description": "Sets or clears control schemes for the camera(s) of selected player(s).",
   "fields": [
     {

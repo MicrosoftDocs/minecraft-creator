@@ -97,5 +97,7 @@
         }
       ]
     }
-  }
+  },
+  "versionIntroduced": "1.21.110",
+  "note": "Available without experimental toggle in 1.21.110."
 }

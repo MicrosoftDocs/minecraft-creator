@@ -14,6 +14,7 @@
   },
   "id": "query.last_input_mode_is_any",
   "fields": [],
+  "versionIntroduced": "1.21.60",
   "generated_doNotEdit": {
     "id": "query.last_input_mode_is_any",
     "title": "Last Input Mode Is Any",

@@ -12,6 +12,7 @@
       }
     ]
   },
+  "versionIntroduced": "1.21.20",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.teleport_to_owner",

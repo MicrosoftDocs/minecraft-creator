@@ -13,6 +13,7 @@
     ]
   },
   "id": "query.ticks_since_last_kinetic_weapon_hit",
+  "versionIntroduced": "1.21.130",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.ticks_since_last_kinetic_weapon_hit",

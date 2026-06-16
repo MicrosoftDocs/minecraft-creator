@@ -1,5 +1,7 @@
 {
   "id": "minecraft:on_equipment_changed",
+  "versionIntroduced": "1.26.20",
+  "note": "Added in 1.26.20. Defines a list of `slots`, each pairing an equipment `slot` with an `on_equip` event (fired when a non-empty item is placed) and `on_unequip` event (fired when the slot is cleared). When equipment changes, only the first matching slot entry is used. Does not apply to `minecraft:inventory` slots \u2014 use `minecraft:equippable` for those.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:on_equipment_changed",

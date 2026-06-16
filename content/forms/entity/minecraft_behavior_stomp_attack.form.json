@@ -13,6 +13,7 @@
     ]
   },
   "fields": [],
+  "note": "In 1.26.0 the schema is stricter and rejects invalid JSON for this behavior.",
   "generated_doNotEdit": {
     "id": "minecraft:behavior.stomp_attack",
     "title": "Stomp Attack Behavior",

@@ -46,6 +46,7 @@
     ]
   },
   "id": "queue_command",
+  "versionIntroduced": "1.20.60",
   "tags": [
     "entityevent"
   ],

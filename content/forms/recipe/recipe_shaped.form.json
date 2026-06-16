@@ -48,7 +48,24 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "minecraft:recipe_shaped",
+      "mergeSubForm": true,
+      "subForm": {
+        "fields": [
+          {
+            "id": "assume_symmetry",
+            "title": "Assume Symmetry",
+            "description": "When true, the shaped recipe's pattern may be mirrored horizontally, allowing both the pattern and its mirror image to produce the same result.",
+            "defaultValue": false,
+            "dataType": "boolean",
+            "versionIntroduced": "1.20.80"
+          }
+        ]
+      }
+    }
+  ],
   "generated_doNotEdit": {
     "id": "recipe_shaped",
     "fields": [
@@ -272,5 +289,6 @@
       }
     ]
   },
-  "note": "The 'data' field for items is deprecated in versions 1.20.0 and later. Use flattened item identifiers instead."
+  "note": "The 'data' field for items is deprecated in versions 1.20.0 and later. Use flattened item identifiers instead.",
+  "note2": "Starting in 1.19.40, pattern key entries may specify a 'tag' instead of an 'item', allowing the recipe to accept any item that belongs to the named item tag."
 }

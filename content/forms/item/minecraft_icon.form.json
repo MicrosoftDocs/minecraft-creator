@@ -1,5 +1,6 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "versionIntroduced": "1.20.0",
   "description": "Determines the icon to represent the item in the UI and elsewhere.",
   "summarizer": {
     "phrases": [

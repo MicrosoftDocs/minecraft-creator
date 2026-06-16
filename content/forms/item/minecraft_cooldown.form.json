@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:cooldown",
+  "versionIntroduced": "1.20.10",
   "summarizer": {
     "phrases": [
       {
@@ -41,7 +42,10 @@
     {
       "id": "type",
       "title": "Type",
-      "description": "The type of action that triggers the cooldown. Use 'use' for items consumed on use, or 'attack' for weapons. Default is 'use'."
+      "description": "The type of action that triggers the cooldown. Use 'use' for items consumed on use, or 'attack' for weapons. Default is 'use'.",
+      "dataType": "string",
+      "defaultValue": "use",
+      "versionIntroduced": "1.21.130"
     }
   ],
   "generatedFromSchema_doNotEdit": {

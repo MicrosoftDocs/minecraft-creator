@@ -126,6 +126,8 @@
   },
   "description": "Allows an entity to establish a way to get into the love state used for breeding.",
   "note": "This component is commonly used in conjunction with the 'minecraft:behavior.breed' component.",
+  "note2": "In 1.21.130 the `transform_to_item` field on each entry of `breed_items` was renamed to `result_item`. The new field is defined per-item, so different breed items can transform into different result items on use.",
+  "note3": "In 1.26.0 the offspring-related fields were split out into the separate `minecraft:offspring_data` component. `minecraft:breedable` now contains only love-state, taming/health requirements, and pregnancy-flow data; the new `minecraft:offspring_data` component is required to actually spawn the child entity.",
   "fields": [
     {
       "id": "allow_sitting",
@@ -227,6 +229,13 @@
       "description": "If true, the entity will become pregnant instead of spawning a baby.",
       "dataType": "boolean",
       "defaultValue": false
+    },
+    {
+      "id": "combine_parent_colors",
+      "description": "If true and no color mutation occurs, the baby's `minecraft:color` is set to a blend of the parents' colors (following DyeItem combination rules). If the parents' colors aren't compatible, the baby inherits one parent's color at random.",
+      "dataType": "boolean",
+      "defaultValue": false,
+      "versionIntroduced": "1.21.60"
     },
     {
       "id": "deny_parents_variant",

@@ -23,6 +23,9 @@
     ]
   },
   "id": "minecraft:support",
+  "versionIntroduced": "1.21.130",
+  "note": "Defines how this block provides structural support. Currently accepts shape `fence` or `stair`. Pair with the `minecraft:placement_direction` trait (and `minecraft:vertical_half`) for custom stair-shaped supports.",
+  "note2": "Available without the Upcoming Creator Features experimental toggle for block format versions 1.26.0 or higher.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:support",

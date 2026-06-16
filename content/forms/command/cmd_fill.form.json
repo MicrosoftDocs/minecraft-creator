@@ -2,6 +2,7 @@
   "id": "cmd_fill",
   "title": "fill",
   "description": "Fills all or parts of a region with a specific block.",
+  "note": "As of 1.19.70, the legacy numeric block `data` value parameter is no longer supported. Use a block states array instead.",
   "fields": [
     {
       "id": "from",

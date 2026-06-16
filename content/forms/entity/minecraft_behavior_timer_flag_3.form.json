@@ -12,6 +12,9 @@
       }
     ]
   },
+  "id": "minecraft:behavior.timer_flag_3",
+  "versionIntroduced": "1.20.40",
+  "note": "In 1.26.0 the schema is stricter and rejects invalid JSON. `cooldown_range` and `duration_range` now only accept an object with `min` and `max` values; the previous single-number shorthand is no longer accepted in 1.26.0 and newer.",
   "fields": [
     {
       "id": "cooldown_range",

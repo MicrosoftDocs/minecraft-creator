@@ -84,6 +84,7 @@
     ]
   },
   "fields": [],
+  "note": "In 1.26.0, `on_equip` and `on_unequip` events on each slot no longer fire on world load; they now run only as a result of an in-game equip or unequip interaction.",
   "generated_doNotEdit": {
     "id": "minecraft:equippable",
     "title": "Equippable",

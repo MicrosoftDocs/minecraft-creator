@@ -13,6 +13,7 @@
     ]
   },
   "id": "`math.ease_in_out_expo(start, end, 0_to_1)`",
+  "versionIntroduced": "1.21.120",
   "fields": [],
   "generated_doNotEdit": {
     "id": "math.ease_in_out_expo(start, end, 0_to_1)",
