@@ -2,6 +2,7 @@
   "id": "cmd_setblock",
   "title": "setblock",
   "description": "Changes a block to another block.",
+  "note": "As of 1.19.70, the legacy numeric block `data` value parameter is no longer supported. Use a block states array (for example, `[\"color\":\"orange\"]`) instead.",
   "fields": [
     {
       "id": "position",

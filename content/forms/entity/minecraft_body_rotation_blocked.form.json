@@ -1,5 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "minecraft:body_rotation_blocked",
+  "versionIntroduced": "1.20.80",
   "summarizer": {
     "phrases": [
       {

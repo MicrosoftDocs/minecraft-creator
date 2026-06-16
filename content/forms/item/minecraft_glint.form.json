@@ -1,5 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "versionIntroduced": "1.20.30",
+  "note": "Renamed from `foil` and released without an experimental toggle in 1.20.30.",
   "description": "Determines whether the item has the enchanted glint render effect on it.",
   "summarizer": {
     "phrases": [

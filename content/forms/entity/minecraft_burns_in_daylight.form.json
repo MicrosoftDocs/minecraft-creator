@@ -16,7 +16,11 @@
   "fields": [
     {
       "id": "protection_slot",
-      "description": "The equipment slot that provides protection from burning in sunlight. If armor is equipped in this slot, the entity will not burn. Commonly set to 'slot.armor.head' for helmets or 'slot.armor.body' for horse armor."
+      "title": "Protection Slot",
+      "description": "The equipment slot that provides protection from burning in sunlight. If armor is equipped in this slot, the entity will not burn. Commonly set to 'slot.armor.head' for helmets or 'slot.armor.body' for horse armor.",
+      "dataType": "string",
+      "defaultValue": "slot.armor.head",
+      "versionIntroduced": "1.21.130"
     }
   ],
   "generated_doNotEdit": {

@@ -12,7 +12,17 @@
       }
     ]
   },
-  "fields": [],
+  "id": "minecraft:exhaustion_values",
+  "fields": [
+    {
+      "id": "lunge",
+      "title": "Lunge",
+      "description": "Amount of exhaustion applied when triggering the Lunge enchantment, multiplied by the enchantment level.",
+      "dataType": "float",
+      "defaultValue": 4,
+      "versionIntroduced": "1.21.130"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:exhaustion_values",
     "title": "Exhaustion Values",

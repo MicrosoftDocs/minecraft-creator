@@ -1,6 +1,8 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:use_modifiers",
+  "versionIntroduced": "1.20.50",
+  "note": "Renamed from `chargeable` in 1.20.50 and available without an experimental toggle.",
   "summarizer": {
     "phrases": [
       {
@@ -13,7 +15,16 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "start_using",
+      "title": "Start Using",
+      "description": "When the player begins using the item. Use `always` to start as soon as the use action is triggered (default), or `on_attack` to start using only when an attack input is received while the item is selected.",
+      "defaultValue": "always",
+      "dataType": "string",
+      "versionIntroduced": "1.26.30"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:use_modifiers",
     "title": "Item Use Modifiers",

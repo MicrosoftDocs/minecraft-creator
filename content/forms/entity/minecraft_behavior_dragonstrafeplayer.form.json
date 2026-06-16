@@ -13,6 +13,7 @@
     ]
   },
   "fields": [],
+  "note": "In 1.26.0 the schema is stricter and rejects invalid JSON. `target_zone` now only accepts an object with `min` and `max` values.",
   "restrictions": [
     {
       "id": "minecraft:ender_dragon",

@@ -12,7 +12,22 @@
       }
     ]
   },
-  "fields": [],
+  "fields": [
+    {
+      "id": "regular_skip_data",
+      "title": "Regular Skip Data",
+      "description": "Jump data used during normal skip movement. Object with optional `distance_scale` (horizontal velocity multiplier), `height` (vertical force), `jump_delay` (ticks between jumps), and `animation_duration` (jump animation length).",
+      "dataType": "object",
+      "versionIntroduced": "1.26.0"
+    },
+    {
+      "id": "fast_skip_data",
+      "title": "Fast Skip Data",
+      "description": "Jump data used while traveling quickly with skip movement. Object with the same shape as `regular_skip_data`.",
+      "dataType": "object",
+      "versionIntroduced": "1.26.0"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:jump.dynamic",
     "title": "Dynamic Jump",

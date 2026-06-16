@@ -13,6 +13,7 @@
   },
   "scripts": {
     "all": "npm install && npm run-script preparedevenv && npm run-script build",
+    "lint-forms": "node lint-forms.js",
     "dlres": "npx gulp dlres --max_old_space_size=16384",
     "preparedevenv": "npx gulp preparedevenv --max_old_space_size=16384",
     "updateformsource": "npx mct docsupdateformsource --base-path ./build/workcontent/public/  -i ./../content/forms/ -o ./out/postupdate",

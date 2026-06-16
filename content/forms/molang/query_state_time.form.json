@@ -13,6 +13,7 @@
     ]
   },
   "id": "query.state_time",
+  "versionIntroduced": "1.21.20",
   "fields": [],
   "description": "Returns the time in seconds in the current animation controller state. Only valid in an animation controller.",
   "generated_doNotEdit": {

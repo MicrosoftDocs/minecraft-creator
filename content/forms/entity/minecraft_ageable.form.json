@@ -131,6 +131,7 @@
     ]
   },
   "description": "Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feed_items.",
+  "note": "In 1.21.130 the `transform_to_item` field on each entry of `feed_items` was renamed to `result_item`. The new field is defined per-item, so different feed items can transform into different result items on use.",
   "fields": [
     {
       "id": "duration",
@@ -184,6 +185,48 @@
       "alternates": [
         {
           "id": "grow_up",
+          "dataType": "string"
+        }
+      ]
+    },
+    {
+      "id": "pause_growth_items",
+      "title": "Pause Growth Items",
+      "description": "List of items that can be fed to a baby entity to pause its growth.",
+      "dataType": "stringArray",
+      "versionIntroduced": "1.26.10"
+    },
+    {
+      "id": "reset_growth_items",
+      "title": "Reset Growth Items",
+      "description": "List of items that can be fed to a baby entity to reset its growth timer.",
+      "dataType": "stringArray",
+      "versionIntroduced": "1.26.10"
+    },
+    {
+      "id": "pause_growth",
+      "title": "Pause Growth",
+      "description": "Event triggered when a baby entity's growth is paused (via a `pause_growth_items` feed). Can be an object with `event` and `target` properties, or a simple event string.",
+      "dataType": "object",
+      "subFormId": "ActorDefinitionTrigger",
+      "versionIntroduced": "1.26.10",
+      "alternates": [
+        {
+          "id": "pause_growth",
+          "dataType": "string"
+        }
+      ]
+    },
+    {
+      "id": "reset_growth",
+      "title": "Reset Growth",
+      "description": "Event triggered when a baby entity's growth is reset (via a `reset_growth_items` feed). Can be an object with `event` and `target` properties, or a simple event string.",
+      "dataType": "object",
+      "subFormId": "ActorDefinitionTrigger",
+      "versionIntroduced": "1.26.10",
+      "alternates": [
+        {
+          "id": "reset_growth",
           "dataType": "string"
         }
       ]

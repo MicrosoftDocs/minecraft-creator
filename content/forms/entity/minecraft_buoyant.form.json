@@ -12,7 +12,25 @@
       }
     ]
   },
-  "fields": [],
+  "note": "In 1.26.10 the `simulate_waves` boolean was replaced with the `movement_type` string field (`waves` / `bobbing` / `none`). `big_wave_probability` and `big_wave_speed` only apply when `movement_type` is `waves`.",
+  "fields": [
+    {
+      "id": "movement_type",
+      "title": "Movement Type",
+      "description": "Type of vertical movement applied to the entity. `waves` simulates wave movement based on the entity's speed (default). `bobbing` moves the entity up and down at a constant pace. `none` disables wave movement. Replaces the previous `simulate_waves` boolean.",
+      "defaultValue": "waves",
+      "dataType": "string",
+      "versionIntroduced": "1.26.10"
+    },
+    {
+      "id": "can_auto_step_from_liquid",
+      "title": "Can Auto Step From Liquid",
+      "description": "Whether the entity can step out of a liquid block onto a neighboring solid block when pushed against it.",
+      "defaultValue": false,
+      "dataType": "boolean",
+      "versionIntroduced": "1.26.10"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:buoyant",
     "title": "Buoyant",

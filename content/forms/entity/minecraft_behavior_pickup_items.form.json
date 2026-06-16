@@ -99,6 +99,28 @@
       "title": "Pickup Same Items As In Hand",
       "description": "If true, the mob will only pick up items that match what it is already holding.",
       "dataType": "boolean"
+    },
+    {
+      "id": "stop_if_holding_item",
+      "title": "Stop If Holding Item",
+      "description": "If true, the mob will not begin a pickup goal while it is already holding an item. Useful for mobs that should only hold one item at a time.",
+      "defaultValue": false,
+      "dataType": "boolean",
+      "versionIntroduced": "1.26.30"
+    },
+    {
+      "id": "on_pickup_item_start",
+      "title": "Pickup Item Start",
+      "description": "Event to run when this mob moves to pick up an item.",
+      "dataType": "minecraftEventTrigger",
+      "versionIntroduced": "1.26.20"
+    },
+    {
+      "id": "on_pickup_item_end",
+      "title": "Pickup Item End",
+      "description": "Event to run when this mob either finishes or loses interest in picking up an item.",
+      "dataType": "minecraftEventTrigger",
+      "versionIntroduced": "1.26.20"
     }
   ],
   "generated_doNotEdit": {

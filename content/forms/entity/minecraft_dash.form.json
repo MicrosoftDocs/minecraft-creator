@@ -17,6 +17,8 @@
       }
     ]
   },
+  "id": "minecraft:dash",
+  "versionIntroduced": "1.20.40",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:dash",

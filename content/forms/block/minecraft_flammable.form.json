@@ -77,7 +77,16 @@
     ]
   },
   "description": "Describes the flammable properties for this block. If set to true, default values are used (catch: 5, destroy: 20). Note that the default value of lava_flammable is false for backwards compatibility. If set to false, or if this component is omitted, the block will not be able to catch on fire naturally from neighbors, but it can still be directly ignited.",
-  "fields": [],
+  "fields": [
+    {
+      "id": "lava_flammable",
+      "title": "Lava Flammable",
+      "description": "Whether the block can be ignited by adjacent lava. Defaults to false for backwards compatibility; set to true to allow lava to set the block on fire the way it does Planks and other vanilla flammable blocks.",
+      "dataType": "boolean",
+      "defaultValue": false,
+      "versionIntroduced": "1.26.30"
+    }
+  ],
   "scalarField": {
     "id": "boolean",
     "title": "Object enabled",

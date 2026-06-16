@@ -1,5 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "id": "has_damaged_equipment",
+  "versionIntroduced": "1.20.80",
   "summarizer": {
     "phrases": [
       {

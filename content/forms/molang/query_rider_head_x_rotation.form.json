@@ -13,6 +13,8 @@
     ]
   },
   "id": "query.rider_head_x_rotation",
+  "versionIntroduced": "1.20.70",
+  "note": "Available without experimental toggle in 1.20.70.",
   "fields": [],
   "description": "Returns the head x world-rotation of the rider entity at the provided index, else it returns 0.0. Takes one argument as a parameter.",
   "generated_doNotEdit": {

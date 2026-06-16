@@ -12,7 +12,17 @@
       }
     ]
   },
-  "fields": [],
+  "id": "minecraft:mob_effect",
+  "fields": [
+    {
+      "id": "ambient",
+      "title": "Ambient",
+      "description": "If true, the effect renders with the ambient effect background (like Beacons or Conduits) and does not pulse as it nears expiration.",
+      "dataType": "boolean",
+      "defaultValue": false,
+      "versionIntroduced": "1.21.130"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:mob_effect",
     "title": "Mob Effect",

@@ -27,7 +27,8 @@
           "id": "attack_interval",
           "dataType": "int"
         }
-      ]
+      ],
+      "note": "From 1.21.130, `attack_interval` accepts an `[int, int]` range to randomize the time between target searches. A single integer remains supported and is treated as a fixed interval. In 1.26.0 the schema is stricter and `attack_interval` only accepts an object with `min` and `max` values; the single-number shorthand is no longer accepted in 1.26.0 and newer."
     },
     {
       "id": "entity_types",
@@ -99,6 +100,14 @@
           }
         ]
       }
+    },
+    {
+      "id": "target_acquisition_probability",
+      "title": "Target Acquisition Probability",
+      "description": "Probability (0-1) that the goal will succeed when a candidate target passes all filters. Lower values cause the mob to acquire targets less reliably; the default of 1 always acquires.",
+      "dataType": "float",
+      "defaultValue": 1,
+      "versionIntroduced": "1.21.130"
     }
   ],
   "generated_doNotEdit": {

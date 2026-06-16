@@ -3,6 +3,7 @@ author: mikeam
 ms.author: mikeam
 title: 1.21.130 Update Notes
 description: Update summary of Creator changes in Bedrock 1.21.130
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 12/04/2025 #Required; mm/dd/yyyy format.
 ---

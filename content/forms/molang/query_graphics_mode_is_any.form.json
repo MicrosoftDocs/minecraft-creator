@@ -13,6 +13,7 @@
     ]
   },
   "id": "query.graphics_mode_is_any",
+  "versionIntroduced": "1.21.80",
   "fields": [],
   "description": "If the graphics mode of the client matches any of the arguments, return 1.0. Takes in one or more arguments ('simple', 'fancy', 'deferred', 'raytraced'). Available on the Client (Resource Packs) only.",
   "generated_doNotEdit": {

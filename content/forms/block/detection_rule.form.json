@@ -1,6 +1,15 @@
 {
   "id": "Detection Rule",
-  "fields": [],
+  "fields": [
+    {
+      "id": "use_liquid_clipping",
+      "title": "Use Liquid Clipping",
+      "description": "If true, the block uses its collision box to visually clip the liquid (reducing the visible water volume to match the block's shape). If false, the liquid renders as a full square across the whole block regardless of the collision shape.",
+      "dataType": "boolean",
+      "versionIntroduced": "1.26.0",
+      "note": "Added to `detection_rules` entries in 1.26.0. Defaults to `true` for format_version older than 1.26.0 and to `false` for 1.26.0 and newer."
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Detection Rule",
     "title": "Block Detection Rule",

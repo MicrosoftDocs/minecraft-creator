@@ -17,6 +17,7 @@
     "conditional",
     "entityevent"
   ],
+  "versionIntroduced": "1.21.60",
   "generated_doNotEdit": {
     "id": "is_bound_to_creaking_heart",
     "title": "Is Bound To Creaking Heart",

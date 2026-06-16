@@ -39,7 +39,7 @@ Adding and removing status effects is done with the `/effect` command. All statu
 
 The primary function of the `/execute` command is to modify the executor and execution origin of a nested command. However, its syntax allows for some conditional command execution that would otherwise be missing in functions.
 
-Find more information on the [Execute reference page](../Commands/commands/execute.md) and the [New Execute Syntax page](CommandsNewExecute.md)
+Find more information on the [Execute reference page](../Commands/commands/execute.md).
 
 ```
 /execute as <origin: target> <chainedCommand: ExecuteChainedOption_0>

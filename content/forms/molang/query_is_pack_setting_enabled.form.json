@@ -13,6 +13,7 @@
     ]
   },
   "id": "query.is_pack_setting_enabled",
+  "versionIntroduced": "1.21.130",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.is_pack_setting_enabled",

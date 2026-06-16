@@ -152,6 +152,14 @@
       "id": "damage_range",
       "description": "How close a hostile entity must be to have the damage applied.",
       "dataType": "float"
+    },
+    {
+      "id": "use_self_as_damage_source",
+      "title": "Use Self As Damage Source",
+      "description": "Whether the entity is treated as the source of the area damage. When true (default), other entities can retaliate against the attacking entity. Set to false to apply damage without making the attacker a valid retaliation target.",
+      "defaultValue": true,
+      "dataType": "boolean",
+      "versionIntroduced": "1.26.30"
     }
   ],
   "generated_doNotEdit": {

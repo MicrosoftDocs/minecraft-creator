@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:swing_duration",
+  "versionIntroduced": "1.21.120",
   "summarizer": {
     "phrases": [
       {

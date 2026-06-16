@@ -13,6 +13,7 @@
     ]
   },
   "id": "has_item_with_component",
+  "versionIntroduced": "1.21.130",
   "fields": [],
   "generated_doNotEdit": {
     "id": "has_item_with_component",

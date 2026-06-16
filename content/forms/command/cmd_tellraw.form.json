@@ -2,6 +2,7 @@
   "id": "cmd_tellraw",
   "title": "tellraw",
   "description": "Sends a JSON message to players.",
+  "note": "In 1.20.80, input key glyphs are better supported within the JSON message text.",
   "fields": [
     {
       "id": "target",

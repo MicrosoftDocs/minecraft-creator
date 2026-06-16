@@ -13,6 +13,7 @@
     ]
   },
   "id": "minecraft:surface_builder",
+  "versionIntroduced": "1.26.30",
   "fields": [
     {
       "id": "builder",

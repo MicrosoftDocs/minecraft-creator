@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:vegetation_patch_feature",
+  "versionIntroduced": "1.20.30",
   "description": "Scatters vegetation in an area. The vegetation feature's appearance can be modified by adjusting the radius and depth that it will generate.",
   "summarizer": {
     "phrases": [

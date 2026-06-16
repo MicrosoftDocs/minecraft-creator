@@ -16,6 +16,7 @@
       }
     ]
   },
+  "versionIntroduced": "1.19.60",
   "fields": [],
   "scalarField": {
     "id": "string",

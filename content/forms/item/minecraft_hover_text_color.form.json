@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "description": "Determines the color of the item name when hovering over it.",
+  "versionIntroduced": "1.20.10",
   "summarizer": {
     "phrases": [
       {

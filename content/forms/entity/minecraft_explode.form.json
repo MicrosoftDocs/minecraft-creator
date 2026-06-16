@@ -154,6 +154,10 @@
   },
   "fields": [
     {
+      "id": "damage_scaling",
+      "versionIntroduced": "1.21.40"
+    },
+    {
       "id": "toggles_blocks",
       "versionIntroduced": "1.21.40"
     },

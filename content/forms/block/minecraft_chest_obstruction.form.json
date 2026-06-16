@@ -1,5 +1,7 @@
 {
   "id": "minecraft:chest_obstruction",
+  "versionIntroduced": "1.26.10",
+  "note": "Added in 1.26.10 behind the Upcoming Creator Features experiment and released without the experimental toggle for block format versions 1.26.20 and newer. Controls how a block placed above a chest affects the chest's ability to open: `always` always obstructs, `never` never obstructs, and `shape` (the default) uses the block's AABB.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:chest_obstruction",

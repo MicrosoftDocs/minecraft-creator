@@ -3,6 +3,8 @@
   "id": "attachable",
   "title": "Attachable",
   "description": "An attachable definition for Minecraft Bedrock Edition. Attachables define how items render when equipped or held by entities, including armor, weapons, tools, and other wearable/holdable items.",
+  "note": "Attachables are used to define how items render when equipped. They reference materials, textures, geometry, and optionally animations and render controllers defined in other resource pack files.",
+  "note2": "In format_version 1.26.0 and higher, the `pre_animation` and `initialize` Molang script fields support multi-line `{}` brace scope delimiters.",
   "summarizer": {
     "phrases": [
       {
@@ -402,6 +404,5 @@
         }
       }
     ]
-  },
-  "note": "Attachables are used to define how items render when equipped. They reference materials, textures, geometry, and optionally animations and render controllers defined in other resource pack files."
+  }
 }

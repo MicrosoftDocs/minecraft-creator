@@ -1,5 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "versionIntroduced": "1.20.30",
+  "note": "From 1.26.0 onward, `value` supports the full int16 range of 0 to 32767.",
   "summarizer": {
     "phrases": [
       {

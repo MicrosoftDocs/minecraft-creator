@@ -12,6 +12,9 @@
       }
     ]
   },
+  "id": "minecraft:crafting_table",
+  "versionIntroduced": "1.19.50",
+  "note": "Released from the Holiday Creator Features experiment in 1.19.50.",
   "fields": [],
   "samples": {
     "Example": [
