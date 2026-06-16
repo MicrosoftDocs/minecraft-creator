@@ -3,6 +3,7 @@ author: mikeam
 ms.author: mikeam
 title: 1.26.20 Update Notes
 description: Update summary of Creator changes in Bedrock 1.26.20
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
 ms.date: 05/05/2026
 ---

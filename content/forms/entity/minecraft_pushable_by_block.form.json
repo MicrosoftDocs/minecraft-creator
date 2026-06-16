@@ -1,5 +1,7 @@
 {
   "id": "minecraft:pushable_by_block",
+  "versionIntroduced": "1.26.10",
+  "note": "Added in 1.26.10 as part of the split of `minecraft:pushable` into `minecraft:pushable_by_block` (pistons and Shulker Boxes) and `minecraft:pushable_by_entity` (other entities). The legacy `minecraft:pushable` component is no longer parsed.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:pushable_by_block",

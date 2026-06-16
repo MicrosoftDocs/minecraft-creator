@@ -1,5 +1,6 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
+  "versionIntroduced": "1.21.40",
   "summarizer": {
     "phrases": [
       {

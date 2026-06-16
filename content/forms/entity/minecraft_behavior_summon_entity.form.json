@@ -146,6 +146,13 @@
                   "dataType": "float"
                 },
                 {
+                  "id": "summon_event",
+                  "title": "Summon Event",
+                  "description": "Event to invoke on each summoned entity immediately after it spawns.",
+                  "dataType": "minecraftEventTrigger",
+                  "versionIntroduced": "1.21.50"
+                },
+                {
                   "id": "target",
                   "title": "Target",
                   "description": "Target for the summon: 'self' or 'other'.",

@@ -13,6 +13,9 @@
     ]
   },
   "id": "minecraft:movable",
+  "title": "Movable",
+  "versionIntroduced": "1.21.100",
+  "description": "Defines whether the block can be pushed or pulled by a piston. Use movement_type to declare the block as push_pull, push, popped, or immovable; use sticky to opt into same-block grouping similar to slime blocks.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:movable",

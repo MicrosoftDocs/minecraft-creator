@@ -13,6 +13,7 @@
     ]
   },
   "id": "query.server_memory_tier",
+  "versionIntroduced": "1.21.50",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.server_memory_tier",

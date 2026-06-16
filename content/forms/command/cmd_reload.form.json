@@ -6,9 +6,11 @@
     {
       "id": "all",
       "title": "all",
+      "description": "When specified, causes players to quit the world and rejoin, and reloads all behavior and resource packs (not just function and script files).",
       "type": "string",
       "isOptional": true,
-      "commandType": "RELOAD_ALL"
+      "commandType": "RELOAD_ALL",
+      "versionIntroduced": "1.21.30"
     }
   ],
   "overloads": [

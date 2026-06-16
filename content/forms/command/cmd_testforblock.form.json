@@ -2,6 +2,7 @@
   "id": "cmd_testforblock",
   "title": "testforblock",
   "description": "Tests whether a certain block is in a specific location.",
+  "note": "As of 1.19.70, the legacy numeric block `data` value parameter is no longer supported. Use a block states array instead.",
   "fields": [
     {
       "id": "position",

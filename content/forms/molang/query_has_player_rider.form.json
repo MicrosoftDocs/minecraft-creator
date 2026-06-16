@@ -13,6 +13,8 @@
     ]
   },
   "id": "query.has_player_rider",
+  "versionIntroduced": "1.20.70",
+  "note": "Available without experimental toggle in 1.20.70.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.has_player_rider",

@@ -13,6 +13,7 @@
     ]
   },
   "id": "is_controlling_passenger_family",
+  "versionIntroduced": "1.21.130",
   "fields": [],
   "generated_doNotEdit": {
     "id": "is_controlling_passenger_family",

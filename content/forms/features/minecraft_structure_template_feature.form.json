@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:structure_template_feature",
+  "versionIntroduced": "1.20.30",
   "description": "Places a structure in the world. The structure must be stored as a .mcstructure file in the `structures` subdirectory of a behavior pack. It is possible to reference structures that are part of other behavior packs, they do not need to come from the same behavior pack as this feature. Constraints can be defined to specify where the structure is allowed to be placed. During placement, the feature will search for a position within the adjustment_radius that satisfies all constraints. If none are found, the structure will not be placed. Succeeds if the structure is placed in the world. Fails if the structure fails to be placed within the world.",
   "summarizer": {
     "phrases": [
@@ -120,6 +121,14 @@
       "id": "format_version",
       "title": "Format Version",
       "dataType": "string"
+    },
+    {
+      "id": "rotate_around_center",
+      "title": "Rotate Around Center",
+      "description": "If true, the structure is centered on the placement position before rotation is applied so it rotates around its center rather than its origin corner.",
+      "defaultValue": false,
+      "dataType": "boolean",
+      "versionIntroduced": "1.26.20"
     }
   ],
   "generated_doNotEdit": {

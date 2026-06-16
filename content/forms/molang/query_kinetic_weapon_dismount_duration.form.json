@@ -13,6 +13,7 @@
     ]
   },
   "id": "query.kinetic_weapon_dismount_duration",
+  "versionIntroduced": "1.21.130",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.kinetic_weapon_dismount_duration",

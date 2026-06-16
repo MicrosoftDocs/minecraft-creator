@@ -13,6 +13,8 @@
     ]
   },
   "id": "query.get_pack_setting",
+  "versionIntroduced": "1.21.130",
+  "note": "Pack settings (sliders/toggles/dropdowns) are read-only at runtime via this and related queries. Available on the Client (Resource Packs) only.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.get_pack_setting",

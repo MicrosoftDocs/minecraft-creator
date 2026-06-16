@@ -53,9 +53,8 @@
     }
   ],
   "versionIntroduced": "1.21.80",
-  "isExperimental": true,
-  "requiredExperiment": "Upcoming Creator Features",
-  "description": "[Note: This component is currently experimental]. Sets the particles that will be used when block is destroyed.",
+  "note": "Available without experimental toggle in 1.21.100. The particle_count field controls how many particles spawn when the block is broken.",
+  "description": "Sets the particles that will be used when block is destroyed.",
   "generated_doNotEdit": {
     "id": "minecraft:destruction_particles",
     "title": "Destruction Particles",

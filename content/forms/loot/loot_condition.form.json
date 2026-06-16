@@ -112,6 +112,7 @@
       "id": "match_tool",
       "title": "Match Tool",
       "description": "For 'match_tool': the tool item properties to match.",
+      "note": "Item tag references in the 'item' property are available without an experimental toggle in 1.21.70.",
       "dataType": "object",
       "subForm": {
         "id": "tool_match",

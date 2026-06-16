@@ -13,6 +13,8 @@
     ]
   },
   "id": "minecraft:cubemap_identifier",
+  "versionIntroduced": "1.21.130",
+  "note": "Added in 1.21.130 to apply a custom cubemap (defined in the resource pack's `cubemaps/` directory) for Vibrant Visuals skybox lighting on a client biome.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:cubemap_identifier",

@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:piercing_weapon",
+  "versionIntroduced": "1.21.130",
   "summarizer": {
     "phrases": [
       {

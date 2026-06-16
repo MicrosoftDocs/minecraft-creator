@@ -1,5 +1,7 @@
 {
   "id": "query.get_level_seed_based_fraction",
+  "versionIntroduced": "1.26.10",
+  "note": "Introduced in 1.26.0 behind the Upcoming Creator Features experimental toggle. Available without the experimental toggle in 1.26.10.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.get_level_seed_based_fraction",

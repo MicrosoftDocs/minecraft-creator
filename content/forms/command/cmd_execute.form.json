@@ -2,6 +2,8 @@
   "id": "cmd_execute",
   "title": "execute",
   "description": "Executes a command on behalf of one or more entities. See more information in the [Popular Commands page](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands#execute) and the [New Execute Syntax page](https://learn.microsoft.com/minecraft/creator/documents/commandsnewexecute).",
+  "note": "The modern subcommand syntax (`as`, `at`, `positioned`, `if`/`unless`, `facing`, `aligned`, `rotated`, `anchored`, `in`) released out of experimental in 1.19.50 and requires `min_engine_version` 1.19.50 or newer. Packs targeting older engine versions continue to use the legacy syntax.",
+  "note2": "As of 1.19.70, the legacy numeric block `data` value parameter is no longer supported in block-targeting sub-commands. Use a block states array instead.",
   "fields": [
     {
       "id": "subcommand",

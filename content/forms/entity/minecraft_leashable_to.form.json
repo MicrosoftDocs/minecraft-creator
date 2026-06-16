@@ -13,7 +13,17 @@
     ]
   },
   "id": "minecraft:leashable_to",
-  "fields": [],
+  "versionIntroduced": "1.21.90",
+  "fields": [
+    {
+      "id": "unleash_on_removal",
+      "title": "Unleash On Removal",
+      "description": "If true, all entities leashed to this entity are automatically unleashed when this component is removed. Defaults to true.",
+      "defaultValue": true,
+      "dataType": "boolean",
+      "versionIntroduced": "1.26.30"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:leashable_to",
     "title": "Leashable To",

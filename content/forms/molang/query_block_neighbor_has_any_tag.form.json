@@ -13,6 +13,8 @@
     ]
   },
   "id": "query.block_neighbor_has_any_tag",
+  "versionIntroduced": "1.20.60",
+  "note": "Available without an experimental toggle starting in 1.20.60.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.block_neighbor_has_any_tag",

@@ -13,6 +13,8 @@
     ]
   },
   "id": "minecraft:behavior.use_kinetic_weapon",
+  "versionIntroduced": "1.21.130",
+  "note": "Lets a mob attack with an item carrying the `minecraft:kinetic_weapon` component by charging at the target, then repositioning between strikes.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.use_kinetic_weapon",

@@ -1,5 +1,7 @@
 {
   "id": "redstone_strength_at_position",
+  "versionIntroduced": "1.26.30",
+  "note": "Introduced in 1.26.30. Tests the redstone signal strength at the subject's position. Reads the same composed level as redstone components (e.g. comparator, observer) and returns 0 when the position is unloaded.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "redstone_strength_at_position",

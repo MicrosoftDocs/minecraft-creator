@@ -13,6 +13,9 @@
     ]
   },
   "id": "minecraft:connection_rule",
+  "versionIntroduced": "1.21.130",
+  "note": "Lets a custom block control whether other blocks with connection behavior (fences, walls, bars, glass panes) may visually connect to it. Released alongside the new `minecraft:has_fence_connections` VanillaBlockTag.",
+  "note2": "Available without the Upcoming Creator Features experimental toggle for block format versions 1.26.0 or higher.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:connection_rule",

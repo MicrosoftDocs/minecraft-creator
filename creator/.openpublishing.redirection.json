@@ -210,7 +210,7 @@
       "redirect_url": "/reference/content/featuresreference/features/featurelist",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "Reference/content/featuresreference/examples/features/minecraftunderwater_cave_carver.md",
       "redirect_url": "/reference/content/featuresreference/features/minecraftunderwater_cave_carver_feature",
       "redirect_document_id": false
@@ -417,6 +417,11 @@
     {
       "source_path": "Reference/Content/ParticlesReference/Examples/Materials.md",
       "redirect_url": "/minecraft/creator/documents/material-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/CommandsNewExecute.md",
+      "redirect_url": "/minecraft/creator/documents/commandspopularcommands#execute",
       "redirect_document_id": false
     }
   ]

@@ -2,6 +2,7 @@
   "id": "cmd_loot",
   "title": "loot",
   "description": "Drops the given loot table into the specified inventory or into the world.",
+  "note": "In 1.21.60, the `mine` overload was fully released, allowing custom loot tables to be associated with custom blocks.",
   "fields": [
     {
       "id": "target",

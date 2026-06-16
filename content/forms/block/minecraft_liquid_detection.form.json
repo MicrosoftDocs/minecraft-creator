@@ -14,6 +14,7 @@
   },
   "fields": [],
   "versionIntroduced": "1.21.60",
+  "note": "In 1.26.10, defining `minecraft:liquid_detection` with an empty `detection_rules` array fails to load and produces a content error.",
   "samples": {
     "Block Fabricator": [
       {

@@ -9,6 +9,7 @@
       }
     ]
   },
+  "versionIntroduced": "1.21.70",
   "fields": [],
   "generated_doNotEdit": {
     "title": "CameraAimAssistPresetDefinition",

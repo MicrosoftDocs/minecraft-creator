@@ -1,5 +1,7 @@
 {
   "id": "has_equipment_block_tag",
+  "versionDeprecated": "1.26.20",
+  "note": "Removed in format version 1.26.20. Block tags should not be used to drive item or equipment behavior decisions \u2014 use item-side conditions (such as `has_equipment` combined with item tags) instead.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "has_equipment_block_tag",

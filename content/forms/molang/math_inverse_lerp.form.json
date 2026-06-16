@@ -13,6 +13,7 @@
     ]
   },
   "id": "`math.inverse_lerp(start, end, value)`",
+  "versionIntroduced": "1.21.120",
   "fields": [],
   "generated_doNotEdit": {
     "id": "math.inverse_lerp(start, end, value)",

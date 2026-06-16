@@ -13,6 +13,7 @@
     ]
   },
   "id": "Menu Category",
+  "note": "In format version 1.26.20, validation is strictly enforced: `category` is required when `menu_category` is present, and `group`, if provided, must be a non-empty string. Either omit `group` entirely or set it to a non-empty namespace.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Menu Category",

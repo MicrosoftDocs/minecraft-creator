@@ -17,6 +17,7 @@
     "conditional",
     "entityevent"
   ],
+  "versionIntroduced": "1.21.60",
   "generated_doNotEdit": {
     "id": "home_distance",
     "title": "Home Distance",

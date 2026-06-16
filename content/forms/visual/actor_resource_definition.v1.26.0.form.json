@@ -1,5 +1,7 @@
 {
   "id": "actor_resource_definition",
+  "versionIntroduced": "1.26.0",
+  "note": "In format_version 1.26.0 and higher, the `pre_animation` and `initialize` Molang script fields on `minecraft:client_entity` support multi-line `{}` brace scope delimiters.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "actor_resource_definition",

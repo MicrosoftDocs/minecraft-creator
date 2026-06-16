@@ -1,6 +1,7 @@
 {
   "id": "cmd_recipe",
   "title": "recipe",
+  "versionIntroduced": "1.20.30",
   "description": "Supports unlocking of built-in (vanilla) recipes that a particular player can craft with.",
   "fields": [
     {

@@ -1,0 +1,65 @@
+### YamlMime:Landing
+
+title: Game Logic
+summary: "Articles and reference material for implementing game logic within Minecraft: Bedrock Edition."
+
+metadata:
+  title: Game Logic # page-title displayed in search results. < 60 chars
+  description: "The Game Logic section features articles and reference material for designing and implementing games within Minecraft: Bedrock Edition." # article description displayed in search results. < 160 chars
+  ms.service: minecraft-bedrock-edition
+  ms.topic: landing-page
+  author: chipotle # GitHub user alias of author
+  ms.author: mikeam # Microsoft alias of author; optional team alias
+  ms.date: 05/19/2024 # mm/dd/yy format
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+landingContent:
+  - title: Scoreboards
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Scoreboard Introduction
+            url: ../ScoreboardIntroduction.md
+          - text: Use Command Blocks with Scoreboards
+            url: ../CreateAnInWorldGame.md
+          - text: Scoreboard Operations Tutorial
+            url: ../ScoreboardOperationsTutorial.md
+  - title: Game Rules and Commands
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Introduction to Game Rules
+            url: ../IntroductionToGamerules.md
+          - text: Introduction to Commands
+            url: ../CommandsIntroduction.md
+          - text: Popular Commands
+            url: ../CommandsPopularCommands.md
+          - text: Create an In-World Game with Commands
+            url: ../CreateAnInWorldGame.md
+  - title: Scripting
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Introduction to Scripting
+            url: ../scripting/introduction.md
+          - text: Add TypeScript to Your Game
+            url: ../scripting/next-steps.md
+          - text: "Parkour: Bring the Pieces Together"
+            url: ../ParkourIntro.md
+  - title: Helpful References
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Script API Reference
+            url: ../../ScriptAPI/index.yml
+          - text: Command Reference
+            url: ../../Reference/Content/CommandsReference/Examples/Commands/TOC.yml
+          - text: Introduction to Molang
+            url: ../molang/introduction.md
+          - text: Redstone Guide
+            url: ../RedstoneGuide.md
+          - text: Developer Tools for Minecraft
+            url: ../scripting/developer-tools.md

@@ -13,6 +13,11 @@
     ]
   },
   "id": "Placement Direction",
+  "versionIntroduced": "1.20.30",
+  "note": "The `minecraft:sixteen_way_rotation` value for `enabled_states` was released out of beta in format version 1.26.30. Use it (together with the corresponding block state) to rotate blocks in 22.5\u00b0 increments around the Y axis based on the player's yaw at placement time.",
+  "note2": "The `minecraft:corner_and_cardinal_direction` value for `enabled_states` is available without the Beta APIs toggle starting in 1.26.0. When enabled, set `blocks_to_corner_with` to the block descriptors that should trigger the corner shape (commonly paired with the `minecraft:placement_position` trait's `minecraft:vertical_half` state).",
+  "note3": "In format version 1.26.20, validation tightened: the rotation offset must be an exact multiple of 90.0 in the range 0.0\u2013360.0 (the previous 0.5 tolerance was removed), and `blocks_to_corner_with` now requires `minecraft:corner_and_cardinal_direction` to be present in `enabled_states`.",
+  "note4": "Fixed in 1.26.10: blocks using `minecraft:corner_and_cardinal_direction` now correctly form inner corners when adjacent to other stairs.",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Placement Direction",

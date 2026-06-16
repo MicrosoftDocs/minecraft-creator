@@ -171,13 +171,16 @@
           "id": "brightness_gamma",
           "title": "Brightness Gamma",
           "description": "Gamma correction value for the block's brightness.",
-          "dataType": 3
+          "dataType": 3,
+          "note": "This field was broken; in 1.21.60 it was replaced by `ambient_occlusion_exponent`."
         },
         {
           "id": "ambient_occlusion_exponent",
           "title": "Ambient Occlusion Exponent",
           "description": "Controls the ambient occlusion effect strength. Lower values result in less shadow in corners.",
-          "dataType": 3
+          "dataType": 3,
+          "versionIntroduced": "1.21.60",
+          "note": "Replaces the previously broken `brightness_gamma` field."
         }
       ]
     }

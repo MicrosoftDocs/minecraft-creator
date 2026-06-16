@@ -1,6 +1,7 @@
 {
   "id": "cmd_scriptevent",
   "title": "scriptevent",
+  "versionIntroduced": "1.20.30",
   "description": "Causes an event to fire within script with the specified message ID and payload. This can be used to connect scripting with any location where commands are used.",
   "fields": [
     {

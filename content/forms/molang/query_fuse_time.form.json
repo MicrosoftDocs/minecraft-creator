@@ -1,5 +1,6 @@
 {
   "id": "query.fuse_time",
+  "versionIntroduced": "1.26.30",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.fuse_time",

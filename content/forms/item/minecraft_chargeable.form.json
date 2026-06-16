@@ -1,6 +1,9 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "isDeprecated": true,
+  "versionIntroduced": "1.20.30",
+  "versionDeprecated": "1.20.50",
+  "note": "Released without an experimental toggle in 1.20.30; renamed to `minecraft:use_modifiers` in 1.20.50.",
   "title": "Chargeable",
   "description": "Event trigger for when the item has completed its use duration.",
   "summarizer": {

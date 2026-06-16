@@ -32,5 +32,6 @@
     }
   ],
   "title": "Placement Position",
+  "versionIntroduced": "1.20.30",
   "description": "Contains information about where the player placed the block. This allows a block to replicate the upside-down placement of slabs and stairs, as well as the attachment behavior of torches and vines."
 }

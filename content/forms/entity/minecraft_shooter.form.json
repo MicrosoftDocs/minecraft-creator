@@ -81,9 +81,33 @@
       "description": "Sound that is played when the shooter shoots a projectile.",
       "dataType": "string",
       "lookupId": "soundDefinition"
+    },
+    {
+      "id": "projectiles",
+      "title": "Projectiles",
+      "description": "List of projectiles that can be used by the shooter. Each entry can specify its own projectile definition and condition filters; entries are evaluated in order and the first match is used.",
+      "dataType": "objectArray",
+      "versionIntroduced": "1.19.60"
+    },
+    {
+      "id": "power",
+      "title": "Power",
+      "description": "Velocity at which projectiles will be shot. A power of 0 falls back to the default projectile throw power.",
+      "defaultValue": 0,
+      "dataType": "float",
+      "versionIntroduced": "1.19.60"
+    },
+    {
+      "id": "magic",
+      "title": "Magic",
+      "description": "If set, the projectiles are flagged as magic and the ranged attack goal will not run at the same time as other magic goals (for example, drink_potion).",
+      "defaultValue": false,
+      "dataType": "boolean",
+      "versionIntroduced": "1.19.60"
     }
   ],
   "note": "Ammunition used by minecraft:shooter must have the minecraft:projectile component in order to function properly.",
+  "note2": "Expanded in 1.19.60: the `projectiles` list can now specify multiple projectile definitions with condition filters, and `power`, `magic`, and `sound` are exposed for per-shooter customization.",
   "generated_doNotEdit": {
     "id": "minecraft:shooter",
     "title": "Shooter",

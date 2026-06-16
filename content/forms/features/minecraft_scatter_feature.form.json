@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:scatter_feature",
+  "versionIntroduced": "1.20.30",
   "description": "Scatters a feature throughout a chunk. The x, y, and z fields are per-coordinate parameters. Coordinates represent an offset from the input position instead of an absolute position, and may be a single value, random distribution, or Molang expression that resolves to a numeric value. The coordinate_eval_order field is provided for finer control of coordinate resolution (particularly when using the grid distribution). iterations controls how many individual placements should occur if the scatter_chance check succeeds. The scatter_chance check happens once, so either all placements will run or none will. Succeeds if At least one feature placement succeeds. Fails if all feature placements fail",
   "summarizer": {
     "phrases": [

@@ -16,7 +16,16 @@
     "conditional",
     "entityevent"
   ],
-  "fields": [],
+  "fields": [
+    {
+      "id": "domain",
+      "title": "Domain",
+      "description": "The equipment location to test.",
+      "defaultValue": "any",
+      "dataType": "string",
+      "note": "`inventory` was added as a supported domain value in 1.19.60, allowing the filter to check items stored in the entity's inventory."
+    }
+  ],
   "generated_doNotEdit": {
     "id": "has_equipment",
     "title": "Has Equipment",

@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schemas/dataform/form-definition.schema.json",
   "id": "minecraft:tags",
+  "versionIntroduced": "1.20.50",
   "summarizer": {
     "phrases": [
       {

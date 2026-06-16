@@ -13,6 +13,7 @@
     ]
   },
   "id": "has_equipment_tag",
+  "versionIntroduced": "1.21.80",
   "fields": [],
   "tags": [
     "conditional",

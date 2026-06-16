@@ -1,5 +1,8 @@
 {
   "id": "minecraft:redstone_consumer",
+  "versionIntroduced": "1.21.130",
+  "note": "Lets a custom block consume and optionally propagate a redstone signal. Pairs with the `BlockComponentRedstoneUpdateEvent` script API for custom redstone behavior. Not available on block permutations.",
+  "note2": "Available without the Upcoming Creator Features experimental toggle for block format versions 1.26.0 or higher. In 1.26.0 the field was renamed from the original `propogates_power` spelling to `propagates_power`.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "minecraft:redstone_consumer",

@@ -85,7 +85,17 @@
     ]
   },
   "description": "Describes how this mob can be leashed to other items",
+  "note": "In 1.21.90, the `can_be_cut` root field and the `spring_type` and `rotation_adjustment` fields within `presets` were added.",
+  "note2": "From 1.21.80 onward, supports multiple presets via the `presets` array. Each preset has its own `filter`, `hard_distance`, `soft_distance`, and `max_distance` — replacing the flat root fields previously used.",
   "fields": [
+    {
+      "id": "can_be_cut",
+      "title": "Can Be Cut",
+      "description": "If true, players can cut both incoming and outgoing leashes by using shears on the entity.",
+      "defaultValue": true,
+      "dataType": "boolean",
+      "versionIntroduced": "1.21.90"
+    },
     {
       "id": "can_be_stolen",
       "dataType": "boolean",
@@ -143,6 +153,14 @@
           "dataType": "string"
         }
       ]
+    },
+    {
+      "id": "unleash_on_removal",
+      "title": "Unleash On Removal",
+      "description": "If true, the entity is unleashed when this component is removed. Defaults to true.",
+      "defaultValue": true,
+      "dataType": "boolean",
+      "versionIntroduced": "1.26.30"
     }
   ],
   "generated_doNotEdit": {
