@@ -9,7 +9,9 @@ ms.date: 08/08/2025
 
 # Animation Controllers Reference
 
-Animation controllers decide which animations to play and when.  Each controller contains a list of states that play one or more animations, each of which can be blended by a Molang expression if so desired.  Controller files are stored as JSON in the `animation_controllers` folder.
+In a Resource Pack, animation controllers decide which animations to play and when. Animation controllers stored in a Behavior Pack share a syntax with their Resource Pack counterparts, but they're used as state controllers that define an entity's physical state and the conditions that trigger those states via transitions instead of as visual animation changes.
+
+Each controller contains a list of states that play one or more animations, each of which can be blended by a Molang expression if desired. Controller files are stored as JSON in the **animation_controllers** folder inside your Resource or Behavior pack.
 
 > [!NOTE]
 > If you haven't read the [Introduction to Animation Controllers](../IntroductionToAnimationControllers.md) yet, check out that article first for a broader overview of the topic.
