@@ -2,7 +2,7 @@
   items:
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
-    - name: "Updates and News"
+    - name: Updates and News
       items:
         - name: 1.26.20 Update Summary
           href: Documents/Update1.26.20.md
@@ -72,20 +72,6 @@
               href: Documents/CavesAndCliffsEntities.md
             - name: World Height Changes in Caves and Cliffs Part 2
               href: Documents/WorldHeightChange.md
-    - name: Casual Creator Article Series
-      items:
-        - name: "Add your Cat to Minecraft"
-          href: Casual/AddYourCatToMinecraft.md
-        - name: "Building Debug Tools"
-          href: Casual/DebugTools.md
-        - name: "Chill Dreams Add-On: Part 1 - The Dream Turkey"
-          href: Casual/ChillDreamsPart1TheDreamTurkey.md
-        - name: "Chill Dreams Add-On: Part 2 - Making Dreams Come True"
-          href: Casual/ChillDreamsPart2MakingDreamsComeTrue.md
-        - name: "Chill Dreams Add-On: Part 3 - Smells Like Memories"
-          href: Casual/ChillDreamsPart3SmellsLikeMemories.md
-        - name: "Build a Tower Defense Add-On"
-          href: Casual/build-tower-defense.md
     - name: Learning Journey
       items:
         - name: Learning Journey Guide
@@ -118,7 +104,7 @@
               href: Documents/MakerSeriesMakingTheGoblinChef.md
             - name: Adding Custom Items
               href: Documents/AddCustomItems.md
-        - name: More Customization
+        - name: Learn About Customization
           items:
             - name: Creating and Adding Custom Sounds
               href: Documents/AddCustomSounds.md
@@ -152,60 +138,22 @@
               href: Documents/Blockbench.md
             - name: Other Commonly Used Tools
               href: Documents/CommonlyUsedTools.md
-        - name: Add-On Development Workflow
-          href: Documents/AddonDevelopmentWorkflow.md
     - name: Concepts
       items:
         - name: World Generation Overview
           href: Documents/world-generation.md
-        - name: Getting Started with Add-Ons
-          href: Documents/GettingStarted.md
-        - name: "Create Custom Grass Blocks: An Introduction to Resource Packs"
-          href: Documents/ResourcePack.md
-        - name: "Create an Angry Cow: An Introduction to Behavior Packs"
-          href: Documents/BehaviorPack.md
-        - name: "Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition"
-          href: Documents/DifferencesBetweenBedrockAndJava.md
-        - name: "More Sources of Info"
-          href: Documents/MoreInfoSources.md
-        - name: Minecraft File Extensions
-          href: Documents/MinecraftFileExtensions.md
-        - name: Add-On Pack Contents
-          href: Documents/ComprehensivePackContents.md
+        - name: Add-Ons
+          items:
+            - name: Getting Started with Add-Ons
+              href: Documents/GettingStarted.md
+            - name: An Introduction to Resource Packs
+              href: Documents/ResourcePack.md
+            - name: An Introduction to Behavior Packs
+              href: Documents/BehaviorPack.md
+            - name: Add-On Pack Contents
+              href: Documents/ComprehensivePackContents.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
-        - name: "Advanced Rendering: Vibrant Visuals"
-          items:
-            - name: Vibrant Visuals Topics
-              href: Documents/VibrantVisuals/index.yml
-            - name: Intro to Vibrant Visuals
-              href: Documents/VibrantVisuals/IntroVibrantVisuals.md
-            - name: Vibrant Visuals Resource Packs
-              href: Documents/VibrantVisuals/VVResourcePacks.md
-            - name: Overview of Physically Based Rendering
-              href: Documents/VibrantVisuals/PBROverview.md
-            - name: Creating Texture Maps
-              href: Documents/VibrantVisuals/UseBlockbenchToCreateModelsWithTextures.md
-            - name: Light Sources
-              href: Documents/VibrantVisuals/LightingCustomization.md
-            - name: Atmospheric Effects
-              href: Documents/VibrantVisuals/AtmosphericsCustomization.md
-            - name: Volumetric Fog and Light Shafts
-              href: Documents/VibrantVisuals/VolumetricFogLightShaftsCustomization.md
-            - name: Color Grading and Tone Mapping
-              href: Documents/VibrantVisuals/ColorGradingToneMappingCustomization.md
-            - name: Cubemaps
-              href: Documents/VibrantVisuals/CubemapCustomization.md
-            - name: Subsurface Scattering
-              href: Documents/VibrantVisuals/SubSurfaceScatteringCustomization.md
-            - name: Shadows
-              href: Documents/VibrantVisuals/ShadowsCustomization.md
-            - name: Water Effects
-              href: Documents/VibrantVisuals/WaterCustomization.md
-            - name: Per-Biome Customization
-              href: Documents/VibrantVisuals/BiomeCustomization.md
-            - name: Key Frame JSON Syntax
-              href: Documents/VibrantVisuals/KeyFrameJSONSyntax.md
         - name: Packaging Content
           items:
             - name: Packaging a Skin Pack
@@ -234,18 +182,12 @@
               href: Documents/BaseGameVersioning.md
             - name: Editing NBTs Safely
               href: Documents/EditingNBTSafely.md
-            - name: Getting Started with Ray Tracing
-              href: Documents/RTXGettingStarted.md
-            - name: Introduction to Physically Based Rendering
-              href: Documents/RTXPBRIntro.md
-            - name: Physically Based Rendering Tutorial
-              href: Documents/RTXPBRTutorial.md
             - name: Actor Storage
               href: Documents/ActorStorage.md
     - name: Game Logic
       items:
-        - name: Gameplay Development Journey
-          href: Documents/GameDevOverview.md
+        - name: Game Logic Overview
+          href: Documents/game-dev/index.yml
         - name: Redstone Guide
           href: Documents/RedstoneGuide.md
         - name: Introduction to Molang
@@ -266,10 +208,8 @@
               href: Documents/TickJsonIntroduction.md
             - name: The Damage Command
               href: Documents/CommandsDamageIntroduction.md
-            - name: The Tickingarea Command
+            - name: Introduction to Ticking Areas
               href: Documents/TickingAreaCommand.md
-            - name: New /execute command syntax
-              href: Documents/CommandsNewExecute.md
             - name: Create an In-World Game with Commands
               href: Documents/CreateAnInWorldGame.md
         - name: Scripting
@@ -450,6 +390,44 @@
           href: Documents/ParticleEffects.md
         - name: Materials and Material Files
           href: Documents/material-files.md
+    - name: "Rendering and Vibrant Visuals"
+      items:
+        - name: Vibrant Visuals Topics
+          href: Documents/VibrantVisuals/index.yml
+        - name: Intro to Vibrant Visuals
+          href: Documents/VibrantVisuals/IntroVibrantVisuals.md
+        - name: Vibrant Visuals Resource Packs
+          href: Documents/VibrantVisuals/VVResourcePacks.md
+        - name: Overview of Physically Based Rendering
+          href: Documents/VibrantVisuals/PBROverview.md
+        - name: Creating Texture Maps
+          href: Documents/VibrantVisuals/UseBlockbenchToCreateModelsWithTextures.md
+        - name: Light Sources
+          href: Documents/VibrantVisuals/LightingCustomization.md
+        - name: Atmospheric Effects
+          href: Documents/VibrantVisuals/AtmosphericsCustomization.md
+        - name: Volumetric Fog and Light Shafts
+          href: Documents/VibrantVisuals/VolumetricFogLightShaftsCustomization.md
+        - name: Color Grading and Tone Mapping
+          href: Documents/VibrantVisuals/ColorGradingToneMappingCustomization.md
+        - name: Cubemaps
+          href: Documents/VibrantVisuals/CubemapCustomization.md
+        - name: Subsurface Scattering
+          href: Documents/VibrantVisuals/SubSurfaceScatteringCustomization.md
+        - name: Shadows
+          href: Documents/VibrantVisuals/ShadowsCustomization.md
+        - name: Water Effects
+          href: Documents/VibrantVisuals/WaterCustomization.md
+        - name: Per-Biome Customization
+          href: Documents/VibrantVisuals/BiomeCustomization.md
+        - name: Key Frame JSON Syntax
+          href: Documents/VibrantVisuals/KeyFrameJSONSyntax.md
+        - name: Getting Started with Ray Tracing
+          href: Documents/RTXGettingStarted.md
+        - name: Introduction to Physically Based Rendering
+          href: Documents/RTXPBRIntro.md
+        - name: Physically Based Rendering Tutorial
+          href: Documents/RTXPBRTutorial.md
     - name: Items and Recipes
       items:
         - name: Introduction to Recipes
@@ -629,23 +607,31 @@
               href: Documents/BedrockServer/server-properties.md
             - name: Scripting Bedrock Dedicated Server
               href: Documents/BedrockServer/scripting.md
+    - name: Casual Creator Article Series
+      items:
+        - name: "Add your Cat to Minecraft"
+          href: Casual/AddYourCatToMinecraft.md
+        - name: "Building Debug Tools"
+          href: Casual/DebugTools.md
+        - name: "Chill Dreams Add-On: Part 1 - The Dream Turkey"
+          href: Casual/ChillDreamsPart1TheDreamTurkey.md
+        - name: "Chill Dreams Add-On: Part 2 - Making Dreams Come True"
+          href: Casual/ChillDreamsPart2MakingDreamsComeTrue.md
+        - name: "Chill Dreams Add-On: Part 3 - Smells Like Memories"
+          href: Casual/ChillDreamsPart3SmellsLikeMemories.md
+        - name: "Build a Tower Defense Add-On"
+          href: Casual/build-tower-defense.md
     - name: Reference Documentation
       items:
-      - name: Reference Overview
-        href: Reference/index.yml
-      - name: Commands
-        href: Reference/Content/CommandsReference/Examples/Commands/TOC.yml
-      - name: Script APIs
-        href: ScriptAPI/TOC.yml
-      - name: Prior Versions of Script APIs
-        href: PriorScriptAPI/TOC.yml
-      - name: Behavior Pack JSON Files
-        items:
-        - name: Pack Manifest JSON (Behavior or Resource or Skin)
-          href: Reference/Content/AddonsReference/PackManifest.md
-        - name: Biome JSON
-          href: Reference/Content/BiomesReference/Examples/Components/TOC.yml
-        - name: Block JSON
+        - name: Reference Overview
+          href: Reference/index.yml
+        - name: Commands
+          href: Reference/Content/CommandsReference/Examples/Commands/TOC.yml
+        - name: Script APIs
+          href: ScriptAPI/TOC.yml
+        - name: Prior Versions of Script APIs
+          href: PriorScriptAPI/TOC.yml
+        - name: Behavior Pack JSON Files
           items:
             - name: Pack Manifest JSON (Behavior or Resource or Skin)
               href: Reference/Content/AddonsReference/PackManifest.md
@@ -841,21 +827,27 @@
           href: Reference/Content/deep-links.md
         - name: Default Minecraft Listings
           href: Reference/Content/VanillaListingsReference/TOC.yml
+        - name: Minecraft File Extensions
+          href: Documents/MinecraftFileExtensions.md
         - name: Raw Message JSON
           href: Reference/Content/RawMessageJSON.md
         - name: Version Disambiguation
           href: Reference/Content/VersionDisambiguation.md
+        - name: "Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition"
+          href: Documents/DifferencesBetweenBedrockAndJava.md
+        - name: "More Sources of Info"
+          href: Documents/MoreInfoSources.md
     - name: Best Practices & Tips
       items:
-        - name: "Troubleshooting and Fixing Add-On Bugs"
+        - name: Troubleshooting and Fixing Add-On Bugs
           href: Documents/TroubleshootingAddons.md
-        - name: "Use the Latest Platform Version"
+        - name: Use the Latest Platform Version
           href: Documents/Practices/LatestPlatformVersion.md
-        - name: "Building Cooperative Add-Ons"
+        - name: Building Cooperative Add-Ons
           href: Documents/Practices/GuidelinesForBuildingCooperativeAddons.md
-        - name: "Improving Performance and Resource Usage"
+        - name: Improving Performance and Resource Usage
           href: Documents/Practices/ImprovingPerformanceAndResourceUsage.md
-        - name: "Tips for Using This Site"
+        - name: Tips for Using This Site
           href: Documents/TipsForUsingThisSite.md
     - name: Contribute
       items:
