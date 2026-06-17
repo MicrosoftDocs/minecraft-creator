@@ -13,6 +13,9 @@ ms.date: 02/11/2025
 The definitions for how a block behaves when detecting liquid. Only one rule definition is allowed per liquid type - if multiple are specified, the first will be used and the rest will be ignored.
 
 > [!Note]
+> In 1.26.10, defining `minecraft:liquid_detection` with an empty `detection_rules` array fails to load and produces a content error.
+
+> [!Note]
 > This item requires a format version of at least 1.21.60.
 
 
@@ -52,7 +55,7 @@ Whether this block uses the encompassing collider to visually clip the liquid. T
 | liquid_type | water | [Liquid Type](#liquid-type-choices) choices | The type of liquid this detection rule is for. Currently, `water` is the only supported liquid type. If this field is omitted, `water` will be the liquid type by default. | 
 | on_liquid_touches | blocking | [Liquid Touches](#liquid-touches-choices) choices | How the block reacts to flowing water. | 
 | stops_liquid_flowing_from_direction | [] | Object | When a block contains a liquid, controls the directions in which the liquid can't flow out from the block. | 
-| use_liquid_clipping | false | Boolean true/false | Whether this block uses the encompassing collider to visually clip the liquid. | 
+| use_liquid_clipping | false | Boolean true/false | If true, the block uses its collision box to visually clip the liquid (reducing the visible water volume to match the block's shape). | 
 
 #### on_liquid_touches
 
@@ -64,7 +67,7 @@ When a block contains a liquid, controls the directions in which the liquid can'
 
 #### use_liquid_clipping
 
-Whether this block uses the encompassing collider to visually clip the liquid. The encompassing collider is the smallest single AABB that contains all of the block's colliders. A liquid's base visual shape is ALWAYS a quad, they do not have more subdivisions. When use_liquid_clipping is TRUE, the game will attempt to reduce the visible volume of water if the collision shape allows it. Eg. a wall will turn the water base shape into a rectangle on the side of the incoming water. When use_liquid_clipping is FALSE, the game will preserve the water base shape as a full square, no matter what the collision shape of the block they share space with is.
+If true, the block uses its collision box to visually clip the liquid (reducing the visible water volume to match the block's shape). If false, the liquid renders as a full square across the whole block regardless of the collision shape. This item requires a format version of at least 1.26.0. Added to `detection_rules` entries in 1.26.0. Defaults to `true` for format_version older than 1.26.0 and to `false` for 1.26.0 and newer.
 
 
 ### Liquid Type choices

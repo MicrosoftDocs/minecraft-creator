@@ -14,6 +14,9 @@ Allows entities with a `minecraft:home` component to move towards their home pos
 		If `restriction_radius` is set, entities will be able to run this behavior only if outside of it.
 
 > [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON for this behavior.
+
+> [!Note]
 > Requires the following component in order to work properly:
 > 
 > * [Home (minecraft:home)](../EntityComponents/minecraftComponent_home.md)

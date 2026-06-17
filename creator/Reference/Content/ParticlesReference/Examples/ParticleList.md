@@ -30,6 +30,7 @@ ms.date: 02/11/2025
 | [emitter_shape_entity_aabb](ParticleComponents/emitter_shape_entity_aabb.md)| Emits particles from random positions within the attached entity's axis-aligned bounding box. |
 | [emitter_shape_point](ParticleComponents/emitter_shape_point.md)| Emits all particles from a single point in space, offset from the emitter origin. |
 | [emitter_shape_sphere](ParticleComponents/emitter_shape_sphere.md)| Emits particles from random positions within a spherical volume. |
+| [Molang expression](ParticleComponents/molang_expression.md)|  |
 | [ParticleLifetimeEvents Proxy](ParticleComponents/particlelifetimeevents_proxy.md)| Controls particle lifetime events like creation and expiration. |
 | [particle_appearance_billboard](ParticleComponents/particle_appearance_billboard.md)| Controls how particle sprites render and orient toward the camera. |
 | [particle_appearance_billboard flipbook_data](ParticleComponents/particle_appearance_billboard_flipbook_data.md)| Enables sprite sheet animation for particle billboards, cycling through frames over the particle's lifetime. |

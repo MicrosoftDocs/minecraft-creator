@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Tests the distance between the subject and its owner. Returns false if there is no owner.
 
+> [!Note]
+> This item requires a format version of at least 1.21.20.
+
 
 ## Owner Distance Properties
 

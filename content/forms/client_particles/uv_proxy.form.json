@@ -46,25 +46,7 @@
           {
             "id": "uv",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "uv",
-              "title": "Uv",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "uv",
@@ -82,25 +64,7 @@
           {
             "id": "uv_size",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "uv_size",
-              "title": "Uv Size",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "uv_size",

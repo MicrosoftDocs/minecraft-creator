@@ -18,19 +18,19 @@ Creates animation curves using linear interpolation between keyframe values. Def
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | horizontal_range | 1 | Keyed set of strings |  | 
-| horizontal_range (Horizontal Range) | *not set* | Key/item pairs of [Horizontal Range (Horizontal Range)](#horizontal-range-horizontal-range) items |  | 
+| horizontal_range (as Named set of objects) | *not set* | Key/item pairs of [Horizontal Range (Item Molang Expression)](#item-molang-expression) items |  | 
 | horizontal_range (as Decimal number) | *not set* | Decimal number |  | 
 | input | *not set* | Keyed set of strings |  | 
-| input (Input) | *not set* | Key/item pairs of [Input (Input)](#input-input) items |  | 
+| input (as Named set of objects) | *not set* | Key/item pairs of [Input (Item Molang Expression)](#item-molang-expression) items |  | 
 | input (as Decimal number) | *not set* | Decimal number |  | 
 | nodes | *not set* | Keyed set of strings |  | 
-| nodes (Nodes) | *not set* | Key/item pairs of [Nodes (Nodes)](#nodes-nodes) items |  | 
+| nodes (as Named set of objects) | *not set* | Key/item pairs of [Nodes (Item Molang Expression)](#item-molang-expression) items |  | 
 | nodes (as Decimal number) | *not set* | Decimal number |  | 
 | type | *not set* | Object |  | 
 
-### Horizontal Range (Horizontal Range)
+### Item Molang Expression
 
-#### Horizontal Range Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `horizontal_range`
 
@@ -38,12 +38,3 @@ Creates animation curves using linear interpolation between keyframe values. Def
 |:----------|:-------------|:----|:-----------|
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
-
-### Input (Input)
-
-Same structure as [Horizontal Range (Horizontal Range)](#horizontal-range-horizontal-range).
-
-
-### Nodes (Nodes)
-
-Same structure as [Horizontal Range (Horizontal Range)](#horizontal-range-horizontal-range).

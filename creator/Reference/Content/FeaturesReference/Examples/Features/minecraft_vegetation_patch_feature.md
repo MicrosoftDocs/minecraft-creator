@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Scatters vegetation in an area. The vegetation feature's appearance can be modified by adjusting the radius and depth that it will generate.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Vegetation Patch Feature Properties
 

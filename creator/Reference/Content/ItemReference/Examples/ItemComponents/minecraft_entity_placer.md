@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows an item to place entities into the world. Additionally, in version 1.19.80 and above, the component allows the item to set the spawn type of a monster spawner.
 
+> [!Note]
+> This item requires a format version of at least 1.20.10.
+
 
 ## Item Entity Placer Properties
 

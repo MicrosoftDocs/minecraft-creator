@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Returns true when the subject entity is holding a item with the specified component.
 
+> [!Note]
+> This item requires a format version of at least 1.21.130.
+
 
 ## Has Item With Component Properties
 

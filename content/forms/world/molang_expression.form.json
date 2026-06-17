@@ -1,0 +1,22 @@
+{
+  "id": "Molang expression",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Molang expression (object representation)",
+    "title": "World Molang Expression",
+    "fields": [
+      {
+        "id": "expression",
+        "title": "Expression",
+        "dataType": "string",
+        "isRequired": true
+      },
+      {
+        "id": "version",
+        "title": "Version",
+        "dataType": "int",
+        "isRequired": true
+      }
+    ]
+  }
+}

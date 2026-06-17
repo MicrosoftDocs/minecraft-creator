@@ -35,7 +35,7 @@ This entity can be ridden.
 
 ### dismount_mode
 
-Defines where riders are placed when dismounting this entity: - "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found. - "on_top_center", riders are placed at the center of the top of the entity's collision box.
+Defines where riders are placed when dismounting this entity: - "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found. - "on_top_center", riders are placed at the center of the top of the entity's collision box. This item requires a format version of at least 1.21.80.
 
 ### pull_in_entities
 
@@ -57,10 +57,15 @@ If true, this entity will pull entities matching the specified "family_types" in
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| camera_relax_distance_smoothing | *not set* | String |  | 
+| camera_relax_distance_smoothing | *not set* | Decimal number | Adds springiness to camera movement when the camera moves back to its radius after being pushed closer to the player by an obstacle. This item requires a format version of at least 1.21.80. | 
 | lock_rider_rotation | 0 | Molang | Angle in degrees to rotate the rider by. Can be a number or a Molang expression. | 
 | rotate_rider_by | 0 | Molang | Offset to rotate riders by. Can be a number or a Molang expression. | 
-| third_person_camera_radius | *not set* | String |  | 
+| third_person_camera_radius | *not set* | Decimal number | Camera radius to use for this seat when in third person or third person front camera. | 
+
+#### third_person_camera_radius
+
+Camera radius to use for this seat when in third person or third person front camera. Overrides the default third-person camera distance for riders in this seat. This item requires a format version of at least 1.21.80.
+
 
 ## Samples
 

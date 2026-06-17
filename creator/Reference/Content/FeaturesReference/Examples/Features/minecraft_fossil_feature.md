@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Generates a skeletal structure composed of bone blocks and parametric ore blocks. Succeeds if the fossil is placed. Fails if the fossil is not placed because it overlaps with another structure or because its bounding box has too many corners occupied by air or fluid.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Fossil Feature Properties
 

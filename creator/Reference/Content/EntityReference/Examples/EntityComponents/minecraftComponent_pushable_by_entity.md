@@ -12,6 +12,15 @@ ms.date: 02/11/2025
 
 Allows an entity to be pushed by other entities.
 
+> [!Note]
+> Added in 1.26.10 as part of the split of `minecraft:pushable` into `minecraft:pushable_by_block` (pistons and Shulker Boxes) and `minecraft:pushable_by_entity` (other entities). The legacy `minecraft:pushable` component is no longer parsed.
+
+> [!Note]
+> Released out of beta in format version 1.26.30. The `presets` field replaces the previous flat property layout; the preset field `max_distance` was renamed from `kick_distance_threshold`.
+
+> [!Note]
+> This item requires a format version of at least 1.26.10.
+
 
 ## Entity Pushable By Entity Properties
 

@@ -15,6 +15,12 @@ Allows an entity to establish a way to get into the love state used for breeding
 > [!Note]
 > This component is commonly used in conjunction with the 'minecraft:behavior.breed' component.
 
+> [!Note]
+> In 1.21.130 the `transform_to_item` field on each entry of `breed_items` was renamed to `result_item`. The new field is defined per-item, so different breed items can transform into different result items on use.
+
+> [!Note]
+> In 1.26.0 the offspring-related fields were split out into the separate `minecraft:offspring_data` component. `minecraft:breedable` now contains only love-state, taming/health requirements, and pregnancy-flow data; the new `minecraft:offspring_data` component is required to actually spawn the child entity.
+
 
 ## Breedable Properties
 
@@ -28,6 +34,7 @@ Allows an entity to establish a way to get into the love state used for breeding
 | breeds_with | *not set* | Array of [Breeds With](#breeds-with) items | The entity definitions that this entity can breed with. Can be a single object or an array. | Chicken: `{"minecraft:chicken":{}}`, Cow: `{"minecraft:cow":{}}`, Frog: `{"minecraft:frog":{"event":"become_pregnant","target":"self"}}` | 
 | breeds_with (as Object) | *not set* | [Breeds With (Breed With Single)](#breeds-with-breed-with-single) item |  |  | 
 | causes_pregnancy | false | Boolean true/false | If true, the entity will become pregnant instead of spawning a baby. | Frog: `true` | 
+| combine_parent_colors | false | Boolean true/false | If true and no color mutation occurs, the baby's `minecraft:color` is set to a blend of the parents' colors (following DyeItem combination rules). |  | 
 | deny_parents_variant | *not set* | [Deny Parents Variant](#deny-parents-variant) item | Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead. |  | 
 | environment_requirements | *not set* | Array of [Environment Requirements](#environment-requirements) items | The list of nearby block requirements to get the entity into the 'love' state. |  | 
 | extra_baby_chance | 0 | Percent Range | Chance that up to 16 babies will spawn. |  | 
@@ -36,6 +43,11 @@ Allows an entity to establish a way to get into the love state used for breeding
 | mutation_factor | *not set* | [Mutation Factor](#mutation-factor) item | Determines how likely the babies are to NOT inherit one of their parent's variances. |  | 
 | require_full_health | false | Boolean true/false | If true, the entity needs to be at full health before it can breed. |  | 
 | require_tame | true | Boolean true/false | If true, the entities need to be tamed first before they can breed. | Llama: `true` | 
+
+### combine_parent_colors
+
+If true and no color mutation occurs, the baby's `minecraft:color` is set to a blend of the parents' colors (following DyeItem combination rules). If the parents' colors aren't compatible, the baby inherits one parent's color at random. This item requires a format version of at least 1.21.60.
+
 
 ### Breeds With
 

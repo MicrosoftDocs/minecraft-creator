@@ -18,15 +18,15 @@ Emits all particles from a single point in space, offset from the emitter origin
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | direction | *not set* | Molang array | The direction of particle emission, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
-| direction (Direction) | *not set* | Key/item pairs of [Direction (Direction)](#direction-direction) items |  | 
+| direction (as Named set of objects) | *not set* | Key/item pairs of [Direction (Item Molang Expression)](#item-molang-expression) items |  | 
 | direction (as Decimal number) | *not set* | Decimal number |  | 
 | offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
-| offset (Offset) | *not set* | Key/item pairs of [Offset (Offset)](#offset-offset) items |  | 
+| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Item Molang Expression)](#item-molang-expression) items |  | 
 | offset (as Decimal number) | *not set* | Decimal number |  | 
 
-### Direction (Direction)
+### Item Molang Expression
 
-#### Direction Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `direction`
 
@@ -34,7 +34,3 @@ Emits all particles from a single point in space, offset from the emitter origin
 |:----------|:-------------|:----|:-----------|
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
-
-### Offset (Offset)
-
-Same structure as [Direction (Direction)](#direction-direction).

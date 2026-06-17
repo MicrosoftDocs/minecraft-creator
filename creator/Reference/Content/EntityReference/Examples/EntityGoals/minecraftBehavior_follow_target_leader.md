@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Allows mob to move towards its target leader.
 
+> [!Note]
+> Added in 1.26.20 as the generalized replacement for `minecraft:behavior.follow_target_captain`. Use `leader_filters` (required) to define which entities qualify as leaders, `search_cooldown` (default 20 ticks) to throttle leader searches, and `always_look_for_leader` (default false) to keep searching even after a leader has been found.
+
+> [!Note]
+> This item requires a format version of at least 1.26.20.
+
 
 ## Entity Follow Target Leader Behavior Properties
 

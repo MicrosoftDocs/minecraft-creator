@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Tests for the presence of a block item with the specified block tag in the specified slot of the entity.
 
+> [!Note]
+> Removed in format version 1.26.20. Block tags should not be used to drive item or equipment behavior decisions — use item-side conditions (such as `has_equipment` combined with item tags) instead.
+
+> [!Note]
+> This item no longer works after format versions of at least 1.26.20.
+
 
 ## Has Equipment Block Tag Properties
 

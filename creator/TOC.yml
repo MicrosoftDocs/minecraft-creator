@@ -140,6 +140,20 @@
               href: Documents/Blockbench.md
             - name: Other Commonly Used Tools
               href: Documents/CommonlyUsedTools.md
+        - name: More Casual Projects
+          items:
+            - name: "Add your Cat to Minecraft"
+              href: Casual/AddYourCatToMinecraft.md
+            - name: "Building Debug Tools"
+              href: Casual/DebugTools.md
+            - name: "Chill Dreams Add-On: Part 1 - The Dream Turkey"
+              href: Casual/ChillDreamsPart1TheDreamTurkey.md
+            - name: "Chill Dreams Add-On: Part 2 - Making Dreams Come True"
+              href: Casual/ChillDreamsPart2MakingDreamsComeTrue.md
+            - name: "Chill Dreams Add-On: Part 3 - Smells Like Memories"
+              href: Casual/ChillDreamsPart3SmellsLikeMemories.md
+            - name: "Build a Tower Defense Add-On"
+              href: Casual/build-tower-defense.md              
     - name: Concepts
       items:
         - name: World Generation Overview
@@ -613,20 +627,6 @@
               href: Documents/BedrockServer/server-properties.md
             - name: Scripting Bedrock Dedicated Server
               href: Documents/BedrockServer/scripting.md
-    - name: Casual Creator Article Series
-      items:
-        - name: "Add your Cat to Minecraft"
-          href: Casual/AddYourCatToMinecraft.md
-        - name: "Building Debug Tools"
-          href: Casual/DebugTools.md
-        - name: "Chill Dreams Add-On: Part 1 - The Dream Turkey"
-          href: Casual/ChillDreamsPart1TheDreamTurkey.md
-        - name: "Chill Dreams Add-On: Part 2 - Making Dreams Come True"
-          href: Casual/ChillDreamsPart2MakingDreamsComeTrue.md
-        - name: "Chill Dreams Add-On: Part 3 - Smells Like Memories"
-          href: Casual/ChillDreamsPart3SmellsLikeMemories.md
-        - name: "Build a Tower Defense Add-On"
-          href: Casual/build-tower-defense.md
     - name: Reference Documentation
       items:
         - name: Reference Overview

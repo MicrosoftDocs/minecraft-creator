@@ -15,6 +15,9 @@ A shaped crafting recipe for Minecraft Bedrock Edition. Shaped recipes require i
 > [!Note]
 > The 'data' field for items is deprecated in versions 1.20.0 and later. Use flattened item identifiers instead.
 
+> [!Note]
+> Starting in 1.19.40, pattern key entries may specify a 'tag' instead of an 'item', allowing the recipe to accept any item that belongs to the named item tag.
+
 
 ## Shaped Recipe Properties
 
@@ -31,7 +34,7 @@ A shaped crafting recipe for Minecraft Bedrock Edition. Shaped recipes require i
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| assume_symmetry | *not set* | Boolean true/false | If true, the recipe pattern can be mirrored horizontally. | 
+| assume_symmetry | false | Boolean true/false | When true, the shaped recipe's pattern may be mirrored horizontally, allowing both the pattern and its mirror image to produce the same result. This item requires a format version of at least 1.20.80. | 
 | description | *not set* | [Description](#description) item | The recipe description containing identifier. | 
 | group | *not set* | String | An optional group identifier for recipe book organization. | 
 | key | *not set* | Key/item pairs of [Key](#key) items | Maps pattern characters to item definitions. | 

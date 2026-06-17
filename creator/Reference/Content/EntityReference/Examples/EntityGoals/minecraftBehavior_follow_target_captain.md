@@ -15,6 +15,12 @@ Allows mob to move towards its current target captain.
 > [!Note]
 > Requires a entity to be labeled as a captain in a group. An example of this is the `minecraft:is_illager_captain` component used in the `pillager.json` entity definition.
 
+> [!Note]
+> Refactored in format version 1.26.20 to the more general `minecraft:behavior.follow_target_leader`, which uses configurable `leader_filters` and `search_cooldown` instead of hard-coded captain logic. Existing content that uses `follow_target_captain` continues to load, but new content should prefer `follow_target_leader`.
+
+> [!Note]
+> This item no longer works after format versions of at least 1.26.20.
+
 
 ## Follow Target Captain Behavior Properties
 

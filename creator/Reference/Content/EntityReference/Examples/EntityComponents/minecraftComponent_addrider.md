@@ -13,6 +13,12 @@ ms.date: 02/11/2025
 Adds a rider to the entity.
 
 > [!Note]
+> From 1.21.130, this component accepts an array of riders via the `riders` field (each with mandatory `entity_type` and optional `spawn_event`). The legacy single `entity_type` / `spawn_event` form remains supported for backward compatibility.
+
+> [!Note]
+> This item requires a format version of at least 1.8.0.
+
+> [!Note]
 > Requires the following component in order to work properly:
 > 
 > * [Rideable (minecraft:rideable)](./minecraftComponent_rideable.md)

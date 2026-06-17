@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Places continuous bands of blocks according to a noise distribution. This surface builder's processing has been implemented with sub-terrain height ranges in mind.
 
+> [!Note]
+> In format version 1.26.30, the noise distribution returned by `noise_descriptor` is clamped to the interval [-1, 1] before being matched against `noise_block_specifiers`. Authors that previously relied on out-of-range noise values may see different block placement after upgrading.
+
 
 ## Biome Noise Gradient Properties
 

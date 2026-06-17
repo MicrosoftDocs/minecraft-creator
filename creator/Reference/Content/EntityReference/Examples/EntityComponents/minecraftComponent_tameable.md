@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 This entity can be tamed.
 
+> [!Note]
+> From 1.21.130, each entry in `tame_items` accepts an optional `result_item` field. On a successful tame interaction, the consumed item is replaced in the player's inventory with the specified item.
+
 
 ## Tameable Properties
 

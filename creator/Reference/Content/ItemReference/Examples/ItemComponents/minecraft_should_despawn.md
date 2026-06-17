@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Should_despawn component determines if the item should eventually despawn while floating in the world.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Boolean true/false`.

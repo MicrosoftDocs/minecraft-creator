@@ -261,25 +261,7 @@
           {
             "id": "success_chance",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "success_chance",
-              "title": "Success Chance",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "success_chance",

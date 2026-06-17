@@ -22,7 +22,7 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | egg_type | minecraft:turtle_egg | String | Block type for the egg to lay. If this is a turtle egg, the number of eggs in the block is randomly set. | Frog: `"minecraft:frog_spawn"` | 
 | goal_radius | 0.5 | Decimal number | Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot. Value must be > 0. | Frog: `1.7` | 
 | lay_egg_sound | lay_egg | [Lay Egg Sound](#lay-egg-sound-choices) choices | Name of the sound event played when laying the egg. Defaults to lay_egg, which is used for Turtles. | Frog: `"lay_spawn"` | 
-| lay_seconds | 10 | Decimal number | Duration of the laying egg process in seconds. | Frog: `2` | 
+| lay_seconds | 10 | Decimal number | Duration of the laying egg process in seconds. From 1.26.10 onward, `lay_seconds` only accepts values greater than or equal to 0; entity JSON with negative values will fail to load. | Frog: `2` | 
 | on_lay | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Lay](#entity-actordefinitiontrigger) item | Event to run when this mob lays the egg. | Frog: `{"event":"laid_egg","target":"self"}` | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Frog: `2` | 
 | search_height | 1 | Integer number | The height in blocks the mob will look for the block to move towards. Value must be > 0. | Frog: `3` | 

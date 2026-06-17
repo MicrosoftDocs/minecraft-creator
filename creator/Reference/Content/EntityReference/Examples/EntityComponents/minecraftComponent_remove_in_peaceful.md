@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Denotes entities that are not allowed to exist in "Peaceful" difficulty.
 
+> [!Note]
+> This item requires a format version of at least 1.21.90.
+
 
 ## Samples
 

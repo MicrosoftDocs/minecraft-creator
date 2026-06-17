@@ -151,7 +151,7 @@
       {
         "id": "minecraft:block_entity",
         "title": "Minecraft Block Entity",
-        "description": "Adds per-instance metadata for this block.",
+        "description": "Requires Upcoming-Creator-Features enabled. Adds per-instance metadata for this block.",
         "dataType": "object",
         "subFormId": "block/minecraft_block_entity"
       },
@@ -461,25 +461,7 @@
                     {
                       "id": "bone_visibility",
                       "dataType": "keyedObjectCollection",
-                      "readOnly": true,
-                      "subForm": {
-                        "id": "bone_visibility",
-                        "title": "Bone Visibility",
-                        "fields": [
-                          {
-                            "id": "expression",
-                            "title": "Expression",
-                            "dataType": "string",
-                            "isRequired": true
-                          },
-                          {
-                            "id": "version",
-                            "title": "Version",
-                            "dataType": "int",
-                            "isRequired": true
-                          }
-                        ]
-                      }
+                      "subFormId": "item/molang_expression"
                     },
                     {
                       "id": "bone_visibility",

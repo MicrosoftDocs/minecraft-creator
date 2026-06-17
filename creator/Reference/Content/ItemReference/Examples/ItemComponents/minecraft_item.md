@@ -125,12 +125,16 @@ Sets the item as a placer item component for blocks. Items with this component w
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| aligned_placement | false | Boolean true/false | If true, block placement through this item will be aligned while holding the interaction button down. Defaults to false. | 
+| aligned_placement | false | Boolean true/false | When true, block placement through this item is aligned while the interaction button is held down. | 
 | block | *not set* | Object | Defines the block that will be placed. | 
 | replace_block_item | false | Boolean true/false | If true, the item will be registered as the item for this block. | 
 | use_on (Use On) | [] | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. Value must have at most 256 items. | 
 | use_on (as String) | *not set* | String |  | 
 | use_on (as Object) | *not set* | Object |  | 
+
+##### aligned_placement
+
+When true, block placement through this item is aligned while the interaction button is held down. Supported from `format_version` 1.26.0 onward. This item requires a format version of at least 1.26.10.
 
 ##### replace_block_item
 
@@ -159,6 +163,9 @@ Enables the bundle-specific interaction scheme and tooltip for an item.
 
 > [!Note]
 > In `/textures/textures_list.json`, the following code needs to be added for an item named `my_custom_bundle`: [ '<resource pack>/textures/items/my_custom_bundle.png', '<resource pack>/textures/items/my_custom_bundle_open_front.png','<resource pack>/textures/items/my_custom_bundle_open_back.png']. The respective icon textures would need to be added: my_custom_bundle.png, my_custom_bundle_open_front.png, my_custom_bundle_open_back.png. Note that it's important that the filenames are the item name, plus `_open_front` and `_open_back` respectively.
+
+> [!Note]
+> Available without experimental toggle in 1.21.110.
 
 > [!Note]
 > This item requires a format version of at least 1.21.40.
@@ -195,6 +202,9 @@ Specifies that an item is compostable and provides the chance of creating a comp
 #### Item Cooldown
 Adds a cooldown to an item, preventing it from being used again for a specified duration. Items sharing the same category will enter cooldown together when any one of them is used.
 
+> [!Note]
+> This item requires a format version of at least 1.20.10.
+
 
 ##### Item Cooldown Properties
 
@@ -204,7 +214,7 @@ Adds a cooldown to an item, preventing it from being used again for a specified 
 |:----------|:-------------|:----|:-----------|
 | category | *not set* | String | A string identifier that groups items together. When an item with a cooldown is used, all items sharing the same category also enter cooldown. | 
 | duration | *not set* | Decimal number | The duration of time in seconds that items with the matching category will spend cooling down before becoming usable again. | 
-| type | use | [Type](#type-choices) choices | The type of action that triggers the cooldown. Use 'use' for items consumed on use, or 'attack' for weapons. Default is 'use'. | 
+| type | use | [Type](#type-choices) choices | The type of action that triggers the cooldown. Use 'use' for items consumed on use, or 'attack' for weapons. Default is 'use'. This item requires a format version of at least 1.21.130. | 
 
 ### Type choices
 
@@ -226,6 +236,9 @@ Adds a cooldown to an item, preventing it from being used again for a specified 
 #### Item Damage Absorption
 It allows an item to absorb damage that would otherwise be dealt to its wearer. For this to happen, the item needs to be equipped in an armor slot. The absorbed damage reduces the item's durability, with any excess damage being ignored. Because of this, the item also needs a `minecraft:durability` component.
 
+> [!Note]
+> This item requires a format version of at least 1.21.20.
+
 
 ##### Item Damage Absorption Properties
 
@@ -237,6 +250,9 @@ It allows an item to absorb damage that would otherwise be dealt to its wearer. 
 
 #### Item Digger
 Configures an item as a digging tool, allowing it to break specific blocks faster than normal. Define which blocks are affected and the speed multiplier for each.
+
+> [!Note]
+> This item requires a format version of at least 1.20.30.
 
 
 ##### Item Digger Properties
@@ -280,6 +296,9 @@ Associates a block type with a custom digging speed multiplier for the minecraft
 #### Item Display Name
 Sets the item display name within Minecraft: Bedrock Edition. This component may also be used to pull from the localization file by referencing a key from it.
 
+> [!Note]
+> This item requires a format version of at least 1.20.0.
+
 
 ##### Item Display Name Properties
 
@@ -291,6 +310,9 @@ Sets the item display name within Minecraft: Bedrock Edition. This component may
 
 #### Item Durability
 Sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table.
+
+> [!Note]
+> This item requires a format version of at least 1.20.0.
 
 
 ##### Item Durability Properties
@@ -322,6 +344,9 @@ Specifies an integer range between minimum and maximum values for item propertie
 
 #### Item Durability Sensor
 Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component.
+
+> [!Note]
+> This item requires a format version of at least 1.21.20.
 
 
 ##### Item Durability Sensor Properties
@@ -1045,6 +1070,9 @@ Determines what enchantments can be applied to the item. Not all enchantments wi
 > [!Note]
 > The following enchantment slot types that can be set for the value of `slot`: sword, bow, pickaxe, armor_head, armor_torso, armor_legs, armor_feet.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ##### Item Enchantable Properties
 
@@ -1062,6 +1090,9 @@ Specifies which types of enchantments can be applied. For example, `bow` would a
 
 #### Item Entity Placer
 Allows an item to place entities into the world. Additionally, in version 1.19.80 and above, the component allows the item to set the spawn type of a monster spawner.
+
+> [!Note]
+> This item requires a format version of at least 1.20.10.
 
 
 ##### Item Entity Placer Properties
@@ -1094,6 +1125,9 @@ Allows an item to place entities into the world. Additionally, in version 1.19.8
 
 #### Item Food
 Sets the item as a food component, allowing it to be edible to the player.
+
+> [!Note]
+> This item requires a format version of at least 1.20.30.
 
 > [!Note]
 > Requires the following component in order to work properly:
@@ -1172,6 +1206,9 @@ Same structure as [Damage (Damage)](#damage-damage).
 #### Item Projectile
 Defines an item as a projectile that can be shot from dispensers or used as ammunition with minecraft:shooter. When combined with minecraft:throwable, this component specifies which entity is spawned when the item is thrown.
 
+> [!Note]
+> This item requires a format version of at least 1.20.10.
+
 
 ##### Item Projectile Properties
 
@@ -1190,6 +1227,9 @@ Same structure as [Item Display Name](#item-display-name).
 #### Item Record
 Used by record items to play music.
 
+> [!Note]
+> This item requires a format version of at least 1.20.10.
+
 
 ##### Item Record Properties
 
@@ -1203,6 +1243,9 @@ Used by record items to play music.
 
 #### Item Repairable
 Defines the items that can be used to repair a defined item, and the amount of durability each item restores upon repair. Each entry needs to define a list of strings for 'items' that can be used for the repair and an optional 'repair_amount' for how much durability is repaired.
+
+> [!Note]
+> This item requires a format version of at least 1.20.10.
 
 
 ##### Item Repairable Properties
@@ -1224,13 +1267,13 @@ Defines the items that can be used to repair a defined item, and the amount of d
 |:----------|:-------------|:----|:-----------|
 | items | *not set* | String | Items that may be used to repair an item. | 
 | items (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
-| repair_amount | {"expression":"","version":-1} | Keyed set of strings | How much the item is repaired. | 
-| repair_amount (Repair Amount) | *not set* | Key/item pairs of [Repair Amount (Repair Amount)](#repair-amount-repair-amount) items |  | 
+| repair_amount |  | Keyed set of strings | How much the item is repaired. | 
+| repair_amount (as Named set of objects) | *not set* | Key/item pairs of [Repair Amount (Item Molang Expression)](#item-molang-expression) items |  | 
 | repair_amount (as Decimal number) | *not set* | Decimal number |  | 
 
-###### Repair Amount (Repair Amount)
+###### Item Molang Expression
 
-###### Repair Amount Properties
+###### Item Molang Expression Properties
 
 **JSON path:** `components > minecraft:repairable > repair_items > repair_amount`
 
@@ -1247,6 +1290,9 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 
 > [!Note]
 > Items equipped with the shooter component will only sustain damage while shooting. Durability will remain unaffected if the item is used for melee attacks.
+
+> [!Note]
+> This item requires a format version of at least 1.20.10.
 
 > [!Note]
 > Requires the following component in order to work properly:
@@ -1303,6 +1349,12 @@ Enables an item to store data of the dynamic container associated with it. A dyn
 > While this component can be defined on its own, to be able to interact with the item's storage container the item must have a `minecraft:bundle_interaction` item component defined.
 
 > [!Note]
+> Available without experimental toggle in 1.21.110.
+
+> [!Note]
+> In 1.26.0, equipping an item with this component into an armor or hand slot no longer deletes the storage contents.
+
+> [!Note]
 > This item requires a format version of at least 1.21.40.
 
 
@@ -1322,6 +1374,12 @@ Enables an item to store data of the dynamic container associated with it. A dyn
 #### Item Storage Weight Limit
 Specifies the maximum weight limit that a storage item can hold.
 
+> [!Note]
+> Available without experimental toggle in 1.21.110.
+
+> [!Note]
+> This item requires a format version of at least 1.21.110.
+
 
 ##### Item Storage Weight Limit Properties
 
@@ -1334,6 +1392,12 @@ Specifies the maximum weight limit that a storage item can hold.
 #### Item Storage Weight Modifier
 Specifies the maximum weight limit that a storage item can hold.
 
+> [!Note]
+> Available without experimental toggle in 1.21.110.
+
+> [!Note]
+> This item requires a format version of at least 1.21.110.
+
 
 ##### Item Storage Weight Modifier Properties
 
@@ -1345,6 +1409,9 @@ Specifies the maximum weight limit that a storage item can hold.
 
 #### Item Tags
 Determines which tags are included on a given item.
+
+> [!Note]
+> This item requires a format version of at least 1.20.50.
 
 
 ##### Item Tags Properties
@@ -1360,6 +1427,9 @@ Makes an item throwable by the player, similar to a snowball or ender pearl. Use
 
 > [!Note]
 > Combine with minecraft:projectile to define the projectile entity. For charged throws (like tridents), set scale_power_by_draw_duration to true and configure min/max draw durations.
+
+> [!Note]
+> This item requires a format version of at least 1.20.10.
 
 
 ##### Item Throwable Properties
@@ -1383,6 +1453,12 @@ Same structure as [Item Display Name](#item-display-name).
 #### Item Use Modifiers
 Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food.
 
+> [!Note]
+> Renamed from `chargeable` in 1.20.50 and available without an experimental toggle.
+
+> [!Note]
+> This item requires a format version of at least 1.20.50.
+
 
 ##### Item Use Modifiers Properties
 
@@ -1393,8 +1469,13 @@ Determines how long an item takes to use in combination with components such as 
 | emit_vibrations | true | Boolean true/false | Whether vibrations are emitted when the item starts or stops being used. |  | 
 | movement_modifier | *not set* | Decimal number | Multiplier applied to the player's movement speed while the item is in use. Value must be <= 1. | Apple: `0.35` | 
 | start_sound | *not set* | [Start Sound](#sound-event-choices) choices | Sound played when the item starts being used. |  | 
-| start_using | if_first | [Start Using](#start-using-choices) choices | Controls how using the item triggers start using behavior. "if_first" only starts if no other component has started using yet; "always" always restarts using. Defaults to "if_first". | Apple: `"always"` | 
+| start_using | always | [Start Using](#start-using-choices) choices | When the player begins using the item. | Apple: `"always"` | 
 | use_duration | 0 | Decimal number | Time, in seconds, that the item takes to use. | Apple: `1.6` | 
+
+##### start_using
+
+When the player begins using the item. Use `always` to start as soon as the use action is triggered (default), or `on_attack` to start using only when an attack input is received while the item is selected. This item requires a format version of at least 1.26.30.
+
 
 ### Start Using choices
 
@@ -1408,6 +1489,12 @@ Sets the wearable item component, which allows an item to be worn by a player in
 
 > [!Note]
 > Valid equipment slots are: slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.armor.body, and slot.weapon.offhand. When a non-hand armor slot is used, the max stack size is automatically set to 1.
+
+> [!Note]
+> Fixed in format version 1.26.30: when a non-hand slot is selected, `minecraft:wearable` no longer silently overrides an explicit `minecraft:max_stack_size` of 1. Custom items can again declare their own stack size alongside an armor slot without producing inconsistent behavior.
+
+> [!Note]
+> This item requires a format version of at least 1.20.30.
 
 
 ##### Item Wearable Properties

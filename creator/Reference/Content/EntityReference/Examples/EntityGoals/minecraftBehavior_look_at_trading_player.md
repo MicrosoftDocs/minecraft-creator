@@ -15,6 +15,9 @@ Compels an entity to look at the player that is currently trading with the entit
 > [!Note]
 > Requires the ability to trade in order to work properly.
 
+> [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON. The `min_look_time` and `max_look_time` fields are deprecated and replaced by a single `look_time` range (with `min` and `max`). Existing uses of `min_look_time` / `max_look_time` are upgraded automatically.
+
 
 ## Entity Look At Trading Player Behavior Properties
 

@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Determines an entity's resistance to knockback from melee attacks. A value of 0.0 means no resistance, while 1.0 provides full immunity to knockback (like iron golems).
 
+> [!Note]
+> In format version 1.26.20, `value` now accepts negative numbers down to a minimum of `-2`. Negative values amplify knockback applied to the entity instead of diminishing it.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Decimal number`.

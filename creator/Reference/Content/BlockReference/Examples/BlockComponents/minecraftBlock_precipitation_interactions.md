@@ -12,6 +12,15 @@ ms.date: 02/11/2025
 
 Determines interactions the block will have with different precipitations. Three possible values: obrain, obstruct_rain_accumulate_snow and none.
 
+> [!Note]
+> In format version 1.26.30, the `snow_log_no_collision` value for `precipitation_behavior` was renamed to `snowlogging` (the legacy value still parses but is deprecated). Snow logging itself requires `format_version` 1.21.120 or newer.
+
+> [!Note]
+> The `snow_log_no_collision` value for `precipitation_behavior` (which lets custom blocks be covered by snow) was first added in 1.26.20 under the Upcoming Creator Features experiment, then renamed to `snowlogging` in 1.26.30.
+
+> [!Note]
+> This item requires a format version of at least 1.21.120.
+
 
 ## Block Precipitation Interactions Properties
 

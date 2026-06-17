@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows an entity to deal damage through a melee attack with reach calculations based on bounding boxes.
 
+> [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON for this behavior.
+
 
 ## Entity Melee Box Attack Behavior Properties
 

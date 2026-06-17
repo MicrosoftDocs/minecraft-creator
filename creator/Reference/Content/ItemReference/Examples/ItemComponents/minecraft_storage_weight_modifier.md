@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Specifies the maximum weight limit that a storage item can hold.
 
+> [!Note]
+> Available without experimental toggle in 1.21.110.
+
+> [!Note]
+> This item requires a format version of at least 1.21.110.
+
 
 ## Item Storage Weight Modifier Properties
 

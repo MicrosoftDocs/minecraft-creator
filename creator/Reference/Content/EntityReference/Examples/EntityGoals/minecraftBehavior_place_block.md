@@ -20,6 +20,9 @@ ms.date: 02/11/2025
 
 AI goal that makes entities place blocks into the world, like Endermen placing their carried block or snow golems leaving snow trails. Configure which blocks can be placed, where they can be placed, and how often the entity attempts placement. Creates mobs that modify the environment.
 
+> [!Note]
+> This item requires a format version of at least 1.21.100.
+
 
 ## Entity Place Block Behavior Properties
 

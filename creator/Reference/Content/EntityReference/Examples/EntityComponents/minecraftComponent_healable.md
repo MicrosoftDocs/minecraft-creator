@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 How entities heal.
 
+> [!Note]
+> From 1.21.130, each entry in `items` accepts an optional `result_item` field. On a successful heal, the consumed item is replaced in the player's inventory with the specified item.
+
 
 ## Healable Properties
 

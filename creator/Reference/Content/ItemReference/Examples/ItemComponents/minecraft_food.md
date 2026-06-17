@@ -13,6 +13,9 @@ ms.date: 02/11/2025
 Sets the item as a food component, allowing it to be edible to the player.
 
 > [!Note]
+> This item requires a format version of at least 1.20.30.
+
+> [!Note]
 > Requires the following component in order to work properly:
 > 
 > * [Use Modifiers (minecraft:use_modifiers)](./minecraft_use_modifiers.md)

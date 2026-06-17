@@ -19,6 +19,9 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 > Items equipped with the shooter component will only sustain damage while shooting. Durability will remain unaffected if the item is used for melee attacks.
 
 > [!Note]
+> This item requires a format version of at least 1.20.10.
+
+> [!Note]
 > Requires the following component in order to work properly:
 > 
 > * [Projectile (minecraft:projectile)](./minecraft_projectile.md)

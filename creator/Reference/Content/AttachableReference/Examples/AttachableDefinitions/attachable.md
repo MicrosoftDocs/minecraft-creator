@@ -15,6 +15,9 @@ An attachable definition for Minecraft Bedrock Edition. Attachables define how i
 > [!Note]
 > Attachables are used to define how items render when equipped. They reference materials, textures, geometry, and optionally animations and render controllers defined in other resource pack files.
 
+> [!Note]
+> In format_version 1.26.0 and higher, the `pre_animation` and `initialize` Molang script fields support multi-line `{}` brace scope delimiters.
+
 
 ## Attachable Properties
 

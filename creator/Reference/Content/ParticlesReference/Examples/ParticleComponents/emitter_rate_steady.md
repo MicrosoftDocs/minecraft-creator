@@ -18,15 +18,15 @@ Continuously spawns particles at a consistent rate over time. The spawn_rate con
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | max_particles | *not set* | Molang | The maximum number of particles that can exist at once. Can be a number or Molang expression. | 
-| max_particles (Max Particles) | *not set* | Key/item pairs of [Max Particles (Max Particles)](#max-particles-max-particles) items |  | 
+| max_particles (as Named set of objects) | *not set* | Key/item pairs of [Max Particles (Item Molang Expression)](#item-molang-expression) items |  | 
 | max_particles (as Decimal number) | *not set* | Decimal number |  | 
 | spawn_rate | *not set* | Molang | The number of particles to spawn per second. Can be a number or Molang expression. | 
-| spawn_rate (Spawn Rate) | *not set* | Key/item pairs of [Spawn Rate (Spawn Rate)](#spawn-rate-spawn-rate) items |  | 
+| spawn_rate (as Named set of objects) | *not set* | Key/item pairs of [Spawn Rate (Item Molang Expression)](#item-molang-expression) items |  | 
 | spawn_rate (as Decimal number) | *not set* | Decimal number |  | 
 
-### Max Particles (Max Particles)
+### Item Molang Expression
 
-#### Max Particles Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `max_particles`
 
@@ -34,7 +34,3 @@ Continuously spawns particles at a consistent rate over time. The spawn_rate con
 |:----------|:-------------|:----|:-----------|
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
-
-### Spawn Rate (Spawn Rate)
-
-Same structure as [Max Particles (Max Particles)](#max-particles-max-particles).

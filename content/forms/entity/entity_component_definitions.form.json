@@ -2204,8 +2204,9 @@
       {
         "id": "minecraft:admire_item",
         "title": "Minecraft Admire Item",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Causes the mob to ignore attackable targets for a given duration.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_admire_item"
       },
       {
         "id": "minecraft:ageable",
@@ -2246,7 +2247,7 @@
       {
         "id": "minecraft:annotation.open_door",
         "title": "Open Door Minecraft Annotation",
-        "description": "Dynamic value",
+        "description": "Allows the actor to open doors assuming that that flags set up for the component to use in navigation",
         "dataType": "object"
       },
       {
@@ -3616,7 +3617,7 @@
       {
         "id": "minecraft:bucketable",
         "title": "Minecraft Bucketable",
-        "description": "Dynamic value",
+        "description": "Defines interactions with this entity.",
         "dataType": "object"
       },
       {
@@ -3906,7 +3907,7 @@
       {
         "id": "minecraft:hide",
         "title": "Minecraft Hide",
-        "description": "Dynamic value",
+        "description": "Moves to and hides at their owned POI or the closest nearby.",
         "dataType": "object"
       },
       {
@@ -4114,7 +4115,7 @@
       {
         "id": "minecraft:managed_wandering_trader",
         "title": "Minecraft Managed Wandering Trader",
-        "description": "Dynamic value",
+        "description": "This component is used to implement part of the Wandering Trader behavior",
         "dataType": "object"
       },
       {
@@ -4138,12 +4139,6 @@
       {
         "id": "minecraft:memory_sensor.find_nearest_poi",
         "title": "Find Nearest Poi Minecraft Memory Sensor",
-        "description": "Dynamic value",
-        "dataType": "object"
-      },
-      {
-        "id": "minecraft:memory_sensor.in_range_of_block",
-        "title": "In Range Of Block Minecraft Memory Sensor",
         "description": "Dynamic value",
         "dataType": "object"
       },
@@ -4389,7 +4384,7 @@
       {
         "id": "minecraft:persistent",
         "title": "Minecraft Persistent",
-        "description": "Dynamic value",
+        "description": "Defines whether an entity should be persistent in the game world.",
         "dataType": "object"
       },
       {
@@ -4635,7 +4630,7 @@
       {
         "id": "minecraft:trade_resupply",
         "title": "Minecraft Trade Resupply",
-        "description": "Dynamic value",
+        "description": "Resupplies an entity's trades.",
         "dataType": "object"
       },
       {
@@ -4665,7 +4660,7 @@
       {
         "id": "minecraft:trust",
         "title": "Minecraft Trust",
-        "description": "Dynamic value",
+        "description": "Allows this entity to trust multiple players.",
         "dataType": "object"
       },
       {

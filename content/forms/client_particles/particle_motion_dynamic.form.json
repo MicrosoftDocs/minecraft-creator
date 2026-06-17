@@ -64,25 +64,7 @@
           {
             "id": "linear_acceleration",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "linear_acceleration",
-              "title": "Linear Acceleration",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "linear_acceleration",
@@ -99,25 +81,7 @@
           {
             "id": "linear_drag_coefficient",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "linear_drag_coefficient",
-              "title": "Linear Drag Coefficient",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "linear_drag_coefficient",
@@ -134,25 +98,7 @@
           {
             "id": "rotation_acceleration",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "rotation_acceleration",
-              "title": "Rotation Acceleration",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "rotation_acceleration",
@@ -169,25 +115,7 @@
           {
             "id": "rotation_drag_coefficient",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "rotation_drag_coefficient",
-              "title": "Rotation Drag Coefficient",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "rotation_drag_coefficient",

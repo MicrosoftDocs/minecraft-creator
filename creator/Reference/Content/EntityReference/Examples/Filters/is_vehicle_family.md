@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Returns true when the subject entity's vehicle is a member of the named family.
 
+> [!Note]
+> This item requires a format version of at least 1.21.90.
+
 
 ## Is Vehicle Family Properties
 

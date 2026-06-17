@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Snaps the y-value of a feature placement pos to the floor or the ceiling within the provided vertical_search_range. The placement biome is preserved. If the snap position goes outside of the placement biome, placement will fail.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Snap To Surface Feature Properties
 
@@ -21,7 +24,7 @@ Snaps the y-value of a feature placement pos to the floor or the ceiling within 
 | allow_underwater_placement | *not set* | Boolean true/false | Determines whether the feature can snap through water blocks. Defaults to false. | 
 | allowed_surface_blocks | *not set* | Array of strings | A list of blocks that the feature is permitted to snap to. Leaving this empty results in the feature snapping to blocks that can provide support for the given face (up/down/horizontal) | 
 | description | *not set* | [Description](#description) item |  | 
-| embed_in_surface | *not set* | Boolean true/false | Determines whether the placed feature should be embedded in the found surface. | 
+| embed_in_surface | false | Boolean true/false | If true, the snapped feature is embedded into the located surface block instead of being placed on top of it. This item requires a format version of at least 1.26.20. | 
 | format_version | *not set* | String |  | 
 | surface | *not set* | String | Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal' | 
 | vertical_search_range | *not set* | Integer number | Range to search for a floor or ceiling for snaping the feature. | 

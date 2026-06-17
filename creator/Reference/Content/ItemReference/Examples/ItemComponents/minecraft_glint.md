@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Determines whether the item has the enchanted glint render effect on it.
 
+> [!Note]
+> Renamed from `foil` and released without an experimental toggle in 1.20.30.
+
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Boolean true/false`.

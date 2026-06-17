@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Tests the distance between the subject and its home. Returns false if the subject has no home or if their home is in a different dimension.
 
+> [!Note]
+> This item requires a format version of at least 1.21.60.
+
 
 ## Home Distance Properties
 

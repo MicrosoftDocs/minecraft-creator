@@ -23,12 +23,16 @@ Sets the item as a placer item component for blocks. Items with this component w
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| aligned_placement | false | Boolean true/false | If true, block placement through this item will be aligned while holding the interaction button down. Defaults to false. | 
+| aligned_placement | false | Boolean true/false | When true, block placement through this item is aligned while the interaction button is held down. | 
 | block | *not set* | Object | Defines the block that will be placed. | 
 | replace_block_item | false | Boolean true/false | If true, the item will be registered as the item for this block. | 
 | use_on (Use On) | [] | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. Value must have at most 256 items. | 
 | use_on (as String) | *not set* | String |  | 
 | use_on (as Object) | *not set* | Object |  | 
+
+### aligned_placement
+
+When true, block placement through this item is aligned while the interaction button is held down. Supported from `format_version` 1.26.0 onward. This item requires a format version of at least 1.26.10.
 
 ### replace_block_item
 

@@ -18,15 +18,15 @@ Sets the starting rotation angle and spin velocity for each particle. Initial ro
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | rotation | 0 | Keyed set of strings |  | 
-| rotation (Rotation) | *not set* | Key/item pairs of [Rotation (Rotation)](#rotation-rotation) items |  | 
+| rotation (as Named set of objects) | *not set* | Key/item pairs of [Rotation (Item Molang Expression)](#item-molang-expression) items |  | 
 | rotation (as Decimal number) | *not set* | Decimal number |  | 
 | rotation_rate | 0 | Keyed set of strings |  | 
-| rotation_rate (Rotation Rate) | *not set* | Key/item pairs of [Rotation Rate (Rotation Rate)](#rotation-rate-rotation-rate) items |  | 
+| rotation_rate (as Named set of objects) | *not set* | Key/item pairs of [Rotation Rate (Item Molang Expression)](#item-molang-expression) items |  | 
 | rotation_rate (as Decimal number) | *not set* | Decimal number |  | 
 
-### Rotation (Rotation)
+### Item Molang Expression
 
-#### Rotation Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `rotation`
 
@@ -34,7 +34,3 @@ Sets the starting rotation angle and spin velocity for each particle. Initial ro
 |:----------|:-------------|:----|:-----------|
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
-
-### Rotation Rate (Rotation Rate)
-
-Same structure as [Rotation (Rotation)](#rotation-rotation).

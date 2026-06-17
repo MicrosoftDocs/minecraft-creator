@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food.
 
+> [!Note]
+> Renamed from `chargeable` in 1.20.50 and available without an experimental toggle.
+
+> [!Note]
+> This item requires a format version of at least 1.20.50.
+
 
 ## Item Use Modifiers Properties
 
@@ -20,8 +26,13 @@ Determines how long an item takes to use in combination with components such as 
 | emit_vibrations | true | Boolean true/false | Whether vibrations are emitted when the item starts or stops being used. |  | 
 | movement_modifier | *not set* | Decimal number | Multiplier applied to the player's movement speed while the item is in use. Value must be <= 1. | Apple: `0.35` | 
 | start_sound | *not set* | [Start Sound](#start-sound-choices) choices | Sound played when the item starts being used. |  | 
-| start_using | if_first | [Start Using](#start-using-choices) choices | Controls how using the item triggers start using behavior. "if_first" only starts if no other component has started using yet; "always" always restarts using. Defaults to "if_first". | Apple: `"always"` | 
+| start_using | always | [Start Using](#start-using-choices) choices | When the player begins using the item. | Apple: `"always"` | 
 | use_duration | 0 | Decimal number | Time, in seconds, that the item takes to use. | Apple: `1.6` | 
+
+### start_using
+
+When the player begins using the item. Use `always` to start as soon as the use action is triggered (default), or `on_attack` to start using only when an attack input is received while the item is selected. This item requires a format version of at least 1.26.30.
+
 
 ### Start Sound choices
 

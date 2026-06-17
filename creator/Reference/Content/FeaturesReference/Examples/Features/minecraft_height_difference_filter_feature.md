@@ -10,6 +10,12 @@ ms.date: 02/11/2025
 
 # Feature Documentation - minecraft:height_difference_filter_feature
 
+> [!Note]
+> Introduced in 1.26.30. Conditionally places a referenced `places_feature` based on the upward and downward height differences (relative to the placement position) found within `search_radius` in each cardinal direction. Useful for placing features that only make sense on terrain with a specific shape (cliffs, gentle slopes, flat plateaus).
+
+> [!Note]
+> This item requires a format version of at least 1.26.30.
+
 
 ## Height Difference Filter Feature Properties
 

@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Generates a blob of the specified block with the specified dimensions. For the most part, the blob is embedded in the specified surface, however a single side is allowed to be exposed.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Partially Exposed Blob Feature Properties
 

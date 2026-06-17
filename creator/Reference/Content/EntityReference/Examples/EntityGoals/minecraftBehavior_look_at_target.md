@@ -13,6 +13,9 @@ ms.date: 02/11/2025
 Compels an entity to look at the target by rotating the head bone pose within a set limit.
 
 > [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON. The `min_look_time` and `max_look_time` fields are deprecated and replaced by a single `look_time` range (with `min` and `max`). Existing uses of `min_look_time` / `max_look_time` are upgraded automatically.
+
+> [!Note]
 > Requires a target in order to work properly. Entities can generate targets via one of the following behaviors:
 > 
 > * [Nearest Attackable Target Behavior (minecraft:behavior.nearest_attackable_target)](./minecraftBehavior_nearest_attackable_target.md)

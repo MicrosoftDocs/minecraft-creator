@@ -20,16 +20,16 @@ Emits particles from random positions within a spherical volume. Configure the r
 | direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
 | direction (as Molang array) | *not set* | Molang array |  | 
 | offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| offset (Offset) | *not set* | Key/item pairs of [Offset (Offset)](#offset-offset) items |  | 
+| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Item Molang Expression)](#item-molang-expression) items |  | 
 | offset (as Decimal number) | *not set* | Decimal number |  | 
 | radius | 1 | Molang | The radius of the sphere. Can be a number or Molang expression. | 
-| radius (Radius) | *not set* | Key/item pairs of [Radius (Radius)](#radius-radius) items |  | 
+| radius (as Named set of objects) | *not set* | Key/item pairs of [Radius (Item Molang Expression)](#item-molang-expression) items |  | 
 | radius (as Decimal number) | *not set* | Decimal number |  | 
 | surface_only | false | Boolean true/false |  | 
 
-### Offset (Offset)
+### Item Molang Expression
 
-#### Offset Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `offset`
 
@@ -37,7 +37,3 @@ Emits particles from random positions within a spherical volume. Configure the r
 |:----------|:-------------|:----|:-----------|
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
-
-### Radius (Radius)
-
-Same structure as [Offset (Offset)](#offset-offset).

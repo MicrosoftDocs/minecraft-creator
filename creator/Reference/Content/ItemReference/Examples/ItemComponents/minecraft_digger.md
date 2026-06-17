@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Configures an item as a digging tool, allowing it to break specific blocks faster than normal. Define which blocks are affected and the speed multiplier for each.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Item Digger Properties
 

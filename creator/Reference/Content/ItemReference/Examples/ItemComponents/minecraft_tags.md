@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Determines which tags are included on a given item.
 
+> [!Note]
+> This item requires a format version of at least 1.20.50.
+
 
 ## Item Tags Properties
 

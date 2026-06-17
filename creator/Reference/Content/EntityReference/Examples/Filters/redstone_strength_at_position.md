@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Tests the redstone strength at the subject's position.
 
+> [!Note]
+> Introduced in 1.26.30. Tests the redstone signal strength at the subject's position. Reads the same composed level as redstone components (e.g. comparator, observer) and returns 0 when the position is unloaded.
+
+> [!Note]
+> This item requires a format version of at least 1.26.30.
+
 
 ## Redstone Strength At Position Properties
 

@@ -27,6 +27,12 @@ List of biome replacement configurations. Retroactively adding a new replacement
 ### Biome Replacement
 Represents the replacement information used to determine the placement of the overriding biome.
 
+> [!Note]
+> Custom partial biome replacement is available without experimental toggle in 1.21.110.
+
+> [!Note]
+> This item requires a format version of at least 1.21.110.
+
 
 #### Biome Replacement Properties
 

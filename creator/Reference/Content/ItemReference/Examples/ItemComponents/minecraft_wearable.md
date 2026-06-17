@@ -15,6 +15,12 @@ Sets the wearable item component, which allows an item to be worn by a player in
 > [!Note]
 > Valid equipment slots are: slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.armor.body, and slot.weapon.offhand. When a non-hand armor slot is used, the max stack size is automatically set to 1.
 
+> [!Note]
+> Fixed in format version 1.26.30: when a non-hand slot is selected, `minecraft:wearable` no longer silently overrides an explicit `minecraft:max_stack_size` of 1. Custom items can again declare their own stack size alongside an armor slot without producing inconsistent behavior.
+
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Item Wearable Properties
 

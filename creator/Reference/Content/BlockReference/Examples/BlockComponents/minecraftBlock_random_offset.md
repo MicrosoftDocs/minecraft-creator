@@ -14,6 +14,9 @@ This component defines a random offset for the block, seeded based on the block'
 If the random offset causes the collision box to extend beyond the bounds of a cube, the offset range will automatically adjust to keep the collision box within the cube.
 Culling for this block is performed without considering the random offset.
 
+> [!Note]
+> This item requires a format version of at least 1.21.100.
+
 
 ## Random Offset Properties
 

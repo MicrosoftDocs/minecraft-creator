@@ -26,6 +26,9 @@ ms.date: 02/11/2025
 
 Places a tree in the world. A tree consists of a column that is anchored to a base block with set parameters for what it can be placed on and canopy that extends from the column. The trunk height can be randomized with a min and max value, as well as the canopy offset.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Tree Feature Properties
 

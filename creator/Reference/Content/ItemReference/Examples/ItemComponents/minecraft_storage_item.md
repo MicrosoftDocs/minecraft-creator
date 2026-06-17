@@ -16,6 +16,12 @@ Enables an item to store data of the dynamic container associated with it. A dyn
 > While this component can be defined on its own, to be able to interact with the item's storage container the item must have a `minecraft:bundle_interaction` item component defined.
 
 > [!Note]
+> Available without experimental toggle in 1.21.110.
+
+> [!Note]
+> In 1.26.0, equipping an item with this component into an armor or hand slot no longer deletes the storage contents.
+
+> [!Note]
 > This item requires a format version of at least 1.21.40.
 
 

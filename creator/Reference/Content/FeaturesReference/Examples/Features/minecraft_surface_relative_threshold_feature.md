@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Determines whether the provided position is below the estimated surface level of the world, and places a feature if so. If the provided position is above the configured surface or the surface is not available, placement will fail. This feature only works for Overworld generators using world generation 1.18 or later.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Surface Relative Threshold Feature Properties
 

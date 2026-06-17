@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Defines the area of the block that is selected by the player's cursor (the outline shown when looking at the block). If set to true, default values are used (a full 16x16x16 block). If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.
 
+> [!Note]
+> This item requires a format version of at least 1.19.60.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Boolean true/false`.

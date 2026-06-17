@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Places a collection of features in an arbitrary order. All features in the collection use the same input position. Features should not depend on each other, as there is no guarantee in which order the features will be placed. Succeeds if at least one feature is placed successfully. Fails if all features fail to be placed.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Aggregate Feature Properties
 
