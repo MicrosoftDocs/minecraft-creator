@@ -234,6 +234,10 @@
               href: Documents/scripting/system-run-guide.md
             - name: Building Multiplayer-Aware Scripts
               href: Documents/scripting/multiplayer-scripts.md
+            - name: Working With Events
+              href: Documents/scripting/events.md
+            - name: World and Dimension APIs
+              href: Documents/scripting/world-apis.md
             - name: Debugging Scripts
               href: Documents/scripting/debugging-scripts.md
             - name: Error Handling Best Practices
