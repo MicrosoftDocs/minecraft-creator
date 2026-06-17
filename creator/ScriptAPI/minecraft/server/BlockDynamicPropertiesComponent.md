@@ -16,7 +16,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*BlockComponent*](BlockComponent.md)
 
-Represents the dynamic properties of a block in the world. Only available with block entities. Up to 1KBytes of data can be stored per block entity in their dynamic properties storage.
+Represents the dynamic properties of a block in the world. Only available with block entities. Up to 1KB per content pack, per block entity in their dynamic properties storage.
 
 ## Methods
 - [get](#get)
@@ -44,7 +44,7 @@ Notes:
 set(key: string, value?: boolean | number | string | Vector3): void
 `
 
-Sets a dynamic property with the provided key and value. Keys are unique to each content pack and cannot be used to set dynamic properties for other content packs. Values can be either a Number, a String or a Vector3. Setting a property with an undefined value will remove it from the storage.
+Sets a dynamic property with the provided key and value. Keys are unique to each content pack and cannot be used to set dynamic properties for other content packs. Values can be either a Number, a String or a Vector3. Setting a property with an undefined value will remove it from the storage. Storage size usage is counted towards the 1KBytes limit per content pack.
 
 #### **Parameters**
 - **key**: *string*
@@ -60,7 +60,7 @@ Notes:
 totalByteCount(): number
 `
 
-Returns the current size, in bytes, of the dynamic properties storage for this block entity.
+Returns the current size, in bytes, of the dynamic properties storage for this block entity. The byte count only accounts for properties set by your content pack. The 1KBytes limit is per content pack.
 
 **Returns** *number*
   
