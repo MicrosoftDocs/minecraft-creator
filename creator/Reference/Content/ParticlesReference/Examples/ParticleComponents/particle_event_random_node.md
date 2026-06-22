@@ -18,7 +18,7 @@ Triggers one of several possible effects randomly when a particle event fires, w
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | expression | 0 | Keyed set of strings |  | 
-| expression (Expression) | *not set* | Key/item pairs of [Expression (Expression)](#expression-expression) items |  | 
+| expression (as Named set of objects) | *not set* | Key/item pairs of [Expression (Item Molang Expression)](#item-molang-expression) items |  | 
 | expression (as Decimal number) | *not set* | Decimal number |  | 
 | log |  | String |  | 
 | particle_effect | {"effect":"","pre_effect_expression":0,"type":null} | [Particle Effect](#client-particles-particle-visual-effect-event) item |  | 
@@ -27,9 +27,9 @@ Triggers one of several possible effects randomly when a particle event fires, w
 | sound_effect | *not set* | [Sound Effect](#client-particles-particle-sound-effect-event) item |  | 
 | weight | *not set* | Decimal number |  | 
 
-### Expression (Expression)
+### Item Molang Expression
 
-#### Expression Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `expression`
 
@@ -50,20 +50,9 @@ Spawns another particle effect when triggered by particle events, enabling casca
 |:----------|:-------------|:----|:-----------|
 | effect | *not set* | Object |  | 
 | pre_effect_expression | 0 | Keyed set of strings |  | 
-| pre_effect_expression (Pre Effect Expression) | *not set* | Key/item pairs of [Pre Effect Expression (Pre Effect Expression)](#pre-effect-expression-pre-effect-expression) items |  | 
+| pre_effect_expression (as Named set of objects) | *not set* | Key/item pairs of [Pre Effect Expression (Item Molang Expression)](#item-molang-expression) items |  | 
 | pre_effect_expression (as Decimal number) | *not set* | Decimal number |  | 
 | type | *not set* | [Type](#type-choices) choices |  | 
-
-#### Pre Effect Expression (Pre Effect Expression)
-
-##### Pre Effect Expression Properties
-
-**JSON path:** `particle_effect > pre_effect_expression`
-
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| expression | *not set* | String |  | 
-| version | *not set* | Integer number |  | 
 
 ### Type choices
 
@@ -87,7 +76,7 @@ Defines actions triggered by particle events like spawning, collision, or expira
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | expression | 0 | Keyed set of strings |  | 
-| expression (Expression) | *not set* | Key/item pairs of [Expression (Expression)](#expression-expression) items |  | 
+| expression (as Named set of objects) | *not set* | Key/item pairs of [Expression (Item Molang Expression)](#item-molang-expression) items |  | 
 | expression (as Decimal number) | *not set* | Decimal number |  | 
 | log |  | String |  | 
 | particle_effect | {"effect":"","pre_effect_expression":0,"type":null} | [Particle Effect](#client-particles-particle-visual-effect-event) item |  | 

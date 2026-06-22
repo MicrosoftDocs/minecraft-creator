@@ -11,3 +11,6 @@ ms.date: 02/11/2025
 # Molang Documentation - minecraft:math_inverse_lerp
 
 Returns the normalized progress between start and end given value.
+
+> [!Note]
+> This item requires a format version of at least 1.21.120.

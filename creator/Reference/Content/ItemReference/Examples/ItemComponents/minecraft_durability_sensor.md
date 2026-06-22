@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component.
 
+> [!Note]
+> This item requires a format version of at least 1.21.20.
+
 
 ## Item Durability Sensor Properties
 

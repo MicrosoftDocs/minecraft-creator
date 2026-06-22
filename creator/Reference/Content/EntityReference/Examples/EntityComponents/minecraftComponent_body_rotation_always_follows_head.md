@@ -13,5 +13,8 @@ ms.date: 02/11/2025
 Causes the entity's body rotation to match the one of their head.
 Does not override the "minecraft:body_rotation_blocked" component.
 
+> [!Note]
+> This item requires a format version of at least 1.21.90.
+
 
 ## Samples

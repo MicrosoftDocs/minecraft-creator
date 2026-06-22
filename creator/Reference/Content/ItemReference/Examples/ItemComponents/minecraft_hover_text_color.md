@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Determines the color of the item name when hovering over it.
 
+> [!Note]
+> This item requires a format version of at least 1.20.10.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `String`.

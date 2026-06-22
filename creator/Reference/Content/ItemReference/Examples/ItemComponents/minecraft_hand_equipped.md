@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 The hand_equipped component determines if an item is rendered like a tool while it is in a player's hand.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Boolean true/false`.

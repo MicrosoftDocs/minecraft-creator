@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Fires an event when this behavior starts, then waits for a duration before stopping. When stopping due to that timeout or due to being interrupted by another behavior, fires another event. query.timer_flag_1 will return 1.0 on both the client and server when this behavior is running, and 0.0 otherwise.
 
+> [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON. `cooldown_range` and `duration_range` now only accept an object with `min` and `max` values; the previous single-number shorthand is no longer accepted in 1.26.0 and newer.
+
+> [!Note]
+> This item requires a format version of at least 1.20.40.
+
 
 ## Entity Timer Flag 1 Behavior Properties
 

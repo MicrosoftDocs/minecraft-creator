@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows this entity to locate a random target block that it can path find to. Once found, the entity will move towards it and dig up an item. [Default target block types: Dirt, Grass, Podzol, DirtWithRoots, MossBlock, Mud, MuddyMangroveRoots].
 
+> [!Note]
+> This item requires a format version of at least 1.20.40.
+
 
 ## Entity Random Search And Dig Behavior Properties
 

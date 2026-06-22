@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows an entity to attack, while also delaying the damage-dealt until a specific time in the attack animation.
 
+> [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON for this behavior.
+
 
 ## Entity Delayed Attack Behavior Properties
 

@@ -11,3 +11,9 @@ ms.date: 02/11/2025
 # Molang Documentation - minecraft:query_rider_head_y_rotation
 
 Returns the head y world-rotation of the rider entity at the provided index, else it returns 0.0. Horses, zombie horses, skeleton horses, donkeys and mules require a second parameter that clamps rotation in degrees. Takes one or two arguments as parameters.
+
+> [!Note]
+> Available without experimental toggle in 1.20.70.
+
+> [!Note]
+> This item requires a format version of at least 1.20.70.

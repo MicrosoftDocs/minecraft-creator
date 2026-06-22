@@ -12,6 +12,15 @@ ms.date: 02/11/2025
 
 Defines the area of the block that collides with entities. If set to true, default values are used (a full 16x16x16 block). If set to false, the block's collision with entities is disabled, allowing entities to pass through. If this component is omitted, default values are used.
 
+> [!Note]
+> Released from the Holiday Creator Features experiment in 1.19.50. Pairs with the custom geometry component so creators can author bespoke collision shapes.
+
+> [!Note]
+> Supports an array of collision boxes (for multi-part collision shapes) and a maximum collision box height of 24 units (up from 16). Available without the Upcoming Creator Features experiment and without the format_version 1.21.130 requirement starting in 1.26.0.
+
+> [!Note]
+> This item requires a format version of at least 1.19.50.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Boolean true/false`.

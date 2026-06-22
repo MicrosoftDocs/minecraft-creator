@@ -11,3 +11,6 @@ ms.date: 02/11/2025
 # Molang Documentation - minecraft:query_leashed_entity_count
 
 Returns the number of entities for which this entity is the leash holder.
+
+> [!Note]
+> This item requires a format version of at least 1.21.80.

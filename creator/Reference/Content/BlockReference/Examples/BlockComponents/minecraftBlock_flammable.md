@@ -23,6 +23,7 @@ This item can also be represented as a `Boolean true/false`.
 |:----------|:-------------|:----|:-----------|
 | catch_chance_modifier | 5 | Integer number | A modifier affecting the chance that this block will catch flame when next to a fire. | 
 | destroy_chance_modifier | 20 | Integer number | A modifier affecting the chance that this block will be destroyed by flames when on fire. | 
+| lava_flammable | false | Boolean true/false | Whether the block can be ignited by adjacent lava. | 
 
 ### catch_chance_modifier
 
@@ -31,6 +32,10 @@ A modifier affecting the chance that this block will catch flame when next to a 
 ### destroy_chance_modifier
 
 A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. For a "destroy_chance_modifier" of 0, the block will never be destroyed by fire, and the fire will burn forever if the "catch_chance_modifier" is greater than 0. The default value of 20 is the same as that of Planks.
+
+### lava_flammable
+
+Whether the block can be ignited by adjacent lava. Defaults to false for backwards compatibility; set to true to allow lava to set the block on fire the way it does Planks and other vanilla flammable blocks. This item requires a format version of at least 1.26.30.
 
 
 ## Samples

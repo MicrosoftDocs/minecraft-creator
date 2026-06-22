@@ -17,7 +17,7 @@ Tests for the presence of a named item in the designated slot of the subject ent
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | any | [Domain](#domain-choices) choices | (Optional) The equipment location to test | Pig: `"hand"` | 
+| domain | any | [Domain](#domain-choices) choices | The equipment location to test. `inventory` was added as a supported domain value in 1.19.60, allowing the filter to check items stored in the entity's inventory. | Pig: `"hand"` | 
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Pig: `"other"` | 
 | test | *not set* | String |  | Pig: `"has_equipment"` | 

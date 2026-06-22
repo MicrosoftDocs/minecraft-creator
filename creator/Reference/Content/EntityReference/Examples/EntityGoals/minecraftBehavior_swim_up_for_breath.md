@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows the mob to try to move to air once it is close to running out of its total breathable supply. Requires "minecraft:breathable".
 
+> [!Note]
+> This item requires a format version of at least 1.21.20.
+
 
 ## Entity Swim Up For Breath Behavior Properties
 

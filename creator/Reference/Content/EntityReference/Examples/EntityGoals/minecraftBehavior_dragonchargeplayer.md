@@ -13,6 +13,9 @@ ms.date: 02/11/2025
 Allows this entity to attack a player by charging at them. The player is chosen by the "minecraft:behavior.dragonscanning".
 
 > [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON. `target_zone` now only accepts an object with `min` and `max` values.
+
+> [!Note]
 > Requires the following component in order to work properly:
 > 
 > * [Dragonscanning Behavior (minecraft:behavior.dragonscanning)](./minecraftBehavior_dragonscanning.md)

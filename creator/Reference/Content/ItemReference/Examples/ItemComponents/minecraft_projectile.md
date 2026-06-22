@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Defines an item as a projectile that can be shot from dispensers or used as ammunition with minecraft:shooter. When combined with minecraft:throwable, this component specifies which entity is spawned when the item is thrown.
 
+> [!Note]
+> This item requires a format version of at least 1.20.10.
+
 
 ## Item Projectile Properties
 

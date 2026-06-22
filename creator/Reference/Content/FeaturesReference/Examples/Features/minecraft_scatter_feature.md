@@ -15,6 +15,9 @@ Scatters a feature throughout a chunk. The x, y, and z fields are per-coordinate
 > [!Note]
 > In format version 1.21.20 and later, the `distribution` field was introduced to consolidate scatter parameters. Prior versions use x, y, z, iterations, and scatter_chance fields directly at the root level of the feature.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Scatter Feature Properties
 

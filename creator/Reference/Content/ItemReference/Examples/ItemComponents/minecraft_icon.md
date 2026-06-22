@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Determines the icon to represent the item in the UI and elsewhere.
 
+> [!Note]
+> This item requires a format version of at least 1.20.0.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `String`.

@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Component for spawning entities when an entity perishes.
 
+> [!Note]
+> Added in 1.26.20. Spawns one or more entities when the owning entity perishes. `entity_to_spawn` defaults to the owning entity, `spawn_method` defaults to `spawned` (also accepts `born` and `summoned`), `spawn_amount` defaults to 1, `inherit_parent_name` defaults to true, and `additional_spawn_range` adds optional random offset. `filters` gates whether the spawn is triggered at all.
+
+> [!Note]
+> This item requires a format version of at least 1.26.20.
+
 
 ## Entity Spawn On Death Properties
 

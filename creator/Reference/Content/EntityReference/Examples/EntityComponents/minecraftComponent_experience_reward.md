@@ -17,16 +17,16 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| on_bred | {"expression":"","version":-1} | Molang | A Molang expression defining the amount of experience rewarded when this entity is successfully bred. | Breeze: `{"expression":"Math.Random(1,7)","version":12}`, Chicken: `"Math.Random(1,7)"` | 
-| on_bred (Bred) | *not set* | Key/item pairs of [Bred (Bred)](#bred-bred) items |  |  | 
+| on_bred |  | Molang | A Molang expression defining the amount of experience rewarded when this entity is successfully bred. | Breeze: `"Math.Random(1,7)"` | 
+| on_bred (as Named set of objects) | *not set* | Key/item pairs of [Bred (Item Molang Expression)](#item-molang-expression) items |  |  | 
 | on_bred (as Decimal number) | *not set* | Decimal number |  |  | 
-| on_death | {"expression":"","version":-1} | Molang | A Molang expression defining the amount of experience rewarded when this entity dies. | Blaze: `{"expression":"query.last_hit_by_player ? 10 : 0","version":12}`, Bogged: `{"expression":"query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0","version":13}`, Cave Spider: `{"expression":"query.last_hit_by_player ? 5 : 0","version":13}` | 
-| on_death (Death) | *not set* | Key/item pairs of [Death (Death)](#death-death) items |  |  | 
+| on_death |  | Molang | A Molang expression defining the amount of experience rewarded when this entity dies. | Blaze: `"query.last_hit_by_player ? 10 : 0"`, Bogged: `"query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"`, Cave Spider: `"query.last_hit_by_player ? 5 : 0"` | 
+| on_death (as Named set of objects) | *not set* | Key/item pairs of [Death (Item Molang Expression)](#item-molang-expression) items |  |  | 
 | on_death (as Decimal number) | *not set* | Decimal number |  |  | 
 
-### Bred (Bred)
+### Item Molang Expression
 
-#### Bred Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `on_bred`
 
@@ -35,11 +35,6 @@ ms.date: 02/11/2025
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
 
-### Death (Death)
-
-Same structure as [Bred (Bred)](#bred-bred).
-
-
 ## Samples
 
 #### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
@@ -47,10 +42,7 @@ Same structure as [Bred (Bred)](#bred-bred).
 
 ```json
 "minecraft:experience_reward": {
-  "on_death": {
-    "expression": "query.last_hit_by_player ? 10 : 0",
-    "version": 12
-  }
+  "on_death": "query.last_hit_by_player ? 10 : 0"
 }
 ```
 
@@ -59,10 +51,7 @@ Same structure as [Bred (Bred)](#bred-bred).
 
 ```json
 "minecraft:experience_reward": {
-  "on_death": {
-    "expression": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0",
-    "version": 13
-  }
+  "on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"
 }
 ```
 
@@ -71,14 +60,8 @@ Same structure as [Bred (Bred)](#bred-bred).
 
 ```json
 "minecraft:experience_reward": {
-  "on_bred": {
-    "expression": "Math.Random(1,7)",
-    "version": 12
-  },
-  "on_death": {
-    "expression": "query.last_hit_by_player ? 10 : 0",
-    "version": 12
-  }
+  "on_bred": "Math.Random(1,7)",
+  "on_death": "query.last_hit_by_player ? 10 : 0"
 }
 ```
 
@@ -87,10 +70,7 @@ Same structure as [Bred (Bred)](#bred-bred).
 
 ```json
 "minecraft:experience_reward": {
-  "on_death": {
-    "expression": "query.last_hit_by_player ? 5 : 0",
-    "version": 13
-  }
+  "on_death": "query.last_hit_by_player ? 5 : 0"
 }
 ```
 

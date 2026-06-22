@@ -12,17 +12,17 @@ ms.date: 02/11/2025
 
 | Block Components | Description |
 |:-----|:----------|
-| [block_entity](./minecraftBlock_block_entity.md)| Adds per-instance metadata for this block. |
+| [block_entity](./minecraftBlock_block_entity.md)| Requires Upcoming-Creator-Features enabled. |
 | [minecraft:block_light_absorption](./minecraftBlock_block_light_absorption.md)| Legacy component (format_version < 1.19.40). |
 | [minecraft:block_light_emission](./minecraftBlock_block_light_emission.md)| Legacy component (format_version < 1.19.40). |
 | [minecraft:chest_obstruction](./minecraftBlock_chest_obstruction.md)| This defines how a block reacts to a chest being opened underneath it. |
 | [minecraft:collision_box](./minecraftBlock_collision_box.md)| Defines the area of the block that collides with entities. |
 | [minecraft:connection_rule](./minecraftBlock_connection_rule.md)| Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block. |
-| [Crafting Table](./minecraftBlock_crafting_table.md)| Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. |
+| [minecraft:crafting_table](./minecraftBlock_crafting_table.md)| Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. |
 | [minecraft:destroy_time](./minecraftBlock_destroy_time.md)| Legacy component (format_version < 1.19.40). |
 | [minecraft:destructible_by_explosion](./minecraftBlock_destructible_by_explosion.md)| Describes the destructible by explosion properties for this block. |
 | [minecraft:destructible_by_mining](./minecraftBlock_destructible_by_mining.md)| Describes the destructible by mining properties for this block. |
-| [Destruction Particles](./minecraftBlock_destruction_particles.md)| [Note: This component is currently experimental]. |
+| [Destruction Particles](./minecraftBlock_destruction_particles.md)| Sets the particles that will be used when block is destroyed. |
 | [minecraft:display_name](./minecraftBlock_display_name.md)| Specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. |
 | [minecraft:embedded_visual](./minecraftBlock_embedded_visual.md)| The description identifier of the geometry and material used to render this block when it it is embedded inside of another block (for example, a flower inside of a flower pot). |
 | [minecraft:entity_fall_on](./minecraftBlock_entity_fall_on.md)| Configures what distance an entity must fall onto this block to cause the `onEntityFallOn` block custom component event to be sent to script. |
@@ -39,7 +39,7 @@ ms.date: 02/11/2025
 | [minecraft:loot](./minecraftBlock_loot.md)| Specifies the path to the loot table that determines what items are dropped when the block is destroyed. |
 | [minecraft:map_color](./minecraftBlock_map_color.md)| Sets the color of the block when rendered to a map. |
 | [minecraft:material_instances](./minecraftBlock_material_instances.md)| The material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. |
-| [minecraft:movable](./minecraftBlock_movable.md)| This defines how a block reacts to being moved by another block like a piston. |
+| [minecraft:movable](./minecraftBlock_movable.md)| Defines whether the block can be pushed or pulled by a piston. |
 | [Placement Filter](./minecraftBlock_placement_filter.md)| Sets rules for under what conditions the block can be placed and survive. |
 | [minecraft:precipitation_interactions](./minecraftBlock_precipitation_interactions.md)| Determines interactions the block will have with different precipitations. |
 | [minecraft:random_offset](./minecraftBlock_random_offset.md)| This component defines a random offset for the block, seeded based on the block's position and the specified range and steps. |

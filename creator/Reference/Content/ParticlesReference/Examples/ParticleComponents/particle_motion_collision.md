@@ -21,15 +21,15 @@ Enables particle collision with world geometry. Configure collision radius, boun
 | collision_drag | 0 | Decimal number |  | 
 | collision_radius | *not set* | Decimal number |  | 
 | enabled | 1 | Keyed set of strings |  | 
-| enabled (Enabled) | *not set* | Key/item pairs of [Enabled (Enabled)](#enabled-enabled) items |  | 
+| enabled (as Named set of objects) | *not set* | Key/item pairs of [Enabled (Item Molang Expression)](#item-molang-expression) items |  | 
 | enabled (as Decimal number) | *not set* | Decimal number |  | 
 | events (Collision Event) | *not set* | Array of [Events](#events) items |  | 
 | events (Events) | *not set* | [Events (Events)](#events-events) item |  | 
 | expire_on_contact | false | Boolean true/false |  | 
 
-### Enabled (Enabled)
+### Item Molang Expression
 
-#### Enabled Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `enabled`
 

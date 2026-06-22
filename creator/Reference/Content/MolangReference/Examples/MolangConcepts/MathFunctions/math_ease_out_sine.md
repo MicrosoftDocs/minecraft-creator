@@ -11,3 +11,6 @@ ms.date: 02/11/2025
 # Molang Documentation - minecraft:math_ease_out_sine
 
 Output goes from start to end via 0_to_1, starting fast and decelerating smoothly toward the end.
+
+> [!Note]
+> This item requires a format version of at least 1.21.120.

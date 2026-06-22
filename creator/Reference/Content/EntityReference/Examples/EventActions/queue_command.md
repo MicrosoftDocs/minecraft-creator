@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Will queue a slash command or a series of slash commands set in an array to trigger at the end of the tick. Due to being queued as opposed to triggering instantly, any immediate side-effects of the command may not be observable by other molang queries, commands, or scripts until later in the tick. Note that commands executed via queue_command are guaranteed to run in order with respect to other queued commands. Additionally, if an entity is removed before a queued command has the chance to execute, for example removed on the same tick that the command was queued, the command will not execute.
 
+> [!Note]
+> This item requires a format version of at least 1.20.60.
+
 
 ## Queue Command Properties
 

@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Ability for a rideable entity to dash.
 
+> [!Note]
+> This item requires a format version of at least 1.20.40.
+
 
 ## Dash Properties
 

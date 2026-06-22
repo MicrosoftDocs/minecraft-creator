@@ -11,3 +11,6 @@ ms.date: 02/11/2025
 # Molang Documentation - minecraft:math_ease_in_out_quint
 
 Output goes from start to end via 0_to_1, starting slow, accelerating extremely rapidly in the middle, then slowing again at the end.
+
+> [!Note]
+> This item requires a format version of at least 1.21.120.

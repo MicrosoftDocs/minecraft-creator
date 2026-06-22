@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Boolean true/false`.

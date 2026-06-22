@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes.
 
+> [!Note]
+> Released from the Holiday Creator Features experiment in 1.19.50.
+
+> [!Note]
+> This item requires a format version of at least 1.19.50.
+
 
 ## Block Crafting Table Properties
 

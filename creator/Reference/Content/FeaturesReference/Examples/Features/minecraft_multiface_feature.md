@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Places multiface blocks on floors/walls/ceilings. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if this feature can be applied to them based on the list in the can_place_on field. If no can_replace_on field is specified, the place_block block can be placed on any existing block. This feature will also try to spread the place_block block around the location the feature is placed. Succeeds if: At least one block is successfully placed. Fails if ll block placements fail.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Multiface Feature Properties
 

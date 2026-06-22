@@ -12,12 +12,18 @@ ms.date: 02/11/2025
 
 Describes how this mob can be leashed to other items.
 
+> [!Note]
+> In 1.21.90, the `can_be_cut` root field and the `spring_type` and `rotation_adjustment` fields within `presets` were added.
+
+> [!Note]
+> From 1.21.80 onward, supports multiple presets via the `presets` array. Each preset has its own `filter`, `hard_distance`, `soft_distance`, and `max_distance` — replacing the flat root fields previously used.
+
 
 ## Leashable Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| can_be_cut | true | Boolean true/false | If true, players can cut both incoming and outgoing leashes by using shears on the entity. |  | 
+| can_be_cut | true | Boolean true/false | If true, players can cut both incoming and outgoing leashes by using shears on the entity. This item requires a format version of at least 1.21.90. |  | 
 | can_be_stolen | false | Boolean true/false | If true, players can leash this entity even if it is already leashed to another entity. |  | 
 | hard_distance | 6 | Integer number | Distance in blocks at which the leash stiffens, restricting movement. |  | 
 | max_distance | 0 | Integer number | Distance in blocks it which the leash breaks. |  | 
@@ -28,7 +34,7 @@ Describes how this mob can be leashed to other items.
 | on_unleash_interact_only | false | Boolean true/false | When set to true, "on_unleash" does not trigger when the entity gets unleashed for reasons other than the player directly interacting with it. |  | 
 | presets | *not set* | Array of [Presets](#presets) items | Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead. | Boat: `[{"filter":{"subject":"other","test":"is_family","value":"happy_ghast"},"rotation_adjustment":90,"spring_type":"quad_dampened"},{"hard_distance":4,"rotation_adjustment":90,"soft_distance":2}]` | 
 | soft_distance | 4 | Integer number | Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it. |  | 
-| unleash_on_removal | true | Boolean true/false | If true, the entity is unleashed when the component is removed. |  | 
+| unleash_on_removal | true | Boolean true/false | If true, the entity is unleashed when this component is removed. Defaults to true. This item requires a format version of at least 1.26.30. |  | 
 
 ### Presets
 Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead.

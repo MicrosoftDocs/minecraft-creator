@@ -21,8 +21,24 @@
             "title": "Down"
           },
           {
+            "id": "east",
+            "title": "East"
+          },
+          {
+            "id": "north",
+            "title": "North"
+          },
+          {
+            "id": "south",
+            "title": "South"
+          },
+          {
             "id": "up",
             "title": "Up"
+          },
+          {
+            "id": "west",
+            "title": "West"
           }
         ],
         "isRequired": true

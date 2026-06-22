@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows an entity to attack using stomp AoE damage behavior.
 
+> [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON for this behavior.
+
 
 ## Entity Stomp Attack Behavior Properties
 

@@ -18,14 +18,14 @@ Creates smooth, organic animation curves using chained bezier segments. Unlike l
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | input | *not set* | Keyed set of strings |  | 
-| input (Input) | *not set* | Key/item pairs of [Input (Input)](#input-input) items |  | 
+| input (as Named set of objects) | *not set* | Key/item pairs of [Input (Item Molang Expression)](#item-molang-expression) items |  | 
 | input (as Decimal number) | *not set* | Decimal number |  | 
 | nodes | *not set* | Object |  | 
 | type | *not set* | String |  | 
 
-### Input (Input)
+### Item Molang Expression
 
-#### Input Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `input`
 

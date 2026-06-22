@@ -13,6 +13,12 @@ ms.date: 02/11/2025
 Allows an entity to attack by firing a shot with a delay. Anchor and offset parameters of this component overrides the anchor and offset from projectile component.
 
 > [!Note]
+> In 1.26.0, `max_head_rotation_x` and `max_head_rotation_y` are applied to the correct axes (they were previously swapped).
+
+> [!Note]
+> Under the Custom Projectiles experiment in format version 1.26.20, the component's `projectile_x_offset`, `projectile_y_offset`, and `projectile_z_offset` values are applied relative to the firing entity's rotation rather than world axes.
+
+> [!Note]
 > This item requires a format version of at least 1.21.30.
 
 

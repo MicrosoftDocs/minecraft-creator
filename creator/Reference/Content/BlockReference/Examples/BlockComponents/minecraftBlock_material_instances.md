@@ -17,6 +17,12 @@ Limited to 64 instances.
 > [!Note]
 > From 1.21.80 onward, when using a minecraft:geometry component or minecraft:material_instances component, you must include both.
 
+> [!Note]
+> In format version 1.26.20, `ambient_occlusion` no longer accepts boolean values — it must be a float between 0.0 and 10.0 inclusive, and defaults to 1.0 when omitted.
+
+> [!Note]
+> This item requires a format version of at least 1.19.40.
+
 
 ## Material Instances Properties
 

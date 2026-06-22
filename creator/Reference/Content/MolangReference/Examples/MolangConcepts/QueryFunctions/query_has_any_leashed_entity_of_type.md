@@ -11,3 +11,6 @@ ms.date: 02/11/2025
 # Molang Documentation - minecraft:query_has_any_leashed_entity_of_type
 
 Returns whether or not the entity is currently leashing other entities of the designated types.
+
+> [!Note]
+> This item requires a format version of at least 1.21.80.

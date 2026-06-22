@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows an entity to jump to another random block.
 
+> [!Note]
+> In format version 1.26.20, `cooldown_range` must be specified as a Float Range object (an object with `range_min` / `range_max`). Legacy scalar or array forms no longer parse.
+
 
 ## Entity Jump To Block Behavior Properties
 

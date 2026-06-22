@@ -114,18 +114,20 @@ To learn more about Animation Controllers, please visit the [Animation Controlle
 
 ## Animations
 
-At the beginning of each frame, the skeleton is reset to its default pose from its geometry definition, then animations are applied per-channel in order.
+Animations in Minecraft define the raw animation data for an entity using keyframe data that shows how the game should manipulate the bones, properties, or other components of an entity's model over time. Animations stored in the Behavior Pack and Resource Pack have the same syntax, but they're used to call scripts and trigger events referenced in the entity's behavior file rather than controlling visual animations.  
+
+In our example, the skeleton is reset to its default pose from its geometry definition at the beginning of each frame. Then, animations are applied per-channel in order.
 
 > [!NOTE]
 > The channels (x, y, and z) are added separately across animations first. Then, they're converted to a transform once all animations have been cumulatively applied.
 
-Animation data can be either raw data:
+Animations as raw data:
 
 ```json
 "rotation": [90.0, 0.0, 0.0]
 ```
 
-or a run-time interpreted script:
+As a run-time interpreted script:
 
 ```json
 "rotation": ["cos(query.anim_pos * 38.17) * 80.0 * query.anim_speed", 0.0, 0.0]

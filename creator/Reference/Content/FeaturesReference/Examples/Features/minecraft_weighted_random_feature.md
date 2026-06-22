@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Selects and places a feature randomly based on weighted probabilities.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Weighted Random Feature Properties
 

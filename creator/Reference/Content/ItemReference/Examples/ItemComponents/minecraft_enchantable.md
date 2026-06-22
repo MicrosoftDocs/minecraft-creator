@@ -15,6 +15,9 @@ Determines what enchantments can be applied to the item. Not all enchantments wi
 > [!Note]
 > The following enchantment slot types that can be set for the value of `slot`: sword, bow, pickaxe, armor_head, armor_torso, armor_legs, armor_feet.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Item Enchantable Properties
 

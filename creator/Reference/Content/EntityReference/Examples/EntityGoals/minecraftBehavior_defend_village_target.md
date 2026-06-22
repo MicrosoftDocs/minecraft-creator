@@ -15,6 +15,9 @@ Allows the entity to stay in a village and defend the village from aggressors. I
 > [!Note]
 > This behavior is typically used with the minecraft:dweller component which defines the entity's role in a village. See iron_golem.json for a complete example.
 
+> [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON for this behavior.
+
 
 ## Entity Defend Village Target Behavior Properties
 

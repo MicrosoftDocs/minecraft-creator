@@ -22,6 +22,7 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 | breathes_lava | true | Boolean true/false | If set, this entity can breathe in lava. |  | 
 | breathes_solids | false | Boolean true/false | If set, this entity can breathe in solid blocks. |  | 
 | breathes_water | false | Boolean true/false | If set, this entity can breathe in water. | Bogged: `true` | 
+| can_dehydrate | false | Boolean true/false | If true, entities that only breathe water (for example, fish) will take dehydration damage when out of water. This item requires a format version of at least 1.21.130. |  | 
 | generates_bubbles | true | Boolean true/false | If set, this entity will have visible bubbles while in water. |  | 
 | inhale_time | 0 | Decimal number | Time in seconds to recover breath to maximum. |  | 
 | non_breathe_blocks | *not set* | Array of strings | List of blocks this entity cannot breathe in, in addition to the selected items above. |  | 

@@ -28,5 +28,7 @@ landingContent:
             url: AnimationController.md
           - text: Render Controllers
             url: AnimationRenderController.md
+          - text: Behavior Pack Animations & Controllers
+            url: BehaviorPackAnimationsControllers.md
           - text: Upgrading Animation Scripts
             url: AnimationUpgrade.md

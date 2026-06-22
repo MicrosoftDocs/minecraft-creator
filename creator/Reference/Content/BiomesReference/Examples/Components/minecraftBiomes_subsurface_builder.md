@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. Note, however, that pre-existing surface builder types' processing have not been updated to accommodate the ability to specify them for sub-terrain height ranges, which may lead to unexpected results when using them.
 
+> [!Note]
+> This item requires a format version of at least 1.26.30.
+
 
 ## Subsurface Builder Properties
 

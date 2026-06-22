@@ -18,14 +18,14 @@ Controls the initial direction and velocity of emitted particles. Direction sett
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | custom_direction | *not set* | Keyed set of strings |  | 
-| custom_direction (Custom Direction) | *not set* | Key/item pairs of [Custom Direction (Custom Direction)](#custom-direction-custom-direction) items |  | 
+| custom_direction (as Named set of objects) | *not set* | Key/item pairs of [Custom Direction (Item Molang Expression)](#item-molang-expression) items |  | 
 | custom_direction (as Decimal number) | *not set* | Decimal number |  | 
 | min_speed_threshold | 0 | Decimal number |  | 
 | mode | *not set* | [Mode](#mode-choices) choices |  | 
 
-### Custom Direction (Custom Direction)
+### Item Molang Expression
 
-#### Custom Direction Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `custom_direction`
 

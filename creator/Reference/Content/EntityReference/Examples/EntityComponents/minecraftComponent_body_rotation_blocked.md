@@ -12,5 +12,8 @@ ms.date: 02/11/2025
 
 When set, the entity will no longer visually rotate their body to match their facing direction.
 
+> [!Note]
+> This item requires a format version of at least 1.20.80.
+
 
 ## Samples

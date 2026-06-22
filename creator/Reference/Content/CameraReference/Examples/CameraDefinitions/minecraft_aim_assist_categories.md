@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Aim Assist Categories.
 
+> [!Note]
+> Aim assist supports projectiles starting in 1.21.110.
+
+> [!Note]
+> This item requires a format version of at least 1.21.70.
+
 
 ## Aim Assist Categories Properties
 

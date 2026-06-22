@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 The liquid_clipped component determines whether the item interacts with liquid blocks on use. To allow placement of blocks on liquids, see the 'placement_filter' block component.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Boolean true/false`.

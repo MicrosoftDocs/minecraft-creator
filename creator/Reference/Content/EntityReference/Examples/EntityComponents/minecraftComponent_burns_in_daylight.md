@@ -21,7 +21,7 @@ Specifies that this entity takes fire damage when exposed to direct sunlight. Th
 
 ### protection_slot
 
-The equipment slot that provides protection from burning in sunlight. If armor is equipped in this slot, the entity will not burn. Commonly set to 'slot.armor.head' for helmets or 'slot.armor.body' for horse armor.
+The equipment slot that provides protection from burning in sunlight. If armor is equipped in this slot, the entity will not burn. Commonly set to 'slot.armor.head' for helmets or 'slot.armor.body' for horse armor. This item requires a format version of at least 1.21.130.
 
 
 ### Protection Slot choices

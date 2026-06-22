@@ -13,6 +13,9 @@ ms.date: 02/11/2025
 Allows an entity to jump around a target.
 
 > [!Note]
+> In format version 1.26.20, `valid_distance_to_target` and `landing_distance_from_target` must be specified as Float Range objects (objects with `range_min` / `range_max`). Legacy scalar or array forms no longer parse.
+
+> [!Note]
 > This item requires a format version of at least 1.21.30.
 
 

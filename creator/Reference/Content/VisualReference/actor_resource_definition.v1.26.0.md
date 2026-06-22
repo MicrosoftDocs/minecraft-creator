@@ -10,6 +10,12 @@ ms.date: 02/11/2025
 
 # Visuals Documentation - minecraft:actor_resource_definition.v1.26.0
 
+> [!Note]
+> In format_version 1.26.0 and higher, the `pre_animation` and `initialize` Molang script fields on `minecraft:client_entity` support multi-line `{}` brace scope delimiters.
+
+> [!Note]
+> This item requires a format version of at least 1.26.0.
+
 
 ## Actor Resource Definition Properties
 

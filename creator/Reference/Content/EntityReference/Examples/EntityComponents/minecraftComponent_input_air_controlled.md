@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions.
 
+> [!Note]
+> This item requires a format version of at least 1.21.90.
+
 
 ## Input Air Controlled Properties
 

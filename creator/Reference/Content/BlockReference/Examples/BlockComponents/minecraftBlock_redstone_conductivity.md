@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 The basic redstone properties of a block. If the component is not provided the default values are used.
 
+> [!Note]
+> This item requires a format version of at least 1.21.40.
+
 
 ## Block Redstone Conductivity Properties
 

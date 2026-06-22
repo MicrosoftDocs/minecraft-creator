@@ -13,6 +13,9 @@ ms.date: 02/11/2025
 Enables the mob to admire items that have been configured as admirable.
 
 > [!Note]
+> In format version 1.26.20, `sound_interval` must be specified as a Float Range object (an object with `range_min` / `range_max`). Legacy scalar or array forms no longer parse.
+
+> [!Note]
 > Requires the following component in order to work properly:
 > 
 > * [Admire Item (minecraft:admire_item)](../EntityComponents/minecraftComponent_admire_item.md)

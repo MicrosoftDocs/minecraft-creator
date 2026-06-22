@@ -17,7 +17,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| attack_interval (Item FloatRange) | {"max":0,"min":0} | [Attack Interval](#item-floatrange) item | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}` | 
+| attack_interval (Item FloatRange) | {"max":0,"min":0} | [Attack Interval](#item-floatrange) item | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}` | 
 | attack_interval (as Integer number) | *not set* | Integer number |  |  | 
 | attack_interval\|attack_interval_min | *not set* | String |  |  | 
 | attack_owner | false | Boolean true/false | If true, this entity can attack its owner. |  | 
@@ -32,15 +32,23 @@ Allows an entity to attack the closest target within a given subset of specific 
 | reselect_targets | false | Boolean true/false | Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each "scan_interval" or "attack_interval". | Bogged: `true` | 
 | scan_interval | 10 | Integer number | If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. |  | 
 | set_persistent | false | Boolean true/false | Allows the actor to be set to persist upon targeting a player |  | 
-| target_acquisition_probability | 1 | Decimal number | Probability (0.0 to 1.0) that this entity will accept a found target. Checked each time a valid target is found during scanning. |  | 
+| target_acquisition_probability | 1 | Decimal number | Probability (0-1) that the goal will succeed when a candidate target passes all filters. |  | 
 | target_invisible_multiplier | 0.699999988079071 | Decimal number | Multiplied with the target's armor coverage percentage to modify "max_dist" when detecting an invisible target. |  | 
 | target_search_height | -1 | Decimal number | Maximum vertical target-search distance, if it's greater than the target type's "max_dist". A negative value defaults to "entity_types" greatest "max_dist". Value must be >= -1. |  | 
 | target_sneak_visibility_multiplier | 0.800000011920929 | Decimal number | Multiplied with the target type's "max_dist" when trying to detect a sneaking target. |  | 
 | within_radius | 0 | Decimal number | Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare "minecraft:follow_range". | Breeze: `24`, Drowned: `12` | 
 
+### attack_interval
+
+Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. Only used if "attack_interval" is greater than 0, otherwise "scan_interval" is used. From 1.21.130, `attack_interval` accepts an `[int, int]` range to randomize the time between target searches. A single integer remains supported and is treated as a fixed interval. In 1.26.0 the schema is stricter and `attack_interval` only accepts an object with `min` and `max` values; the single-number shorthand is no longer accepted in 1.26.0 and newer.
+
 ### scan_interval
 
 If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. Value must be >= 1.
+
+### target_acquisition_probability
+
+Probability (0-1) that the goal will succeed when a candidate target passes all filters. Lower values cause the mob to acquire targets less reliably; the default of 1 always acquires. This item requires a format version of at least 1.21.130.
 
 
 ### Item FloatRange

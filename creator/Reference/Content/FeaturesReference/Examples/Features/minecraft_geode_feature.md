@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 generates a rock formation to simulate a geode. Each layer of, and block within, the geode can be replaced. Succeeds if at least one block within the geode is placed. Fails if all blocks within the geode fail to be placed.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Geode Feature Properties
 

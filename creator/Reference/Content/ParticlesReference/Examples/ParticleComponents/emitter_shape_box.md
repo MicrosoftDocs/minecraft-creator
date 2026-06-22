@@ -20,16 +20,16 @@ Emits particles from random positions within a rectangular box volume. Define th
 | direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
 | direction (as Molang array) | *not set* | Molang array |  | 
 | half_dimensions | *not set* | Molang array | The half dimensions of the box, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| half_dimensions (Half Dimensions) | *not set* | Key/item pairs of [Half Dimensions (Half Dimensions)](#half-dimensions-half-dimensions) items |  | 
+| half_dimensions (as Named set of objects) | *not set* | Key/item pairs of [Half Dimensions (Item Molang Expression)](#item-molang-expression) items |  | 
 | half_dimensions (as Decimal number) | *not set* | Decimal number |  | 
 | offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| offset (Offset) | *not set* | Key/item pairs of [Offset (Offset)](#offset-offset) items |  | 
+| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Item Molang Expression)](#item-molang-expression) items |  | 
 | offset (as Decimal number) | *not set* | Decimal number |  | 
 | surface_only | false | Boolean true/false |  | 
 
-### Half Dimensions (Half Dimensions)
+### Item Molang Expression
 
-#### Half Dimensions Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `half_dimensions`
 
@@ -37,7 +37,3 @@ Emits particles from random positions within a rectangular box volume. Define th
 |:----------|:-------------|:----|:-----------|
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
-
-### Offset (Offset)
-
-Same structure as [Half Dimensions (Half Dimensions)](#half-dimensions-half-dimensions).

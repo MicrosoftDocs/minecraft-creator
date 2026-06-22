@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows an entity to teleport to its owner.
 
+> [!Note]
+> This item requires a format version of at least 1.21.20.
+
 
 ## Entity Teleport To Owner Behavior Properties
 

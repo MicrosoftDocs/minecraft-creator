@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table.
 
+> [!Note]
+> This item requires a format version of at least 1.20.0.
+
 
 ## Item Durability Properties
 

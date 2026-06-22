@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 AI goal that makes entities pick up blocks from the world, like Endermen grabbing blocks to carry. Configure which blocks the entity can take and the search radius. Works with place_block behavior to create entities that relocate blocks or harvest materials from the environment.
 
+> [!Note]
+> This item requires a format version of at least 1.21.100.
+
 
 ## Entity Take Block Behavior Properties
 

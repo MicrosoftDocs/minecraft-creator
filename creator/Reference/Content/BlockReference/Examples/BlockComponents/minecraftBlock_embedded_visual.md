@@ -33,7 +33,7 @@ The description identifier of the geometry and material used to render this bloc
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | bone_visibility | {} | Keyed set of strings | A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a Molang expression that tells whether the bone should be visible or not (value). | 
-| bone_visibility (Bone Visibility) | *not set* | Key/item pairs of [Bone Visibility (Bone Visibility)](#bone-visibility-bone-visibility) items |  | 
+| bone_visibility (as Named set of objects) | *not set* | Key/item pairs of [Bone Visibility (Item Molang Expression)](#item-molang-expression) items |  | 
 | bone_visibility (as Decimal number) | *not set* | Decimal number |  | 
 | culling |  | String | Which block_culling .json file to use when rendering this block. | 
 | culling_layer | *not set* | String | A string that allows culling rule to group multiple blocks together when comparing them. | 
@@ -63,9 +63,9 @@ The description identifier of the geometry to use to render this block. This ide
 A field that is either a Boolean or an array of strings, max size 64 strings. This field locks UV orientation for all/some bones in the geometry, regardless of how the block is rotated using "minecraft:transformation" component. For performance reasons it's recommended to use the Boolean.
 
 
-#### Bone Visibility (Bone Visibility)
+#### Item Molang Expression
 
-##### Bone Visibility Properties
+##### Item Molang Expression Properties
 
 **JSON path:** `geometry > bone_visibility`
 
