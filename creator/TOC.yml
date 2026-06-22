@@ -154,6 +154,8 @@
               href: Casual/ChillDreamsPart3SmellsLikeMemories.md
             - name: "Build a Tower Defense Add-On"
               href: Casual/build-tower-defense.md              
+            - name: "Toss Lab: Build a Physics Puzzle Game"
+              href: Casual/TossLab.md
     - name: Concepts
       items:
         - name: World Generation Overview
