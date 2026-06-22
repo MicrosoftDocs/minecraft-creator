@@ -13,6 +13,9 @@ ms.date: 02/11/2025
 Allows an entity to deal damage through a melee attack.
 
 > [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON for this behavior.
+
+> [!Note]
 > Requires a target in order to work properly. Entities can generate targets via one of the following behaviors:
 > 
 > * [Nearest Attackable Target Behavior (minecraft:behavior.nearest_attackable_target)](./minecraftBehavior_nearest_attackable_target.md)

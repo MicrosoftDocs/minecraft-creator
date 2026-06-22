@@ -11,3 +11,9 @@ ms.date: 02/11/2025
 # Molang Documentation - minecraft:query_is_attached
 
 Returns 1.0 if the entity is attached to another entity (such as being held or worn), else it will return 0.0. Available only with resource packs.
+
+> [!Note]
+> Available without experimental toggle in 1.20.70.
+
+> [!Note]
+> This item requires a format version of at least 1.20.70.

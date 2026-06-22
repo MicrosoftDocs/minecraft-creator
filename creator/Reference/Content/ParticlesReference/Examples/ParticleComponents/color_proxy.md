@@ -19,12 +19,12 @@ Defines color gradients with smooth interpolation for particle effects. Use this
 |:----------|:-------------|:----|:-----------|
 | gradient | *not set* | Keyed set of strings |  | 
 | interpolant | *not set* | Keyed set of strings |  | 
-| interpolant (Interpolant) | *not set* | Key/item pairs of [Interpolant (Interpolant)](#interpolant-interpolant) items |  | 
+| interpolant (as Named set of objects) | *not set* | Key/item pairs of [Interpolant (Item Molang Expression)](#item-molang-expression) items |  | 
 | interpolant (as Decimal number) | *not set* | Decimal number |  | 
 
-### Interpolant (Interpolant)
+### Item Molang Expression
 
-#### Interpolant Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `interpolant`
 

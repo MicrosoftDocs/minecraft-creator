@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Use_animation specifies which animation is played when the player uses the item.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `String`.

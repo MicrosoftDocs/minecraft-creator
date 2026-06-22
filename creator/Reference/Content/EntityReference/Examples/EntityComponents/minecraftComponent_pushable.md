@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Defines what can push an entity between other entities and pistons.
 
+> [!Note]
+> In 1.26.10 this component was split into `minecraft:pushable_by_block` (pistons and Shulker Boxes, equivalent to `is_pushable_by_piston: true`) and `minecraft:pushable_by_entity` (other entities, equivalent to `is_pushable: true`). The original `minecraft:pushable` component is no longer parsed.
+
+> [!Note]
+> This item no longer works after format versions of at least 1.26.10.
+
 
 ## Pushable Properties
 

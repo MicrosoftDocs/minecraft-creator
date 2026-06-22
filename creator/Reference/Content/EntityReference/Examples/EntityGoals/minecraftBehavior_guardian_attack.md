@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows this entity to use a laser beam attack. Can only be used by Guardians and Elder Guardians.
 
+> [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON for this behavior.
+
 
 ## Entity Guardian Attack Behavior Properties
 

@@ -36,6 +36,8 @@
   href: emitter_shape_point.md
 - name: emitter_shape_sphere
   href: emitter_shape_sphere.md
+- name: Molang expression
+  href: molang_expression.md
 - name: ParticleLifetimeEvents Proxy
   href: particlelifetimeevents_proxy.md
 - name: particle_appearance_billboard

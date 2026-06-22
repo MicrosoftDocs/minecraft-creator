@@ -18,12 +18,12 @@ Spawns all particles in a single instant burst when the emitter activates. Unlik
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | num_particles | *not set* | Molang | The number of particles to emit. Can be a number or Molang expression. | 
-| num_particles (Num Particles) | *not set* | Key/item pairs of [Num Particles (Num Particles)](#num-particles-num-particles) items |  | 
+| num_particles (as Named set of objects) | *not set* | Key/item pairs of [Num Particles (Item Molang Expression)](#item-molang-expression) items |  | 
 | num_particles (as Decimal number) | *not set* | Decimal number |  | 
 
-### Num Particles (Num Particles)
+### Item Molang Expression
 
-#### Num Particles Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `num_particles`
 

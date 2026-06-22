@@ -13,6 +13,9 @@ ms.date: 02/11/2025
 Allows entities with the "minecraft:dweller" component to move toward their village area that the entity should be restricted to.
 
 > [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON for this behavior.
+
+> [!Note]
 > Requires the following component in order to work properly:
 > 
 > * [Dweller (minecraft:dweller)](../EntityComponents/minecraftComponent_dweller.md)

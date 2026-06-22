@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Places a growing plant in the world. A growing plant is a column that is anchored either to the ceiling or the floor, based on its growth direction. The growing plant has a body and a head, where the head is the tip of the plant, and the body consists of the remaining blocks. This feature can be used to define growing plants with variable body and head blocks, e.g. Cave Vines.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Growing Plant Feature Properties
 

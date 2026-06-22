@@ -25,14 +25,14 @@ Allows the mob to pick up items on the ground.
 | excluded_items (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
 | goal_radius | 0.5 | Decimal number | Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot | Allay: `2.2`, Bogged: `2` | 
 | max_dist | 1 | Integer number | Maximum distance this mob will look for items to pick up | Allay: `32`, Bogged: `3` | 
-| on_pickup_item_end | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Pickup Item End](#entity-actordefinitiontrigger) item | Event to run when this mob either finishes or loses interest in picking up an item |  | 
-| on_pickup_item_start | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Pickup Item Start](#entity-actordefinitiontrigger) item | Event to run when this mob moves to pick up an item |  | 
+| on_pickup_item_end | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Pickup Item End](#entity-actordefinitiontrigger) item | Event to run when this mob either finishes or loses interest in picking up an item. This item requires a format version of at least 1.26.20. |  | 
+| on_pickup_item_start | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Pickup Item Start](#entity-actordefinitiontrigger) item | Event to run when this mob moves to pick up an item. This item requires a format version of at least 1.26.20. |  | 
 | pickup_based_on_chance | false | Boolean true/false | If true, depending on the difficulty, there is a random chance that the mob may not be able to pickup items | Bogged: `true` | 
 | pickup_same_items_as_in_hand | false | Boolean true/false | If true, the mob will only pick up items that match what it is already holding. | Allay: `true` | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `2`, Bogged: `5`, Drowned: `6` | 
 | search_height | 1 | Integer number | Height in blocks the mob will search for items | Allay: `32` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Allay: `6`, Bogged: `1` | 
-| stop_if_holding_item | false | Boolean true/false | If true, the mob will not pick up another item if the item's preferred slot matches |  | 
+| stop_if_holding_item | false | Boolean true/false | If true, the mob will not begin a pickup goal while it is already holding an item. Useful for mobs that should only hold one item at a time. This item requires a format version of at least 1.26.30. |  | 
 | track_target | false | Boolean true/false | If true, this mob will chase after the target as long as it's a valid target |  | 
 
 ### Control Flags choices

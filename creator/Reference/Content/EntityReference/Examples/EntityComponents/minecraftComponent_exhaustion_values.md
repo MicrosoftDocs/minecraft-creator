@@ -21,7 +21,7 @@ Defines how much exhaustion each player action should take.
 | damage | 0.1 | Decimal number | Amount of exhaustion applied when taking damage. | Player: `0.1` | 
 | heal | 6 | Decimal number | Amount of exhaustion applied when healed through food regeneration. | Player: `6` | 
 | jump | 0.05 | Decimal number | Amount of exhaustion applied when jumping. | Player: `0.05` | 
-| lunge | 4 | Decimal number | Amount of exhaustion applied when triggering the lunge enchantment, multiplied by the enchantment level. | Player: `4` | 
+| lunge | 4 | Decimal number | Amount of exhaustion applied when triggering the Lunge enchantment, multiplied by the enchantment level. This item requires a format version of at least 1.21.130. | Player: `4` | 
 | mine | 0.005 | Decimal number | Amount of exhaustion applied when mining. | Player: `0.005` | 
 | sprint | 0.01 | Decimal number | Amount of exhaustion applied when sprinting. | Player: `0.1` | 
 | sprint_jump | 0.2 | Decimal number | Amount of exhaustion applied when sprint jumping. | Player: `0.2` | 

@@ -10,7 +10,10 @@ ms.date: 02/11/2025
 
 # Block Components Documentation - minecraft:destruction_particles
 
-[Note: This component is currently experimental]. Sets the particles that will be used when block is destroyed.
+Sets the particles that will be used when block is destroyed.
+
+> [!Note]
+> Available without experimental toggle in 1.21.100. The particle_count field controls how many particles spawn when the block is broken.
 
 > [!Note]
 > This item requires a format version of at least 1.21.80.

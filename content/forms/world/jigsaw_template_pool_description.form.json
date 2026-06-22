@@ -1,0 +1,17 @@
+{
+  "id": "Jigsaw Template Pool Description",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Jigsaw Template Pool Description",
+    "title": "World Jigsaw Template Pool Description",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "description": "Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates.",
+        "dataType": "object",
+        "isRequired": true
+      }
+    ]
+  }
+}

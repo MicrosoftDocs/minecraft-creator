@@ -1,0 +1,17 @@
+{
+  "id": "Jigsaw Structure Set Description",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Jigsaw Structure Set Description",
+    "title": "World Jigsaw Structure Set Description",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "description": "Identifier of the Jigsaw Structure Set.",
+        "dataType": "object",
+        "isRequired": true
+      }
+    ]
+  }
+}

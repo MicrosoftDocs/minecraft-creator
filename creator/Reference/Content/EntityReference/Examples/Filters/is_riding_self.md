@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Returns true if the subject entity is riding the calling entity.
 
+> [!Note]
+> This item requires a format version of at least 1.21.90.
+
 
 ## Is Riding Self Properties
 

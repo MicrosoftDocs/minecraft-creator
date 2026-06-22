@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Overrides the swing sounds emitted by the user.
 
+> [!Note]
+> This item requires a format version of at least 1.21.130.
+
 
 ## Item Swing Sounds Properties
 

@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 This defines how a block reacts to a chest being opened underneath it.
 
+> [!Note]
+> Added in 1.26.10 behind the Upcoming Creator Features experiment and released without the experimental toggle for block format versions 1.26.20 and newer. Controls how a block placed above a chest affects the chest's ability to open: `always` always obstructs, `never` never obstructs, and `shape` (the default) uses the block's AABB.
+
+> [!Note]
+> This item requires a format version of at least 1.26.10.
+
 
 ## Block Chest Obstruction Properties
 

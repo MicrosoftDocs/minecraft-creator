@@ -18,18 +18,18 @@ Controls particle position and rotation using Molang expressions evaluated each 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | direction | *not set* | Molang array | Direction of particle motion, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
-| direction (Direction) | *not set* | Key/item pairs of [Direction (Direction)](#direction-direction) items |  | 
+| direction (as Named set of objects) | *not set* | Key/item pairs of [Direction (Item Molang Expression)](#item-molang-expression) items |  | 
 | direction (as Decimal number) | *not set* | Decimal number |  | 
 | relative_position | *not set* | Molang array | Position offset relative to the particle emitter, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
-| relative_position (Relative Position) | *not set* | Key/item pairs of [Relative Position (Relative Position)](#relative-position-relative-position) items |  | 
+| relative_position (as Named set of objects) | *not set* | Key/item pairs of [Relative Position (Item Molang Expression)](#item-molang-expression) items |  | 
 | relative_position (as Decimal number) | *not set* | Decimal number |  | 
 | rotation | *not set* | Keyed set of strings |  | 
-| rotation (Rotation) | *not set* | Key/item pairs of [Rotation (Rotation)](#rotation-rotation) items |  | 
+| rotation (as Named set of objects) | *not set* | Key/item pairs of [Rotation (Item Molang Expression)](#item-molang-expression) items |  | 
 | rotation (as Decimal number) | *not set* | Decimal number |  | 
 
-### Direction (Direction)
+### Item Molang Expression
 
-#### Direction Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `direction`
 
@@ -37,12 +37,3 @@ Controls particle position and rotation using Molang expressions evaluated each 
 |:----------|:-------------|:----|:-----------|
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
-
-### Relative Position (Relative Position)
-
-Same structure as [Direction (Direction)](#direction-direction).
-
-
-### Rotation (Rotation)
-
-Same structure as [Direction (Direction)](#direction-direction).

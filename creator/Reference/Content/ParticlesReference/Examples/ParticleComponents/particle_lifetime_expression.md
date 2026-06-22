@@ -18,15 +18,15 @@ Controls individual particle lifetimes using Molang expressions. The max_lifetim
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | expiration_expression | 0 | Molang | When the expression is non-zero, the particle expires. Can be a number or Molang expression. | 
-| expiration_expression (Expiration Expression) | *not set* | Key/item pairs of [Expiration Expression (Expiration Expression)](#expiration-expression-expiration-expression) items |  | 
+| expiration_expression (as Named set of objects) | *not set* | Key/item pairs of [Expiration Expression (Item Molang Expression)](#item-molang-expression) items |  | 
 | expiration_expression (as Decimal number) | *not set* | Decimal number |  | 
 | max_lifetime | *not set* | Molang | The maximum lifetime of the particle in seconds. Can be a number or Molang expression. | 
-| max_lifetime (Max Lifetime) | *not set* | Key/item pairs of [Max Lifetime (Max Lifetime)](#max-lifetime-max-lifetime) items |  | 
+| max_lifetime (as Named set of objects) | *not set* | Key/item pairs of [Max Lifetime (Item Molang Expression)](#item-molang-expression) items |  | 
 | max_lifetime (as Decimal number) | *not set* | Decimal number |  | 
 
-### Expiration Expression (Expiration Expression)
+### Item Molang Expression
 
-#### Expiration Expression Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `expiration_expression`
 
@@ -34,7 +34,3 @@ Controls individual particle lifetimes using Molang expressions. The max_lifetim
 |:----------|:-------------|:----|:-----------|
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
-
-### Max Lifetime (Max Lifetime)
-
-Same structure as [Expiration Expression (Expiration Expression)](#expiration-expression-expiration-expression).

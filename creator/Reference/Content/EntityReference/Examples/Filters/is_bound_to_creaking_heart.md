@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Tests that the Creaking Heart that spawned the subject Creaking still exists.
 
+> [!Note]
+> This item requires a format version of at least 1.21.60.
+
 
 ## Is Bound To Creaking Heart Properties
 

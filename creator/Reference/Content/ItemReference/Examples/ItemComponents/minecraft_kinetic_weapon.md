@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows an item to deal kinetic damage and its effects. This happens every tick while in use, in a straight line along the user's view vector, with damage computed based on both the user's and the target's velocity projected onto the view vector (via a dot product). The more the user and target move toward each other, and the more this movement is aligned with the user's view vector, the higher the damage. After "damage_multiplier" and "damage_modifier" are applied, the resulting damage is floored to the nearest lower integer.
 
+> [!Note]
+> This item requires a format version of at least 1.21.130.
+
 
 ## Item Kinetic Weapon Properties
 

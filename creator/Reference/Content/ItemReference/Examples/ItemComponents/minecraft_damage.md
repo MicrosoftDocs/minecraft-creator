@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 The damage component determines how much extra damage the item does on attack.
 
+> [!Note]
+> From 1.26.0 onward, `value` supports the full int16 range of 0 to 32767.
+
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Integer number`.

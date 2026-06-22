@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feed_items.
 
+> [!Note]
+> In 1.21.130 the `transform_to_item` field on each entry of `feed_items` was renamed to `result_item`. The new field is defined per-item, so different feed items can transform into different result items on use.
+
 
 ## Ageable Properties
 
@@ -25,8 +28,21 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
 | grow_up | *not set* | Object | Event to fire when an entity grows up. Can be an object with event and target properties, or a simple event string. | Chicken: `{"event":"minecraft:ageable_grow_up","target":"self"}`, Dolphin: `{"event":"ageable_grow_up","target":"self"}` | 
 | grow_up (as String) | *not set* | String |  |  | 
 | interact_filters | *not set* | Minecraft filter | List of conditions to meet so that the entity can be fed. |  | 
-| pause_growth_items | *not set* | Array of strings | List of items that can be fed to the entity to pause growth for baby entities. | Chicken: `["golden_dandelion"]` | 
-| reset_growth_items | *not set* | Array of strings | List of items that can be used to reset growth for baby entities. | Chicken: `["golden_dandelion"]` | 
+| pause_growth | *not set* | Object | Event triggered when a baby entity's growth is paused (via a `pause_growth_items` feed). |  | 
+| pause_growth (as String) | *not set* | String |  |  | 
+| pause_growth_items | *not set* | Array of strings | List of items that can be fed to a baby entity to pause its growth. This item requires a format version of at least 1.26.10. | Chicken: `["golden_dandelion"]` | 
+| reset_growth | *not set* | Object | Event triggered when a baby entity's growth is reset (via a `reset_growth_items` feed). |  | 
+| reset_growth (as String) | *not set* | String |  |  | 
+| reset_growth_items | *not set* | Array of strings | List of items that can be fed to a baby entity to reset its growth timer. This item requires a format version of at least 1.26.10. | Chicken: `["golden_dandelion"]` | 
+
+### pause_growth
+
+Event triggered when a baby entity's growth is paused (via a `pause_growth_items` feed). Can be an object with `event` and `target` properties, or a simple event string. This item requires a format version of at least 1.26.10.
+
+### reset_growth
+
+Event triggered when a baby entity's growth is reset (via a `reset_growth_items` feed). Can be an object with `event` and `target` properties, or a simple event string. This item requires a format version of at least 1.26.10.
+
 
 ### Feed Items
 

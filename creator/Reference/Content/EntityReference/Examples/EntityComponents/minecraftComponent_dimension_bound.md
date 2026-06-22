@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Prevents the entity from changing dimension through portals.
 
+> [!Note]
+> This item requires a format version of at least 1.21.40.
+
 
 ## Samples
 

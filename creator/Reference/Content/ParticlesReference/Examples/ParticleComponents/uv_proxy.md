@@ -21,10 +21,10 @@ Controls UV texture mapping and flipbook animation for particles.
 | texture_height | 1 | Integer number |  | 
 | texture_width | 1 | Integer number |  | 
 | uv | *not set* | Keyed set of strings |  | 
-| uv (Uv) | *not set* | Key/item pairs of [Uv (Uv)](#uv-uv) items |  | 
+| uv (as Named set of objects) | *not set* | Key/item pairs of [Uv (Item Molang Expression)](#item-molang-expression) items |  | 
 | uv (as Decimal number) | *not set* | Decimal number |  | 
 | uv_size | *not set* | Keyed set of strings |  | 
-| uv_size (Uv Size) | *not set* | Key/item pairs of [Uv Size (Uv Size)](#uv-size-uv-size) items |  | 
+| uv_size (as Named set of objects) | *not set* | Key/item pairs of [Uv Size (Item Molang Expression)](#item-molang-expression) items |  | 
 | uv_size (as Decimal number) | *not set* | Decimal number |  | 
 
 ### Client Particles Particle Appearance Billboard Flipbook Data
@@ -38,20 +38,20 @@ Enables sprite sheet animation for particle billboards, cycling through frames o
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | base_UV | *not set* | Keyed set of strings |  | 
-| base_UV (Base UV) | *not set* | Key/item pairs of [Base UV (Base UV)](#base-uv-base-uv) items |  | 
+| base_UV (as Named set of objects) | *not set* | Key/item pairs of [Base UV (Item Molang Expression)](#item-molang-expression) items |  | 
 | base_UV (as Decimal number) | *not set* | Decimal number |  | 
 | frames_per_second | 0 | Decimal number |  | 
 | loop | false | Boolean true/false |  | 
 | max_frame | *not set* | Keyed set of strings |  | 
-| max_frame (Max Frame) | *not set* | Key/item pairs of [Max Frame (Max Frame)](#max-frame-max-frame) items |  | 
+| max_frame (as Named set of objects) | *not set* | Key/item pairs of [Max Frame (Item Molang Expression)](#item-molang-expression) items |  | 
 | max_frame (as Decimal number) | *not set* | Decimal number |  | 
 | size_UV | [1, 1] | Array of numbers |  | 
 | step_UV | [0, 0] | Array of numbers |  | 
 | stretch_to_lifetime | false | Boolean true/false |  | 
 
-#### Base UV (Base UV)
+#### Item Molang Expression
 
-##### Base UV Properties
+##### Item Molang Expression Properties
 
 **JSON path:** `flipbook > base_UV`
 
@@ -59,23 +59,3 @@ Enables sprite sheet animation for particle billboards, cycling through frames o
 |:----------|:-------------|:----|:-----------|
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
-
-#### Max Frame (Max Frame)
-
-Same structure as [Base UV (Base UV)](#base-uv-base-uv).
-
-
-### Uv (Uv)
-
-#### Uv Properties
-
-**JSON path:** `uv`
-
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| expression | *not set* | String |  | 
-| version | *not set* | Integer number |  | 
-
-### Uv Size (Uv Size)
-
-Same structure as [Uv (Uv)](#uv-uv).

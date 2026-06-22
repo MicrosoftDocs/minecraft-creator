@@ -13,6 +13,9 @@ ms.date: 02/11/2025
 Allows this entity to fly around looking for a player to shoot fireballs at.
 
 > [!Note]
+> In 1.26.0 the schema is stricter and rejects invalid JSON. `target_zone` now only accepts an object with `min` and `max` values.
+
+> [!Note]
 > Can only be used on the following type of entity:
 > 
 > * Ender Dragon (minecraft:ender_dragon)

@@ -18,15 +18,15 @@ Controls when the emitter activates and expires using Molang expressions. The ac
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | activation_expression | 1 | Molang | When the expression is non-zero, the emitter is activated. Can be a number or Molang expression. | 
-| activation_expression (Activation Expression) | *not set* | Key/item pairs of [Activation Expression (Activation Expression)](#activation-expression-activation-expression) items |  | 
+| activation_expression (as Named set of objects) | *not set* | Key/item pairs of [Activation Expression (Item Molang Expression)](#item-molang-expression) items |  | 
 | activation_expression (as Decimal number) | *not set* | Decimal number |  | 
 | expiration_expression | 0 | Molang | When the expression is non-zero, the emitter expires. Can be a number or Molang expression. | 
-| expiration_expression (Expiration Expression) | *not set* | Key/item pairs of [Expiration Expression (Expiration Expression)](#expiration-expression-expiration-expression) items |  | 
+| expiration_expression (as Named set of objects) | *not set* | Key/item pairs of [Expiration Expression (Item Molang Expression)](#item-molang-expression) items |  | 
 | expiration_expression (as Decimal number) | *not set* | Decimal number |  | 
 
-### Activation Expression (Activation Expression)
+### Item Molang Expression
 
-#### Activation Expression Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `activation_expression`
 
@@ -34,7 +34,3 @@ Controls when the emitter activates and expires using Molang expressions. The ac
 |:----------|:-------------|:----|:-----------|
 | expression | *not set* | String |  | 
 | version | *not set* | Integer number |  | 
-
-### Expiration Expression (Expiration Expression)
-
-Same structure as [Activation Expression (Activation Expression)](#activation-expression-activation-expression).

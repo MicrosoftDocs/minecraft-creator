@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Enables a mob to use kinetic weaponry by intermittently charging at its target and repositioning afterward.
 
+> [!Note]
+> Lets a mob attack with an item carrying the `minecraft:kinetic_weapon` component by charging at the target, then repositioning between strikes.
+
+> [!Note]
+> This item requires a format version of at least 1.21.130.
+
 
 ## Entity Use Kinetic Weapon Behavior Properties
 

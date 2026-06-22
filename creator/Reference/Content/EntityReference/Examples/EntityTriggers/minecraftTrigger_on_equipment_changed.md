@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Allows to specify events to execute when equipment is set in the entity's default equipment slots. Doesn't apply to "minecraft:inventory", use "minecraft:equippable" instead.
 
+> [!Note]
+> Added in 1.26.20. Defines a list of `slots`, each pairing an equipment `slot` with an `on_equip` event (fired when a non-empty item is placed) and `on_unequip` event (fired when the slot is cleared). When equipment changes, only the first matching slot entry is used. Does not apply to `minecraft:inventory` slots — use `minecraft:equippable` for those.
+
+> [!Note]
+> This item requires a format version of at least 1.26.20.
+
 
 ## Entity On Equipment Changed Properties
 

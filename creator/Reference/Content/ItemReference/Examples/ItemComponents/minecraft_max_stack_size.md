@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Determines how many of an item can be stacked together.
 
+> [!Note]
+> This item requires a format version of at least 1.20.10.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Integer number`.

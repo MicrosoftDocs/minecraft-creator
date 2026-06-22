@@ -26,25 +26,7 @@
           {
             "id": "rotation",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "rotation",
-              "title": "Rotation",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "rotation",
@@ -61,25 +43,7 @@
           {
             "id": "rotation_rate",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "rotation_rate",
-              "title": "Rotation Rate",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "rotation_rate",

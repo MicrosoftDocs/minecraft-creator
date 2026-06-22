@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Set the identifier used for cubemap in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Cubemap JSON schemas under the "cubemaps" directory. Biomes without this component will have default cubemap settings.
 
+> [!Note]
+> Added in 1.21.130 to apply a custom cubemap (defined in the resource pack's `cubemaps/` directory) for Vibrant Visuals skybox lighting on a client biome.
+
+> [!Note]
+> This item requires a format version of at least 1.21.130.
+
 
 ## Client Biome Cubemap Identifier Properties
 

@@ -20,6 +20,9 @@ ms.date: 02/11/2025
 
 Controls materials used for terrain generation.
 
+> [!Note]
+> This item requires a format version of at least 1.26.30.
+
 
 ## Biome Surface Builder Properties
 

@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 BlockCulling.
 
+> [!Note]
+> Data-driven block culling rules were added in 1.20.60 to improve custom block performance and provide more control over per-face rendering.
+
+> [!Note]
+> This item requires a format version of at least 1.20.60.
+
 
 ## BlockCulling Properties
 

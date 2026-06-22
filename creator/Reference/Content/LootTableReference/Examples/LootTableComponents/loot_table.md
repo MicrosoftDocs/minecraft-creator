@@ -53,7 +53,7 @@ Defines a condition that must be met for a loot table entry or function to apply
 | entity | *not set* | String | For 'entity_properties': which entity to check ('this', 'attacker', or 'attacking_player'). | 
 | hard | *not set* | Decimal number | For 'random_difficulty_chance': probability on hard difficulty. | 
 | looting_multiplier | *not set* | Decimal number | For 'random_chance_with_looting': additional chance per looting level. | 
-| match_tool | *not set* | [Match Tool](#match-tool) item | For 'match_tool': the tool item properties to match. | 
+| match_tool | *not set* | [Match Tool](#match-tool) item | For 'match_tool': the tool item properties to match. Item tag references in the 'item' property are available without an experimental toggle in 1.21.70. | 
 | normal | *not set* | Decimal number | For 'random_difficulty_chance': probability on normal difficulty. | 
 | peaceful | *not set* | Decimal number | For 'random_difficulty_chance': probability on peaceful difficulty. | 
 | properties | *not set* | [Properties](#properties) item | For 'entity_properties': the entity properties to match. | 

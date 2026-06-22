@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Defines interactions with this entity.
 
+> [!Note]
+> In 1.26.0, the `swing` field on each interaction entry defaults to `true` (it previously defaulted to `false`). Set it explicitly to `false` to opt out of the player's swing animation.
+
 
 ## Interact Properties
 
@@ -45,6 +48,7 @@ The entity's slot to equip the item to, if any, upon successful interaction. Inv
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| equip_item_slot | *not set* | String | If set, an item held by the player is equipped to this slot upon successful interaction. |  | 
 | give_item | false | Boolean true/false | If true, the player can give items to the entity during interaction. | Allay: `true` | 
 | hurt_item | *not set* | Decimal number |  |  | 
 | interact_text | *not set* | String |  | Allay: `"action.interact.allay"` | 
@@ -64,6 +68,11 @@ The entity's slot to equip the item to, if any, upon successful interaction. Inv
 | use_item | false | Boolean true/false | If true, the interaction will use an item. |  | 
 | use_item | false | Boolean true/false | If true, the interaction will use an item. |  | 
 | vibration | entity_interact | String | Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact. |  | 
+
+#### equip_item_slot
+
+If set, an item held by the player is equipped to this slot upon successful interaction. Any existing item in the slot is moved to the player's inventory; in non-Creative mode the equipped item is removed from the player's inventory. This item requires a format version of at least 1.19.60.
+
 
 #### Particle On Start
 Particle effect that will be triggered at the start of the interaction.

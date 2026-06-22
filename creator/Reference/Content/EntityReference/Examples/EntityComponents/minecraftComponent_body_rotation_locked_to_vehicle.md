@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Causes the entity's body rotation to match their vehicle's facing direction.
 
+> [!Note]
+> In 1.21.130 this component was renamed to `minecraft:rotation_locked_to_vehicle`, which now locks both body and overall entity rotation to the vehicle. Existing usages should migrate to the new identifier.
+
 
 ## Samples
 

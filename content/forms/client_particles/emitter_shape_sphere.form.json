@@ -60,25 +60,7 @@
               {
                 "id": "direction",
                 "dataType": "keyedObjectCollection",
-                "readOnly": true,
-                "subForm": {
-                  "id": "direction",
-                  "title": "Direction",
-                  "fields": [
-                    {
-                      "id": "expression",
-                      "title": "Expression",
-                      "dataType": "string",
-                      "isRequired": true
-                    },
-                    {
-                      "id": "version",
-                      "title": "Version",
-                      "dataType": "int",
-                      "isRequired": true
-                    }
-                  ]
-                }
+                "subFormId": "item/molang_expression"
               },
               {
                 "id": "direction",
@@ -103,25 +85,7 @@
           {
             "id": "offset",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "offset",
-              "title": "Offset",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "offset",
@@ -138,25 +102,7 @@
           {
             "id": "radius",
             "dataType": "keyedObjectCollection",
-            "readOnly": true,
-            "subForm": {
-              "id": "radius",
-              "title": "Radius",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": "string",
-                  "isRequired": true
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": "int",
-                  "isRequired": true
-                }
-              ]
-            }
+            "subFormId": "item/molang_expression"
           },
           {
             "id": "radius",

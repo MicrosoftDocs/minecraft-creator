@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature will also only work when placed specifically in the pass "pregeneration_pass".
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Nether Cave Carver Feature Properties
 

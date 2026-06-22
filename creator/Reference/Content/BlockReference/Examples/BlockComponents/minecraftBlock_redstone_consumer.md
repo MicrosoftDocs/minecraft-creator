@@ -12,6 +12,15 @@ ms.date: 02/11/2025
 
 A component describing how a block can consume and potentially propagate a redstone signal. This component is not available for block permutations.
 
+> [!Note]
+> Lets a custom block consume and optionally propagate a redstone signal. Pairs with the `BlockComponentRedstoneUpdateEvent` script API for custom redstone behavior. Not available on block permutations.
+
+> [!Note]
+> Available without the Upcoming Creator Features experimental toggle for block format versions 1.26.0 or higher. In 1.26.0 the field was renamed from the original `propogates_power` spelling to `propagates_power`.
+
+> [!Note]
+> This item requires a format version of at least 1.21.130.
+
 
 ## Block Redstone Consumer Properties
 

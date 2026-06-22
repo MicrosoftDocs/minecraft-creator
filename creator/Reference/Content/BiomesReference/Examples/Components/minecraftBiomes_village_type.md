@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Determines the type of village for the Biome.
 
+> [!Note]
+> Biome component added in 1.26.0 that determines the type of village (default, desert, ice, savanna, or taiga) that generates in this biome.
+
+> [!Note]
+> This item requires a format version of at least 1.26.0.
+
 
 ## Biome Village Type Properties
 

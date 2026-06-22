@@ -304,6 +304,12 @@ List of biome replacement configurations. Retroactively adding a new replacement
 ##### Biome Replacement
 Represents the replacement information used to determine the placement of the overriding biome.
 
+> [!Note]
+> Custom partial biome replacement is available without experimental toggle in 1.21.110.
+
+> [!Note]
+> This item requires a format version of at least 1.21.110.
+
 
 ###### Biome Replacement Properties
 
@@ -324,6 +330,9 @@ Scaling value used to alter the frequency of replacement attempts. A lower frequ
 #### Subsurface Builder
 Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applied to biomes located underneath regular terrain surface. Note, however, that pre-existing surface builder types' processing have not been updated to accommodate the ability to specify them for sub-terrain height ranges, which may lead to unexpected results when using them.
 
+> [!Note]
+> This item requires a format version of at least 1.26.30.
+
 
 ##### Subsurface Builder Properties
 
@@ -335,6 +344,9 @@ Sub Surface Builders allow specifying a `minecraft:surface_builder` to be applie
 
 #### Biome Surface Builder
 Controls materials used for terrain generation.
+
+> [!Note]
+> This item requires a format version of at least 1.26.30.
 
 
 ##### Biome Surface Builder Properties
@@ -687,6 +699,12 @@ taiga: Biomes tagged "forest" or "forest_generation" will use normal Overworld f
 
 #### Biome Village Type
 Determines the type of village for the Biome.
+
+> [!Note]
+> Biome component added in 1.26.0 that determines the type of village (default, desert, ice, savanna, or taiga) that generates in this biome.
+
+> [!Note]
+> This item requires a format version of at least 1.26.0.
 
 
 ##### Biome Village Type Properties

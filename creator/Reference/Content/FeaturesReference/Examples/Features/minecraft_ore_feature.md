@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Places a vein of blocks to simulate ore deposits. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if they can be replaced by the new ore block based on the list in the may_replace field of a replace_rules entry. If no may_replace field is specified, the ore block can replace any existing block. Succeeds if at least one ore block is successfully placed. Fails if all ore block placements fail.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Ore Feature Properties
 

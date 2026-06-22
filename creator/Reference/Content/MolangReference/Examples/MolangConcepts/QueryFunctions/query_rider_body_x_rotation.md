@@ -11,3 +11,9 @@ ms.date: 02/11/2025
 # Molang Documentation - minecraft:query_rider_body_x_rotation
 
 Returns the body pitch world-rotation of a valid rider at the provided index if called on an entity, else it returns 0.0.
+
+> [!Note]
+> Available without experimental toggle in 1.20.70.
+
+> [!Note]
+> This item requires a format version of at least 1.20.70.

@@ -11,3 +11,6 @@ ms.date: 02/11/2025
 # Molang Documentation - minecraft:math_ease_out_back
 
 Output goes from start to end via 0_to_1, overshooting past the end before settling into it.
+
+> [!Note]
+> This item requires a format version of at least 1.21.120.

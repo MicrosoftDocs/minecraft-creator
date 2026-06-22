@@ -12,6 +12,12 @@ ms.date: 02/11/2025
 
 Defines how an entity applies knockback.
 
+> [!Note]
+> Released out of beta in format version 1.26.30. The preset field `extra_knockback_approach` controls how knockback from enchantments, sprinting, and swimming combines with the preset's power (`reapply_default` preserves the prior behavior; `multiply` multiplies the preset's power by the extra-knockback factor).
+
+> [!Note]
+> This item requires a format version of at least 1.26.30.
+
 
 ## Entity Apply Knockback Rules Properties
 

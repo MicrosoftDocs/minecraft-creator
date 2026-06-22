@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Tests if the subject is sitting.
 
+> [!Note]
+> This item requires a format version of at least 1.20.80.
+
 
 ## Is Sitting Properties
 

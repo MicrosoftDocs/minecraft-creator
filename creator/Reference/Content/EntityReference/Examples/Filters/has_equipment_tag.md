@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Tests for the presence of an item with the named tag in the designated slot of the subject entity.
 
+> [!Note]
+> This item requires a format version of at least 1.21.80.
+
 
 ## Has Equipment Tag Properties
 

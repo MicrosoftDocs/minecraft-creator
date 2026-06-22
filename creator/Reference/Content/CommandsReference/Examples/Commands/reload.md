@@ -29,10 +29,10 @@ Reload all function and script files.
 
 | Argument | Type | Required | Description |
 |:---------|:-----|:---------|:------------|
-| all | reload_all | Optional |  |
+| all | reload_all | Optional | When specified, causes players to quit the world and rejoin, and reloads all behavior and resource packs (not just function and script files). |
 
 ## Arguments Reference
 
 | Argument | Type | Description |
 |:---------|:-----|:------------|
-| all | reload_all |  |
+| all | reload_all | When specified, causes players to quit the world and rejoin, and reloads all behavior and resource packs (not just function and script files). |

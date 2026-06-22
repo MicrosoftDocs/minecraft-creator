@@ -15,6 +15,9 @@ Makes an item throwable by the player, similar to a snowball or ender pearl. Use
 > [!Note]
 > Combine with minecraft:projectile to define the projectile entity. For charged throws (like tridents), set scale_power_by_draw_duration to true and configure min/max draw durations.
 
+> [!Note]
+> This item requires a format version of at least 1.20.10.
+
 
 ## Item Throwable Properties
 

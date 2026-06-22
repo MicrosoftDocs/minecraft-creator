@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Used by record items to play music.
 
+> [!Note]
+> This item requires a format version of at least 1.20.10.
+
 
 ## Item Record Properties
 

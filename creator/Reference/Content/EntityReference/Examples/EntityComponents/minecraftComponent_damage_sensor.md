@@ -29,6 +29,7 @@ Defines what events to call when this entity is damaged by specific entities or 
 | yes | Yes | Received damage is applied to the entity.|
 | no | No | Received damage is not applied to the entity.|
 | no_but_side_effects_apply | No But Side Effects Apply | Received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on.|
+| no_but_entity_effects_apply | No But Entity Effects Apply | Damage is not applied to the entity, but knockback and enchantments are still applied and the attacker's weapon is used as normal. The entity does not flash red.|
 
 ### Triggers
 

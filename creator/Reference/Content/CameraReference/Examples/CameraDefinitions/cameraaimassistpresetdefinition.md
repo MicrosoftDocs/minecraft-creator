@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 CameraAimAssistPresetDefinition.
 
+> [!Note]
+> This item requires a format version of at least 1.21.70.
+
 
 ## CameraAimAssistPresetDefinition Properties
 

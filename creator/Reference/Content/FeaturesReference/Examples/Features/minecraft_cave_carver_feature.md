@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature only works when placed in the pass "pregeneration_pass".
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Cave Carver Feature Properties
 

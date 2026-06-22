@@ -12,6 +12,15 @@ ms.date: 02/11/2025
 
 Defines whether other blocks such as fences, walls, bars, and glass panes are allowed to connect to this block.
 
+> [!Note]
+> Lets a custom block control whether other blocks with connection behavior (fences, walls, bars, glass panes) may visually connect to it. Released alongside the new `minecraft:has_fence_connections` VanillaBlockTag.
+
+> [!Note]
+> Available without the Upcoming Creator Features experimental toggle for block format versions 1.26.0 or higher.
+
+> [!Note]
+> This item requires a format version of at least 1.21.130.
+
 
 ## Block Connection Rule Properties
 

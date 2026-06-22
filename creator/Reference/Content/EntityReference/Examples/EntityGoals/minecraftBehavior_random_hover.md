@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Allows the mob to hover around randomly, close to the surface.
 
+> [!Note]
+> In format version 1.26.20, `hover_height` must be specified as a Float Range object (an object with `range_min` / `range_max`). Legacy scalar or array forms no longer parse.
+
 
 ## Entity Random Hover Behavior Properties
 

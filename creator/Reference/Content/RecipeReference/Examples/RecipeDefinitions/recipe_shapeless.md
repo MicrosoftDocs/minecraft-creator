@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 A shapeless crafting recipe for Minecraft Bedrock Edition. Shapeless recipes allow ingredients to be placed in any order and position on the crafting grid, unlike shaped recipes that require specific patterns.
 
+> [!Note]
+> Starting in 1.19.40, ingredient entries may specify a 'tag' instead of an 'item', allowing the recipe to accept any item that belongs to the named item tag.
+
 
 ## Shapeless Recipe Properties
 

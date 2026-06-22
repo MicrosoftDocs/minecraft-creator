@@ -19,13 +19,13 @@ Spawns another particle effect when triggered by particle events, enabling casca
 |:----------|:-------------|:----|:-----------|
 | effect | *not set* | Object |  | 
 | pre_effect_expression | 0 | Keyed set of strings |  | 
-| pre_effect_expression (Pre Effect Expression) | *not set* | Key/item pairs of [Pre Effect Expression (Pre Effect Expression)](#pre-effect-expression-pre-effect-expression) items |  | 
+| pre_effect_expression (as Named set of objects) | *not set* | Key/item pairs of [Pre Effect Expression (Item Molang Expression)](#item-molang-expression) items |  | 
 | pre_effect_expression (as Decimal number) | *not set* | Decimal number |  | 
 | type | *not set* | [Type](#type-choices) choices |  | 
 
-### Pre Effect Expression (Pre Effect Expression)
+### Item Molang Expression
 
-#### Pre Effect Expression Properties
+#### Item Molang Expression Properties
 
 **JSON path:** `pre_effect_expression`
 

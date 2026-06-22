@@ -24,7 +24,7 @@ A component that does damage to entities that get within range.
 | death_message_override | *not set* | String | A localization key to use as the death message when the area attack kills an entity. If empty, the default death message for the damage cause is used. |  | 
 | entity_filter | *not set* | Minecraft filter | The set of entities that are valid to apply the damage to when within range. | Magma Cube: `{"any_of":[{"subject":"other","test":"is_family","value":"player"},{"subject":"other","test":"is_family","value":"irongolem"}]}`, Slime: `{"any_of":[{"subject":"other","test":"is_family","value":"player"},{"subject":"other","test":"is_family","value":"irongolem"},{"subject":"other","test":"is_family","value":"snowgolem"}]}` | 
 | play_attack_sound | true | Boolean true/false | If the entity should play their attack sound when attacking a target. |  | 
-| use_self_as_damage_source | true | Boolean true/false | If the entity should use itself as the damage source when attacking a target. |  | 
+| use_self_as_damage_source | true | Boolean true/false | Whether the entity is treated as the source of the area damage. |  | 
 
 ### cause
 
@@ -32,7 +32,7 @@ The type of damage that is applied to entities that enter the damage range. A li
 
 ### use_self_as_damage_source
 
-If the entity should use itself as the damage source when attacking a target. If set to `false`, the target entity won't retaliate and its `minecraft:damage_sensor` won't be able to identify the attacker as the damage source.
+Whether the entity is treated as the source of the area damage. When true (default), other entities can retaliate against the attacking entity. Set to false to apply damage without making the attacker a valid retaliation target. This item requires a format version of at least 1.26.30.
 
 
 ## Samples

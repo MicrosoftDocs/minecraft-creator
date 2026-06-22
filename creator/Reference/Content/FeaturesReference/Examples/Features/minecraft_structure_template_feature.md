@@ -12,6 +12,9 @@ ms.date: 02/11/2025
 
 Places a structure in the world. The structure must be stored as a .mcstructure file in the `structures` subdirectory of a behavior pack. It is possible to reference structures that are part of other behavior packs, they do not need to come from the same behavior pack as this feature. Constraints can be defined to specify where the structure is allowed to be placed. During placement, the feature will search for a position within the adjustment_radius that satisfies all constraints. If none are found, the structure will not be placed. Succeeds if the structure is placed in the world. Fails if the structure fails to be placed within the world.
 
+> [!Note]
+> This item requires a format version of at least 1.20.30.
+
 
 ## Structure Template Feature Properties
 
@@ -23,11 +26,15 @@ Places a structure in the world. The structure must be stored as a .mcstructure 
 | facing_direction"<"north", "south", "east", "west", "random" | *not set* | String | Direction the structure will face when placed in the world. Defaults to "random" if omitted. | 
 | format_version | *not set* | String |  | 
 | ground_level | *not set* | Integer number | Specifies which Y coordinate of the structure is considered its ground level. | 
-| rotate_around_center | *not set* | Boolean true/false | If true, centers and rotates the structure around the placement position, overriding any specified horizontal "offset". Defaults to "false" if omitted. | 
+| rotate_around_center | false | Boolean true/false | If true, the structure is centered on the placement position before rotation is applied so it rotates around its center rather than its origin corner. | 
 
 ### ground_level
 
 Specifies which Y coordinate of the structure is considered its ground level. This value determines which layer of the structure is checked by the "grounded" and "leveled" constraints and is used as a downward vertical offset during placement. If the value exceeds the structure's height, it is clamped to the maximum valid value and a content warning is emitted. Defaults to 0.
+
+### rotate_around_center
+
+If true, the structure is centered on the placement position before rotation is applied so it rotates around its center rather than its origin corner. This item requires a format version of at least 1.26.20.
 
 
 ### Constraints

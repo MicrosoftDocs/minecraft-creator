@@ -10,10 +10,13 @@ ms.date: 02/11/2025
 
 # Block Components Documentation - minecraft:movable
 
-This defines how a block reacts to being moved by another block like a piston.
+Defines whether the block can be pushed or pulled by a piston. Use movement_type to declare the block as push_pull, push, popped, or immovable; use sticky to opt into same-block grouping similar to slime blocks.
+
+> [!Note]
+> This item requires a format version of at least 1.21.100.
 
 
-## Block Movable Properties
+## Movable Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
