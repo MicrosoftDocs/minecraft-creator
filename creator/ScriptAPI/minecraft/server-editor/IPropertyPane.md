@@ -55,6 +55,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addString](#addstring)
 - [addTagContainer](#addtagcontainer)
 - [addText](#addtext)
+- [addTimelinePlayer](#addtimelineplayer)
 - [addToggleGroup](#addtogglegroup)
 - [addVector2](#addvector2)
 - [addVector3](#addvector3)
@@ -375,6 +376,18 @@ Adds a multiline Text item to the pane.
 - **options**?: *ITextPropertyItemOptions*
 
 **Returns** *ITextPropertyItem*
+
+### **addTimelinePlayer**
+`
+addTimelinePlayer(options?: ITimelinePlayerOptions): ITimelinePlayer
+`
+
+Adds a timeline player pane to the pane. The player owns its own playhead and a collection of timeline entries that share that playhead.
+
+#### **Parameters**
+- **options**?: *ITimelinePlayerOptions*
+
+**Returns** *ITimelinePlayer*
 
 ### **addToggleGroup**
 `

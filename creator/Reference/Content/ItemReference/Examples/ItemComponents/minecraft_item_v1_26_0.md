@@ -437,12 +437,14 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | none | None | |
 | note | Note | |
 | obsidiantear | Obsidiantear | |
+| orangepoplarleaves | Orangepoplarleaves | |
 | paleoakleaves | Paleoakleaves | |
 | pausemobgrowth | Pausemobgrowth | |
 | portal | Portal | |
 | portalreverse | Portalreverse | |
 | rainsplash | Rainsplash | |
 | reddust | Reddust | |
+| redpoplarleaves | Redpoplarleaves | |
 | resetmobgrowth | Resetmobgrowth | |
 | risingborderdust | Risingborderdust | |
 | sculksoul | Sculksoul | |
@@ -475,6 +477,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | windexplosion | Windexplosion | |
 | witchspell | Witchspell | |
 | wolfarmorcrack | Wolfarmorcrack | |
+| yellowpoplarleaves | Yellowpoplarleaves | |
 
 ### Sound Event choices
 

@@ -1012,6 +1012,10 @@
       href: minecraft/server/SoundCompletedAfterEvent.md
     - name: SoundCompletedAfterEventSignal
       href: minecraft/server/SoundCompletedAfterEventSignal.md
+    - name: SoundDefinition
+      href: minecraft/server/SoundDefinition.md
+    - name: SoundDefinitionRegistry
+      href: minecraft/server/SoundDefinitionRegistry.md
     - name: SoundDurationInfo
       href: minecraft/server/SoundDurationInfo.md
     - name: SoundInstance
@@ -1256,6 +1260,12 @@
       href: minecraft/server/ScoreboardObjectiveDisplayOptions.md
     - name: ScriptEventMessageFilterOptions
       href: minecraft/server/ScriptEventMessageFilterOptions.md
+    - name: SoundDefinitionDurationInfo
+      href: minecraft/server/SoundDefinitionDurationInfo.md
+    - name: SoundDefinitionFilter
+      href: minecraft/server/SoundDefinitionFilter.md
+    - name: SoundDefinitionMusicInfo
+      href: minecraft/server/SoundDefinitionMusicInfo.md
     - name: SpawnEntityOptions
       href: minecraft/server/SpawnEntityOptions.md
     - name: SplineAnimation
@@ -1482,12 +1492,16 @@
       href: minecraft/server-editor/TagContainerVariant.md
     - name: ThemeSettingsColorKey
       href: minecraft/server-editor/ThemeSettingsColorKey.md
+    - name: TimelinePlayerPlaybackState
+      href: minecraft/server-editor/TimelinePlayerPlaybackState.md
     - name: WidgetCollisionType
       href: minecraft/server-editor/WidgetCollisionType.md
     - name: WidgetComponentType
       href: minecraft/server-editor/WidgetComponentType.md
     - name: WidgetGizmoEventType
       href: minecraft/server-editor/WidgetGizmoEventType.md
+    - name: WidgetGizmoScaleMode
+      href: minecraft/server-editor/WidgetGizmoScaleMode.md
     - name: WidgetGroupSelectionMode
       href: minecraft/server-editor/WidgetGroupSelectionMode.md
     - name: WidgetMouseButtonActionType
@@ -1944,6 +1958,14 @@
       href: minecraft/server-editor/ITextPropertyItem.md
     - name: ITextPropertyItemOptions
       href: minecraft/server-editor/ITextPropertyItemOptions.md
+    - name: ITimelinePlayer
+      href: minecraft/server-editor/ITimelinePlayer.md
+    - name: ITimelinePlayerEntry
+      href: minecraft/server-editor/ITimelinePlayerEntry.md
+    - name: ITimelinePlayerGroup
+      href: minecraft/server-editor/ITimelinePlayerGroup.md
+    - name: ITimelinePlayerOptions
+      href: minecraft/server-editor/ITimelinePlayerOptions.md
     - name: IToggleGroupPropertyItem
       href: minecraft/server-editor/IToggleGroupPropertyItem.md
     - name: IToggleGroupPropertyItemEntry
@@ -1954,10 +1976,16 @@
       href: minecraft/server-editor/IVector2PropertyItem.md
     - name: IVector2PropertyItemOptions
       href: minecraft/server-editor/IVector2PropertyItemOptions.md
+    - name: IVector3Keyframe
+      href: minecraft/server-editor/IVector3Keyframe.md
     - name: IVector3PropertyItem
       href: minecraft/server-editor/IVector3PropertyItem.md
     - name: IVector3PropertyItemOptions
       href: minecraft/server-editor/IVector3PropertyItemOptions.md
+    - name: IVector3TimelinePlayerEntry
+      href: minecraft/server-editor/IVector3TimelinePlayerEntry.md
+    - name: IVector3TimelinePlayerEntryOptions
+      href: minecraft/server-editor/IVector3TimelinePlayerEntryOptions.md
     - name: IVector3TimelinePropertyItem
       href: minecraft/server-editor/IVector3TimelinePropertyItem.md
     - name: IVector3TimelinePropertyItemEntry
@@ -2306,6 +2334,8 @@
       href: minecraft/server-ui/DropdownItemData.md
     - name: DropdownOptions
       href: minecraft/server-ui/DropdownOptions.md
+    - name: ImageOptions
+      href: minecraft/server-ui/ImageOptions.md
     - name: MessageBoxResult
       href: minecraft/server-ui/MessageBoxResult.md
     - name: ModalFormDataDropdownOptions

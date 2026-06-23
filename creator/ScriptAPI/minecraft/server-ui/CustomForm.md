@@ -19,6 +19,9 @@ A customizable data driven (DDUI) form that lets you add buttons, labels, toggle
 - [divider](#divider)
 - [dropdown](#dropdown)
 - [header](#header)
+::: moniker range="=minecraft-bedrock-experimental"
+- [image](#image)
+::: moniker-end
 - [isShowing](#isshowing)
 - [label](#label)
 - [show](#show)
@@ -167,6 +170,36 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **image**
+`
+image(src: ObservableString | string, pack: ObservableString | string, options?: ImageOptions): CustomForm
+`
+
+Adds an image component to the form layout.
+
+#### **Parameters**
+- **src**: [*ObservableString*](ObservableString.md) | *string*
+  
+  The image source path to display. Must be a relative path to an image file within the provided pack.
+- **pack**: [*ObservableString*](ObservableString.md) | *string*
+  
+  The resource pack identifier that contains the provided image source.
+- **options**?: [*ImageOptions*](ImageOptions.md) = `null`
+  
+  Optional configuration for the image, such as visibility or width.
+
+**Returns** [*CustomForm*](CustomForm.md) - The form instance to allow method chaining.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md), [*InvalidObservableError*](InvalidObservableError.md)
+::: moniker-end
 
 ### **isShowing**
 `

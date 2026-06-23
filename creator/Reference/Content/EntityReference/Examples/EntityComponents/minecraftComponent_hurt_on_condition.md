@@ -73,6 +73,23 @@ List of damage conditions that when met can cause damage to the entity.
 }
 ```
 
+#### [Arrow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/arrow.json)
+
+
+```json
+"minecraft:hurt_on_condition": {
+  "damage_conditions": [
+    {
+      "cause": "lava",
+      "damage_per_tick": 4,
+      "filters": {
+        "test": "in_lava"
+      }
+    }
+  ]
+}
+```
+
 #### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
 
 

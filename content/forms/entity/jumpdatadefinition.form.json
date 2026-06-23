@@ -1,0 +1,38 @@
+{
+  "id": "JumpDataDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "JumpDataDefinition",
+    "title": "Entity JumpDataDefinition",
+    "fields": [
+      {
+        "id": "animation_duration",
+        "title": "Animation Duration",
+        "description": "Duration of the jump animation.",
+        "dataType": "int",
+        "defaultValue": 1
+      },
+      {
+        "id": "distance_scale",
+        "title": "Distance Scale",
+        "description": "The multiplier applied to horizontal velocity when jumping.",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "height",
+        "title": "Height",
+        "description": "The force applied vertically when jumping.",
+        "dataType": "float",
+        "defaultValue": 0.10000000149011612
+      },
+      {
+        "id": "jump_delay",
+        "title": "Jump Delay",
+        "description": "Amount of ticks between sequential jumps.",
+        "dataType": "int",
+        "defaultValue": 30
+      }
+    ]
+  }
+}

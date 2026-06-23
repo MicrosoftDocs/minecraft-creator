@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta"
+    "version": "0.1.0-beta.1.26.40-preview.29"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.40-beta.26 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.40-beta.29 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta`
+- `0.1.0-beta.1.26.40-preview.29`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -100,9 +100,11 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.40-
 - [StructureSource](StructureSource.md)
 - [TagContainerVariant](TagContainerVariant.md)
 - [ThemeSettingsColorKey](ThemeSettingsColorKey.md)
+- [TimelinePlayerPlaybackState](TimelinePlayerPlaybackState.md)
 - [WidgetCollisionType](WidgetCollisionType.md)
 - [WidgetComponentType](WidgetComponentType.md)
 - [WidgetGizmoEventType](WidgetGizmoEventType.md)
+- [WidgetGizmoScaleMode](WidgetGizmoScaleMode.md)
 - [WidgetGroupSelectionMode](WidgetGroupSelectionMode.md)
 - [WidgetMouseButtonActionType](WidgetMouseButtonActionType.md)
 - [WorldGeneratorType](WorldGeneratorType.md)
@@ -403,13 +405,20 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.40-
 - [ITagContainerPropertyItemOptions](ITagContainerPropertyItemOptions.md)
 - [ITextPropertyItem](ITextPropertyItem.md)
 - [ITextPropertyItemOptions](ITextPropertyItemOptions.md)
+- [ITimelinePlayer](ITimelinePlayer.md)
+- [ITimelinePlayerEntry](ITimelinePlayerEntry.md)
+- [ITimelinePlayerGroup](ITimelinePlayerGroup.md)
+- [ITimelinePlayerOptions](ITimelinePlayerOptions.md)
 - [IToggleGroupPropertyItem](IToggleGroupPropertyItem.md)
 - [IToggleGroupPropertyItemEntry](IToggleGroupPropertyItemEntry.md)
 - [IToggleGroupPropertyItemOptions](IToggleGroupPropertyItemOptions.md)
 - [IVector2PropertyItem](IVector2PropertyItem.md)
 - [IVector2PropertyItemOptions](IVector2PropertyItemOptions.md)
+- [IVector3Keyframe](IVector3Keyframe.md)
 - [IVector3PropertyItem](IVector3PropertyItem.md)
 - [IVector3PropertyItemOptions](IVector3PropertyItemOptions.md)
+- [IVector3TimelinePlayerEntry](IVector3TimelinePlayerEntry.md)
+- [IVector3TimelinePlayerEntryOptions](IVector3TimelinePlayerEntryOptions.md)
 - [IVector3TimelinePropertyItem](IVector3TimelinePropertyItem.md)
 - [IVector3TimelinePropertyItemEntry](IVector3TimelinePropertyItemEntry.md)
 - [IVector3TimelinePropertyItemOptions](IVector3TimelinePropertyItemOptions.md)

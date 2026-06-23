@@ -5151,6 +5151,56 @@
             },
             {
               "dataType": "object",
+              "id": "poplar_trunk",
+              "title": "Poplar Trunk",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "object",
+                    "id": "trunk_decoration",
+                    "title": "Trunk Decoration",
+                    "description": "Configuration object for the trunk decoration.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "id": "decoration_blocks_sequence",
+                          "dataType": "objectArray",
+                          "subForm": {
+                            "fields": []
+                          },
+                          "alternates": [
+                            {
+                              "dataType": "stringArray",
+                              "id": "decoration_blocks_sequence",
+                              "title": "Decoration Blocks Sequence",
+                              "isRequired": false
+                            }
+                          ]
+                        },
+                        {
+                          "dataType": "int",
+                          "id": "num_steps",
+                          "title": "Num Steps",
+                          "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": "string",
+                          "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
+                          "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
+                          "description": "Directions to spread decoration blocks.",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": "object",
               "id": "acacia_canopy",
               "title": "Acacia Canopy",
               "isRequired": false,
@@ -5465,6 +5515,54 @@
             },
             {
               "dataType": "object",
+              "id": "poplar_canopy",
+              "title": "Poplar Canopy",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "id": "radius",
+                    "dataType": "objectArray",
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": "int",
+                          "id": "value",
+                          "title": "Value",
+                          "description": "Radius of canopy.",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": "int",
+                          "id": "weight",
+                          "title": "Weight",
+                          "description": "Weight for this entry.",
+                          "isRequired": false
+                        }
+                      ]
+                    },
+                    "alternates": [
+                      {
+                        "dataType": "stringArray",
+                        "id": "radius",
+                        "title": "Radius",
+                        "description": "Randomly selects a radius from this list based on their weighted value.",
+                        "isRequired": true
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": "int",
+                    "id": "trunk_width",
+                    "title": "Trunk Width",
+                    "description": "The width of the tree trunk.",
+                    "isRequired": false
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": "object",
               "id": "roofed_canopy",
               "title": "Roofed Canopy",
               "isRequired": false,
@@ -5763,6 +5861,47 @@
               "title": "Search Radius",
               "description": "'search_radius' specifies the the length in each cardinal direction the filter will check for blocks against the given differences.",
               "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
+        "id": "minecraft:horizontal_tree_decoration_feature",
+        "title": "Horizontal Tree Decoration Feature",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "object",
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "string",
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": "boolean",
+              "id": "allow_adjacent",
+              "title": "Allow Adjacent",
+              "description": "Whether neighbors of the same block type are allowed. Will result in blocks being placed with at least one block gap when set to false",
+              "isRequired": false
+            },
+            {
+              "dataType": "boolean",
+              "id": "bark_side_only",
+              "title": "Bark Side Only",
+              "description": "If true, will never place the block on the 'open' side of a block (imagine the block is a fallen tree trunk).",
+              "isRequired": false
             }
           ]
         }

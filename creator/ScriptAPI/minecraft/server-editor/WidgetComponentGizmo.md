@@ -35,6 +35,30 @@ Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.
 Notes:
   - This property can't be edited in restricted-execution mode.
 
+### **scaleMode**
+`scaleMode: WidgetGizmoScaleMode;`
+
+Type: [*WidgetGizmoScaleMode*](WidgetGizmoScaleMode.md)
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
+
+### **screenScale**
+`screenScale: number;`
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
+
+### **worldScale**
+`worldScale: number;`
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in restricted-execution mode.
+
 ## Methods
 - [setStateChangeEvent](#setstatechangeevent)
 

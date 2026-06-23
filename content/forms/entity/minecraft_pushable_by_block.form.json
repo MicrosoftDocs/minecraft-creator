@@ -9,6 +9,12 @@
     "description": "Allows the entity to be pushed by certain blocks, like Shulker Boxes and Pistons.",
     "fields": [],
     "samples": {
+      "/vanilla/behavior_pack/entities/arrow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable_by_block/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/boat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:pushable_by_block/",
@@ -28,12 +34,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/chest_minecart.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:pushable_by_block/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/chicken.json": [
         {
           "path": "/minecraft:entity/components/minecraft:pushable_by_block/",
           "content": {}

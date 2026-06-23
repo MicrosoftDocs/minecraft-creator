@@ -20,10 +20,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.8.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.40-beta.26 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.40-beta.29 of Minecraft.
 
 ## Available Versions
-- `2.10.0-beta`
+- `2.10.0-beta.1.26.40-preview.29`
 - `2.8.0`
 - `2.7.0`
 - `2.6.0`
@@ -547,6 +547,8 @@ The following API versions are from a major version that is documented here: [*@
 - [SmeltItemFunction](SmeltItemFunction.md)
 - [SoundCompletedAfterEvent](SoundCompletedAfterEvent.md)
 - [SoundCompletedAfterEventSignal](SoundCompletedAfterEventSignal.md)
+- [SoundDefinition](SoundDefinition.md)
+- [SoundDefinitionRegistry](SoundDefinitionRegistry.md)
 - [SoundDurationInfo](SoundDurationInfo.md)
 - [SoundInstance](SoundInstance.md)
 - [SpecificEnchantFunction](SpecificEnchantFunction.md)
@@ -671,6 +673,9 @@ The following API versions are from a major version that is documented here: [*@
 - [RotationKeyFrame](RotationKeyFrame.md)
 - [ScoreboardObjectiveDisplayOptions](ScoreboardObjectiveDisplayOptions.md)
 - [ScriptEventMessageFilterOptions](ScriptEventMessageFilterOptions.md)
+- [SoundDefinitionDurationInfo](SoundDefinitionDurationInfo.md)
+- [SoundDefinitionFilter](SoundDefinitionFilter.md)
+- [SoundDefinitionMusicInfo](SoundDefinitionMusicInfo.md)
 - [SpawnEntityOptions](SpawnEntityOptions.md)
 - [SplineAnimation](SplineAnimation.md)
 - [StructureCreateOptions](StructureCreateOptions.md)

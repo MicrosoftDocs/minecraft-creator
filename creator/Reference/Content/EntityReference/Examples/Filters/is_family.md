@@ -20,7 +20,7 @@ Returns true when the subject entity is a member of the named family.
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bogged: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Arrow: `"other"`, Breeze: `1`, `"damager"` | 
 | test | *not set* | String |  | Arrow: `"is_family"` | 
-| value | *not set* | String | (Required) The Family name to look for | Arrow: `"player"`, `"pillager"`, Bogged: `"wolf"`, `"breeze"`, `"irongolem"`, `"baby_turtle"` | 
+| value | *not set* | String | (Required) The Family name to look for | Arrow: `"player"`, `"mob"`, Bogged: `"wolf"`, `"breeze"`, `"irongolem"`, `"baby_turtle"` | 
 
 ### Operator choices
 
@@ -65,7 +65,7 @@ At Short (using Defaults)..:
 
 #### [Arrow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/arrow.json)
 
-At /minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned/first_valid[0]/filters/all_of[0]/: 
 
 ```json
 {
@@ -75,13 +75,13 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/:
 }
 ```
 
-At /minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/: 
+At /minecraft:entity/events/minecraft:entity_spawned/first_valid[2]/filters/all_of[0]/: 
 
 ```json
 {
   "subject": "other",
   "test": "is_family",
-  "value": "pillager"
+  "value": "mob"
 }
 ```
 
