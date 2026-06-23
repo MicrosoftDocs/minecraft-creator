@@ -169,15 +169,13 @@
           }
         ],
         "samples": {
-          "/vanilla/behavior_pack/entities/arrow.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
-              "content": "hard"
-            }
-          ],
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+              "content": "hard"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[2]/filters/",
               "content": "hard"
             }
           ],
@@ -206,15 +204,13 @@
         "title": "Test",
         "dataType": "string",
         "samples": {
-          "/vanilla/behavior_pack/entities/arrow.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
-              "content": "is_difficulty"
-            }
-          ],
           "/vanilla/behavior_pack/entities/bogged.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+              "content": "is_difficulty"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[2]/filters/",
               "content": "is_difficulty"
             }
           ]
@@ -230,15 +226,6 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"is_difficulty\", \"value\": \"normal\" }"
-        }
-      ],
-      "/vanilla/behavior_pack/entities/arrow.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
-          "content": {
-            "test": "is_difficulty",
-            "value": "hard"
-          }
         }
       ],
       "/vanilla/behavior_pack/entities/bogged.json": [
@@ -389,6 +376,53 @@
         },
         {
           "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[3]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[0]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:ranged_mode/sequence[0]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:ranged_mode/sequence[1]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "operator": "!=",
+            "value": "hard"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[2]/filters/",
           "content": {
             "test": "is_difficulty",
             "operator": "!=",

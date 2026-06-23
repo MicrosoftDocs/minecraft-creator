@@ -54,6 +54,11 @@ Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Type: [*@minecraft/server.StructureRotation*](../../../scriptapi/minecraft/server/StructureRotation.md)
 
+### **scaleMode**
+`scaleMode?: WidgetGizmoScaleMode;`
+
+Type: [*WidgetGizmoScaleMode*](WidgetGizmoScaleMode.md)
+
 ### **showWorldIntersections**
 `showWorldIntersections?: boolean;`
 

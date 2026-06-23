@@ -10,59 +10,58 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:projectile
 
-Allows the entity to be a thrown entity.
+Turns the entity into a projectile: a thrown or shot entity that flies along a ballistic arc and reacts when it impacts a block, a fluid, or another entity.
 
 
 ## Projectile Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| angle_offset | 0 | Decimal number | Determines the angle at which the projectile is thrown. | 
+| anchor | 0 | Integer number | Reference point on the shooter used to position the projectile at spawn: `0` = origin (feet), `1` = eye height, `2` = middle of the bounding box. | 
+| angle_offset | 0 | Decimal number | Additional upwards pitch (in degrees) applied to the shooter's aim direction at launch. Negative values aim downward. | 
 | catch_fire | false | Boolean true/false | Determines whether the entity hit will be set on fire. | 
-| crit_particle_on_hurt | false | Boolean true/false | If true, the projectile will produce additional particles when a critical hit happens. | 
-| destroy_on_hurt | false | Boolean true/false | If true, this entity will be destroyed when hit. | 
-| filter | *not set* | String | Entity definitions listed here cannot be hurt by the projectile. | 
-| fire_affected_by_griefing | false | Boolean true/false | If true, whether the projectile causes fire is affected by the mob griefing game rule. | 
-| gravity | 0.05 | Decimal number | The gravity applied to this entity when thrown. The higher the value, the faster the entity falls. | 
-| hit_nearest_passenger | false | Boolean true/false | If true, when hitting a vehicle, and there's at least one passenger in the vehicle, the damage will be dealt to the passenger closest to the projectile impact point. | 
-| hit_sound | *not set* | String | The sound that plays when the projectile hits something. | 
-| homing | false | Boolean true/false | If true, the projectile homes in on the nearest entity. | 
-| ignored_entities | *not set* | Array of strings | [EXPERIMENTAL] An array of strings defining the types of entities that this entity does not collide with. | 
-| inertia | 0.99 | Decimal number | The fraction of the projectile's speed maintained every frame while traveling in air. | 
-| is_dangerous | false | Boolean true/false | If true, the projectile will be treated as dangerous to the players. | 
+| crit_particle_on_hurt | false | Boolean true/false | If `true`, critical-hit particles are spawned on the projectile when it is struck. | 
+| destroy_on_hurt | false | Boolean true/false | If `true`, the projectile is removed from the world when struck. | 
+| gravity | 0.05 | Decimal number | Downward acceleration (blocks per tick squared) applied each tick while in flight. Higher values make the projectile fall faster. | 
+| hit_ground_sound | *not set* | String | Identifier of the sound to play when the projectile hits a block. Defaults to `hit_sound` when empty. | 
+| hit_nearest_passenger | false | Boolean true/false | If `true`, when the projectile hits a vehicle with at least one passenger, the on-hit behavior is applied to the passenger closest to the impact point instead of the vehicle itself. | 
+| hit_sound | *not set* | String | Identifier of the sound to play when the projectile hits an entity. Also used for block hits when `hit_ground_sound` is not specified. | 
+| homing | false | Boolean true/false | If `true`, the projectile steers towards an active target while in flight. | 
+| ignored_entities | *not set* | Array of strings | Array of entity identifiers that the projectile will pass through without registering a hit. | 
+| inertia | 0.99 | Decimal number | Fraction of the projectile's velocity preserved each tick while traveling through air. Values below `1.0` cause it to slow down over time. | 
+| is_dangerous | false | Boolean true/false | If `true`, the projectile is flagged as dangerous, affecting AI reactions and certain client-side behaviors. | 
 | isolated_physics | true | Boolean true/false | If true, this projectile is not affected by outside forces such as friction and drag. | 
-| knockback | true | Boolean true/false | If true, the projectile will knock back the entity it hits. | 
-| lightning | false | Boolean true/false | If true, the entity hit will be struck by lightning. | 
-| liquid_inertia | 0.6 | Decimal number | The fraction of the projectile's speed maintained every frame while traveling in water. | 
-| multiple_targets | true | Boolean true/false | If true, the projectile can hit multiple entities per flight. | 
-| offset | [0, 0, 0] | x, y, z coordinate array | The offset from the entity's anchor where the projectile will spawn. | 
-| on_fire_time | 5 | Decimal number | Time in seconds that the entity hit will be on fire. | 
-| owner_launch_immunity_ticks | 5 | Integer number | Number of ticks after launch during which the projectile cannot hit its owner. | 
-| particle | iconcrack | String | Particle to use upon collision. | 
-| potion_effect | -1 | Integer number | Defines the effect the arrow will apply to the entity it hits. | 
-| power | 1.3 | Decimal number | Determines the velocity of the projectile. | 
-| reflect_immunity | 0 | Decimal number | During the specified time, in seconds, the projectile cannot be reflected by hitting it. | 
+| lightning | false | Boolean true/false | If `true`, the projectile can channel a lightning bolt when it hits an entity during a thunderstorm. | 
+| liquid_inertia | 0.6 | Decimal number | Fraction of the projectile's velocity preserved each tick while traveling through a fluid. | 
+| multiple_targets | true | Boolean true/false | If `true`, the projectile can hit more than one entity over the course of its flight; if `false`, it stops at the first entity it hits. | 
+| offset | Vec3(0,0,0) | x, y, z coordinate array | Offset, relative to the `anchor`, at which the projectile is spawned when fired by the shooter. | 
+| on_fire_time | 5 | Decimal number | Duration in seconds for which an entity set on fire by this projectile remains burning. Applied both by the legacy top-level `catch_fire` flag and by the `catch_fire` on-hit subcomponent. | 
+| on_hit | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Map of on-hit subcomponents that drive what happens when the projectile impacts a block, fluid, or entity. Each key is a subcomponent name and its value is that subcomponent's configuration. | 
+| owner_launch_immunity_ticks | 5 | Integer number | Number of ticks immediately after launch during which the projectile cannot hit its own shooter. | 
+| particle | iconcrack | String | Particle effect emitted at the impact location when the projectile hits something. | 
+| potion_effect | -1 | Integer number | Default potion aux value associated with the projectile. | 
+| power | 1.3 | Decimal number | Initial speed (in blocks per tick) at which the projectile is launched. | 
+| reflect_immunity | 0 | Decimal number | Duration in seconds after launch during which the projectile cannot be reflected by being struck. | 
 | reflect_on_hurt | false | Boolean true/false | If true, this projectile will be reflected back when hit by another projectile or by taking damage. | 
-| semi_random_diff_damage | false | Boolean true/false | If true, damage will be randomized based on damage and speed. | 
-| shoot_sound | *not set* | String | The sound that plays when the projectile is shot. | 
-| shoot_target | true | Boolean true/false | If true, the projectile will be shot towards the target of the entity firing it. | 
-| should_bounce | false | Boolean true/false | If true, the projectile will bounce upon hit. | 
-| splash_potion | false | Boolean true/false | If true, the projectile will be treated like a splash potion. | 
-| splash_range | 4 | Decimal number | Radius in blocks of the 'splash' effect. | 
-| uncertainty_base | 0 | Decimal number | The base accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier. | 
-| uncertainty_multiplier | 0 | Decimal number | Determines how much difficulty affects accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier. | 
+| shoot_sound | *not set* | String | Identifier of the sound to play when the projectile is fired. | 
+| shoot_target | true | Boolean true/false | If `true`, the projectile is aimed at the shooter's current target (when one exists) rather than straight ahead. | 
+| should_bounce | false | Boolean true/false | If `true`, the projectile bounces off surfaces and entities on impact instead of stopping. | 
+| splash_range | 4 | Decimal number | Splash radius (in blocks) used when applying potion effects via the splash/lingering potion code path. | 
+| stop_on_hurt | false | Boolean true/false | If `true`, the projectile has its velocity zeroed out when struck. | 
+| uncertainty_base | 0 | Decimal number | Base inaccuracy added to the launch direction. The total inaccuracy is `uncertainty_base - difficultyLevel * uncertainty_multiplier`. | 
+| uncertainty_multiplier | 0 | Decimal number | Per-difficulty-level reduction in inaccuracy. See `uncertainty_base` for the full formula. | 
 
 ### catch_fire
 
 Determines whether the entity hit will be set on fire. Note: the presence of this field in the component definition causes targets to catch fire regardless of the value set. To prevent fire, remove this field entirely from the component.
 
-### hit_nearest_passenger
-
-If true, when hitting a vehicle, and there's at least one passenger in the vehicle, the damage will be dealt to the passenger closest to the projectile impact point. If there are no passengers, this setting does nothing.
-
 ### isolated_physics
 
 If true, this projectile is not affected by outside forces such as friction and drag. This item requires a format version of at least 1.26.20. Available under the Custom Projectiles experimental toggle starting in format version 1.26.20.
+
+### potion_effect
+
+Default potion aux value associated with the projectile. Normally set programmatically by potion items; rarely useful at authoring time. A value matching the water potion is required for the `douse_fire` on-hit subcomponent to extinguish fires.
 
 ### reflect_on_hurt
 

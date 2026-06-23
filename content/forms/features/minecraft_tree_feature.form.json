@@ -2095,6 +2095,56 @@
       },
       {
         "dataType": "object",
+        "id": "poplar_trunk",
+        "title": "Poplar Trunk",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "object",
+              "id": "trunk_decoration",
+              "title": "Trunk Decoration",
+              "description": "Configuration object for the trunk decoration.",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "id": "decoration_blocks_sequence",
+                    "dataType": "objectArray",
+                    "subForm": {
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "dataType": "stringArray",
+                        "id": "decoration_blocks_sequence",
+                        "title": "Decoration Blocks Sequence",
+                        "isRequired": false
+                      }
+                    ]
+                  },
+                  {
+                    "dataType": "int",
+                    "id": "num_steps",
+                    "title": "Num Steps",
+                    "description": "Number of decoration blocks to place. (Will not be used if \"decoration_blocks_sequence\" given)",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": "string",
+                    "id": "step_direction\"<\"down\", \"up\", \"out\", \"away\"",
+                    "title": "Step Direction\"<\"down\", \"up\", \"out\", \"away\"",
+                    "description": "Directions to spread decoration blocks.",
+                    "isRequired": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
         "id": "acacia_canopy",
         "title": "Acacia Canopy",
         "isRequired": false,
@@ -2403,6 +2453,54 @@
               "title": "Base Radius",
               "description": "Radius of the canopy.",
               "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
+        "id": "poplar_canopy",
+        "title": "Poplar Canopy",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "id": "radius",
+              "dataType": "objectArray",
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "int",
+                    "id": "value",
+                    "title": "Value",
+                    "description": "Radius of canopy.",
+                    "isRequired": false
+                  },
+                  {
+                    "dataType": "int",
+                    "id": "weight",
+                    "title": "Weight",
+                    "description": "Weight for this entry.",
+                    "isRequired": false
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "dataType": "stringArray",
+                  "id": "radius",
+                  "title": "Radius",
+                  "description": "Randomly selects a radius from this list based on their weighted value.",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "dataType": "int",
+              "id": "trunk_width",
+              "title": "Trunk Width",
+              "description": "The width of the tree trunk.",
+              "isRequired": false
             }
           ]
         }

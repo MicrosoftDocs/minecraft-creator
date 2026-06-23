@@ -10,6 +10,9 @@ ms.date: 06/22/2026
 
 # Toss Lab: Build a Physics Puzzle Game with Lobbable Objects
 
+> [!VIDEO https://www.youtube.com/embed/kbhZVGNv8Yg]
+*Video version of this article from the Minecraft Creator Channel*
+
 With new physics-related components for entities introduced in Minecraft as part of the [Chaos Cubed game drop](https://www.minecraft.net/article/play-chaos-cubed-today), adding physics-based effects to your mobs becomes much easier.  In this tour of the "artillery"/side scroller game "Toss Lab", we'll explore all of those new components and tools in a game.
 
 Our job here is to walk you through the interesting parts - the physics components - and explain what makes each lobbable object behave the way it does. Once you understand the components, you can mix them yourself to make whatever physics personalities your game needs.
@@ -44,6 +47,7 @@ You can find the Toss Lab sample we're walking through in the [Minecraft Samples
 
 - Download the zip and, in your favorite editor, examine the code as a plain folder of behavior- and resource-pack files.
 - Download the repository and use the Node.js/NPM tools to 'npm run local-deploy' the file from your device
+- Check the [Releases section on the minecraft-samples repo](https://github.com/microsoft/minecraft-samples/releases) if you just want the mcaddon file.
 
 Throughout this tutorial, the sample's identifiers all live under the toss_lab: namespace  — `toss_lab:rubber_sphere`, `toss_lab:heavy_stone`, and so on. When you're building your own variants, don't forget to swap that for your own namespace.
 

@@ -264,6 +264,10 @@
             "title": "Obsidiantear"
           },
           {
+            "id": "orangepoplarleaves",
+            "title": "Orangepoplarleaves"
+          },
+          {
             "id": "paleoakleaves",
             "title": "Paleoakleaves"
           },
@@ -286,6 +290,10 @@
           {
             "id": "reddust",
             "title": "Reddust"
+          },
+          {
+            "id": "redpoplarleaves",
+            "title": "Redpoplarleaves"
           },
           {
             "id": "resetmobgrowth",
@@ -414,6 +422,10 @@
           {
             "id": "wolfarmorcrack",
             "title": "Wolfarmorcrack"
+          },
+          {
+            "id": "yellowpoplarleaves",
+            "title": "Yellowpoplarleaves"
           }
         ],
         "defaultValue": "none"

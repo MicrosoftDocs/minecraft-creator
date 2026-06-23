@@ -62,6 +62,8 @@ Type of item that can be added to the property pane
 `TagContainer = editorUI:TagContainer`
 ### **Text**
 `Text = editorUI:Text`
+### **TimelinePlayer**
+`TimelinePlayer = editorUI:TimelinePlayer`
 ### **ToggleGroup**
 `ToggleGroup = editorUI:ToggleGroup`
 ### **Vector2**

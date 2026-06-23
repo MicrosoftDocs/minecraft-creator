@@ -4061,14 +4061,16 @@
       {
         "id": "minecraft:jump.dynamic",
         "title": "Dynamic Minecraft Jump",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.Requires `minecraft:movement.skip` to be used.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_jump_dynamic"
       },
       {
         "id": "minecraft:jump.static",
         "title": "Static Minecraft Jump",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Gives the entity the ability to jump.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_jump_static"
       },
       {
         "id": "minecraft:knockback_resistance",
@@ -4137,9 +4139,8 @@
         "dataType": "object"
       },
       {
-        "id": "minecraft:memory_sensor.find_nearest_poi",
-        "title": "Find Nearest Poi Minecraft Memory Sensor",
-        "description": "Dynamic value",
+        "id": "minecraft:memory_sensor.game_event",
+        "title": "Game Event Minecraft Memory Sensor",
         "dataType": "object"
       },
       {
@@ -4278,6 +4279,11 @@
         "id": "minecraft:navigation.walk",
         "title": "Walk Minecraft Navigation",
         "description": "Dynamic value",
+        "dataType": "object"
+      },
+      {
+        "id": "minecraft:not_pickable_from_inside",
+        "title": "Minecraft Not Pickable From Inside",
         "dataType": "object"
       },
       {

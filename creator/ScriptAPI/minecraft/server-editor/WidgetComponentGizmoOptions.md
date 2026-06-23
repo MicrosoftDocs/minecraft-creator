@@ -29,6 +29,11 @@ Type: *boolean*
 
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
+### **scaleMode**
+`scaleMode?: WidgetGizmoScaleMode;`
+
+Type: [*WidgetGizmoScaleMode*](WidgetGizmoScaleMode.md)
+
 ### **stateChangeEvent**
 `stateChangeEvent?: (arg0: WidgetComponentGizmoStateChangeEventParameters) => void;`
 

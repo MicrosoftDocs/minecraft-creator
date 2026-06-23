@@ -1,0 +1,41 @@
+{
+  "id": "minecraft:horizontal_tree_decoration_feature",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:horizontal_tree_decoration_feature",
+    "title": "Horizontal Tree Decoration Feature",
+    "fields": [
+      {
+        "dataType": "object",
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "string",
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "boolean",
+        "id": "allow_adjacent",
+        "title": "Allow Adjacent",
+        "description": "Whether neighbors of the same block type are allowed. Will result in blocks being placed with at least one block gap when set to false",
+        "isRequired": false
+      },
+      {
+        "dataType": "boolean",
+        "id": "bark_side_only",
+        "title": "Bark Side Only",
+        "description": "If true, will never place the block on the 'open' side of a block (imagine the block is a fallen tree trunk).",
+        "isRequired": false
+      }
+    ]
+  }
+}

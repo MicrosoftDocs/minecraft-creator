@@ -13,11 +13,11 @@ ms.date: 02/11/2025
 Gives the entity the ability to jump.
 
 
-## Static Jump Properties
+## Entity Static Jump Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| jump_power | 0.42 | Decimal number | The initial vertical velocity for the jump. | 
+| jump_power | 0.41999998688697815 | Decimal number | The initial vertical velocity for the jump. | 
 
 ## Samples
 

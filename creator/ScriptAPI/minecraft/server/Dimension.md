@@ -38,13 +38,13 @@ Key for the localization of a dimension's name used by language files.
 Type: *string*
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
+- [calculateClosestBiomeFromSeed](#calculateclosestbiomefromseed)
+::: moniker-end
 - [containsBiomes](#containsbiomes)
 - [containsBlock](#containsblock)
 - [createExplosion](#createexplosion)
 - [fillBlocks](#fillblocks)
-::: moniker range="=minecraft-bedrock-experimental"
-- [findClosestBiome](#findclosestbiome)
-::: moniker-end
 - [getBiome](#getbiome)
 - [getBlock](#getblock)
 - [getBlockAbove](#getblockabove)
@@ -83,6 +83,35 @@ Type: *string*
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [stopSound](#stopsound)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **calculateClosestBiomeFromSeed**
+`
+calculateClosestBiomeFromSeed(pos: Vector3, biomeToFind: BiomeType | string, options?: BiomeSearchOptions): Vector3 | undefined
+`
+
+Calculates the location of the closest biome of a particular type from the world seed. Note that calculateClosestBiomeFromSeed can be an expensive operation, so avoid using many of these calls within a particular tick. The result is derived purely from the world generation algorithm and the world seed, so the returned location may not reflect the actual current terrain if biomes have been modified after generation.
+
+#### **Parameters**
+- **pos**: [*Vector3*](Vector3.md)
+  
+  Starting location to look for a biome to find.
+- **biomeToFind**: [*BiomeType*](BiomeType.md) | *string*
+  
+  Identifier of the biome to look for.
+- **options**?: [*BiomeSearchOptions*](BiomeSearchOptions.md) = `null`
+  
+  Additional selection criteria for a biome search.
+
+**Returns** [*Vector3*](Vector3.md) | *undefined* - Returns a location of the biome, or undefined if a biome could not be found.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
 ::: moniker-end
 
 ### **containsBiomes**
@@ -235,35 +264,6 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **findClosestBiome**
-`
-findClosestBiome(pos: Vector3, biomeToFind: BiomeType | string, options?: BiomeSearchOptions): Vector3 | undefined
-`
-
-Finds the location of the closest biome of a particular type. Note that the findClosestBiome operation can take some time to complete, so avoid using many of these calls within a particular tick.
-
-#### **Parameters**
-- **pos**: [*Vector3*](Vector3.md)
-  
-  Starting location to look for a biome to find.
-- **biomeToFind**: [*BiomeType*](BiomeType.md) | *string*
-  
-  Identifier of the biome to look for.
-- **options**?: [*BiomeSearchOptions*](BiomeSearchOptions.md) = `null`
-  
-  Additional selection criteria for a biome search.
-
-**Returns** [*Vector3*](Vector3.md) | *undefined* - Returns a location of the biome, or undefined if a biome could not be found.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-  
-Notes:
-- This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
-::: moniker-end
 
 ### **getBiome**
 `
