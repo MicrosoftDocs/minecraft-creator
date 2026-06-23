@@ -114,6 +114,18 @@ The world seed.
 
 Type: *string*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **soundDefinitionRegistry**
+`read-only soundDefinitionRegistry: SoundDefinitionRegistry;`
+
+Provides read-only access to the sound definitions loaded for this world.
+
+Type: [*SoundDefinitionRegistry*](SoundDefinitionRegistry.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **structureManager**
 `read-only structureManager: StructureManager;`
 

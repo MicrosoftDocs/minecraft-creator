@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server-ui` module
 # `@minecraft/server-ui` Changelog
 
 ## Version Changes
-- [2.2.0-beta](#220-beta)
+- [2.2.0-beta.1.26.40-preview.29](#220-beta12640-preview29)
 - [2.1.0](#210)
 - [2.0.0](#200)
 - [1.3.0](#130)
@@ -18,8 +18,10 @@ description: Changelog of the `@minecraft/server-ui` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.2.0-beta
-#### Added module peer dependency `@minecraft/server@2.10.0-beta`
+## 2.2.0-beta.1.26.40-preview.29
+#### Added module peer dependency `@minecraft/server@2.10.0-beta.1.26.40-preview.29`
+#### Changed *[`CustomForm`](CustomForm.md)*
+- Added function *[`image`](CustomForm.md#image)*
 ## 2.1.0
 #### Added *[`CustomForm`](CustomForm.md)*
 #### Added *[`MessageBox`](MessageBox.md)*

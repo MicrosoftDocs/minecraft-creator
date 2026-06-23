@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.10.0-beta](#2100-beta)
+- [2.10.0-beta.1.26.40-preview.29](#2100-beta12640-preview29)
 - [2.8.0](#280)
 - [2.7.0](#270)
 - [2.6.0](#260)
@@ -41,7 +41,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.10.0-beta
+## 2.10.0-beta.1.26.40-preview.29
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -107,7 +107,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
 #### Changed *[`Dimension`](Dimension.md)*
-- Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
+- Added function *[`calculateClosestBiomeFromSeed`](Dimension.md#calculateclosestbiomefromseed)*
 - Changed function *[`getBlocks`](Dimension.md#getblocks)*
   - Added argument `options`
   - Removed argument `filter`
@@ -158,6 +158,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getPing`](Player.md#getping)*
 - Added function *[`getSplitScreenSlot`](Player.md#getsplitscreenslot)*
+- Changed function *[`playSound`](Player.md#playsound)*
+  - Changed argument `soundId` type from *string* to [*SoundDefinition*](SoundDefinition.md) | *string*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
 - Added function *[`stopSound`](Player.md#stopsound)*
@@ -180,6 +182,8 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`patterns`](SetBannerDetailsFunction.md#patterns)*
 #### Added *[`SoundCompletedAfterEvent`](SoundCompletedAfterEvent.md)*
 #### Added *[`SoundCompletedAfterEventSignal`](SoundCompletedAfterEventSignal.md)*
+#### Added *[`SoundDefinition`](SoundDefinition.md)*
+#### Added *[`SoundDefinitionRegistry`](SoundDefinitionRegistry.md)*
 #### Added *[`SoundDurationInfo`](SoundDurationInfo.md)*
 #### Changed *[`SoundInstance`](SoundInstance.md)*
 - Added property *[`durationInfo`](SoundInstance.md#durationinfo)*
@@ -199,6 +203,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
 - Added property *[`allowCheats`](World.md#allowcheats)*
+- Added property *[`soundDefinitionRegistry`](World.md#sounddefinitionregistry)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
