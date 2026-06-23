@@ -134,5 +134,51 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:jump.static",
+    "title": "Entity Static Jump",
+    "description": "Gives the entity the ability to jump.",
+    "fields": [
+      {
+        "id": "jump_power",
+        "title": "Jump Power",
+        "description": "The initial vertical velocity for the jump.",
+        "dataType": "float",
+        "defaultValue": 0.41999998688697815
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:jump.static/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:jump.static/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:jump.static/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:jump.static/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:jump.static/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

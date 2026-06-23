@@ -19,8 +19,8 @@ Tests the current difficulty level of the game.
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bogged: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| test | *not set* | String |  | Arrow: `"is_difficulty"` | 
-| value | *not set* | [Value](#value-choices) choices | (Required) The game's difficulty level to test | Arrow: `"hard"`, Cave Spider: `"easy"`, `"normal"` | 
+| test | *not set* | String |  | Bogged: `"is_difficulty"` | 
+| value | *not set* | [Value](#value-choices) choices | (Required) The game's difficulty level to test | Bogged: `"hard"`, Cave Spider: `"easy"`, `"normal"` | 
 
 ### Operator choices
 
@@ -72,8 +72,9 @@ At Short (using Defaults)..:
 { "test": "is_difficulty", "value": "normal" }
 ```
 
-#### [Arrow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/arrow.json)
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers[2]/filters/: 
 
 ```json
 {
@@ -81,8 +82,6 @@ At Short (using Defaults)..:
   "value": "hard"
 }
 ```
-
-#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
 At /minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:environment_sensor/triggers[2]/filters/: 
 

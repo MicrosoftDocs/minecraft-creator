@@ -87,3 +87,12 @@ At Short (using Defaults)..:
   "value": true
 }
 ```
+
+#### [Arrow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/arrow.json)
+
+
+```json
+{
+  "test": "in_lava"
+}
+```

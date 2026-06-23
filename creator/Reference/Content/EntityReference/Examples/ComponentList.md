@@ -118,7 +118,7 @@ ms.date: 02/11/2025
 | [minecraft:is_tamed](EntityComponents/minecraftComponent_is_tamed.md)| Sets that this entity is currently tamed. |
 | [minecraft:item_controllable](EntityComponents/minecraftComponent_item_controllable.md)| Defines what items can be used to control this entity while ridden. |
 | [minecraft:item_hopper](EntityComponents/minecraftComponent_item_hopper.md)| Determines that this entity is an item hopper. |
-| [minecraft:jump.dynamic](EntityComponents/minecraftComponent_jump.dynamic.md)| Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob. |
+| [minecraft:jump.dynamic](EntityComponents/minecraftComponent_jump.dynamic.md)| Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.Requires `minecraft:movement.skip` to be used. |
 | [minecraft:jump.static](EntityComponents/minecraftComponent_jump.static.md)| Gives the entity the ability to jump. |
 | [minecraft:knockback_resistance](EntityComponents/minecraftComponent_knockback_resistance.md)| Determines an entity's resistance to knockback from melee attacks. |
 | [minecraft:lava_movement](EntityComponents/minecraftComponent_lava_movement.md)| Allows a custom movement speed across lava blocks. |
@@ -160,7 +160,7 @@ ms.date: 02/11/2025
 | [minecraft:player.level](EntityComponents/minecraftComponent_player.level.md)| Defines the player's level. |
 | [minecraft:player.saturation](EntityComponents/minecraftComponent_player.saturation.md)| Defines the player's need for food. |
 | [minecraft:preferred_path](EntityComponents/minecraftComponent_preferred_path.md)| Specifies costing information for mobs that prefer to walk on preferred paths. |
-| [minecraft:projectile](EntityComponents/minecraftComponent_projectile.md)| Allows the entity to be a thrown entity. |
+| [minecraft:projectile](EntityComponents/minecraftComponent_projectile.md)| Turns the entity into a projectile: a thrown or shot entity that flies along a ballistic arc and reacts when it impacts a block, a fluid, or another entity. |
 | [minecraft:pushable](EntityComponents/minecraftComponent_pushable.md)| Defines what can push an entity between other entities and pistons. |
 | [minecraft:pushable_by_block](EntityComponents/minecraftComponent_pushable_by_block.md)| Allows the entity to be pushed by certain blocks, like Shulker Boxes and Pistons. |
 | [minecraft:pushable_by_entity](EntityComponents/minecraftComponent_pushable_by_entity.md)| Allows an entity to be pushed by other entities. |

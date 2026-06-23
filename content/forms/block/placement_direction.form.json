@@ -103,7 +103,7 @@
       {
         "id": "y_rotation_offset",
         "title": "y Rotation Offset",
-        "description": "The y rotation offset to apply to the block. Must be [0.0, 90.0, 180.0, 270.0, 360.0]. Default is 0, meaning if the player is facing north, the \"minecraft:cardinal_direction\" and/or \"minecraft:facing_direction\" state will be north.",
+        "description": "The y rotation offset to apply to the block. Must be [0.0, 90.0, 180.0, 270.0, 360.0]. Default is 0, meaning if the player is facing north, the \"minecraft:cardinal_direction\", \"minecraft:facing_direction\", and/or \"minecraft:sixteen_way_rotation\" state will be north.",
         "dataType": "float",
         "validity": [
           {

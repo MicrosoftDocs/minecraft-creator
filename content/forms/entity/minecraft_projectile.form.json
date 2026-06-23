@@ -40,243 +40,231 @@
   "generated_doNotEdit": {
     "id": "minecraft:projectile",
     "title": "Projectile",
-    "description": "Allows the entity to be a thrown entity.",
+    "description": "Turns the entity into a projectile: a thrown or shot entity that flies along a ballistic arc and reacts when it impacts a block, a fluid, or another entity.",
     "fields": [
+      {
+        "id": "anchor",
+        "title": "Anchor",
+        "description": "Reference point on the shooter used to position the projectile at spawn: `0` = origin (feet), `1` = eye height, `2` = middle of the bounding box.",
+        "defaultValue": 0,
+        "dataType": "int"
+      },
       {
         "id": "angle_offset",
         "title": "Angle Offset",
-        "description": "Determines the angle at which the projectile is thrown.",
+        "description": "Additional upwards pitch (in degrees) applied to the shooter's aim direction at launch. Negative values aim downward.",
         "defaultValue": 0,
         "dataType": "float"
       },
       {
         "id": "catch_fire",
         "title": "Catch Fire",
-        "description": "If true, the entity hit will be set on fire.",
+        "description": "Legacy default for whether the projectile sets the entity hit on fire. Prefer the `catch_fire` on-hit subcomponent.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "crit_particle_on_hurt",
         "title": "Crit Particle On Hurt",
-        "description": "If true, the projectile will produce additional particles when a critical hit happens.",
+        "description": "If `true`, critical-hit particles are spawned on the projectile when it is struck.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "destroy_on_hurt",
         "title": "Destroy On Hurt",
-        "description": "If true, this entity will be destroyed when hit.",
-        "defaultValue": false,
-        "dataType": "boolean"
-      },
-      {
-        "id": "filter",
-        "title": "Filter",
-        "description": "Entity definitions listed here cannot be hurt by the projectile.",
-        "dataType": "string"
-      },
-      {
-        "id": "fire_affected_by_griefing",
-        "title": "Fire Affected By Griefing",
-        "description": "If true, whether the projectile causes fire is affected by the mob griefing game rule.",
+        "description": "If `true`, the projectile is removed from the world when struck.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "gravity",
         "title": "Gravity",
-        "description": "The gravity applied to this entity when thrown. The higher the value, the faster the entity falls.",
+        "description": "Downward acceleration (blocks per tick squared) applied each tick while in flight. Higher values make the projectile fall faster.",
         "defaultValue": 0.05,
         "dataType": "float"
       },
       {
+        "id": "hit_ground_sound",
+        "title": "Hit Ground Sound",
+        "description": "Identifier of the sound to play when the projectile hits a block. Defaults to `hit_sound` when empty.",
+        "dataType": "string"
+      },
+      {
         "id": "hit_nearest_passenger",
         "title": "Hit Nearest Passenger",
-        "description": "If true, when hitting a vehicle, and there's at least one passenger in the vehicle, the damage will be dealt to the passenger closest to the projectile impact point. If there are no passengers, this setting does nothing.",
+        "description": "If `true`, when the projectile hits a vehicle with at least one passenger, the on-hit behavior is applied to the passenger closest to the impact point instead of the vehicle itself.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "hit_sound",
         "title": "Hit Sound",
-        "description": "The sound that plays when the projectile hits something.",
+        "description": "Identifier of the sound to play when the projectile hits an entity. Also used for block hits when `hit_ground_sound` is not specified.",
         "dataType": "string"
       },
       {
         "id": "homing",
         "title": "Homing",
-        "description": "If true, the projectile homes in on the nearest entity.",
+        "description": "If `true`, the projectile steers towards an active target while in flight.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "ignored_entities",
         "title": "Ignored Entities",
-        "description": "[EXPERIMENTAL] An array of strings defining the types of entities that this entity does not collide with.",
+        "description": "Array of entity identifiers that the projectile will pass through without registering a hit.",
         "dataType": "stringArray"
       },
       {
         "id": "inertia",
         "title": "Inertia",
-        "description": "The fraction of the projectile's speed maintained every frame while traveling in air.",
+        "description": "Fraction of the projectile's velocity preserved each tick while traveling through air. Values below `1.0` cause it to slow down over time.",
         "defaultValue": 0.99,
         "dataType": "float"
       },
       {
         "id": "is_dangerous",
         "title": "Is Dangerous",
-        "description": "If true, the projectile will be treated as dangerous to the players.",
+        "description": "If `true`, the projectile is flagged as dangerous, affecting AI reactions and certain client-side behaviors.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "isolated_physics",
         "title": "Isolated Physics",
-        "description": "If true, this projectile will not be affected by outside forces such as friction and drag.",
-        "defaultValue": true,
-        "dataType": "boolean"
-      },
-      {
-        "id": "knockback",
-        "title": "Knockback",
-        "description": "If true, the projectile will knock back the entity it hits.",
+        "description": "If `true`, the projectile uses a dedicated ballistic physics path and ignores generic actor movement systems (friction, drag, etc.). Recommended for custom projectiles.",
         "defaultValue": true,
         "dataType": "boolean"
       },
       {
         "id": "lightning",
         "title": "Lightning",
-        "description": "If true, the entity hit will be struck by lightning.",
+        "description": "If `true`, the projectile can channel a lightning bolt when it hits an entity during a thunderstorm.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "liquid_inertia",
         "title": "Liquid Inertia",
-        "description": "The fraction of the projectile's speed maintained every frame while traveling in water.",
+        "description": "Fraction of the projectile's velocity preserved each tick while traveling through a fluid.",
         "defaultValue": 0.6,
         "dataType": "float"
       },
       {
         "id": "multiple_targets",
         "title": "Multiple Targets",
-        "description": "If true, the projectile can hit multiple entities per flight.",
+        "description": "If `true`, the projectile can hit more than one entity over the course of its flight; if `false`, it stops at the first entity it hits.",
         "defaultValue": true,
         "dataType": "boolean"
       },
       {
         "id": "offset",
         "title": "Offset",
-        "description": "The offset from the entity's anchor where the projectile will spawn.",
-        "defaultValue": [
-          0,
-          0,
-          0
-        ],
+        "description": "Offset, relative to the `anchor`, at which the projectile is spawned when fired by the shooter.",
+        "defaultValue": "Vec3(0,0,0)",
         "dataType": "point3"
       },
       {
         "id": "on_fire_time",
         "title": "Fire Time",
-        "description": "Time in seconds that the entity hit will be on fire.",
+        "description": "Duration in seconds for which an entity set on fire by this projectile remains burning. Applied both by the legacy top-level `catch_fire` flag and by the `catch_fire` on-hit subcomponent.",
         "defaultValue": 5,
         "dataType": "float"
       },
       {
+        "id": "on_hit",
+        "title": "Hit",
+        "description": "Map of on-hit subcomponents that drive what happens when the projectile impacts a block, fluid, or entity. Each key is a subcomponent name and its value is that subcomponent's configuration.",
+        "dataType": "minecraftEventTrigger"
+      },
+      {
         "id": "owner_launch_immunity_ticks",
         "title": "Owner Launch Immunity Ticks",
-        "description": "Number of ticks after launch during which the projectile cannot hit its owner.",
+        "description": "Number of ticks immediately after launch during which the projectile cannot hit its own shooter.",
         "defaultValue": 5,
         "dataType": "int"
       },
       {
         "id": "particle",
         "title": "Particle",
-        "description": "Particle to use upon collision.",
+        "description": "Particle effect emitted at the impact location when the projectile hits something.",
         "defaultValue": "iconcrack",
         "dataType": "string"
       },
       {
         "id": "potion_effect",
         "title": "Potion Effect",
-        "description": "Defines the effect the arrow will apply to the entity it hits.",
+        "description": "Default potion aux value associated with the projectile. Normally set programmatically by potion items; rarely useful at authoring time. A value matching the water potion is required for the `douse_fire` on-hit subcomponent to extinguish fires.",
         "defaultValue": -1,
         "dataType": "int"
       },
       {
         "id": "power",
         "title": "Power",
-        "description": "Determines the velocity of the projectile.",
+        "description": "Initial speed (in blocks per tick) at which the projectile is launched.",
         "defaultValue": 1.3,
         "dataType": "float"
       },
       {
         "id": "reflect_immunity",
         "title": "Reflect Immunity",
-        "description": "During the specified time, in seconds, the projectile cannot be reflected by hitting it.",
+        "description": "Duration in seconds after launch during which the projectile cannot be reflected by being struck.",
         "defaultValue": 0,
         "dataType": "float"
       },
       {
         "id": "reflect_on_hurt",
         "title": "Reflect On Hurt",
-        "description": "If true, this entity will be reflected back when hit.",
-        "defaultValue": false,
-        "dataType": "boolean"
-      },
-      {
-        "id": "semi_random_diff_damage",
-        "title": "Semi Random Diff Damage",
-        "description": "If true, damage will be randomized based on damage and speed.",
+        "description": "If `true`, the projectile reverses direction when struck, reflecting back towards the attacker.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "shoot_sound",
         "title": "Shoot Sound",
-        "description": "The sound that plays when the projectile is shot.",
+        "description": "Identifier of the sound to play when the projectile is fired.",
         "dataType": "string"
       },
       {
         "id": "shoot_target",
         "title": "Shoot Target",
-        "description": "If true, the projectile will be shot towards the target of the entity firing it.",
+        "description": "If `true`, the projectile is aimed at the shooter's current target (when one exists) rather than straight ahead.",
         "defaultValue": true,
         "dataType": "boolean"
       },
       {
         "id": "should_bounce",
         "title": "Should Bounce",
-        "description": "If true, the projectile will bounce upon hit.",
-        "defaultValue": false,
-        "dataType": "boolean"
-      },
-      {
-        "id": "splash_potion",
-        "title": "Splash Potion",
-        "description": "If true, the projectile will be treated like a splash potion.",
+        "description": "If `true`, the projectile bounces off surfaces and entities on impact instead of stopping.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "splash_range",
         "title": "Splash Range",
-        "description": "Radius in blocks of the 'splash' effect.",
+        "description": "Splash radius (in blocks) used when applying potion effects via the splash/lingering potion code path.",
         "defaultValue": 4,
         "dataType": "float"
       },
       {
+        "id": "stop_on_hurt",
+        "title": "Stop On Hurt",
+        "description": "If `true`, the projectile has its velocity zeroed out when struck.",
+        "defaultValue": false,
+        "dataType": "boolean"
+      },
+      {
         "id": "uncertainty_base",
         "title": "Uncertainty Base",
-        "description": "The base accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier.",
+        "description": "Base inaccuracy added to the launch direction. The total inaccuracy is `uncertainty_base - difficultyLevel * uncertainty_multiplier`.",
         "defaultValue": 0,
         "dataType": "float"
       },
       {
         "id": "uncertainty_multiplier",
         "title": "Uncertainty Multiplier",
-        "description": "Determines how much difficulty affects accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier.",
+        "description": "Per-difficulty-level reduction in inaccuracy. See `uncertainty_base` for the full formula.",
         "defaultValue": 0,
         "dataType": "float"
       }

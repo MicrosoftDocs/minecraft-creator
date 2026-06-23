@@ -262,10 +262,7 @@
                 "cause": "lava",
                 "damage_per_tick": 4,
                 "filters": {
-                  "operator": "==",
-                  "test": "in_lava",
-                  "subject": "self",
-                  "value": true
+                  "test": "in_lava"
                 }
               }
             ]

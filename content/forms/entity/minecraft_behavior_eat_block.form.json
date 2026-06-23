@@ -22,6 +22,7 @@
         "id": "eat_and_replace_block_pairs",
         "title": "Eat And Replace Block Pairs",
         "description": "A collection of pairs of blocks; the first (\"eat_block\") is the block the entity should eat, the second (\"replace_block\") is the block that should replace the eaten block.",
+        "defaultValue": "[{\"grass\", \"dirt\"}, {\"short_grass\", \"air\"}, {\"fern\", \"air\"}]",
         "dataType": "stringArray",
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [
@@ -177,7 +178,20 @@
         "title": "Eat And Replace Block Pairs",
         "description": "A collection of pairs of blocks; the first (\"eat_block\") is the block the entity should eat, the second (\"replace_block\") is the block that should replace the eaten block.",
         "dataType": "objectArray",
-        "defaultValue": [],
+        "defaultValue": [
+          {
+            "eat_block": "grass",
+            "replace_block": "dirt"
+          },
+          {
+            "eat_block": "short_grass",
+            "replace_block": "air"
+          },
+          {
+            "eat_block": "fern",
+            "replace_block": "air"
+          }
+        ],
         "subFormId": "entity/eatandreplaceblockpair",
         "samples": {
           "/vanilla/behavior_pack/entities/sheep.json": [

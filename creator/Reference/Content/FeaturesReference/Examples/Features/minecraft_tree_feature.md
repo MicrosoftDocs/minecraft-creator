@@ -21,6 +21,7 @@ ms.date: 02/11/2025
 - [Fancy Trunk](#fancy-trunk)
 - [Mangrove Roots](#mangrove-roots)
 - [Mangrove Trunk](#mangrove-trunk)
+- [Poplar Canopy](#poplar-canopy)
 - [Random Spread Canopy](#random-spread-canopy)
 - [Trunk](#trunk)
 
@@ -56,6 +57,8 @@ Places a tree in the world. A tree consists of a column that is anchored to a ba
 | mega_pine_canopy | *not set* | [Mega Pine Canopy](#mega-pine-canopy) item |  | 
 | mega_trunk | *not set* | [Mega Trunk](#mega-trunk) item |  | 
 | pine_canopy | *not set* | [Pine Canopy](#pine-canopy) item |  | 
+| poplar_canopy | *not set* | [Poplar Canopy](#poplar-canopy) item |  | 
+| poplar_trunk | *not set* | [Poplar Trunk](#poplar-trunk) item |  | 
 | random_spread_canopy | *not set* | Key/item pairs of [Random Spread Canopy](#random-spread-canopy) items |  | 
 | roofed_canopy | *not set* | [Roofed Canopy](#roofed-canopy) item |  | 
 | spruce_canopy | *not set* | Object |  | 
@@ -376,6 +379,34 @@ Places a tree in the world. A tree consists of a column that is anchored to a ba
 ### Mega Trunk
 
 Same structure as [Mangrove Trunk](#mangrove-trunk).
+
+
+### Poplar Canopy
+
+#### Poplar Canopy Properties
+
+**JSON path:** `poplar_canopy`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| radius | *not set* | Array of [Radius](#radius) items |  | 
+| radius (as Array of strings) | *not set* | Array of strings | Randomly selects a radius from this list based on their weighted value. | 
+| trunk_width | *not set* | Integer number | The width of the tree trunk. | 
+
+#### Radius
+
+##### Radius Properties
+
+**JSON path:** `poplar_canopy > radius`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| value | *not set* | Integer number | Radius of canopy. | 
+| weight | *not set* | Integer number | Weight for this entry. | 
+
+### Poplar Trunk
+
+Same structure as [Fallen Trunk](#fallen-trunk).
 
 
 ### Random Spread Canopy
