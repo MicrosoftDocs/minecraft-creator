@@ -9,7 +9,7 @@ ms.date: 02/23/2026
 
 # Create a Multi-Block
 
-A **multi-block** is a collection of individual blocks that behave as one single block, such as a door or a bed. When you place a multi-block, all its component blocks are placed at once; if a player breaks any part, the entire multi-block will break. Player and Redstone interactions have the same behavior: any interaction with a single block within the multi-block interacts with all the blocks.
+A **multi-block** is a collection of individual blocks that behave as one single block, such as a door or a bed. When you place a multi-block, all its block parts are placed at once. If any block part breaks, then the entire multi-block will break by way of a [BlockComponentBlockBreakEvent](../ScriptAPI/minecraft/server/BlockComponentBlockBreakEvent.md), note that for scripts only a single event will be sent for the part that was first broken you may access the other parts in scripting with the method [Block.getParts](../ScriptAPI/minecraft/server/Block.md#getparts). Player and Redstone interactions have the same behavior: any interaction with a single block within the multi-block interacts with all the blocks.
 
 In this tutorial, we'll be examining the four-part light post multi-block from the [Minecraft Samples repository](https://github.com/microsoft/minecraft-samples/tree/main/multi-block_sample).
 
@@ -25,12 +25,12 @@ First, we use a new [block trait](./intro-block-traits.md), `minecraft:multi_blo
 
 The multi-block trait has two properties:
 
-- `direction` indicates which direction to place the parts from start to end in a single axis. This field supports two values, `"up"` and `"down"` (that is, vertical multi-blocks).
+- `direction` indicates which direction to place the parts from start to end in a single axis.
 - `parts` is optional; it specifies how many block parts there are, from `2` to `4`. The default is `2`.
 
 > [!NOTE]
 >
-> The `direction` property can accept any valid [direction](../ScriptAPI/minecraft/server/Direction.md), but the first iteration of multi-blocks only supports `up` and `down`.
+> The `direction` property can accept any valid [direction](../ScriptAPI/minecraft/server/Direction.md). However, for horizontal multi-blocks `north`, `south`, `west`, `east` the direction may be overridden by the player facing direction if the block also defines the [minecraft:placement_direction](../Reference/Content/BlockReference/Examples/traits/placement_direction.md) trait that enables the `minecraft:cardinal_direction` state.
 
 First, let's define the light post without any components:
 
@@ -405,3 +405,94 @@ Now, our light post will come on when Redstone is connected to it!
 ## Wrapping up
 
 This walk-through of the light post multi-block should give you a good understanding of how multi-blocks are assembled out of individual block parts, from traits to components to event scripting. And, it should be a good starting point for creating your own multi-blocks!
+
+## Bonus: creating a horizontal multi-block
+
+You can also create a horizontal multi-block, these are multi-blocks that are defined with a direction of either `north`, `south`, `west`, or `east`. Unlike vertical multi-blocks these ones are special because they can cross chunk boundaries. This means that potentially when placing the parts you could have one or more parts of the multi-block in a fully loaded chunk, and one or more parts extending into another chunk that is not fully loaded. In such a scenario the placement will fail and not place any parts at that moment, instead it will cache that placement action in both memory and level storage so that the action is not lost. When both chunks are fully loaded it will execute that placement action and discard it from memory and storage.
+
+The following block definition is an example of a horizontal multi-block log that can be found in the [multi-block_sample](https://github.com/microsoft/minecraft-samples/tree/main/multi-block_sample) pack. 
+
+```json
+{
+    "format_version": "1.26.40",
+    "minecraft:block": {
+        "description": {
+            "identifier": "multi_block:horizontal_log",
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ]
+                },
+                "minecraft:multi_block": {
+                    "enabled_states": ["minecraft:multi_block_part"],
+                    "parts": 4, 
+                    "direction": "north"
+                }
+            }
+        },
+        
+        "components": {
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "up": {"texture": "horizontal_log_side"},
+                "down": {"texture": "horizontal_log_side"},
+                "north": {"texture": "horizontal_log_top"},
+                "south": {"texture": "horizontal_log_top"},
+                "west": {"texture": "horizontal_log_side"},
+                "east": {"texture": "horizontal_log_side"}
+            },
+            "minecraft:collision_box": true,
+            "minecraft:movable": {"movement_type": "immovable"},
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
+            }
+        },
+        "permutations": [
+        {
+            "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+            "components": {
+                "minecraft:transformation": {
+                    "rotation": [0,0,0]
+                }
+            }
+        },
+        {
+            "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+            "components": {
+                "minecraft:transformation": {
+                    "rotation": [0,180,0]
+                }
+            }
+        },
+        {
+            "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+            "components": {
+                "minecraft:transformation": {
+                    "rotation": [0,90,0]
+                }
+            }
+        },
+        {
+            "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+            "components": {
+                "minecraft:transformation": {
+                    "rotation": [0,270,0]
+                }
+            }
+        }
+        ]
+    }
+}
+```
+
+This definition will give you the horizontal log like this:
+
+:::image type="content" source="./Media/multi-blocks/horizontal_log.png" alt-text="The horizontal log multi-block.":::
+
+Note that you don't actually need to define the permutations for the multi-block to work, the 4 permutations in the definition above are to rotate each individual part so that the textures align properly. Without the defined permutations the log will look like this:
+
+:::image type="content" source="./Media/multi-blocks/horizontal_log_no_permutations.png" alt-text="The horizontal log multi-block without permutations defined.":::

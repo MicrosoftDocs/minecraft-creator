@@ -37,6 +37,9 @@ Suppose you built a structure and then realized it's facing the wrong direction.
 
    Now the structure is pointing the correct direction.
 
+> [!NOTE]
+>
+> If the structure places horizontal [multi-blocks](../multi-blocks.md) and you want to rotate the structure then the multi-block must have defined the [minecraft:placement_direction](../../Reference/Content/BlockReference/Examples/traits/placement_direction.md) trait that enables the `minecraft:cardinal_direction` state. Otherwise the multi-block will not repect the rotation of the structure and will pop because the structure rotation will place the parts in an orientation that is not expected by the multi-block.
 
 ## Load a Group of Mobs - Without the Structure
 
