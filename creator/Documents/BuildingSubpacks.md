@@ -112,11 +112,14 @@ With our new tier system, each tier represents a different platform. So, there's
 
 | Memory Performance Tier | Platform | Memory Tier | Memory Range (GB) |
 |:--|:--|:--|:--|
-|1|Nintendo Switch |&le;11|2-4|
-|2|PS4; PS4 Pro; Xbox One; Xbox One S; 60% Mobile |12-16|4-5|
+|1|Nintendo Switch; Nintendo Switch 2 |&le;11|2-4 (4 GB included)|
+|2|PS4; PS4 Pro; Xbox One; Xbox One S; 60% Mobile |12-16|>4-5|
 |3|Xbox One X; Xbox Series S |18-20|6-8|
 |4|Xbox Series X; PS5 |24-28|8-12|
 |5|PS5 Pro; 70% PC|&ge;32|>12|
+
+> [!Note]
+> Memory tier 11 covers devices with up to and including 4 GB of RAM; memory tier 12 begins strictly above 4 GB. Devices with exactly 4 GB of RAM (a large share of mobile devices) report memory tier &le;11 and cannot select a sub-pack that requires `memory_tier` 12 or higher. Also note that the Nintendo Switch 2 is treated as a Tier 1 device like the original Nintendo Switch, even though it has 12 GB of RAM.
 
 By default, the system scans the list of subpacks in your manifest file for the highest `memory_performance_tier` value that doesn't exceed the tier of the player's device to select a sub-pack. Players can change the subpack selection to one lower than the default as long as it's within their platform capabilities. For example, a PS5 Pro defaults to Tier 5 but can be manually changed to select Tier 4 instead.
 
