@@ -39,9 +39,9 @@ Type: *boolean*
 getPlaybackPosition(): number
 `
 
-Returns the elapsed playback time of the sound, in seconds, since it started playing.
+Returns the current playback position within the sound, in seconds, measured from the beginning of the sound.
 
-**Returns** *number* - Elapsed playback time in seconds.
+**Returns** *number* - Current playback position in seconds, measured from the beginning of the sound.
   
 Notes:
 - This function can't be called in restricted-execution mode.

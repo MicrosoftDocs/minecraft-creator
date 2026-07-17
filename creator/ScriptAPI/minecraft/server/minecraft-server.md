@@ -20,10 +20,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.8.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.40-beta.29 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.40-beta.31 of Minecraft.
 
 ## Available Versions
-- `2.10.0-beta.1.26.40-preview.29`
+- `2.10.0-beta.1.26.40-preview.31`
 - `2.8.0`
 - `2.7.0`
 - `2.6.0`
@@ -67,6 +67,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BookErrorReason](BookErrorReason.md)
 - [ButtonState](ButtonState.md)
 - [CameraShakeType](CameraShakeType.md)
+- [CloneMode](CloneMode.md)
 - [CommandPermissionLevel](CommandPermissionLevel.md)
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
 - [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
@@ -662,6 +663,7 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerSoundOptions](PlayerSoundOptions.md)
 - [PlayerSwingEventOptions](PlayerSwingEventOptions.md)
 - [PlayerVisibilityRules](PlayerVisibilityRules.md)
+- [PrimitiveShapeQueryOptions](PrimitiveShapeQueryOptions.md)
 - [ProgressKeyFrame](ProgressKeyFrame.md)
 - [ProjectileShootOptions](ProjectileShootOptions.md)
 - [RangeComparison](RangeComparison.md)

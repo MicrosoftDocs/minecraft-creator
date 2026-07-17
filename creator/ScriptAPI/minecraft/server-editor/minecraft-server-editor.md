@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.40-preview.29"
+    "version": "0.1.0-beta.1.26.40-preview.31"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.40-beta.29 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.40-beta.31 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.40-preview.29`
+- `0.1.0-beta.1.26.40-preview.31`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -187,6 +187,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.40-
 - [BlockPaletteSelectedItemChangeAfterEvent](BlockPaletteSelectedItemChangeAfterEvent.md)
 - [BlockPaletteSelectedItemChangeAfterEventSignal](BlockPaletteSelectedItemChangeAfterEventSignal.md)
 - [BlockUtilities](BlockUtilities.md)
+- [BlockUtilityTasks](BlockUtilityTasks.md)
 - [BrushShape](BrushShape.md)
 - [BrushShapeManager](BrushShapeManager.md)
 - [ClipboardChangeAfterEvent](ClipboardChangeAfterEvent.md)
@@ -223,6 +224,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.40-
 - [ModeChangeAfterEventSignal](ModeChangeAfterEventSignal.md)
 - [NumberLimitObservableValidator](NumberLimitObservableValidator.md)
 - [ObservableValidator](ObservableValidator.md)
+- [PendingTransaction](PendingTransaction.md)
 - [PlaytestManager](PlaytestManager.md)
 - [ProbabilityBlockPaletteItem](ProbabilityBlockPaletteItem.md)
 - [ProjectAfterEvents](ProjectAfterEvents.md)
@@ -282,6 +284,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.40-
 ## Interfaces
 - [ActionManager](ActionManager.md)
 - [BlockMaskList](BlockMaskList.md)
+- [BlockUtilityManifest](BlockUtilityManifest.md)
+- [BlockUtilityManifestEntry](BlockUtilityManifestEntry.md)
 - [BuiltInUIManager](BuiltInUIManager.md)
 - [ClipboardWriteOptions](ClipboardWriteOptions.md)
 - [ConeBrushShapeSettings](ConeBrushShapeSettings.md)

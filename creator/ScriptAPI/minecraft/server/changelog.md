@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.10.0-beta.1.26.40-preview.29](#2100-beta12640-preview29)
+- [2.10.0-beta.1.26.40-preview.31](#2100-beta12640-preview31)
 - [2.8.0](#280)
 - [2.7.0](#270)
 - [2.6.0](#260)
@@ -41,7 +41,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.10.0-beta.1.26.40-preview.29
+## 2.10.0-beta.1.26.40-preview.31
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -108,6 +108,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
 #### Changed *[`Dimension`](Dimension.md)*
 - Added function *[`calculateClosestBiomeFromSeed`](Dimension.md#calculateclosestbiomefromseed)*
+- Added function *[`cloneBlocks`](Dimension.md#cloneblocks)*
 - Changed function *[`getBlocks`](Dimension.md#getblocks)*
   - Added argument `options`
   - Removed argument `filter`
@@ -176,6 +177,8 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from [*ItemStack*](ItemStack.md) (throws exceptions) to *ItemStack* (throws exceptions)
   - Changed argument `potionEffectType` type from [*PotionEffectType*](PotionEffectType.md) | *string* to *PotionEffectType* | *T*
   - Changed argument `potionDeliveryType` type from [*PotionDeliveryType*](PotionDeliveryType.md) | *string* to *PotionDeliveryType* | *U*
+#### Changed *[`PrimitiveShapesManager`](PrimitiveShapesManager.md)*
+- Added function *[`getShapes`](PrimitiveShapesManager.md#getshapes)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Changed *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
 - Added property *[`baseColor`](SetBannerDetailsFunction.md#basecolor)*
@@ -224,6 +227,7 @@ description: Changelog of the `@minecraft/server` module
 - Added value `DynamicProperties`
 - Added value `Instrument`
 #### Added enum [`CameraShakeType`](CameraShakeType.md)
+#### Added enum [`CloneMode`](CloneMode.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)

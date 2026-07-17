@@ -21,6 +21,13 @@ Type: *boolean*
 Notes:
   - This property can't be edited in restricted-execution mode.
 
+### **entries**
+`read-only entries: AllowListEntry[];`
+
+The list of entries in the allow list.
+
+Type: [*AllowListEntry*](AllowListEntry.md)[]
+
 ## Methods
 - [add](#add)
 - [clear](#clear)
@@ -30,20 +37,20 @@ Notes:
 
 ### **add**
 `
-add(player: minecraftserver.Player | string): void
+add(player: AllowListEntry | minecraftserver.Player): void
 `
 
 Adds a player to the server's allow list.
 
 #### **Parameters**
-- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md) | *string*
+- **player**: [*AllowListEntry*](AllowListEntry.md) | [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
   Player or player name that should be added to the allow list.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
-  - Throws [*AllowListModificationError*](AllowListModificationError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
+  - Throws [*AllowListModificationError*](AllowListModificationError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **clear**
 `
@@ -57,13 +64,13 @@ Notes:
 
 ### **contains**
 `
-contains(player: minecraftserver.Player | string): boolean
+contains(player: AllowListEntry | minecraftserver.Player): boolean
 `
 
 Returns if the player is in the server's allow list.
 
 #### **Parameters**
-- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md) | *string*
+- **player**: [*AllowListEntry*](AllowListEntry.md) | [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
   Player or player name that should be checked for.
 
@@ -71,7 +78,7 @@ Returns if the player is in the server's allow list.
   
 Notes:
 - This function can throw errors.
-  - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **reloadFile**
 `
@@ -87,17 +94,17 @@ Notes:
 
 ### **remove**
 `
-remove(player: minecraftserver.Player | string): void
+remove(player: AllowListEntry | minecraftserver.Player): void
 `
 
 Removes a player from the server's allow list.
 
 #### **Parameters**
-- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md) | *string*
+- **player**: [*AllowListEntry*](AllowListEntry.md) | [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
   Player or player name that should be removed from the allow list.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
-  - Throws [*AllowListModificationError*](AllowListModificationError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
+  - Throws [*AllowListModificationError*](AllowListModificationError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)

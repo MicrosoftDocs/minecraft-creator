@@ -149,7 +149,7 @@ Sets the playback position of this sound instance.
 
 #### **Parameters**
 - **seconds**: *number*
-  * Minimum Bound: `0`
+  * Bounds: [`0`, `107374184`]
   
   Position to seek to in seconds. Must be non-negative.
 
@@ -158,6 +158,8 @@ Sets the playback position of this sound instance.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"

@@ -43,6 +43,7 @@ Type: [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 - [setFlattenSmoothing](#setflattensmoothing)
 - [setFloorBlockOverride](#setfloorblockoverride)
 - [setInverseEraseMode](#setinverseerasemode)
+- [setPendingTransaction](#setpendingtransaction)
 - [setTerrainStrength](#setterrainstrength)
 - [singlePaint](#singlepaint)
 - [switchBrushPaintMode](#switchbrushpaintmode)
@@ -320,6 +321,17 @@ setInverseEraseMode(inverseEraseMode: boolean): void
 
 #### **Parameters**
 - **inverseEraseMode**: *boolean*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+
+### **setPendingTransaction**
+`
+setPendingTransaction(pendingTransaction?: PendingTransaction): void
+`
+
+#### **Parameters**
+- **pendingTransaction**?: [*PendingTransaction*](PendingTransaction.md) = `null`
   
 Notes:
 - This function can't be called in restricted-execution mode.
