@@ -24,11 +24,11 @@ description: Contents of the @minecraft/server-editor.BlockUtilities class.
 
 ### **fillVolume**
 `
-fillVolume(volume: minecraftserver.BlockVolumeBase | minecraftserver.CompoundBlockVolume | RelativeVolumeListBlockVolume, block?: minecraftserver.BlockPermutation | minecraftserver.BlockType | string): void
+fillVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, block?: minecraftserver.BlockPermutation | minecraftserver.BlockType | string): void
 `
 
 #### **Parameters**
-- **volume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*@minecraft/server.CompoundBlockVolume*](../../../scriptapi/minecraft/server/CompoundBlockVolume.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
+- **volume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 - **block**?: [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) | *string* = `null`
   
 Notes:
@@ -50,13 +50,13 @@ Notes:
 
 ### **getContiguousSelection**
 `
-getContiguousSelection(properties?: ContiguousSelectionProperties): minecraftserver.CompoundBlockVolume
+getContiguousSelection(properties?: ContiguousSelectionProperties): RelativeVolumeListBlockVolume
 `
 
 #### **Parameters**
 - **properties**?: [*ContiguousSelectionProperties*](ContiguousSelectionProperties.md) = `null`
 
-**Returns** [*@minecraft/server.CompoundBlockVolume*](../../../scriptapi/minecraft/server/CompoundBlockVolume.md)
+**Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.

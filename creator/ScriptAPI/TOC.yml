@@ -78,6 +78,8 @@
       href: minecraft/server/ButtonState.md
     - name: CameraShakeType
       href: minecraft/server/CameraShakeType.md
+    - name: CloneMode
+      href: minecraft/server/CloneMode.md
     - name: CommandPermissionLevel
       href: minecraft/server/CommandPermissionLevel.md
     - name: CompoundBlockVolumeAction
@@ -1238,6 +1240,8 @@
       href: minecraft/server/PlayerSwingEventOptions.md
     - name: PlayerVisibilityRules
       href: minecraft/server/PlayerVisibilityRules.md
+    - name: PrimitiveShapeQueryOptions
+      href: minecraft/server/PrimitiveShapeQueryOptions.md
     - name: ProgressKeyFrame
       href: minecraft/server/ProgressKeyFrame.md
     - name: ProjectileShootOptions
@@ -1338,6 +1342,8 @@
       href: minecraft/server-admin/ServerSecrets.md
     - name: ServerVariables
       href: minecraft/server-admin/ServerVariables.md
+    - name: AllowListEntry
+      href: minecraft/server-admin/AllowListEntry.md
     - name: TransferPlayerIpPortOptions
       href: minecraft/server-admin/TransferPlayerIpPortOptions.md
     - name: TransferPlayerNetherNetOptions
@@ -1526,6 +1532,8 @@
       href: minecraft/server-editor/BlockPaletteSelectedItemChangeAfterEventSignal.md
     - name: BlockUtilities
       href: minecraft/server-editor/BlockUtilities.md
+    - name: BlockUtilityTasks
+      href: minecraft/server-editor/BlockUtilityTasks.md
     - name: BrushShape
       href: minecraft/server-editor/BrushShape.md
     - name: BrushShapeManager
@@ -1598,6 +1606,8 @@
       href: minecraft/server-editor/NumberLimitObservableValidator.md
     - name: ObservableValidator
       href: minecraft/server-editor/ObservableValidator.md
+    - name: PendingTransaction
+      href: minecraft/server-editor/PendingTransaction.md
     - name: PlaytestManager
       href: minecraft/server-editor/PlaytestManager.md
     - name: ProbabilityBlockPaletteItem
@@ -1712,6 +1722,10 @@
       href: minecraft/server-editor/ActionManager.md
     - name: BlockMaskList
       href: minecraft/server-editor/BlockMaskList.md
+    - name: BlockUtilityManifest
+      href: minecraft/server-editor/BlockUtilityManifest.md
+    - name: BlockUtilityManifestEntry
+      href: minecraft/server-editor/BlockUtilityManifestEntry.md
     - name: BuiltInUIManager
       href: minecraft/server-editor/BuiltInUIManager.md
     - name: ClipboardWriteOptions

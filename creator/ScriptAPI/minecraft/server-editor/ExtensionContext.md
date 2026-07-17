@@ -36,6 +36,11 @@ Type: [*BlockPaletteManager*](BlockPaletteManager.md)
 
 Type: [*BlockUtilities*](BlockUtilities.md)
 
+### **blockUtilityTasks**
+`read-only blockUtilityTasks: BlockUtilityTasks;`
+
+Type: [*BlockUtilityTasks*](BlockUtilityTasks.md)
+
 ### **brushShapeManager**
 `read-only brushShapeManager: BrushShapeManager;`
 

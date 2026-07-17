@@ -101,7 +101,7 @@ Notes:
 
 ### **writeToWorld**
 `
-writeToWorld(location: minecraftserver.Vector3, options?: ClipboardWriteOptions): boolean
+writeToWorld(location: minecraftserver.Vector3, options?: ClipboardWriteOptions, transaction?: PendingTransaction): boolean
 `
 
 Apply the contents of a ClipboardItem to the world at a given location using a set of write options
@@ -113,6 +113,7 @@ Apply the contents of a ClipboardItem to the world at a given location using a s
 - **options**?: [*ClipboardWriteOptions*](ClipboardWriteOptions.md) = `null`
   
   An optional set of write parameters which modify the properties of the ClipboardItem as it is applied to the world
+- **transaction**?: [*PendingTransaction*](PendingTransaction.md) = `null`
 
 **Returns** *boolean* - Success or Failure
   

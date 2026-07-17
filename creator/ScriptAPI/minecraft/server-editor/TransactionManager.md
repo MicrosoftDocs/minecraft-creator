@@ -16,77 +16,22 @@ Transaction Manager is the basis of the UNDO and REDO operations, and allows a c
 The transactions are stored as a stack, and can be undone in stack order to restore the world to it's original state
 
 ## Methods
-- [addEntityOperation](#addentityoperation)
-- [addUserDefinedOperation](#adduserdefinedoperation)
-- [commitOpenTransaction](#commitopentransaction)
-- [commitTrackedChanges](#committrackedchanges)
+- [createPendingTransaction](#creatependingtransaction)
 - [createUserDefinedTransactionHandler](#createuserdefinedtransactionhandler)
-- [discardOpenTransaction](#discardopentransaction)
-- [discardTrackedChanges](#discardtrackedchanges)
-- [isBusy](#isbusy)
-- [openTransaction](#opentransaction)
 - [redo](#redo)
 - [redoSize](#redosize)
-- [trackBlockChangeArea](#trackblockchangearea)
-- [trackBlockChangeList](#trackblockchangelist)
-- [trackBlockChangeVolume](#trackblockchangevolume)
 - [undo](#undo)
 - [undoSize](#undosize)
 
-### **addEntityOperation**
+### **createPendingTransaction**
 `
-addEntityOperation(entity: minecraftserver.Entity, type: EntityOperationType): boolean
-`
-
-#### **Parameters**
-- **entity**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
-- **type**: [*EntityOperationType*](EntityOperationType.md)
-
-**Returns** *boolean*
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-
-### **addUserDefinedOperation**
-`
-addUserDefinedOperation(transactionHandlerId: UserDefinedTransactionHandlerId, operationData: string, operationName?: string): void
+createPendingTransaction(name: string): PendingTransaction
 `
 
 #### **Parameters**
-- **transactionHandlerId**: [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
-- **operationData**: *string*
-- **operationName**?: *string* = `null`
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
+- **name**: *string*
 
-### **commitOpenTransaction**
-`
-commitOpenTransaction(): boolean
-`
-
-Commit all of the transaction operations currently attached to the open transaction record to the manager.  These will be added as a single transaction manager entry.
-
-The open record will be closed and all tracking operations will cease.
-
-**Returns** *boolean*
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-
-### **commitTrackedChanges**
-`
-commitTrackedChanges(): number
-`
-
-This function will commit the pending changes caused by any of the track changes variants.  The changes will be committed to the currently open transaction, but the transaction will remain open for further records.
-
-Pending block changes from tracking operations will be added to the transaction record before submission to the transaction manager
-
-**Returns** *number* - Returns the number of change requests that were being tracked
+**Returns** [*PendingTransaction*](PendingTransaction.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -102,65 +47,6 @@ createUserDefinedTransactionHandler(undoClosure: (arg0: string) => void, redoClo
 - **redoClosure**: (arg0: *string*) => *void*
 
 **Returns** [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-
-### **discardOpenTransaction**
-`
-discardOpenTransaction(): boolean
-`
-
-Discard the currently open transaction without committing it to the transaction manager stack.
-
-All records within the transaction will be discarded, and any tracking requests currently active will be stopped
-
-**Returns** *boolean*
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-
-### **discardTrackedChanges**
-`
-discardTrackedChanges(): number
-`
-
-Discard any pending tracked changes.  This does not affect the current open transaction contents, only the pending tracked block operations
-
-**Returns** *number* - Returns the number of change requests that were discarded
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-
-### **isBusy**
-`
-isBusy(): boolean
-`
-
-**Returns** *boolean*
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-
-### **openTransaction**
-`
-openTransaction(name: string): boolean
-`
-
-Open a transaction record which will be a container for any number of transaction operations.
-
-All transaction operations within a record are grouped and treated as a single atomic unit
-
-#### **Parameters**
-- **name**: *string*
-  
-  Give the transaction record a name
-
-**Returns** *boolean*
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -189,61 +75,6 @@ redoSize(): number
 Return the number of transaction records on the redo stack.
 
 **Returns** *number*
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-
-### **trackBlockChangeArea**
-`
-trackBlockChangeArea(from: minecraftserver.Vector3, to: minecraftserver.Vector3): boolean
-`
-
-Begin tracking block changes in a specified area.  These will be added to a pending changes list.
-
-The pending list will be added to the open transaction record when a commit has been issued.
-
-#### **Parameters**
-- **from**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
-  
-  Min block location of a bounding area
-- **to**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
-  
-  Max block location of a bounding area
-
-**Returns** *boolean*
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-
-### **trackBlockChangeList**
-`
-trackBlockChangeList(locations: minecraftserver.Vector3[]): boolean
-`
-
-Begin tracking block changes in a list of specified block locations.
-
-#### **Parameters**
-- **locations**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[]
-  
-  An array of block locations to monitor for changes
-
-**Returns** *boolean*
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-
-### **trackBlockChangeVolume**
-`
-trackBlockChangeVolume(blockVolume: minecraftserver.BlockVolumeBase): boolean
-`
-
-#### **Parameters**
-- **blockVolume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md)
-
-**Returns** *boolean*
   
 Notes:
 - This function can't be called in restricted-execution mode.

@@ -41,6 +41,9 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [calculateClosestBiomeFromSeed](#calculateclosestbiomefromseed)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [cloneBlocks](#cloneblocks)
+::: moniker-end
 - [containsBiomes](#containsbiomes)
 - [containsBlock](#containsblock)
 - [createExplosion](#createexplosion)
@@ -112,6 +115,40 @@ Calculates the location of the closest biome of a particular type from the world
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **cloneBlocks**
+`
+cloneBlocks(beginLocation: Vector3, endLocation: Vector3, destination: Vector3, cloneMode: CloneMode, filter?: BlockFilter): void
+`
+
+Clones a region of blocks from one area of the dimension to another.
+
+#### **Parameters**
+- **beginLocation**: [*Vector3*](Vector3.md)
+  
+  The lower northwest starting corner of the area to clone from.
+- **endLocation**: [*Vector3*](Vector3.md)
+  
+  The upper southeast ending corner of the area to clone from.
+- **destination**: [*Vector3*](Vector3.md)
+  
+  The lower northwest starting corner of the area to clone to.
+- **cloneMode**: [*CloneMode*](CloneMode.md)
+  
+  Specifies how the cloned blocks should be placed at the destination.
+- **filter**?: [*BlockFilter*](BlockFilter.md) = `null`
+  
+  An optional block filter used to include only matching blocks from the source area.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ### **containsBiomes**

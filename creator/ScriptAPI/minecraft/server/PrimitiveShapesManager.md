@@ -22,6 +22,9 @@ Type: *number*
 
 ## Methods
 - [addText](#addtext)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getShapes](#getshapes)
+::: moniker-end
 - [removeAll](#removeall)
 - [removeText](#removetext)
 
@@ -41,6 +44,25 @@ Adds a new text primitive to the world.
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*PrimitiveShapeError*](PrimitiveShapeError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getShapes**
+`
+getShapes(options?: PrimitiveShapeQueryOptions): PrimitiveShape[]
+`
+
+Fetches and queries all primitive shapes stored in the manager and returns the results as an array of shape handles.
+
+#### **Parameters**
+- **options**?: [*PrimitiveShapeQueryOptions*](PrimitiveShapeQueryOptions.md) = `null`
+  
+  Optional options for querying existing shapes to narrow down the results.
+
+**Returns** [*PrimitiveShape*](PrimitiveShape.md)[]
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **removeAll**
 `
