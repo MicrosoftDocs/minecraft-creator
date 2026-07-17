@@ -17,6 +17,20 @@ Options for configuring an image component.
 
 ## Properties
 
+### **onClick**
+`onClick?: () => void;`
+
+Sets a callback to be executed when the image is clicked.
+
+Type: () => *void*
+
+### **tooltip**
+`tooltip?: ObservableString | ObservableUIRawMessage | string | UIRawMessage;`
+
+Sets a tooltip to be displayed when the user hovers over the image.
+
+Type: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+
 ### **visible**
 `visible?: boolean | ObservableBoolean;`
 

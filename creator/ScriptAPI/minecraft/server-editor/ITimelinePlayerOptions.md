@@ -30,6 +30,13 @@ Group entries for the dropdown.
 
 Type: *ITimelinePlayerGroup*[]
 
+### **onDurationChanged**
+`onDurationChanged?: (arg0: number) => void;`
+
+Callback triggered when the total duration changes (e.g. via the timeline drag handle).
+
+Type: (arg0: *number*) => *void*
+
 ### **onGroupChanged**
 `onGroupChanged?: (arg0: string) => void;`
 
