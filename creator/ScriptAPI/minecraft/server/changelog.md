@@ -10,7 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.10.0-beta.1.26.40-preview.31](#2100-beta12640-preview31)
+- [2.11.0-beta.1.26.50-preview.20](#2110-beta12650-preview20)
+- [2.9.0-rc.1.26.50-preview.20](#290-rc12650-preview20)
 - [2.8.0](#280)
 - [2.7.0](#270)
 - [2.6.0](#260)
@@ -41,7 +42,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.10.0-beta.1.26.40-preview.31
+## 2.11.0-beta.1.26.50-preview.20
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -83,7 +84,6 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added function *[`canPlace`](Block.md#canplace)*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
-- Added function *[`getParts`](Block.md#getparts)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
@@ -105,13 +105,9 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
-#### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
 #### Changed *[`Dimension`](Dimension.md)*
-- Added function *[`calculateClosestBiomeFromSeed`](Dimension.md#calculateclosestbiomefromseed)*
 - Added function *[`cloneBlocks`](Dimension.md#cloneblocks)*
-- Changed function *[`getBlocks`](Dimension.md#getblocks)*
-  - Added argument `options`
-  - Removed argument `filter`
+- Added function *[`getBlocks`](Dimension.md#getblocks)*
 - Added function *[`getGeneratedStructures`](Dimension.md#getgeneratedstructures)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
@@ -144,8 +140,6 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`playerWaypoints`](GameRules.md#playerwaypoints)*
 #### Added *[`ItemBlockDynamicPropertiesComponent`](ItemBlockDynamicPropertiesComponent.md)*
-#### Changed *[`LootItem`](LootItem.md)*
-- Added property *[`conditions`](LootItem.md#conditions)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
@@ -164,12 +158,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
 - Added function *[`stopSound`](Player.md#stopsound)*
-#### Added *[`PlayerCancelBreakingBlockAfterEvent`](PlayerCancelBreakingBlockAfterEvent.md)*
-#### Added *[`PlayerCancelBreakingBlockAfterEventSignal`](PlayerCancelBreakingBlockAfterEventSignal.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
-#### Added *[`PlayerStartBreakingBlockAfterEvent`](PlayerStartBreakingBlockAfterEvent.md)*
-#### Added *[`PlayerStartBreakingBlockAfterEventSignal`](PlayerStartBreakingBlockAfterEventSignal.md)*
 #### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
 #### Added *[`PlayerUseNameTagAfterEventSignal`](PlayerUseNameTagAfterEventSignal.md)*
 #### Changed *[`Potions`](Potions.md)*
@@ -199,9 +189,10 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`seekTo`](SoundInstance.md#seekto)*
 - Added function *[`setPitch`](SoundInstance.md#setpitch)*
 - Added function *[`setVolume`](SoundInstance.md#setvolume)*
-- Added function *[`stop`](SoundInstance.md#stop)*
 #### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 - Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
+#### Changed *[`TextPrimitive`](TextPrimitive.md)*
+- Added property *[`lineGapHeight`](TextPrimitive.md#linegapheight)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
@@ -215,8 +206,6 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`entityTamed`](WorldAfterEvents.md#entitytamed)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
-- Added property *[`playerCancelBreakingBlock`](WorldAfterEvents.md#playercancelbreakingblock)*
-- Added property *[`playerStartBreakingBlock`](WorldAfterEvents.md#playerstartbreakingblock)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
 - Added property *[`soundCompleted`](WorldAfterEvents.md#soundcompleted)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
@@ -228,8 +217,6 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Instrument`
 #### Added enum [`CameraShakeType`](CameraShakeType.md)
 #### Added enum [`CloneMode`](CloneMode.md)
-#### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
-#### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
 - Added value `UnexpectedEnumName`
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
@@ -240,9 +227,25 @@ description: Changelog of the `@minecraft/server` module
 - Added value `PlayerWaypoints`
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `BlockDynamicProperties`
-#### Added enum [`PlayerSplitScreenSlot`](PlayerSplitScreenSlot.md)
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+## 2.9.0-rc.1.26.50-preview.20
+#### Changed *[`Block`](Block.md)*
+- Added function *[`getParts`](Block.md#getparts)*
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`calculateClosestBiomeFromSeed`](Dimension.md#calculateclosestbiomefromseed)*
+#### Changed *[`LootItem`](LootItem.md)*
+- Added property *[`conditions`](LootItem.md#conditions)*
+#### Added *[`PlayerCancelBreakingBlockAfterEvent`](PlayerCancelBreakingBlockAfterEvent.md)*
+#### Added *[`PlayerCancelBreakingBlockAfterEventSignal`](PlayerCancelBreakingBlockAfterEventSignal.md)*
+#### Added *[`PlayerStartBreakingBlockAfterEvent`](PlayerStartBreakingBlockAfterEvent.md)*
+#### Added *[`PlayerStartBreakingBlockAfterEventSignal`](PlayerStartBreakingBlockAfterEventSignal.md)*
+#### Changed *[`SoundInstance`](SoundInstance.md)*
+- Added function *[`stop`](SoundInstance.md#stop)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`playerCancelBreakingBlock`](WorldAfterEvents.md#playercancelbreakingblock)*
+- Added property *[`playerStartBreakingBlock`](WorldAfterEvents.md#playerstartbreakingblock)*
+#### Added enum [`PlayerSplitScreenSlot`](PlayerSplitScreenSlot.md)
 ## 2.8.0
 #### Added *[`BlockComponentBlockStateChangeEvent`](BlockComponentBlockStateChangeEvent.md)*
 #### Added *[`BlockContainerClosedAfterEvent`](BlockContainerClosedAfterEvent.md)*
@@ -575,6 +578,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Dimension`](Dimension.md)*
 - Added function *[`getBlockAbove`](Dimension.md#getblockabove)*
 - Added function *[`getBlockBelow`](Dimension.md#getblockbelow)*
+- Removed function *getBlocks*
 - Removed function *runCommandAsync*
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
   - Changed argument `identifier` type from *string* to [*EntityType*](EntityType.md) | *string*

@@ -17,13 +17,14 @@ A strongly typed transaction handle to enforce type safety when adding user defi
 
 ### **constructor**
 `
-new UserDefinedTransactionHandle(nativeHandle: UserDefinedTransactionHandlerId, transactionManager: TransactionManager)
+new UserDefinedTransactionHandle(transactionHandler: TransactionHandler, nativeHandle: UserDefinedTransactionOperationHandler, transactionManager: TransactionManager)
 `
 
 Constructs a new instance of the `UserDefinedTransactionHandle` class
 
 #### **Parameters**
-- **nativeHandle**: *UserDefinedTransactionHandlerId*
+- **transactionHandler**: *TransactionHandler*
+- **nativeHandle**: *UserDefinedTransactionOperationHandler*
 - **transactionManager**: *TransactionManager*
 
 **Returns** *UserDefinedTransactionHandle*

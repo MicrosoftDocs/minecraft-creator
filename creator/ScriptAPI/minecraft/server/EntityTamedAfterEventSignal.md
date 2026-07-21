@@ -21,12 +21,12 @@ Manages callbacks that are connected to when an entity is tamed.
 
 ### **subscribe**
 `
-subscribe(callback: (arg0: EntityTamedAfterEvent) => void, options?: EntityTamedEventFilter): (arg0: EntityTamedAfterEvent) => void
+subscribe(callback: (arg0: EntityTamedAfterEvent) => void, options?: EntityTamedEventOptions): (arg0: EntityTamedAfterEvent) => void
 `
 
 #### **Parameters**
 - **callback**: (arg0: [*EntityTamedAfterEvent*](EntityTamedAfterEvent.md)) => *void*
-- **options**?: [*EntityTamedEventFilter*](EntityTamedEventFilter.md) = `null`
+- **options**?: [*EntityTamedEventOptions*](EntityTamedEventOptions.md) = `null`
 
 **Returns** (arg0: [*EntityTamedAfterEvent*](EntityTamedAfterEvent.md)) => *void*
   

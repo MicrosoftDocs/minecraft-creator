@@ -38,6 +38,10 @@ KeyboardEvent.DOM_VK_CONTROL
 `ALT = 18`
 
 KeyboardEvent.DOM_VK_ALT
+### **PAUSE**
+`PAUSE = 19`
+
+KeyboardEvent.DOM_VK_PAUSE
 ### **CAPS_LOCK**
 `CAPS_LOCK = 20`
 
@@ -238,6 +242,18 @@ KeyboardEvent.DOM_VK_Y
 `KEY_Z = 90`
 
 KeyboardEvent.DOM_VK_Z
+### **WINDOWS_LEFT**
+`WINDOWS_LEFT = 91`
+
+KeyboardEvent.Meta_LEFT, ie. Left Windows key
+### **WINDOWS_RIGHT**
+`WINDOWS_RIGHT = 92`
+
+KeyboardEvent.Meta_RIGHT, ie. Right Windows key
+### **CONTEXT_MENU**
+`CONTEXT_MENU = 93`
+
+KeyboardEvent.DOM_VK_CONTEXT_MENU, ie. Context Menu key
 ### **NUMPAD_0**
 `NUMPAD_0 = 96`
 
@@ -350,14 +366,30 @@ KeyboardEvent.DOM_VK_F11
 `F12 = 123`
 
 KeyboardEvent.DOM_VK_F12
+### **NUM_LOCK**
+`NUM_LOCK = 144`
+
+KeyboardEvent.DOM_VK_NUM_LOCK
+### **SCROLL_LOCK**
+`SCROLL_LOCK = 145`
+
+KeyboardEvent.DOM_VK_SCROLL_LOCK
 ### **SEMICOLON**
 `SEMICOLON = 186`
 
 KeyboardEvent.DOM_VK_SEMICOLON, ie. ';'
+### **EQUALS**
+`EQUALS = 187`
+
+KeyboardEvent.DOM_VK_EQUALS, ie. '='
 ### **COMMA**
 `COMMA = 188`
 
 KeyboardEvent.DOM_VK_COMMA, ie. ','
+### **HYPHEN**
+`HYPHEN = 189`
+
+KeyboardEvent.DOM_VK_HYPHEN, ie. '-'
 ### **PERIOD**
 `PERIOD = 190`
 

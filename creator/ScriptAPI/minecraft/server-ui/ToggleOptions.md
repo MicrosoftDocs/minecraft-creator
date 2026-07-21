@@ -27,6 +27,18 @@ When true or bound to a true ObservableBoolean, the toggle is shown but cannot b
 
 Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **tooltip**
+`tooltip?: ObservableString | ObservableUIRawMessage | string | UIRawMessage;`
+
+Text shown in a tooltip when the player hovers over the toggle.
+
+Type: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **visible**
 `visible?: boolean | ObservableBoolean;`
 

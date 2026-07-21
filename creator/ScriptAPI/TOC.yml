@@ -82,10 +82,6 @@
       href: minecraft/server/CloneMode.md
     - name: CommandPermissionLevel
       href: minecraft/server/CommandPermissionLevel.md
-    - name: CompoundBlockVolumeAction
-      href: minecraft/server/CompoundBlockVolumeAction.md
-    - name: CompoundBlockVolumePositionRelativity
-      href: minecraft/server/CompoundBlockVolumePositionRelativity.md
     - name: ContainerRulesErrorReason
       href: minecraft/server/ContainerRulesErrorReason.md
     - name: ControlScheme
@@ -334,8 +330,6 @@
       href: minecraft/server/CommandResult.md
     - name: Component
       href: minecraft/server/Component.md
-    - name: CompoundBlockVolume
-      href: minecraft/server/CompoundBlockVolume.md
     - name: Container
       href: minecraft/server/Container.md
     - name: ContainerSlot
@@ -1128,8 +1122,6 @@
       href: minecraft/server/CameraShakeOptions.md
     - name: CameraTargetOptions
       href: minecraft/server/CameraTargetOptions.md
-    - name: CompoundBlockVolumeItem
-      href: minecraft/server/CompoundBlockVolumeItem.md
     - name: ContainerAccessSource
       href: minecraft/server/ContainerAccessSource.md
     - name: ContainerAccessSourceFilter
@@ -1192,8 +1184,8 @@
       href: minecraft/server/EntityRaycastOptions.md
     - name: EntitySneakingChangedEventOptions
       href: minecraft/server/EntitySneakingChangedEventOptions.md
-    - name: EntityTamedEventFilter
-      href: minecraft/server/EntityTamedEventFilter.md
+    - name: EntityTamedEventOptions
+      href: minecraft/server/EntityTamedEventOptions.md
     - name: EntityVisibilityRules
       href: minecraft/server/EntityVisibilityRules.md
     - name: EqualsComparison
@@ -1366,6 +1358,10 @@
       href: minecraft/server-editor/BlockPaletteItemType.md
     - name: BlockTableOperationType
       href: minecraft/server-editor/BlockTableOperationType.md
+    - name: BlockUtilityExtrudeDirection
+      href: minecraft/server-editor/BlockUtilityExtrudeDirection.md
+    - name: BlockUtilityFloodMatchCriteria
+      href: minecraft/server-editor/BlockUtilityFloodMatchCriteria.md
     - name: BoolPropertyItemVariant
       href: minecraft/server-editor/BoolPropertyItemVariant.md
     - name: BrushDirectionalPlacementMode
@@ -1500,6 +1496,8 @@
       href: minecraft/server-editor/ThemeSettingsColorKey.md
     - name: TimelinePlayerPlaybackState
       href: minecraft/server-editor/TimelinePlayerPlaybackState.md
+    - name: TransactionProcessState
+      href: minecraft/server-editor/TransactionProcessState.md
     - name: WidgetCollisionType
       href: minecraft/server-editor/WidgetCollisionType.md
     - name: WidgetComponentType
@@ -1648,16 +1646,24 @@
       href: minecraft/server-editor/SpeedSettings.md
     - name: ThemeSettings
       href: minecraft/server-editor/ThemeSettings.md
+    - name: TransactionEvent
+      href: minecraft/server-editor/TransactionEvent.md
+    - name: TransactionHandler
+      href: minecraft/server-editor/TransactionHandler.md
     - name: TransactionManager
       href: minecraft/server-editor/TransactionManager.md
+    - name: TransactionOperationHandler
+      href: minecraft/server-editor/TransactionOperationHandler.md
     - name: UserDefinedTransactionHandle
       href: minecraft/server-editor/UserDefinedTransactionHandle.md
-    - name: UserDefinedTransactionHandlerId
-      href: minecraft/server-editor/UserDefinedTransactionHandlerId.md
+    - name: UserDefinedTransactionOperationHandler
+      href: minecraft/server-editor/UserDefinedTransactionOperationHandler.md
     - name: Vector2LimitObservableValidator
       href: minecraft/server-editor/Vector2LimitObservableValidator.md
     - name: Vector3LimitObservableValidator
       href: minecraft/server-editor/Vector3LimitObservableValidator.md
+    - name: VolumeListTransactionOperationHandler
+      href: minecraft/server-editor/VolumeListTransactionOperationHandler.md
     - name: Widget
       href: minecraft/server-editor/Widget.md
     - name: WidgetComponentBase
@@ -2348,8 +2354,12 @@
       href: minecraft/server-ui/DropdownItemData.md
     - name: DropdownOptions
       href: minecraft/server-ui/DropdownOptions.md
+    - name: ImageDetails
+      href: minecraft/server-ui/ImageDetails.md
     - name: ImageOptions
       href: minecraft/server-ui/ImageOptions.md
+    - name: MessageBoxButtonOptions
+      href: minecraft/server-ui/MessageBoxButtonOptions.md
     - name: MessageBoxResult
       href: minecraft/server-ui/MessageBoxResult.md
     - name: ModalFormDataDropdownOptions

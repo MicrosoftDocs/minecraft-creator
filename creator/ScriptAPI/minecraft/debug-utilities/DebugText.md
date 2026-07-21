@@ -37,6 +37,13 @@ If set to true, the text will be hidden behind blocks or entities. By default th
 
 Type: *boolean*
 
+### **lineGapHeight**
+`lineGapHeight: number;`
+
+This value determines the gap between lines for the debug text. By default the line gap height is 0.
+
+Type: *number*
+
 ### **text**
 `read-only text: minecraftserver.RawMessage | string;`
 

@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server-graphics` module
 # `@minecraft/server-graphics` Changelog
 
 ## Version Changes
-- [1.0.0-beta.1.26.40-preview.31](#100-beta12640-preview31)
+- [1.0.0-beta.1.26.50-preview.20](#100-beta12650-preview20)
 
-## 1.0.0-beta.1.26.40-preview.31
+## 1.0.0-beta.1.26.50-preview.20
 #### Added `@minecraft/server-graphics` Module

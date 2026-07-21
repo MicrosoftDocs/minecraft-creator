@@ -34,6 +34,13 @@ Icon resource
 
 Type: *string*
 
+### **staging**
+`staging?: boolean;`
+
+When true, the tool will be excluded from tool groups and tool rail
+
+Type: *boolean*
+
 ### **title**
 `title?: string;`
 

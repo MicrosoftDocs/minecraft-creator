@@ -37,6 +37,18 @@ If set to true, the text will be hidden behind blocks or entities. By default th
 
 Type: *boolean*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **lineGapHeight**
+`lineGapHeight: number;`
+
+This value determines the gap between lines for the TextPrimitive. By default the line gap height is 0.
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **text**
 `read-only text: RawMessage | string;`
 

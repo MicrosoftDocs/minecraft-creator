@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server-editor` module
 # `@minecraft/server-editor` Changelog
 
 ## Version Changes
-- [0.1.0-beta.1.26.40-preview.31](#010-beta12640-preview31)
+- [0.1.0-beta.1.26.50-preview.20](#010-beta12650-preview20)
 
-## 0.1.0-beta.1.26.40-preview.31
+## 0.1.0-beta.1.26.50-preview.20
 #### Added `@minecraft/server-editor` Module

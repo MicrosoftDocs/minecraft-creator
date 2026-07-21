@@ -20,6 +20,18 @@ When true or bound to a true ObservableBoolean, the button is shown but cannot b
 
 Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **imageDetails**
+`imageDetails?: ImageDetails;`
+
+Details of an image to display alongside the button label.
+
+Type: [*ImageDetails*](ImageDetails.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **tooltip**
 `tooltip?: ObservableString | ObservableUIRawMessage | string | UIRawMessage;`
 
