@@ -12,6 +12,7 @@ description: Contents of the @minecraft/server-editor.PendingTransaction class.
 ## Methods
 - [addEntityOperation](#addentityoperation)
 - [addUserDefinedOperation](#adduserdefinedoperation)
+- [addVolumeListOperation](#addvolumelistoperation)
 - [commitTrackedChanges](#committrackedchanges)
 - [discard](#discard)
 - [discardTrackedChanges](#discardtrackedchanges)
@@ -38,13 +39,27 @@ Notes:
 
 ### **addUserDefinedOperation**
 `
-addUserDefinedOperation(transactionHandlerId: UserDefinedTransactionHandlerId, operationData: string, operationName?: string): void
+addUserDefinedOperation(transactionHandler: UserDefinedTransactionOperationHandler, operationData: string, operationName?: string): void
 `
 
 #### **Parameters**
-- **transactionHandlerId**: [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
+- **transactionHandler**: [*UserDefinedTransactionOperationHandler*](UserDefinedTransactionOperationHandler.md)
 - **operationData**: *string*
 - **operationName**?: *string* = `null`
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **addVolumeListOperation**
+`
+addVolumeListOperation(operationHandler: VolumeListTransactionOperationHandler, previous: RelativeVolumeListBlockVolume[], current: RelativeVolumeListBlockVolume[]): void
+`
+
+#### **Parameters**
+- **operationHandler**: [*VolumeListTransactionOperationHandler*](VolumeListTransactionOperationHandler.md)
+- **previous**: [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)[]
+- **current**: [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)[]
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -93,8 +108,11 @@ Notes:
 
 ### **submit**
 `
-submit(): void
+submit(transactionHandler?: TransactionHandler): void
 `
+
+#### **Parameters**
+- **transactionHandler**?: [*TransactionHandler*](TransactionHandler.md) = `null`
   
 Notes:
 - This function can't be called in restricted-execution mode.

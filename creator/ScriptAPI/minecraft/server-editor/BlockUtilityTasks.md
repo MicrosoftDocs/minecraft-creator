@@ -10,12 +10,38 @@ description: Contents of the @minecraft/server-editor.BlockUtilityTasks class.
 # BlockUtilityTasks Class
 
 ## Methods
+- [extrude](#extrude)
 - [fillVolume](#fillvolume)
 - [findObscuredBlocksWithinVolume](#findobscuredblockswithinvolume)
+- [floodSearch](#floodsearch)
 - [generateManifest](#generatemanifest)
 - [replaceBlocksInSelection](#replaceblocksinselection)
 - [shrinkWrapVolume](#shrinkwrapvolume)
 - [trimVolumeToFitContents](#trimvolumetofitcontents)
+
+### **extrude**
+`
+extrude(location: minecraftserver.Vector3, direction?: BlockUtilityExtrudeDirection, faceRadius?: number, layerCount?: number, isShrink?: boolean, criteria?: BlockUtilityFloodMatchCriteria, customBlockList?: string[], maxBlocksPerTick?: number, buildGeometry?: boolean, tolerance?: number, faceVolume?: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume): Promise<RelativeVolumeListBlockVolume>
+`
+
+#### **Parameters**
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **direction**?: [*BlockUtilityExtrudeDirection*](BlockUtilityExtrudeDirection.md) = `null`
+- **faceRadius**?: *number* = `null`
+- **layerCount**?: *number* = `null`
+- **isShrink**?: *boolean* = `null`
+- **criteria**?: [*BlockUtilityFloodMatchCriteria*](BlockUtilityFloodMatchCriteria.md) = `null`
+- **customBlockList**?: *string*[] = `null`
+- **maxBlocksPerTick**?: *number* = `null`
+- **buildGeometry**?: *boolean* = `null`
+- **tolerance**?: *number* = `null`
+- **faceVolume**?: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) = `null`
+
+**Returns** Promise&lt;[*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)&gt;
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
 
 ### **fillVolume**
 `
@@ -40,6 +66,25 @@ findObscuredBlocksWithinVolume(volume: minecraftserver.BlockVolumeBase | Relativ
 
 #### **Parameters**
 - **volume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
+- **maxBlocksPerTick**?: *number* = `null`
+
+**Returns** Promise&lt;[*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)&gt;
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **floodSearch**
+`
+floodSearch(location: minecraftserver.Vector3, criteria?: BlockUtilityFloodMatchCriteria, radius?: number, customBlockList?: string[], maxResultBlocks?: number, maxBlocksPerTick?: number): Promise<RelativeVolumeListBlockVolume>
+`
+
+#### **Parameters**
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **criteria**?: [*BlockUtilityFloodMatchCriteria*](BlockUtilityFloodMatchCriteria.md) = `null`
+- **radius**?: *number* = `null`
+- **customBlockList**?: *string*[] = `null`
+- **maxResultBlocks**?: *number* = `null`
 - **maxBlocksPerTick**?: *number* = `null`
 
 **Returns** Promise&lt;[*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)&gt;

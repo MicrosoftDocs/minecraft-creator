@@ -13,6 +13,16 @@ Options for configuring a text component (label or header).
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **tooltip**
+`tooltip?: ObservableString | ObservableUIRawMessage | string | UIRawMessage;`
+
+Type: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **visible**
 `visible?: boolean | ObservableBoolean;`
 

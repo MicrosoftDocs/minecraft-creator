@@ -36,6 +36,7 @@ Type: *number*
 - [constructor](#constructor)
 - [add](#add)
 - [clear](#clear)
+- [clone](#clone)
 - [getVolumeList](#getvolumelist)
 - [hasAdjacent](#hasadjacent)
 - [moveTo](#moveto)
@@ -71,6 +72,13 @@ clear(): void
   
 Notes:
 - This function can't be called in restricted-execution mode.
+
+### **clone**
+`
+clone(): RelativeVolumeListBlockVolume
+`
+
+**Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 
 ### **getVolumeList**
 `

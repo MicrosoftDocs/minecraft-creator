@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.40-preview.31"
+    "version": "0.1.0-beta.1.26.50-preview.20"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.40-beta.31 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.20 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.40-preview.31`
+- `0.1.0-beta.1.26.50-preview.20`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -34,6 +34,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.40-
 - [BlockMaskListType](BlockMaskListType.md)
 - [BlockPaletteItemType](BlockPaletteItemType.md)
 - [BlockTableOperationType](BlockTableOperationType.md)
+- [BlockUtilityExtrudeDirection](BlockUtilityExtrudeDirection.md)
+- [BlockUtilityFloodMatchCriteria](BlockUtilityFloodMatchCriteria.md)
 - [BoolPropertyItemVariant](BoolPropertyItemVariant.md)
 - [BrushDirectionalPlacementMode](BrushDirectionalPlacementMode.md)
 - [BrushElevationMode](BrushElevationMode.md)
@@ -101,6 +103,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.40-
 - [TagContainerVariant](TagContainerVariant.md)
 - [ThemeSettingsColorKey](ThemeSettingsColorKey.md)
 - [TimelinePlayerPlaybackState](TimelinePlayerPlaybackState.md)
+- [TransactionProcessState](TransactionProcessState.md)
 - [WidgetCollisionType](WidgetCollisionType.md)
 - [WidgetComponentType](WidgetComponentType.md)
 - [WidgetGizmoEventType](WidgetGizmoEventType.md)
@@ -245,11 +248,15 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.40-
 - [SingleBlockBrushShape](SingleBlockBrushShape.md)
 - [SpeedSettings](SpeedSettings.md)
 - [ThemeSettings](ThemeSettings.md)
+- [TransactionEvent](TransactionEvent.md)
+- [TransactionHandler](TransactionHandler.md)
 - [TransactionManager](TransactionManager.md)
+- [TransactionOperationHandler](TransactionOperationHandler.md)
 - [UserDefinedTransactionHandle](UserDefinedTransactionHandle.md)
-- [UserDefinedTransactionHandlerId](UserDefinedTransactionHandlerId.md)
+- [UserDefinedTransactionOperationHandler](UserDefinedTransactionOperationHandler.md)
 - [Vector2LimitObservableValidator](Vector2LimitObservableValidator.md)
 - [Vector3LimitObservableValidator](Vector3LimitObservableValidator.md)
+- [VolumeListTransactionOperationHandler](VolumeListTransactionOperationHandler.md)
 - [Widget](Widget.md)
 - [WidgetComponentBase](WidgetComponentBase.md)
 - [WidgetComponentBoundingBox](WidgetComponentBoundingBox.md)

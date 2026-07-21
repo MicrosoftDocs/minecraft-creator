@@ -31,9 +31,6 @@ Effect type for the given identifier.
   The identifier for the effect.
 
 **Returns** [*EffectType*](EffectType.md) | *undefined* - Effect type for the given identifier or undefined if the effect does not exist.
-  
-Notes:
-- This function can't be called in restricted-execution mode.
 
 ### **getAll**
 `
@@ -43,6 +40,3 @@ static getAll(): EffectType[]
 Gets all effects.
 
 **Returns** [*EffectType*](EffectType.md)[] - A list of all effects.
-  
-Notes:
-- This function can't be called in restricted-execution mode.

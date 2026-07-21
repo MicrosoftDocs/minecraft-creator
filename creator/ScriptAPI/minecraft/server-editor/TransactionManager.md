@@ -17,9 +17,9 @@ The transactions are stored as a stack, and can be undone in stack order to rest
 
 ## Methods
 - [createPendingTransaction](#creatependingtransaction)
-- [createUserDefinedTransactionHandler](#createuserdefinedtransactionhandler)
 - [redo](#redo)
 - [redoSize](#redosize)
+- [registerTransactionHandler](#registertransactionhandler)
 - [undo](#undo)
 - [undoSize](#undosize)
 
@@ -32,21 +32,6 @@ createPendingTransaction(name: string): PendingTransaction
 - **name**: *string*
 
 **Returns** [*PendingTransaction*](PendingTransaction.md)
-  
-Notes:
-- This function can't be called in restricted-execution mode.
-- This function can throw errors.
-
-### **createUserDefinedTransactionHandler**
-`
-createUserDefinedTransactionHandler(undoClosure: (arg0: string) => void, redoClosure: (arg0: string) => void): UserDefinedTransactionHandlerId
-`
-
-#### **Parameters**
-- **undoClosure**: (arg0: *string*) => *void*
-- **redoClosure**: (arg0: *string*) => *void*
-
-**Returns** [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -75,6 +60,20 @@ redoSize(): number
 Return the number of transaction records on the redo stack.
 
 **Returns** *number*
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **registerTransactionHandler**
+`
+registerTransactionHandler(onEvent?: (arg0: TransactionEvent) => void): TransactionHandler
+`
+
+#### **Parameters**
+- **onEvent**?: (arg0: [*TransactionEvent*](TransactionEvent.md)) => *void* = `null`
+
+**Returns** [*TransactionHandler*](TransactionHandler.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.

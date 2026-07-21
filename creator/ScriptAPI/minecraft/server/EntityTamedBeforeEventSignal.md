@@ -21,13 +21,13 @@ Manages callbacks that are connected to before an entity is tamed.
 
 ### **subscribe**
 `
-subscribe(callback: (arg0: EntityTamedBeforeEvent) => void, options?: EntityTamedEventFilter): (arg0: EntityTamedBeforeEvent) => void
+subscribe(callback: (arg0: EntityTamedBeforeEvent) => void, options?: EntityTamedEventOptions): (arg0: EntityTamedBeforeEvent) => void
 `
 
 #### **Parameters**
 - **callback**: (arg0: [*EntityTamedBeforeEvent*](EntityTamedBeforeEvent.md)) => *void*
   This closure is called with restricted-execution privilege.
-- **options**?: [*EntityTamedEventFilter*](EntityTamedEventFilter.md) = `null`
+- **options**?: [*EntityTamedEventOptions*](EntityTamedEventOptions.md) = `null`
 
 **Returns** (arg0: [*EntityTamedBeforeEvent*](EntityTamedBeforeEvent.md)) => *void*
   The returned closure is called with restricted-execution privilege.

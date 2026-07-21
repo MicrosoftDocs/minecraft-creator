@@ -53,7 +53,9 @@ Type: *string*
 - [getBlockAbove](#getblockabove)
 - [getBlockBelow](#getblockbelow)
 - [getBlockFromRay](#getblockfromray)
+::: moniker range="=minecraft-bedrock-experimental"
 - [getBlocks](#getblocks)
+::: moniker-end
 - [getEntities](#getentities)
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
@@ -401,6 +403,7 @@ Gets the first block that intersects with a vector emanating from a location.
 Notes:
 - This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getBlocks**
 `
 getBlocks(volume: BlockVolumeBase, options: BlockQueryOptions, allowUnloadedChunks?: boolean): ListBlockVolume
@@ -420,10 +423,14 @@ Gets all the blocks in a volume that satisfy the block query options.
   If set to true will suppress the UnloadedChunksError if some or all of the block volume is outside of the loaded chunks. Will only check the block locations that are within the loaded chunks in the volume.
 
 **Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns the ListBlockVolume that contains all the block locations that satisfied the block query options.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*, [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*UnloadedChunksError*](UnloadedChunksError.md)
+::: moniker-end
 
 ### **getEntities**
 `
