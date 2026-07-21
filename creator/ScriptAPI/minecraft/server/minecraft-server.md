@@ -20,10 +20,11 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.8.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.40-beta.31 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.50-beta.20 of Minecraft.
 
 ## Available Versions
-- `2.10.0-beta.1.26.40-preview.31`
+- `2.11.0-beta.1.26.50-preview.20`
+- `2.9.0-rc.1.26.50-preview.20`
 - `2.8.0`
 - `2.7.0`
 - `2.6.0`
@@ -69,8 +70,6 @@ The following API versions are from a major version that is documented here: [*@
 - [CameraShakeType](CameraShakeType.md)
 - [CloneMode](CloneMode.md)
 - [CommandPermissionLevel](CommandPermissionLevel.md)
-- [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
-- [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
 - [ContainerRulesErrorReason](ContainerRulesErrorReason.md)
 - [ControlScheme](ControlScheme.md)
 - [CustomCommandErrorReason](CustomCommandErrorReason.md)
@@ -208,7 +207,6 @@ The following API versions are from a major version that is documented here: [*@
 - [ClientSystemInfo](ClientSystemInfo.md)
 - [CommandResult](CommandResult.md)
 - [Component](Component.md)
-- [CompoundBlockVolume](CompoundBlockVolume.md)
 - [Container](Container.md)
 - [ContainerSlot](ContainerSlot.md)
 - [CustomCommandOrigin](CustomCommandOrigin.md)
@@ -607,7 +605,6 @@ The following API versions are from a major version that is documented here: [*@
 - [CameraSetRotOptions](CameraSetRotOptions.md)
 - [CameraShakeOptions](CameraShakeOptions.md)
 - [CameraTargetOptions](CameraTargetOptions.md)
-- [CompoundBlockVolumeItem](CompoundBlockVolumeItem.md)
 - [ContainerAccessSource](ContainerAccessSource.md)
 - [ContainerAccessSourceFilter](ContainerAccessSourceFilter.md)
 - [ContainerRules](ContainerRules.md)
@@ -639,7 +636,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityRaycastHit](EntityRaycastHit.md)
 - [EntityRaycastOptions](EntityRaycastOptions.md)
 - [EntitySneakingChangedEventOptions](EntitySneakingChangedEventOptions.md)
-- [EntityTamedEventFilter](EntityTamedEventFilter.md)
+- [EntityTamedEventOptions](EntityTamedEventOptions.md)
 - [EntityVisibilityRules](EntityVisibilityRules.md)
 - [EqualsComparison](EqualsComparison.md)
 - [ExplosionOptions](ExplosionOptions.md)

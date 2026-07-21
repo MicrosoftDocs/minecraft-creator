@@ -27,12 +27,36 @@ When true or bound to a true ObservableBoolean, the slider is shown but cannot b
 
 Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **fixedFormatDigits**
+`fixedFormatDigits?: number | ObservableNumber;`
+
+If set, displays the number of digits after the decimal point in fixed-point notation. For example, if set to 2, the value 3.14159 will be displayed as 3.14.
+
+Type: *number* | [*ObservableNumber*](ObservableNumber.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **step**
 `step?: number | ObservableNumber;`
 
 The increment amount between each slider step. Defaults to 1 if not specified.
 
 Type: *number* | [*ObservableNumber*](ObservableNumber.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **tooltip**
+`tooltip?: ObservableString | ObservableUIRawMessage | string | UIRawMessage;`
+
+Text shown in a tooltip when the player hovers over the slider.
+
+Type: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **visible**
 `visible?: boolean | ObservableBoolean;`

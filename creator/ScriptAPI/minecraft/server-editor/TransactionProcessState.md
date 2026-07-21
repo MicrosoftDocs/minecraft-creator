@@ -4,7 +4,13 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-editor.UserDefinedTransactionHandlerId Class
-description: Contents of the @minecraft/server-editor.UserDefinedTransactionHandlerId class.
+title: minecraft/server-editor.TransactionProcessState Enumeration
+description: Contents of the @minecraft/server-editor.TransactionProcessState enumeration.
 ---
-# UserDefinedTransactionHandlerId Class
+# TransactionProcessState Enumeration
+
+## Constants
+### **Ended**
+`Ended = "Ended"`
+### **Started**
+`Started = "Started"`
