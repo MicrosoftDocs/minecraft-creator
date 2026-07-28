@@ -39,12 +39,13 @@ Notes:
 
 ### **addUserDefinedOperation**
 `
-addUserDefinedOperation(transactionHandler: UserDefinedTransactionOperationHandler, operationData: string, operationName?: string): void
+addUserDefinedOperation(transactionHandler: UserDefinedTransactionOperationHandler, prevData: string, currentData: string, operationName?: string): void
 `
 
 #### **Parameters**
 - **transactionHandler**: [*UserDefinedTransactionOperationHandler*](UserDefinedTransactionOperationHandler.md)
-- **operationData**: *string*
+- **prevData**: *string*
+- **currentData**: *string*
 - **operationName**?: *string* = `null`
   
 Notes:

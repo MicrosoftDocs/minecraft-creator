@@ -177,7 +177,7 @@ Notes:
 image(src: ObservableString | string, pack: ObservableString | string, options?: ImageOptions): CustomForm
 `
 
-Adds an image component to the form layout.
+Adds an image component to the form layout. Gifs are supported but are extremely slow to load - always try to have the gif as small as possible.
 
 #### **Parameters**
 - **src**: [*ObservableString*](ObservableString.md) | *string*
