@@ -83,7 +83,6 @@ Type: *unknown*
 - [removeFolder](#removefolder)
 - [setColor](#setcolor)
 - [setExpanded](#setexpanded)
-- [setHeaderAction](#setheaderaction)
 - [setMenu](#setmenu)
 - [setSelected](#setselected)
 - [setTitle](#settitle)
@@ -267,18 +266,6 @@ Set expanded state of the entry.
 - **expanded**: *boolean*
   
   New expanded state
-
-**Returns** *void*
-
-### **setHeaderAction**
-`
-setHeaderAction(actionParams: ICollectionTreeFolderHeaderActionParams | undefined): void
-`
-
-Updates the header action for the folder
-
-#### **Parameters**
-- **actionParams**: *ICollectionTreeFolderHeaderActionParams* | *undefined*
 
 **Returns** *void*
 

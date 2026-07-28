@@ -4,21 +4,14 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-admin.AllowListEntry Interface
-description: Contents of the @minecraft/server-admin.AllowListEntry class.
+title: minecraft/server-admin.AllowListEntryNameInfo Interface
+description: Contents of the @minecraft/server-admin.AllowListEntryNameInfo class.
 ---
-# AllowListEntry Interface
+# AllowListEntryNameInfo Interface
 
-Represents an entry in the allow list.
+Represents an entry to use with the allow list.
 
 ## Properties
-
-### **ignoresPlayerLimit**
-`ignoresPlayerLimit: boolean;`
-
-Allows the player onto the server even when the server is at the player limit.
-
-Type: *boolean*
 
 ### **name**
 `name?: string;`

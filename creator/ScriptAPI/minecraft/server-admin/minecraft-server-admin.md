@@ -21,13 +21,13 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
 ```json
 {
     "module_name": "@minecraft/server-admin",
-    "version": "1.0.0-beta.1.26.50-preview.20"
+    "version": "1.0.0-beta.1.26.50-preview.22"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.50-beta.20 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.50-beta.22 of Minecraft.
 
 ## Available Versions
-- `1.0.0-beta.1.26.50-preview.20`
+- `1.0.0-beta.1.26.50-preview.22`
 
 ## Classes
 - [AdminBeforeEvents](AdminBeforeEvents.md)
@@ -43,6 +43,7 @@ This is version 1.x.x of this module, which is the latest as of version 1.26.50-
 
 ## Interfaces
 - [AllowListEntry](AllowListEntry.md)
+- [AllowListEntryNameInfo](AllowListEntryNameInfo.md)
 - [TransferPlayerIpPortOptions](TransferPlayerIpPortOptions.md)
 - [TransferPlayerNetherNetOptions](TransferPlayerNetherNetOptions.md)
 

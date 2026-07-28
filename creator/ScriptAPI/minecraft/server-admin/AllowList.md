@@ -37,15 +37,18 @@ Type: [*AllowListEntry*](AllowListEntry.md)[]
 
 ### **add**
 `
-add(player: AllowListEntry | minecraftserver.Player): void
+add(playerDetails: AllowListEntryNameInfo | minecraftserver.Player, ignorePlayerLimit?: boolean): void
 `
 
 Adds a player to the server's allow list.
 
 #### **Parameters**
-- **player**: [*AllowListEntry*](AllowListEntry.md) | [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+- **playerDetails**: [*AllowListEntryNameInfo*](AllowListEntryNameInfo.md) | [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
   Player or player name that should be added to the allow list.
+- **ignorePlayerLimit**?: *boolean* = `false`
+  
+  If true, the player will be allowed onto the server even if the server is at its player limit.
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -64,13 +67,13 @@ Notes:
 
 ### **contains**
 `
-contains(player: AllowListEntry | minecraftserver.Player): boolean
+contains(playerDetails: AllowListEntryNameInfo | minecraftserver.Player): boolean
 `
 
 Returns if the player is in the server's allow list.
 
 #### **Parameters**
-- **player**: [*AllowListEntry*](AllowListEntry.md) | [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+- **playerDetails**: [*AllowListEntryNameInfo*](AllowListEntryNameInfo.md) | [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
   Player or player name that should be checked for.
 
@@ -94,13 +97,13 @@ Notes:
 
 ### **remove**
 `
-remove(player: AllowListEntry | minecraftserver.Player): void
+remove(playerDetails: AllowListEntryNameInfo | minecraftserver.Player): void
 `
 
 Removes a player from the server's allow list.
 
 #### **Parameters**
-- **player**: [*AllowListEntry*](AllowListEntry.md) | [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+- **playerDetails**: [*AllowListEntryNameInfo*](AllowListEntryNameInfo.md) | [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
   Player or player name that should be removed from the allow list.
   
