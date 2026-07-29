@@ -92,6 +92,7 @@ There's more information about behavior packs in the [Introduction to Behavior P
 | [minecraft:underwater_cave_carver_feature](Features\minecraftUnderwater_cave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
 | [minecraft:vegetation_patch_feature](Features\minecraftVegetation_patch_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
 | [minecraft:weighted_random_feature](Features\minecraftWeighted_random_feature.md)| Randomly selects and places a feature based on a weight value.|
+| [minecraft:multi_block_feature](Features\minecraftMulti_block_feature.md)| Places a [multi-block](../../BlockReference/Examples/traits/multi_block.md) in the world.|
 
 ### Unsupported features
 

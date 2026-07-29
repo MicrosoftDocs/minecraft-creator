@@ -1288,5 +1288,19 @@ Here is an example of the complete feature schema:
       }
     }
   }
+  object "minecraft:multi_block_feature" : opt
+  {
+    object "description"
+    {
+      string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+    }
+    "places_block" // Reference to the multi-block to be placed, must be the first part of a multi-block.
+    bool "enforce_placement_rules" : opt // If true, enforce the multi-blocks mayPlace checks.
+    bool "randomize_rotation" : opt // If true, randomizes the block's cardinal orientation.
+    array "may_replace" : opt
+    {
+      "<any array element>" : opt // A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced, except other multi-blocks.
+    }
+  }
 }
 ```
