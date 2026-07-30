@@ -47,7 +47,6 @@ A block with the `minecraft:multi_block` trait has the following requirements an
 - It cannot define the [`minecraft:replaceable`](../BlockComponents/minecraftBlock_replaceable.md) component in the permutations array.
 - It cannot define the [`minecraft:random_offset`](../BlockComponents/minecraftBlock_random_offset.md) component in the permutations array.
 - If the direction is `up` or `down`, it cannot define the [`minecraft:precipitation_interactions`](../BlockComponents/minecraftBlock_precipitation_interactions.md) component in the permutations array, to prevent partial vertical snow accumulation.
-- It cannot define the [`minecraft:block_entity`](../BlockComponents/minecraftBlock_block_entity.md) component.
 
 ## Example
 
