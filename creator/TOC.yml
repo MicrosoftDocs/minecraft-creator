@@ -653,6 +653,18 @@
                   href: Reference/Content/blockreference/Examples/BlockDescription.md
                 - name: Block States List
                   href: Reference/Content/blockreference/Examples/BlockStatesList.md
+                - name: Block Traits
+                  items:
+                    - name: Introduction To Block Traits
+                      href: Documents/intro-block-traits.md
+                    - name: Connection Block Trait
+                      href: Reference/Content/BlockReference/Examples/traits/connection.md
+                    - name: Multi-block Block Trait
+                      href: Reference/Content/BlockReference/Examples/traits/multi_block.md
+                    - name: Placement Direction Block Trait
+                      href: Reference/Content/BlockReference/Examples/traits/placement_direction.md
+                    - name: Placement Position Block Trait
+                      href: Reference/Content/BlockReference/Examples/traits/placement_position.md
                 - name: Intrinsic Block States
                   href: Reference/Content/blockreference/Examples/IntrinsicBlockStatesList.md
                 - name: Aux Value to Block State Map
