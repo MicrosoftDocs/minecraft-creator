@@ -625,8 +625,10 @@
           items:
             - name: Getting Started with Dedicated Server
               href: Documents/BedrockServer/getting-started.md
-            - name: Server Properties
+            - name: Bedrock Dedicated Server Properties
               href: Documents/BedrockServer/server-properties.md
+            - name: Pack Optimization with Bedrock Dedicated Server
+              href: Documents/BedrockServer/pack-optimization.md
             - name: Scripting Bedrock Dedicated Server
               href: Documents/BedrockServer/scripting.md
     - name: Reference Documentation
