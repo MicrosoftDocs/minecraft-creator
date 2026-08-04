@@ -26,9 +26,7 @@ Type: *IPropertyPane*
 ## Methods
 - [createModalOverlayPane](#createmodaloverlaypane)
 - [getActiveModalOverlayId](#getactivemodaloverlayid)
-- [isHeaderActionVisible](#isheaderactionvisible)
 - [setActiveModalOverlay](#setactivemodaloverlay)
-- [setHeaderActionVisibility](#setheaderactionvisibility)
 
 ### **createModalOverlayPane**
 `
@@ -51,13 +49,6 @@ getActiveModalOverlayId(): string | undefined
 
 **Returns** *string* | *undefined* - Unique identifier of the active modal overlay
 
-### **isHeaderActionVisible**
-`
-isHeaderActionVisible(): boolean
-`
-
-**Returns** *boolean* - Current visibility state of header action
-
 ### **setActiveModalOverlay**
 `
 setActiveModalOverlay(id: string | undefined): void
@@ -69,19 +60,5 @@ Sets registered modal overlay as active, if not found it will hide the current.
 - **id**: *string* | *undefined*
   
   Unique id for modal overlay pane.
-
-**Returns** *void*
-
-### **setHeaderActionVisibility**
-`
-setHeaderActionVisibility(visible: boolean): void
-`
-
-If a header action exists, updates visibility of the button.
-
-#### **Parameters**
-- **visible**: *boolean*
-  
-  New visibility state of the action button.
 
 **Returns** *void*

@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.50-preview.20"
+    "version": "0.1.0-beta.1.26.50-preview.22"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.20 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.22 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.50-preview.20`
+- `0.1.0-beta.1.26.50-preview.22`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -403,7 +403,6 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [IRegisteredKeyBinding](IRegisteredKeyBinding.md)
 - [IRegisterExtensionOptionalParameters](IRegisterExtensionOptionalParameters.md)
 - [IRootPropertyPane](IRootPropertyPane.md)
-- [IRootPropertyPaneHeaderAction](IRootPropertyPaneHeaderAction.md)
 - [IRootPropertyPaneOptions](IRootPropertyPaneOptions.md)
 - [IStatusBar](IStatusBar.md)
 - [IStatusBarItem](IStatusBarItem.md)

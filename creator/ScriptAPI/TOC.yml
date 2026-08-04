@@ -1336,6 +1336,8 @@
       href: minecraft/server-admin/ServerVariables.md
     - name: AllowListEntry
       href: minecraft/server-admin/AllowListEntry.md
+    - name: AllowListEntryNameInfo
+      href: minecraft/server-admin/AllowListEntryNameInfo.md
     - name: TransferPlayerIpPortOptions
       href: minecraft/server-admin/TransferPlayerIpPortOptions.md
     - name: TransferPlayerNetherNetOptions
@@ -1952,8 +1954,6 @@
       href: minecraft/server-editor/IRegisterExtensionOptionalParameters.md
     - name: IRootPropertyPane
       href: minecraft/server-editor/IRootPropertyPane.md
-    - name: IRootPropertyPaneHeaderAction
-      href: minecraft/server-editor/IRootPropertyPaneHeaderAction.md
     - name: IRootPropertyPaneOptions
       href: minecraft/server-editor/IRootPropertyPaneOptions.md
     - name: IStatusBar

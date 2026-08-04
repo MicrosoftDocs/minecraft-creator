@@ -10,8 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.11.0-beta.1.26.50-preview.20](#2110-beta12650-preview20)
-- [2.9.0-rc.1.26.50-preview.20](#290-rc12650-preview20)
+- [2.11.0-beta.1.26.50-preview.22](#2110-beta12650-preview22)
+- [2.9.0-rc.1.26.50-preview.22](#290-rc12650-preview22)
 - [2.8.0](#280)
 - [2.7.0](#270)
 - [2.6.0](#260)
@@ -42,7 +42,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.11.0-beta.1.26.50-preview.20
+## 2.11.0-beta.1.26.50-preview.22
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -229,7 +229,7 @@ description: Changelog of the `@minecraft/server` module
 - Added value `BlockDynamicProperties`
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
-## 2.9.0-rc.1.26.50-preview.20
+## 2.9.0-rc.1.26.50-preview.22
 #### Changed *[`Block`](Block.md)*
 - Added function *[`getParts`](Block.md#getparts)*
 #### Changed *[`Dimension`](Dimension.md)*

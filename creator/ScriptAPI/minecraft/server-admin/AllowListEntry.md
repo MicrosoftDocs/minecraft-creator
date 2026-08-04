@@ -9,9 +9,16 @@ description: Contents of the @minecraft/server-admin.AllowListEntry class.
 ---
 # AllowListEntry Interface
 
-Represents an entry to use in the allow list.
+Represents an entry in the allow list.
 
 ## Properties
+
+### **ignoresPlayerLimit**
+`ignoresPlayerLimit: boolean;`
+
+Allows the player onto the server even when the server is at the player limit.
+
+Type: *boolean*
 
 ### **name**
 `name?: string;`

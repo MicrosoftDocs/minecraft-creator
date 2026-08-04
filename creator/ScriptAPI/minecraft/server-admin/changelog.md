@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server-admin` module
 # `@minecraft/server-admin` Changelog
 
 ## Version Changes
-- [1.0.0-beta.1.26.50-preview.20](#100-beta12650-preview20)
+- [1.0.0-beta.1.26.50-preview.22](#100-beta12650-preview22)
 
-## 1.0.0-beta.1.26.50-preview.20
+## 1.0.0-beta.1.26.50-preview.22
 #### Added `@minecraft/server-admin` Module

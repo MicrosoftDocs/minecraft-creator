@@ -23,13 +23,6 @@ Optional content badge identifier associated with the root pane.
 
 Type: *string*
 
-### **headerAction**
-`headerAction?: IRootPropertyPaneHeaderAction;`
-
-Optional action button to be displayed on the header.
-
-Type: *IRootPropertyPaneHeaderAction*
-
 ### **icon**
 `icon?: string;`
 
@@ -43,3 +36,10 @@ Type: *string*
 Determines how root pane will be displayed in the UI.
 
 Type: *RootPaneLocation*
+
+### **scrollable**
+`scrollable?: boolean;`
+
+Determines if the pane is scrollable
+
+Type: *boolean*
