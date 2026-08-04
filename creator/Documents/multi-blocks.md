@@ -32,11 +32,15 @@ The multi-block trait has two properties:
 >
 > The `direction` property can accept any valid [direction](../ScriptAPI/minecraft/server/Direction.md). However, for horizontal multi-blocks `north`, `south`, `west`, `east` the direction may be overridden by the player facing direction if the block also defines the [minecraft:placement_direction](../Reference/Content/BlockReference/Examples/traits/placement_direction.md) trait that enables the `minecraft:cardinal_direction` state.
 
+> [!IMPORTANT]
+>
+> The `minecraft:multi_block` trait requires Bedrock Edition 1.26.10 or higher. For vertical directions if the block `format_version` is less than 1.26.40 then it requires that the "Upcoming Creator Features" experimental toggle is set on. For horizontal directions the experiment is required for `format_version` less than 1.26.50.
+
 First, let's define the light post without any components:
 
 ```json
 {
-  "format_version": "1.26.1",
+  "format_version": "1.26.40",
   "minecraft:block": {
 	"description": {
 	  "identifier": "multiblock:light",
@@ -79,7 +83,7 @@ Here's the new block definition. Note that parts 1 and 2 share the same geometry
 
 ```json
 {
-  "format_version": "1.26.1",
+  "format_version": "1.26.40",
   "minecraft:block": {
 	"description": {
 	  "identifier": "multiblock:light",
@@ -175,7 +179,7 @@ Here's the updated definition file, with some parts elided to save a little spac
 
 ```json
 {
-	"format_version": "1.26.1",
+	"format_version": "1.26.40",
 	"minecraft:block": {
 		"description": {
 			"identifier": "multiblock:light",
@@ -400,7 +404,7 @@ system.beforeEvents.startup.subscribe((initEvent) => {
 
 Now, our light post will come on when Redstone is connected to it!
 
-[Illuminated light post](./Media/multi-blocks/light_on.png)
+:::image type="content" source="./Media/multi-blocks/light_on.png" alt-text="Image of the light post multi-block in the on state":::
 
 ## Wrapping up
 
@@ -414,7 +418,7 @@ The following block definition is an example of a horizontal multi-block log tha
 
 ```json
 {
-    "format_version": "1.26.40",
+    "format_version": "1.26.50",
     "minecraft:block": {
         "description": {
             "identifier": "multi_block:horizontal_log",
