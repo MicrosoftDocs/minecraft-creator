@@ -33,7 +33,7 @@ Notes:
 ### **chatDisplayName**
 `read-only chatDisplayName: string;`
 
-The player's chat display name, composed from {@link Player.chatNamePrefix} + {@link Player.name} + {@link Player.chatNameSuffix}. This is the name shown as the author of chat messages sent by this player. To change the name shown above the player's head, use {@link Entity.nameTag}.
+The player's chat display name, composed from [*@minecraft/server.Player.chatNamePrefix*](../../../scriptapi/minecraft/server/Player.md#chatnameprefix) + [*@minecraft/server.Player.name*](../../../scriptapi/minecraft/server/Player.md#name) + [*@minecraft/server.Player.chatNameSuffix*](../../../scriptapi/minecraft/server/Player.md#chatnamesuffix). This is the name shown as the author of chat messages sent by this player. To change the name shown above the player's head, use [*@minecraft/server.Entity.nameTag*](../../../scriptapi/minecraft/server/Entity.md#nametag).
 
 Type: *string*
 
@@ -49,7 +49,7 @@ Notes:
 ### **chatMessagePrefix**
 `chatMessagePrefix?: string;`
 
-An optional string that, when set, is prepended to the text of chat messages sent by this player. Useful for applying formatting or color codes to a player's messages (e.g., '§a' to make their messages green). Does not affect the player's name display - use {@link Player.chatNamePrefix} for the name shown in chat, or {@link Entity.nameTag} for the name above the player's head. Set to undefined to clear.
+An optional string that, when set, is prepended to the text of chat messages sent by this player. Useful for applying formatting or color codes to a player's messages (e.g., '§a' to make their messages green). Does not affect the player's name display - use [*@minecraft/server.Player.chatNamePrefix*](../../../scriptapi/minecraft/server/Player.md#chatnameprefix) for the name shown in chat, or [*@minecraft/server.Entity.nameTag*](../../../scriptapi/minecraft/server/Entity.md#nametag) for the name above the player's head. Set to undefined to clear.
 
 Type: *string*
 
@@ -64,7 +64,7 @@ Notes:
 ### **chatNamePrefix**
 `chatNamePrefix?: string;`
 
-An optional string that, when set, is prepended to the player's name in chat messages. Does not affect the name tag above the player's head or the player list - use {@link Entity.nameTag} for that. To prefix the message text itself, use {@link Player.chatMessagePrefix}. Set to undefined to clear.
+An optional string that, when set, is prepended to the player's name in chat messages. Does not affect the name tag above the player's head or the player list - use [*@minecraft/server.Entity.nameTag*](../../../scriptapi/minecraft/server/Entity.md#nametag) for that. To prefix the message text itself, use [*@minecraft/server.Player.chatMessagePrefix*](../../../scriptapi/minecraft/server/Player.md#chatmessageprefix). Set to undefined to clear.
 
 Type: *string*
 
@@ -79,7 +79,7 @@ Notes:
 ### **chatNameSuffix**
 `chatNameSuffix?: string;`
 
-An optional string that, when set, is appended to the player's name in chat messages. Does not affect the name tag above the player's head or the player list - use {@link Entity.nameTag} for that. See also {@link Player.chatNamePrefix}. Set to undefined to clear.
+An optional string that, when set, is appended to the player's name in chat messages. Does not affect the name tag above the player's head or the player list - use [*@minecraft/server.Entity.nameTag*](../../../scriptapi/minecraft/server/Entity.md#nametag) for that. See also [*@minecraft/server.Player.chatNamePrefix*](../../../scriptapi/minecraft/server/Player.md#chatnameprefix). Set to undefined to clear.
 
 Type: *string*
 

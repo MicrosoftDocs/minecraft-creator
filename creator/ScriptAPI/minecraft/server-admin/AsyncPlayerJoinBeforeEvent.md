@@ -70,7 +70,7 @@ Notes:
 disconnect(reason?: string): void
 `
 
-Deprecated - use {@link disallowJoin} instead.Call this to disconnect a player. They will be allowed to try to join again. They will be allowed to try to join again after being disconnected.
+Deprecated - use [*@minecraft/server-admin.AsyncPlayerJoinBeforeEvent.disallowJoin*](../../../scriptapi/minecraft/server-admin/AsyncPlayerJoinBeforeEvent.md#disallowjoin) instead. Call this to disconnect a player. They will be allowed to try to join again. They will be allowed to try to join again after being disconnected.
 
 #### **Parameters**
 - **reason**?: *string* = `null`

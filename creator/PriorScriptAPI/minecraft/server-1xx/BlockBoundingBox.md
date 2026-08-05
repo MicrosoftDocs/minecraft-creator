@@ -14,7 +14,7 @@ description: Contents of the @minecraft/server.BlockBoundingBox class (Version 1
 
 A BlockBoundingBox is an interface to an object which represents an AABB aligned rectangle.  
 
-The BlockBoundingBox assumes that it was created in a valid state (min <= max) but cannot guarantee it (unless it was created using the associated {@link @minecraft/server.BlockBoundingBoxUtils} utility functions.
+The BlockBoundingBox assumes that it was created in a valid state (min <= max) but cannot guarantee it.
 
 The min/max coordinates represent the diametrically opposite corners of the rectangle.
 

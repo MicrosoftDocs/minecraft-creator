@@ -15,9 +15,63 @@ description: Contents of the @minecraft/server-editor.ISubPanePropertyItem class
 
 A property item which supports Sub Pane properties
 
+## Properties
+
+### **header**
+`read-only header: ISubPaneHeader | undefined;`
+
+Fixed-layout header of the sub pane, or undefined if addHeader() was not called.
+
+Type: *ISubPaneHeader* | *undefined*
+
+### **subPaneViewSortType**
+`read-only subPaneViewSortType: SubPaneViewSortType;`
+
+Current sorting type for the direct child sub panes.
+
+Type: *SubPaneViewSortType*
+
+### **viewControlPane**
+`read-only viewControlPane: IListViewControlPane | undefined;`
+
+View control pane for the direct child sub panes, or undefined if not built.
+
+Type: *IListViewControlPane* | *undefined*
+
 ## Methods
+- [addHeader](#addheader)
+- [buildSubPaneViewControl](#buildsubpaneviewcontrol)
 - [setAlignment](#setalignment)
 - [setDirection](#setdirection)
+- [setTags](#settags)
+
+### **addHeader**
+`
+addHeader(options?: ISubPaneHeaderOptions): ISubPaneHeader
+`
+
+Replaces the default expander header with a fixed-layout header. Available on sub panes only, so root panes never expose it.
+
+#### **Parameters**
+- **options**?: *ISubPaneHeaderOptions*
+  
+  Options to create the header.
+
+**Returns** *ISubPaneHeader*
+
+### **buildSubPaneViewControl**
+`
+buildSubPaneViewControl(options: ISubPaneViewControlOptions): IListViewControlPane
+`
+
+Enables sorting and a fixed footer over this sub pane's direct child sub panes. Reuses the list view control, rendered in the root footer or inline.
+
+#### **Parameters**
+- **options**: *ISubPaneViewControlOptions*
+  
+  Options to create the view control.
+
+**Returns** *IListViewControlPane*
 
 ### **setAlignment**
 `
@@ -42,5 +96,19 @@ Updates layout direction of the sub pane.
 
 #### **Parameters**
 - **layout**: *PaneLayoutType*
+
+**Returns** *void*
+
+### **setTags**
+`
+setTags(tags: string[] | undefined): void
+`
+
+Updates the tags associated with the sub pane, used by a parent sub pane view control's tag filter.
+
+#### **Parameters**
+- **tags**: *string*[] | *undefined*
+  
+  New tags.
 
 **Returns** *void*

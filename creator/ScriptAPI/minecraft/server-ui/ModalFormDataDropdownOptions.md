@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server-ui.ModalFormDataDropdownOptions c
 ---
 # ModalFormDataDropdownOptions Interface
 
-An interface that is passed into {@link @minecraft/Server-ui.ModalFormData.dropdown} to provide additional options for the dropdown creation.
+An interface that is passed into [*@minecraft/server-ui.ModalFormData.dropdown*](../../../scriptapi/minecraft/server-ui/ModalFormData.md#dropdown) to provide additional options for the dropdown creation.
 
 ## Properties
 

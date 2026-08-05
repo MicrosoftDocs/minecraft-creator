@@ -17,14 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.8.0"
+    "version": "2.9.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.50-beta.22 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.50-beta.24 of Minecraft.
 
 ## Available Versions
-- `2.11.0-beta.1.26.50-preview.22`
-- `2.9.0-rc.1.26.50-preview.22`
+- `2.11.0-beta.1.26.50-preview.24`
+- `2.9.0`
 - `2.8.0`
 - `2.7.0`
 - `2.6.0`
@@ -576,6 +576,8 @@ The following API versions are from a major version that is documented here: [*@
 - [World](World.md)
 - [WorldAfterEvents](WorldAfterEvents.md)
 - [WorldBeforeEvents](WorldBeforeEvents.md)
+- [WorldClock](WorldClock.md)
+- [WorldClockRegistry](WorldClockRegistry.md)
 - [WorldLoadAfterEvent](WorldLoadAfterEvent.md)
 - [WorldLoadAfterEventSignal](WorldLoadAfterEventSignal.md)
 
@@ -736,6 +738,10 @@ The following API versions are from a major version that is documented here: [*@
 - [RawMessageError](RawMessageError.md)
 - [TickingAreaError](TickingAreaError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
+- [WorldClockInvalidRegistryError](WorldClockInvalidRegistryError.md)
+- [WorldClockNotFoundError](WorldClockNotFoundError.md)
+- [WorldClockRegistrationError](WorldClockRegistrationError.md)
+- [WorldClockReloadNewWorldClockError](WorldClockReloadNewWorldClockError.md)
 
 ## Constants
 

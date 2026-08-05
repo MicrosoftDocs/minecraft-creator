@@ -138,7 +138,7 @@ Creates a new instance of a stack of items for use in the world.
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md) | *string*
   
-  Type of item to create. See the {@link @minecraft/vanilla-data.MinecraftItemTypes} enumeration for a list of standard item types in Minecraft experiences.
+  Type of item to create.
 - **amount**?: *number* = `1`
   * Bounds: [`1`, `255`]
   

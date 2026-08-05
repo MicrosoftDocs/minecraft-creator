@@ -21,7 +21,7 @@ description: Contents of the @minecraft/server-editor.BlockUtilityTasks class.
 
 ### **extrude**
 `
-extrude(location: minecraftserver.Vector3, direction?: BlockUtilityExtrudeDirection, faceRadius?: number, layerCount?: number, isShrink?: boolean, criteria?: BlockUtilityFloodMatchCriteria, customBlockList?: string[], maxBlocksPerTick?: number, buildGeometry?: boolean, tolerance?: number, faceVolume?: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume): Promise<RelativeVolumeListBlockVolume>
+extrude(location: minecraftserver.Vector3, direction?: BlockUtilityExtrudeDirection, faceRadius?: number, layerCount?: number, isShrink?: boolean, criteria?: BlockUtilityFloodMatchCriteria, customBlockList?: string[], maxBlocksPerTick?: number, buildGeometry?: boolean, tolerance?: number, faceVolume?: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume): VolumeTaskPromise
 `
 
 #### **Parameters**
@@ -37,7 +37,7 @@ extrude(location: minecraftserver.Vector3, direction?: BlockUtilityExtrudeDirect
 - **tolerance**?: *number* = `null`
 - **faceVolume**?: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) = `null`
 
-**Returns** Promise&lt;[*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)&gt;
+**Returns** [*VolumeTaskPromise*](VolumeTaskPromise.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -45,7 +45,7 @@ Notes:
 
 ### **fillVolume**
 `
-fillVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, block?: minecraftserver.BlockPermutation | minecraftserver.BlockType | string, maxBlocksPerTick?: number): Promise<number>
+fillVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, block?: minecraftserver.BlockPermutation | minecraftserver.BlockType | string, maxBlocksPerTick?: number): NumberTaskPromise
 `
 
 #### **Parameters**
@@ -53,7 +53,7 @@ fillVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolu
 - **block**?: [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) | *string* = `null`
 - **maxBlocksPerTick**?: *number* = `null`
 
-**Returns** Promise&lt;*number*&gt;
+**Returns** [*NumberTaskPromise*](NumberTaskPromise.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -61,14 +61,14 @@ Notes:
 
 ### **findObscuredBlocksWithinVolume**
 `
-findObscuredBlocksWithinVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, maxBlocksPerTick?: number): Promise<RelativeVolumeListBlockVolume>
+findObscuredBlocksWithinVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, maxBlocksPerTick?: number): VolumeTaskPromise
 `
 
 #### **Parameters**
 - **volume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 - **maxBlocksPerTick**?: *number* = `null`
 
-**Returns** Promise&lt;[*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)&gt;
+**Returns** [*VolumeTaskPromise*](VolumeTaskPromise.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -76,7 +76,7 @@ Notes:
 
 ### **floodSearch**
 `
-floodSearch(location: minecraftserver.Vector3, criteria?: BlockUtilityFloodMatchCriteria, radius?: number, customBlockList?: string[], maxResultBlocks?: number, maxBlocksPerTick?: number): Promise<RelativeVolumeListBlockVolume>
+floodSearch(location: minecraftserver.Vector3, criteria?: BlockUtilityFloodMatchCriteria, radius?: number, customBlockList?: string[], maxResultBlocks?: number, maxBlocksPerTick?: number, directionMask?: number): VolumeTaskPromise
 `
 
 #### **Parameters**
@@ -86,8 +86,9 @@ floodSearch(location: minecraftserver.Vector3, criteria?: BlockUtilityFloodMatch
 - **customBlockList**?: *string*[] = `null`
 - **maxResultBlocks**?: *number* = `null`
 - **maxBlocksPerTick**?: *number* = `null`
+- **directionMask**?: *number* = `null`
 
-**Returns** Promise&lt;[*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)&gt;
+**Returns** [*VolumeTaskPromise*](VolumeTaskPromise.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -95,14 +96,14 @@ Notes:
 
 ### **generateManifest**
 `
-generateManifest(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, maxBlocksPerTick?: number): Promise<BlockUtilityManifest>
+generateManifest(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, maxBlocksPerTick?: number): ManifestTaskPromise
 `
 
 #### **Parameters**
 - **volume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 - **maxBlocksPerTick**?: *number* = `null`
 
-**Returns** Promise&lt;[*BlockUtilityManifest*](BlockUtilityManifest.md)&gt;
+**Returns** [*ManifestTaskPromise*](ManifestTaskPromise.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -110,7 +111,7 @@ Notes:
 
 ### **replaceBlocksInSelection**
 `
-replaceBlocksInSelection(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, fromBlockIdentifier: string, toBlock?: minecraftserver.BlockPermutation | minecraftserver.BlockType | string, maxBlocksPerTick?: number): Promise<number>
+replaceBlocksInSelection(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, fromBlockIdentifier: string, toBlock?: minecraftserver.BlockPermutation | minecraftserver.BlockType | string, maxBlocksPerTick?: number): NumberTaskPromise
 `
 
 #### **Parameters**
@@ -119,7 +120,7 @@ replaceBlocksInSelection(volume: minecraftserver.BlockVolumeBase | RelativeVolum
 - **toBlock**?: [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) | *string* = `null`
 - **maxBlocksPerTick**?: *number* = `null`
 
-**Returns** Promise&lt;*number*&gt;
+**Returns** [*NumberTaskPromise*](NumberTaskPromise.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -127,14 +128,14 @@ Notes:
 
 ### **shrinkWrapVolume**
 `
-shrinkWrapVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, maxBlocksPerTick?: number): Promise<RelativeVolumeListBlockVolume>
+shrinkWrapVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, maxBlocksPerTick?: number): VolumeTaskPromise
 `
 
 #### **Parameters**
 - **volume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 - **maxBlocksPerTick**?: *number* = `null`
 
-**Returns** Promise&lt;[*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)&gt;
+**Returns** [*VolumeTaskPromise*](VolumeTaskPromise.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -142,7 +143,7 @@ Notes:
 
 ### **trimVolumeToFitContents**
 `
-trimVolumeToFitContents(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, retainMarqueeAfterTrimming: boolean, ignoreLiquid: boolean, ignoreNoCollision: boolean, blockMask?: BlockMaskList, maxBlocksPerTick?: number): Promise<RelativeVolumeListBlockVolume>
+trimVolumeToFitContents(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, retainMarqueeAfterTrimming: boolean, ignoreLiquid: boolean, ignoreNoCollision: boolean, blockMask?: BlockMaskList, maxBlocksPerTick?: number): VolumeTaskPromise
 `
 
 #### **Parameters**
@@ -153,7 +154,7 @@ trimVolumeToFitContents(volume: minecraftserver.BlockVolumeBase | RelativeVolume
 - **blockMask**?: [*BlockMaskList*](BlockMaskList.md) = `null`
 - **maxBlocksPerTick**?: *number* = `null`
 
-**Returns** Promise&lt;[*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)&gt;
+**Returns** [*VolumeTaskPromise*](VolumeTaskPromise.md)
   
 Notes:
 - This function can't be called in restricted-execution mode.

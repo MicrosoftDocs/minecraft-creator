@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server.ContainerRulesErrorReason enumera
 ---
 # ContainerRulesErrorReason Enumeration
 
-Reasons that the {@link @minecraft/server.ContainerRulesError} was thrown.
+Reasons that the [*@minecraft/server.ContainerRulesError*](../../../scriptapi/minecraft/server/minecraft-server.md#containerruleserror) was thrown.
 
 ## Constants
 ### **BannedItem**

@@ -21,13 +21,13 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 ```json
 {
     "module_name": "@minecraft/server-gametest",
-    "version": "1.0.0-beta.1.26.50-preview.22"
+    "version": "1.0.0-beta.1.26.50-preview.24"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.50-beta.22 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.50-beta.24 of Minecraft.
 
 ## Available Versions
-- `1.0.0-beta.1.26.50-preview.22`
+- `1.0.0-beta.1.26.50-preview.24`
 
 ## Enumerations
 - [GameTestCompletedErrorReason](GameTestCompletedErrorReason.md)
@@ -221,7 +221,7 @@ Notes:
 spawnSimulatedPlayer(location: minecraftserver.DimensionLocation, name: string, gameMode: minecraftserver.GameMode): SimulatedPlayer
 `
 
-Spawns a simulated player that isn't associated to a specific {@link Test}.  You can use {@link SimulatedPlayer.remove} to remove the player from the world.
+Spawns a simulated player that isn't associated to a specific [*@minecraft/server-gametest.Test*](../../../scriptapi/minecraft/server-gametest/Test.md).  You can use [*@minecraft/server-gametest.SimulatedPlayer.disconnect*](../../../scriptapi/minecraft/server-gametest/SimulatedPlayer.md#disconnect) to remove the player from the world.
 
 #### **Parameters**
 - **location**: [*@minecraft/server.DimensionLocation*](../../../scriptapi/minecraft/server/DimensionLocation.md)

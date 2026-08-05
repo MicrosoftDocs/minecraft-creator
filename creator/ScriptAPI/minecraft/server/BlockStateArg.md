@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server.BlockStateArg type alias.
 ---
 # BlockStateArg Type Alias
 
-Type alias used by the [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) matches and resolve functions to narrow block state argument types to those mapped by {@link @minecraft/vanilla-data.BlockStateMapping}.
+Type alias used by the [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) matches and resolve functions to narrow block state argument types.
 
 ## Declaration
 `export type BlockStateArg<T> = T extends `${minecraftvanilladata.MinecraftBlockTypes}` ? T extends keyof minecraftvanilladata.BlockStateMapping ? minecraftvanilladata.BlockStateMapping[T] : never : Record<string, boolean | number | string>;`
