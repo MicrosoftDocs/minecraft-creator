@@ -14,6 +14,12 @@
       href: minecraft/debug-utilities/minecraft-debug-utilities.md
     - name: minecraft/debug-utilities Changelog
       href: minecraft/debug-utilities/changelog.md
+    - name: DiagnosticsChartDisplayType
+      href: minecraft/debug-utilities/DiagnosticsChartDisplayType.md
+    - name: DiagnosticsErrorReason
+      href: minecraft/debug-utilities/DiagnosticsErrorReason.md
+    - name: DiagnosticsTableDisplayType
+      href: minecraft/debug-utilities/DiagnosticsTableDisplayType.md
     - name: DebugArrow
       href: minecraft/debug-utilities/DebugArrow.md
     - name: DebugBox
@@ -38,6 +44,18 @@
       href: minecraft/debug-utilities/DebugSphere.md
     - name: DebugText
       href: minecraft/debug-utilities/DebugText.md
+    - name: DiagnosticsManager
+      href: minecraft/debug-utilities/DiagnosticsManager.md
+    - name: DiagnosticsTab
+      href: minecraft/debug-utilities/DiagnosticsTab.md
+    - name: DiagnosticsView
+      href: minecraft/debug-utilities/DiagnosticsView.md
+    - name: DiagnosticsChartViewOptions
+      href: minecraft/debug-utilities/DiagnosticsChartViewOptions.md
+    - name: DiagnosticsStat
+      href: minecraft/debug-utilities/DiagnosticsStat.md
+    - name: DiagnosticsTableViewOptions
+      href: minecraft/debug-utilities/DiagnosticsTableViewOptions.md
     - name: HandleCounts
       href: minecraft/debug-utilities/HandleCounts.md
     - name: PluginStats
@@ -1068,6 +1086,10 @@
       href: minecraft/server/WorldAfterEvents.md
     - name: WorldBeforeEvents
       href: minecraft/server/WorldBeforeEvents.md
+    - name: WorldClock
+      href: minecraft/server/WorldClock.md
+    - name: WorldClockRegistry
+      href: minecraft/server/WorldClockRegistry.md
     - name: WorldLoadAfterEvent
       href: minecraft/server/WorldLoadAfterEvent.md
     - name: WorldLoadAfterEventSignal
@@ -1492,6 +1514,8 @@
       href: minecraft/server-editor/StatusBarAlignment.md
     - name: StructureSource
       href: minecraft/server-editor/StructureSource.md
+    - name: SubPaneViewSortType
+      href: minecraft/server-editor/SubPaneViewSortType.md
     - name: TagContainerVariant
       href: minecraft/server-editor/TagContainerVariant.md
     - name: ThemeSettingsColorKey
@@ -1592,6 +1616,8 @@
       href: minecraft/server-editor/IBlockPaletteItem.md
     - name: Logger
       href: minecraft/server-editor/Logger.md
+    - name: ManifestTaskPromise
+      href: minecraft/server-editor/ManifestTaskPromise.md
     - name: MinecraftEditor
       href: minecraft/server-editor/MinecraftEditor.md
     - name: MinimapItem
@@ -1604,6 +1630,8 @@
       href: minecraft/server-editor/ModeChangeAfterEventSignal.md
     - name: NumberLimitObservableValidator
       href: minecraft/server-editor/NumberLimitObservableValidator.md
+    - name: NumberTaskPromise
+      href: minecraft/server-editor/NumberTaskPromise.md
     - name: ObservableValidator
       href: minecraft/server-editor/ObservableValidator.md
     - name: PendingTransaction
@@ -1646,6 +1674,8 @@
       href: minecraft/server-editor/SingleBlockBrushShape.md
     - name: SpeedSettings
       href: minecraft/server-editor/SpeedSettings.md
+    - name: TaskPromiseBase
+      href: minecraft/server-editor/TaskPromiseBase.md
     - name: ThemeSettings
       href: minecraft/server-editor/ThemeSettings.md
     - name: TransactionEvent
@@ -1664,8 +1694,12 @@
       href: minecraft/server-editor/Vector2LimitObservableValidator.md
     - name: Vector3LimitObservableValidator
       href: minecraft/server-editor/Vector3LimitObservableValidator.md
+    - name: VoidTaskPromise
+      href: minecraft/server-editor/VoidTaskPromise.md
     - name: VolumeListTransactionOperationHandler
       href: minecraft/server-editor/VolumeListTransactionOperationHandler.md
+    - name: VolumeTaskPromise
+      href: minecraft/server-editor/VolumeTaskPromise.md
     - name: Widget
       href: minecraft/server-editor/Widget.md
     - name: WidgetComponentBase
@@ -1966,10 +2000,28 @@
       href: minecraft/server-editor/IStringPropertyItem.md
     - name: IStringPropertyItemOptions
       href: minecraft/server-editor/IStringPropertyItemOptions.md
+    - name: ISubPaneHeader
+      href: minecraft/server-editor/ISubPaneHeader.md
+    - name: ISubPaneHeaderButtonItem
+      href: minecraft/server-editor/ISubPaneHeaderButtonItem.md
+    - name: ISubPaneHeaderButtonOptions
+      href: minecraft/server-editor/ISubPaneHeaderButtonOptions.md
+    - name: ISubPaneHeaderCheckboxOptions
+      href: minecraft/server-editor/ISubPaneHeaderCheckboxOptions.md
+    - name: ISubPaneHeaderColorItem
+      href: minecraft/server-editor/ISubPaneHeaderColorItem.md
+    - name: ISubPaneHeaderColorOptions
+      href: minecraft/server-editor/ISubPaneHeaderColorOptions.md
+    - name: ISubPaneHeaderItem
+      href: minecraft/server-editor/ISubPaneHeaderItem.md
+    - name: ISubPaneHeaderOptions
+      href: minecraft/server-editor/ISubPaneHeaderOptions.md
     - name: ISubPanePropertyItem
       href: minecraft/server-editor/ISubPanePropertyItem.md
     - name: ISubPanePropertyItemOptions
       href: minecraft/server-editor/ISubPanePropertyItemOptions.md
+    - name: ISubPaneViewControlOptions
+      href: minecraft/server-editor/ISubPaneViewControlOptions.md
     - name: ITagContainerPropertyItem
       href: minecraft/server-editor/ITagContainerPropertyItem.md
     - name: ITagContainerPropertyItemOptions

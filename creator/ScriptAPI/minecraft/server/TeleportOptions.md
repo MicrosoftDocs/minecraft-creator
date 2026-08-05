@@ -34,15 +34,10 @@ Location that the entity should be facing after teleport.
 
 Type: [*Vector3*](Vector3.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **forceProvidedPositionOnDimensionChange**
 `forceProvidedPositionOnDimensionChange?: boolean;`
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **keepVelocity**
 `keepVelocity?: boolean;`

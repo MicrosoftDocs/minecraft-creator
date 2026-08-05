@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PlayerSplitScreenSlot Enumeration
 description: Contents of the @minecraft/server.PlayerSplitScreenSlot enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerSplitScreenSlot Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 The split screen slot of a player.
 

@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.50-preview.22"
+    "version": "0.1.0-beta.1.26.50-preview.24"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.22 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.24 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.50-preview.22`
+- `0.1.0-beta.1.26.50-preview.24`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -100,6 +100,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [SplineType](SplineType.md)
 - [StatusBarAlignment](StatusBarAlignment.md)
 - [StructureSource](StructureSource.md)
+- [SubPaneViewSortType](SubPaneViewSortType.md)
 - [TagContainerVariant](TagContainerVariant.md)
 - [ThemeSettingsColorKey](ThemeSettingsColorKey.md)
 - [TimelinePlayerPlaybackState](TimelinePlayerPlaybackState.md)
@@ -220,12 +221,14 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [GuidePlaneManager](GuidePlaneManager.md)
 - [IBlockPaletteItem](IBlockPaletteItem.md)
 - [Logger](Logger.md)
+- [ManifestTaskPromise](ManifestTaskPromise.md)
 - [MinecraftEditor](MinecraftEditor.md)
 - [MinimapItem](MinimapItem.md)
 - [MinimapManager](MinimapManager.md)
 - [ModeChangeAfterEvent](ModeChangeAfterEvent.md)
 - [ModeChangeAfterEventSignal](ModeChangeAfterEventSignal.md)
 - [NumberLimitObservableValidator](NumberLimitObservableValidator.md)
+- [NumberTaskPromise](NumberTaskPromise.md)
 - [ObservableValidator](ObservableValidator.md)
 - [PendingTransaction](PendingTransaction.md)
 - [PlaytestManager](PlaytestManager.md)
@@ -247,6 +250,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [SimulationStateChangeAfterEventSignal](SimulationStateChangeAfterEventSignal.md)
 - [SingleBlockBrushShape](SingleBlockBrushShape.md)
 - [SpeedSettings](SpeedSettings.md)
+- [TaskPromiseBase](TaskPromiseBase.md)
 - [ThemeSettings](ThemeSettings.md)
 - [TransactionEvent](TransactionEvent.md)
 - [TransactionHandler](TransactionHandler.md)
@@ -256,7 +260,9 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [UserDefinedTransactionOperationHandler](UserDefinedTransactionOperationHandler.md)
 - [Vector2LimitObservableValidator](Vector2LimitObservableValidator.md)
 - [Vector3LimitObservableValidator](Vector3LimitObservableValidator.md)
+- [VoidTaskPromise](VoidTaskPromise.md)
 - [VolumeListTransactionOperationHandler](VolumeListTransactionOperationHandler.md)
+- [VolumeTaskPromise](VolumeTaskPromise.md)
 - [Widget](Widget.md)
 - [WidgetComponentBase](WidgetComponentBase.md)
 - [WidgetComponentBoundingBox](WidgetComponentBoundingBox.md)
@@ -409,8 +415,17 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [IStatusBarItemCreationParams](IStatusBarItemCreationParams.md)
 - [IStringPropertyItem](IStringPropertyItem.md)
 - [IStringPropertyItemOptions](IStringPropertyItemOptions.md)
+- [ISubPaneHeader](ISubPaneHeader.md)
+- [ISubPaneHeaderButtonItem](ISubPaneHeaderButtonItem.md)
+- [ISubPaneHeaderButtonOptions](ISubPaneHeaderButtonOptions.md)
+- [ISubPaneHeaderCheckboxOptions](ISubPaneHeaderCheckboxOptions.md)
+- [ISubPaneHeaderColorItem](ISubPaneHeaderColorItem.md)
+- [ISubPaneHeaderColorOptions](ISubPaneHeaderColorOptions.md)
+- [ISubPaneHeaderItem](ISubPaneHeaderItem.md)
+- [ISubPaneHeaderOptions](ISubPaneHeaderOptions.md)
 - [ISubPanePropertyItem](ISubPanePropertyItem.md)
 - [ISubPanePropertyItemOptions](ISubPanePropertyItemOptions.md)
+- [ISubPaneViewControlOptions](ISubPaneViewControlOptions.md)
 - [ITagContainerPropertyItem](ITagContainerPropertyItem.md)
 - [ITagContainerPropertyItemOptions](ITagContainerPropertyItemOptions.md)
 - [ITextPropertyItem](ITextPropertyItem.md)
@@ -465,6 +480,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [InvalidWidgetComponentError](InvalidWidgetComponentError.md)
 - [InvalidWidgetError](InvalidWidgetError.md)
 - [InvalidWidgetGroupError](InvalidWidgetGroupError.md)
+- [TaskCancelledError](TaskCancelledError.md)
 - [TransactionManagerNoChangesError](TransactionManagerNoChangesError.md)
 
 ## Functions
@@ -474,7 +490,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 deserialize(s: string): unknown
 `
 
-Deserialize anything, defaults to the same behavior as JSON.parse but will use custom deserializers passed into {@link registerSerializationForType}.
+Deserialize anything, defaults to the same behavior as JSON.parse but will use custom deserializers passed into [*@minecraft/server-editor.registerSerializationForType*](../../../scriptapi/minecraft/server-editor/minecraft-server-editor.md#registerserializationfortype).
 
 #### **Parameters**
 - **s**: *string*
@@ -573,7 +589,7 @@ Registers an editor extension into Minecraft. This function calls underlying fun
 registerSerializationForType(typeConstructor: Function, name: string, serializer: (arg0: T) => Record<string, unknown>, deserializer: (arg0: Record<string, unknown>) => T): void
 `
 
-Register a type to have custom serialization/deserialization when using {@link serialize} and {@link deserialize}.
+Register a type to have custom serialization/deserialization when using [*@minecraft/server-editor.serialize*](../../../scriptapi/minecraft/server-editor/minecraft-server-editor.md#serialize) and [*@minecraft/server-editor.deserialize*](../../../scriptapi/minecraft/server-editor/minecraft-server-editor.md#deserialize).
 
 #### **Parameters**
 - **typeConstructor**: *Function*
@@ -601,14 +617,14 @@ Creates a strongly typed transaction handle to enforce type safety when adding u
   
   A function that will be invoked when the transaction is redone. The function will be passed a copy of the payload data that was inserted into the transaction log.
 
-**Returns** *UserDefinedTransactionHandle<T>* - - {@link UserDefinedTransactionHandle} - A strongly typed transaction handle that can be used to add transactions to the transaction manager.
+**Returns** *UserDefinedTransactionHandle<T>* - - [*@minecraft/server-editor.UserDefinedTransactionHandle*](../../../scriptapi/minecraft/server-editor/UserDefinedTransactionHandle.md) - A strongly typed transaction handle that can be used to add transactions to the transaction manager.
 
 ### **serialize**
 `
 serialize(obj: unknown): string
 `
 
-Serialize anything, defaults to the same behavior as JSON.stringify but will use custom serializers passed into {@link registerSerializationForType}.
+Serialize anything, defaults to the same behavior as JSON.stringify but will use custom serializers passed into [*@minecraft/server-editor.registerSerializationForType*](../../../scriptapi/minecraft/server-editor/minecraft-server-editor.md#registerserializationfortype).
 
 #### **Parameters**
 - **obj**: *unknown*

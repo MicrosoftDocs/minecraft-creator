@@ -72,7 +72,7 @@ Notes:
 ### **rotation**
 `rotation: minecraftserver.Vector3;`
 
-The rotation of the shape (Euler angles - [Pitch, Yaw, Roll]).
+The rotation of the shape in degrees (Euler angles - [Pitch, Yaw, Roll]).
 
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 

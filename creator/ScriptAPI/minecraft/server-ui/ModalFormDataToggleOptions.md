@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server-ui.ModalFormDataToggleOptions cla
 ---
 # ModalFormDataToggleOptions Interface
 
-An interface that is passed into {@link @minecraft/Server-ui.ModalFormData.toggle} to provide additional options for the toggle creation.
+An interface that is passed into [*@minecraft/server-ui.ModalFormData.toggle*](../../../scriptapi/minecraft/server-ui/ModalFormData.md#toggle) to provide additional options for the toggle creation.
 
 ## Properties
 

@@ -42,3 +42,16 @@ Type: [*ItemComponentRegistry*](ItemComponentRegistry.md)
 
 Notes:
   - This property can be read in early-execution mode.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **worldClockRegistry**
+`read-only worldClockRegistry: WorldClockRegistry;`
+
+Type: [*WorldClockRegistry*](WorldClockRegistry.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end

@@ -47,6 +47,8 @@ Notes:
 getButtonState(button: InputButton): ButtonState
 `
 
+Retrieves the current state of a button. If a player presses and releases a button really fast this may not ever be set to true. To capture all button state changes, use [*@minecraft/server.PlayerButtonInputAfterEvent*](../../../priorscriptapi/minecraft/server-1xx/PlayerButtonInputAfterEvent.md) via [*@minecraft/server.WorldAfterEvents.playerButtonInput*](../../../priorscriptapi/minecraft/server-1xx/WorldAfterEvents.md#playerbuttoninput)
+
 #### **Parameters**
 - **button**: [*InputButton*](InputButton.md)
 

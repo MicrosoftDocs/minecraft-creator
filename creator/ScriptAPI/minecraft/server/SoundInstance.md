@@ -80,9 +80,7 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [setVolume](#setvolume)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [stop](#stop)
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **fade**
@@ -204,17 +202,12 @@ Notes:
 - This function can't be called in restricted-execution mode.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **stop**
 `
 stop(): void
 `
 
 Stops this sound instance from playing.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
-::: moniker-end

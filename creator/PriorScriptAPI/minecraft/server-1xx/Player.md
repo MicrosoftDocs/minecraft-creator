@@ -301,13 +301,13 @@ Notes:
 
 ### **playSound**
 `
-playSound(soundId: string, soundOptions?: PlayerSoundOptions): SoundInstance
+playSound(soundId: SoundDefinition | string, soundOptions?: PlayerSoundOptions): SoundInstance
 `
 
 Plays a sound that only this particular player can hear.
 
 #### **Parameters**
-- **soundId**: *string*
+- **soundId**: [*SoundDefinition*](SoundDefinition.md) | *string*
 - **soundOptions**?: [*PlayerSoundOptions*](PlayerSoundOptions.md) = `null`
   
   Additional optional options for the sound.

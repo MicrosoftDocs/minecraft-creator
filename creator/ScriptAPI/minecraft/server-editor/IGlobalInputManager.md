@@ -24,7 +24,7 @@ Register a named control category for display in the Control Help panel.
 #### **Parameters**
 - **id**: *string*
   
-  Unique category identifier (use a {@link CoreInputBindingCategory} value or a custom string).
+  Unique category identifier (use a [*@minecraft/server-editor.CoreInputBindingCategory*](../../../scriptapi/minecraft/server-editor/CoreInputBindingCategory.md) value or a custom string).
 - **label**: *string*
   
   Localized display name shown as the group heading.

@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server-editor.CoreInputBindingCategory e
 ---
 # CoreInputBindingCategory Enumeration
 
-Built-in control categories for use with {@link KeyBindingInfo.bindingCategory}. Pass any `CoreInputBindingCategory` value or a custom string to categorize a binding.
+Built-in control categories for use with bindingCategory in [*@minecraft/server-editor.KeyBindingInfo*](../../../scriptapi/minecraft/server-editor/minecraft-server-editor.md#keybindinginfo). Pass any `CoreInputBindingCategory` value or a custom string to categorize a binding.
 
 ## Constants
 ### **Camera**
@@ -30,6 +30,8 @@ Built-in control categories for use with {@link KeyBindingInfo.bindingCategory}.
 `Move = editor:move`
 ### **Movement**
 `Movement = editor:movement`
+### **MoveSelection**
+`MoveSelection = editor:moveSelection`
 ### **Nudge**
 `Nudge = editor:nudge`
 ### **Offset**
@@ -44,6 +46,8 @@ Built-in control categories for use with {@link KeyBindingInfo.bindingCategory}.
 `SizeSelection = editor:sizeSelection`
 ### **ToolActivation**
 `ToolActivation = editor:toolActivation`
+### **ToolPanels**
+`ToolPanels = editor:toolPanels`
 ### **TrimActions**
 `TrimActions = editor:trimActions`
 ### **Widget**

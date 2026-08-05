@@ -15,7 +15,7 @@ description: Contents of the @minecraft/server.MinecraftDimensionTypes class (Ve
 > [!CAUTION]
 > This class is deprecated and will be removed in 2.0.0.
 > 
-> Use {@link @minecraft/vanilla-data.MinecraftDimensionTypes} instead.
+> Use MinecraftDimensionTypes in @minecraft/vanilla-data instead.
 
 A collection of default Minecraft dimension types.
 
@@ -31,7 +31,7 @@ Type: *string*
 > [!CAUTION]
 > This property is deprecated and will be removed in 2.0.0.
 > 
-> Use {@link @minecraft/vanilla-data.MinecraftDimensionTypes} instead.
+> Use MinecraftDimensionTypes in @minecraft/vanilla-data instead.
 
 ### **overworld**
 `static read-only overworld = "minecraft:overworld";`
@@ -43,7 +43,7 @@ Type: *string*
 > [!CAUTION]
 > This property is deprecated and will be removed in 2.0.0.
 > 
-> Use {@link @minecraft/vanilla-data.MinecraftDimensionTypes} instead.
+> Use MinecraftDimensionTypes in @minecraft/vanilla-data instead.
 
 ### **theEnd**
 `static read-only theEnd = "minecraft:the_end";`
@@ -55,4 +55,4 @@ Type: *string*
 > [!CAUTION]
 > This property is deprecated and will be removed in 2.0.0.
 > 
-> Use {@link @minecraft/vanilla-data.MinecraftDimensionTypes} instead.
+> Use MinecraftDimensionTypes in @minecraft/vanilla-data instead.

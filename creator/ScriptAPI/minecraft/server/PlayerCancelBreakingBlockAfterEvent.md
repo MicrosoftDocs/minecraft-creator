@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PlayerCancelBreakingBlockAfterEvent Class
 description: Contents of the @minecraft/server.PlayerCancelBreakingBlockAfterEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerCancelBreakingBlockAfterEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*BlockEvent*](BlockEvent.md)

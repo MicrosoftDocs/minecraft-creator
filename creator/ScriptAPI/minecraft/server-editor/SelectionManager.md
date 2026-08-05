@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server-editor.SelectionManager class.
 ---
 # SelectionManager Class
 
-The SelectionManager (accessible from the [*@minecraft/server-editor.ExtensionContext*](../../../scriptapi/minecraft/server-editor/ExtensionContext.md)) is responsible for the management of all {@link @minecraft/server-editor.Selection} objects, and provides the user the ability to create new {@link @minecraft/server-editor.Selection} objects for use within an extension.
+The SelectionManager (accessible from the [*@minecraft/server-editor.ExtensionContext*](../../../scriptapi/minecraft/server-editor/ExtensionContext.md)) is responsible for the management of all [*@minecraft/server-editor.SelectionContainerVolume*](../../../scriptapi/minecraft/server-editor/SelectionContainerVolume.md) objects, and provides the user the ability to create new [*@minecraft/server-editor.SelectionContainerVolume*](../../../scriptapi/minecraft/server-editor/SelectionContainerVolume.md) objects for use within an extension.
 
 ## Properties
 

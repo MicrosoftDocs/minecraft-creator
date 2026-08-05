@@ -38,9 +38,7 @@ Key for the localization of a dimension's name used by language files.
 Type: *string*
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [calculateClosestBiomeFromSeed](#calculateclosestbiomefromseed)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [cloneBlocks](#cloneblocks)
 ::: moniker-end
@@ -90,7 +88,6 @@ Type: *string*
 - [stopSound](#stopsound)
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **calculateClosestBiomeFromSeed**
 `
 calculateClosestBiomeFromSeed(pos: Vector3, biomeToFind: BiomeType | string, options?: BiomeSearchOptions): Vector3 | undefined
@@ -110,14 +107,10 @@ Calculates the location of the closest biome of a particular type from the world
   Additional selection criteria for a biome search.
 
 **Returns** [*Vector3*](Vector3.md) | *undefined* - Returns a location of the biome, or undefined if a biome could not be found.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **cloneBlocks**
