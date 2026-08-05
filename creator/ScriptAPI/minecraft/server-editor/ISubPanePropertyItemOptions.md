@@ -79,6 +79,13 @@ Enables scrolling for the pane if it has a max height defined.
 
 Type: *boolean*
 
+### **tags**
+`tags?: string[];`
+
+Tags associated with the sub pane, used by a parent sub pane view control's tag filter.
+
+Type: *string*[]
+
 ### **width**
 `width?: number | LayoutSize;`
 

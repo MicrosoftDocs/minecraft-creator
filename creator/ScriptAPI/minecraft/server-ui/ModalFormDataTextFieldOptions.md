@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server-ui.ModalFormDataTextFieldOptions 
 ---
 # ModalFormDataTextFieldOptions Interface
 
-An interface that is passed into {@link @minecraft/Server-ui.ModalFormData.textField} to provide additional options for the textfield creation.
+An interface that is passed into [*@minecraft/server-ui.ModalFormData.textField*](../../../scriptapi/minecraft/server-ui/ModalFormData.md#textfield) to provide additional options for the textfield creation.
 
 ## Properties
 

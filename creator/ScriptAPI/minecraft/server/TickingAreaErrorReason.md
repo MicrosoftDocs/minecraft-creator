@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server.TickingAreaErrorReason enumeratio
 ---
 # TickingAreaErrorReason Enumeration
 
-The reason that the {@link @minecraft/server.TickingAreaError} was thrown.
+The reason that the [*@minecraft/server.TickingAreaError*](../../../scriptapi/minecraft/server/minecraft-server.md#tickingareaerror) was thrown.
 
 ## Constants
 ### **IdentifierAlreadyExists**

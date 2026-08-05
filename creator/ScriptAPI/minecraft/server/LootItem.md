@@ -16,15 +16,10 @@ Represents a loot pool entry containing an item to drop.
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **conditions**
 `read-only conditions: LootItemCondition[];`
 
 Type: [*LootItemCondition*](LootItemCondition.md)[]
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **functions**
 `read-only functions: LootItemFunction[];`

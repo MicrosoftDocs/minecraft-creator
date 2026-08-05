@@ -9,7 +9,7 @@ description: Contents of the @minecraft/server-ui.ModalFormDataSliderOptions cla
 ---
 # ModalFormDataSliderOptions Interface
 
-An interface that is passed into {@link @minecraft/Server-ui.ModalFormData.slider} to provide additional options for the slider creation.
+An interface that is passed into [*@minecraft/server-ui.ModalFormData.slider*](../../../scriptapi/minecraft/server-ui/ModalFormData.md#slider) to provide additional options for the slider creation.
 
 ## Properties
 

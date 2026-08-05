@@ -12,4 +12,4 @@ description: Contents of the @minecraft/server.ContainerRulesError class (Versio
 ## Extends
 - *Error*
 
-Error thrown if {@link @minecraft/server.ContainerRules} are broken on container operations.
+Error thrown if container rules are broken on container operations.

@@ -429,7 +429,6 @@ Type: [*PlayerButtonInputAfterEventSignal*](PlayerButtonInputAfterEventSignal.md
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerCancelBreakingBlock**
 `read-only playerCancelBreakingBlock: PlayerCancelBreakingBlockAfterEventSignal;`
 
@@ -437,12 +436,8 @@ This event fires when a player cancels breaking a block.
 
 Type: [*PlayerCancelBreakingBlockAfterEventSignal*](PlayerCancelBreakingBlockAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **playerDimensionChange**
 `read-only playerDimensionChange: PlayerDimensionChangeAfterEventSignal;`
@@ -570,7 +565,6 @@ Type: [*PlayerSpawnAfterEventSignal*](PlayerSpawnAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerStartBreakingBlock**
 `read-only playerStartBreakingBlock: PlayerStartBreakingBlockAfterEventSignal;`
 
@@ -578,12 +572,8 @@ This event fires when a player starts breaking a block.
 
 Type: [*PlayerStartBreakingBlockAfterEventSignal*](PlayerStartBreakingBlockAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **playerSwingStart**
 `read-only playerSwingStart: PlayerSwingStartAfterEventSignal;`

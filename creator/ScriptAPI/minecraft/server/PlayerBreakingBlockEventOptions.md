@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PlayerBreakingBlockEventOptions Interface
 description: Contents of the @minecraft/server.PlayerBreakingBlockEventOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerBreakingBlockEventOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 An interface that is passed into [*@minecraft/server.PlayerStartBreakingBlockAfterEventSignal.subscribe*](../../../scriptapi/minecraft/server/PlayerStartBreakingBlockAfterEventSignal.md#subscribe) or [*@minecraft/server.PlayerCancelBreakingBlockAfterEventSignal.subscribe*](../../../scriptapi/minecraft/server/PlayerCancelBreakingBlockAfterEventSignal.md#subscribe) that filters out which events are passed to the provided callback.
 

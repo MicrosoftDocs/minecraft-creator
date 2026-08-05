@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.BiomeSearchOptions Interface
 description: Contents of the @minecraft/server.BiomeSearchOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BiomeSearchOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains additional options for searches for the dimension.findNearestBiome API.
 

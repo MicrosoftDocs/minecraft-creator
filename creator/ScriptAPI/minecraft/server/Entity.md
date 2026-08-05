@@ -1272,7 +1272,7 @@ Teleports the selected entity to a new location
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
-  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
+  - Throws *Error*, [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 #### Examples
 
@@ -1396,4 +1396,4 @@ Attempts to try a teleport, but may not complete the teleport operation (for exa
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
-  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
+  - Throws *Error*, [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)

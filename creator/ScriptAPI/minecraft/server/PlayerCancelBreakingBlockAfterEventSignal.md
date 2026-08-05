@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PlayerCancelBreakingBlockAfterEventSignal Class
 description: Contents of the @minecraft/server.PlayerCancelBreakingBlockAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerCancelBreakingBlockAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to when a player cancels breaking a block.
 

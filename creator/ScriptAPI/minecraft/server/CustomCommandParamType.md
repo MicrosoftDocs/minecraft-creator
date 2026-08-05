@@ -47,7 +47,7 @@ Item type parameter provides an [*@minecraft/server.ItemType*](../../../scriptap
 ### **Location**
 `Location = "Location"`
 
-Location parameter provides a {@link @minecraft/server.Location}.
+Location parameter provides a vector position.
 ### **PlayerSelector**
 `PlayerSelector = "PlayerSelector"`
 
