@@ -4,14 +4,24 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-editor.ListViewControlAction Type Alias
-description: Contents of the @minecraft/server-editor.ListViewControlAction type alias.
+title: minecraft/server-editor.ListViewControlAction Interface
+description: Contents of the @minecraft/server-editor.ListViewControlAction class.
 ---
-# ListViewControlAction Type Alias
+# ListViewControlAction Interface
+
+## Extends
+- *ListViewControlActionState*
 
 Action item to be displayed on a list view control
 
-## Declaration
-`export type ListViewControlAction = {
-    id: string;
-} & ListViewControlActionState;`
+## Properties
+
+### **id**
+`id: string;`
+
+Type: *string*
+
+### **submenu**
+`submenu?: ListViewControlAction[];`
+
+Type: *ListViewControlAction*[]

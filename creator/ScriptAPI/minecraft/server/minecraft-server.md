@@ -20,10 +20,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.9.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.50-beta.24 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.50-beta.25 of Minecraft.
 
 ## Available Versions
-- `2.11.0-beta.1.26.50-preview.24`
+- `2.11.0-beta.1.26.50-preview.25`
 - `2.9.0`
 - `2.8.0`
 - `2.7.0`
@@ -116,6 +116,7 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerPermissionLevel](PlayerPermissionLevel.md)
 - [PlayerSplitScreenSlot](PlayerSplitScreenSlot.md)
 - [PlayerWaypointsMode](PlayerWaypointsMode.md)
+- [PoiBlockOccupancyFilter](PoiBlockOccupancyFilter.md)
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
 - [ScriptEventSource](ScriptEventSource.md)
 - [SignSide](SignSide.md)
@@ -499,6 +500,10 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerUseNameTagAfterEvent](PlayerUseNameTagAfterEvent.md)
 - [PlayerUseNameTagAfterEventSignal](PlayerUseNameTagAfterEventSignal.md)
 - [PlayerWaypoint](PlayerWaypoint.md)
+- [PoiBlockInstance](PoiBlockInstance.md)
+- [PoiBlockManager](PoiBlockManager.md)
+- [PoiBlockType](PoiBlockType.md)
+- [PoiManager](PoiManager.md)
 - [PotionDeliveryType](PotionDeliveryType.md)
 - [PotionEffectType](PotionEffectType.md)
 - [Potions](Potions.md)
@@ -662,6 +667,9 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerSoundOptions](PlayerSoundOptions.md)
 - [PlayerSwingEventOptions](PlayerSwingEventOptions.md)
 - [PlayerVisibilityRules](PlayerVisibilityRules.md)
+- [PoiDistancePair](PoiDistancePair.md)
+- [PoiNameFilter](PoiNameFilter.md)
+- [PoiTagFilter](PoiTagFilter.md)
 - [PrimitiveShapeQueryOptions](PrimitiveShapeQueryOptions.md)
 - [ProgressKeyFrame](ProgressKeyFrame.md)
 - [ProjectileShootOptions](ProjectileShootOptions.md)

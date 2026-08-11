@@ -21,13 +21,13 @@ Contains diagnostics functionality for discovering and diagnosing issues with co
 ```json
 {
     "module_name": "@minecraft/diagnostics",
-    "version": "1.0.0-beta.1.26.50-preview.24"
+    "version": "1.0.0-beta.1.26.50-preview.25"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.50-beta.24 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.50-beta.25 of Minecraft.
 
 ## Available Versions
-- `1.0.0-beta.1.26.50-preview.24`
+- `1.0.0-beta.1.26.50-preview.25`
 
 ## Enumerations
 - [SentryEventLevel](SentryEventLevel.md)

@@ -192,6 +192,8 @@
       href: minecraft/server/PlayerSplitScreenSlot.md
     - name: PlayerWaypointsMode
       href: minecraft/server/PlayerWaypointsMode.md
+    - name: PoiBlockOccupancyFilter
+      href: minecraft/server/PoiBlockOccupancyFilter.md
     - name: ScoreboardIdentityType
       href: minecraft/server/ScoreboardIdentityType.md
     - name: ScriptEventSource
@@ -932,6 +934,14 @@
       href: minecraft/server/PlayerUseNameTagAfterEventSignal.md
     - name: PlayerWaypoint
       href: minecraft/server/PlayerWaypoint.md
+    - name: PoiBlockInstance
+      href: minecraft/server/PoiBlockInstance.md
+    - name: PoiBlockManager
+      href: minecraft/server/PoiBlockManager.md
+    - name: PoiBlockType
+      href: minecraft/server/PoiBlockType.md
+    - name: PoiManager
+      href: minecraft/server/PoiManager.md
     - name: PotionDeliveryType
       href: minecraft/server/PotionDeliveryType.md
     - name: PotionEffectType
@@ -1254,6 +1264,12 @@
       href: minecraft/server/PlayerSwingEventOptions.md
     - name: PlayerVisibilityRules
       href: minecraft/server/PlayerVisibilityRules.md
+    - name: PoiDistancePair
+      href: minecraft/server/PoiDistancePair.md
+    - name: PoiNameFilter
+      href: minecraft/server/PoiNameFilter.md
+    - name: PoiTagFilter
+      href: minecraft/server/PoiTagFilter.md
     - name: PrimitiveShapeQueryOptions
       href: minecraft/server/PrimitiveShapeQueryOptions.md
     - name: ProgressKeyFrame
@@ -2064,6 +2080,8 @@
       href: minecraft/server-editor/IVector3TimelinePropertyItemEntry.md
     - name: IVector3TimelinePropertyItemOptions
       href: minecraft/server-editor/IVector3TimelinePropertyItemOptions.md
+    - name: ListViewControlAction
+      href: minecraft/server-editor/ListViewControlAction.md
     - name: LocalizationEntry
       href: minecraft/server-editor/LocalizationEntry.md
     - name: LogProperties
@@ -2190,8 +2208,6 @@
       href: minecraft/server-editor/ListPaneTextEntryParams.md
     - name: ListPaneViewFilter
       href: minecraft/server-editor/ListPaneViewFilter.md
-    - name: ListViewControlAction
-      href: minecraft/server-editor/ListViewControlAction.md
     - name: ListViewControlActionState
       href: minecraft/server-editor/ListViewControlActionState.md
     - name: LocalizedString

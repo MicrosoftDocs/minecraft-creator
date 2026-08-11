@@ -14,6 +14,16 @@ Contains additional options for a playSound occurrence.
 ## Properties
 
 ::: moniker range="=minecraft-bedrock-experimental"
+### **isBroadcast**
+`isBroadcast?: boolean;`
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
 ### **loopCount**
 `loopCount?: number;`
 

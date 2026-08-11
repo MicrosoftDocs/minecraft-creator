@@ -37,6 +37,18 @@ Key for the localization of a dimension's name used by language files.
 
 Type: *string*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **poiManager**
+`read-only poiManager: PoiManager;`
+
+Provides access to point-of-interest (POI) managers for this dimension. This property is available only when the POI experiment is enabled.
+
+Type: [*PoiManager*](PoiManager.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ## Methods
 - [calculateClosestBiomeFromSeed](#calculateclosestbiomefromseed)
 ::: moniker range="=minecraft-bedrock-experimental"

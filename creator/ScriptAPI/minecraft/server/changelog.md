@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.11.0-beta.1.26.50-preview.24](#2110-beta12650-preview24)
+- [2.11.0-beta.1.26.50-preview.25](#2110-beta12650-preview25)
 - [2.9.0](#290)
 - [2.8.0](#280)
 - [2.7.0](#270)
@@ -42,7 +42,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.11.0-beta.1.26.50-preview.24
+## 2.11.0-beta.1.26.50-preview.25
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -106,6 +106,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
 #### Changed *[`Dimension`](Dimension.md)*
+- Added property *[`poiManager`](Dimension.md#poimanager)*
 - Added function *[`cloneBlocks`](Dimension.md#cloneblocks)*
 - Added function *[`getBlocks`](Dimension.md#getblocks)*
 - Added function *[`getGeneratedStructures`](Dimension.md#getgeneratedstructures)*
@@ -160,6 +161,10 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
 #### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
 #### Added *[`PlayerUseNameTagAfterEventSignal`](PlayerUseNameTagAfterEventSignal.md)*
+#### Added *[`PoiBlockInstance`](PoiBlockInstance.md)*
+#### Added *[`PoiBlockManager`](PoiBlockManager.md)*
+#### Added *[`PoiBlockType`](PoiBlockType.md)*
+#### Added *[`PoiManager`](PoiManager.md)*
 #### Changed *[`Potions`](Potions.md)*
 - Changed function *[`resolve`](Potions.md#resolve)*
   - Changed return type from [*ItemStack*](ItemStack.md) (throws exceptions) to *ItemStack* (throws exceptions)
@@ -235,6 +240,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `BlockDynamicProperties`
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
+#### Added enum [`PoiBlockOccupancyFilter`](PoiBlockOccupancyFilter.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 ## 2.9.0
 #### Changed *[`Block`](Block.md)*
