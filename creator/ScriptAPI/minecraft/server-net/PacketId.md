@@ -296,6 +296,8 @@ Represents the unique type of network packet.
 `PrimitiveShapesPacket = "PrimitiveShapesPacket"`
 ### **PurchaseReceiptPacket**
 `PurchaseReceiptPacket = "PurchaseReceiptPacket"`
+### **RecordStartedPacket**
+`RecordStartedPacket = "RecordStartedPacket"`
 ### **RefreshEntitlementsPacket**
 `RefreshEntitlementsPacket = "RefreshEntitlementsPacket"`
 ### **RemoveActorPacket**

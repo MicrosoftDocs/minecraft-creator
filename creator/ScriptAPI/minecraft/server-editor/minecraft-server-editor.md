@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.50-preview.24"
+    "version": "0.1.0-beta.1.26.50-preview.25"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.24 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.25 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.50-preview.24`
+- `0.1.0-beta.1.26.50-preview.25`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -149,7 +149,6 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [ListPaneSlotLayoutSections](ListPaneSlotLayoutSections.md)
 - [ListPaneTextEntryParams](ListPaneTextEntryParams.md)
 - [ListPaneViewFilter](ListPaneViewFilter.md)
-- [ListViewControlAction](ListViewControlAction.md)
 - [ListViewControlActionState](ListViewControlActionState.md)
 - [LocalizedString](LocalizedString.md)
 - [ModalDialogActivationParams](ModalDialogActivationParams.md)
@@ -447,6 +446,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [IVector3TimelinePropertyItem](IVector3TimelinePropertyItem.md)
 - [IVector3TimelinePropertyItemEntry](IVector3TimelinePropertyItemEntry.md)
 - [IVector3TimelinePropertyItemOptions](IVector3TimelinePropertyItemOptions.md)
+- [ListViewControlAction](ListViewControlAction.md)
 - [LocalizationEntry](LocalizationEntry.md)
 - [LogProperties](LogProperties.md)
 - [MinimapCreateOptions](MinimapCreateOptions.md)
