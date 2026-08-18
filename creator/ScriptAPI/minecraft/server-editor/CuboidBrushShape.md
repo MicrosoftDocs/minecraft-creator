@@ -19,6 +19,7 @@ description: Contents of the @minecraft/server-editor.CuboidBrushShape class.
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
 - [createShapeAsync](#createshapeasync)
+- [createShapeAsyncTask](#createshapeasynctask)
 - [estimateBlockCount](#estimateblockcount)
 - [getSettings](#getsettings)
 
@@ -114,6 +115,17 @@ createShapeAsync(cancelToken?: {
 - **yieldInterval**?: *number*
 
 **Returns** *Promise<RelativeVolumeListBlockVolume>*
+
+### **createShapeAsyncTask**
+`
+createShapeAsyncTask(blockUtils: BlockUtilityTasks, yieldInterval?: number): BrushShapeTaskRequest
+`
+
+#### **Parameters**
+- **blockUtils**: *BlockUtilityTasks*
+- **yieldInterval**?: *number*
+
+**Returns** *BrushShapeTaskRequest*
 
 ### **estimateBlockCount**
 `

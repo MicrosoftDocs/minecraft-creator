@@ -23,7 +23,7 @@ Used for accessing all available dimension types. Currently only works with Vani
 static get(dimensionTypeId: string): DimensionType | undefined
 `
 
-Retrieves a dimension type using a string-based identifier. Currently only works with Vanilla dimensions.
+Retrieves a dimension type using a string-based identifier. Works with both vanilla dimensions and custom dimensions. Custom dimensions cannot be retrieved until after the system startup event has completed.
 
 #### **Parameters**
 - **dimensionTypeId**: *string*
@@ -38,7 +38,7 @@ Notes:
 static getAll(): DimensionType[]
 `
 
-Retrieves an array of all dimension types. Currently only works with Vanilla dimensions.
+Retrieves an array of all dimension types. Includes both vanilla dimensions and custom dimensions. Custom dimensions are not included until after the system startup event has completed.
 
 **Returns** [*DimensionType*](DimensionType.md)[]
   
