@@ -10,6 +10,7 @@ description: Contents of the @minecraft/server-editor.BlockUtilityTasks class.
 # BlockUtilityTasks Class
 
 ## Methods
+- [createShapeVolume](#createshapevolume)
 - [extrude](#extrude)
 - [fillVolume](#fillvolume)
 - [findObscuredBlocksWithinVolume](#findobscuredblockswithinvolume)
@@ -18,6 +19,21 @@ description: Contents of the @minecraft/server-editor.BlockUtilityTasks class.
 - [replaceBlocksInSelection](#replaceblocksinselection)
 - [shrinkWrapVolume](#shrinkwrapvolume)
 - [trimVolumeToFitContents](#trimvolumetofitcontents)
+
+### **createShapeVolume**
+`
+createShapeVolume(options: BlockUtilityShapeVolumeOptionsCone | BlockUtilityShapeVolumeOptionsCuboid | BlockUtilityShapeVolumeOptionsCylinder | BlockUtilityShapeVolumeOptionsEllipsoid | BlockUtilityShapeVolumeOptionsPyramid, maxBlocksPerTick?: number): VolumeTaskPromise
+`
+
+#### **Parameters**
+- **options**: [*BlockUtilityShapeVolumeOptionsCone*](BlockUtilityShapeVolumeOptionsCone.md) | [*BlockUtilityShapeVolumeOptionsCuboid*](BlockUtilityShapeVolumeOptionsCuboid.md) | [*BlockUtilityShapeVolumeOptionsCylinder*](BlockUtilityShapeVolumeOptionsCylinder.md) | [*BlockUtilityShapeVolumeOptionsEllipsoid*](BlockUtilityShapeVolumeOptionsEllipsoid.md) | [*BlockUtilityShapeVolumeOptionsPyramid*](BlockUtilityShapeVolumeOptionsPyramid.md)
+- **maxBlocksPerTick**?: *number* = `null`
+
+**Returns** [*VolumeTaskPromise*](VolumeTaskPromise.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
 
 ### **extrude**
 `

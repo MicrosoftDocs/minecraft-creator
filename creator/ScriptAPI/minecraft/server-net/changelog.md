@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server-net` module
 # `@minecraft/server-net` Changelog
 
 ## Version Changes
-- [1.0.0-beta.1.26.50-preview.25](#100-beta12650-preview25)
+- [1.0.0-beta.1.26.50-preview.26](#100-beta12650-preview26)
 
-## 1.0.0-beta.1.26.50-preview.25
+## 1.0.0-beta.1.26.50-preview.26
 #### Added `@minecraft/server-net` Module

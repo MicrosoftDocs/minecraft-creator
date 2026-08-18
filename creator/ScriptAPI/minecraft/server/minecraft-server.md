@@ -20,10 +20,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.9.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.50-beta.25 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.50-beta.26 of Minecraft.
 
 ## Available Versions
-- `2.11.0-beta.1.26.50-preview.25`
+- `2.11.0-beta.1.26.50-preview.26`
 - `2.9.0`
 - `2.8.0`
 - `2.7.0`
@@ -568,6 +568,7 @@ The following API versions are from a major version that is documented here: [*@
 - [TargetBlockHitAfterEventSignal](TargetBlockHitAfterEventSignal.md)
 - [TextPrimitive](TextPrimitive.md)
 - [TickingAreaManager](TickingAreaManager.md)
+- [TimeMarker](TimeMarker.md)
 - [Trigger](Trigger.md)
 - [TripWireTripAfterEvent](TripWireTripAfterEvent.md)
 - [TripWireTripAfterEventSignal](TripWireTripAfterEventSignal.md)
@@ -582,6 +583,16 @@ The following API versions are from a major version that is documented here: [*@
 - [WorldAfterEvents](WorldAfterEvents.md)
 - [WorldBeforeEvents](WorldBeforeEvents.md)
 - [WorldClock](WorldClock.md)
+- [WorldClockOnPausedAfterEvent](WorldClockOnPausedAfterEvent.md)
+- [WorldClockOnPausedAfterEventSignal](WorldClockOnPausedAfterEventSignal.md)
+- [WorldClockOnRestartBeforeEvent](WorldClockOnRestartBeforeEvent.md)
+- [WorldClockOnRestartBeforeEventSignal](WorldClockOnRestartBeforeEventSignal.md)
+- [WorldClockOnResumedAfterEvent](WorldClockOnResumedAfterEvent.md)
+- [WorldClockOnResumedAfterEventSignal](WorldClockOnResumedAfterEventSignal.md)
+- [WorldClockOnTimeMarkerAfterEvent](WorldClockOnTimeMarkerAfterEvent.md)
+- [WorldClockOnTimeMarkerAfterEventSignal](WorldClockOnTimeMarkerAfterEventSignal.md)
+- [WorldClockOnTimeModifiedAfterEvent](WorldClockOnTimeModifiedAfterEvent.md)
+- [WorldClockOnTimeModifiedAfterEventSignal](WorldClockOnTimeModifiedAfterEventSignal.md)
 - [WorldClockRegistry](WorldClockRegistry.md)
 - [WorldLoadAfterEvent](WorldLoadAfterEvent.md)
 - [WorldLoadAfterEventSignal](WorldLoadAfterEventSignal.md)
@@ -692,12 +703,16 @@ The following API versions are from a major version that is documented here: [*@
 - [TeleportOptions](TeleportOptions.md)
 - [TickingArea](TickingArea.md)
 - [TickingAreaOptions](TickingAreaOptions.md)
+- [TimeMarkerOptions](TimeMarkerOptions.md)
 - [TitleDisplayOptions](TitleDisplayOptions.md)
 - [Vector2](Vector2.md)
 - [Vector3](Vector3.md)
 - [VectorXZ](VectorXZ.md)
 - [WaypointTextureBounds](WaypointTextureBounds.md)
 - [WaypointTextureSelector](WaypointTextureSelector.md)
+- [WorldClockEventOptions](WorldClockEventOptions.md)
+- [WorldClockRegistrationOptions](WorldClockRegistrationOptions.md)
+- [WorldClockTimeMarkerEventOptions](WorldClockTimeMarkerEventOptions.md)
 - [WorldSoundOptions](WorldSoundOptions.md)
 
 ## Errors
@@ -746,10 +761,16 @@ The following API versions are from a major version that is documented here: [*@
 - [RawMessageError](RawMessageError.md)
 - [TickingAreaError](TickingAreaError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
+- [WorldClockAddTimeMarkerError](WorldClockAddTimeMarkerError.md)
 - [WorldClockInvalidRegistryError](WorldClockInvalidRegistryError.md)
+- [WorldClockInvalidTimeMarkerError](WorldClockInvalidTimeMarkerError.md)
 - [WorldClockNotFoundError](WorldClockNotFoundError.md)
 - [WorldClockRegistrationError](WorldClockRegistrationError.md)
 - [WorldClockReloadNewWorldClockError](WorldClockReloadNewWorldClockError.md)
+- [WorldClockReloadTimeMarkerError](WorldClockReloadTimeMarkerError.md)
+- [WorldClockRemoveMinecraftTimeMarkerError](WorldClockRemoveMinecraftTimeMarkerError.md)
+- [WorldClockRewindError](WorldClockRewindError.md)
+- [WorldClockTimeMarkerNotFoundError](WorldClockTimeMarkerNotFoundError.md)
 
 ## Constants
 

@@ -1070,6 +1070,8 @@
       href: minecraft/server/TextPrimitive.md
     - name: TickingAreaManager
       href: minecraft/server/TickingAreaManager.md
+    - name: TimeMarker
+      href: minecraft/server/TimeMarker.md
     - name: Trigger
       href: minecraft/server/Trigger.md
     - name: TripWireTripAfterEvent
@@ -1098,6 +1100,26 @@
       href: minecraft/server/WorldBeforeEvents.md
     - name: WorldClock
       href: minecraft/server/WorldClock.md
+    - name: WorldClockOnPausedAfterEvent
+      href: minecraft/server/WorldClockOnPausedAfterEvent.md
+    - name: WorldClockOnPausedAfterEventSignal
+      href: minecraft/server/WorldClockOnPausedAfterEventSignal.md
+    - name: WorldClockOnRestartBeforeEvent
+      href: minecraft/server/WorldClockOnRestartBeforeEvent.md
+    - name: WorldClockOnRestartBeforeEventSignal
+      href: minecraft/server/WorldClockOnRestartBeforeEventSignal.md
+    - name: WorldClockOnResumedAfterEvent
+      href: minecraft/server/WorldClockOnResumedAfterEvent.md
+    - name: WorldClockOnResumedAfterEventSignal
+      href: minecraft/server/WorldClockOnResumedAfterEventSignal.md
+    - name: WorldClockOnTimeMarkerAfterEvent
+      href: minecraft/server/WorldClockOnTimeMarkerAfterEvent.md
+    - name: WorldClockOnTimeMarkerAfterEventSignal
+      href: minecraft/server/WorldClockOnTimeMarkerAfterEventSignal.md
+    - name: WorldClockOnTimeModifiedAfterEvent
+      href: minecraft/server/WorldClockOnTimeModifiedAfterEvent.md
+    - name: WorldClockOnTimeModifiedAfterEventSignal
+      href: minecraft/server/WorldClockOnTimeModifiedAfterEventSignal.md
     - name: WorldClockRegistry
       href: minecraft/server/WorldClockRegistry.md
     - name: WorldLoadAfterEvent
@@ -1314,6 +1336,8 @@
       href: minecraft/server/TickingArea.md
     - name: TickingAreaOptions
       href: minecraft/server/TickingAreaOptions.md
+    - name: TimeMarkerOptions
+      href: minecraft/server/TimeMarkerOptions.md
     - name: TitleDisplayOptions
       href: minecraft/server/TitleDisplayOptions.md
     - name: Vector2
@@ -1326,6 +1350,12 @@
       href: minecraft/server/WaypointTextureBounds.md
     - name: WaypointTextureSelector
       href: minecraft/server/WaypointTextureSelector.md
+    - name: WorldClockEventOptions
+      href: minecraft/server/WorldClockEventOptions.md
+    - name: WorldClockRegistrationOptions
+      href: minecraft/server/WorldClockRegistrationOptions.md
+    - name: WorldClockTimeMarkerEventOptions
+      href: minecraft/server/WorldClockTimeMarkerEventOptions.md
     - name: WorldSoundOptions
       href: minecraft/server/WorldSoundOptions.md
     - name: BlockComponentReturnType
@@ -1572,6 +1602,16 @@
       href: minecraft/server-editor/BlockPaletteSelectedItemChangeAfterEventSignal.md
     - name: BlockUtilities
       href: minecraft/server-editor/BlockUtilities.md
+    - name: BlockUtilityShapeVolumeOptionsCone
+      href: minecraft/server-editor/BlockUtilityShapeVolumeOptionsCone.md
+    - name: BlockUtilityShapeVolumeOptionsCuboid
+      href: minecraft/server-editor/BlockUtilityShapeVolumeOptionsCuboid.md
+    - name: BlockUtilityShapeVolumeOptionsCylinder
+      href: minecraft/server-editor/BlockUtilityShapeVolumeOptionsCylinder.md
+    - name: BlockUtilityShapeVolumeOptionsEllipsoid
+      href: minecraft/server-editor/BlockUtilityShapeVolumeOptionsEllipsoid.md
+    - name: BlockUtilityShapeVolumeOptionsPyramid
+      href: minecraft/server-editor/BlockUtilityShapeVolumeOptionsPyramid.md
     - name: BlockUtilityTasks
       href: minecraft/server-editor/BlockUtilityTasks.md
     - name: BrushShape
@@ -1784,6 +1824,8 @@
       href: minecraft/server-editor/BlockUtilityManifest.md
     - name: BlockUtilityManifestEntry
       href: minecraft/server-editor/BlockUtilityManifestEntry.md
+    - name: BrushShapeTaskRequest
+      href: minecraft/server-editor/BrushShapeTaskRequest.md
     - name: BuiltInUIManager
       href: minecraft/server-editor/BuiltInUIManager.md
     - name: ClipboardWriteOptions

@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.11.0-beta.1.26.50-preview.25](#2110-beta12650-preview25)
+- [2.11.0-beta.1.26.50-preview.26](#2110-beta12650-preview26)
 - [2.9.0](#290)
 - [2.8.0](#280)
 - [2.7.0](#270)
@@ -42,7 +42,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.11.0-beta.1.26.50-preview.25
+## 2.11.0-beta.1.26.50-preview.26
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -124,6 +124,9 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
+#### Changed *[`EntityIsTamedComponent`](EntityIsTamedComponent.md)*
+- Added property *[`tamedToPlayer`](EntityIsTamedComponent.md#tamedtoplayer)*
+- Added property *[`tamedToPlayerId`](EntityIsTamedComponent.md#tamedtoplayerid)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Added *[`EntityStartSneakingAfterEvent`](EntityStartSneakingAfterEvent.md)*
 #### Added *[`EntityStartSneakingAfterEventSignal`](EntityStartSneakingAfterEventSignal.md)*
@@ -202,6 +205,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
 #### Changed *[`TextPrimitive`](TextPrimitive.md)*
 - Added property *[`lineGapHeight`](TextPrimitive.md#linegapheight)*
+#### Added *[`TimeMarker`](TimeMarker.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
@@ -218,11 +222,26 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
 - Added property *[`soundCompleted`](WorldAfterEvents.md#soundcompleted)*
+- Added property *[`worldClockOnPaused`](WorldAfterEvents.md#worldclockonpaused)*
+- Added property *[`worldClockOnResumed`](WorldAfterEvents.md#worldclockonresumed)*
+- Added property *[`worldClockOnTimeMarker`](WorldAfterEvents.md#worldclockontimemarker)*
+- Added property *[`worldClockOnTimeModified`](WorldAfterEvents.md#worldclockontimemodified)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`entityTamed`](WorldBeforeEvents.md#entitytamed)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
+- Added property *[`worldClockOnRestart`](WorldBeforeEvents.md#worldclockonrestart)*
 #### Added *[`WorldClock`](WorldClock.md)*
+#### Added *[`WorldClockOnPausedAfterEvent`](WorldClockOnPausedAfterEvent.md)*
+#### Added *[`WorldClockOnPausedAfterEventSignal`](WorldClockOnPausedAfterEventSignal.md)*
+#### Added *[`WorldClockOnRestartBeforeEvent`](WorldClockOnRestartBeforeEvent.md)*
+#### Added *[`WorldClockOnRestartBeforeEventSignal`](WorldClockOnRestartBeforeEventSignal.md)*
+#### Added *[`WorldClockOnResumedAfterEvent`](WorldClockOnResumedAfterEvent.md)*
+#### Added *[`WorldClockOnResumedAfterEventSignal`](WorldClockOnResumedAfterEventSignal.md)*
+#### Added *[`WorldClockOnTimeMarkerAfterEvent`](WorldClockOnTimeMarkerAfterEvent.md)*
+#### Added *[`WorldClockOnTimeMarkerAfterEventSignal`](WorldClockOnTimeMarkerAfterEventSignal.md)*
+#### Added *[`WorldClockOnTimeModifiedAfterEvent`](WorldClockOnTimeModifiedAfterEvent.md)*
+#### Added *[`WorldClockOnTimeModifiedAfterEventSignal`](WorldClockOnTimeModifiedAfterEventSignal.md)*
 #### Added *[`WorldClockRegistry`](WorldClockRegistry.md)*
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
 - Added value `DynamicProperties`
