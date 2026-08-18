@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.50-preview.24"
+    "version": "0.1.0-beta.1.26.50-preview.26"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.24 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.26 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.50-preview.24`
+- `0.1.0-beta.1.26.50-preview.26`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -149,7 +149,6 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [ListPaneSlotLayoutSections](ListPaneSlotLayoutSections.md)
 - [ListPaneTextEntryParams](ListPaneTextEntryParams.md)
 - [ListPaneViewFilter](ListPaneViewFilter.md)
-- [ListViewControlAction](ListViewControlAction.md)
 - [ListViewControlActionState](ListViewControlActionState.md)
 - [LocalizedString](LocalizedString.md)
 - [ModalDialogActivationParams](ModalDialogActivationParams.md)
@@ -191,6 +190,11 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [BlockPaletteSelectedItemChangeAfterEvent](BlockPaletteSelectedItemChangeAfterEvent.md)
 - [BlockPaletteSelectedItemChangeAfterEventSignal](BlockPaletteSelectedItemChangeAfterEventSignal.md)
 - [BlockUtilities](BlockUtilities.md)
+- [BlockUtilityShapeVolumeOptionsCone](BlockUtilityShapeVolumeOptionsCone.md)
+- [BlockUtilityShapeVolumeOptionsCuboid](BlockUtilityShapeVolumeOptionsCuboid.md)
+- [BlockUtilityShapeVolumeOptionsCylinder](BlockUtilityShapeVolumeOptionsCylinder.md)
+- [BlockUtilityShapeVolumeOptionsEllipsoid](BlockUtilityShapeVolumeOptionsEllipsoid.md)
+- [BlockUtilityShapeVolumeOptionsPyramid](BlockUtilityShapeVolumeOptionsPyramid.md)
 - [BlockUtilityTasks](BlockUtilityTasks.md)
 - [BrushShape](BrushShape.md)
 - [BrushShapeManager](BrushShapeManager.md)
@@ -299,6 +303,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [BlockMaskList](BlockMaskList.md)
 - [BlockUtilityManifest](BlockUtilityManifest.md)
 - [BlockUtilityManifestEntry](BlockUtilityManifestEntry.md)
+- [BrushShapeTaskRequest](BrushShapeTaskRequest.md)
 - [BuiltInUIManager](BuiltInUIManager.md)
 - [ClipboardWriteOptions](ClipboardWriteOptions.md)
 - [ConeBrushShapeSettings](ConeBrushShapeSettings.md)
@@ -447,6 +452,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.50-
 - [IVector3TimelinePropertyItem](IVector3TimelinePropertyItem.md)
 - [IVector3TimelinePropertyItemEntry](IVector3TimelinePropertyItemEntry.md)
 - [IVector3TimelinePropertyItemOptions](IVector3TimelinePropertyItemOptions.md)
+- [ListViewControlAction](ListViewControlAction.md)
 - [LocalizationEntry](LocalizationEntry.md)
 - [LogProperties](LogProperties.md)
 - [MinimapCreateOptions](MinimapCreateOptions.md)

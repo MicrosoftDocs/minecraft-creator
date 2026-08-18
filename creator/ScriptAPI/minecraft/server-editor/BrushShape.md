@@ -43,6 +43,7 @@ Type: *string*
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
 - [createShapeAsync](#createshapeasync)
+- [createShapeAsyncTask](#createshapeasynctask)
 - [estimateBlockCount](#estimateblockcount)
 - [getSettings](#getsettings)
 
@@ -118,6 +119,19 @@ Asynchronously creates the shape, yielding control periodically to avoid timeout
   Number of blocks to process before yielding. Default is 10000.
 
 **Returns** *Promise<RelativeVolumeListBlockVolume>* - Promise that resolves to the shape positions as Vector3 array.
+
+### **createShapeAsyncTask**
+`
+createShapeAsyncTask(blockUtils: BlockUtilityTasks, yieldInterval?: number): BrushShapeTaskRequest
+`
+
+Returns a list of default core brush shapes
+
+#### **Parameters**
+- **blockUtils**: *BlockUtilityTasks*
+- **yieldInterval**?: *number*
+
+**Returns** *BrushShapeTaskRequest*
 
 ### **estimateBlockCount**
 `

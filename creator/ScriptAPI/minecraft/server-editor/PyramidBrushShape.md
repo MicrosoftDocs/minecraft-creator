@@ -19,6 +19,7 @@ description: Contents of the @minecraft/server-editor.PyramidBrushShape class.
 - [createSettingsPane](#createsettingspane)
 - [createShape](#createshape)
 - [createShapeAsync](#createshapeasync)
+- [createShapeAsyncTask](#createshapeasynctask)
 - [estimateBlockCount](#estimateblockcount)
 - [getSettings](#getsettings)
 
@@ -110,6 +111,17 @@ createShapeAsync(cancelToken?: {
 - **yieldInterval**?: *number*
 
 **Returns** *Promise<RelativeVolumeListBlockVolume>*
+
+### **createShapeAsyncTask**
+`
+createShapeAsyncTask(_blockUtils: BlockUtilityTasks, _yieldInterval?: number): BrushShapeTaskRequest
+`
+
+#### **Parameters**
+- **_blockUtils**: *BlockUtilityTasks*
+- **_yieldInterval**?: *number*
+
+**Returns** *BrushShapeTaskRequest*
 
 ### **estimateBlockCount**
 `

@@ -447,12 +447,12 @@ Returns the MoonPhase for the current time.
 
 ### **getPackSettings**
 `
-getPackSettings(): Record<string, boolean | number | string>
+getPackSettings(): Record<string, string[] | boolean | number | string>
 `
 
 Returns a map of pack setting name and value pairs.
 
-**Returns** Record<*string*, *boolean* | *number* | *string*>
+**Returns** Record<*string*, *string*[] | *boolean* | *number* | *string*>
   
 Notes:
 - This function can be called in early-execution mode.

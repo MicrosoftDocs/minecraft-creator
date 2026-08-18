@@ -85,10 +85,11 @@ Notes:
 
 ### **setVanillaBiomeColorMap**
 `
-setVanillaBiomeColorMap(colorMap: Record<string, minecraftserver.RGB>): void
+setVanillaBiomeColorMap(minimapId: string, colorMap: Record<string, minecraftserver.RGB>): void
 `
 
 #### **Parameters**
+- **minimapId**: *string*
 - **colorMap**: Record<*string*, [*@minecraft/server.RGB*](../../../scriptapi/minecraft/server/RGB.md)>
   
 Notes:
@@ -97,10 +98,11 @@ Notes:
 
 ### **updateVanillaColorMap**
 `
-updateVanillaColorMap(biomeType: minecraftserver.BiomeType, color: minecraftserver.RGB): void
+updateVanillaColorMap(minimapId: string, biomeType: minecraftserver.BiomeType, color: minecraftserver.RGB): void
 `
 
 #### **Parameters**
+- **minimapId**: *string*
 - **biomeType**: [*@minecraft/server.BiomeType*](../../../scriptapi/minecraft/server/BiomeType.md)
 - **color**: [*@minecraft/server.RGB*](../../../scriptapi/minecraft/server/RGB.md)
   

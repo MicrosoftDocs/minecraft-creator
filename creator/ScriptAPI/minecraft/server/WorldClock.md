@@ -44,3 +44,104 @@ Type: *number*
 Notes:
   - This property has a minimum bound of `0`
   - This property can't be edited in restricted-execution mode.
+
+### **timeMarkers**
+`read-only timeMarkers: TimeMarker[];`
+
+Retrieves the current time markers of the world clock.
+
+Type: [*TimeMarker*](TimeMarker.md)[]
+
+## Methods
+- [addTimeMarker](#addtimemarker)
+- [removeTimeMarker](#removetimemarker)
+- [rewindTo](#rewindto)
+- [set](#set)
+- [skipTo](#skipto)
+
+### **addTimeMarker**
+`
+addTimeMarker(timeMarkerOptions: TimeMarkerOptions): void
+`
+
+Adds a new time marker to the world clock.
+
+#### **Parameters**
+- **timeMarkerOptions**: [*TimeMarkerOptions*](TimeMarkerOptions.md)
+  
+  Options for creating a time marker.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*WorldClockAddTimeMarkerError*](WorldClockAddTimeMarkerError.md)
+
+### **removeTimeMarker**
+`
+removeTimeMarker(timeMarker: string | TimeMarker): void
+`
+
+Removes an existing time marker from the world clock.
+
+#### **Parameters**
+- **timeMarker**: *string* | [*TimeMarker*](TimeMarker.md)
+  
+  The time marker or time marker name to remove.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*WorldClockRemoveMinecraftTimeMarkerError*](WorldClockRemoveMinecraftTimeMarkerError.md), [*WorldClockTimeMarkerNotFoundError*](WorldClockTimeMarkerNotFoundError.md)
+
+### **rewindTo**
+`
+rewindTo(timeMarker: string | TimeMarker): void
+`
+
+Rewinds the world clock's time to the previous occurrence of the specified time marker.
+
+#### **Parameters**
+- **timeMarker**: *string* | [*TimeMarker*](TimeMarker.md)
+  
+  The time marker or time marker name to rewind the world clock's time to.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*WorldClockRewindError*](WorldClockRewindError.md), [*WorldClockTimeMarkerNotFoundError*](WorldClockTimeMarkerNotFoundError.md)
+
+### **set**
+`
+set(timeMarker: string | TimeMarker): void
+`
+
+Sets the world clock's time to the specified time marker.
+
+#### **Parameters**
+- **timeMarker**: *string* | [*TimeMarker*](TimeMarker.md)
+  
+  The time marker or time marker name to set the world clock's time to.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*WorldClockTimeMarkerNotFoundError*](WorldClockTimeMarkerNotFoundError.md)
+
+### **skipTo**
+`
+skipTo(timeMarker: string | TimeMarker): void
+`
+
+Skips the world clock's time to the next occurrence of the specified time marker.
+
+If the next occurrence overflows the world clock's time, the time is reset to the first occurrence.
+
+#### **Parameters**
+- **timeMarker**: *string* | [*TimeMarker*](TimeMarker.md)
+  
+  The time marker or time marker name to skip the world clock's time to.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*WorldClockTimeMarkerNotFoundError*](WorldClockTimeMarkerNotFoundError.md)

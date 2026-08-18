@@ -18,3 +18,5 @@ The possible variants of a color picker.
 `Inline = 1`
 ### **Expanded**
 `Expanded = 2`
+### **Swatch**
+`Swatch = 3`
