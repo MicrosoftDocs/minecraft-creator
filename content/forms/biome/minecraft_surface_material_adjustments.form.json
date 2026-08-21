@@ -266,7 +266,8 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "dataVersion": "1.21.110"
               },
               "isRequired": true
             },
@@ -284,9 +285,11 @@
               "minLength": 2,
               "maxLength": 2
             }
-          ]
+          ],
+          "dataVersion": "1.21.110"
         }
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   }
 }

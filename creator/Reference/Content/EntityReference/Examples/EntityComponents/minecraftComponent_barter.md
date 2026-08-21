@@ -13,11 +13,11 @@ ms.date: 02/11/2025
 Enables the component to drop an item as a barter exchange.
 
 
-## Barter Properties
+## Entity Barter Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| barter_table | *not set* | String from a list of choices | Loot table that's used to drop a random item. | 
-| cooldown_after_being_attacked | 0 | Range of integers | Duration, in seconds, for which mob won't barter items if it was hurt. | 
+| barter_table |  | String from a list of choices | Loot table that's used to drop a random item. | 
+| cooldown_after_being_attacked | 10 | Range of integers | Duration, in seconds, for which mob won't barter items if it was hurt. | 
 
 ## Samples

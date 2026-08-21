@@ -133,5 +133,70 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:physics",
+    "title": "Entity Physics",
+    "description": "Defines physics properties of an actor, including if it is affected by gravity or if it collides with objects.",
+    "fields": [
+      {
+        "id": "has_collision",
+        "title": "Has Collision",
+        "description": "Whether or not the entity collides with things.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "has_gravity",
+        "title": "Has Gravity",
+        "description": "Whether or not the entity is affected by gravity.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "push_towards_closest_space",
+        "title": "Push Towards Closest Space",
+        "description": "Whether or not the entity should be pushed towards the nearest open area when stuck inside a block.",
+        "dataType": "boolean",
+        "defaultValue": false
+      }
+    ],
+    "dataVersion": "1.26.50",
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:physics/",
+          "content": {
+            "has_gravity": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/area_effect_cloud.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:physics/",
+          "content": {
+            "has_collision": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/armor_stand.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:physics/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/arrow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:physics/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:physics/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

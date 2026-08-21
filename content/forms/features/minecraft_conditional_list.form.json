@@ -105,8 +105,8 @@
               "dataType": "molang",
               "id": "condition",
               "title": "Condition",
-              "description": "Condition for placing associated Feature",
-              "isRequired": true
+              "description": "Condition for placing associated Feature. If omitted, always places.",
+              "isRequired": false
             }
           ]
         },
@@ -115,16 +115,16 @@
             "dataType": "stringArray",
             "id": "conditional_features",
             "title": "Conditional Features",
-            "description": "Array of Features, and their associated Conditions, for attempted placement. These features will be evaluated as ordered.",
+            "description": "Array of features, and their associated conditions, for attempted placement. These features will be evaluated as ordered.",
             "isRequired": true
           }
         ]
       },
       {
         "dataType": "string",
-        "id": "early_out_scheme\"<\"condition_success\", \"placement_success\"",
-        "title": "Early Out Scheme\"<\"condition Success\", \"placement Success\"",
-        "description": "Denote whether placement should end on first successful placement or first passed condition.",
+        "id": "early_out_scheme\"<\"condition_success\", \"placement_success\", \"none\"",
+        "title": "Early Out Scheme\"<\"condition Success\", \"placement Success\", \"none\"",
+        "description": "Denote whether placement should end on first successful placement ('placement_success'), first passed condition ('condition_success'), or evaluate all features ('none'). Defaults to 'none'.",
         "isRequired": false
       }
     ]

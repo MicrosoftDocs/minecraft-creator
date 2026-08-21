@@ -78,7 +78,7 @@
                     {
                       "id": "repair_amount",
                       "dataType": "keyedObjectCollection",
-                      "subFormId": "item/molang_expression"
+                      "subFormId": "legacy/molang_expression"
                     },
                     {
                       "id": "repair_amount",
@@ -92,6 +92,7 @@
         ]
       }
     ],
+    "dataVersion": "1.20.50",
     "samples": {}
   },
   "description": "Defines the items that can be used to repair a defined item, and the amount of durability each item restores upon repair. Each entry needs to define a list of strings for 'items' that can be used for the repair and an optional 'repair_amount' for how much durability is repaired.",

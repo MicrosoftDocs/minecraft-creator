@@ -27,6 +27,7 @@
         "description": "RGB color of foliage, or a Foliage Color Map object.",
         "dataType": "object"
       }
-    ]
+    ],
+    "dataVersion": "1.21.70"
   }
 }

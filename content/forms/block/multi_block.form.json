@@ -12,9 +12,9 @@
     "fields": [
       {
         "id": "direction",
-        "title": "Facing",
+        "title": "Direction",
         "description": "The direction the block parts are placed starting from 'minecraft:multi_block_part' permutation '0' to permutation 'parts'. Default value is 'up'.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "down",
@@ -41,6 +41,7 @@
             "title": "West"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       },
       {
@@ -55,6 +56,7 @@
             "title": "Minecraft:multi block part"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       },
       {
@@ -74,6 +76,7 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

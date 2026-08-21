@@ -1,0 +1,32 @@
+{
+  "id": "minecraft:poi_tag",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:poi_tag",
+    "title": "World Poi Tag",
+    "fields": [
+      {
+        "id": "children",
+        "title": "Children",
+        "description": "List of more specific tags that inherits all tags and meaning of this tag",
+        "dataType": "stringArray",
+        "defaultValue": []
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "dataType": "object",
+        "subFormId": "world/minecraft_poi_tag_description",
+        "isRequired": true
+      },
+      {
+        "id": "parents",
+        "title": "Parents",
+        "description": "List of more broad tags that this tag will inherit",
+        "dataType": "stringArray",
+        "defaultValue": []
+      }
+    ],
+    "dataVersion": "1.26.40"
+  }
+}

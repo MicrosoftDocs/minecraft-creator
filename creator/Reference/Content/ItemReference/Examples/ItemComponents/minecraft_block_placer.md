@@ -21,14 +21,14 @@ Sets the item as a placer item component for blocks. Items with this component w
 
 ## Item Block Placer Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| aligned_placement | false | Boolean true/false | When true, block placement through this item is aligned while the interaction button is held down. | 
-| block | *not set* | Object | Defines the block that will be placed. | 
-| replace_block_item | false | Boolean true/false | If true, the item will be registered as the item for this block. | 
-| use_on (Use On) | [] | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. Value must have at most 256 items. | 
-| use_on (as String) | *not set* | String |  | 
-| use_on (as Object) | *not set* | Object |  | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| aligned_placement | false | Boolean true/false | When true, block placement through this item is aligned while the interaction button is held down. |  | 
+| block | *not set* | String | Defines the block that will be placed. | Red Shrub: `"minecraft:red_shrub"`, Shelf Mushroom: `"minecraft:shelf_mushroom"` | 
+| replace_block_item | false | Boolean true/false | If true, the item will be registered as the item for this block. | Red Shrub: `true` | 
+| use_on (Use On) | [] | Array of [Use On](#use-on) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. Value must have at most 256 items. |  | 
+| use_on (as String) | *not set* | String |  |  | 
+| use_on (as Object) | *not set* | Object |  |  | 
 
 ### aligned_placement
 
@@ -63,6 +63,26 @@ If true, the item will be registered as the item for this block. This item will 
     "dirt",
     "grass"
   ],
+  "replace_block_item": true
+}
+```
+
+#### [Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/red_shrub.json)
+
+
+```json
+"minecraft:block_placer": {
+  "block": "minecraft:red_shrub",
+  "replace_block_item": true
+}
+```
+
+#### [Shelf Mushroom](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/shelf_mushroom.json)
+
+
+```json
+"minecraft:block_placer": {
+  "block": "minecraft:shelf_mushroom",
   "replace_block_item": true
 }
 ```

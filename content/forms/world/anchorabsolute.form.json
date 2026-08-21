@@ -26,6 +26,7 @@
         "dataType": "int",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

@@ -62,7 +62,6 @@
     "fields": [
       {
         "id": "direction",
-        "title": "Direction Type",
         "dataType": "string",
         "alternates": [
           {
@@ -74,7 +73,7 @@
               {
                 "id": "direction",
                 "dataType": "keyedObjectCollection",
-                "subFormId": "item/molang_expression"
+                "subFormId": "legacy/molang_expression"
               },
               {
                 "id": "direction",
@@ -99,7 +98,7 @@
           {
             "id": "offset",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "offset",
@@ -109,7 +108,6 @@
       },
       {
         "id": "plane_normal",
-        "title": "Plane Normal Type",
         "dataType": "string",
         "defaultValue": [
           0,
@@ -126,7 +124,7 @@
               {
                 "id": "plane_normal",
                 "dataType": "keyedObjectCollection",
-                "subFormId": "item/molang_expression"
+                "subFormId": "legacy/molang_expression"
               },
               {
                 "id": "plane_normal",
@@ -145,7 +143,7 @@
           {
             "id": "radius",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "radius",
@@ -159,7 +157,8 @@
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Emits particles from random positions on a flat circular disc. Configure the radius and plane normal to control disc size and orientation. Surface_only restricts spawns to the disc edge for ring effects. Perfect for ground-based effects like summoning circles, shockwaves, splash impacts, and aura rings around entities."
 }

@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 
 | Molang Query Functions | Description |
 |:-----|:----------|
-| [query.above_top_solid](queryfunctions/query_above_top_solid.md)| Returns the height of the block immediately above the highest solid block at the input (x,z) position |
+| [query.above_top_solid](queryfunctions/query_above_top_solid.md)| Returns the height of the block immediately above the highest solid block at the input (x,z) position. |
 | [query.actor_count](queryfunctions/query_actor_count.md)| Returns the number of entities (actors) rendered in the last frame. |
 | [query.all](queryfunctions/query_all.md)| Evaluates the first argument, then returns 1.0 if all of the following arguments evaluate to the same value as the first. |
 | [query.all_animations_finished](queryfunctions/query_all_animations_finished.md)| Returns 1.0 if all animations in the current animation controller state have played through at least once, else it returns 0.0. |
@@ -91,6 +91,8 @@ ms.date: 02/11/2025
 | [query.graphics_mode_is_any](queryfunctions/query_graphics_mode_is_any.md)| If the graphics mode of the client matches any of the arguments, return 1.0. |
 | [query.ground_speed](queryfunctions/query_ground_speed.md)| Returns the ground speed of the entity in meters/second. |
 | [query.had_component_group](queryfunctions/query_had_component_group.md)| If the entity is being loaded from data that was last saved with a component_group with the specified name, returns 1.0, otherwise returns 0.0. |
+| [query.has_all_biome_tags](queryfunctions/query_has_all_biome_tags.md)| Returns 1.0 if the biome at the current placement position has all of the specified tags, else 0.0. |
+| [query.has_any_biome_tags](queryfunctions/query_has_any_biome_tags.md)| Returns 1.0 if the biome at the current placement position has at least one of the specified tags, else 0.0. |
 | [query.has_any_family](queryfunctions/query_has_any_family.md)| Returns 1 if the entity has any of the specified type families, else 0. |
 | [query.has_any_leashed_entity_of_type](queryfunctions/query_has_any_leashed_entity_of_type.md)| Returns whether or not the entity is currently leashing other entities of the designated types. |
 | [query.has_armor_slot](queryfunctions/query_has_armor_slot.md)| Takes the armor slot index as a parameter, and returns 1.0 if the entity has armor in the requested slot, else it returns 0.0. |
@@ -106,6 +108,7 @@ ms.date: 02/11/2025
 | [query.has_property](queryfunctions/query_has_property.md)| Returns 1.0 if a property with the given name exists, 0 otherwise. |
 | [query.has_rider](queryfunctions/query_has_rider.md)| Returns 1.0 if the entity has a rider, else it returns 0.0 |
 | [query.has_target](queryfunctions/query_has_target.md)| Returns 1.0 if the entity has a target, else it returns 0.0 |
+| [query.head_is_in_water](queryfunctions/query_head_is_in_water.md)| Returns 1.0 if the entity's head is in water, else it returns 0.0. |
 | [query.head_roll_angle](queryfunctions/query_head_roll_angle.md)| Returns the roll angle of the head of the entity if it makes sense, else it returns 0.0. |
 | [query.head_x_rotation](queryfunctions/query_head_x_rotation.md)| Returns the nth head x rotation of the entity if it makes sense, else it returns 0.0. |
 | [query.head_y_rotation](queryfunctions/query_head_y_rotation.md)| Returns the nth head y rotation of the entity if it makes sense, else it returns 0.0. |
@@ -182,7 +185,7 @@ ms.date: 02/11/2025
 | [query.is_orphaned](queryfunctions/query_is_orphaned.md)| Returns 1.0 if the entity is orphaned, else it returns 0.0. |
 | [query.is_owner_identifier_any](queryfunctions/query_is_owner_identifier_any.md)| Returns whether the root entity identifier is any of the specified strings. |
 | [query.is_pack_setting_enabled](queryfunctions/query_is_pack_setting_enabled.md)| Returns 1.0 if the Pack Setting toggle is enabled, parameter is name of toggle. |
-| [query.is_pack_setting_selected](queryfunctions/query_is_pack_setting_selected.md)| Returns 1.0 if the Pack Setting dropdown (first parameter) matches the string value of the second parameter (selection). |
+| [query.is_pack_setting_selected](queryfunctions/query_is_pack_setting_selected.md)| Returns 1.0 if the Pack Setting dropdown or multiselect (first parameter) matches the string value of the second parameter (selection). |
 | [query.is_persona_or_premium_skin](queryfunctions/query_is_persona_or_premium_skin.md)| Returns 1.0 if the player has a persona or premium skin, else it returns 0.0. |
 | [query.is_playing_dead](queryfunctions/query_is_playing_dead.md)| Returns 1.0 if the entity is playing dead, else it returns 0.0. |
 | [query.is_powered](queryfunctions/query_is_powered.md)| Returns 1.0 if the entity is powered, else it returns 0.0. |

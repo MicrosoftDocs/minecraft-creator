@@ -28,6 +28,7 @@
         "minLength": 1,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

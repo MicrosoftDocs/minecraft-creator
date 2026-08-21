@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Applies defined amount of damage to the entity at specified intervals.
 
 
-## Damage Over Time Properties
+## Entity Damage Over Time Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

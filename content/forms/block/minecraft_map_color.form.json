@@ -108,6 +108,37 @@
         "dataType": "string"
       }
     ],
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#191919"
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#191919"
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#191919"
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_double_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#1D1D21"
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#1D1D21"
+        }
+      ]
+    }
   }
 }

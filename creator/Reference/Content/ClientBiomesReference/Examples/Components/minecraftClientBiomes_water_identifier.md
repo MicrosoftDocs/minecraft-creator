@@ -17,4 +17,4 @@ Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| water_identifier | *not set* | Object | Identifier of water definition to use | 
+| water_identifier | *not set* | String | Identifier of water definition to use | 

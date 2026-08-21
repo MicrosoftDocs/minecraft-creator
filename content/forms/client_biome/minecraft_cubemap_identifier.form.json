@@ -25,9 +25,10 @@
         "id": "cubemap_identifier",
         "title": "Cubemap Identifier",
         "description": "Identifier of cubemap definition to use",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.130"
   }
 }

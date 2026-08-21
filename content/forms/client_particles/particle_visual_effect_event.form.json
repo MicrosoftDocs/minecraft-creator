@@ -20,7 +20,7 @@
       {
         "id": "effect",
         "title": "Effect",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       },
       {
@@ -32,7 +32,7 @@
           {
             "id": "pre_effect_expression",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "pre_effect_expression",
@@ -42,8 +42,8 @@
       },
       {
         "id": "type",
-        "title": "Particle Visual Effect Event Effect Type",
-        "dataType": "string",
+        "title": "Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "emitter",
@@ -62,9 +62,11 @@
             "title": "Particle with velocity"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Spawns another particle effect when triggered by particle events, enabling cascading visual sequences. Reference other particle effects by identifier to create chains like explosions spawning embers, impacts creating dust clouds, or magical projectiles trailing sparkles. Builds complex layered effects from simpler reusable components."
 }

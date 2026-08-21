@@ -18,9 +18,9 @@ Delay for an entity playing its sound.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | event_name | ambient | String | Level sound event to be played as the ambient sound. | Allay: `"ambient"` | 
-| event_names | *not set* | Array of [Event Names](#event-names) items | List of dynamic level sound events, with conditions for choosing between them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence. | Allay: `[{"condition":"query.is_using_item","event_name":"ambient.tame"},{"condition":"!query.is_using_item","event_name":"ambient"}]`, Warden: `[{"condition":"query.anger_level(this) >= 80","event_name":"angry"},{"condition":"query.anger_level(this) >= 40","event_name":"agitated"}]` | 
-| range | 16 | Decimal number | Maximum time in seconds to randomly add to the ambient sound delay time. | Allay: `5`, Warden: `4` | 
-| value | 8 | Decimal number | Minimum time in seconds before the entity plays its ambient sound again. | Allay: `5`, Warden: `2` | 
+| event_names | *not set* | Array of [Event Names](#event-names) items | List of dynamic level sound events, with conditions for choosing between them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence. | Allay: `[{"condition":"query.is_using_item","event_name":"ambient.tame"},{"condition":"!query.is_using_item","event_name":"ambient"}]`, Breeze: `[{"condition":"!query.is_on_ground","event_name":"ambient.in.air"}]` | 
+| range | 16 | Decimal number | Maximum time in seconds to randomly add to the ambient sound delay time. |  | 
+| value | 8 | Decimal number | Minimum time in seconds before the entity plays its ambient sound again. |  | 
 
 ### Event Names
 List of dynamic level sound events, with conditions for choosing between them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence.
@@ -58,7 +58,7 @@ List of dynamic level sound events, with conditions for choosing between them. E
 }
 ```
 
-#### [Warden](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/warden.json)
+#### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
 
 
 ```json
@@ -66,15 +66,62 @@ List of dynamic level sound events, with conditions for choosing between them. E
   "event_name": "ambient",
   "event_names": [
     {
-      "condition": "query.anger_level(this) >= 80",
-      "event_name": "angry"
-    },
-    {
-      "condition": "query.anger_level(this) >= 40",
-      "event_name": "agitated"
+      "condition": "!query.is_on_ground",
+      "event_name": "ambient.in.air"
     }
   ],
-  "range": 4,
-  "value": 2
+  "range": 16,
+  "value": 8
+}
+```
+
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
+
+
+```json
+"minecraft:ambient_sound_interval": {
+  "event_name": "ambient",
+  "event_names": [
+    {
+      "condition": "query.is_baby",
+      "event_name": "ambient.baby"
+    }
+  ],
+  "range": 16,
+  "value": 6
+}
+```
+
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
+
+
+```json
+"minecraft:ambient_sound_interval": {
+  "event_name": "ambient",
+  "event_names": [
+    {
+      "condition": "query.head_is_in_water",
+      "event_name": "ambient.in.water"
+    }
+  ],
+  "range": 16,
+  "value": 6
+}
+```
+
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+
+```json
+"minecraft:ambient_sound_interval": {
+  "event_name": "ambient",
+  "event_names": [
+    {
+      "condition": "query.head_is_in_water",
+      "event_name": "ambient.in.water"
+    }
+  ],
+  "range": 16,
+  "value": 8
 }
 ```

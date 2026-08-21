@@ -227,7 +227,7 @@
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/guardian.json": [
+          "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.generic/",
               "content": true
@@ -259,7 +259,8 @@
             "can_sink": false,
             "can_swim": true,
             "can_walk": true,
-            "is_amphibious": true
+            "is_amphibious": true,
+            "using_door_annotation": true
           }
         }
       ],

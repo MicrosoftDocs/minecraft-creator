@@ -139,10 +139,10 @@
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
-              "content": [
-                4,
-                8
-              ]
+              "content": {
+                "min": 4,
+                "max": 8
+              }
             }
           ]
         }
@@ -261,10 +261,10 @@
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
-              "content": [
-                4,
-                20
-              ]
+              "content": {
+                "min": 4,
+                "max": 20
+              }
             }
           ]
         }
@@ -327,20 +327,20 @@
               80
             ],
             "jump_cooldown_when_hurt_duration": 0.1,
-            "landing_distance_from_target": [
-              4,
-              8
-            ],
+            "landing_distance_from_target": {
+              "min": 4,
+              "max": 8
+            },
             "last_hurt_duration": 2,
             "line_of_sight_obstruction_height_ignore": 4,
             "max_jump_velocity": 1.4,
             "prepare_jump_duration": 0.5,
             "priority": 5,
             "snap_to_surface_block_range": 10,
-            "valid_distance_to_target": [
-              4,
-              20
-            ]
+            "valid_distance_to_target": {
+              "min": 4,
+              "max": 20
+            }
           }
         }
       ]
@@ -376,7 +376,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "entity_bounding_box_scale",
@@ -442,7 +443,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -548,15 +550,15 @@
           "max": 8,
           "min": 4
         },
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
-              "content": [
-                4,
-                8
-              ]
+              "content": {
+                "min": 4,
+                "max": 8
+              }
             }
           ]
         }
@@ -689,20 +691,21 @@
           "max": 20,
           "min": 4
         },
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
-              "content": [
-                4,
-                20
-              ]
+              "content": {
+                "min": 4,
+                "max": 20
+              }
             }
           ]
         }
       }
     ],
+    "dataVersion": "1.26.20",
     "samples": {
       "/vanilla/behavior_pack/entities/breeze.json": [
         {
@@ -745,20 +748,20 @@
               80
             ],
             "jump_cooldown_when_hurt_duration": 0.1,
-            "landing_distance_from_target": [
-              4,
-              8
-            ],
+            "landing_distance_from_target": {
+              "min": 4,
+              "max": 8
+            },
             "last_hurt_duration": 2,
             "line_of_sight_obstruction_height_ignore": 4,
             "max_jump_velocity": 1.4,
             "prepare_jump_duration": 0.5,
             "priority": 5,
             "snap_to_surface_block_range": 10,
-            "valid_distance_to_target": [
-              4,
-              20
-            ]
+            "valid_distance_to_target": {
+              "min": 4,
+              "max": 20
+            }
           }
         }
       ]

@@ -33,7 +33,8 @@
         "dataType": "float",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   },
   "description": "Customizes how quickly players can mine the block with different tools. Configure base destruction time and per-item speed modifiers so pickaxes mine stone faster, axes break wood faster, and so on. Essential for creating blocks that follow Minecraft's tool progression and harvesting conventions."
 }

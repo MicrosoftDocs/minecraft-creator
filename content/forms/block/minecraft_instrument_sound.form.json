@@ -123,71 +123,70 @@
       {
         "id": "up",
         "title": "Up",
-        "dataType": "stringEnum",
-        "enumValues": [
-          "note.harp",
-          "note.bd",
-          "note.snare",
-          "note.hat",
-          "note.bassattack",
-          "note.flute",
-          "note.bell",
-          "note.guitar",
-          "note.chime",
-          "note.xylophone",
-          "note.iron_xylophone",
-          "note.cow_bell",
-          "note.didgeridoo",
-          "note.bit",
-          "note.banjo",
-          "note.pling",
-          "note.trumpet",
-          "note.trumpet_exposed",
-          "note.trumpet_weathered",
-          "note.trumpet_oxidized",
-          "note.zombie",
-          "note.skeleton",
-          "note.creeper",
-          "note.enderdragon",
-          "note.witherskeleton",
-          "note.piglin",
-          "note.none"
-        ]
+        "dataType": "string",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:instrument_sound/",
+              "content": "note.bassattack"
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:instrument_sound/",
+              "content": "note.bassattack"
+            }
+          ]
+        }
       },
       {
         "id": "down",
         "title": "Down",
-        "dataType": "stringEnum",
-        "enumValues": [
-          "note.harp",
-          "note.bd",
-          "note.snare",
-          "note.hat",
-          "note.bassattack",
-          "note.flute",
-          "note.bell",
-          "note.guitar",
-          "note.chime",
-          "note.xylophone",
-          "note.iron_xylophone",
-          "note.cow_bell",
-          "note.didgeridoo",
-          "note.bit",
-          "note.banjo",
-          "note.pling",
-          "note.trumpet",
-          "note.trumpet_exposed",
-          "note.trumpet_weathered",
-          "note.trumpet_oxidized",
-          "note.zombie",
-          "note.skeleton",
-          "note.creeper",
-          "note.enderdragon",
-          "note.witherskeleton",
-          "note.piglin",
-          "note.none"
-        ]
+        "dataType": "string"
       }
-    ]
+    ],
+    "dataVersion": "1.26.20",
+    "samples": {
+      "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:instrument_sound/",
+          "content": {
+            "up": "note.bassattack"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:instrument_sound/",
+          "content": {
+            "up": "note.bassattack"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:instrument_sound/",
+          "content": {
+            "up": "note.bassattack"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/blue_concrete_double_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:instrument_sound/",
+          "content": {
+            "up": "note.bassattack"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/blue_concrete_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:instrument_sound/",
+          "content": {
+            "up": "note.bassattack"
+          }
+        }
+      ]
+    }
   }
 }

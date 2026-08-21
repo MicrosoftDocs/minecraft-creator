@@ -64,7 +64,7 @@
           {
             "id": "linear_acceleration",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "linear_acceleration",
@@ -81,7 +81,7 @@
           {
             "id": "linear_drag_coefficient",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "linear_drag_coefficient",
@@ -98,7 +98,7 @@
           {
             "id": "rotation_acceleration",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "rotation_acceleration",
@@ -115,7 +115,7 @@
           {
             "id": "rotation_drag_coefficient",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "rotation_drag_coefficient",
@@ -123,7 +123,8 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Applies physics simulation to particle movement including gravity, acceleration, and air resistance. Linear acceleration adds constant force (gravity pulls down, wind pushes sideways), while drag slows particles over time. Rotation acceleration and drag control spinning. Creates natural-feeling motion for smoke rising, debris falling, or leaves drifting."
 }

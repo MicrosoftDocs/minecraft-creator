@@ -18,8 +18,26 @@ Specifies that an item is compostable and provides the chance of creating a comp
 
 ## Item Compostable Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| composting_chance | *not set* | Integer number | The chance of this item to create a layer upon composting with the composter. Valid value range is 1 - 100 inclusive Value must be >= 1. Value must be <= 100. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| composting_chance | *not set* | Integer number | The chance of this item to create a layer upon composting with the composter. Valid value range is 1 - 100 inclusive Value must be >= 1. Value must be <= 100. | Red Shrub: `30`, Shelf Mushroom: `65` | 
 
 ## Samples
+
+#### [Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/red_shrub.json)
+
+
+```json
+"minecraft:compostable": {
+  "composting_chance": 30
+}
+```
+
+#### [Shelf Mushroom](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/shelf_mushroom.json)
+
+
+```json
+"minecraft:compostable": {
+  "composting_chance": 65
+}
+```

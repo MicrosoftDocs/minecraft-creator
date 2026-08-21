@@ -25,7 +25,7 @@ This item can also be represented as a `Boolean true/false`.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | item_specific_speeds | *not set* | Array of [Item Specific Speeds](#item-specific-speeds) items | Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. | Samples: `"{ "minecraft:destructible_by_mining": { "seconds_to_destroy": 10, "item_specific_speeds": [ {  "item": { "tags": "q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') " },  "destroy_speed": 5.0 } ] } }"`, `"{ "minecraft:destructible_by_mining": { "seconds_to_destroy": 10, "item_specific_speeds": [ {  "item": "minecraft:iron_pickaxe",  "destroy_speed": 5.0 }, {  "item": "minecraft:diamond_pickaxe",  "destroy_speed": 2.0 } ] } }"` | 
-| seconds_to_destroy | 0 | Decimal number | Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times. |  | 
+| seconds_to_destroy | 0 | Decimal number | Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times. | Block Black Concrete Double Slab: `1.8`, Block Black Wool Double Slab: `0.8` | 
 
 ### item_specific_speeds
 
@@ -166,5 +166,23 @@ At JSON Object (Item Ids):
 "minecraft:destructible_by_mining": {
   "seconds_to_destroy": 5,
   "item_specific_speeds": []
+}
+```
+
+#### [Block Black Concrete Double Slab](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_concrete_double_slab.block.json)
+
+
+```json
+"minecraft:destructible_by_mining": {
+  "seconds_to_destroy": 1.8
+}
+```
+
+#### [Block Black Wool Double Slab](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_wool_double_slab.block.json)
+
+
+```json
+"minecraft:destructible_by_mining": {
+  "seconds_to_destroy": 0.8
 }
 ```

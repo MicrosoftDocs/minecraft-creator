@@ -25,7 +25,7 @@
           {
             "id": "input",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "input",
@@ -52,7 +52,8 @@
         ],
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Creates smooth, organic animation curves using chained bezier segments. Unlike linear curves, bezier chains produce natural-feeling motion with acceleration and deceleration. Define control nodes that the curve passes through, with automatic smooth interpolation between them. Used for lifelike particle behaviors like gentle floating, heartbeat pulses, or wind gusts."
 }

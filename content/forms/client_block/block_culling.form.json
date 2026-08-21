@@ -152,6 +152,7 @@
         "subFormId": "client_block/rule",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.80"
   }
 }

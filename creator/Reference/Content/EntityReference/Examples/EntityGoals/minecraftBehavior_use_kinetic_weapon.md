@@ -28,7 +28,7 @@ Enables a mob to use kinetic weaponry by intermittently charging at its target a
 | attack_types |  | String | Defines the entity types this entity will attack. | 
 | can_spread_on_fire | false | Boolean true/false | Allows the mob, if on fire and empty handed, to ignite its target upon a successful attack. | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  | 
-| cooldown_distance | {"max":8,"min":8} | [Cooldown Distance](#item-floatrange) item | The distance the mob retreats to after all of the item's "minecraft:kinetic_weapon" component's "max_duration" values have elapsed. | 
+| cooldown_distance | {"max":8,"min":8} | [Cooldown Distance](#legacy-floatrange) item | The distance the mob retreats to after all of the item's "minecraft:kinetic_weapon" component's "max_duration" values have elapsed. | 
 | cooldown_speed_multiplier | 1 | Decimal number | Multiplier applied to the mob's movement speed while on cooldown. | 
 | cooldown_time | 1 | Decimal number | Cooldown time, in seconds, between consecutive attacks. | 
 | hijack_mount_navigation | false | Boolean true/false | Allows the mob to override its mount's navigation behavior with the logic defined by this goal. | 
@@ -44,7 +44,7 @@ Enables a mob to use kinetic weaponry by intermittently charging at its target a
 | path_outer_boundary | 32 | Decimal number | Distance at which to increase attack path recalculation by "outer_boundary_time_increase". | 
 | priority | 0 | Integer number |  | 
 | random_stop_interval | 0 | Integer number | Defines a 1-in-N chance for the mob to stop its current attack, where N equals "random_stop_interval". | 
-| reposition_distance | {"max":2,"min":2} | [Reposition Distance](#item-floatrange) item | The distance the mob retreats to once the target is closer than the midpoint of the item's "minecraft:kinetic_weapon" component's minimum and maximum "reach". | 
+| reposition_distance | {"max":2,"min":2} | [Reposition Distance](#legacy-floatrange) item | The distance the mob retreats to once the target is closer than the midpoint of the item's "minecraft:kinetic_weapon" component's minimum and maximum "reach". | 
 | reposition_speed_multiplier | 1 | Decimal number | Multiplier applied to the mob's movement speed while repositioning. | 
 | require_complete_path | false | Boolean true/false | Specifies whether a full navigation path from the mob to the target is required. | 
 | speed_multiplier | 1 | Decimal number | Multiplier applied to the mob's movement speed when moving toward its target. | 
@@ -75,11 +75,9 @@ The distance the mob retreats to once the target is closer than the midpoint of 
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `cooldown_distance`
 

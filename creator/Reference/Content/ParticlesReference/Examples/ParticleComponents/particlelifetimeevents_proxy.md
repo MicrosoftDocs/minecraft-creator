@@ -17,9 +17,9 @@ Controls particle lifetime events like creation and expiration.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| creation_event | [] | Array of objects |  | 
+| creation_event | [] | Array of strings |  | 
 | creation_event (as String) | *not set* | String |  | 
-| expiration_event | [] | Array of objects |  | 
+| expiration_event | [] | Array of strings |  | 
 | expiration_event (as String) | *not set* | String |  | 
-| timeline | *not set* | Array of objects |  | 
+| timeline | *not set* | Array of strings |  | 
 | timeline (as String) | *not set* | String |  | 

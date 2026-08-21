@@ -19,7 +19,7 @@ Allows the player to trade with this mob. When the goal starts, it will stop the
 |:----------|:-------------|:----|:-----------|
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  | 
 | duration | 30 | Decimal number | The duration in seconds that the celebration lasts for. | 
-| fireworks_interval | {"max":20,"min":10} | [Fireworks Interval](#item-floatrange) item | Minimum and maximum time between firework (positive, in seconds). | 
+| fireworks_interval | {"max":20,"min":10} | [Fireworks Interval](#legacy-floatrange) item | Minimum and maximum time between firework (positive, in seconds). | 
 | on_celebration_end_event | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Celebration End Event](#entity-actordefinitiontrigger) item | The event to trigger when the goal's duration expires. | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
 
@@ -31,11 +31,9 @@ Allows the player to trade with this mob. When the goal starts, it will stop the
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `fireworks_interval`
 

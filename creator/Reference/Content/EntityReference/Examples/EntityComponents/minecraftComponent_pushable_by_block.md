@@ -21,7 +21,7 @@ Allows the entity to be pushed by certain blocks, like Shulker Boxes and Pistons
 
 ## Samples
 
-#### [Arrow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/arrow.json)
+#### [Armor Stand](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armor_stand.json)
 
 
 ```json

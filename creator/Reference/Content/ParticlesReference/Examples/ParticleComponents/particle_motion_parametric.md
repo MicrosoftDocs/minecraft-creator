@@ -18,18 +18,18 @@ Controls particle position and rotation using Molang expressions evaluated each 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | direction | *not set* | Molang array | Direction of particle motion, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
-| direction (as Named set of objects) | *not set* | Key/item pairs of [Direction (Item Molang Expression)](#item-molang-expression) items |  | 
+| direction (as Named set of objects) | *not set* | Key/item pairs of [Direction (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | direction (as Decimal number) | *not set* | Decimal number |  | 
 | relative_position | *not set* | Molang array | Position offset relative to the particle emitter, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
-| relative_position (as Named set of objects) | *not set* | Key/item pairs of [Relative Position (Item Molang Expression)](#item-molang-expression) items |  | 
+| relative_position (as Named set of objects) | *not set* | Key/item pairs of [Relative Position (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | relative_position (as Decimal number) | *not set* | Decimal number |  | 
 | rotation | *not set* | Keyed set of strings |  | 
-| rotation (as Named set of objects) | *not set* | Key/item pairs of [Rotation (Item Molang Expression)](#item-molang-expression) items |  | 
+| rotation (as Named set of objects) | *not set* | Key/item pairs of [Rotation (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | rotation (as Decimal number) | *not set* | Decimal number |  | 
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `direction`
 

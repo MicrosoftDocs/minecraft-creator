@@ -75,7 +75,8 @@
                     "description": "The value being compared with the test.",
                     "dataType": "object"
                   }
-                ]
+                ],
+                "dataVersion": "1.21.20"
               },
               "alternates": [
                 {
@@ -92,7 +93,7 @@
             {
               "id": "item",
               "title": "Item",
-              "dataType": "object",
+              "dataType": "string",
               "isRequired": true
             },
             {
@@ -147,7 +148,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "dataVersion": "1.21.30"
         },
         "alternates": [
           {
@@ -245,7 +247,8 @@
                     "description": "The value being compared with the test.",
                     "dataType": "object"
                   }
-                ]
+                ],
+                "dataVersion": "1.21.20"
               },
               "alternates": [
                 {
@@ -262,7 +265,7 @@
             {
               "id": "item",
               "title": "Item",
-              "dataType": "object",
+              "dataType": "string",
               "isRequired": true
             },
             {
@@ -317,7 +320,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "dataVersion": "1.21.30"
         },
         "alternates": [
           {
@@ -352,7 +356,8 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.21.30"
   },
   "description": "Defines a single trade offer an entity can present to players. Specifies the input items the player must provide and the output item received in exchange. Configure trade counts, XP rewards, and price adjustments. Used in villager-style trading systems with the minecraft:economy_trade_table component."
 }

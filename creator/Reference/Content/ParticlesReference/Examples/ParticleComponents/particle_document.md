@@ -92,15 +92,15 @@ Defines Molang expressions that run when the emitter is created and on each upda
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | creation_expression | 0 | Molang | Molang expression run once when the emitter is created. Use this to initialize variables. | 
-| creation_expression (as Named set of objects) | *not set* | Key/item pairs of [Creation Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| creation_expression (as Named set of objects) | *not set* | Key/item pairs of [Creation Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | creation_expression (as Decimal number) | *not set* | Decimal number |  | 
 | per_update_expression | 0 | Molang | Molang expression run each frame while the emitter is active. Use this to update variables based on time or other conditions. | 
-| per_update_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Update Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| per_update_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Update Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | per_update_expression (as Decimal number) | *not set* | Decimal number |  | 
 
-###### Item Molang Expression
+###### Legacy Molang Expression
 
-###### Item Molang Expression Properties
+###### Legacy Molang Expression Properties
 
 **JSON path:** `particle_effect > components > minecraft:emitter_initialization > creation_expression`
 
@@ -120,10 +120,10 @@ Controls when the emitter activates and expires using Molang expressions. The ac
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | activation_expression | 1 | Molang | When the expression is non-zero, the emitter is activated. Can be a number or Molang expression. | 
-| activation_expression (as Named set of objects) | *not set* | Key/item pairs of [Activation Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| activation_expression (as Named set of objects) | *not set* | Key/item pairs of [Activation Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | activation_expression (as Decimal number) | *not set* | Decimal number |  | 
 | expiration_expression | 0 | Molang | When the expression is non-zero, the emitter expires. Can be a number or Molang expression. | 
-| expiration_expression (as Named set of objects) | *not set* | Key/item pairs of [Expiration Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| expiration_expression (as Named set of objects) | *not set* | Key/item pairs of [Expiration Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | expiration_expression (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Emitter Lifetime Looping
@@ -137,10 +137,10 @@ Creates repeating particle effects that cycle between active and dormant phases.
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. | 
-| active_time (as Named set of objects) | *not set* | Key/item pairs of [Active Time (Item Molang Expression)](#item-molang-expression) items |  | 
+| active_time (as Named set of objects) | *not set* | Key/item pairs of [Active Time (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | active_time (as Decimal number) | *not set* | Decimal number |  | 
 | sleep_time | 0 | Molang | The time in seconds that the emitter sleeps between active periods. Can be a number or Molang expression. | 
-| sleep_time (as Named set of objects) | *not set* | Key/item pairs of [Sleep Time (Item Molang Expression)](#item-molang-expression) items |  | 
+| sleep_time (as Named set of objects) | *not set* | Key/item pairs of [Sleep Time (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | sleep_time (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Emitter Lifetime Once
@@ -154,7 +154,7 @@ Creates a single-burst particle effect that runs once and stops. The emitter act
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. | 
-| active_time (as Named set of objects) | *not set* | Key/item pairs of [Active Time (Item Molang Expression)](#item-molang-expression) items |  | 
+| active_time (as Named set of objects) | *not set* | Key/item pairs of [Active Time (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | active_time (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Emitter Rate Instant
@@ -168,7 +168,7 @@ Spawns all particles in a single instant burst when the emitter activates. Unlik
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | num_particles | *not set* | Molang | The number of particles to emit. Can be a number or Molang expression. | 
-| num_particles (as Named set of objects) | *not set* | Key/item pairs of [Num Particles (Item Molang Expression)](#item-molang-expression) items |  | 
+| num_particles (as Named set of objects) | *not set* | Key/item pairs of [Num Particles (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | num_particles (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Emitter Rate Manual
@@ -182,7 +182,7 @@ Allows manual control over particle emission through events rather than automati
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | max_particles | *not set* | Molang | The maximum number of particles that can exist at once. Can be a number or Molang expression. | 
-| max_particles (as Named set of objects) | *not set* | Key/item pairs of [Max Particles (Item Molang Expression)](#item-molang-expression) items |  | 
+| max_particles (as Named set of objects) | *not set* | Key/item pairs of [Max Particles (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | max_particles (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Emitter Rate Steady
@@ -196,10 +196,10 @@ Continuously spawns particles at a consistent rate over time. The spawn_rate con
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | max_particles | *not set* | Molang | The maximum number of particles that can exist at once. Can be a number or Molang expression. | 
-| max_particles (as Named set of objects) | *not set* | Key/item pairs of [Max Particles (Item Molang Expression)](#item-molang-expression) items |  | 
+| max_particles (as Named set of objects) | *not set* | Key/item pairs of [Max Particles (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | max_particles (as Decimal number) | *not set* | Decimal number |  | 
 | spawn_rate | *not set* | Molang | The number of particles to spawn per second. Can be a number or Molang expression. | 
-| spawn_rate (as Named set of objects) | *not set* | Key/item pairs of [Spawn Rate (Item Molang Expression)](#item-molang-expression) items |  | 
+| spawn_rate (as Named set of objects) | *not set* | Key/item pairs of [Spawn Rate (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | spawn_rate (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Emitter Shape Box
@@ -215,10 +215,10 @@ Emits particles from random positions within a rectangular box volume. Define th
 | direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
 | direction (as Molang array) | *not set* | Molang array |  | 
 | half_dimensions | *not set* | Molang array | The half dimensions of the box, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| half_dimensions (as Named set of objects) | *not set* | Key/item pairs of [Half Dimensions (Item Molang Expression)](#item-molang-expression) items |  | 
+| half_dimensions (as Named set of objects) | *not set* | Key/item pairs of [Half Dimensions (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | half_dimensions (as Decimal number) | *not set* | Decimal number |  | 
 | offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Item Molang Expression)](#item-molang-expression) items |  | 
+| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | offset (as Decimal number) | *not set* | Decimal number |  | 
 | surface_only | false | Boolean true/false |  | 
 
@@ -233,10 +233,10 @@ Emits particles from positions calculated by custom Molang expressions. Unlike p
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | direction | [0, 0, 0] | Molang array | The direction of particle emission, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| direction (as Named set of objects) | *not set* | Key/item pairs of [Direction (Item Molang Expression)](#item-molang-expression) items |  | 
+| direction (as Named set of objects) | *not set* | Key/item pairs of [Direction (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | direction (as Decimal number) | *not set* | Decimal number |  | 
 | offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Item Molang Expression)](#item-molang-expression) items |  | 
+| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | offset (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Emitter Shape Disc
@@ -252,12 +252,12 @@ Emits particles from random positions on a flat circular disc. Configure the rad
 | direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
 | direction (as Molang array) | *not set* | Molang array |  | 
 | offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Item Molang Expression)](#item-molang-expression) items |  | 
+| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | offset (as Decimal number) | *not set* | Decimal number |  | 
 | plane_normal | [0, 1, 0] | String | The normal vector of the disc plane. Can be 'x', 'y', 'z', or an array of [x, y, z] values. | 
 | plane_normal (as Molang array) | *not set* | Molang array |  | 
 | radius | 1 | Molang | The radius of the disc. Can be a number or Molang expression. | 
-| radius (as Named set of objects) | *not set* | Key/item pairs of [Radius (Item Molang Expression)](#item-molang-expression) items |  | 
+| radius (as Named set of objects) | *not set* | Key/item pairs of [Radius (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | radius (as Decimal number) | *not set* | Decimal number |  | 
 | surface_only | false | Boolean true/false |  | 
 
@@ -293,10 +293,10 @@ Emits particles from random positions within a spherical volume. Configure the r
 | direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
 | direction (as Molang array) | *not set* | Molang array |  | 
 | offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Item Molang Expression)](#item-molang-expression) items |  | 
+| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | offset (as Decimal number) | *not set* | Decimal number |  | 
 | radius | 1 | Molang | The radius of the sphere. Can be a number or Molang expression. | 
-| radius (as Named set of objects) | *not set* | Key/item pairs of [Radius (Item Molang Expression)](#item-molang-expression) items |  | 
+| radius (as Named set of objects) | *not set* | Key/item pairs of [Radius (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | radius (as Decimal number) | *not set* | Decimal number |  | 
 | surface_only | false | Boolean true/false |  | 
 
@@ -313,7 +313,7 @@ Controls how particle sprites render and orient toward the camera. The facing_ca
 | direction | *not set* | Object |  | 
 | facing_camera_mode | *not set* | [Facing Camera Mode](#facing-camera-mode-choices) choices | The facing mode of the billboard. Controls how the particle faces the camera. | 
 | size | *not set* | Molang array | The size of the particle billboard, as [width, height] using Molang expressions or numbers. Value must have at least 2 items. Value must have at most 2 items. | 
-| size (as Named set of objects) | *not set* | Key/item pairs of [Size (Item Molang Expression)](#item-molang-expression) items |  | 
+| size (as Named set of objects) | *not set* | Key/item pairs of [Size (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | size (as Decimal number) | *not set* | Decimal number |  | 
 | uv | *not set* | Object |  | 
 
@@ -376,10 +376,10 @@ Sets the starting rotation angle and spin velocity for each particle. Initial ro
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | rotation | 0 | Keyed set of strings |  | 
-| rotation (as Named set of objects) | *not set* | Key/item pairs of [Rotation (Item Molang Expression)](#item-molang-expression) items |  | 
+| rotation (as Named set of objects) | *not set* | Key/item pairs of [Rotation (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | rotation (as Decimal number) | *not set* | Decimal number |  | 
 | rotation_rate | 0 | Keyed set of strings |  | 
-| rotation_rate (as Named set of objects) | *not set* | Key/item pairs of [Rotation Rate (Item Molang Expression)](#item-molang-expression) items |  | 
+| rotation_rate (as Named set of objects) | *not set* | Key/item pairs of [Rotation Rate (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | rotation_rate (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Particle Initialization
@@ -393,10 +393,10 @@ Runs Molang expressions when each individual particle spawns to initialize per-p
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | per_render_expression | 0 | Keyed set of strings |  | 
-| per_render_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Render Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| per_render_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Render Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | per_render_expression (as Decimal number) | *not set* | Decimal number |  | 
 | per_update_expression | 0 | Keyed set of strings |  | 
-| per_update_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Update Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| per_update_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Update Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | per_update_expression (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Particle Lifetime Expression
@@ -410,10 +410,10 @@ Controls individual particle lifetimes using Molang expressions. The max_lifetim
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | expiration_expression | 0 | Molang | When the expression is non-zero, the particle expires. Can be a number or Molang expression. | 
-| expiration_expression (as Named set of objects) | *not set* | Key/item pairs of [Expiration Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| expiration_expression (as Named set of objects) | *not set* | Key/item pairs of [Expiration Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | expiration_expression (as Decimal number) | *not set* | Decimal number |  | 
 | max_lifetime | *not set* | Molang | The maximum lifetime of the particle in seconds. Can be a number or Molang expression. | 
-| max_lifetime (as Named set of objects) | *not set* | Key/item pairs of [Max Lifetime (Item Molang Expression)](#item-molang-expression) items |  | 
+| max_lifetime (as Named set of objects) | *not set* | Key/item pairs of [Max Lifetime (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | max_lifetime (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Particle Motion Collision
@@ -430,7 +430,7 @@ Enables particle collision with world geometry. Configure collision radius, boun
 | collision_drag | 0 | Decimal number |  | 
 | collision_radius | *not set* | Decimal number |  | 
 | enabled | 1 | Keyed set of strings |  | 
-| enabled (as Named set of objects) | *not set* | Key/item pairs of [Enabled (Item Molang Expression)](#item-molang-expression) items |  | 
+| enabled (as Named set of objects) | *not set* | Key/item pairs of [Enabled (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | enabled (as Decimal number) | *not set* | Decimal number |  | 
 | events (Collision Event) | *not set* | Array of [Events](#events) items |  | 
 | events (Events) | *not set* | [Events (Events)](#events-events) item |  | 
@@ -449,14 +449,8 @@ Enables particle collision with world geometry. Configure collision radius, boun
 
 ###### Events (Events)
 
-###### Events Properties
+Same structure as [Events](#events).
 
-**JSON path:** `particle_effect > components > minecraft:particle_motion_collision > events`
-
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| event | *not set* | Object |  | 
-| min_speed | 2 | Decimal number |  | 
 
 ##### Client Particles Particle Motion Dynamic
 Applies physics simulation to particle movement including gravity, acceleration, and air resistance. Linear acceleration adds constant force (gravity pulls down, wind pushes sideways), while drag slows particles over time. Rotation acceleration and drag control spinning. Creates natural-feeling motion for smoke rising, debris falling, or leaves drifting.
@@ -469,16 +463,16 @@ Applies physics simulation to particle movement including gravity, acceleration,
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | linear_acceleration | [0, 0, 0] | Molang array | The linear acceleration of particles, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| linear_acceleration (as Named set of objects) | *not set* | Key/item pairs of [Linear Acceleration (Item Molang Expression)](#item-molang-expression) items |  | 
+| linear_acceleration (as Named set of objects) | *not set* | Key/item pairs of [Linear Acceleration (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | linear_acceleration (as Decimal number) | *not set* | Decimal number |  | 
 | linear_drag_coefficient | 0 | Molang | The drag coefficient applied to particle motion. Can be a number or Molang expression. | 
-| linear_drag_coefficient (as Named set of objects) | *not set* | Key/item pairs of [Linear Drag Coefficient (Item Molang Expression)](#item-molang-expression) items |  | 
+| linear_drag_coefficient (as Named set of objects) | *not set* | Key/item pairs of [Linear Drag Coefficient (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | linear_drag_coefficient (as Decimal number) | *not set* | Decimal number |  | 
 | rotation_acceleration | 0 | Molang | The rotation acceleration. Can be a number or Molang expression. | 
-| rotation_acceleration (as Named set of objects) | *not set* | Key/item pairs of [Rotation Acceleration (Item Molang Expression)](#item-molang-expression) items |  | 
+| rotation_acceleration (as Named set of objects) | *not set* | Key/item pairs of [Rotation Acceleration (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | rotation_acceleration (as Decimal number) | *not set* | Decimal number |  | 
 | rotation_drag_coefficient | 0 | Molang | The rotation drag coefficient. Can be a number or Molang expression. | 
-| rotation_drag_coefficient (as Named set of objects) | *not set* | Key/item pairs of [Rotation Drag Coefficient (Item Molang Expression)](#item-molang-expression) items |  | 
+| rotation_drag_coefficient (as Named set of objects) | *not set* | Key/item pairs of [Rotation Drag Coefficient (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | rotation_drag_coefficient (as Decimal number) | *not set* | Decimal number |  | 
 
 ##### Client Particles Particle Motion Parametric
@@ -492,13 +486,13 @@ Controls particle position and rotation using Molang expressions evaluated each 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | direction | *not set* | Molang array | Direction of particle motion, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
-| direction (as Named set of objects) | *not set* | Key/item pairs of [Direction (Item Molang Expression)](#item-molang-expression) items |  | 
+| direction (as Named set of objects) | *not set* | Key/item pairs of [Direction (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | direction (as Decimal number) | *not set* | Decimal number |  | 
 | relative_position | *not set* | Molang array | Position offset relative to the particle emitter, as [x, y, z] Molang expressions. Value must have at least 3 items. Value must have at most 3 items. | 
-| relative_position (as Named set of objects) | *not set* | Key/item pairs of [Relative Position (Item Molang Expression)](#item-molang-expression) items |  | 
+| relative_position (as Named set of objects) | *not set* | Key/item pairs of [Relative Position (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | relative_position (as Decimal number) | *not set* | Decimal number |  | 
 | rotation | *not set* | Keyed set of strings |  | 
-| rotation (as Named set of objects) | *not set* | Key/item pairs of [Rotation (Item Molang Expression)](#item-molang-expression) items |  | 
+| rotation (as Named set of objects) | *not set* | Key/item pairs of [Rotation (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | rotation (as Decimal number) | *not set* | Decimal number |  | 
 
 #### Curves
@@ -510,15 +504,15 @@ Controls particle position and rotation using Molang expressions evaluated each 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | horizontal_range | 1 | Keyed set of strings |  | 
-| horizontal_range (as Named set of objects) | *not set* | Key/item pairs of [Horizontal Range (Item Molang Expression)](#item-molang-expression) items |  | 
+| horizontal_range (as Named set of objects) | *not set* | Key/item pairs of [Horizontal Range (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | horizontal_range (as Decimal number) | *not set* | Decimal number |  | 
 | input | *not set* | Keyed set of strings |  | 
-| input (as Named set of objects) | *not set* | Key/item pairs of [Input (Item Molang Expression)](#item-molang-expression) items |  | 
+| input (as Named set of objects) | *not set* | Key/item pairs of [Input (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | input (as Decimal number) | *not set* | Decimal number |  | 
 | nodes | *not set* | Keyed set of strings |  | 
-| nodes (as Named set of objects) | *not set* | Key/item pairs of [Nodes (Item Molang Expression)](#item-molang-expression) items |  | 
+| nodes (as Named set of objects) | *not set* | Key/item pairs of [Nodes (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | nodes (as Decimal number) | *not set* | Decimal number |  | 
-| type | *not set* | Object |  | 
+| type | *not set* | String |  | 
 
 #### Client Particles Particle Effect Description
 The description MUST contain an identifier and basic_render_parameters.
@@ -557,7 +551,7 @@ Defines actions triggered by particle events like spawning, collision, or expira
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | expression | 0 | Keyed set of strings |  | 
-| expression (as Named set of objects) | *not set* | Key/item pairs of [Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| expression (as Named set of objects) | *not set* | Key/item pairs of [Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | expression (as Decimal number) | *not set* | Decimal number |  | 
 | log |  | String |  | 
 | particle_effect | {"effect":"","pre_effect_expression":0,"type":null} | [Particle Effect](#client-particles-particle-visual-effect-event) item |  | 
@@ -575,9 +569,9 @@ Spawns another particle effect when triggered by particle events, enabling casca
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| effect | *not set* | Object |  | 
+| effect | *not set* | String |  | 
 | pre_effect_expression | 0 | Keyed set of strings |  | 
-| pre_effect_expression (as Named set of objects) | *not set* | Key/item pairs of [Pre Effect Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| pre_effect_expression (as Named set of objects) | *not set* | Key/item pairs of [Pre Effect Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | pre_effect_expression (as Decimal number) | *not set* | Decimal number |  | 
 | type | *not set* | [Type](#type-choices) choices |  | 
 
@@ -601,7 +595,7 @@ Triggers one of several possible effects randomly when a particle event fires, w
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | expression | 0 | Keyed set of strings |  | 
-| expression (as Named set of objects) | *not set* | Key/item pairs of [Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| expression (as Named set of objects) | *not set* | Key/item pairs of [Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | expression (as Decimal number) | *not set* | Decimal number |  | 
 | log |  | String |  | 
 | particle_effect | {"effect":"","pre_effect_expression":0,"type":null} | [Particle Effect](#client-particles-particle-visual-effect-event) item |  | 

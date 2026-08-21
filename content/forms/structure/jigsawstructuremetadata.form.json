@@ -40,7 +40,8 @@
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.21.50"
   },
   "description": "Defines jigsaw structure metadata including markers and size."
 }

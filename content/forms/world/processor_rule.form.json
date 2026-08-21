@@ -92,6 +92,7 @@
         "description": "A predicate evaluated on the distance between the structure's world origin and the world block.",
         "dataType": "object"
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

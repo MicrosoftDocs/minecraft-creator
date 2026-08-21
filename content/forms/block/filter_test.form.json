@@ -1,0 +1,42 @@
+{
+  "id": "Filter Test",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Filter Test",
+    "title": "Block Filter Test",
+    "fields": [
+      {
+        "id": "domain",
+        "title": "Domain",
+        "description": "The domain the test should be performed in.",
+        "dataType": "object"
+      },
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "The comparison to apply with 'value'.",
+        "dataType": "object"
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "The subject of this filter test.",
+        "dataType": "object"
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "description": "The name of the test to apply.",
+        "dataType": "string",
+        "isRequired": true
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The value being compared with the test.",
+        "dataType": "object"
+      }
+    ],
+    "dataVersion": "1.21.20"
+  }
+}

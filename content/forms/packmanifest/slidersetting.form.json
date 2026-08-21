@@ -43,7 +43,8 @@
         "validity": [
           {
             "comparison": "pattern",
-            "value": "^(?:(?!^(minecraft):).)+:(?:.)+$"
+            "value": "^(?:(?!^(minecraft):).)+:(?:.)+$",
+            "patternFlags": "i"
           }
         ],
         "isRequired": true
@@ -68,8 +69,8 @@
       },
       {
         "id": "type",
-        "title": "SettingType",
-        "dataType": "string",
+        "title": "Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "dropdown",
@@ -80,6 +81,10 @@
             "title": "Label"
           },
           {
+            "id": "multiselect",
+            "title": "Multiselect"
+          },
+          {
             "id": "slider",
             "title": "Slider"
           },
@@ -88,9 +93,11 @@
             "title": "Toggle"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "3.0.0"
   },
   "description": "A numeric slider setting that appears in the pack's world settings UI. Allows players to adjust values like 'Difficulty Multiplier' or 'Spawn Rate' within defined min/max bounds. Scripts can read the chosen value at runtime."
 }

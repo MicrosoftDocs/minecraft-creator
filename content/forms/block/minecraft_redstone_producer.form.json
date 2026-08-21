@@ -126,7 +126,8 @@
             "id": "west",
             "title": "West"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "power",
@@ -143,9 +144,9 @@
       },
       {
         "id": "strongly_powered_face",
-        "title": "Facing",
+        "title": "Strongly Powered Face",
         "description": "The block touching this face will become strongly powered with the signal level strength of \"power\".\nStrongly powered blocks will power adjacent blocks.\nBy default, the block will not strongly power any face.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "down",
@@ -171,7 +172,8 @@
             "id": "west",
             "title": "West"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "transform_relative",
@@ -180,6 +182,7 @@
         "dataType": "boolean",
         "defaultValue": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

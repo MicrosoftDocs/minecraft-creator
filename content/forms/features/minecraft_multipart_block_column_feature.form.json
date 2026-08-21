@@ -1,0 +1,52 @@
+{
+  "id": "minecraft:multipart_block_column_feature",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:multipart_block_column_feature",
+    "title": "Multipart Block Column Feature",
+    "fields": [
+      {
+        "dataType": "object",
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "string",
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "stringArray",
+        "id": "weighted_heights",
+        "title": "Weighted Heights",
+        "isRequired": false
+      },
+      {
+        "dataType": "string",
+        "id": "direction",
+        "title": "Direction",
+        "description": "The direction of the column. If omitted then it will default to 'UP'",
+        "isRequired": false
+      },
+      {
+        "dataType": "stringArray",
+        "id": "may_place_on",
+        "title": "May Place On",
+        "isRequired": false
+      },
+      {
+        "dataType": "stringArray",
+        "id": "may_replace",
+        "title": "May Replace",
+        "isRequired": false
+      }
+    ]
+  }
+}

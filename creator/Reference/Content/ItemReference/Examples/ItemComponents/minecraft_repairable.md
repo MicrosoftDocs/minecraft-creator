@@ -34,12 +34,12 @@ Defines the items that can be used to repair a defined item, and the amount of d
 | items | *not set* | String | Items that may be used to repair an item. | 
 | items (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
 | repair_amount |  | Keyed set of strings | How much the item is repaired. | 
-| repair_amount (as Named set of objects) | *not set* | Key/item pairs of [Repair Amount (Item Molang Expression)](#item-molang-expression) items |  | 
+| repair_amount (as Named set of objects) | *not set* | Key/item pairs of [Repair Amount (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | repair_amount (as Decimal number) | *not set* | Decimal number |  | 
 
-#### Item Molang Expression
+#### Legacy Molang Expression
 
-##### Item Molang Expression Properties
+##### Legacy Molang Expression Properties
 
 **JSON path:** `repair_items > repair_amount`
 

@@ -381,7 +381,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "priority",
@@ -398,6 +399,7 @@
         "subFormId": "entity/summonactorgoaldefinition_spelldata"
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {}
   }
 }

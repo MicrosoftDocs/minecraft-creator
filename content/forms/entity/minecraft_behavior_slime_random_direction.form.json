@@ -120,7 +120,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "min_change_direction_time",
@@ -157,6 +158,7 @@
         "defaultValue": 360
       }
     ],
+    "dataVersion": "1.21.110",
     "samples": {
       "/vanilla/behavior_pack/entities/magma_cube.json": [
         {

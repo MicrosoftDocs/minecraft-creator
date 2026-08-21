@@ -97,7 +97,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "priority",
@@ -127,6 +128,7 @@
         "defaultValue": 1
       }
     ],
+    "dataVersion": "1.26.0",
     "samples": {
       "/vanilla/behavior_pack/entities/elder_guardian.json": [
         {

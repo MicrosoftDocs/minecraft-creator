@@ -41,7 +41,7 @@
           {
             "id": "active_time",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "active_time",
@@ -58,7 +58,7 @@
           {
             "id": "sleep_time",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "sleep_time",
@@ -66,7 +66,8 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Creates repeating particle effects that cycle between active and dormant phases. The emitter runs for the active_time duration, pauses for sleep_time, then repeats indefinitely. Perfect for ambient effects like bubbling cauldrons, flickering torches, pulsing enchantment glows, or creature breathing animations."
 }

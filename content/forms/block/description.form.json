@@ -27,7 +27,8 @@
         "validity": [
           {
             "comparison": "pattern",
-            "value": "^\\S+$"
+            "value": "^\\S+$",
+            "patternFlags": "i"
           }
         ],
         "isRequired": true
@@ -39,7 +40,7 @@
         "dataType": "object",
         "defaultValue": {
           "category": "none",
-          "group": "",
+          "group": null,
           "is_hidden_in_commands": false
         },
         "subFormId": "block/menu_category"
@@ -57,25 +58,14 @@
         "description": "Change the connection, multiblock state, placement position and/or direction behaviors of a block",
         "dataType": "object",
         "defaultValue": {
-          "minecraft:connection": {
-            "enabled_states": []
-          },
-          "minecraft:multi_block": {
-            "direction": "up",
-            "enabled_states": [],
-            "parts": 2
-          },
-          "minecraft:placement_direction": {
-            "blocks_to_corner_with": [],
-            "enabled_states": [],
-            "y_rotation_offset": null
-          },
-          "minecraft:placement_position": {
-            "enabled_states": []
-          }
+          "minecraft:connection": null,
+          "minecraft:multi_block": null,
+          "minecraft:placement_direction": null,
+          "minecraft:placement_position": null
         },
         "subFormId": "block/traits"
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

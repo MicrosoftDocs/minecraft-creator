@@ -56,7 +56,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -72,7 +73,8 @@
         "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   },
   "description": "Defines conditions for feature placement including biome filters and placement pass."
 }

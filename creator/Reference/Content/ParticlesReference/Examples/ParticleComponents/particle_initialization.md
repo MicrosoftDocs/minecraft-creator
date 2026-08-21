@@ -18,15 +18,15 @@ Runs Molang expressions when each individual particle spawns to initialize per-p
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | per_render_expression | 0 | Keyed set of strings |  | 
-| per_render_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Render Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| per_render_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Render Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | per_render_expression (as Decimal number) | *not set* | Decimal number |  | 
 | per_update_expression | 0 | Keyed set of strings |  | 
-| per_update_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Update Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| per_update_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Update Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | per_update_expression (as Decimal number) | *not set* | Decimal number |  | 
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `per_render_expression`
 

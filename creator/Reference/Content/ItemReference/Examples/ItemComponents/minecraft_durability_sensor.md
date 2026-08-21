@@ -354,6 +354,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | deny | Deny | |
 | detach | Detach | |
 | disappeared | Disappeared | |
+| dismount | Dismount | |
 | door.close | Door.close | |
 | door.open | Door.open | |
 | drink | Drink | |
@@ -554,6 +555,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | mob.player.hurt_on_fire | Mob.player.hurt on fire | |
 | mob.warning | Mob.warning | |
 | mob.warning.baby | Mob.warning.baby | |
+| mount | Mount | |
 | multi_swap | Multi swap | |
 | nearby_close | Nearby close | |
 | nearby_closer | Nearby closer | |
@@ -671,6 +673,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | step.baby | Step.baby | |
 | step_lava | Step lava | |
 | step_sand | Step sand | |
+| straw_bed.break_leave | Straw bed.break leave | |
 | stun | Stun | |
 | swim | Swim | |
 | swoop | Swoop | |

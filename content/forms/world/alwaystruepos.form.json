@@ -21,8 +21,8 @@
     "fields": [
       {
         "id": "predicate_type",
-        "title": "PosType",
-        "dataType": "string",
+        "title": "Predicate Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:always_true",
@@ -33,8 +33,11 @@
             "title": "Minecraft:axis aligned linear pos"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:always_true",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

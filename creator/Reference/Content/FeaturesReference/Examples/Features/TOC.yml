@@ -14,10 +14,12 @@
   href: minecraft_height_difference_filter_feature.md
 - name: minecraft:horizontal_tree_decoration_feature
   href: minecraft_horizontal_tree_decoration_feature.md
-- name: minecraft:multi_block_feature
-  href: minecraft_multi_block_feature.md
 - name: minecraft:multiface_feature
   href: minecraft_multiface_feature.md
+- name: minecraft:multipart_block_column_feature
+  href: minecraft_multipart_block_column_feature.md
+- name: minecraft:multi_block_feature
+  href: minecraft_multi_block_feature.md
 - name: minecraft:nether_cave_carver_feature
   href: minecraft_nether_cave_carver_feature.md
 - name: minecraft:ore_feature

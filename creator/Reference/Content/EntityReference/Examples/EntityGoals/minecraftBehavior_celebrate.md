@@ -20,10 +20,10 @@ Allows this entity to celebrate surviving a raid by making celebration sounds an
 | celebration_sound | celebrate | [Celebration Sound](#celebration-sound-choices) choices | The sound event to trigger during the celebration. | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  | 
 | duration | 30 | Decimal number | The duration in seconds that the celebration lasts for. | 
-| jump_interval | {"max":3.5,"min":1} | [Jump Interval](#item-floatrange) item | Minimum and maximum time between jumping (positive, in seconds). Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | 
+| jump_interval | {"max":3.5,"min":1} | [Jump Interval](#legacy-floatrange) item | Minimum and maximum time between jumping (positive, in seconds). Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | 
 | on_celebration_end_event | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Celebration End Event](#entity-actordefinitiontrigger) item | The event to trigger when the goal's duration expires. | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
-| sound_interval | {"max":7,"min":2} | [Sound Interval](#item-floatrange) item | Minimum and maximum time between sound events (positive, in seconds). Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | 
+| sound_interval | {"max":7,"min":2} | [Sound Interval](#legacy-floatrange) item | Minimum and maximum time between sound events (positive, in seconds). Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | 
 
 ### Celebration Sound choices
 
@@ -235,6 +235,7 @@ Allows this entity to celebrate surviving a raid by making celebration sounds an
 | deny | Deny | |
 | detach | Detach | |
 | disappeared | Disappeared | |
+| dismount | Dismount | |
 | door.close | Door.close | |
 | door.open | Door.open | |
 | drink | Drink | |
@@ -435,6 +436,7 @@ Allows this entity to celebrate surviving a raid by making celebration sounds an
 | mob.player.hurt_on_fire | Mob.player.hurt on fire | |
 | mob.warning | Mob.warning | |
 | mob.warning.baby | Mob.warning.baby | |
+| mount | Mount | |
 | multi_swap | Multi swap | |
 | nearby_close | Nearby close | |
 | nearby_closer | Nearby closer | |
@@ -552,6 +554,7 @@ Allows this entity to celebrate surviving a raid by making celebration sounds an
 | step.baby | Step.baby | |
 | step_lava | Step lava | |
 | step_sand | Step sand | |
+| straw_bed.break_leave | Straw bed.break leave | |
 | stun | Stun | |
 | swim | Swim | |
 | swoop | Swoop | |
@@ -605,11 +608,9 @@ Allows this entity to celebrate surviving a raid by making celebration sounds an
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `jump_interval`
 

@@ -188,6 +188,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {
       "/vanilla/behavior_pack/items/black_bundle.json": [
         {

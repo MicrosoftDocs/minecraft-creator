@@ -68,6 +68,7 @@
         "description": "Density of white ash precipitation visuals",
         "dataType": "float"
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   }
 }

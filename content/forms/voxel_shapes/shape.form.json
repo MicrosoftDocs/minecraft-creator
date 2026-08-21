@@ -27,7 +27,8 @@
         "subFormId": "voxel_shapes/box",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   },
   "description": "Defines a voxel shape with boxes."
 }

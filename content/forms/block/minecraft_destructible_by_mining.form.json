@@ -430,7 +430,33 @@
         "title": "Seconds To Destroy",
         "description": "Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times.",
         "defaultValue": 0,
-        "dataType": "float"
+        "dataType": "float",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": 1.8
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": 1.8
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_wool_double_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": 0.8
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_wool_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": 0.8
+            }
+          ]
+        }
       }
     ],
     "scalarField": {
@@ -438,6 +464,47 @@
       "title": "Boolean",
       "dataType": "boolean"
     },
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 1.8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 1.8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 1.8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_double_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.8
+          }
+        }
+      ]
+    }
   }
 }

@@ -20,9 +20,9 @@
     "fields": [
       {
         "id": "default_permission_level",
-        "title": "Command Permission Level",
+        "title": "Default Permission Level",
         "description": "Default permission level for all unspecified commands.  If not set then commands will default to their normal permission level.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "admin",
@@ -48,13 +48,41 @@
             "id": "owner",
             "title": "Owner"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "permission_levels",
         "title": "Permission Levels",
-        "dataType": "keyedStringCollection",
-        "defaultValue": {}
+        "dataType": "stringEnum",
+        "defaultValue": {},
+        "choices": [
+          {
+            "id": "admin",
+            "title": "Admin"
+          },
+          {
+            "id": "any",
+            "title": "Any"
+          },
+          {
+            "id": "game_directors",
+            "title": "Game directors"
+          },
+          {
+            "id": "host",
+            "title": "Host"
+          },
+          {
+            "id": "internal",
+            "title": "Internal"
+          },
+          {
+            "id": "owner",
+            "title": "Owner"
+          }
+        ],
+        "mustMatchChoices": true
       }
     ]
   },

@@ -34,7 +34,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | probability_per_strength | 1 | Decimal number | Percent chance this entity will stop avoiding another entity based on that entity's strength, where 1.0 = 100%. Value must be <= 1. | Dolphin: `0.14` | 
 | remove_target | false | Boolean true/false | Determine if we should remove target when fleeing or not. |  | 
 | river_speed_multiplier | 0.75 | Decimal number | Multiplier for speed when following river. 1.0 means keep the regular speed, while higher numbers make the speed faster. |  | 
-| sound_interval | {"max":8,"min":3} | [Sound Interval](#item-floatrange) item | The range of time in seconds to randomly wait before playing the sound again. |  | 
+| sound_interval | {"max":8,"min":3} | [Sound Interval](#legacy-floatrange) item | The range of time in seconds to randomly wait before playing the sound again. |  | 
 | sprint_distance | 7 | Decimal number | How many blocks within range of its avoid target the entity must be for it to begin sprinting away from the avoid target. |  | 
 | sprint_speed_multiplier | 1 | Decimal number | Multiplier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster. |  | 
 | walk_speed_multiplier | 1 | Decimal number | Multiplier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster. |  | 
@@ -249,6 +249,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | deny | Deny | |
 | detach | Detach | |
 | disappeared | Disappeared | |
+| dismount | Dismount | |
 | door.close | Door.close | |
 | door.open | Door.open | |
 | drink | Drink | |
@@ -449,6 +450,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | mob.player.hurt_on_fire | Mob.player.hurt on fire | |
 | mob.warning | Mob.warning | |
 | mob.warning.baby | Mob.warning.baby | |
+| mount | Mount | |
 | multi_swap | Multi swap | |
 | nearby_close | Nearby close | |
 | nearby_closer | Nearby closer | |
@@ -566,6 +568,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | step.baby | Step.baby | |
 | step_lava | Step lava | |
 | step_sand | Step sand | |
+| straw_bed.break_leave | Straw bed.break leave | |
 | stun | Stun | |
 | swim | Swim | |
 | swoop | Swoop | |
@@ -690,11 +693,9 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | self | Self | |
 | target | Target | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `sound_interval`
 

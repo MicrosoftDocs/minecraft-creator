@@ -1,0 +1,43 @@
+{
+  "id": "DimensionHeight",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "DimensionHeight",
+    "title": "DimensionHeight",
+    "fields": [
+      {
+        "id": "height_range",
+        "title": "Height Range",
+        "dataType": "int",
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 16
+          },
+          {
+            "comparison": "<=",
+            "value": 1024
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "min_y",
+        "title": "Min Y",
+        "dataType": "int",
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": -512
+          },
+          {
+            "comparison": "<=",
+            "value": 512
+          }
+        ],
+        "isRequired": true
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

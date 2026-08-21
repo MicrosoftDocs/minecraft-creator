@@ -47,8 +47,8 @@
     "fields": [
       {
         "id": "condition",
-        "title": "Rule Condition",
-        "dataType": "string",
+        "title": "Condition",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "same_block",
@@ -62,7 +62,8 @@
             "id": "same_culling_layer",
             "title": "Same culling layer"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "cull_against_full_and_opaque",
@@ -72,8 +73,8 @@
       },
       {
         "id": "direction",
-        "title": "Facing",
-        "dataType": "string",
+        "title": "Direction",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "down",
@@ -100,6 +101,7 @@
             "title": "West"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       },
       {
@@ -109,7 +111,8 @@
         "subFormId": "client_block/rule_geometry_part",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.80"
   },
   "description": "Specifies a culling rule for block face visibility."
 }

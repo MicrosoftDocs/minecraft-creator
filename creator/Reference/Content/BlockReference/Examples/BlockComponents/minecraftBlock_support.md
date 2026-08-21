@@ -24,9 +24,9 @@ Defines the support shape of the block. Currently only allows for blocks to have
 
 ## Block Support Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| shape | *not set* | [Shape](#shape-choices) choices | Required field. The type of support shape for this block. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| shape | *not set* | [Shape](#shape-choices) choices | Required field. The type of support shape for this block. | Block Black Concrete Stairs: `"stair"` | 
 
 ### Shape choices
 
@@ -34,3 +34,14 @@ Defines the support shape of the block. Currently only allows for blocks to have
 |:-----------|:-----|:-----------|
 | fence | Fence | |
 | stair | Stair | |
+
+## Samples
+
+#### [Block Black Concrete Stairs](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_concrete_stairs.block.json)
+
+
+```json
+"minecraft:support": {
+  "shape": "stair"
+}
+```

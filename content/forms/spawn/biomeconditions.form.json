@@ -136,7 +136,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -175,6 +176,7 @@
         "dataType": "int",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.60"
   }
 }

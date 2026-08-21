@@ -17,14 +17,14 @@ Controls emitter lifetime events like creation and expiration.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| creation_event | [] | Array of objects |  | 
+| creation_event | [] | Array of strings |  | 
 | creation_event (as String) | *not set* | String |  | 
-| expiration_event | [] | Array of objects |  | 
+| expiration_event | [] | Array of strings |  | 
 | expiration_event (as String) | *not set* | String |  | 
 | looping_travel_distance_events | [] | Array of [Looping Travel Distance Events](#client-particles-emitter-lifetime-events-travel-distance-events) items |  | 
-| timeline | {} | Array of objects |  | 
+| timeline | {} | Array of strings |  | 
 | timeline (as String) | *not set* | String |  | 
-| travel_distance_events | {} | Array of objects |  | 
+| travel_distance_events | {} | Array of strings |  | 
 | travel_distance_events (as String) | *not set* | String |  | 
 
 ### Client Particles Emitter Lifetime Events Travel Distance Events
@@ -38,5 +38,5 @@ Triggers particle events when the emitter has traveled a specified distance. Use
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | distance | *not set* | Decimal number |  | 
-| effects | *not set* | Array of objects |  | 
+| effects | *not set* | Array of strings |  | 
 | effects (as String) | *not set* | String |  | 

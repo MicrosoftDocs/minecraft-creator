@@ -175,7 +175,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "interval",
@@ -262,6 +263,7 @@
         "defaultValue": 7
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {
       "/vanilla/behavior_pack/entities/dolphin.json": [
         {

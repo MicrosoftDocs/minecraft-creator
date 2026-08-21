@@ -75,7 +75,19 @@
           0,
           -8
         ],
-        "dataType": "point3"
+        "dataType": "point3",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:selection_box/",
+              "content": [
+                -8,
+                0,
+                -8
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "size",
@@ -86,7 +98,19 @@
           16,
           16
         ],
-        "dataType": "point3"
+        "dataType": "point3",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:selection_box/",
+              "content": [
+                16,
+                16,
+                16
+              ]
+            }
+          ]
+        }
       }
     ],
     "scalarField": {
@@ -94,6 +118,24 @@
       "title": "Boolean",
       "dataType": "boolean"
     },
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:selection_box/",
+          "content": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              16,
+              16
+            ]
+          }
+        }
+      ]
+    }
   }
 }

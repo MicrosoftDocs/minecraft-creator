@@ -25,6 +25,7 @@
         "description": "RGB color of grass.",
         "dataType": "object"
       }
-    ]
+    ],
+    "dataVersion": "1.21.40"
   }
 }

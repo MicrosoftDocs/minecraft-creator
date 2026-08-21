@@ -36,8 +36,10 @@
             "title": "Minecraft:vertical half"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

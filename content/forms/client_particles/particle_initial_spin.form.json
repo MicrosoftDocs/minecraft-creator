@@ -26,7 +26,7 @@
           {
             "id": "rotation",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "rotation",
@@ -43,7 +43,7 @@
           {
             "id": "rotation_rate",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "rotation_rate",
@@ -51,7 +51,8 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Sets the starting rotation angle and spin velocity for each particle. Initial rotation provides random orientation variety, while spin_rate creates continuous rotation during the particle's lifetime. Use for debris that tumbles, leaves spinning as they fall, sparks that twist, or any particle needing rotational motion."
 }

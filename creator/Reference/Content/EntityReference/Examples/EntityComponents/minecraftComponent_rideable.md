@@ -19,9 +19,9 @@ This entity can be ridden.
 |:----------|:-------------|:----|:-----------|:------------- |
 | controlling_seat | 0 | Integer number | The seat that designates the driver of the entity. Entities with the "minecraft:behavior.controlled_by_player" goal ignore this field and give control to any player in any seat. |  | 
 | crouching_skip_interact | true | Boolean true/false | If true, this entity can't be interacted with if the entity interacting with it is crouching. | Llama: `true` | 
-| dismount_mode | default | [Dismount Mode](#dismount-mode-choices) choices | Defines where riders are placed when dismounting this entity: - "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found. |  | 
+| dismount_mode | default | [Dismount Mode](#dismount-mode-choices) choices | Defines where riders are placed when dismounting this entity: - "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found. | Cushion: `"on_top_center"` | 
 | family_types | *not set* | Array of strings | List of entities that can ride this entity. | Chicken: `["baby_undead"]`, Llama: `["player"]` | 
-| interact_text | *not set* | String | The text to display when the player can interact with the entity when playing with touch-screen controls. | Llama: `"action.interact.mount"`, `"action.interact.ride.horse"`, Minecart: `"action.interact.ride.minecart"` | 
+| interact_text | *not set* | String | The text to display when the player can interact with the entity when playing with touch-screen controls. | Cushion: `"action.interact.ride.cushion"`, Llama: `"action.interact.mount"`, `"action.interact.ride.horse"` | 
 | on_rider_enter_event | *not set* | Minecraft Event Reference | Event to execute on the owner entity when an entity starts riding it. This item requires a format version of at least 1.21.80. |  | 
 | on_rider_exit_event | *not set* | Minecraft Event Reference | Event to execute on the owner entity when an entity stops riding it. This item requires a format version of at least 1.21.80. |  | 
 | passenger_max_width | 0 | Decimal number | The max width a mob can have to be a rider. A value of 0 ignores this parameter. |  | 
@@ -126,6 +126,25 @@ At /minecraft:entity/component_groups/minecraft:cow_adult/minecraft:rideable/:
 }
 ```
 
+#### [Cushion](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cushion.json)
+
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "interact_text": "action.interact.ride.cushion",
+  "dismount_mode": "on_top_center",
+  "seats": {
+    "position": [
+      0,
+      0.1875,
+      0
+    ],
+    "rotate_rider_by": -90
+  }
+}
+```
+
 #### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
 
 At /minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/: 
@@ -179,45 +198,6 @@ At /minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:rideable/:
     "position": [
       0,
       -0.2,
-      0
-    ]
-  }
-}
-```
-
-#### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
-
-At /minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:rideable/: 
-
-```json
-"minecraft:rideable": {
-  "seat_count": 1,
-  "family_types": [
-    "baby_undead"
-  ],
-  "seats": {
-    "position": [
-      0,
-      0.7,
-      0
-    ]
-  }
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:rideable/: 
-
-```json
-"minecraft:rideable": {
-  "seat_count": 1,
-  "interact_text": "action.interact.ride.horse",
-  "family_types": [
-    "player"
-  ],
-  "seats": {
-    "position": [
-      0,
-      0.63,
       0
     ]
   }

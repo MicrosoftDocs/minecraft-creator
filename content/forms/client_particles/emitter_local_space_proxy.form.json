@@ -35,7 +35,8 @@
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Controls whether particles inherit emitter position and rotation."
 }

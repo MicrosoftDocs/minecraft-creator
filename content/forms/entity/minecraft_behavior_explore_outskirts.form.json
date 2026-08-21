@@ -143,7 +143,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "dist_from_boundary",
@@ -263,6 +264,7 @@
         "defaultValue": 2
       }
     ],
+    "dataVersion": "1.21.130",
     "samples": {}
   }
 }

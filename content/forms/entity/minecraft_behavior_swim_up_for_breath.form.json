@@ -97,7 +97,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "material_type",
@@ -142,6 +143,7 @@
         "defaultValue": 1.399999976158142
       }
     ],
+    "dataVersion": "1.21.110",
     "samples": {
       "/vanilla/behavior_pack/entities/dolphin.json": [
         {

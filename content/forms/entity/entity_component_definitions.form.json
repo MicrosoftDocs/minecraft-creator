@@ -2229,8 +2229,9 @@
       {
         "id": "minecraft:anger_level",
         "title": "Minecraft Anger Level",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows this entity to track anger towards a set of nuisances.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_anger_level"
       },
       {
         "id": "minecraft:angry",
@@ -2296,8 +2297,9 @@
       {
         "id": "minecraft:barter",
         "title": "Minecraft Barter",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Enables the component to drop an item as a barter exchange.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_barter"
       },
       {
         "id": "minecraft:behavior.admire_item",
@@ -2642,8 +2644,9 @@
       {
         "id": "minecraft:behavior.follow_mob",
         "title": "Follow Mob Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to follow other mobs.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_follow_mob"
       },
       {
         "id": "minecraft:behavior.follow_owner",
@@ -3557,6 +3560,13 @@
         "dataType": "object"
       },
       {
+        "id": "minecraft:block_movement_slowdown_immunity",
+        "title": "Minecraft Block Movement Slowdown Immunity",
+        "description": "Prevents specified blocks from contributing to this entity's block movement slowdown. It does not cause other blocks to apply slowdown.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_block_movement_slowdown_immunity"
+      },
+      {
         "id": "minecraft:block_sensor",
         "title": "Minecraft Block Sensor",
         "description": "Dynamic value",
@@ -3581,8 +3591,9 @@
       {
         "id": "minecraft:boss",
         "title": "Minecraft Boss",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "The current state of the boss for updating the boss HUD.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_boss"
       },
       {
         "id": "minecraft:bounciness",
@@ -3654,9 +3665,14 @@
         "dataType": "object"
       },
       {
+        "id": "minecraft:can_stand_on_powder_snow",
+        "title": "Minecraft Can Stand On Powder Snow",
+        "description": "Defines whether an entity can stand on powder snow without sinking.",
+        "dataType": "object"
+      },
+      {
         "id": "minecraft:cannot_be_attacked",
         "title": "Minecraft Cannot Be Attacked",
-        "description": "Dynamic value",
         "dataType": "object"
       },
       {
@@ -3668,8 +3684,9 @@
       {
         "id": "minecraft:collision_box",
         "title": "Minecraft Collision Box",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Sets the width and height of the Entity's collision box.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_collision_box"
       },
       {
         "id": "minecraft:color",
@@ -3704,8 +3721,9 @@
       {
         "id": "minecraft:damage_over_time",
         "title": "Minecraft Damage Over Time",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Applies defined amount of damage to the entity at specified intervals.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_damage_over_time"
       },
       {
         "id": "minecraft:damage_sensor",
@@ -3794,8 +3812,9 @@
       {
         "id": "minecraft:exhaustion_values",
         "title": "Minecraft Exhaustion Values",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines how much exhaustion each player action should take.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_exhaustion_values"
       },
       {
         "id": "minecraft:experience_reward",
@@ -3817,14 +3836,14 @@
       {
         "id": "minecraft:floats_in_liquid",
         "title": "Minecraft Floats In Liquid",
-        "description": "Dynamic value",
         "dataType": "object"
       },
       {
         "id": "minecraft:flocking",
         "title": "Minecraft Flocking",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows entities to flock in groups in water or not.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_flocking"
       },
       {
         "id": "minecraft:flying_speed",
@@ -3845,6 +3864,18 @@
         "dataType": "object"
       },
       {
+        "id": "minecraft:freezing_immune",
+        "title": "Minecraft Freezing Immune",
+        "description": "Defines whether an entity should be affected by freezing.",
+        "dataType": "object"
+      },
+      {
+        "id": "minecraft:freezing_vulnerable",
+        "title": "Minecraft Freezing Vulnerable",
+        "description": "Defines whether an entity should take increased damage from freezing.",
+        "dataType": "object"
+      },
+      {
         "id": "minecraft:friction_modifier",
         "title": "Minecraft Friction Modifier",
         "description": "Dynamic value",
@@ -3853,8 +3884,9 @@
       {
         "id": "minecraft:game_event_movement_tracking",
         "title": "Minecraft Game Event Movement Tracking",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows an entity to emit `entityMove`, `swim` and `flap` game events, depending on the block the entity is moving through. It is added by default to every mob. Add it again to override its behavior.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_game_event_movement_tracking"
       },
       {
         "id": "minecraft:genetics",
@@ -3883,8 +3915,9 @@
       {
         "id": "minecraft:grows_crop",
         "title": "Minecraft Grows Crop",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Could increase crop growth when entity walks over crop",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_grows_crop"
       },
       {
         "id": "minecraft:healable",
@@ -3913,8 +3946,9 @@
       {
         "id": "minecraft:home",
         "title": "Minecraft Home",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Saves a home position for when the the entity is spawned.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_home"
       },
       {
         "id": "minecraft:horse.jump_strength",
@@ -3931,8 +3965,9 @@
       {
         "id": "minecraft:ignore_cannot_be_attacked",
         "title": "Minecraft Ignore Cannot Be Attacked",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the owner entity to ignore the \"minecraft:cannot_be_attacked\" component on entities that fulfill the filter.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_ignore_cannot_be_attacked"
       },
       {
         "id": "minecraft:input_ground_controlled",
@@ -3948,20 +3983,23 @@
       {
         "id": "minecraft:insomnia",
         "title": "Minecraft Insomnia",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Adds a timer since last rested to see if phantoms should spawn.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_insomnia"
       },
       {
         "id": "minecraft:instant_despawn",
         "title": "Minecraft Instant Despawn",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Despawns the Actor immediately.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_instant_despawn"
       },
       {
         "id": "minecraft:interact",
         "title": "Minecraft Interact",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines interactions with this entity.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_interact"
       },
       {
         "id": "minecraft:inventory",
@@ -4396,8 +4434,9 @@
       {
         "id": "minecraft:physics",
         "title": "Minecraft Physics",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines physics properties of an actor, including if it is affected by gravity or if it collides with objects.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_physics"
       },
       {
         "id": "minecraft:player.exhaustion",
@@ -4432,14 +4471,16 @@
       {
         "id": "minecraft:preferred_path",
         "title": "Minecraft Preferred Path",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Specifies costing information for mobs that prefer to walk on preferred paths.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_preferred_path"
       },
       {
         "id": "minecraft:projectile",
         "title": "Minecraft Projectile",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Turns the entity into a projectile: a thrown or shot entity that flies along a ballistic arc and reacts when it impacts a block, a fluid, or another entity.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_projectile"
       },
       {
         "id": "minecraft:push_through",
@@ -4605,8 +4646,9 @@
       {
         "id": "minecraft:tamemount",
         "title": "Minecraft Tamemount",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows entities to flock in groups in water or not.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_tamemount"
       },
       {
         "id": "minecraft:target_nearby_sensor",
@@ -4642,8 +4684,9 @@
       {
         "id": "minecraft:trade_table",
         "title": "Minecraft Trade Table",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines this entity's ability to trade with players.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_trade_table"
       },
       {
         "id": "minecraft:trail",
@@ -4694,6 +4737,13 @@
         "dataType": "object"
       },
       {
+        "id": "minecraft:uses_legacy_ambient_sounds",
+        "title": "Minecraft Uses Legacy Ambient Sounds",
+        "description": "Allows the entity to automatically determine which ambient sound to play:\n\t\t\\n - `ambient.in.air` when not on the ground\n\t\t\\n - `ambient.in.water` when its head is in water\n\t\t\\n - `ambient.baby` if it is a baby\n\t\t\\n - `ambient` otherwise",
+        "dataType": "object",
+        "isDeprecated": true
+      },
+      {
         "id": "minecraft:uses_legacy_friction",
         "title": "Minecraft Uses Legacy Friction",
         "dataType": "object"
@@ -4742,7 +4792,6 @@
       {
         "id": "minecraft:wants_jockey",
         "title": "Minecraft Wants Jockey",
-        "description": "Dynamic value",
         "dataType": "object"
       },
       {
@@ -4758,7 +4807,8 @@
         "dataType": "object",
         "subFormId": "entity/minecraft_wither_target_highest_damage"
       }
-    ]
+    ],
+    "dataVersion": "1.26.50"
   },
   "description": "Registry of all available entity components that define mob capabilities. Components cover health, movement, combat, AI goals, interactions, physics, sensing, and rendering. Entities combine components to create unique creatures—adding minecraft:health for durability, minecraft:behavior.melee_attack for combat, or minecraft:rideable for mounts."
 }

@@ -27,7 +27,21 @@
         "title": "Movement Type",
         "description": "[Required] How the block reacts to being pushed by another block like a piston. Must be one of the following options:\n\"push_pull\" - The default value for this field. The block will be pushed and pulled by a piston.\n\"push\" - The block will only be pulled by a piston and will ignore a sticky piston.\n\"popped\" - The block is destroyed when moved by a piston.\n\"immovable\" - The block is unaffected by a piston.",
         "defaultValue": "push_pull",
-        "dataType": "string"
+        "dataType": "string",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:movable/",
+              "content": "popped"
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/shelf_mushroom_block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:movable/",
+              "content": "popped"
+            }
+          ]
+        }
       },
       {
         "id": "sticky",
@@ -37,7 +51,24 @@
         "dataType": "string"
       }
     ],
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:movable/",
+          "content": {
+            "movement_type": "popped"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/shelf_mushroom_block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:movable/",
+          "content": {
+            "movement_type": "popped"
+          }
+        }
+      ]
+    }
   },
   "generatedFromSchema_doNotEdit": {
     "id": "Movable",
@@ -48,7 +79,7 @@
         "id": "movement_type",
         "title": "Movement Type",
         "description": "How the block reacts to being pushed by another block like a piston. The options are: \"push_pull\" - The default value for this field. The block will be pushed and pulled by a piston. \"push\" - The block will only be pulled by a piston and will ignore a sticky piston. \"popped\" - The block is destroyed when moved by a piston. \"immovable\" - The block is unaffected by a piston.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "immovable",
@@ -67,13 +98,15 @@
             "title": "Push pull"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       },
       {
         "id": "sticky",
-        "title": "Sticky Type",
+        "title": "Sticky",
         "description": "How the block should handle adjacent blocks around it when being pushed by another block like a piston. The options are: \"same\" - Adjacent blocks to this block will be moved when moved. This excludes other blocks with the \"same\" property. This will only work with the movement_type: \"push_pull\". \"none\" - The default and will not move adjacent blocks.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "none",
         "choices": [
           {
             "id": "none",
@@ -84,8 +117,9 @@
             "title": "Same"
           }
         ],
-        "defaultValue": "none"
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

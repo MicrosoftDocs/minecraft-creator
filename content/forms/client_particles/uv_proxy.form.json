@@ -46,7 +46,7 @@
           {
             "id": "uv",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "uv",
@@ -64,7 +64,7 @@
           {
             "id": "uv_size",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "uv_size",
@@ -72,7 +72,8 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Controls UV texture mapping and flipbook animation for particles."
 }

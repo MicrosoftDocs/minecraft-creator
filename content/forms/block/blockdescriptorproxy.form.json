@@ -46,7 +46,8 @@
         "dataType": "string",
         "defaultValue": ""
       }
-    ]
+    ],
+    "dataVersion": "1.20.50"
   },
   "description": "Identifies a specific block by name, block states, and optional tags for matching. Used in block components and entity behaviors that need to reference other blocks—like specifying which blocks can support placement, what blocks drop when mined, or which blocks an entity can walk through."
 }

@@ -20,7 +20,7 @@ Determines which tags are included on a given item.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| tags | [] | Array of strings | An array that can contain multiple item tags. | Apple: `["minecraft:is_food"]` | 
+| tags | [] | Array of strings | An array that can contain multiple item tags. | Apple: `["minecraft:is_food"]`, Shelf Mushroom: `["minecraft:mushrooms_for_stew"]` | 
 
 ## Samples
 
@@ -43,6 +43,17 @@ Determines which tags are included on a given item.
 "minecraft:tags": {
   "tags": [
     "minecraft:is_food"
+  ]
+}
+```
+
+#### [Shelf Mushroom](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/shelf_mushroom.json)
+
+
+```json
+"minecraft:tags": {
+  "tags": [
+    "minecraft:mushrooms_for_stew"
   ]
 }
 ```

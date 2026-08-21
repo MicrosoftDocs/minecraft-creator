@@ -39,6 +39,7 @@
         "description": "Opacity of the water surface (must be between 0 for invisible and 1 for opaque, inclusive)",
         "dataType": "float"
       }
-    ]
+    ],
+    "dataVersion": "1.21.40"
   }
 }

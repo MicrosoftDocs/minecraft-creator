@@ -64,6 +64,7 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
   "can_sink": false,
   "can_swim": true,
   "can_walk": true,
-  "is_amphibious": true
+  "is_amphibious": true,
+  "using_door_annotation": true
 }
 ```

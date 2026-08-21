@@ -18,21 +18,21 @@ Applies physics simulation to particle movement including gravity, acceleration,
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | linear_acceleration | [0, 0, 0] | Molang array | The linear acceleration of particles, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| linear_acceleration (as Named set of objects) | *not set* | Key/item pairs of [Linear Acceleration (Item Molang Expression)](#item-molang-expression) items |  | 
+| linear_acceleration (as Named set of objects) | *not set* | Key/item pairs of [Linear Acceleration (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | linear_acceleration (as Decimal number) | *not set* | Decimal number |  | 
 | linear_drag_coefficient | 0 | Molang | The drag coefficient applied to particle motion. Can be a number or Molang expression. | 
-| linear_drag_coefficient (as Named set of objects) | *not set* | Key/item pairs of [Linear Drag Coefficient (Item Molang Expression)](#item-molang-expression) items |  | 
+| linear_drag_coefficient (as Named set of objects) | *not set* | Key/item pairs of [Linear Drag Coefficient (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | linear_drag_coefficient (as Decimal number) | *not set* | Decimal number |  | 
 | rotation_acceleration | 0 | Molang | The rotation acceleration. Can be a number or Molang expression. | 
-| rotation_acceleration (as Named set of objects) | *not set* | Key/item pairs of [Rotation Acceleration (Item Molang Expression)](#item-molang-expression) items |  | 
+| rotation_acceleration (as Named set of objects) | *not set* | Key/item pairs of [Rotation Acceleration (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | rotation_acceleration (as Decimal number) | *not set* | Decimal number |  | 
 | rotation_drag_coefficient | 0 | Molang | The rotation drag coefficient. Can be a number or Molang expression. | 
-| rotation_drag_coefficient (as Named set of objects) | *not set* | Key/item pairs of [Rotation Drag Coefficient (Item Molang Expression)](#item-molang-expression) items |  | 
+| rotation_drag_coefficient (as Named set of objects) | *not set* | Key/item pairs of [Rotation Drag Coefficient (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | rotation_drag_coefficient (as Decimal number) | *not set* | Decimal number |  | 
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `linear_acceleration`
 

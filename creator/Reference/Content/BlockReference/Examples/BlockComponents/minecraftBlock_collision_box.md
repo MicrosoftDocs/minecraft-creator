@@ -75,3 +75,10 @@ This item can also be represented as a `Boolean true/false`.
   ]
 }
 ```
+
+#### [Block Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/red_shrub.block.json)
+
+
+```json
+"minecraft:collision_box": false
+```

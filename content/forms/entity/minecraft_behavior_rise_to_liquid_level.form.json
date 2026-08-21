@@ -110,7 +110,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "liquid_y_offset",
@@ -164,6 +165,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {
       "/vanilla/behavior_pack/entities/strider.json": [
         {

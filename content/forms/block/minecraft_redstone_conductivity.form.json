@@ -24,16 +24,81 @@
         "title": "Allows Wire To Step Down",
         "description": "Specifies if redstone wire can stair-step downward on the block.",
         "defaultValue": true,
-        "dataType": "boolean"
+        "dataType": "boolean",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:redstone_conductivity/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "redstone_conductor",
         "title": "Redstone Conductor",
         "description": "Specifies if the block can be powered by redstone.",
         "defaultValue": false,
-        "dataType": "boolean"
+        "dataType": "boolean",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:redstone_conductivity/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_wool_double_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:redstone_conductivity/",
+              "content": true
+            }
+          ]
+        }
       }
-    ]
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:redstone_conductivity/",
+          "content": {
+            "redstone_conductor": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:redstone_conductivity/",
+          "content": {
+            "redstone_conductor": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:redstone_conductivity/",
+          "content": {
+            "redstone_conductor": false,
+            "allows_wire_to_step_down": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_double_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:redstone_conductivity/",
+          "content": {
+            "redstone_conductor": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:redstone_conductivity/",
+          "content": {
+            "redstone_conductor": false
+          }
+        }
+      ]
+    }
   },
   "generatedFromSchema_doNotEdit": {
     "id": "Redstone Conductivity",
@@ -54,6 +119,7 @@
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

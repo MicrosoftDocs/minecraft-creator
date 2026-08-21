@@ -137,9 +137,10 @@
     "fields": [
       {
         "id": "aggro_sound",
-        "title": "LevelSoundEvent",
+        "title": "Aggro Sound",
         "description": "Sound to occasionally play while defending.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "undefined",
         "choices": [
           {
             "id": "absorb_block",
@@ -966,6 +967,10 @@
             "title": "Disappeared"
           },
           {
+            "id": "dismount",
+            "title": "Dismount"
+          },
+          {
             "id": "door.close",
             "title": "Door.close"
           },
@@ -1766,6 +1771,10 @@
             "title": "Mob.warning.baby"
           },
           {
+            "id": "mount",
+            "title": "Mount"
+          },
+          {
             "id": "multi_swap",
             "title": "Multi swap"
           },
@@ -2234,6 +2243,10 @@
             "title": "Step sand"
           },
           {
+            "id": "straw_bed.break_leave",
+            "title": "Straw bed.break leave"
+          },
+          {
             "id": "stun",
             "title": "Stun"
           },
@@ -2410,7 +2423,7 @@
             "title": "Wind charge.burst"
           }
         ],
-        "defaultValue": "undefined"
+        "mustMatchChoices": true
       },
       {
         "id": "attack_interval",
@@ -2437,7 +2450,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "entity_types",
@@ -2516,7 +2530,8 @@
                         "description": "The value being compared with the test.",
                         "dataType": "object"
                       }
-                    ]
+                    ],
+                    "dataVersion": "1.21.20"
                   },
                   "alternates": [
                     {
@@ -2587,7 +2602,8 @@
                   "dataType": "float",
                   "defaultValue": 1
                 }
-              ]
+              ],
+              "dataVersion": "1.21.120"
             }
           }
         ]
@@ -2641,6 +2657,7 @@
         "defaultValue": 0
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {}
   }
 }

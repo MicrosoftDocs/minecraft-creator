@@ -64,7 +64,21 @@
         "id": "particle_count",
         "title": "Particle Count",
         "description": "Optional, number of particles to spawn of destruction. Default is 100, maximum is 255 inclusively",
-        "dataType": "int"
+        "dataType": "int",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destruction_particles/",
+              "content": 48
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destruction_particles/",
+              "content": 48
+            }
+          ]
+        }
       },
       {
         "id": "texture",
@@ -78,7 +92,49 @@
         "description": "Optional, tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
         "dataType": "string"
       }
-    ]
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destruction_particles/",
+          "content": {
+            "particle_count": 48
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destruction_particles/",
+          "content": {
+            "particle_count": 48
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destruction_particles/",
+          "content": {
+            "particle_count": 48
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destruction_particles/",
+          "content": {
+            "particle_count": 48
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/blue_concrete_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destruction_particles/",
+          "content": {
+            "particle_count": 48
+          }
+        }
+      ]
+    }
   },
   "generatedFromSchema_doNotEdit": {
     "id": "Destruction Particles",
@@ -109,7 +165,8 @@
         "id": "tint_method",
         "title": "Tint Method",
         "description": "Sets the tint method of the particle. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "none",
         "choices": [
           {
             "id": "birch_foliage",
@@ -140,8 +197,9 @@
             "title": "Water"
           }
         ],
-        "defaultValue": "none"
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

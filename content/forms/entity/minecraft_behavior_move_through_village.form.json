@@ -100,7 +100,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "only_at_night",
@@ -147,6 +148,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.20",
     "samples": {
       "/vanilla/behavior_pack/entities/iron_golem.json": [
         {

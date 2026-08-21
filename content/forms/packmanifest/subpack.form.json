@@ -42,7 +42,8 @@
         "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "3.0.0"
   },
   "description": "Defines a subpack option that players can choose in pack settings. Subpacks allow offering different quality levels (like HD vs SD textures) that map to memory tiers, letting players with lower-end devices select lighter alternatives."
 }

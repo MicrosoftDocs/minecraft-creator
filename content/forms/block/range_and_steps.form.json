@@ -24,7 +24,7 @@
         "description": "The range of the random offset.",
         "dataType": "object",
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "isRequired": true
       },
       {
@@ -34,7 +34,8 @@
         "dataType": "int",
         "defaultValue": 0
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   },
   "description": "Defines an integer block state with a range of valid values and optional step increment. Used for block properties like growth stages (0-7 for crops), signal strength (0-15 for redstone), or rotation angles. The game only allows values within the specified min/max range at the given step intervals."
 }

@@ -36,7 +36,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "priority",
@@ -51,7 +52,8 @@
         "dataType": "float",
         "defaultValue": 1
       }
-    ]
+    ],
+    "dataVersion": "1.26.0"
   },
   "description": "AI goal that drives entities back toward their designated home area when they've wandered too far. Works with components like minecraft:home to define the restriction zone. Used for village-bound mobs, territorial creatures, or any entity that should patrol or return to a specific location."
 }

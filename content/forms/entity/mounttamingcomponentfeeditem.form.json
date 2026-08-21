@@ -1,0 +1,31 @@
+{
+  "id": "MountTamingComponentFeedItem",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "MountTamingComponentFeedItem",
+    "title": "Entity MountTamingComponentFeedItem",
+    "fields": [
+      {
+        "id": "item",
+        "title": "Item",
+        "description": "Name of the item this entity likes and can be used to increase this entity's temper.",
+        "dataType": "string",
+        "defaultValue": {},
+        "alternates": [
+          {
+            "id": "item",
+            "dataType": "keyedStringCollection"
+          }
+        ]
+      },
+      {
+        "id": "temper_mod",
+        "title": "Temper Mod",
+        "description": "The amount of temper this entity gains when fed this item.",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

@@ -20,9 +20,18 @@ Variant is typically used as a per-type way to express a different visual form o
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | 0 | Integer number | The Id of the variant. By convention, 0 is the Id of the base entity/default appearance. | Frog: `1`, `2`, Llama: `3` | 
+| value | 0 | Integer number | The Id of the variant. By convention, 0 is the Id of the base entity/default appearance. | Cushion: `15`, Frog: `1`, `2` | 
 
 ## Samples
+
+#### [Cushion](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cushion.json)
+
+
+```json
+"minecraft:variant": {
+  "value": 15
+}
+```
 
 #### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
 

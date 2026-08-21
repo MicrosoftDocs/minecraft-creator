@@ -1954,74 +1954,6 @@
       },
       {
         "dataType": "object",
-        "id": "minecraft:aggregate_feature",
-        "title": "Aggregate Feature",
-        "isRequired": false,
-        "subForm": {
-          "fields": [
-            {
-              "dataType": "object",
-              "id": "description",
-              "title": "Description",
-              "isRequired": true,
-              "subForm": {
-                "fields": [
-                  {
-                    "dataType": "string",
-                    "id": "identifier",
-                    "title": "Identifier",
-                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
-                    "isRequired": true
-                  }
-                ]
-              }
-            },
-            {
-              "dataType": "stringArray",
-              "id": "features",
-              "title": "Features",
-              "description": "Collection of features to be placed one by one. No guarantee of order. All features use the same input position.",
-              "isRequired": true
-            }
-          ]
-        }
-      },
-      {
-        "dataType": "object",
-        "id": "minecraft:sequence_feature",
-        "title": "Sequence Feature",
-        "isRequired": false,
-        "subForm": {
-          "fields": [
-            {
-              "dataType": "object",
-              "id": "description",
-              "title": "Description",
-              "isRequired": true,
-              "subForm": {
-                "fields": [
-                  {
-                    "dataType": "string",
-                    "id": "identifier",
-                    "title": "Identifier",
-                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
-                    "isRequired": true
-                  }
-                ]
-              }
-            },
-            {
-              "dataType": "stringArray",
-              "id": "features",
-              "title": "Features",
-              "description": "List of features to be placed in sequence. The output position of the previous feature is used as the input position to the next.",
-              "isRequired": true
-            }
-          ]
-        }
-      },
-      {
-        "dataType": "object",
         "id": "minecraft:beards_and_shavers",
         "title": "Beards And Shavers",
         "isRequired": false,
@@ -2056,6 +1988,192 @@
               "id": "bounding_box_max",
               "title": "Bounding Box Max",
               "description": "Dimensions of the Bounding Box",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
+        "id": "minecraft:rect_layout",
+        "title": "Rect Layout",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "object",
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "string",
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": "feature_areas",
+              "dataType": "objectArray",
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "stringArray",
+                    "id": "area_dimensions",
+                    "title": "Area Dimensions",
+                    "description": "Dimensions (size) of the associated Feature.",
+                    "isRequired": true
+                  },
+                  {
+                    "dataType": "int",
+                    "id": "[0..0]",
+                    "title": "",
+                    "isRequired": true
+                  },
+                  {
+                    "dataType": "int",
+                    "id": "[1..1]",
+                    "title": "",
+                    "isRequired": true
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "dataType": "stringArray",
+                  "id": "feature_areas",
+                  "title": "Feature Areas",
+                  "isRequired": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
+        "id": "minecraft:scan_surface",
+        "title": "Scan Surface",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "object",
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "string",
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
+        "id": "minecraft:sculk_patch_feature",
+        "title": "Sculk Patch Feature",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "object",
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "string",
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": "stringArray",
+              "id": "can_place_sculk_patch_on",
+              "title": "Can Place Sculk Patch On",
+              "isRequired": true
+            },
+            {
+              "dataType": "int",
+              "id": "cursor_count",
+              "title": "Cursor Count",
+              "isRequired": true
+            },
+            {
+              "dataType": "int",
+              "id": "charge_amount",
+              "title": "Charge Amount",
+              "isRequired": true
+            },
+            {
+              "dataType": "int",
+              "id": "spread_attempts",
+              "title": "Spread Attempts",
+              "isRequired": true
+            },
+            {
+              "dataType": "int",
+              "id": "growth_rounds",
+              "title": "Growth Rounds",
+              "isRequired": true
+            },
+            {
+              "dataType": "int",
+              "id": "spread_rounds",
+              "title": "Spread Rounds",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
+        "id": "minecraft:aggregate_feature",
+        "title": "Aggregate Feature",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "object",
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "string",
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": "stringArray",
+              "id": "features",
+              "title": "Features",
+              "description": "Collection of features to be placed one by one. No guarantee of order. All features use the same input position.",
               "isRequired": true
             }
           ]
@@ -2142,8 +2260,8 @@
                     "dataType": "molang",
                     "id": "condition",
                     "title": "Condition",
-                    "description": "Condition for placing associated Feature",
-                    "isRequired": true
+                    "description": "Condition for placing associated Feature. If omitted, always places.",
+                    "isRequired": false
                   }
                 ]
               },
@@ -2152,16 +2270,16 @@
                   "dataType": "stringArray",
                   "id": "conditional_features",
                   "title": "Conditional Features",
-                  "description": "Array of Features, and their associated Conditions, for attempted placement. These features will be evaluated as ordered.",
+                  "description": "Array of features, and their associated conditions, for attempted placement. These features will be evaluated as ordered.",
                   "isRequired": true
                 }
               ]
             },
             {
               "dataType": "string",
-              "id": "early_out_scheme\"<\"condition_success\", \"placement_success\"",
-              "title": "Early Out Scheme\"<\"condition Success\", \"placement Success\"",
-              "description": "Denote whether placement should end on first successful placement or first passed condition.",
+              "id": "early_out_scheme\"<\"condition_success\", \"placement_success\", \"none\"",
+              "title": "Early Out Scheme\"<\"condition Success\", \"placement Success\", \"none\"",
+              "description": "Denote whether placement should end on first successful placement ('placement_success'), first passed condition ('condition_success'), or evaluate all features ('none'). Defaults to 'none'.",
               "isRequired": false
             }
           ]
@@ -2365,8 +2483,8 @@
       },
       {
         "dataType": "object",
-        "id": "minecraft:nether_cave_carver_feature",
-        "title": "Nether Cave Carver Feature",
+        "id": "minecraft:height_difference_filter_feature",
+        "title": "Height Difference Filter Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
@@ -2388,24 +2506,79 @@
               }
             },
             {
-              "dataType": "molang",
-              "id": "width_modifier",
-              "title": "Width Modifier",
-              "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
+              "dataType": "int",
+              "id": "min_required_upward_height_diff",
+              "title": "Min Required Upward Height Diff",
+              "description": "Specifies the minimum height difference required upwards.",
               "isRequired": false
             },
             {
               "dataType": "int",
-              "id": "skip_carve_chance",
-              "title": "Skip Carve Chance",
-              "description": "The chance to skip doing the carve (1 / value).",
+              "id": "min_required_downward_height_diff",
+              "title": "Min Required Downward Height Diff",
+              "description": "Specifies the minimum height difference required downwards.",
               "isRequired": false
             },
             {
               "dataType": "int",
-              "id": "height_limit",
-              "title": "Height Limit",
-              "description": "The height limit where we attempt to carve.",
+              "id": "max_allowed_upward_height_diff",
+              "title": "Max Allowed Upward Height Diff",
+              "description": "Specifies the maximum height difference allowed upwards.",
+              "isRequired": false
+            },
+            {
+              "dataType": "int",
+              "id": "max_allowed_downward_height_diff",
+              "title": "Max Allowed Downward Height Diff",
+              "description": "Specifies the maximum height difference allowed downwards.",
+              "isRequired": false
+            },
+            {
+              "dataType": "int",
+              "id": "search_radius",
+              "title": "Search Radius",
+              "description": "'search_radius' specifies the the length in each cardinal direction the filter will check for blocks against the given differences.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
+        "id": "minecraft:horizontal_tree_decoration_feature",
+        "title": "Horizontal Tree Decoration Feature",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "object",
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "string",
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": "boolean",
+              "id": "allow_adjacent",
+              "title": "Allow Adjacent",
+              "description": "Whether neighbors of the same block type are allowed. Will result in blocks being placed with at least one block gap when set to false",
+              "isRequired": false
+            },
+            {
+              "dataType": "boolean",
+              "id": "bark_side_only",
+              "title": "Bark Side Only",
+              "description": "If true, will never place the block on the 'open' side of a block (imagine the block is a fallen tree trunk).",
               "isRequired": false
             }
           ]
@@ -2467,6 +2640,54 @@
               "dataType": "stringArray",
               "id": "can_place_on",
               "title": "Can Place On",
+              "isRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
+        "id": "minecraft:nether_cave_carver_feature",
+        "title": "Nether Cave Carver Feature",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "object",
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "string",
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": "molang",
+              "id": "width_modifier",
+              "title": "Width Modifier",
+              "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
+              "isRequired": false
+            },
+            {
+              "dataType": "int",
+              "id": "skip_carve_chance",
+              "title": "Skip Carve Chance",
+              "description": "The chance to skip doing the carve (1 / value).",
+              "isRequired": false
+            },
+            {
+              "dataType": "int",
+              "id": "height_limit",
+              "title": "Height Limit",
+              "description": "The height limit where we attempt to carve.",
               "isRequired": false
             }
           ]
@@ -2571,95 +2792,6 @@
       },
       {
         "dataType": "object",
-        "id": "minecraft:rect_layout",
-        "title": "Rect Layout",
-        "isRequired": false,
-        "subForm": {
-          "fields": [
-            {
-              "dataType": "object",
-              "id": "description",
-              "title": "Description",
-              "isRequired": true,
-              "subForm": {
-                "fields": [
-                  {
-                    "dataType": "string",
-                    "id": "identifier",
-                    "title": "Identifier",
-                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
-                    "isRequired": true
-                  }
-                ]
-              }
-            },
-            {
-              "id": "feature_areas",
-              "dataType": "objectArray",
-              "subForm": {
-                "fields": [
-                  {
-                    "dataType": "stringArray",
-                    "id": "area_dimensions",
-                    "title": "Area Dimensions",
-                    "description": "Dimensions (size) of the associated Feature.",
-                    "isRequired": true
-                  },
-                  {
-                    "dataType": "int",
-                    "id": "[0..0]",
-                    "title": "",
-                    "isRequired": true
-                  },
-                  {
-                    "dataType": "int",
-                    "id": "[1..1]",
-                    "title": "",
-                    "isRequired": true
-                  }
-                ]
-              },
-              "alternates": [
-                {
-                  "dataType": "stringArray",
-                  "id": "feature_areas",
-                  "title": "Feature Areas",
-                  "isRequired": true
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "dataType": "object",
-        "id": "minecraft:scan_surface",
-        "title": "Scan Surface",
-        "isRequired": false,
-        "subForm": {
-          "fields": [
-            {
-              "dataType": "object",
-              "id": "description",
-              "title": "Description",
-              "isRequired": true,
-              "subForm": {
-                "fields": [
-                  {
-                    "dataType": "string",
-                    "id": "identifier",
-                    "title": "Identifier",
-                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
-                    "isRequired": true
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      },
-      {
-        "dataType": "object",
         "id": "minecraft:scatter_feature",
         "title": "Scatter Feature",
         "isRequired": false,
@@ -2694,69 +2826,6 @@
               "id": "distribution",
               "title": "Distribution",
               "description": "Parameters controlling the scatter of the feature. Object of type ScatterParams",
-              "isRequired": true
-            }
-          ]
-        }
-      },
-      {
-        "dataType": "object",
-        "id": "minecraft:sculk_patch_feature",
-        "title": "Sculk Patch Feature",
-        "isRequired": false,
-        "subForm": {
-          "fields": [
-            {
-              "dataType": "object",
-              "id": "description",
-              "title": "Description",
-              "isRequired": true,
-              "subForm": {
-                "fields": [
-                  {
-                    "dataType": "string",
-                    "id": "identifier",
-                    "title": "Identifier",
-                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
-                    "isRequired": true
-                  }
-                ]
-              }
-            },
-            {
-              "dataType": "stringArray",
-              "id": "can_place_sculk_patch_on",
-              "title": "Can Place Sculk Patch On",
-              "isRequired": true
-            },
-            {
-              "dataType": "int",
-              "id": "cursor_count",
-              "title": "Cursor Count",
-              "isRequired": true
-            },
-            {
-              "dataType": "int",
-              "id": "charge_amount",
-              "title": "Charge Amount",
-              "isRequired": true
-            },
-            {
-              "dataType": "int",
-              "id": "spread_attempts",
-              "title": "Spread Attempts",
-              "isRequired": true
-            },
-            {
-              "dataType": "int",
-              "id": "growth_rounds",
-              "title": "Growth Rounds",
-              "isRequired": true
-            },
-            {
-              "dataType": "int",
-              "id": "spread_rounds",
-              "title": "Spread Rounds",
               "isRequired": true
             }
           ]
@@ -2869,6 +2938,40 @@
               "title": "Required Successes",
               "description": "Number of valid positions the search must find in order to place the referenced feature",
               "isRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
+        "id": "minecraft:sequence_feature",
+        "title": "Sequence Feature",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "object",
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "string",
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": "stringArray",
+              "id": "features",
+              "title": "Features",
+              "description": "List of features to be placed in sequence. The output position of the previous feature is used as the input position to the next.",
+              "isRequired": true
             }
           ]
         }
@@ -3127,16 +3230,16 @@
             },
             {
               "dataType": "int",
-              "id": "vertical_search_range",
-              "title": "Vertical Search Range",
-              "description": "Range to search for a floor or ceiling for snaping the feature.",
+              "id": "search_range",
+              "title": "Search Range",
+              "description": "Range to search for a valid snapping position for the feature.",
               "isRequired": true
             },
             {
               "dataType": "string",
               "id": "surface",
               "title": "Surface",
-              "description": "Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'",
+              "description": "Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor', 'random_horizontal' and `wall`",
               "isRequired": false
             },
             {
@@ -3144,6 +3247,13 @@
               "id": "allow_air_placement",
               "title": "Allow Air Placement",
               "description": "Determines whether the feature can snap through air blocks. Defaults to true.",
+              "isRequired": false
+            },
+            {
+              "dataType": "boolean",
+              "id": "allow_non_air_placement",
+              "title": "Allow Non Air Placement",
+              "description": "Determines whether the feature can snap through non air blocks. Defaults to false, is only used if the snap is started in a block that is not water or air.",
               "isRequired": false
             },
             {
@@ -3321,54 +3431,6 @@
               "id": "minimum_distance_below_surface",
               "title": "Minimum Distance Below Surface",
               "description": "The minimum number of blocks required to be between the estimated surface level and a valid place for this feature. Defaults to zero.",
-              "isRequired": false
-            }
-          ]
-        }
-      },
-      {
-        "dataType": "object",
-        "id": "minecraft:underwater_cave_carver_feature",
-        "title": "Underwater Cave Carver Feature",
-        "isRequired": false,
-        "subForm": {
-          "fields": [
-            {
-              "dataType": "object",
-              "id": "description",
-              "title": "Description",
-              "isRequired": true,
-              "subForm": {
-                "fields": [
-                  {
-                    "dataType": "string",
-                    "id": "identifier",
-                    "title": "Identifier",
-                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
-                    "isRequired": true
-                  }
-                ]
-              }
-            },
-            {
-              "dataType": "molang",
-              "id": "width_modifier",
-              "title": "Width Modifier",
-              "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
-              "isRequired": false
-            },
-            {
-              "dataType": "int",
-              "id": "skip_carve_chance",
-              "title": "Skip Carve Chance",
-              "description": "The chance to skip doing the carve (1 / value).",
-              "isRequired": false
-            },
-            {
-              "dataType": "int",
-              "id": "height_limit",
-              "title": "Height Limit",
-              "description": "The height limit where we attempt to carve.",
               "isRequired": false
             }
           ]
@@ -5717,6 +5779,54 @@
       },
       {
         "dataType": "object",
+        "id": "minecraft:underwater_cave_carver_feature",
+        "title": "Underwater Cave Carver Feature",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "object",
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": "string",
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": "molang",
+              "id": "width_modifier",
+              "title": "Width Modifier",
+              "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
+              "isRequired": false
+            },
+            {
+              "dataType": "int",
+              "id": "skip_carve_chance",
+              "title": "Skip Carve Chance",
+              "description": "The chance to skip doing the carve (1 / value).",
+              "isRequired": false
+            },
+            {
+              "dataType": "int",
+              "id": "height_limit",
+              "title": "Height Limit",
+              "description": "The height limit where we attempt to carve.",
+              "isRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "object",
         "id": "minecraft:vegetation_patch_feature",
         "title": "Vegetation Patch Feature",
         "isRequired": false,
@@ -5805,8 +5915,8 @@
       },
       {
         "dataType": "object",
-        "id": "minecraft:height_difference_filter_feature",
-        "title": "Height Difference Filter Feature",
+        "id": "minecraft:multi_block_feature",
+        "title": "Multi Block Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
@@ -5828,47 +5938,32 @@
               }
             },
             {
-              "dataType": "int",
-              "id": "min_required_upward_height_diff",
-              "title": "Min Required Upward Height Diff",
-              "description": "Specifies the minimum height difference required upwards.",
+              "dataType": "boolean",
+              "id": "enforce_placement_rules",
+              "title": "Enforce Placement Rules",
+              "description": "If true, enforce the multi-blocks mayPlace checks.",
               "isRequired": false
             },
             {
-              "dataType": "int",
-              "id": "min_required_downward_height_diff",
-              "title": "Min Required Downward Height Diff",
-              "description": "Specifies the minimum height difference required downwards.",
+              "dataType": "boolean",
+              "id": "randomize_rotation",
+              "title": "Randomize Rotation",
+              "description": "If true, randomizes the block's cardinal orientation.",
               "isRequired": false
             },
             {
-              "dataType": "int",
-              "id": "max_allowed_upward_height_diff",
-              "title": "Max Allowed Upward Height Diff",
-              "description": "Specifies the maximum height difference allowed upwards.",
+              "dataType": "stringArray",
+              "id": "may_replace",
+              "title": "May Replace",
               "isRequired": false
-            },
-            {
-              "dataType": "int",
-              "id": "max_allowed_downward_height_diff",
-              "title": "Max Allowed Downward Height Diff",
-              "description": "Specifies the maximum height difference allowed downwards.",
-              "isRequired": false
-            },
-            {
-              "dataType": "int",
-              "id": "search_radius",
-              "title": "Search Radius",
-              "description": "'search_radius' specifies the the length in each cardinal direction the filter will check for blocks against the given differences.",
-              "isRequired": true
             }
           ]
         }
       },
       {
         "dataType": "object",
-        "id": "minecraft:horizontal_tree_decoration_feature",
-        "title": "Horizontal Tree Decoration Feature",
+        "id": "minecraft:multipart_block_column_feature",
+        "title": "Multipart Block Column Feature",
         "isRequired": false,
         "subForm": {
           "fields": [
@@ -5890,17 +5985,28 @@
               }
             },
             {
-              "dataType": "boolean",
-              "id": "allow_adjacent",
-              "title": "Allow Adjacent",
-              "description": "Whether neighbors of the same block type are allowed. Will result in blocks being placed with at least one block gap when set to false",
+              "dataType": "stringArray",
+              "id": "weighted_heights",
+              "title": "Weighted Heights",
               "isRequired": false
             },
             {
-              "dataType": "boolean",
-              "id": "bark_side_only",
-              "title": "Bark Side Only",
-              "description": "If true, will never place the block on the 'open' side of a block (imagine the block is a fallen tree trunk).",
+              "dataType": "string",
+              "id": "direction",
+              "title": "Direction",
+              "description": "The direction of the column. If omitted then it will default to 'UP'",
+              "isRequired": false
+            },
+            {
+              "dataType": "stringArray",
+              "id": "may_place_on",
+              "title": "May Place On",
+              "isRequired": false
+            },
+            {
+              "dataType": "stringArray",
+              "id": "may_replace",
+              "title": "May Replace",
               "isRequired": false
             }
           ]

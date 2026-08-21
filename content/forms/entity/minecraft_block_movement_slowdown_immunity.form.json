@@ -1,0 +1,104 @@
+{
+  "id": "minecraft:block_movement_slowdown_immunity",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:block_movement_slowdown_immunity",
+    "title": "Entity Block Movement Slowdown Immunity",
+    "description": "Prevents specified blocks from contributing to this entity's block movement slowdown. It does not cause other blocks to apply slowdown.",
+    "fields": [
+      {
+        "id": "blocks",
+        "description": "List of block descriptors whose existing movement slowdown contribution should be ignored. If omitted or empty, no contributions are ignored.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subForm": {
+          "id": "blocks",
+          "title": "Blocks",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": "string",
+              "defaultValue": ""
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": "int",
+              "defaultValue": {},
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": "string"
+                },
+                {
+                  "id": "states",
+                  "dataType": "boolean"
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": "string",
+              "defaultValue": ""
+            }
+          ],
+          "dataVersion": "1.20.50"
+        },
+        "alternates": [
+          {
+            "id": "blocks",
+            "dataType": "string",
+            "minLength": 1
+          },
+          {
+            "id": "blocks",
+            "dataType": "object"
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:block_movement_slowdown_immunity/",
+              "content": [
+                "minecraft:web"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/spider.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:block_movement_slowdown_immunity/",
+              "content": [
+                "minecraft:web"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "dataVersion": "1.26.50",
+    "samples": {
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:block_movement_slowdown_immunity/",
+          "content": {
+            "blocks": [
+              "minecraft:web"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:block_movement_slowdown_immunity/",
+          "content": {
+            "blocks": [
+              "minecraft:web"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

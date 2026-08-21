@@ -1,0 +1,20 @@
+{
+  "id": "MobEffectSubcomponentDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "MobEffectSubcomponentDefinition",
+    "title": "Entity MobEffectSubcomponentDefinition",
+    "description": "Applies one or more mob effects to the entity hit. Effects are described with an `effects` array of effect objects.",
+    "fields": [
+      {
+        "id": "effects",
+        "title": "Effects",
+        "description": "Array of effect objects. Each element may specify `effect` (name), `amplifier`, and per-difficulty durations `durationeasy`, `durationnormal`, `durationhard`.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/mobeffectinstance"
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

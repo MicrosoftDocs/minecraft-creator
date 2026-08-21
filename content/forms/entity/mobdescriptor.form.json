@@ -81,7 +81,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -152,7 +153,8 @@
         "dataType": "float",
         "defaultValue": 1
       }
-    ]
+    ],
+    "dataVersion": "1.21.120"
   },
   "description": "Identifies a mob type for AI targeting and interaction behaviors. Used in components like behavior.nearest_attackable_target to specify valid targets by family type, with optional filters for additional conditions. Configure which creature families an entity hunts, fears, follows, or interacts with."
 }

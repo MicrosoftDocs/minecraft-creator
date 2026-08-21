@@ -31,7 +31,8 @@
         "dataType": "int",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.30"
   },
   "description": "Defines a tier of trades that unlock as the trading entity gains experience. Villagers start at tier 1 (novice) and unlock higher tiers through player trades, offering progressively better items. Each tier contains trade groups that determine available offers at that merchant level."
 }

@@ -79,7 +79,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "interval",
@@ -116,6 +117,7 @@
         "defaultValue": 5
       }
     ],
+    "dataVersion": "1.21.110",
     "samples": {}
   }
 }

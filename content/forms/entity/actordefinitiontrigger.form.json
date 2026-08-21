@@ -73,7 +73,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -84,8 +85,9 @@
       },
       {
         "id": "target",
-        "title": "FilterSubject",
-        "dataType": "string",
+        "title": "Target",
+        "dataType": "stringEnum",
+        "defaultValue": "self",
         "choices": [
           {
             "id": "baby",
@@ -128,9 +130,10 @@
             "title": "Target"
           }
         ],
-        "defaultValue": "self"
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.120"
   },
   "description": "Triggers an entity event when specified conditions are met. Events activate component groups that change entity behavior—transforming villagers into zombie villagers, switching mobs to aggressive mode, or triggering growth stages. Combine with filters to create conditional state machines that respond to gameplay."
 }

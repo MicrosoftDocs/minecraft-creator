@@ -151,7 +151,7 @@
       {
         "id": "minecraft:block_entity",
         "title": "Minecraft Block Entity",
-        "description": "Requires Upcoming-Creator-Features enabled. Adds per-instance metadata for this block.",
+        "description": "Adds per-instance metadata for this block.",
         "dataType": "object",
         "subFormId": "block/minecraft_block_entity"
       },
@@ -266,7 +266,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "dataVersion": "1.26.20"
             }
           },
           {
@@ -311,7 +312,8 @@
                   "dataType": "float",
                   "isRequired": true
                 }
-              ]
+              ],
+              "dataVersion": "1.26.20"
             }
           }
         ]
@@ -344,7 +346,8 @@
                   "dataType": "float",
                   "isRequired": true
                 }
-              ]
+              ],
+              "dataVersion": "1.26.20"
             }
           }
         ]
@@ -360,7 +363,7 @@
         "id": "minecraft:display_name",
         "title": "Minecraft Display Name",
         "description": "Specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this component is omitted, the name of the block will be used as the display name.",
-        "dataType": "object"
+        "dataType": "string"
       },
       {
         "id": "minecraft:embedded_visual",
@@ -408,7 +411,8 @@
                   "id": "lava_flammable",
                   "title": "Lava Flammable",
                   "description": "Determines lava fire consideration. \"always\" includes this block when lava attempts to spread fire\"\n\t\t\t\t\t\" (triggered by adjacent block changes), but normal fire-placement rules still apply. \"never\" excludes\"\n\t\t\t\t\t\" this block from that check.",
-                  "dataType": "string",
+                  "dataType": "stringEnum",
+                  "defaultValue": "never",
                   "choices": [
                     {
                       "id": "always",
@@ -419,9 +423,10 @@
                       "title": "Never"
                     }
                   ],
-                  "defaultValue": "never"
+                  "mustMatchChoices": true
                 }
-              ]
+              ],
+              "dataVersion": "1.26.20"
             }
           }
         ]
@@ -436,7 +441,7 @@
         "id": "minecraft:friction",
         "title": "Minecraft Friction",
         "description": "Describes the friction for this block in a range of (0.0-0.9). Friction affects an entity's movement speed when it travels on the block. Greater value results in more friction.",
-        "dataType": "object"
+        "dataType": "number"
       },
       {
         "id": "minecraft:geometry",
@@ -457,11 +462,12 @@
                   "description": "A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a Molang expression that tells whether the bone should be visible or not (value). The expression is limited to using the \"query.block_state()\" query. When using \"bone_visibility\" in geometry components in the \"permutations\" section, you must also have a default version of the geometry component with \"bone_visibility\" in the \"components\" section.",
                   "dataType": "keyedStringCollection",
                   "defaultValue": {},
+                  "maxLength": 64,
                   "alternates": [
                     {
                       "id": "bone_visibility",
                       "dataType": "keyedObjectCollection",
-                      "subFormId": "item/molang_expression"
+                      "subFormId": "legacy/molang_expression"
                     },
                     {
                       "id": "bone_visibility",
@@ -474,17 +480,21 @@
                   "title": "Culling",
                   "description": "Which block_culling .json file to use when rendering this block.",
                   "dataType": "string",
-                  "defaultValue": ""
+                  "defaultValue": "",
+                  "maxLength": 256
                 },
                 {
                   "id": "culling_layer",
                   "title": "Culling Layer",
                   "description": "A string that allows culling rule to group multiple blocks together when comparing them. When using the minecraft namespace, the only allowed culling layer identifiers are : \"minecraft:culling_layer.undefined\" or \"minecraft:culling_layer.leaves\". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character.",
                   "dataType": "string",
+                  "minLength": 1,
+                  "maxLength": 256,
                   "validity": [
                     {
                       "comparison": "pattern",
-                      "value": "^(?:minecraft:culling_layer.undefined|minecraft:culling_layer.leaves|(?!minecraft:)[a-z0-9].*[a-z0-9])$"
+                      "value": "^(?:minecraft:culling_layer.undefined|minecraft:culling_layer.leaves|(?!minecraft:)[a-z0-9].*[a-z0-9])$",
+                      "patternFlags": "i"
                     }
                   ]
                 },
@@ -494,10 +504,12 @@
                   "description": "Currently only available with the VoxelShape experiment on. The voxel shape used for culling adjacent block faces. Voxel shapes work together with culling rules and will not function if there is no culling rule defined for the block. Only adjacent blocks with voxel shapes will occlude using this shape. Blocks using \\\"minecraft:geometry.full_block\\\" always use the unit cube shape and will ignore custom shapes if specified. When using the minecraft namespace, the only currently available culling shape identifiers are : \\\"minecraft:empty\\\" or \\\"minecraft:unit_cube\\\". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character.",
                   "dataType": "string",
                   "defaultValue": "",
+                  "maxLength": 256,
                   "validity": [
                     {
                       "comparison": "pattern",
-                      "value": "^(?:minecraft:empty|minecraft:unit_cube|(?!minecraft:)[a-z0-9].*[a-z0-9])$"
+                      "value": "^(?:minecraft:empty|minecraft:unit_cube|(?!minecraft:)[a-z0-9].*[a-z0-9])$",
+                      "patternFlags": "i"
                     }
                   ]
                 },
@@ -506,6 +518,7 @@
                   "title": "Identifier",
                   "description": "The description identifier of the geometry to use to render this block. This identifier must either match an existing geometry identifier in any of the loaded resource packs or be one of the currently supported Vanilla identifiers: \"minecraft:geometry.full_block\" or \"minecraft:geometry.cross\".",
                   "dataType": "string",
+                  "maxLength": 256,
                   "isRequired": true
                 },
                 {
@@ -522,7 +535,8 @@
                   "dataType": "object",
                   "defaultValue": false
                 }
-              ]
+              ],
+              "dataVersion": "1.26.20"
             }
           }
         ]
@@ -531,7 +545,9 @@
         "id": "minecraft:instrument_sound",
         "title": "Minecraft Instrument Sound",
         "description": "This defines what sound will play based on above or below relative position to a note block.\nAn instrument can be assigned to the \"up\" and \"down\" faces where at least one face needs to be defined for the component to be valid.\nIf either face is undefined, or the component is omitted, it will use its default values: \"up\" = \"note.harp\" and \"down\" = \"note.none\".\n\"note.none\" can be used to specify no sound for a face.",
-        "dataType": "object"
+        "dataType": "object",
+        "maxLength": 2,
+        "minLength": 1
       },
       {
         "id": "minecraft:item_visual",
@@ -551,13 +567,13 @@
         "id": "minecraft:light_dampening",
         "title": "Minecraft Light Dampening",
         "description": "The amount that light will be dampened when it passes through the block. Higher value means the light will be dampened more.",
-        "dataType": "object"
+        "dataType": "int"
       },
       {
         "id": "minecraft:light_emission",
         "title": "Minecraft Light Emission",
         "description": "The amount of light this block will emit. Higher value means more light will be emitted.",
-        "dataType": "object"
+        "dataType": "int"
       },
       {
         "id": "minecraft:liquid_detection",
@@ -603,7 +619,8 @@
                   "id": "tint_method",
                   "title": "Tint Method",
                   "description": "Sets the tint method of the block when rendered to a map. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
-                  "dataType": "string",
+                  "dataType": "stringEnum",
+                  "defaultValue": "none",
                   "choices": [
                     {
                       "id": "birch_foliage",
@@ -634,9 +651,10 @@
                       "title": "Water"
                     }
                   ],
-                  "defaultValue": "none"
+                  "mustMatchChoices": true
                 }
-              ]
+              ],
+              "dataVersion": "1.26.20"
             }
           }
         ]
@@ -645,7 +663,8 @@
         "id": "minecraft:material_instances",
         "title": "Minecraft Material Instances",
         "description": "The material instances for a block.\nMaps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance.\nLimited to 64 instances.",
-        "dataType": "object"
+        "dataType": "object",
+        "maxLength": 64
       },
       {
         "id": "minecraft:movable",
@@ -853,10 +872,18 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "dataVersion": "1.26.20"
             }
           }
         ]
+      },
+      {
+        "id": "minecraft:sound",
+        "title": "Minecraft Sound",
+        "description": "Defines a sound type for the block.",
+        "dataType": "object",
+        "subFormId": "block/sound_block_component"
       },
       {
         "id": "minecraft:support",
@@ -889,7 +916,8 @@
         "dataType": "object",
         "isDeprecated": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   },
   "description": "Container for all components that define custom block behavior and properties. Components control collision, selection boxes, destruction time, light emission, flammability, placement rules, crafting table functionality, and more. Combine components to create unique blocks with specific gameplay characteristics."
 }

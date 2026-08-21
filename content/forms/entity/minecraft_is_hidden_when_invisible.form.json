@@ -26,6 +26,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/armor_stand.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:is_hidden_when_invisible/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/bat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:is_hidden_when_invisible/",
@@ -39,12 +45,6 @@
         }
       ],
       "/vanilla/behavior_pack/entities/bogged.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:is_hidden_when_invisible/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/breeze.json": [
         {
           "path": "/minecraft:entity/components/minecraft:is_hidden_when_invisible/",
           "content": {}

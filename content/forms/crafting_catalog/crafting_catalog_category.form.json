@@ -21,9 +21,9 @@
     "fields": [
       {
         "id": "category_name",
-        "title": "CraftingCatalogItemCategory",
+        "title": "Category Name",
         "description": "The category that the items will go to. This is restricted to construction, nature, equipment, or items.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "construction",
@@ -42,6 +42,7 @@
             "title": "Nature"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       },
       {
@@ -52,6 +53,7 @@
         "subFormId": "crafting_catalog/crafting_catalog_group",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.60"
   }
 }

@@ -19,9 +19,9 @@ This item can also be represented as a `Boolean true/false`.
 
 ## Destructible By Explosion Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| explosion_resistance | 0 | Decimal number | Sets the explosion resistance for the block. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| explosion_resistance | 0 | Decimal number | Sets the explosion resistance for the block. | Block Black Concrete Double Slab: `1.8`, Block Black Wool Double Slab: `0.8` | 
 
 ### explosion_resistance
 
@@ -97,5 +97,23 @@ Sets the explosion resistance for the block. Greater values result in greater re
 ```json
 "minecraft:destructible_by_explosion": {
   "explosion_resistance": 2.9
+}
+```
+
+#### [Block Black Concrete Double Slab](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_concrete_double_slab.block.json)
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 1.8
+}
+```
+
+#### [Block Black Wool Double Slab](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_wool_double_slab.block.json)
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 0.8
 }
 ```

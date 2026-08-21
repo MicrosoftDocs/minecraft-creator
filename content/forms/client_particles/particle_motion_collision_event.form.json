@@ -20,7 +20,7 @@
       {
         "id": "event",
         "title": "Event",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       },
       {
@@ -29,7 +29,8 @@
         "dataType": "float",
         "defaultValue": 2
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Defines the event triggered when a particle collides with a block or surface. Reference particle events by name to spawn secondary effects, play sounds, or modify particle state on impact. Creates reactive effects like sparks bouncing off walls, water droplets splashing, or projectile impacts spawning debris."
 }

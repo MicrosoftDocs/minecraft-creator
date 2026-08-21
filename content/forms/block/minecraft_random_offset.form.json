@@ -83,6 +83,7 @@
         },
         "subFormId": "block/range_and_steps"
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

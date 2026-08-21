@@ -24,7 +24,7 @@ Compels an entity to look at the player by rotating the `head` bone pose within 
 | angle_of_view_vertical | 360 | Integer number | The angle in degrees that the mob can see rotated on the X-axis (up-down). Value must be <= 360. |  | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at the nearest entity. | Bogged: `8`, Breeze: `16`, Cave Spider: `6` | 
-| look_time | {"max":4,"min":2} | [Look Time](#item-floatrange) item | Time range to look at the nearest entity. | Zombie Horse: `[2,4]`, Campghost: `[0,100]` | 
+| look_time | {"max":4,"min":2} | [Look Time](#legacy-floatrange) item | Time range to look at the nearest entity. | Zombie Horse: `[2,4]`, Campghost: `[0,100]` | 
 | max_look_time | *not set* | Decimal number |  | Armadillo: `80` | 
 | min_look_time | *not set* | Decimal number |  | Armadillo: `40` | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `8`, Armadillo: `7`, Axolotl: `10` | 
@@ -39,11 +39,9 @@ Compels an entity to look at the player by rotating the `head` bone pose within 
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `look_time`
 

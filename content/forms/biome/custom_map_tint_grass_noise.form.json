@@ -21,9 +21,9 @@
     "fields": [
       {
         "id": "type",
-        "title": "GrassType",
+        "title": "Type",
         "description": "Controls the type of grass tint to use.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "noise",
@@ -34,8 +34,11 @@
             "title": "Tint"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "noise",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   }
 }

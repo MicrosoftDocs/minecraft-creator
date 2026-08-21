@@ -23,7 +23,8 @@
         "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Plays a sound effect when triggered by particle events like spawning, collision, or expiration. Reference sounds defined in sound_definitions.json using their identifier. Synchronizes audio with visual particle moments—sparks crackling, explosions booming, or magical effects chiming for immersive multi-sensory feedback."
 }

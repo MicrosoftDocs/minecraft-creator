@@ -22,8 +22,9 @@
     "fields": [
       {
         "id": "axis",
-        "title": "PositionalBlockRuleAxis",
-        "dataType": "string",
+        "title": "Axis",
+        "dataType": "stringEnum",
+        "defaultValue": "y",
         "choices": [
           {
             "id": "x",
@@ -38,7 +39,7 @@
             "title": "Z"
           }
         ],
-        "defaultValue": "y"
+        "mustMatchChoices": true
       },
       {
         "id": "max_chance",
@@ -78,8 +79,8 @@
       },
       {
         "id": "predicate_type",
-        "title": "PosType",
-        "dataType": "string",
+        "title": "Predicate Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:always_true",
@@ -90,8 +91,11 @@
             "title": "Minecraft:axis aligned linear pos"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:axis_aligned_linear_pos",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

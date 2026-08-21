@@ -20,6 +20,8 @@ ms.date: 02/11/2025
 | [minecraft:height_difference_filter_feature](Features/minecraft_height_difference_filter_feature.md)|  |
 | [minecraft:horizontal_tree_decoration_feature](Features/minecraft_horizontal_tree_decoration_feature.md)|  |
 | [minecraft:multiface_feature](Features/minecraft_multiface_feature.md)| Places multiface blocks on floors/walls/ceilings. |
+| [minecraft:multipart_block_column_feature](Features/minecraft_multipart_block_column_feature.md)|  |
+| [minecraft:multi_block_feature](Features/minecraft_multi_block_feature.md)|  |
 | [minecraft:nether_cave_carver_feature](Features/minecraft_nether_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. |
 | [minecraft:ore_feature](Features/minecraft_ore_feature.md)| Places a vein of blocks to simulate ore deposits. |
 | [minecraft:partially_exposed_blob_feature](Features/minecraft_partially_exposed_blob_feature.md)| Generates a blob of the specified block with the specified dimensions. |
@@ -34,7 +36,6 @@ ms.date: 02/11/2025
 | [minecraft:underwater_cave_carver_feature](Features/minecraft_underwater_cave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8-block radial pattern. |
 | [minecraft:vegetation_patch_feature](Features/minecraft_vegetation_patch_feature.md)| Scatters vegetation in an area. |
 | [minecraft:weighted_random_feature](Features/minecraft_weighted_random_feature.md)| Selects and places a feature randomly based on weighted probabilities. |
-| [minecraft:multi_block_feature](Features/minecraft_multi_block_feature.md)| Places a multi-block in the world. |
 
 ## Internal/Deprecated Components
 These components are either deprecated or internal to Minecraft and not usable in custom content.

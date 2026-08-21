@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Allows entities to flock in groups in water or not.
 
 
-## Flocking Properties
+## Entity Flocking Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

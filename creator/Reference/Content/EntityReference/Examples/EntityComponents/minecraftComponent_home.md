@@ -13,22 +13,29 @@ ms.date: 02/11/2025
 Saves a home position for when the entity is spawned. This component allows entities like bees to remember and return to a specific location such as a hive or nest.
 
 
-## Home Properties
+## Entity Home Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| home_block_list | *not set* | Array of strings | Optional list of blocks that can be considered a valid home. | 
+| home_block_list | [] | Array of strings | Optional list of blocks that can be considered a valid home. | 
 | restriction_radius | 0 | Integer number | Optional radius that the entity will be restricted to in relation to its home. | 
-| restriction_type | none | String | Defines how the entity will be restricted to its home position. | 
+| restriction_type | none | [Restriction Type](#restriction-type-choices) choices | Defines how the entity will be restricted to its home position. | 
 
 ### home_block_list
 
-Optional list of blocks that can be considered a valid home. If no such block longer exists at that position,
-											the home restriction is removed. Example syntax: minecraft:sand. Not supported: minecraft:sand:1.
+Optional list of blocks that can be considered a valid home. If no such block longer exists at that position, the home restriction is removed. Example syntax: minecraft:sand. Not supported: minecraft:sand:1.
 
 ### restriction_type
 
 Defines how the entity will be restricted to its home position. Valid values are: 'none' (no restriction), 'random_movement' (restricts random wandering to be near home), and 'all_movement' (restricts all movement to be near home, though entities can always move closer to home if they are too far away). This item requires a format version of at least 1.21.40.
 
+
+### Restriction Type choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| all_movement | All movement | |
+| none | None | |
+| random_movement | Random movement | |
 
 ## Samples

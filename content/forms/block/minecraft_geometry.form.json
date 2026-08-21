@@ -260,7 +260,15 @@
         "id": "identifier",
         "title": "Identifier",
         "description": "The description identifier of the geometry to use to render this block.",
-        "dataType": "string"
+        "dataType": "string",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:geometry/",
+              "content": "minecraft:geometry.cross"
+            }
+          ]
+        }
       },
       {
         "id": "uv_lock",
@@ -274,6 +282,15 @@
       "title": "String",
       "dataType": "string"
     },
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "minecraft:geometry.cross"
+          }
+        }
+      ]
+    }
   }
 }

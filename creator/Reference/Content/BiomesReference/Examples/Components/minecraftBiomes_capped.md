@@ -27,7 +27,7 @@ Generates surface on blocks with non-solid blocks above or below.
 | foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
 | sea_material | *not set* | String | Material used to replace air blocks below sea level. | 
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
+| type | minecraft:capped | [Type](#type-choices) choices | Controls the type of surface builder to use | 
 
 ### Beach Material (Beach Material)
 

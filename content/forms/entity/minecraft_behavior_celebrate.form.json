@@ -66,9 +66,10 @@
     "fields": [
       {
         "id": "celebration_sound",
-        "title": "LevelSoundEvent",
+        "title": "Celebration Sound",
         "description": "The sound event to trigger during the celebration.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "celebrate",
         "choices": [
           {
             "id": "absorb_block",
@@ -895,6 +896,10 @@
             "title": "Disappeared"
           },
           {
+            "id": "dismount",
+            "title": "Dismount"
+          },
+          {
             "id": "door.close",
             "title": "Door.close"
           },
@@ -1695,6 +1700,10 @@
             "title": "Mob.warning.baby"
           },
           {
+            "id": "mount",
+            "title": "Mount"
+          },
+          {
             "id": "multi_swap",
             "title": "Multi swap"
           },
@@ -2163,6 +2172,10 @@
             "title": "Step sand"
           },
           {
+            "id": "straw_bed.break_leave",
+            "title": "Straw bed.break leave"
+          },
+          {
             "id": "stun",
             "title": "Stun"
           },
@@ -2339,7 +2352,7 @@
             "title": "Wind charge.burst"
           }
         ],
-        "defaultValue": "celebrate"
+        "mustMatchChoices": true
       },
       {
         "id": "control_flags",
@@ -2359,7 +2372,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "duration",
@@ -2378,7 +2392,7 @@
           "min": 1
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item/floatrange"
+        "subFormId": "legacy/floatrange"
       },
       {
         "id": "on_celebration_end_event",
@@ -2417,9 +2431,10 @@
           "min": 2
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item/floatrange"
+        "subFormId": "legacy/floatrange"
       }
     ],
+    "dataVersion": "1.26.10",
     "samples": {}
   }
 }

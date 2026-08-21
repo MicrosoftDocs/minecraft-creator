@@ -21,7 +21,7 @@
       {
         "id": "creation_event",
         "title": "Creation Event",
-        "dataType": "objectArray",
+        "dataType": "stringArray",
         "defaultValue": [],
         "alternates": [
           {
@@ -33,7 +33,7 @@
       {
         "id": "expiration_event",
         "title": "Expiration Event",
-        "dataType": "objectArray",
+        "dataType": "stringArray",
         "defaultValue": [],
         "alternates": [
           {
@@ -45,7 +45,7 @@
       {
         "id": "timeline",
         "title": "Timeline",
-        "dataType": "objectArray",
+        "dataType": "stringArray",
         "alternates": [
           {
             "id": "timeline",
@@ -53,7 +53,8 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Controls particle lifetime events like creation and expiration."
 }

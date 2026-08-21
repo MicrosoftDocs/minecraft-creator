@@ -1,0 +1,17 @@
+{
+  "id": "DefaultBiome",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "DefaultBiome",
+    "title": "Dimension DefaultBiome",
+    "fields": [
+      {
+        "id": "biome",
+        "title": "Biome",
+        "dataType": "string",
+        "isRequired": true
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

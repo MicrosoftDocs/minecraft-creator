@@ -13,9 +13,65 @@
         "title": "Obstruction Rule",
         "description": "[optional] How the block should be evaluated by a chest during chest opening. Must be one of the following options:\n\"always\" - Will always oba chest from opening when directly above it.\n\"never\" - Will never obstruct a chest from opening when directly above it.\n\"shape\" - Will use the Blocks AABB shape to determine if the chest is obstructed from opening when directly above it; this is the default value if no rule is provided.",
         "defaultValue": "shape",
-        "dataType": "string"
+        "dataType": "string",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:chest_obstruction/",
+              "content": "never"
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_wool_stairs.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:chest_obstruction/",
+              "content": "never"
+            }
+          ]
+        }
       }
-    ]
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:chest_obstruction/",
+          "content": {
+            "obstruction_rule": "never"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:chest_obstruction/",
+          "content": {
+            "obstruction_rule": "never"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/blue_concrete_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:chest_obstruction/",
+          "content": {
+            "obstruction_rule": "never"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/blue_wool_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:chest_obstruction/",
+          "content": {
+            "obstruction_rule": "never"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/brown_concrete_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:chest_obstruction/",
+          "content": {
+            "obstruction_rule": "never"
+          }
+        }
+      ]
+    }
   },
   "generatedFromSchema_doNotEdit": {
     "id": "chest_obstruction",
@@ -24,8 +80,9 @@
     "fields": [
       {
         "id": "obstruction_rule",
-        "title": "Chest Obstruction Rule",
-        "dataType": "string",
+        "title": "Obstruction Rule",
+        "dataType": "stringEnum",
+        "defaultValue": "shape",
         "choices": [
           {
             "id": "always",
@@ -40,8 +97,9 @@
             "title": "Shape"
           }
         ],
-        "defaultValue": "shape"
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

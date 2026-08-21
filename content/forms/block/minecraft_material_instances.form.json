@@ -382,9 +382,84 @@
             }
           ]
         }
+      },
+      {
+        "id": "*",
+        "title": "*",
+        "dataType": "object",
+        "subForm": {
+          "id": "*",
+          "title": "*",
+          "fields": [
+            {
+              "id": "texture",
+              "title": "Texture",
+              "dataType": "string",
+              "samples": {
+                "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+                  {
+                    "path": "texture",
+                    "content": "red_shrub"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "render_method",
+              "title": "Render method",
+              "dataType": "string",
+              "samples": {
+                "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+                  {
+                    "path": "render_method",
+                    "content": "alpha_test_single_sided"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ambient_occlusion",
+              "title": "Ambient occlusion",
+              "dataType": "number",
+              "samples": {
+                "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+                  {
+                    "path": "ambient_occlusion",
+                    "content": 0
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "red_shrub",
+                "render_method": "alpha_test_single_sided",
+                "ambient_occlusion": 0
+              }
+            }
+          ]
+        }
       }
     ],
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "red_shrub",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      ]
+    }
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:material_instances",
@@ -394,10 +469,36 @@
       {
         "id": "*",
         "title": "<key>",
-        "dataType": "string"
+        "dataType": "string",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "red_shrub",
+                "render_method": "alpha_test_single_sided",
+                "ambient_occlusion": 0
+              }
+            }
+          ]
+        }
       }
     ],
-    "samples": {}
+    "dataVersion": "1.26.20",
+    "samples": {
+      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "red_shrub",
+              "render_method": "alpha_test_single_sided",
+              "ambient_occlusion": 0
+            }
+          }
+        }
+      ]
+    }
   },
   "id": "minecraft:material_instances"
 }

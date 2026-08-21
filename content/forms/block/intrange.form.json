@@ -1,0 +1,23 @@
+{
+  "id": "IntRange",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "IntRange",
+    "title": "Block IntRange",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.20.50"
+  }
+}

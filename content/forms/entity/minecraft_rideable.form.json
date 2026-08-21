@@ -259,7 +259,15 @@
         "title": "Dismount Mode",
         "description": "Defines where riders are placed when dismounting this entity:\n- \"default\", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found.\n- \"on_top_center\", riders are placed at the center of the top of the entity's collision box.",
         "defaultValue": "default",
-        "dataType": "string"
+        "dataType": "string",
+        "samples": {
+          "/vanilla/behavior_pack/entities/cushion.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rideable/",
+              "content": "on_top_center"
+            }
+          ]
+        }
       },
       {
         "id": "family_types",
@@ -305,6 +313,12 @@
         "description": "The text to display when the player can interact with the entity when playing with touch-screen controls.",
         "dataType": "string",
         "samples": {
+          "/vanilla/behavior_pack/entities/cushion.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rideable/",
+              "content": "action.interact.ride.cushion"
+            }
+          ],
           "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/",
@@ -319,12 +333,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:rideable/",
               "content": "action.interact.ride.minecart"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pig.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:rideable/",
-              "content": "action.interact.ride.horse"
             }
           ]
         }
@@ -482,6 +490,19 @@
               }
             }
           ],
+          "/vanilla/behavior_pack/entities/cushion.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  0.1875,
+                  0
+                ],
+                "rotate_rider_by": -90
+              }
+            }
+          ],
           "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/",
@@ -511,28 +532,6 @@
                 "position": [
                   0,
                   -0.2,
-                  0
-                ]
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/pig.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:rideable/",
-              "content": {
-                "position": [
-                  0,
-                  0.7,
-                  0
-                ]
-              }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:rideable/",
-              "content": {
-                "position": [
-                  0,
-                  0.63,
                   0
                 ]
               }
@@ -594,6 +593,24 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/cushion.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rideable/",
+          "content": {
+            "seat_count": 1,
+            "interact_text": "action.interact.ride.cushion",
+            "dismount_mode": "on_top_center",
+            "seats": {
+              "position": [
+                0,
+                0.1875,
+                0
+              ],
+              "rotate_rider_by": -90
+            }
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/llama.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/",
@@ -642,41 +659,6 @@
               "position": [
                 0,
                 -0.2,
-                0
-              ]
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/pig.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:rideable/",
-          "content": {
-            "seat_count": 1,
-            "family_types": [
-              "baby_undead"
-            ],
-            "seats": {
-              "position": [
-                0,
-                0.7,
-                0
-              ]
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:rideable/",
-          "content": {
-            "seat_count": 1,
-            "interact_text": "action.interact.ride.horse",
-            "family_types": [
-              "player"
-            ],
-            "seats": {
-              "position": [
-                0,
-                0.63,
                 0
               ]
             }

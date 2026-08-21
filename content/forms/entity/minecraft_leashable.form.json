@@ -362,7 +362,9 @@
       "/vanilla/behavior_pack/entities/chicken.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {}
+          "content": {
+            "unleash_on_removal": false
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/cow.json": [

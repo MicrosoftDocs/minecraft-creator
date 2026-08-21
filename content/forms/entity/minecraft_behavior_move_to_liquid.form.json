@@ -157,7 +157,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "goal_radius",
@@ -182,9 +183,10 @@
       },
       {
         "id": "material_type",
-        "title": "Liquid Material Type",
+        "title": "Material Type",
         "description": "The material type of the liquid block to find. Valid values are \"Any\", \"Water\", and \"Lava\".",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "any",
         "choices": [
           {
             "id": "Any",
@@ -199,7 +201,7 @@
             "title": "Water"
           }
         ],
-        "defaultValue": "any",
+        "mustMatchChoices": true,
         "samples": {
           "/vanilla/behavior_pack/entities/strider.json": [
             {
@@ -288,6 +290,7 @@
         "defaultValue": 1
       }
     ],
+    "dataVersion": "1.26.10",
     "samples": {
       "/vanilla/behavior_pack/entities/strider.json": [
         {

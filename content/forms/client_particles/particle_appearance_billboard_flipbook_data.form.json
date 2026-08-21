@@ -27,7 +27,7 @@
           {
             "id": "base_UV",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "base_UV",
@@ -56,7 +56,7 @@
           {
             "id": "max_frame",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "max_frame",
@@ -93,7 +93,8 @@
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Enables sprite sheet animation for particle billboards, cycling through frames over the particle's lifetime. Configure the texture grid dimensions, animation speed, and whether to loop or stretch timing. Essential for animated particles like animated flames, water splashes with frames, explosion sequences, and any particle using multi-frame textures."
 }

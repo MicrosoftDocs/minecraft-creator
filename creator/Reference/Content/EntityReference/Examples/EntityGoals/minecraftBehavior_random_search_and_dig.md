@@ -21,8 +21,8 @@ Allows this entity to locate a random target block that it can path find to. Onc
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| cooldown_range | {"max":0,"min":0} | [Cooldown Range](#item-floatrange) item | Goal cooldown range in seconds. | Sniffer: `{"min":0,"max":0}` | 
-| digging_duration_range | {"max":10,"min":8} | [Digging Duration Range](#item-floatrange) item | Digging duration in seconds. | Sniffer: `{"min":8,"max":10}` | 
+| cooldown_range | {"max":0,"min":0} | [Cooldown Range](#legacy-floatrange) item | Goal cooldown range in seconds. | Sniffer: `{"min":0,"max":0}` | 
+| digging_duration_range | {"max":10,"min":8} | [Digging Duration Range](#legacy-floatrange) item | Digging duration in seconds. | Sniffer: `{"min":8,"max":10}` | 
 | find_valid_position_retries | 5 | Integer number | Amount of retries to find a valid target position within search range. | Sniffer: `5` | 
 | goal_radius | 1.5 | Decimal number | Distance in blocks within the entity to considers it has reached it's target position. | Sniffer: `2` | 
 | item_table |  | String | File path relative to the resource pack root for items to spawn list (loot table format). | Sniffer: `"loot_tables/gameplay/entities/sniffer_seeds.json"` | 
@@ -51,11 +51,9 @@ Allows this entity to locate a random target block that it can path find to. Onc
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `cooldown_range`
 

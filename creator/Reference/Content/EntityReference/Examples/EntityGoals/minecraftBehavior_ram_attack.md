@@ -19,7 +19,7 @@ Allows this entity to damage a target by using a running attack.
 |:----------|:-------------|:----|:-----------|:------------- |
 | baby_knockback_modifier | 0.3333333432674408 | Decimal number | The modifier to knockback that babies have. |  | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| cooldown_range | {"max":20,"min":10} | [Cooldown Range](#item-floatrange) item | Minimum and maximum cooldown time-range (positive, in seconds) between each attempted ram attack. | Goat: `{"min":30,"max":300}`, `{"min":5,"max":15}` | 
+| cooldown_range | {"max":20,"min":10} | [Cooldown Range](#legacy-floatrange) item | Minimum and maximum cooldown time-range (positive, in seconds) between each attempted ram attack. | Goat: `{"min":30,"max":300}`, `{"min":5,"max":15}` | 
 | knockback_force | 5 | Decimal number | The force of the knockback of the ram attack. | Goat: `2.5` | 
 | knockback_height | 0.10000000149011612 | Decimal number | The height of the knockback of the ram attack. | Goat: `0.04` | 
 | min_ram_distance | 4 | Integer number | The minimum distance at which the mob can start a ram attack. | Goat: `4` | 
@@ -44,11 +44,9 @@ Minimum and maximum cooldown time-range (positive, in seconds) between each atte
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `cooldown_range`
 
@@ -316,6 +314,7 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | deny | Deny | |
 | detach | Detach | |
 | disappeared | Disappeared | |
+| dismount | Dismount | |
 | door.close | Door.close | |
 | door.open | Door.open | |
 | drink | Drink | |
@@ -516,6 +515,7 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | mob.player.hurt_on_fire | Mob.player.hurt on fire | |
 | mob.warning | Mob.warning | |
 | mob.warning.baby | Mob.warning.baby | |
+| mount | Mount | |
 | multi_swap | Multi swap | |
 | nearby_close | Nearby close | |
 | nearby_closer | Nearby closer | |
@@ -633,6 +633,7 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | step.baby | Step.baby | |
 | step_lava | Step lava | |
 | step_sand | Step sand | |
+| straw_bed.break_leave | Straw bed.break leave | |
 | stun | Stun | |
 | swim | Swim | |
 | swoop | Swoop | |

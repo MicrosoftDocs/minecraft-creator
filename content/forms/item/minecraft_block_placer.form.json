@@ -49,15 +49,43 @@
         "id": "block",
         "title": "Block",
         "description": "Defines the block that will be placed.",
-        "dataType": "object",
-        "isRequired": true
+        "dataType": "string",
+        "isRequired": true,
+        "samples": {
+          "/vanilla/behavior_pack/items/red_shrub.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:block_placer/",
+              "content": "minecraft:red_shrub"
+            }
+          ],
+          "/vanilla/behavior_pack/items/shelf_mushroom.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:block_placer/",
+              "content": "minecraft:shelf_mushroom"
+            }
+          ]
+        }
       },
       {
         "id": "replace_block_item",
         "title": "Replace Block Item",
         "description": "If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid. Defaults to false.",
         "dataType": "boolean",
-        "defaultValue": false
+        "defaultValue": false,
+        "samples": {
+          "/vanilla/behavior_pack/items/red_shrub.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:block_placer/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/items/shelf_mushroom.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:block_placer/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "use_on",
@@ -65,6 +93,7 @@
         "dataType": "objectArray",
         "defaultValue": [],
         "maxLength": 256,
+        "mustBeUnique": true,
         "subForm": {
           "id": "use_on",
           "title": "Use On",
@@ -97,12 +126,14 @@
               "dataType": "string",
               "defaultValue": ""
             }
-          ]
+          ],
+          "dataVersion": "1.20.50"
         },
         "alternates": [
           {
             "id": "use_on",
-            "dataType": "string"
+            "dataType": "string",
+            "minLength": 1
           },
           {
             "id": "use_on",
@@ -111,7 +142,27 @@
         ]
       }
     ],
-    "samples": {}
+    "dataVersion": "1.26.30",
+    "samples": {
+      "/vanilla/behavior_pack/items/red_shrub.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:block_placer/",
+          "content": {
+            "block": "minecraft:red_shrub",
+            "replace_block_item": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/shelf_mushroom.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:block_placer/",
+          "content": {
+            "block": "minecraft:shelf_mushroom",
+            "replace_block_item": true
+          }
+        }
+      ]
+    }
   },
   "description": "Sets the item as a placer item component for blocks. Items with this component will place a block when used.",
   "note": "This component can also be used instead of the minecraft:icon component to render the block this item will place as the icon.",

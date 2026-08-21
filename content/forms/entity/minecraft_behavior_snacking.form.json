@@ -77,7 +77,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "items",
@@ -119,6 +120,7 @@
         "dataType": "float",
         "defaultValue": 0.0016666667070239782
       }
-    ]
+    ],
+    "dataVersion": "1.26.40"
   }
 }

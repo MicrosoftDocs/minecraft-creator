@@ -24,7 +24,7 @@ Places continuous bands of blocks according to a noise distribution. This surfac
 | noise_descriptor | *not set* | [Noise Descriptor](#biome-noisedescriptor) item | The Specification for the Noise used by the surface builder. | 
 | non_replaceable_blocks | *not set* | String | A list of blocks that the surface builder is not allowed to replace. Leaving this list empty or unspecified will allow the replacement of any (non-air) block type. | 
 | non_replaceable_blocks (Non Replaceable Blocks) | *not set* | [Non Replaceable Blocks (Non Replaceable Blocks)](#non-replaceable-blocks-non-replaceable-blocks) item |  | 
-| type | *not set* | [Type](#type-choices) choices |  | 
+| type | minecraft:noise_gradient | [Type](#type-choices) choices |  | 
 
 ### noise_block_specifiers
 
@@ -42,7 +42,7 @@ The noise block specifiers defining which ranges of noise are associated with wh
 | block | *not set* | String | The block to place if the noise sample satisfies the provided threshold/range | 
 | block (Block) | *not set* | [Block (Block)](#block-block) item |  | 
 | noise |  | String | The string identifier of the noise associated with this NoiseBlockSpecifier. Value must match a regular expression pattern of "^\S+$". | 
-| range | {"max":0,"min":0} | [Range](#item-floatrange) item | The range of sampled noise value associated with the provided Block. | 
+| range | {"max":0,"min":0} | [Range](#legacy-floatrange) item | The range of sampled noise value associated with the provided Block. | 
 | threshold | 0 | Decimal number | The minimum sampled noise value associated with the provided Block. | 
 
 #### Block (Block)
@@ -58,11 +58,9 @@ The noise block specifiers defining which ranges of noise are associated with wh
 | states (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
 | states (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
 
-#### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+#### Legacy FloatRange
 
-
-##### Item FloatRange Properties
+##### Legacy FloatRange Properties
 
 **JSON path:** `noise_block_specifiers > range`
 

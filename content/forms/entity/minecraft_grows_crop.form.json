@@ -21,7 +21,7 @@
       {
         "id": "chance",
         "title": "Chance",
-        "description": "Value between 0-1. Chance of success per tick.",
+        "description": "Value between 0-1. Chance of success per tick",
         "defaultValue": 0,
         "dataType": "float"
       },
@@ -33,6 +33,29 @@
         "dataType": "int"
       }
     ],
+    "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:grows_crop",
+    "title": "Entity Grows Crop",
+    "description": "Could increase crop growth when entity walks over crop",
+    "fields": [
+      {
+        "id": "chance",
+        "title": "Chance",
+        "description": "Value between 0-1. Chance of success per tick",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "charges",
+        "title": "Charges",
+        "description": "Number of charges",
+        "dataType": "int",
+        "defaultValue": 10
+      }
+    ],
+    "dataVersion": "1.26.50",
     "samples": {}
   }
 }

@@ -7,6 +7,38 @@
     "id": "minecraft:uses_legacy_friction",
     "title": "Uses Legacy Friction",
     "description": "When set, legacy calculations are used when applying \"minecraft:friction_modifier\". This component is automatically added to legacy content to preserve existing behavior. The legacy calculations are incorrect and should not be used for new content.",
-    "fields": []
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:uses_legacy_friction/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:uses_legacy_friction/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:uses_legacy_friction/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:uses_legacy_friction/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:uses_legacy_friction/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

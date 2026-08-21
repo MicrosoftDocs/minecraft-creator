@@ -234,6 +234,7 @@ Overrides the swing sounds emitted by the user.
 | deny | Deny | |
 | detach | Detach | |
 | disappeared | Disappeared | |
+| dismount | Dismount | |
 | door.close | Door.close | |
 | door.open | Door.open | |
 | drink | Drink | |
@@ -434,6 +435,7 @@ Overrides the swing sounds emitted by the user.
 | mob.player.hurt_on_fire | Mob.player.hurt on fire | |
 | mob.warning | Mob.warning | |
 | mob.warning.baby | Mob.warning.baby | |
+| mount | Mount | |
 | multi_swap | Multi swap | |
 | nearby_close | Nearby close | |
 | nearby_closer | Nearby closer | |
@@ -551,6 +553,7 @@ Overrides the swing sounds emitted by the user.
 | step.baby | Step.baby | |
 | step_lava | Step lava | |
 | step_sand | Step sand | |
+| straw_bed.break_leave | Straw bed.break leave | |
 | stun | Stun | |
 | swim | Swim | |
 | swoop | Swoop | |

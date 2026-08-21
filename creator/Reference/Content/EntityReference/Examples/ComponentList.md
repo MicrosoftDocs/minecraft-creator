@@ -29,6 +29,7 @@ ms.date: 02/11/2025
 | [Balloonable](EntityComponents/minecraftComponent_balloonable.md)| Allows this entity to have a balloon attached and defines the conditions and events for this entity when is ballooned. |
 | [minecraft:barter](EntityComponents/minecraftComponent_barter.md)| Enables the component to drop an item as a barter exchange. |
 | [minecraft:block_climber](EntityComponents/minecraftComponent_block_climber.md)| Allows the player to detect and manuever on the scaffolding block. |
+| [minecraft:block_movement_slowdown_immunity](EntityComponents/minecraftComponent_block_movement.slowdown_immunity.md)| Prevents specified blocks from contributing to this entity's block movement slowdown. |
 | [minecraft:block_sensor](EntityComponents/minecraftComponent_block_sensor.md)| Fires off a specified event when a block in the block list is broken within the sensor range. |
 | [minecraft:body_rotation_always_follows_head](EntityComponents/minecraftComponent_body_rotation_always_follows_head.md)| Causes the entity's body rotation to match the one of their head. Does not override the "minecraft:body_rotation_blocked" component. |
 | [minecraft:body_rotation_axis_aligned](EntityComponents/minecraftComponent_body_rotation_axis_aligned.md)| Causes the entity's body to automatically rotate to align with the nearest cardinal direction based on its current facing direction. Combining this with the "minecraft:body_rotation_blocked" component will cause the entity to align to the nearest cardinal direction and remain fixed in that orientation, regardless of future changes in its facing direction. |
@@ -93,7 +94,7 @@ ms.date: 02/11/2025
 | [minecraft:home](EntityComponents/minecraftComponent_home.md)| Saves a home position for when the entity is spawned. |
 | [minecraft:horse.jump_strength](EntityComponents/minecraftComponent_horse.jump_strength.md)| Determines the jump height for a horse or similar entity, like a donkey. |
 | [minecraft:hurt_on_condition](EntityComponents/minecraftComponent_hurt_on_condition.md)| Defines a set of conditions under which an entity should take damage. |
-| [minecraft:ignore_cannot_be_attacked](EntityComponents/minecraftComponent_ignore_cannot_be_attacked.md)| When set, blocks entities from attacking the owner entity unless they have the "minecraft:ignore_cannot_be_attacked" component. |
+| [minecraft:ignore_cannot_be_attacked](EntityComponents/minecraftComponent_ignore_cannot_be_attacked.md)| Allows the owner entity to ignore the "minecraft:cannot_be_attacked" component on entities that fulfill the filter. |
 | [minecraft:input_air_controlled](EntityComponents/minecraftComponent_input_air_controlled.md)| When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions. |
 | [minecraft:input_ground_controlled](EntityComponents/minecraftComponent_input_ground_controlled.md)| When configured as a rideable entity, the entity will be controlled using WASD controls. |
 | [minecraft:inside_block_notifier](EntityComponents/minecraftComponent_inside_block_notifier.md)| Verifies whether the entity is inside any of the listed blocks. |
@@ -190,7 +191,7 @@ ms.date: 02/11/2025
 | [minecraft:strength](EntityComponents/minecraftComponent_strength.md)| Defines the entity's strength to carry items. |
 | [minecraft:suspect_tracking](EntityComponents/minecraftComponent_suspect_tracking.md)| Allows this entity to remember suspicious locations. |
 | [minecraft:tameable](EntityComponents/minecraftComponent_tameable.md)| This entity can be tamed |
-| [minecraft:tamemount](EntityComponents/minecraftComponent_tamemount.md)| Allows the Entity to be tamed by mounting it. |
+| [minecraft:tamemount](EntityComponents/minecraftComponent_tamemount.md)| Allows entities to flock in groups in water or not. |
 | [minecraft:target_nearby_sensor](EntityComponents/minecraftComponent_target_nearby_sensor.md)| Defines the entity's range within which it can see or sense other entities to target them. |
 | [minecraft:teleport](EntityComponents/minecraftComponent_teleport.md)| Defines an entity's teleporting behavior. |
 | [minecraft:tick_world](EntityComponents/minecraftComponent_tick_world.md)| Defines if the entity ticks the world and the radius around it to tick. |

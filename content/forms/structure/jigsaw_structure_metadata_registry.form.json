@@ -25,7 +25,8 @@
         "dataType": "keyedObjectCollection",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.80"
   },
   "description": "Registers jigsaw structure metadata by location."
 }

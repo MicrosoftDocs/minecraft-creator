@@ -4,7 +4,6 @@
   "generatedFromSchema_doNotEdit": {
     "id": "MeleeAttackBaseGoalDefinition",
     "title": "Entity MeleeAttackBaseGoalDefinition",
-    "description": "Allows a mob to deal damage through a melee attack.",
     "fields": [
       {
         "id": "attack_once",
@@ -45,7 +44,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "cooldown_time",
@@ -200,6 +200,7 @@
         "dataType": "float",
         "defaultValue": 30
       }
-    ]
+    ],
+    "dataVersion": "1.26.40"
   }
 }

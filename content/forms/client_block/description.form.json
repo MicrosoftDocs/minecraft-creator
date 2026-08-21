@@ -29,7 +29,8 @@
         "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.20.60"
   },
   "description": "Defines the identifier for a block culling rule."
 }

@@ -21,9 +21,9 @@ Evaluates conditions and places features from the first matching entry. Each ent
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | conditional_features | *not set* | Array of [Conditional Features](#conditional-features) items |  | 
-| conditional_features (as Array of strings) | *not set* | Array of strings | Array of Features, and their associated Conditions, for attempted placement. These features will be evaluated as ordered. | 
+| conditional_features (as Array of strings) | *not set* | Array of strings | Array of features, and their associated conditions, for attempted placement. These features will be evaluated as ordered. | 
 | description | *not set* | [Description](#description) item |  | 
-| early_out_scheme"<"condition_success", "placement_success" | *not set* | String | Denote whether placement should end on first successful placement or first passed condition. | 
+| early_out_scheme"<"condition_success", "placement_success", "none" | *not set* | String | Denote whether placement should end on first successful placement ('placement_success'), first passed condition ('condition_success'), or evaluate all features ('none'). Defaults to 'none'. | 
 | format_version | *not set* | String |  | 
 
 ### Conditional Features
@@ -34,7 +34,7 @@ Evaluates conditions and places features from the first matching entry. Each ent
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| condition | *not set* | Molang | Condition for placing associated Feature | 
+| condition | *not set* | Molang | Condition for placing associated Feature. If omitted, always places. | 
 
 ### Description
 

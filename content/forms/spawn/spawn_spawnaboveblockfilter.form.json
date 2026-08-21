@@ -35,6 +35,7 @@
         "dataType": "int",
         "defaultValue": 1
       }
-    ]
+    ],
+    "dataVersion": "1.21.50"
   }
 }

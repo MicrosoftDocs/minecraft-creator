@@ -186,6 +186,7 @@
             "title": "Move"
           }
         ],
+        "mustMatchChoices": true,
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -207,7 +208,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -229,7 +230,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/sniffer.json": [
             {
@@ -310,6 +311,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.0",
     "samples": {
       "/vanilla/behavior_pack/entities/sniffer.json": [
         {

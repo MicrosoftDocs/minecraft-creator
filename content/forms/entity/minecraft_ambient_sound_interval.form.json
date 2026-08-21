@@ -52,7 +52,7 @@
               "content": "ambient"
             }
           ],
-          "/vanilla/behavior_pack/entities/warden.json": [
+          "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
               "content": "ambient"
@@ -99,17 +99,13 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/warden.json": [
+          "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
               "content": [
                 {
-                  "condition": "query.anger_level(this) >= 80",
-                  "event_name": "angry"
-                },
-                {
-                  "condition": "query.anger_level(this) >= 40",
-                  "event_name": "agitated"
+                  "condition": "!query.is_on_ground",
+                  "event_name": "ambient.in.air"
                 }
               ]
             }
@@ -121,42 +117,14 @@
         "title": "Range",
         "description": "Maximum time in seconds to randomly add to the ambient sound delay time.",
         "defaultValue": 16,
-        "dataType": "float",
-        "samples": {
-          "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/warden.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": "float"
       },
       {
         "id": "value",
         "title": "Value",
         "description": "Minimum time in seconds before the entity plays its ambient sound again.",
         "defaultValue": 8,
-        "dataType": "float",
-        "samples": {
-          "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-              "content": 5
-            }
-          ],
-          "/vanilla/behavior_pack/entities/warden.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
-              "content": 2
-            }
-          ]
-        }
+        "dataType": "float"
       }
     ],
     "samples": {
@@ -180,23 +148,67 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/warden.json": [
+      "/vanilla/behavior_pack/entities/breeze.json": [
         {
           "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
           "content": {
             "event_name": "ambient",
             "event_names": [
               {
-                "condition": "query.anger_level(this) >= 80",
-                "event_name": "angry"
-              },
-              {
-                "condition": "query.anger_level(this) >= 40",
-                "event_name": "agitated"
+                "condition": "!query.is_on_ground",
+                "event_name": "ambient.in.air"
               }
             ],
-            "range": 4,
-            "value": 2
+            "range": 16,
+            "value": 8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
+          "content": {
+            "event_name": "ambient",
+            "event_names": [
+              {
+                "condition": "query.is_baby",
+                "event_name": "ambient.baby"
+              }
+            ],
+            "range": 16,
+            "value": 6
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
+          "content": {
+            "event_name": "ambient",
+            "event_names": [
+              {
+                "condition": "query.head_is_in_water",
+                "event_name": "ambient.in.water"
+              }
+            ],
+            "range": 16,
+            "value": 6
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:ambient_sound_interval/",
+          "content": {
+            "event_name": "ambient",
+            "event_names": [
+              {
+                "condition": "query.head_is_in_water",
+                "event_name": "ambient.in.water"
+              }
+            ],
+            "range": 16,
+            "value": 8
           }
         }
       ]

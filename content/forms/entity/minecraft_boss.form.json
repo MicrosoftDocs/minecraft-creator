@@ -75,5 +75,35 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:boss",
+    "title": "Entity Boss",
+    "description": "The current state of the boss for updating the boss HUD.",
+    "fields": [
+      {
+        "id": "hud_range",
+        "title": "Hud Range",
+        "description": "The max distance from the boss at which the boss's health bar is present on the players screen.",
+        "dataType": "int",
+        "defaultValue": 55
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "description": "The name that will be displayed above the boss's health bar.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "should_darken_sky",
+        "title": "Should Darken Sky",
+        "description": "Whether the sky should darken in the presence of the boss.",
+        "dataType": "boolean",
+        "defaultValue": false
+      }
+    ],
+    "dataVersion": "1.26.50",
+    "samples": {}
   }
 }

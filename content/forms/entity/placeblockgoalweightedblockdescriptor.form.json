@@ -46,12 +46,14 @@
               "dataType": "string",
               "defaultValue": ""
             }
-          ]
+          ],
+          "dataVersion": "1.20.50"
         },
         "alternates": [
           {
             "id": "block",
-            "dataType": "string"
+            "dataType": "string",
+            "minLength": 1
           },
           {
             "id": "block",
@@ -108,7 +110,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -124,6 +127,7 @@
         "dataType": "int",
         "defaultValue": 1
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

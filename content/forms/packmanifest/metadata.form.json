@@ -43,7 +43,8 @@
         "title": "Url",
         "dataType": "string"
       }
-    ]
+    ],
+    "dataVersion": "3.0.0"
   },
   "description": "Optional metadata about the pack including author names, license information, and URL. This information may be displayed in marketplace listings or pack details screens. Also includes generation tool info for debugging."
 }

@@ -443,7 +443,8 @@
           "path": "/minecraft:entity/components/minecraft:navigation.walk/",
           "content": {
             "can_path_over_water": true,
-            "avoid_damage_blocks": true
+            "avoid_damage_blocks": true,
+            "using_door_annotation": true
           }
         }
       ],

@@ -85,6 +85,7 @@
         "maxLength": 64,
         "subFormId": "block/placement_condition"
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

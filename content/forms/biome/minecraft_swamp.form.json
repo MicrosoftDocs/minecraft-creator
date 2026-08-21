@@ -371,9 +371,9 @@
       },
       {
         "id": "type",
-        "title": "SurfaceBuilderType",
+        "title": "Type",
         "description": "Controls the type of surface builder to use.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:capped",
@@ -404,8 +404,11 @@
             "title": "Minecraft:the end"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:swamp",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   }
 }

@@ -83,7 +83,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "duration",
@@ -106,6 +107,7 @@
         "defaultValue": 0
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {}
   }
 }

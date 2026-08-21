@@ -136,9 +136,10 @@
     "fields": [
       {
         "id": "coordinate_eval_order",
-        "title": "Coordinate Evaluation Order",
+        "title": "Coordinate Eval Order",
         "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to \"xzy\". Supported orders are defined by \"Coordinate Evaluation Order\".",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "xzy",
         "choices": [
           {
             "id": "xyz",
@@ -165,7 +166,7 @@
             "title": "Zyx"
           }
         ],
-        "defaultValue": "xzy"
+        "mustMatchChoices": true
       },
       {
         "id": "iterations",
@@ -176,7 +177,7 @@
           {
             "id": "iterations",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "iterations",
@@ -254,9 +255,9 @@
               "fields": [
                 {
                   "id": "distribution",
-                  "title": "Random Distribution Type",
+                  "title": "Distribution",
                   "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
-                  "dataType": "string",
+                  "dataType": "stringEnum",
                   "choices": [
                     {
                       "id": "fixed_grid",
@@ -283,6 +284,7 @@
                       "title": "Uniform"
                     }
                   ],
+                  "mustMatchChoices": true,
                   "isRequired": true
                 },
                 {
@@ -338,9 +340,9 @@
               "fields": [
                 {
                   "id": "distribution",
-                  "title": "Random Distribution Type",
+                  "title": "Distribution",
                   "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
-                  "dataType": "string",
+                  "dataType": "stringEnum",
                   "choices": [
                     {
                       "id": "fixed_grid",
@@ -367,6 +369,7 @@
                       "title": "Uniform"
                     }
                   ],
+                  "mustMatchChoices": true,
                   "isRequired": true
                 },
                 {
@@ -422,9 +425,9 @@
               "fields": [
                 {
                   "id": "distribution",
-                  "title": "Random Distribution Type",
+                  "title": "Distribution",
                   "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
-                  "dataType": "string",
+                  "dataType": "stringEnum",
                   "choices": [
                     {
                       "id": "fixed_grid",
@@ -451,6 +454,7 @@
                       "title": "Uniform"
                     }
                   ],
+                  "mustMatchChoices": true,
                   "isRequired": true
                 },
                 {
@@ -486,7 +490,8 @@
         ],
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   },
   "id": "Scatter Params"
 }

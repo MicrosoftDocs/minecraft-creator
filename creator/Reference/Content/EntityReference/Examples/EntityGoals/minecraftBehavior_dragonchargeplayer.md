@@ -35,7 +35,7 @@ Allows this entity to attack a player by charging at them. The player is chosen 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | flight_speed | 0.6000000238418579 | Decimal number | The speed this entity moves while this behavior is not active. |  | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `1` | 
-| target_zone | {"max":150,"min":10} | [Target Zone](#item-floatrange) item | Minimum and maximum distance, from the target, this entity can use this behavior. |  | 
+| target_zone | {"max":150,"min":10} | [Target Zone](#legacy-floatrange) item | Minimum and maximum distance, from the target, this entity can use this behavior. |  | 
 | turn_speed | 0.699999988079071 | Decimal number | The speed at which this entity turns while using this behavior. |  | 
 
 ### Control Flags choices
@@ -46,11 +46,9 @@ Allows this entity to attack a player by charging at them. The player is chosen 
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `target_zone`
 

@@ -174,7 +174,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "goal_radius",
@@ -201,7 +202,7 @@
           "min": 0
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/phantom.json": [
             {
@@ -230,7 +231,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/phantom.json": [
             {
@@ -281,7 +282,7 @@
           "min": 5
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item/floatrange"
+        "subFormId": "legacy/floatrange"
       },
       {
         "id": "speed_multiplier",
@@ -291,6 +292,7 @@
         "defaultValue": 1
       }
     ],
+    "dataVersion": "1.21.100",
     "samples": {
       "/vanilla/behavior_pack/entities/phantom.json": [
         {

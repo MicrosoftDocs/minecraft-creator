@@ -33,7 +33,8 @@
         "dataType": "object",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.80"
   },
   "description": "Defines jigsaw structure markers and bounding size."
 }

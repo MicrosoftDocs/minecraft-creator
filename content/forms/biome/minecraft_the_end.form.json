@@ -21,9 +21,9 @@
     "fields": [
       {
         "id": "type",
-        "title": "SurfaceBuilderType",
+        "title": "Type",
         "description": "Use default Minecraft End terrain generation.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:capped",
@@ -54,8 +54,11 @@
             "title": "Minecraft:the end"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:the_end",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   }
 }

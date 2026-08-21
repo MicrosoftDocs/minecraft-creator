@@ -34,7 +34,6 @@
     "fields": [
       {
         "id": "direction",
-        "title": "Direction Type",
         "dataType": "string",
         "alternates": [
           {
@@ -46,7 +45,7 @@
               {
                 "id": "direction",
                 "dataType": "keyedObjectCollection",
-                "subFormId": "item/molang_expression"
+                "subFormId": "legacy/molang_expression"
               },
               {
                 "id": "direction",
@@ -62,7 +61,8 @@
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Emits particles from random positions within the attached entity's axis-aligned bounding box. The emission volume automatically scales with entity size, making it perfect for body-covering effects like burning, freezing, poison clouds, healing auras, or damage feedback that should wrap around creatures of any size."
 }

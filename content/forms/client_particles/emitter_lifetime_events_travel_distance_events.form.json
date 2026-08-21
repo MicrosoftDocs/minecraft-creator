@@ -26,7 +26,7 @@
       {
         "id": "effects",
         "title": "Effects",
-        "dataType": "objectArray",
+        "dataType": "stringArray",
         "alternates": [
           {
             "id": "effects",
@@ -35,7 +35,8 @@
         ],
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Triggers particle events when the emitter has traveled a specified distance. Useful for trail effects that change behavior—such as a projectile leaving a smoke trail that intensifies as it travels, or a mob's footsteps spawning dust particles at regular intervals as it walks."
 }

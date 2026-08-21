@@ -21,10 +21,10 @@ Controls UV texture mapping and flipbook animation for particles.
 | texture_height | 1 | Integer number |  | 
 | texture_width | 1 | Integer number |  | 
 | uv | *not set* | Keyed set of strings |  | 
-| uv (as Named set of objects) | *not set* | Key/item pairs of [Uv (Item Molang Expression)](#item-molang-expression) items |  | 
+| uv (as Named set of objects) | *not set* | Key/item pairs of [Uv (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | uv (as Decimal number) | *not set* | Decimal number |  | 
 | uv_size | *not set* | Keyed set of strings |  | 
-| uv_size (as Named set of objects) | *not set* | Key/item pairs of [Uv Size (Item Molang Expression)](#item-molang-expression) items |  | 
+| uv_size (as Named set of objects) | *not set* | Key/item pairs of [Uv Size (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | uv_size (as Decimal number) | *not set* | Decimal number |  | 
 
 ### Client Particles Particle Appearance Billboard Flipbook Data
@@ -38,20 +38,20 @@ Enables sprite sheet animation for particle billboards, cycling through frames o
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | base_UV | *not set* | Keyed set of strings |  | 
-| base_UV (as Named set of objects) | *not set* | Key/item pairs of [Base UV (Item Molang Expression)](#item-molang-expression) items |  | 
+| base_UV (as Named set of objects) | *not set* | Key/item pairs of [Base UV (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | base_UV (as Decimal number) | *not set* | Decimal number |  | 
 | frames_per_second | 0 | Decimal number |  | 
 | loop | false | Boolean true/false |  | 
 | max_frame | *not set* | Keyed set of strings |  | 
-| max_frame (as Named set of objects) | *not set* | Key/item pairs of [Max Frame (Item Molang Expression)](#item-molang-expression) items |  | 
+| max_frame (as Named set of objects) | *not set* | Key/item pairs of [Max Frame (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | max_frame (as Decimal number) | *not set* | Decimal number |  | 
 | size_UV | [1, 1] | Array of numbers |  | 
 | step_UV | [0, 0] | Array of numbers |  | 
 | stretch_to_lifetime | false | Boolean true/false |  | 
 
-#### Item Molang Expression
+#### Legacy Molang Expression
 
-##### Item Molang Expression Properties
+##### Legacy Molang Expression Properties
 
 **JSON path:** `flipbook > base_UV`
 

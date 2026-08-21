@@ -241,5 +241,152 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:collision_box",
+    "title": "Entity Collision Box",
+    "description": "Sets the width and height of the Entity's collision box.",
+    "fields": [
+      {
+        "id": "height",
+        "title": "Height",
+        "description": "Height of the collision box in blocks. A negative value will be assumed to be 0.",
+        "dataType": "float",
+        "defaultValue": 1.7999999523162842,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": -100000000
+          },
+          {
+            "comparison": "<=",
+            "value": 100000000
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 0.6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armor_stand.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 1.975
+            }
+          ],
+          "/vanilla/behavior_pack/entities/arrow.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 0.25
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 0.9
+            }
+          ],
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 1.8
+            }
+          ]
+        }
+      },
+      {
+        "id": "width",
+        "title": "Width",
+        "description": "Width and Depth of the collision box in blocks. A negative value will be assumed to be 0.",
+        "dataType": "float",
+        "defaultValue": 0.6000000238418579,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": -100000000
+          },
+          {
+            "comparison": "<=",
+            "value": 100000000
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 0.35
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armor_stand.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 0.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/arrow.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 0.25
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 0.5
+            }
+          ]
+        }
+      }
+    ],
+    "dataVersion": "1.26.50",
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:collision_box/",
+          "content": {
+            "height": 0.6,
+            "width": 0.35
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/armor_stand.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:collision_box/",
+          "content": {
+            "height": 1.975,
+            "width": 0.5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/arrow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:collision_box/",
+          "content": {
+            "height": 0.25,
+            "width": 0.25
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:collision_box/",
+          "content": {
+            "height": 0.9,
+            "width": 0.5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:collision_box/",
+          "content": {
+            "height": 1.8,
+            "width": 0.5
+          }
+        }
+      ]
+    }
   }
 }

@@ -140,7 +140,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -180,7 +181,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "on_place",
@@ -240,12 +242,14 @@
               "dataType": "string",
               "defaultValue": ""
             }
-          ]
+          ],
+          "dataVersion": "1.20.50"
         },
         "alternates": [
           {
             "id": "placeable_carried_blocks",
-            "dataType": "string"
+            "dataType": "string",
+            "minLength": 1
           },
           {
             "id": "placeable_carried_blocks",
@@ -276,7 +280,7 @@
           "max": 2,
           "min": -2
         },
-        "subFormId": "item/intrange"
+        "subFormId": "block/intrange"
       },
       {
         "id": "y_range",
@@ -287,9 +291,10 @@
           "max": 3,
           "min": 0
         },
-        "subFormId": "item/intrange"
+        "subFormId": "block/intrange"
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {}
   }
 }

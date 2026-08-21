@@ -1,0 +1,25 @@
+{
+  "id": "SpawnItemsData",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "SpawnItemsData",
+    "title": "Entity SpawnItemsData",
+    "fields": [
+      {
+        "id": "table",
+        "title": "Table",
+        "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "y_offset",
+        "title": "y Offset",
+        "description": "Will offset the items spawn position this amount in the y direction.",
+        "dataType": "float",
+        "defaultValue": 1
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

@@ -17,3 +17,13 @@ When set, legacy calculations are used when applying "minecraft:friction_modifie
 
 > [!Note]
 > This item requires a format version of at least 1.26.20.
+
+
+## Samples
+
+#### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
+
+
+```json
+"minecraft:uses_legacy_friction": {}
+```

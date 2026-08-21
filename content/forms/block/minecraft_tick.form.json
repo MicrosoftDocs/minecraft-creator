@@ -69,6 +69,7 @@
         "dataType": "boolean",
         "defaultValue": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

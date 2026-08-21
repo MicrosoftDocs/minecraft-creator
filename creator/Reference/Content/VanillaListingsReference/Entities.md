@@ -51,6 +51,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [cow](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/cow.json) | 4875 | 11 |
 | [creaking](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/creaking.json) | 2962 | 146 |
 | [creeper](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/creeper.json) | 2849 | 33 |
+| cushion | 154 | 154 |
 | [dolphin](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/dolphin.json) | 8991 | 31 |
 | [donkey](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/donkey.json) | 2118424 | 24 |
 | [dragon_fireball](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/dragon_fireball.json) | 4194383 | 79 |

@@ -24,7 +24,8 @@
         "id": "lava_flammable",
         "title": "Lava Flammable",
         "description": "Determines lava fire consideration. \"always\" includes this block when lava attempts to spread fire\"\n\t\t\t\t\t\" (triggered by adjacent block changes), but normal fire-placement rules still apply. \"never\" excludes\"\n\t\t\t\t\t\" this block from that check.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "never",
         "choices": [
           {
             "id": "always",
@@ -35,8 +36,9 @@
             "title": "Never"
           }
         ],
-        "defaultValue": "never"
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

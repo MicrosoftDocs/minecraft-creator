@@ -104,6 +104,7 @@
         "dataType": "object",
         "subFormId": "client_biome/minecraft_water_identifier"
       }
-    ]
+    ],
+    "dataVersion": "1.21.70"
   }
 }

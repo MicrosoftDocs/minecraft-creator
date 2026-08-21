@@ -158,6 +158,10 @@
   href: query_ground_speed.md
 - name: query.had_component_group
   href: query_had_component_group.md
+- name: query.has_all_biome_tags
+  href: query_has_all_biome_tags.md
+- name: query.has_any_biome_tags
+  href: query_has_any_biome_tags.md
 - name: query.has_any_family
   href: query_has_any_family.md
 - name: query.has_any_leashed_entity_of_type
@@ -188,6 +192,8 @@
   href: query_has_rider.md
 - name: query.has_target
   href: query_has_target.md
+- name: query.head_is_in_water
+  href: query_head_is_in_water.md
 - name: query.head_roll_angle
   href: query_head_roll_angle.md
 - name: query.head_x_rotation

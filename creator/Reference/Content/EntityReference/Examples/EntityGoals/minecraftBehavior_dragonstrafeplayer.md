@@ -32,7 +32,7 @@ Allows this entity to fly around looking for a player to shoot fireballs at.
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `2` | 
 | switch_direction_probability | 0.125 | Decimal number | Percent chance to to switch this entity's strafe direction between clockwise and counterclockwise. Switch direction chance occurs each time a new target is chosen (1.0 = 100%). Value must be <= 1. |  | 
 | target_in_range_and_in_view_time | 0.25 | Decimal number | Time (in seconds) the target must be in fireball range, and in view [ie, no solid terrain in-between the target and this entity], before a fireball can be shot. Value must be > 0. |  | 
-| target_zone | {"max":150,"min":10} | [Target Zone](#item-floatrange) item | Minimum and maximum distance, from the target, this entity can use this behavior. |  | 
+| target_zone | {"max":150,"min":10} | [Target Zone](#legacy-floatrange) item | Minimum and maximum distance, from the target, this entity can use this behavior. |  | 
 | turn_speed | 0.699999988079071 | Decimal number | The speed at which this entity turns while using this behavior. |  | 
 | view_angle | 10 | Decimal number | The target must be within "view_angle" degrees of the dragon's current rotation before a fireball can be shot. Value must be > 0. |  | 
 
@@ -44,11 +44,9 @@ Allows this entity to fly around looking for a player to shoot fireballs at.
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `target_zone`
 

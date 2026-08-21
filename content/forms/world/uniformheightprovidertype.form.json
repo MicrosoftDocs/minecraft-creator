@@ -35,8 +35,8 @@
       },
       {
         "id": "type",
-        "title": "HeightProviderType",
-        "dataType": "string",
+        "title": "Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "constant",
@@ -47,8 +47,11 @@
             "title": "Uniform"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "uniform",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

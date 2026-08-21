@@ -9,9 +9,10 @@
         "id": "identifier",
         "title": "Identifier",
         "description": "Identifier of the Jigsaw Structure Set.",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

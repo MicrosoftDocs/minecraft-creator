@@ -26,8 +26,8 @@
       },
       {
         "id": "type",
-        "title": "SettingType",
-        "dataType": "string",
+        "title": "Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "dropdown",
@@ -38,6 +38,10 @@
             "title": "Label"
           },
           {
+            "id": "multiselect",
+            "title": "Multiselect"
+          },
+          {
             "id": "slider",
             "title": "Slider"
           },
@@ -46,9 +50,11 @@
             "title": "Toggle"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "3.0.0"
   },
   "description": "A read-only text label in the pack's world settings UI. Use labels to display instructions, section headers, or explanatory text between interactive settings. Labels don't have values—they're purely informational."
 }

@@ -131,6 +131,13 @@
       "title": "Boolean",
       "dataType": "boolean"
     },
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:collision_box/",
+          "content": false
+        }
+      ]
+    }
   }
 }

@@ -20,5 +20,5 @@ Affects how music plays within the biome.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| music_definition | *not set* | Object | Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music. | 
+| music_definition | *not set* | String | Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music. | 
 | volume_multiplier | *not set* | Decimal number | Multiplier gradually applied to music volume when the audio listener is inside this biome. Must be between 0 and 1, inclusive. This item requires a format version of at least 1.21.50. | 

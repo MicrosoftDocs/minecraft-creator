@@ -126,7 +126,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "potions",
@@ -150,6 +151,7 @@
         "defaultValue": 0
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {}
   }
 }

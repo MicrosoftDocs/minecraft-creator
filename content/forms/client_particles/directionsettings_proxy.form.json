@@ -28,7 +28,7 @@
           {
             "id": "custom_direction",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "custom_direction",
@@ -44,8 +44,8 @@
       },
       {
         "id": "mode",
-        "title": "Particle Appearance Billboard Direction Settings Mode",
-        "dataType": "string",
+        "title": "Mode",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "custom",
@@ -56,9 +56,11 @@
             "title": "Derive from velocity"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Controls the initial direction and velocity of emitted particles. Direction settings determine whether particles spray outward from the emitter, inward toward its center, or follow a custom vector defined by Molang expressions. This affects effects like explosions (outward), implosions (inward), or directional streams like breath attacks and water flows."
 }

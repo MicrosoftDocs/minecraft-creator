@@ -20,7 +20,7 @@
     "fields": [
       {
         "id": "category",
-        "title": "CreativeItemCategory",
+        "title": "Category",
         "description": "Creative category where this item belongs. Defaults to \"none\".",
         "dataType": "string",
         "choices": [
@@ -45,6 +45,7 @@
             "title": "None"
           }
         ],
+        "mustMatchChoices": true,
         "defaultValue": "none"
       },
       {
@@ -52,10 +53,12 @@
         "title": "Group",
         "description": "The Creative Group that this item belongs to. Group name is limited to 256 characters. The name also must start with a namespace.",
         "dataType": "string",
+        "maxLength": 256,
         "validity": [
           {
             "comparison": "pattern",
-            "value": "^(?:.)+:(?:.)+$"
+            "value": "^(?:.)+:(?:.)+$",
+            "patternFlags": "i"
           }
         ]
       },
@@ -65,6 +68,7 @@
         "description": "Determines whether or not this item can be used with commands. Defaults to false.",
         "dataType": "boolean"
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

@@ -131,7 +131,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "must_be_on_ground",
@@ -185,6 +186,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {

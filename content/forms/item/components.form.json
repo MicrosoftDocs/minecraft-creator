@@ -2,8 +2,8 @@
   "id": "components v1.21.80",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "id": "components v1.21.80",
-    "title": "Item 21.80 Components v1",
+    "id": "components",
+    "title": "Item Components",
     "description": "List of all components used in this item.",
     "fields": [
       {
@@ -34,16 +34,9 @@
       {
         "id": "minecraft:block_placer",
         "title": "Minecraft Block Placer",
-        "description": "Items with the block_placer component will place a block when used. \nThis component can also be used instead of the \"minecraft:icon\" component to render the referenced block as the item icon.",
+        "description": "Items with the block_placer component will place a block when used.",
         "dataType": "object",
         "subFormId": "item/minecraft_block_placer"
-      },
-      {
-        "id": "minecraft:bundle_interaction",
-        "title": "Minecraft Bundle Interaction",
-        "description": "[EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a \"minecraft:storage_item\" component.",
-        "dataType": "object",
-        "subFormId": "item/minecraft_bundle_interaction"
       },
       {
         "id": "minecraft:can_destroy_in_creative",
@@ -71,24 +64,11 @@
         ]
       },
       {
-        "id": "minecraft:compostable",
-        "title": "Minecraft Compostable",
-        "description": "Specifies that an item is compostable and provides the chance of creating a composting layer in the composter",
-        "dataType": "object",
-        "subFormId": "item/minecraft_compostable"
-      },
-      {
         "id": "minecraft:cooldown",
         "title": "Minecraft Cooldown",
         "description": "Adds a cooldown to the item so that, after performing an action of the specified \"type\", all items with a \"minecraft:cooldown\" component in the same \"category\" become unable to perform that same type of action for the number of seconds defined in \"duration\".",
         "dataType": "object",
         "subFormId": "item/minecraft_cooldown"
-      },
-      {
-        "id": "minecraft:custom_components",
-        "title": "Minecraft Custom Components",
-        "description": "Specifies an array of custom components defined in a script that should be added to this item.",
-        "dataType": "object"
       },
       {
         "id": "minecraft:damage",
@@ -116,13 +96,6 @@
         ]
       },
       {
-        "id": "minecraft:damage_absorption",
-        "title": "Minecraft Damage Absorption",
-        "description": "It allows an item to absorb damage that would otherwise be dealt to its wearer. For this to happen, the item needs to be equipped in an armor slot. The absorbed damage reduces the item's durability, with any excess damage being ignored. Because of this, the item also needs a `minecraft:durability` component.",
-        "dataType": "object",
-        "subFormId": "item/minecraft_damage_absorption"
-      },
-      {
         "id": "minecraft:digger",
         "title": "Minecraft Digger",
         "description": "Digger item component specifies how quickly this item can dig specific blocks.",
@@ -142,19 +115,6 @@
         "description": "The durability item component specifies how much damage the item takes before breaking, and allows the item to be combined to repair or augment them.",
         "dataType": "object",
         "subFormId": "item/minecraft_durability"
-      },
-      {
-        "id": "minecraft:durability_sensor",
-        "title": "Minecraft Durability Sensor",
-        "description": "Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component.",
-        "dataType": "object",
-        "subFormId": "item/minecraft_durability_sensor"
-      },
-      {
-        "id": "minecraft:dyeable",
-        "title": "Minecraft Dyeable",
-        "dataType": "object",
-        "subFormId": "item/minecraft_dyeable"
       },
       {
         "id": "minecraft:enchantable",
@@ -285,8 +245,6 @@
       },
       {
         "id": "minecraft:icon",
-        "title": "Minecraft Icon",
-        "description": "Icon item component determines which icon graphic will be used to represent the item in the UI and elsewhere.",
         "dataType": "string",
         "alternates": [
           {
@@ -297,11 +255,11 @@
               "title": "Icon",
               "fields": [
                 {
-                  "id": "textures",
-                  "title": "Textures",
-                  "description": "This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes and bundle open textures can be specified here too. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file.",
+                  "id": "texture",
+                  "title": "Texture",
+                  "description": "The key from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file.",
                   "dataType": "object",
-                  "defaultValue": {}
+                  "defaultValue": ""
                 }
               ]
             }
@@ -388,31 +346,6 @@
         "subFormId": "item/minecraft_projectile"
       },
       {
-        "id": "minecraft:rarity",
-        "title": "Minecraft Rarity",
-        "description": "Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item.",
-        "dataType": "string",
-        "alternates": [
-          {
-            "id": "minecraft:rarity",
-            "dataType": "object",
-            "subForm": {
-              "id": "minecraft:rarity",
-              "title": "Rarity",
-              "fields": [
-                {
-                  "id": "value",
-                  "title": "Value",
-                  "description": "Sets the base rarity of the item. The rarity of an item automatically increases when enchanted, either to Rare when the base rarity is Common or Uncommon, or Epic when the base rarity is Rare.",
-                  "dataType": "string",
-                  "defaultValue": ""
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
         "id": "minecraft:record",
         "title": "Minecraft Record",
         "description": "Record Item Component. Used by record items to play music.",
@@ -484,27 +417,6 @@
         ]
       },
       {
-        "id": "minecraft:storage_item",
-        "title": "Minecraft Storage Item",
-        "description": "[EXPERIMENTAL] Storage Items can be used by other components to store other items within this item.",
-        "dataType": "object",
-        "subFormId": "item/minecraft_storage_item"
-      },
-      {
-        "id": "minecraft:storage_weight_limit",
-        "title": "Minecraft Storage Weight Limit",
-        "description": "Specifies the maximum weight limit that a storage item can hold",
-        "dataType": "object",
-        "subFormId": "item/minecraft_storage_weight_limit"
-      },
-      {
-        "id": "minecraft:storage_weight_modifier",
-        "title": "Minecraft Storage Weight Modifier",
-        "description": "Specifies the maximum weight limit that a storage item can hold",
-        "dataType": "object",
-        "subFormId": "item/minecraft_storage_weight_modifier"
-      },
-      {
         "id": "minecraft:tags",
         "title": "Minecraft Tags",
         "description": "The tags component specifies which tags an item has on it.",
@@ -520,7 +432,6 @@
       },
       {
         "id": "minecraft:use_animation",
-        "title": "Animation",
         "description": "Use_animation specifies which animation is played when the player uses the item.",
         "dataType": "string",
         "alternates": [
@@ -533,51 +444,9 @@
               "fields": [
                 {
                   "id": "value",
-                  "title": "Animation",
+                  "title": "Value",
                   "description": "Specifies which animation to play when the the item is used.",
-                  "dataType": "string",
-                  "choices": [
-                    {
-                      "id": "block",
-                      "title": "Block"
-                    },
-                    {
-                      "id": "bow",
-                      "title": "Bow"
-                    },
-                    {
-                      "id": "brush",
-                      "title": "Brush"
-                    },
-                    {
-                      "id": "camera",
-                      "title": "Camera"
-                    },
-                    {
-                      "id": "crossbow",
-                      "title": "Crossbow"
-                    },
-                    {
-                      "id": "drink",
-                      "title": "Drink"
-                    },
-                    {
-                      "id": "eat",
-                      "title": "Eat"
-                    },
-                    {
-                      "id": "none",
-                      "title": "None"
-                    },
-                    {
-                      "id": "spear",
-                      "title": "Spear"
-                    },
-                    {
-                      "id": "spyglass",
-                      "title": "Spyglass"
-                    }
-                  ],
+                  "dataType": "object",
                   "defaultValue": "none"
                 }
               ]
@@ -599,6 +468,7 @@
         "dataType": "object",
         "subFormId": "item/minecraft_wearable"
       }
-    ]
+    ],
+    "dataVersion": "1.20.50"
   }
 }

@@ -132,7 +132,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "destination_container_types",
@@ -171,12 +172,14 @@
               "dataType": "string",
               "defaultValue": ""
             }
-          ]
+          ],
+          "dataVersion": "1.20.50"
         },
         "alternates": [
           {
             "id": "destination_container_types",
-            "dataType": "string"
+            "dataType": "string",
+            "minLength": 1
           },
           {
             "id": "destination_container_types",
@@ -261,6 +264,7 @@
             "title": "With matching or empty"
           }
         ],
+        "mustMatchChoices": true,
         "defaultValue": "any"
       },
       {
@@ -318,6 +322,7 @@
             "title": "Random"
           }
         ],
+        "mustMatchChoices": true,
         "defaultValue": "random"
       },
       {
@@ -357,12 +362,14 @@
               "dataType": "string",
               "defaultValue": ""
             }
-          ]
+          ],
+          "dataVersion": "1.20.50"
         },
         "alternates": [
           {
             "id": "source_container_types",
-            "dataType": "string"
+            "dataType": "string",
+            "minLength": 1
           },
           {
             "id": "source_container_types",
@@ -371,6 +378,7 @@
         ]
       }
     ],
+    "dataVersion": "1.21.100",
     "samples": {}
   }
 }

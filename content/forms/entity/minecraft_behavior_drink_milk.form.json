@@ -64,7 +64,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "cooldown_seconds",
@@ -122,7 +123,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -138,6 +140,7 @@
         "defaultValue": 0
       }
     ],
+    "dataVersion": "1.21.120",
     "samples": {}
   }
 }

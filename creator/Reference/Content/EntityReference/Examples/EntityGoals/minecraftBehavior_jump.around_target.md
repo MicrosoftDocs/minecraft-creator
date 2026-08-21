@@ -31,7 +31,7 @@ Allows an entity to jump around a target.
 | jump_angles | [40, 55, 60, 75, 80] | Array of numbers | The jump angles in float degrees that are allowed when performing the jump. The order in which the angles are chosen is randomized. | Breeze: `[40,55,60,75,80]` | 
 | jump_cooldown_duration | 0.5 | Decimal number | The time in seconds to spend in cooldown before this goal can be used again. | Breeze: `0.5` | 
 | jump_cooldown_when_hurt_duration | 0.10000000149011612 | Decimal number | The time in seconds to spend in cooldown after being hurt before this goal can be used again. | Breeze: `0.1` | 
-| landing_distance_from_target | {"max":8,"min":4} | [Landing Distance From Target](#item-floatrange) item | The range deciding how close to and how far away from the target the landing position can be when jumping. | Breeze: `[4,8]` | 
+| landing_distance_from_target | {"max":8,"min":4} | [Landing Distance From Target](#legacy-floatrange) item | The range deciding how close to and how far away from the target the landing position can be when jumping. | Breeze: `{"min":4,"max":8}` | 
 | landing_position_spread_degrees | 90 | Integer number | This angle (in degrees) is used for controlling the spread when picking a landing position behind the target. | Breeze: `90` | 
 | last_hurt_duration | 2 | Decimal number | If the entity was hurt within these last seconds, the jump_cooldown_when_hurt_duration will be used instead of jump_cooldown_duration. | Breeze: `2` | 
 | line_of_sight_obstruction_height_ignore | 4 | Integer number | If the entity's line of sight towards its target is obstructed by an obstacle with a height below this number, the obstacle will be ignored, and the goal will try to find a valid landing position. | Breeze: `4` | 
@@ -40,7 +40,7 @@ Allows an entity to jump around a target.
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Breeze: `5` | 
 | required_vertical_space | 4 | Integer number | The number of blocks above the entity's head that has to be air for this goal to be usable. | Breeze: `4` | 
 | snap_to_surface_block_range | 10 | Integer number | The number of blocks above and below from the jump target position that will be checked to find a surface to land on. | Breeze: `10` | 
-| valid_distance_to_target | {"max":20,"min":4} | [Valid Distance To Target](#item-floatrange) item | Target needs to be within this range for the jump to happen. | Breeze: `[4,20]` | 
+| valid_distance_to_target | {"max":20,"min":4} | [Valid Distance To Target](#legacy-floatrange) item | Target needs to be within this range for the jump to happen. | Breeze: `{"min":4,"max":20}` | 
 
 ### entity_bounding_box_scale
 
@@ -73,11 +73,9 @@ This angle (in degrees) is used for controlling the spread when picking a landin
 | test | *not set* | String | The name of the test to apply. | 
 | value | *not set* | Object | The value being compared with the test. | 
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `landing_distance_from_target`
 
@@ -130,19 +128,19 @@ Specifies a numeric range between minimum and maximum values for randomized item
     80
   ],
   "jump_cooldown_when_hurt_duration": 0.1,
-  "landing_distance_from_target": [
-    4,
-    8
-  ],
+  "landing_distance_from_target": {
+    "min": 4,
+    "max": 8
+  },
   "last_hurt_duration": 2,
   "line_of_sight_obstruction_height_ignore": 4,
   "max_jump_velocity": 1.4,
   "prepare_jump_duration": 0.5,
   "priority": 5,
   "snap_to_surface_block_range": 10,
-  "valid_distance_to_target": [
-    4,
-    20
-  ]
+  "valid_distance_to_target": {
+    "min": 4,
+    "max": 20
+  }
 }
 ```

@@ -23,13 +23,13 @@
         "id": "loot_table",
         "title": "Loot Table",
         "description": "The loot table to append",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "type",
-        "title": "BlockEntityModifierType",
-        "dataType": "string",
+        "title": "Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:append_loot",
@@ -40,8 +40,11 @@
             "title": "Minecraft:passthrough"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:append_loot",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

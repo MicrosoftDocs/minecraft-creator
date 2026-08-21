@@ -22,7 +22,7 @@
         "id": "structure",
         "title": "Structure",
         "description": "Identifier of the Jigsaw Structure.",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       },
       {
@@ -42,7 +42,8 @@
         ],
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   },
   "description": "Defines a weighted structure reference for Jigsaw Structure sets."
 }

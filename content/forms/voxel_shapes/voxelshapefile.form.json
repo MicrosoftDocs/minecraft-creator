@@ -32,7 +32,8 @@
         "subFormId": "voxel_shapes/shape",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   },
   "description": "Defines a complete voxel shape file."
 }

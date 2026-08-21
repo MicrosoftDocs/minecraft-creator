@@ -67,8 +67,9 @@
     "fields": [
       {
         "id": "protection_slot",
-        "title": "EquipmentSlot",
-        "dataType": "string",
+        "title": "Protection Slot",
+        "dataType": "stringEnum",
+        "defaultValue": "slot.armor.head",
         "choices": [
           {
             "id": "slot.armor.body",
@@ -99,9 +100,10 @@
             "title": "Slot.weapon.offhand"
           }
         ],
-        "defaultValue": "slot.armor.head"
+        "mustMatchChoices": true
       }
     ],
+    "dataVersion": "1.21.130",
     "samples": {
       "/vanilla/behavior_pack/entities/bogged.json": [
         {

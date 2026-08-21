@@ -24,9 +24,9 @@ Determines interactions the block will have with different precipitations. Three
 
 ## Block Precipitation Interactions Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| precipitation_behavior | accumulate snow | [Precipitation Behavior](#precipitation-behavior-choices) choices | What behavior should the block have. Possible values: obrain, obstruct_rain_accumulate_snow, snowlogging, and none | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| precipitation_behavior | accumulate snow | [Precipitation Behavior](#precipitation-behavior-choices) choices | What behavior should the block have. Possible values: obrain, obstruct_rain_accumulate_snow, snowlogging, and none | Block Red Shrub: `"snowlogging"`, Shelf Mushroom Block: `"none"` | 
 
 ### Precipitation Behavior choices
 
@@ -36,3 +36,23 @@ Determines interactions the block will have with different precipitations. Three
 | obstruct_rain | Obstruct rain | |
 | obstruct_rain_accumulate_snow | Obstruct rain accumulate snow | |
 | snowlogging | Snowlogging | |
+
+## Samples
+
+#### [Block Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/red_shrub.block.json)
+
+
+```json
+"minecraft:precipitation_interactions": {
+  "precipitation_behavior": "snowlogging"
+}
+```
+
+#### [Shelf Mushroom Block](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/shelf_mushroom_block.json)
+
+
+```json
+"minecraft:precipitation_interactions": {
+  "precipitation_behavior": "none"
+}
+```

@@ -22,9 +22,9 @@
     "fields": [
       {
         "id": "category",
-        "title": "CreativeItemCategory",
+        "title": "Category",
         "description": "The creative inventory or recipe book tab that the block is placed into. Default to \"none\".",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "construction",
@@ -47,6 +47,7 @@
             "title": "None"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       },
       {
@@ -54,11 +55,11 @@
         "title": "Group",
         "description": "The expandable group that the block is a part of. Must be a namespace and can use vanilla ones",
         "dataType": "string",
-        "defaultValue": "",
         "validity": [
           {
             "comparison": "pattern",
-            "value": "^\\S+$"
+            "value": "^\\S+$",
+            "patternFlags": "i"
           }
         ]
       },
@@ -69,6 +70,7 @@
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

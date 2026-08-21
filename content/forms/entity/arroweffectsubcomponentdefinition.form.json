@@ -1,0 +1,19 @@
+{
+  "id": "ArrowEffectSubcomponentDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "ArrowEffectSubcomponentDefinition",
+    "title": "Entity ArrowEffectSubcomponentDefinition",
+    "description": "Variant of `mob_effect` that derives the effects from the arrow's tipped-potion data and splits durations across the standard eight-arrow stack.",
+    "fields": [
+      {
+        "id": "apply_effect_to_blocking_targets",
+        "title": "Apply Effect To Blocking Targets",
+        "description": "If `true`, effects are still applied to targets that blocked the projectile.",
+        "dataType": "boolean",
+        "defaultValue": true
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}
