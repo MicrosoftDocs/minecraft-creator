@@ -135,7 +135,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "grow_tired_cooldown_time",
@@ -192,6 +193,7 @@
         "defaultValue": 10
       }
     ],
+    "dataVersion": "1.21.110",
     "samples": {
       "/vanilla/behavior_pack/entities/magma_cube.json": [
         {

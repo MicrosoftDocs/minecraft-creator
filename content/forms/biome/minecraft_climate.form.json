@@ -85,6 +85,7 @@
         "description": "Temperature affects a variety of visual and behavioral things, including snow and ice placement, sponge drying, and sky color",
         "dataType": "float"
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   }
 }

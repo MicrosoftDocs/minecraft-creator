@@ -9,9 +9,10 @@
         "id": "identifier",
         "title": "Identifier",
         "description": "Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates.",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

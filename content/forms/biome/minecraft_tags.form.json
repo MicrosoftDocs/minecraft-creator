@@ -35,6 +35,7 @@
         "dataType": "stringArray",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   }
 }

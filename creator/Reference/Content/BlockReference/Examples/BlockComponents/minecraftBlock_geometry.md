@@ -31,15 +31,15 @@ This item can also be represented as a `String`.
 
 ## Geometry Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| bone_visibility | *not set* | Keyed collection of boolean values | An optional list of true/false values that define the visibility of individual bones in the geometry file. | 
-| culling | *not set* | String | An optional identifer of a culling definition. | 
-| culling_layer | minecraft:culling_layer.undefined | String | [Experimental] - A string that allows culling rule to group multiple blocks together when comparing them. | 
-| culling_shape | minecraft:empty | String | The voxel shape used for culling adjacent block faces. | 
-| identifier | *not set* | String | Specifies the geometry description identifier to use to render this block. | 
-| n_way_visual_rotation | *not set* | String | The name of a block state that drives visual-only rotation of this block. | 
-| uv_lock | *not set* | String | A Boolean locking UV orientation of all bones in the geometry, or an array of strings locking UV orientation of specific bones in the geometry. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| bone_visibility | *not set* | Keyed collection of boolean values | An optional list of true/false values that define the visibility of individual bones in the geometry file. |  | 
+| culling | *not set* | String | An optional identifer of a culling definition. |  | 
+| culling_layer | minecraft:culling_layer.undefined | String | [Experimental] - A string that allows culling rule to group multiple blocks together when comparing them. |  | 
+| culling_shape | minecraft:empty | String | The voxel shape used for culling adjacent block faces. |  | 
+| identifier | *not set* | String | Specifies the geometry description identifier to use to render this block. | Block Red Shrub: `"minecraft:geometry.cross"` | 
+| n_way_visual_rotation | *not set* | String | The name of a block state that drives visual-only rotation of this block. |  | 
+| uv_lock | *not set* | String | A Boolean locking UV orientation of all bones in the geometry, or an array of strings locking UV orientation of specific bones in the geometry. |  | 
 
 ### bone_visibility
 
@@ -135,4 +135,13 @@ A Boolean locking UV orientation of all bones in the geometry, or an array of st
 
 ```json
 "minecraft:geometry": "geometry.sushi"
+```
+
+#### [Block Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/red_shrub.block.json)
+
+
+```json
+"minecraft:geometry": {
+  "identifier": "minecraft:geometry.cross"
+}
 ```

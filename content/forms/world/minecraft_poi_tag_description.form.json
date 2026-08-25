@@ -1,0 +1,23 @@
+{
+  "id": "minecraft:poi_tag_description",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:poi_tag_description",
+    "title": "World Poi Tag Description",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "dataType": "string",
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^\\w+:\\w+$"
+          }
+        ],
+        "isRequired": true
+      }
+    ],
+    "dataVersion": "1.26.40"
+  }
+}

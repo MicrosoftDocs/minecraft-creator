@@ -17,7 +17,7 @@ Makes grass use the noise based colors for tinting in this biome on the map.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| type | *not set* | [Type](#type-choices) choices | Controls the type of grass tint to use. | 
+| type | noise | [Type](#type-choices) choices | Controls the type of grass tint to use. | 
 
 ### Type choices
 

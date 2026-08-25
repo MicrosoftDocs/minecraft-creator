@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Adds a timer since last rested to see if phantoms should spawn.
 
 
-## Insomnia Properties
+## Entity Insomnia Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

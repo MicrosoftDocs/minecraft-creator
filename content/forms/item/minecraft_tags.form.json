@@ -34,10 +34,19 @@
                 "minecraft:is_food"
               ]
             }
+          ],
+          "/vanilla/behavior_pack/items/shelf_mushroom.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:tags/",
+              "content": [
+                "minecraft:mushrooms_for_stew"
+              ]
+            }
           ]
         }
       }
     ],
+    "dataVersion": "1.20.50",
     "samples": {
       "/vanilla/behavior_pack/items/apple.json": [
         {
@@ -45,6 +54,16 @@
           "content": {
             "tags": [
               "minecraft:is_food"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/shelf_mushroom.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:tags/",
+          "content": {
+            "tags": [
+              "minecraft:mushrooms_for_stew"
             ]
           }
         }

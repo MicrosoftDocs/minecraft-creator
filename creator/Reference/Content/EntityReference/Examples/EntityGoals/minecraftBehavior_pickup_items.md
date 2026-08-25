@@ -21,7 +21,7 @@ Allows the mob to pick up items on the ground.
 | can_pickup_to_hand_or_equipment | true | Boolean true/false | If true, the mob can pick up items to its hand or armor slots |  | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | cooldown_after_being_attacked | 0 | Integer number | Time in seconds the mob cannot pickup items after being attacked |  | 
-| excluded_items | [] | String | List of items this mob will not pick up | Bogged: `[{"tags":"q.all_tags('minecraft:is_spear')"}]`, Drowned: `["minecraft:glow_ink_sac",{"tags":"q.all_tags('minecraft:is_spear')"}]` | 
+| excluded_items | [] | String | List of items this mob will not pick up | Bogged: `[{"tags":"q.all_tags('minecraft:is_spear')"}]`, Drowned: `[{"name":"minecraft:glow_ink_sac"},{"tags":"q.all_tags('minecraft:is_spear')"}]` | 
 | excluded_items (as Keyed set of strings) | *not set* | Keyed set of strings |  |  | 
 | goal_radius | 0.5 | Decimal number | Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot | Allay: `2.2`, Bogged: `2` | 
 | max_dist | 1 | Integer number | Maximum distance this mob will look for items to pick up | Allay: `32`, Bogged: `3` | 
@@ -137,7 +137,9 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 "minecraft:behavior.pickup_items": {
   "can_pickup_any_item": true,
   "excluded_items": [
-    "minecraft:glow_ink_sac",
+    {
+      "name": "minecraft:glow_ink_sac"
+    },
     {
       "tags": "q.all_tags('minecraft:is_spear')"
     }

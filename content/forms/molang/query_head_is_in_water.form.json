@@ -1,0 +1,10 @@
+{
+  "id": "query.head_is_in_water",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.head_is_in_water",
+    "title": "Head Is In Water",
+    "description": "Returns 1.0 if the entity's head is in water, else it returns 0.0.",
+    "fields": []
+  }
+}

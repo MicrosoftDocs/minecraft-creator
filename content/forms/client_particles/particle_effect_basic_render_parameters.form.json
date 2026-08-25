@@ -36,15 +36,16 @@
       {
         "id": "material",
         "title": "Material",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "texture",
         "title": "Texture",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   }
 }

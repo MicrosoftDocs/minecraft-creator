@@ -66,7 +66,9 @@
       "/vanilla/behavior_pack/entities/chicken.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:leashable_to/",
-          "content": {}
+          "content": {
+            "unleash_on_removal": false
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/cow.json": [

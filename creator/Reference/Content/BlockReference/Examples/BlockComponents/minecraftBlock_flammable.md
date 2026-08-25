@@ -19,11 +19,11 @@ This item can also be represented as a `Boolean true/false`.
 
 ## Flammable Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| catch_chance_modifier | 5 | Integer number | A modifier affecting the chance that this block will catch flame when next to a fire. | 
-| destroy_chance_modifier | 20 | Integer number | A modifier affecting the chance that this block will be destroyed by flames when on fire. | 
-| lava_flammable | false | Boolean true/false | Whether the block can be ignited by adjacent lava. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| catch_chance_modifier | 5 | Integer number | A modifier affecting the chance that this block will catch flame when next to a fire. | Block Black Wool Double Slab: `30` | 
+| destroy_chance_modifier | 20 | Integer number | A modifier affecting the chance that this block will be destroyed by flames when on fire. | Block Black Wool Double Slab: `60` | 
+| lava_flammable | false | Boolean true/false | Whether the block can be ignited by adjacent lava. | Block Black Wool Double Slab: `"always"` | 
 
 ### catch_chance_modifier
 
@@ -57,5 +57,16 @@ Whether the block can be ignited by adjacent lava. Defaults to false for backwar
 "minecraft:flammable": {
   "destroy_chance_modifier": 100,
   "catch_chance_modifier": 100
+}
+```
+
+#### [Block Black Wool Double Slab](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_wool_double_slab.block.json)
+
+
+```json
+"minecraft:flammable": {
+  "catch_chance_modifier": 30,
+  "destroy_chance_modifier": 60,
+  "lava_flammable": "always"
 }
 ```

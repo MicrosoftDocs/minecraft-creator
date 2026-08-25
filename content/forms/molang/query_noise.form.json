@@ -18,7 +18,7 @@
   "generated_doNotEdit": {
     "id": "query.noise",
     "title": "Noise",
-    "description": "Queries Perlin Noise Map",
+    "description": "Returns a Perlin simplex noise value for the given (x, z) position.",
     "fields": []
   }
 }

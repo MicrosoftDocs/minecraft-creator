@@ -175,6 +175,7 @@
             {
               "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
               "content": [
+                "minecraft:sand",
                 "minecraft:water"
               ]
             }
@@ -192,7 +193,8 @@
             {
               "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
               "content": [
-                "Air"
+                "air",
+                "air"
               ]
             }
           ]
@@ -241,10 +243,12 @@
             "use_default_animation": false,
             "speed_multiplier": 1,
             "target_blocks": [
+              "minecraft:sand",
               "minecraft:water"
             ],
             "target_materials_above_block": [
-              "Air"
+              "air",
+              "air"
             ]
           }
         }
@@ -289,7 +293,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "egg_type",
@@ -329,9 +334,10 @@
       },
       {
         "id": "lay_egg_sound",
-        "title": "LevelSoundEvent",
+        "title": "Lay Egg Sound",
         "description": "Name of the sound event played when laying the egg. Defaults to lay_egg, which is used for Turtles.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "lay_egg",
         "choices": [
           {
             "id": "absorb_block",
@@ -1158,6 +1164,10 @@
             "title": "Disappeared"
           },
           {
+            "id": "dismount",
+            "title": "Dismount"
+          },
+          {
             "id": "door.close",
             "title": "Door.close"
           },
@@ -1958,6 +1968,10 @@
             "title": "Mob.warning.baby"
           },
           {
+            "id": "mount",
+            "title": "Mount"
+          },
+          {
             "id": "multi_swap",
             "title": "Multi swap"
           },
@@ -2426,6 +2440,10 @@
             "title": "Step sand"
           },
           {
+            "id": "straw_bed.break_leave",
+            "title": "Straw bed.break leave"
+          },
+          {
             "id": "stun",
             "title": "Stun"
           },
@@ -2602,7 +2620,7 @@
             "title": "Wind charge.burst"
           }
         ],
-        "defaultValue": "lay_egg",
+        "mustMatchChoices": true,
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
@@ -2743,6 +2761,7 @@
             {
               "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
               "content": [
+                "minecraft:sand",
                 "minecraft:water"
               ]
             }
@@ -2762,7 +2781,8 @@
             {
               "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
               "content": [
-                "Air"
+                "air",
+                "air"
               ]
             }
           ]
@@ -2776,6 +2796,7 @@
         "defaultValue": true
       }
     ],
+    "dataVersion": "1.26.10",
     "samples": {
       "/vanilla/behavior_pack/entities/frog.json": [
         {
@@ -2796,10 +2817,12 @@
             "use_default_animation": false,
             "speed_multiplier": 1,
             "target_blocks": [
+              "minecraft:sand",
               "minecraft:water"
             ],
             "target_materials_above_block": [
-              "Air"
+              "air",
+              "air"
             ]
           }
         }

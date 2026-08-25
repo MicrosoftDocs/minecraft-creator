@@ -103,7 +103,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "cooldown_time",
@@ -166,6 +167,7 @@
         "defaultValue": 10
       }
     ],
+    "dataVersion": "1.21.100",
     "samples": {
       "/vanilla/behavior_pack/entities/ender_dragon.json": [
         {

@@ -19,7 +19,7 @@ Allows an entity to attack using swoop attack behavior; Ideal for use with flyin
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
 | damage_reach | 0.20000000298023224 | Decimal number | Added to the base size of the entity, to determine the target's maximum allowable distance, when trying to deal attack damage. |  | 
-| delay_range | {"max":20,"min":10} | [Delay Range](#item-floatrange) item | Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack. |  | 
+| delay_range | {"max":20,"min":10} | [Delay Range](#legacy-floatrange) item | Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack. |  | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Phantom: `2` | 
 | speed_multiplier | 1 | Decimal number | During swoop attack behavior, this determines the multiplier the entity's speed is modified by when moving toward the target. |  | 
 
@@ -31,11 +31,9 @@ Allows an entity to attack using swoop attack behavior; Ideal for use with flyin
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `delay_range`
 

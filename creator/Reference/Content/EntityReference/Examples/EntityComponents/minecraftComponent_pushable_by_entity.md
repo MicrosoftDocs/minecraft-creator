@@ -84,6 +84,13 @@ Defines the type of push vector calculation applied to the entity: - "none": The
 
 ## Samples
 
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
+
+
+```json
+"minecraft:pushable_by_entity": {}
+```
+
 #### [Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/boat.json)
 
 
@@ -118,30 +125,6 @@ Defines the type of push vector calculation applied to the entity: - "none": The
       "push_mode": "legacy_boat",
       "strength_multiplier": 0.1,
       "min_distance": 0.55,
-      "push_scale_self": 0.5,
-      "push_scale_other": 0.25
-    }
-  ]
-}
-```
-
-#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
-
-
-```json
-"minecraft:pushable_by_entity": {}
-```
-
-#### [Chest Minecart](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chest_minecart.json)
-
-
-```json
-"minecraft:pushable_by_entity": {
-  "presets": [
-    {
-      "push_mode": "legacy_minecart",
-      "strength_multiplier": 0.1,
-      "min_distance": 0.01,
       "push_scale_self": 0.5,
       "push_scale_other": 0.25
     }

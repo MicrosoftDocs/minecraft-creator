@@ -20,7 +20,7 @@ Allows the mob to float around like the Ghast.
 | additional_collision_buffer | false | Boolean true/false | If true, the mob will have an additional buffer zone around it to avoid collisions with blocks when picking a position to wander to. |  | 
 | allow_navigating_through_liquids | false | Boolean true/false | If true allows the mob to navigate through liquids on its way to the target position. |  | 
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| float_duration (Item FloatRange) | {"max":0,"min":0} | [Float Duration](#item-floatrange) item | Range of time in seconds the mob will float around before landing and choosing to do something else | Bat: `[0.1,0.35]` | 
+| float_duration (Legacy FloatRange) | {"max":0,"min":0} | [Float Duration](#legacy-floatrange) item | Range of time in seconds the mob will float around before landing and choosing to do something else | Bat: `[0.1,0.35]` | 
 | float_duration (as Decimal number) | *not set* | Decimal number |  |  | 
 | float_wander_has_move_control | true | Boolean true/false | If true, the MoveControl flag will be added to the behavior which means that it can no longer be active at the same time as other behaviors with MoveControl. |  | 
 | must_reach | false | Boolean true/false | If true, the point has to be reachable to be a valid target |  | 
@@ -42,11 +42,9 @@ Allows the mob to float around like the Ghast.
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `float_duration`
 

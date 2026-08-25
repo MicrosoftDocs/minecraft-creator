@@ -133,7 +133,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "on_admire_item_start",
@@ -192,9 +193,10 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item/floatrange"
+        "subFormId": "legacy/floatrange"
       }
     ],
+    "dataVersion": "1.26.20",
     "samples": {}
   }
 }

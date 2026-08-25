@@ -35,9 +35,10 @@
       },
       {
         "id": "particle_type",
-        "title": "ParticleType",
+        "title": "Particle Type",
         "description": "Particle effect to emit when the threshold is met.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "none",
         "choices": [
           {
             "id": "balloongas",
@@ -428,13 +429,14 @@
             "title": "Yellowpoplarleaves"
           }
         ],
-        "defaultValue": "none"
+        "mustMatchChoices": true
       },
       {
         "id": "sound_event",
-        "title": "LevelSoundEvent",
+        "title": "Sound Event",
         "description": "Sound effect to emit when the threshold is met.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "undefined",
         "choices": [
           {
             "id": "absorb_block",
@@ -1261,6 +1263,10 @@
             "title": "Disappeared"
           },
           {
+            "id": "dismount",
+            "title": "Dismount"
+          },
+          {
             "id": "door.close",
             "title": "Door.close"
           },
@@ -2061,6 +2067,10 @@
             "title": "Mob.warning.baby"
           },
           {
+            "id": "mount",
+            "title": "Mount"
+          },
+          {
             "id": "multi_swap",
             "title": "Multi swap"
           },
@@ -2529,6 +2539,10 @@
             "title": "Step sand"
           },
           {
+            "id": "straw_bed.break_leave",
+            "title": "Straw bed.break leave"
+          },
+          {
             "id": "stun",
             "title": "Stun"
           },
@@ -2705,8 +2719,9 @@
             "title": "Wind charge.burst"
           }
         ],
-        "defaultValue": "undefined"
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

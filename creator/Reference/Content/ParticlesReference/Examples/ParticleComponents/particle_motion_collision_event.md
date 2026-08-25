@@ -17,5 +17,5 @@ Defines the event triggered when a particle collides with a block or surface. Re
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| event | *not set* | Object |  | 
+| event | *not set* | String |  | 
 | min_speed | 2 | Decimal number |  | 

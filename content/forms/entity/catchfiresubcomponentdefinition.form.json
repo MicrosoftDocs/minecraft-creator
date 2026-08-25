@@ -1,0 +1,26 @@
+{
+  "id": "CatchFireSubcomponentDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "CatchFireSubcomponentDefinition",
+    "title": "Entity CatchFireSubcomponentDefinition",
+    "description": "Causes the projectile to embed itself in the block it hits.",
+    "fields": [
+      {
+        "id": "fire_affected_by_griefing",
+        "title": "Fire Affected By Griefing",
+        "description": "If `true`, the block-ignition behavior is suppressed when the shooter is a mob and the `mobGriefing` game rule is off.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "on_fire_time",
+        "title": "Fire Time",
+        "description": "Duration in seconds for which entity remains on fire",
+        "dataType": "float",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

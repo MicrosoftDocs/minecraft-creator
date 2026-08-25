@@ -54,7 +54,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -121,9 +122,10 @@
       },
       {
         "id": "push_mode",
-        "title": "PushMode",
+        "title": "Push Mode",
         "description": "Defines the type of push vector calculation applied to the entity:\n- \"none\": The entity cannot be pushed.\n- \"default\": Standard push calculations used by most entities.\n- \"legacy_boat\": Legacy push calculations historically used by boats. Includes dampened forces and sneak-based cancellation.\n- \"legacy_minecart\": Legacy push calculations historically used by minecarts. Includes alignment-based collision handling and velocity averaging.- \"ball\": Push calculation resulting in a behavior similar to kicking a ball. The entity is propelled in the direction of the pusher’s movement, with force scaled by their speed.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "default",
         "choices": [
           {
             "id": "ball",
@@ -146,7 +148,7 @@
             "title": "None"
           }
         ],
-        "defaultValue": "default"
+        "mustMatchChoices": true
       },
       {
         "id": "push_scale_other",
@@ -183,6 +185,7 @@
         "dataType": "float",
         "defaultValue": 0.30000001192092896
       }
-    ]
+    ],
+    "dataVersion": "1.26.40"
   }
 }

@@ -28,6 +28,7 @@
         "subFormId": "biome/biome_replacement",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.0"
   }
 }

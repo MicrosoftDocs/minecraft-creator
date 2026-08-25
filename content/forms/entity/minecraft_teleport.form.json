@@ -47,6 +47,12 @@
         "dataType": "float"
       },
       {
+        "id": "projectile_filter",
+        "title": "Projectile Filter",
+        "description": "Conditions that determine which projectiles cause the entity to attempt to teleport. If omitted, all projectiles cause a teleport attempt",
+        "dataType": "minecraftFilter"
+      },
+      {
         "id": "random_teleport_cube",
         "title": "Random Teleport Cube",
         "description": "Entity will teleport to a random position within the area defined by this cube",
@@ -77,6 +83,13 @@
         "description": "The chance that the entity will teleport between 0.0 and 1.0. 1.0 means 100%",
         "defaultValue": 1,
         "dataType": "float"
+      },
+      {
+        "id": "teleports_on_projectile_hit",
+        "title": "Teleports On Projectile Hit",
+        "description": "If true, the entity will attempt to teleport away from projectiles about to hit it",
+        "defaultValue": false,
+        "dataType": "boolean"
       }
     ],
     "samples": {}

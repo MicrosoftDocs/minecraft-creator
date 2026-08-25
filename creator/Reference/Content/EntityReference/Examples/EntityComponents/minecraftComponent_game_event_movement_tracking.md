@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Allows an entity to emit `entityMove`, `swim` and `flap` game events, depending on the block the entity is moving through. It is added by default to every mob. Add it again to override its behavior.
 
 
-## Game Event Movement Tracking Properties
+## Entity Game Event Movement Tracking Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

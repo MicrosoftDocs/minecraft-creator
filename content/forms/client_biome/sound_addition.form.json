@@ -22,7 +22,8 @@
         "id": "asset",
         "title": "Asset",
         "description": "Name of the sound asset to play",
-        "dataType": "object",
+        "dataType": "string",
+        "minLength": 1,
         "isRequired": true
       },
       {
@@ -38,7 +39,8 @@
         ],
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.120"
   },
   "description": "Defines an occasional ambient sound effect."
 }

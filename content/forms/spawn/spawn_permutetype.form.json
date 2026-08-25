@@ -41,7 +41,7 @@
         "id": "entity_type",
         "title": "Entity Type",
         "description": "Permutation to spawn when selected",
-        "dataType": "object",
+        "dataType": "string",
         "defaultValue": ""
       },
       {
@@ -58,7 +58,8 @@
         "dataType": "int",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.50"
   },
   "description": "Weighted spawn permutation that selects which entity variant to spawn. Each permutation has an entity identifier and weight—the game randomly chooses between permutations based on relative weights when the spawn rule activates. Creates natural mob variety in spawn distributions."
 }

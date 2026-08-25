@@ -36,6 +36,7 @@
         "subFormId": "item/minecraft_durability_sensor_durability_threshold",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

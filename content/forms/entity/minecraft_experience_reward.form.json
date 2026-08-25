@@ -183,7 +183,7 @@
           {
             "id": "on_bred",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "on_bred",
@@ -215,7 +215,7 @@
           {
             "id": "on_death",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "on_death",
@@ -256,6 +256,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.0",
     "samples": {
       "/vanilla/behavior_pack/entities/blaze.json": [
         {

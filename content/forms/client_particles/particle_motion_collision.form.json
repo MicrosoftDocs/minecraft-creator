@@ -68,7 +68,7 @@
           {
             "id": "enabled",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "enabled",
@@ -91,7 +91,7 @@
                 {
                   "id": "event",
                   "title": "Event",
-                  "dataType": "object",
+                  "dataType": "string",
                   "isRequired": true
                 },
                 {
@@ -100,7 +100,8 @@
                   "dataType": "float",
                   "defaultValue": 2
                 }
-              ]
+              ],
+              "dataVersion": "1.21.10"
             }
           }
         ]
@@ -111,7 +112,8 @@
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Enables particle collision with world geometry. Configure collision radius, bounce coefficient (how much velocity is retained), friction to slow sliding, and whether to expire on impact. Essential for physical particles like rain hitting ground, debris bouncing off surfaces, or arrows embedding in blocks."
 }

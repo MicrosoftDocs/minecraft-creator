@@ -106,7 +106,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -117,8 +118,9 @@
       },
       {
         "id": "target",
-        "title": "FilterSubject",
-        "dataType": "string",
+        "title": "Target",
+        "dataType": "stringEnum",
+        "defaultValue": "self",
         "choices": [
           {
             "id": "baby",
@@ -161,8 +163,9 @@
             "title": "Target"
           }
         ],
-        "defaultValue": "self"
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.40"
   }
 }

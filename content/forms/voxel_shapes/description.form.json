@@ -21,10 +21,12 @@
       {
         "id": "identifier",
         "title": "Identifier",
-        "dataType": "object",
+        "dataType": "string",
+        "maxLength": 256,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   },
   "description": "Defines voxel shape identifier."
 }

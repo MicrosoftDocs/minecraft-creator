@@ -148,7 +148,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "goal_radius",
@@ -271,6 +272,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.10",
     "samples": {
       "/vanilla/behavior_pack/entities/drowned.json": [
         {

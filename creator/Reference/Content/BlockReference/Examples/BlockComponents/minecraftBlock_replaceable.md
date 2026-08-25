@@ -15,3 +15,13 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
 
 > [!Note]
 > This item requires a format version of at least 1.21.70.
+
+
+## Samples
+
+#### [Block Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/red_shrub.block.json)
+
+
+```json
+"minecraft:replaceable": {}
+```

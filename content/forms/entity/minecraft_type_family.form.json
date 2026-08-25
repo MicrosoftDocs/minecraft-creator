@@ -106,6 +106,15 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/arrow.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "projectile",
+                "arrow"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/bat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -122,15 +131,6 @@
                 "blaze",
                 "monster",
                 "mob"
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/boat.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:type_family/",
-              "content": [
-                "boat",
-                "inanimate"
               ]
             }
           ]
@@ -161,6 +161,17 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/arrow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "projectile",
+              "arrow"
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/bat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -180,17 +191,6 @@
               "blaze",
               "monster",
               "mob"
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/boat.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:type_family/",
-          "content": {
-            "family": [
-              "boat",
-              "inanimate"
             ]
           }
         }

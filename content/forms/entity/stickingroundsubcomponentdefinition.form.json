@@ -1,0 +1,19 @@
+{
+  "id": "StickInGroundSubcomponentDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "StickInGroundSubcomponentDefinition",
+    "title": "Entity StickInGroundSubcomponentDefinition",
+    "description": "Causes the projectile to embed itself in the block it hits.",
+    "fields": [
+      {
+        "id": "shake_time",
+        "title": "Shake Time",
+        "description": "Duration in seconds for which the projectile visually shakes after sticking.",
+        "dataType": "float",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

@@ -28,7 +28,7 @@ Similar to overworld_surface. Adds icebergs.
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
+| type | minecraft:frozen_ocean | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ### Foundation Material (Foundation Material)
 

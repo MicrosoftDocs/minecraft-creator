@@ -7,9 +7,9 @@
     "fields": [
       {
         "id": "element_type",
-        "title": "ElementType",
+        "title": "Element Type",
         "description": "The type of element.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:empty_pool_element",
@@ -24,15 +24,18 @@
             "title": "Minecraft:single pool element"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:feature_pool_element",
         "isRequired": true
       },
       {
         "id": "feature",
         "title": "Feature",
         "description": "The identifier of the feature to place.",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

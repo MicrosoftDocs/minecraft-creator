@@ -148,6 +148,7 @@
         "defaultValue": 0.41999998688697815
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {
       "/vanilla/behavior_pack/entities/allay.json": [
         {

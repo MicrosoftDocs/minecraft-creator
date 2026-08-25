@@ -45,7 +45,8 @@
         "dataType": "object",
         "subFormId": "world/scatter_params"
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   },
   "description": "Defines a feature rule with conditions, description, and distribution parameters."
 }

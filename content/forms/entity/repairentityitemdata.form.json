@@ -1,0 +1,30 @@
+{
+  "id": "RepairEntityItemData",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "RepairEntityItemData",
+    "title": "Entity RepairEntityItemData",
+    "fields": [
+      {
+        "id": "amount",
+        "title": "Amount",
+        "description": "How much of the item durability should be restored upon interaction.",
+        "dataType": "int",
+        "defaultValue": 1,
+        "validity": [
+          {
+            "comparison": ">",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "slot",
+        "title": "Slot",
+        "description": "The entity's slot containing the item to be repaired. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.",
+        "dataType": "string"
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

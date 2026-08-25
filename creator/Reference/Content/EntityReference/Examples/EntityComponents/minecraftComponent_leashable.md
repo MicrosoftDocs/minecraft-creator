@@ -94,3 +94,12 @@ Defines the type of spring-like force that pulls the entity towards its leash ho
   ]
 }
 ```
+
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
+
+
+```json
+"minecraft:leashable": {
+  "unleash_on_removal": false
+}
+```

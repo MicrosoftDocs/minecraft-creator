@@ -17,4 +17,4 @@ Defines voxel shape identifier.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| identifier | *not set* | Object |  | 
+| identifier | *not set* | String |  | 

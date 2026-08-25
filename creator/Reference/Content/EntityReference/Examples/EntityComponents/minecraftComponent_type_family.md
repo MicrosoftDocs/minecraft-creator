@@ -17,7 +17,7 @@ Defines the family categories this entity belongs to. Type families are used by 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| family | *not set* | [Family](#family-choices) choices | A set of tags that describe the categories of this entity. | Allay: `["allay","mob"]`, Armor Stand: `["armor_stand","inanimate","mob"]`, Bat: `["bat","mob"]` | 
+| family | *not set* | [Family](#family-choices) choices | A set of tags that describe the categories of this entity. | Allay: `["allay","mob"]`, Armor Stand: `["armor_stand","inanimate","mob"]`, Arrow: `["projectile","arrow"]` | 
 
 ### family
 
@@ -67,6 +67,18 @@ A set of tags that describe the categories of this entity. In addition to typica
 }
 ```
 
+#### [Arrow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/arrow.json)
+
+
+```json
+"minecraft:type_family": {
+  "family": [
+    "projectile",
+    "arrow"
+  ]
+}
+```
+
 #### [Bat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bat.json)
 
 
@@ -88,18 +100,6 @@ A set of tags that describe the categories of this entity. In addition to typica
     "blaze",
     "monster",
     "mob"
-  ]
-}
-```
-
-#### [Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/boat.json)
-
-
-```json
-"minecraft:type_family": {
-  "family": [
-    "boat",
-    "inanimate"
   ]
 }
 ```

@@ -22,15 +22,18 @@
         "id": "name",
         "title": "Name",
         "dataType": "string",
+        "minLength": 1,
         "isRequired": true
       },
       {
         "id": "text",
         "title": "Text",
         "dataType": "string",
+        "minLength": 1,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "3.0.0"
   },
   "description": "A single option within a dropdown setting. Contains a unique identifier used by scripts and localized display text shown to players. Options are presented in the order defined."
 }

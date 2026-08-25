@@ -305,7 +305,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "duration",
@@ -404,6 +405,7 @@
         }
       }
     ],
+    "dataVersion": "1.21.110",
     "samples": {
       "/vanilla/behavior_pack/entities/warden.json": [
         {

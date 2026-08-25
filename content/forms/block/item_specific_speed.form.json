@@ -38,7 +38,8 @@
         ],
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   },
   "description": "Defines mining speed bonuses for specific tool items when breaking this block. Map item identifiers to speed multipliers so diamond pickaxes mine faster than stone, or custom tools have specialized efficiency. Enables proper tool tier progression and specialized harvesting tools."
 }

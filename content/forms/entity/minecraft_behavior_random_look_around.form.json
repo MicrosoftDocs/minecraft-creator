@@ -166,7 +166,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "look_time",
@@ -177,7 +178,7 @@
           "max": 40,
           "min": 20
         },
-        "subFormId": "item/intrange"
+        "subFormId": "block/intrange"
       },
       {
         "id": "max_angle_of_view_horizontal",
@@ -233,6 +234,7 @@
         "defaultValue": 0.019999999552965164
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {
       "/vanilla/behavior_pack/entities/allay.json": [
         {

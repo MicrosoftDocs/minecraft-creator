@@ -1,0 +1,56 @@
+{
+  "id": "MobEffectInstance",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "MobEffectInstance",
+    "title": "Entity MobEffectInstance",
+    "fields": [
+      {
+        "id": "amplifier",
+        "title": "Amplifier",
+        "dataType": "int",
+        "defaultValue": 1
+      },
+      {
+        "id": "durationeasy",
+        "title": "Durationeasy",
+        "dataType": "int",
+        "alternates": [
+          {
+            "id": "durationeasy",
+            "dataType": "string"
+          }
+        ]
+      },
+      {
+        "id": "durationhard",
+        "title": "Durationhard",
+        "dataType": "int",
+        "alternates": [
+          {
+            "id": "durationhard",
+            "dataType": "string"
+          }
+        ]
+      },
+      {
+        "id": "durationnormal",
+        "title": "Durationnormal",
+        "dataType": "int",
+        "alternates": [
+          {
+            "id": "durationnormal",
+            "dataType": "string"
+          }
+        ]
+      },
+      {
+        "id": "effect",
+        "title": "Effect",
+        "dataType": "string",
+        "defaultValue": ""
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

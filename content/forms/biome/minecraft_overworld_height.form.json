@@ -59,7 +59,7 @@
         "id": "noise_type",
         "title": "Noise Type",
         "description": "Specifies a preset based on a built-in setting rather than manually using noise_params",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "beach",
@@ -121,8 +121,10 @@
             "id": "taiga",
             "title": "Taiga"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   }
 }

@@ -1,0 +1,24 @@
+{
+  "id": "MountTamingComponentRejectItem",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "MountTamingComponentRejectItem",
+    "title": "Entity MountTamingComponentRejectItem",
+    "fields": [
+      {
+        "id": "item",
+        "title": "Item",
+        "description": "Name of the item this entity dislikes and will cause it to get angry if used while untamed.",
+        "dataType": "string",
+        "defaultValue": {},
+        "alternates": [
+          {
+            "id": "item",
+            "dataType": "keyedStringCollection"
+          }
+        ]
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

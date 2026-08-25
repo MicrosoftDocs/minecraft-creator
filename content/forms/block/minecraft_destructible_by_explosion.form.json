@@ -205,7 +205,33 @@
         "title": "Explosion Resistance",
         "description": "Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance.",
         "defaultValue": 0,
-        "dataType": "float"
+        "dataType": "float",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+              "content": 1.8
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+              "content": 1.8
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_wool_double_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+              "content": 0.8
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_wool_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+              "content": 0.8
+            }
+          ]
+        }
       }
     ],
     "scalarField": {
@@ -213,6 +239,47 @@
       "title": "Boolean",
       "dataType": "boolean"
     },
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+          "content": {
+            "explosion_resistance": 1.8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+          "content": {
+            "explosion_resistance": 1.8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+          "content": {
+            "explosion_resistance": 1.8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_double_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+          "content": {
+            "explosion_resistance": 0.8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+          "content": {
+            "explosion_resistance": 0.8
+          }
+        }
+      ]
+    }
   }
 }

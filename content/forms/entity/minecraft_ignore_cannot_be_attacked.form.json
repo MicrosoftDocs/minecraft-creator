@@ -17,7 +17,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:ignore_cannot_be_attacked",
     "title": "Ignore Cannot Be Attacked",
-    "description": "When set, blocks entities from attacking the owner entity unless they have the \"minecraft:ignore_cannot_be_attacked\" component.",
+    "description": "Allows the owner entity to ignore the \"minecraft:cannot_be_attacked\" component on entities that fulfill the filter.",
     "fields": [
       {
         "id": "filters",
@@ -26,5 +26,72 @@
         "dataType": "minecraftFilter"
       }
     ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:ignore_cannot_be_attacked",
+    "title": "Entity Ignore Cannot Be Attacked",
+    "description": "Allows the owner entity to ignore the \"minecraft:cannot_be_attacked\" component on entities that fulfill the filter.",
+    "fields": [
+      {
+        "id": "filters",
+        "description": "Defines which entities are exceptions and are allowed to be attacked by the owner entity, potentially attacked entity is subject \"other\". If this is not specified then all attacks by the owner are allowed.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ],
+          "dataVersion": "1.21.20"
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ]
+      }
+    ],
+    "dataVersion": "1.26.40"
   }
 }

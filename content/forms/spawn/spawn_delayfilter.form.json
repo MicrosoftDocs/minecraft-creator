@@ -52,6 +52,7 @@
         "dataType": "int",
         "defaultValue": 100
       }
-    ]
+    ],
+    "dataVersion": "1.21.50"
   }
 }

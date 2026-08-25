@@ -32,7 +32,8 @@
         "subFormId": "dimension/description",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.50"
   },
   "description": "Defines a custom dimension with its description and components."
 }

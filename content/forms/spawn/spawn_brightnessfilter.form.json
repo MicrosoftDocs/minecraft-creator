@@ -82,7 +82,8 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.21.50"
   },
   "description": "Restricts mob spawning based on light level at the spawn location. Hostile mobs typically spawn in darkness (light level 0-7), while passive mobs spawn in brighter areas. Allows setting min/max brightness thresholds and whether to adjust for spawning on a block surface."
 }

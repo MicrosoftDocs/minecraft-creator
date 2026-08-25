@@ -27,7 +27,21 @@
         "title": "Accepts Connections From",
         "description": "The type of block allowed to connect to this block. Currently, the options are: `all` (default), `only_fences`, and `none`. Note that the `only_fences` option allows connections from all Vanilla fences excluding NetherBrick.",
         "defaultValue": "all",
-        "dataType": "string"
+        "dataType": "string",
+        "samples": {
+          "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:connection_rule/",
+              "content": "none"
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/shelf_mushroom_block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:connection_rule/",
+              "content": "none"
+            }
+          ]
+        }
       },
       {
         "id": "enabled_directions",
@@ -36,7 +50,25 @@
         "defaultValue": "['north', 'south', 'east', 'west']",
         "dataType": "stringArray"
       }
-    ]
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:connection_rule/",
+          "content": {
+            "accepts_connections_from": "none"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/shelf_mushroom_block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:connection_rule/",
+          "content": {
+            "accepts_connections_from": "none"
+          }
+        }
+      ]
+    }
   },
   "generatedFromSchema_doNotEdit": {
     "id": "Connection Rule",
@@ -45,9 +77,10 @@
     "fields": [
       {
         "id": "accepts_connections_from",
-        "title": "Connection Type",
+        "title": "Accepts Connections From",
         "description": "The type of block allowed to connect to this block. Note that the \"only_fences\" option allows connections from all Vanilla fences excluding NetherBrick.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "all",
         "choices": [
           {
             "id": "all",
@@ -62,7 +95,7 @@
             "title": "Only fences"
           }
         ],
-        "defaultValue": "all"
+        "mustMatchChoices": true
       },
       {
         "id": "enabled_directions",
@@ -75,6 +108,7 @@
           "east",
           "west"
         ],
+        "mustBeUnique": true,
         "choices": [
           {
             "id": "east",
@@ -92,8 +126,10 @@
             "id": "west",
             "title": "West"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

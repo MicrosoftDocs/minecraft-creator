@@ -1,0 +1,26 @@
+{
+  "id": "GrantXPSubcomponentDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "GrantXPSubcomponentDefinition",
+    "title": "Entity GrantXPSubcomponentDefinition",
+    "description": "Drops experience orbs at the impact location.",
+    "fields": [
+      {
+        "id": "maxXP",
+        "title": "MaxXP",
+        "description": "Maximum amount of experience to drop.",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "minXP",
+        "title": "MinXP",
+        "description": "Minimum amount of experience to drop.",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

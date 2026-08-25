@@ -26,8 +26,8 @@
     "fields": [
       {
         "id": "processor_type",
-        "title": "Jigsaw Processro Type",
-        "dataType": "string",
+        "title": "Processor Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:block_ignore",
@@ -46,6 +46,8 @@
             "title": "Minecraft:rule"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:protected_blocks",
         "isRequired": true
       },
       {
@@ -55,6 +57,7 @@
         "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

@@ -24,10 +24,10 @@ Defines whether other blocks such as fences, walls, bars, and glass panes are al
 
 ## Block Connection Rule Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| accepts_connections_from | all | [Accepts Connections From](#accepts-connections-from-choices) choices | The type of block allowed to connect to this block. Note that the "only_fences" option allows connections from all Vanilla fences excluding NetherBrick. | 
-| enabled_directions | [south, north, east, west] | [Enabled Directions](#enabled-directions-choices) choices | The cardinal directions that connection is enabled for. Note that if "none" is specified for "accepts_connections_from", this field will not be used. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| accepts_connections_from | all | [Accepts Connections From](#accepts-connections-from-choices) choices | The type of block allowed to connect to this block. Note that the "only_fences" option allows connections from all Vanilla fences excluding NetherBrick. | Block Red Shrub: `"none"` | 
+| enabled_directions | [south, north, east, west] | [Enabled Directions](#enabled-directions-choices) choices | The cardinal directions that connection is enabled for. Note that if "none" is specified for "accepts_connections_from", this field will not be used. |  | 
 
 ### Accepts Connections From choices
 
@@ -45,3 +45,14 @@ Defines whether other blocks such as fences, walls, bars, and glass panes are al
 | north | North | |
 | south | South | |
 | west | West | |
+
+## Samples
+
+#### [Block Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/red_shrub.block.json)
+
+
+```json
+"minecraft:connection_rule": {
+  "accepts_connections_from": "none"
+}
+```

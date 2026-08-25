@@ -20,9 +20,9 @@
     "fields": [
       {
         "id": "element_type",
-        "title": "ElementType",
+        "title": "Element Type",
         "description": "The type of element.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:empty_pool_element",
@@ -37,27 +37,30 @@
             "title": "Minecraft:single pool element"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:single_pool_element",
         "isRequired": true
       },
       {
         "id": "location",
         "title": "Location",
         "description": "The path of the structure file. This path is relative to the behavior pack's structures folder.",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "processors",
         "title": "Processors",
         "description": "The identifier of the processor list to use when placing the structure.",
-        "dataType": "object",
+        "dataType": "string",
         "defaultValue": ""
       },
       {
         "id": "projection",
         "title": "Projection",
         "description": "Specifies how structures should be placed relative to the terrain.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "rigid",
         "choices": [
           {
             "id": "rigid",
@@ -68,9 +71,10 @@
             "title": "Terrain matching"
           }
         ],
-        "defaultValue": "rigid"
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   },
   "description": "Defines a single pool element with a structure location and processors."
 }

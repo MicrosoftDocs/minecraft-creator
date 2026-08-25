@@ -34,9 +34,9 @@
       },
       {
         "id": "joint_type",
-        "title": "Jigsaw Joint Type",
+        "title": "Joint Type",
         "description": "The type of Jigsaw joint made with 'target'.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "aligned",
@@ -47,6 +47,7 @@
             "title": "Rollable"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       },
       {
@@ -91,7 +92,8 @@
         "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.80"
   },
   "description": "Defines jigsaw block connection and targeting properties."
 }

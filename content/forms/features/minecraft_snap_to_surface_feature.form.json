@@ -149,16 +149,16 @@
       },
       {
         "dataType": "int",
-        "id": "vertical_search_range",
-        "title": "Vertical Search Range",
-        "description": "Range to search for a floor or ceiling for snaping the feature.",
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "Range to search for a valid snapping position for the feature.",
         "isRequired": true
       },
       {
         "dataType": "string",
         "id": "surface",
         "title": "Surface",
-        "description": "Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'",
+        "description": "Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor', 'random_horizontal' and `wall`",
         "isRequired": false
       },
       {
@@ -166,6 +166,13 @@
         "id": "allow_air_placement",
         "title": "Allow Air Placement",
         "description": "Determines whether the feature can snap through air blocks. Defaults to true.",
+        "isRequired": false
+      },
+      {
+        "dataType": "boolean",
+        "id": "allow_non_air_placement",
+        "title": "Allow Non Air Placement",
+        "description": "Determines whether the feature can snap through non air blocks. Defaults to false, is only used if the snap is started in a block that is not water or air.",
         "isRequired": false
       },
       {

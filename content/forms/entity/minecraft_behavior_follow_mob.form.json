@@ -111,5 +111,178 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.follow_mob",
+    "title": "Entity Follow Mob Behavior",
+    "description": "Allows the mob to follow other mobs.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ],
+        "mustMatchChoices": true
+      },
+      {
+        "id": "filters",
+        "description": "If non-empty, provides criteria for filtering which nearby Mobs can be followed. If empty default criteria will be used, which will exclude Players, Squid variants, Fish variants, Tadpoles, Dolphins, and mobs of the same type as the owner of the Goal.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ],
+          "dataVersion": "1.21.20"
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "preferred_actor_type",
+        "title": "Preferred Actor Type",
+        "description": "The type of actor to prefer following. If left unspecified, a random actor among those in range will be chosen.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.follow_mob/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "The distance in blocks it will look for a mob to follow",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.follow_mob/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "dataType": "float",
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.follow_mob/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "stop_distance",
+        "title": "Stop Distance",
+        "description": "The distance in blocks this mob stops from the mob it is following",
+        "dataType": "float",
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.follow_mob/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "use_home_position_restriction",
+        "title": "Use Home Position Restriction",
+        "description": "If true, the mob will respect the 'minecraft:home' component's 'restriction_radius' field when choosing a target to follow. If false, it will choose target position without considering home restrictions.",
+        "dataType": "boolean",
+        "defaultValue": false
+      }
+    ],
+    "dataVersion": "1.26.50",
+    "samples": {
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:behavior.follow_mob/",
+          "content": {
+            "priority": 4,
+            "search_range": 20,
+            "speed_multiplier": 1,
+            "stop_distance": 3
+          }
+        }
+      ]
+    }
   }
 }

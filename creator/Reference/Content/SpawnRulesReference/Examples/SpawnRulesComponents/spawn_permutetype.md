@@ -17,6 +17,6 @@ Weighted spawn permutation that selects which entity variant to spawn. Each perm
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| entity_type |  | Object | Permutation to spawn when selected | 
+| entity_type |  | String | Permutation to spawn when selected | 
 | min_guaranteed | 0 | Integer number | The minimum number of this permutation to spawn | 
 | weight | *not set* | Integer number | The ratio of all of the entities that are in the permutation | 

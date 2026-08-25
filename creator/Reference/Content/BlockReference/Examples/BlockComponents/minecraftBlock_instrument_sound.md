@@ -15,10 +15,10 @@ ms.date: 02/11/2025
 
 ## Instrument Sound Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| down | note.none | [Down](#down-choices) choices | The instrument sound that plays when the note block is above this block (the block's down face is exposed to the note block). Use "note.none" to specify no sound for this face. | 
-| up | note.harp | [Up](#down-choices) choices | The instrument sound that plays when the note block is below this block (the block's up face is exposed to the note block). Use "note.none" to specify no sound for this face. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| down | note.none | [Down](#down-choices) choices | The instrument sound that plays when the note block is above this block (the block's down face is exposed to the note block). Use "note.none" to specify no sound for this face. |  | 
+| up | note.harp | [Up](#down-choices) choices | The instrument sound that plays when the note block is below this block (the block's up face is exposed to the note block). Use "note.none" to specify no sound for this face. | Block Black Concrete Double Slab: `"note.bassattack"` | 
 
 ### Down choices
 
@@ -89,5 +89,14 @@ ms.date: 02/11/2025
 "minecraft:instrument_sound": {
   "up": "note.none",
   "down": "note.banjo"
+}
+```
+
+#### [Block Black Concrete Double Slab](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_concrete_double_slab.block.json)
+
+
+```json
+"minecraft:instrument_sound": {
+  "up": "note.bassattack"
 }
 ```

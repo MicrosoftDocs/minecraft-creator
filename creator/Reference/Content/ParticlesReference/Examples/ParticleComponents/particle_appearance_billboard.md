@@ -20,7 +20,7 @@ Controls how particle sprites render and orient toward the camera. The facing_ca
 | direction | *not set* | Object |  | 
 | facing_camera_mode | *not set* | [Facing Camera Mode](#facing-camera-mode-choices) choices | The facing mode of the billboard. Controls how the particle faces the camera. | 
 | size | *not set* | Molang array | The size of the particle billboard, as [width, height] using Molang expressions or numbers. Value must have at least 2 items. Value must have at most 2 items. | 
-| size (as Named set of objects) | *not set* | Key/item pairs of [Size (Item Molang Expression)](#item-molang-expression) items |  | 
+| size (as Named set of objects) | *not set* | Key/item pairs of [Size (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | size (as Decimal number) | *not set* | Decimal number |  | 
 | uv | *not set* | Object |  | 
 
@@ -40,9 +40,9 @@ Controls how particle sprites render and orient toward the camera. The facing_ca
 | emitter_transform_xz | Emitter Transform XZ | |
 | emitter_transform_yz | Emitter Transform YZ | |
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `size`
 

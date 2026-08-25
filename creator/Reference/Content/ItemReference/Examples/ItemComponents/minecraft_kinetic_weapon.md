@@ -20,7 +20,7 @@ Allows an item to deal kinetic damage and its effects. This happens every tick w
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| creative_reach | *not set* | [Creative Reach](#item-floatrange) item | Defines the reach used when the user is in Creative Mode. Defaults to "reach" if unspecified. | 
+| creative_reach | *not set* | [Creative Reach](#legacy-floatrange) item | Defines the reach used when the user is in Creative Mode. Defaults to "reach" if unspecified. | 
 | damage_conditions | *not set* | [Damage Conditions](#item-kinetic-weapon-kinetic-effect-conditions) item | Conditions that need to be satisfied for damage to be applied. If not specified, damage is not applied. | 
 | damage_modifier | 0 | Decimal number | Value added to the the scaled dot product (after applying "damage_multiplier"). | 
 | damage_multiplier | 1 | Decimal number | Value multiplied to sum of the dot products of the user and target's velocity vectors projected onto the view vector. | 
@@ -28,18 +28,16 @@ Allows an item to deal kinetic damage and its effects. This happens every tick w
 | dismount_conditions | *not set* | [Dismount Conditions](#item-kinetic-weapon-kinetic-effect-conditions) item | Conditions that need to be satisfied for riders to be dismounted. If not specified, riders cannot be dismounted. | 
 | hitbox_margin | 0 | Decimal number | Added tolerance to the view vector raycast for detecting entity collisions. | 
 | knockback_conditions | *not set* | [Knockback Conditions](#item-kinetic-weapon-kinetic-effect-conditions) item | Conditions that need to be satisfied for knockback to be applied. If not specified, knockback is not applied. | 
-| reach | {"max":3,"min":0} | [Reach](#item-floatrange) item | Defines the range (in blocks) along the user's view vector where entities can be hit. | 
+| reach | {"max":3,"min":0} | [Reach](#legacy-floatrange) item | Defines the range (in blocks) along the user's view vector where entities can be hit. | 
 
 ### reach
 
 Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects.
 
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `creative_reach`
 

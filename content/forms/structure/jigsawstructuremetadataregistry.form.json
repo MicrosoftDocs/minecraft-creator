@@ -25,7 +25,8 @@
         "dataType": "keyedObjectCollection",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.50"
   },
   "description": "Associates structure locations with jigsaw metadata."
 }

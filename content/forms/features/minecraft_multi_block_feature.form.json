@@ -1,0 +1,47 @@
+{
+  "id": "minecraft:multi_block_feature",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:multi_block_feature",
+    "title": "Multi Block Feature",
+    "fields": [
+      {
+        "dataType": "object",
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": "string",
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": "boolean",
+        "id": "enforce_placement_rules",
+        "title": "Enforce Placement Rules",
+        "description": "If true, enforce the multi-blocks mayPlace checks.",
+        "isRequired": false
+      },
+      {
+        "dataType": "boolean",
+        "id": "randomize_rotation",
+        "title": "Randomize Rotation",
+        "description": "If true, randomizes the block's cardinal orientation.",
+        "isRequired": false
+      },
+      {
+        "dataType": "stringArray",
+        "id": "may_replace",
+        "title": "May Replace",
+        "isRequired": false
+      }
+    ]
+  }
+}

@@ -91,11 +91,12 @@
         "id": "targets",
         "title": "Targets",
         "description": "Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces.",
-        "dataType": "objectArray",
+        "dataType": "stringArray",
         "minLength": 1,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.0"
   },
   "versionIntroduced": "1.21.110",
   "note": "Custom partial biome replacement is available without experimental toggle in 1.21.110."

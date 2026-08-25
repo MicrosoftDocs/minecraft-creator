@@ -70,7 +70,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "items",
@@ -101,7 +102,7 @@
           "max": 4,
           "min": 2
         },
-        "subFormId": "item/intrange"
+        "subFormId": "block/intrange"
       },
       {
         "id": "priority",
@@ -110,6 +111,7 @@
         "defaultValue": 0
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {}
   }
 }

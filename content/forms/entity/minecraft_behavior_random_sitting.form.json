@@ -78,7 +78,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "cooldown",
@@ -114,6 +115,7 @@
         "dataType": "float",
         "defaultValue": 0.30000001192092896
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

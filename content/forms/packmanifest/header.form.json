@@ -47,12 +47,13 @@
         "id": "name",
         "title": "Name",
         "dataType": "string",
+        "minLength": 1,
         "isRequired": true
       },
       {
         "id": "pack_optimization_version",
         "title": "Pack Optimization Version",
-        "dataType": "object"
+        "dataType": "string"
       },
       {
         "id": "pack_scope",
@@ -67,7 +68,7 @@
       {
         "id": "uuid",
         "title": "Uuid",
-        "dataType": "object",
+        "dataType": "string",
         "validity": [
           {
             "comparison": "pattern",
@@ -82,7 +83,8 @@
         "dataType": "object",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "3.0.0"
   },
   "description": "The header section of manifest.json containing the pack's identity: its name shown in the UI, description, unique UUID, and version. The min_engine_version field specifies the minimum Minecraft version required to load the pack."
 }

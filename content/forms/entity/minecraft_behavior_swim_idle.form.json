@@ -65,7 +65,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "idle_time",
@@ -88,6 +89,7 @@
         "defaultValue": 0.10000000149011612
       }
     ],
+    "dataVersion": "1.21.110",
     "samples": {}
   }
 }

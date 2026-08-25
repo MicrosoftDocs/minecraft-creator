@@ -224,7 +224,8 @@
         "dataType": "object",
         "subFormId": "client_particles/particle_motion_parametric"
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Container for all particle effect components that define behavior and appearance. Components control every aspect of particle effects: emitter shape and rate, particle lifetime and motion, visual appearance and colors, collision responses, and event triggers. Combine components to build complex effects from reusable, modular pieces."
 }

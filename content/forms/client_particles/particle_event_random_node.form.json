@@ -26,7 +26,7 @@
           {
             "id": "expression",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "expression",
@@ -75,7 +75,8 @@
         "dataType": "float",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Triggers one of several possible effects randomly when a particle event fires, with weighted probability. Assign weights to different event outcomes for varied responses—like impacts sometimes spawning sparks, sometimes dust, with configurable chances. Adds natural variation to effects without needing complex Molang logic."
 }

@@ -23,13 +23,13 @@
         "id": "block",
         "title": "Block",
         "description": "The block to match against.",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "predicate_type",
-        "title": "BlockType",
-        "dataType": "string",
+        "title": "Predicate Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:always_true",
@@ -56,6 +56,8 @@
             "title": "Minecraft:tag match"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:random_block_match",
         "isRequired": true
       },
       {
@@ -71,6 +73,7 @@
         ],
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

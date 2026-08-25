@@ -58,7 +58,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "items",
@@ -81,6 +82,7 @@
         "defaultValue": 0
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {}
   }
 }

@@ -28,8 +28,8 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | search_height | 1 | Integer number | The height in blocks the mob will look for the block to move towards. Value must be > 0. | Frog: `3` | 
 | search_range | 0 | Integer number | The distance in blocks it will look for the block to move towards. Value must be > 0. | Frog: `10` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this goal. | Frog: `1` | 
-| target_blocks | [minecraft:sand] | Array of strings | Blocks that the mob can lay its eggs on top of. | Frog: `["minecraft:water"]` | 
-| target_materials_above_block | [air] | Array of strings | Types of materials that can exist above the target block. Valid types are Air, Water, and Lava. | Frog: `["Air"]` | 
+| target_blocks | [minecraft:sand] | Array of strings | Blocks that the mob can lay its eggs on top of. | Frog: `["minecraft:sand","minecraft:water"]` | 
+| target_materials_above_block | [air] | Array of strings | Types of materials that can exist above the target block. Valid types are Air, Water, and Lava. | Frog: `["air","air"]` | 
 | use_default_animation | true | Boolean true/false | Specifies if the default lay-egg animation should be played when the egg is placed or not. |  | 
 
 ### Control Flags choices
@@ -250,6 +250,7 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | deny | Deny | |
 | detach | Detach | |
 | disappeared | Disappeared | |
+| dismount | Dismount | |
 | door.close | Door.close | |
 | door.open | Door.open | |
 | drink | Drink | |
@@ -450,6 +451,7 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | mob.player.hurt_on_fire | Mob.player.hurt on fire | |
 | mob.warning | Mob.warning | |
 | mob.warning.baby | Mob.warning.baby | |
+| mount | Mount | |
 | multi_swap | Multi swap | |
 | nearby_close | Nearby close | |
 | nearby_closer | Nearby closer | |
@@ -567,6 +569,7 @@ Allows the mob to lay an egg block on certain types of blocks if the mob is preg
 | step.baby | Step.baby | |
 | step_lava | Step lava | |
 | step_sand | Step sand | |
+| straw_bed.break_leave | Straw bed.break leave | |
 | stun | Stun | |
 | swim | Swim | |
 | swoop | Swoop | |
@@ -683,10 +686,12 @@ Filters allow data objects to specify test criteria which allows their use. Filt
   "use_default_animation": false,
   "speed_multiplier": 1,
   "target_blocks": [
+    "minecraft:sand",
     "minecraft:water"
   ],
   "target_materials_above_block": [
-    "Air"
+    "air",
+    "air"
   ]
 }
 ```

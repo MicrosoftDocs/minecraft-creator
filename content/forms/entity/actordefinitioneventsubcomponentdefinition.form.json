@@ -1,0 +1,68 @@
+{
+  "id": "ActorDefinitionEventSubcomponentDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "ActorDefinitionEventSubcomponentDefinition",
+    "title": "Entity ActorDefinitionEventSubcomponentDefinition",
+    "description": "Fires an entity event on the shooter, the projectile, the entity hit, and/or all entities in a splash radius.",
+    "fields": [
+      {
+        "id": "affect_projectile",
+        "title": "Affect Projectile",
+        "description": "If `true`, the event is fired on the projectile entity itself.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "affect_shooter",
+        "title": "Affect Shooter",
+        "description": "If `true`, the event is fired on the projectile's shooter.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "affect_splash_area",
+        "title": "Affect Splash Area",
+        "description": "If `true`, the event is fired on every entity within `splash_area` blocks of the impact.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "affect_target",
+        "title": "Affect Target",
+        "description": "If `true`, the event is fired on the entity hit by the projectile.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "event_trigger",
+        "title": "Event Trigger",
+        "description": "Event trigger (with optional filters) to fire on the selected target(s).",
+        "dataType": "object",
+        "defaultValue": {
+          "event": "",
+          "filters": {
+            "AND": null,
+            "NOT": null,
+            "OR": null,
+            "all": null,
+            "all_of": null,
+            "any": null,
+            "any_of": null,
+            "none_of": null
+          },
+          "target": "self"
+        },
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "splash_area",
+        "title": "Splash Area",
+        "description": "Radius (in blocks) used by `affect_splash_area`.",
+        "dataType": "float",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

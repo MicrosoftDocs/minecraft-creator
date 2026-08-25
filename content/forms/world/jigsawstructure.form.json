@@ -203,7 +203,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -228,9 +229,10 @@
       },
       {
         "id": "heightmap_projection",
-        "title": "HeightmapProjection",
+        "title": "Heightmap Projection",
         "description": "Heightmap used to calculate the relative start height. For example, a heightmap_projection of ocean_floor and a start_height of 10 means the Jigsaw Structure will begin generating 10 blocks above the ocean floor. Defaults to 'none'",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "none",
         "choices": [
           {
             "id": "none",
@@ -245,13 +247,14 @@
             "title": "World surface"
           }
         ],
-        "defaultValue": "none"
+        "mustMatchChoices": true
       },
       {
         "id": "liquid_settings",
-        "title": "LiquidSettings",
+        "title": "Liquid Settings",
         "description": "How to handle waterloggable blocks overlapping with existing liquid.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "apply_waterlogging",
         "choices": [
           {
             "id": "apply_waterlogging",
@@ -262,7 +265,7 @@
             "title": "Ignore waterlogging"
           }
         ],
-        "defaultValue": "apply_waterlogging"
+        "mustMatchChoices": true
       },
       {
         "id": "max_depth",
@@ -355,14 +358,14 @@
         "id": "start_pool",
         "title": "Start Pool",
         "description": "The first Template Pool to use when generating the Jigsaw Structure.",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       },
       {
         "id": "step",
-        "title": "GenerationStep",
+        "title": "Step",
         "description": "Species the world generation phase in which the structure is generated.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "fluid_springs",
@@ -409,13 +412,15 @@
             "title": "Vegetal decoration"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       },
       {
         "id": "terrain_adaptation",
-        "title": "TerrainAdaptation",
+        "title": "Terrain Adaptation",
         "description": "How the terrain should adapt relative to the generated Jigsaw Structure.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "none",
         "choices": [
           {
             "id": "beard_box",
@@ -438,8 +443,9 @@
             "title": "None"
           }
         ],
-        "defaultValue": "none"
+        "mustMatchChoices": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

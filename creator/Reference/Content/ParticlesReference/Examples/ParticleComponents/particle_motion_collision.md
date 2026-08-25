@@ -21,15 +21,15 @@ Enables particle collision with world geometry. Configure collision radius, boun
 | collision_drag | 0 | Decimal number |  | 
 | collision_radius | *not set* | Decimal number |  | 
 | enabled | 1 | Keyed set of strings |  | 
-| enabled (as Named set of objects) | *not set* | Key/item pairs of [Enabled (Item Molang Expression)](#item-molang-expression) items |  | 
+| enabled (as Named set of objects) | *not set* | Key/item pairs of [Enabled (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | enabled (as Decimal number) | *not set* | Decimal number |  | 
 | events (Collision Event) | *not set* | Array of [Events](#events) items |  | 
 | events (Events) | *not set* | [Events (Events)](#events-events) item |  | 
 | expire_on_contact | false | Boolean true/false |  | 
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `enabled`
 
@@ -51,11 +51,4 @@ Enables particle collision with world geometry. Configure collision radius, boun
 
 ### Events (Events)
 
-#### Events Properties
-
-**JSON path:** `events`
-
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| event | *not set* | Object |  | 
-| min_speed | 2 | Decimal number |  | 
+Same structure as [Events](#events).

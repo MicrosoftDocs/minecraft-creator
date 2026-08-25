@@ -36,14 +36,12 @@ Defines an integer block state with a range of valid values and optional step in
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| range | *not set* | [Range](#item-floatrange) item | The range of the random offset. Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | 
+| range | *not set* | [Range](#legacy-floatrange) item | The range of the random offset. Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | 
 | steps | 0 | Integer number | The number of steps between the range. Specify 0 for all possible values between the range. | 
 
-#### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+#### Legacy FloatRange
 
-
-##### Item FloatRange Properties
+##### Legacy FloatRange Properties
 
 **JSON path:** `x > range`
 

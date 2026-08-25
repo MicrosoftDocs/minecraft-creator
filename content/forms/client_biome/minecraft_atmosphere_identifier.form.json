@@ -23,9 +23,10 @@
         "id": "atmosphere_identifier",
         "title": "Atmosphere Identifier",
         "description": "Identifier of atmosphere definition to use",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.70"
   }
 }

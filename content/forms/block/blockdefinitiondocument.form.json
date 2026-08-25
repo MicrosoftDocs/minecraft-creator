@@ -30,7 +30,7 @@
         "id": "components",
         "title": "Components",
         "dataType": "object",
-        "technicalDescription": "Block cannot have both \"minecraft:redstone_producer\" and \"minecraft:redstone_consumer\" components.",
+        "technicalDescription": "Block cannot have both a \"container\" in \"minecraft:block_entity\" and a \"minecraft:crafting_table\" component.",
         "subFormId": "block/components"
       },
       {
@@ -48,7 +48,8 @@
         "defaultValue": [],
         "subFormId": "block/permutation"
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   },
   "description": "Is a block definition with description, components, and permutations."
 }

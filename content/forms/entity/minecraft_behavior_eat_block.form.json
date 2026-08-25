@@ -171,7 +171,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "eat_and_replace_block_pairs",
@@ -275,7 +276,7 @@
           {
             "id": "success_chance",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "success_chance",
@@ -307,6 +308,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {
       "/vanilla/behavior_pack/entities/sheep.json": [
         {

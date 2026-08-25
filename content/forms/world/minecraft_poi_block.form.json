@@ -1,0 +1,58 @@
+{
+  "id": "minecraft:poi_block",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:poi_block",
+    "title": "World Poi Block",
+    "fields": [
+      {
+        "id": "blocks",
+        "title": "Blocks",
+        "description": "List of blocks that represent this POI in a world. Care should be taken to select blocks that will be rare/infrequent in the world.",
+        "dataType": "stringArray",
+        "isRequired": true
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "dataType": "object",
+        "subFormId": "world/minecraft_poi_description",
+        "isRequired": true
+      },
+      {
+        "id": "tags",
+        "title": "Tags",
+        "description": "List of tags for the POI. Tags are used to indicate functionality. E.g. minecraft:bee_home is used to indicate a valid block for a bee's home",
+        "dataType": "stringArray",
+        "defaultValue": []
+      },
+      {
+        "id": "tickets",
+        "title": "Tickets",
+        "description": "The number of entities that can reserve a POI of this type.",
+        "dataType": "int",
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 255
+          }
+        ]
+      },
+      {
+        "id": "usable_distance",
+        "title": "Usable Distance",
+        "description": "Represents the general distnace that this POI should be usable from",
+        "dataType": "int",
+        "defaultValue": 1,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 255
+          }
+        ]
+      }
+    ],
+    "dataVersion": "1.26.40"
+  }
+}

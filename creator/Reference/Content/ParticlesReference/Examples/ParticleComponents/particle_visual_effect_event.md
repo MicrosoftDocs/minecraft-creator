@@ -17,15 +17,15 @@ Spawns another particle effect when triggered by particle events, enabling casca
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| effect | *not set* | Object |  | 
+| effect | *not set* | String |  | 
 | pre_effect_expression | 0 | Keyed set of strings |  | 
-| pre_effect_expression (as Named set of objects) | *not set* | Key/item pairs of [Pre Effect Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| pre_effect_expression (as Named set of objects) | *not set* | Key/item pairs of [Pre Effect Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | pre_effect_expression (as Decimal number) | *not set* | Decimal number |  | 
 | type | *not set* | [Type](#type-choices) choices |  | 
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `pre_effect_expression`
 

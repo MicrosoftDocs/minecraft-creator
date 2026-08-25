@@ -78,6 +78,7 @@
         "defaultValue": 10
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {}
   }
 }

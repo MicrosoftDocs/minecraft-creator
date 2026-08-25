@@ -227,7 +227,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "float_duration",
@@ -238,7 +239,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/bat.json": [
             {
@@ -360,6 +361,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {
       "/vanilla/behavior_pack/entities/bat.json": [
         {

@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Despawns the Actor immediately.
 
 
-## Instant Despawn Properties
+## Entity Instant Despawn Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

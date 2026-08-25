@@ -102,6 +102,7 @@
         "defaultValue": false
       }
     ],
+    "dataVersion": "1.20.50",
     "samples": {
       "/vanilla/behavior_pack/items/wind_charge.json": [
         {

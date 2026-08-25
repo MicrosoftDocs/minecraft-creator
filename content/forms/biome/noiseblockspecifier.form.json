@@ -57,7 +57,8 @@
         "validity": [
           {
             "comparison": "pattern",
-            "value": "^\\S+$"
+            "value": "^\\S+$",
+            "patternFlags": "i"
           }
         ]
       },
@@ -70,7 +71,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item/floatrange"
+        "subFormId": "legacy/floatrange"
       },
       {
         "id": "threshold",
@@ -79,6 +80,7 @@
         "dataType": "float",
         "defaultValue": 0
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

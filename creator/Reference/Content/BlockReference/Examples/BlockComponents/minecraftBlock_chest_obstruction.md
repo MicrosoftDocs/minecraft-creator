@@ -21,9 +21,9 @@ This defines how a block reacts to a chest being opened underneath it.
 
 ## Block Chest Obstruction Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| obstruction_rule | shape | [Obstruction Rule](#obstruction-rule-choices) choices | [optional] How the block should be evaluated by a chest during chest opening. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| obstruction_rule | shape | [Obstruction Rule](#obstruction-rule-choices) choices | [optional] How the block should be evaluated by a chest during chest opening. | Block Black Concrete Stairs: `"never"` | 
 
 ### obstruction_rule
 
@@ -37,3 +37,14 @@ This defines how a block reacts to a chest being opened underneath it.
 | always | Always | |
 | never | Never | |
 | shape | Shape | |
+
+## Samples
+
+#### [Block Black Concrete Stairs](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_concrete_stairs.block.json)
+
+
+```json
+"minecraft:chest_obstruction": {
+  "obstruction_rule": "never"
+}
+```

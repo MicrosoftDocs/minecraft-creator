@@ -1,0 +1,19 @@
+{
+  "id": "Sound Block Component",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Sound Block Component",
+    "title": "Block Sound Block Component",
+    "description": "Defines a sound type for the block.",
+    "fields": [
+      {
+        "id": "sound",
+        "title": "Sound",
+        "dataType": "string",
+        "defaultValue": "",
+        "maxLength": 256
+      }
+    ],
+    "dataVersion": "1.26.20"
+  }
+}

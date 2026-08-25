@@ -162,7 +162,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "eat_animation_time",
@@ -269,6 +270,7 @@
         }
       }
     ],
+    "dataVersion": "1.21.100",
     "samples": {
       "/vanilla/behavior_pack/entities/frog.json": [
         {

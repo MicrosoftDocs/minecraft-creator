@@ -60,6 +60,7 @@
         "dataType": "float",
         "defaultValue": 0
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

@@ -69,9 +69,10 @@
       },
       {
         "id": "type",
-        "title": "ItemCooldownType",
+        "title": "Type",
         "description": "The type of action the cooldown applies to. Options are mutually exclusive, so cooldown for one type of action does not affect the others. Values: \"use\" (when using an item), \"attack\" (when attack with an item).",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "use",
         "choices": [
           {
             "id": "attack",
@@ -82,9 +83,10 @@
             "title": "Use"
           }
         ],
-        "defaultValue": "use"
+        "mustMatchChoices": true
       }
     ],
+    "dataVersion": "1.20.50",
     "samples": {}
   },
   "description": "Adds a cooldown to an item, preventing it from being used again for a specified duration. Items sharing the same category will enter cooldown together when any one of them is used.",

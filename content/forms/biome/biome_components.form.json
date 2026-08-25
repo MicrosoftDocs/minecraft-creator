@@ -123,6 +123,7 @@
         "dataType": "object",
         "subFormId": "biome/minecraft_village_type"
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

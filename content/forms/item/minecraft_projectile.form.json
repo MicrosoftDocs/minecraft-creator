@@ -46,7 +46,8 @@
         "id": "projectile_entity",
         "title": "Projectile Entity",
         "description": "Which entity is to be fired as a projectile.",
-        "dataType": "object",
+        "dataType": "string",
+        "minLength": 0,
         "validity": [
           {
             "comparison": "pattern",
@@ -56,6 +57,7 @@
         "isRequired": true
       }
     ],
+    "dataVersion": "1.20.50",
     "samples": {}
   },
   "description": "Defines an item as a projectile that can be shot from dispensers or used as ammunition with minecraft:shooter. When combined with minecraft:throwable, this component specifies which entity is spawned when the item is thrown.",
