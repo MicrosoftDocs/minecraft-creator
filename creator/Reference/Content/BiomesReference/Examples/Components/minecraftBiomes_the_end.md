@@ -17,7 +17,7 @@ Marks a biome as using End dimension terrain generation. Biomes with this compon
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| type | *not set* | [Type](#type-choices) choices | Use default Minecraft End terrain generation. | 
+| type | minecraft:the_end | [Type](#type-choices) choices | Use default Minecraft End terrain generation. | 
 
 ### Type choices
 

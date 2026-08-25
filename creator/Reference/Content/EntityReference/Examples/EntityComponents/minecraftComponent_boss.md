@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Defines the current state of the boss for updating the boss HUD.
 
 
-## Boss Properties
+## Entity Boss Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

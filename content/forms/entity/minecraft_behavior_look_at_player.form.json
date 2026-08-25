@@ -1367,7 +1367,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "look_distance",
@@ -1405,7 +1406,7 @@
           "max": 4,
           "min": 2
         },
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
@@ -1466,6 +1467,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.0",
     "samples": {
       "/vanilla/behavior_pack/entities/allay.json": [
         {

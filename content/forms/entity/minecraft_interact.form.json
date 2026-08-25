@@ -592,7 +592,7 @@
               "id": "y_offset",
               "title": "y Offset",
               "description": "Will offset the items spawn position this amount in the y direction.",
-              "defaultValue": 1,
+              "defaultValue": 0,
               "dataType": "float"
             }
           ]
@@ -626,6 +626,22 @@
         "dataType": "string"
       }
     ],
+    "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:interact",
+    "title": "Entity Interact",
+    "description": "Defines interactions with this entity.",
+    "fields": [
+      {
+        "id": "interactions",
+        "title": "Interactions",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/interactiondata"
+      }
+    ],
+    "dataVersion": "1.26.50",
     "samples": {}
   }
 }

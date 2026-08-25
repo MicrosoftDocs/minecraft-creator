@@ -27,5 +27,21 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:instant_despawn",
+    "title": "Entity Instant Despawn",
+    "description": "Despawns the Actor immediately.",
+    "fields": [
+      {
+        "id": "remove_child_entities",
+        "title": "Remove Child Entities",
+        "description": "If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned.",
+        "dataType": "boolean",
+        "defaultValue": false
+      }
+    ],
+    "dataVersion": "1.26.50",
+    "samples": {}
   }
 }

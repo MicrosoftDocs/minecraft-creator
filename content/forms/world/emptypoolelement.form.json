@@ -20,9 +20,9 @@
     "fields": [
       {
         "id": "element_type",
-        "title": "ElementType",
+        "title": "Element Type",
         "description": "The type of element",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:empty_pool_element",
@@ -37,9 +37,12 @@
             "title": "Minecraft:single pool element"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:empty_pool_element",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   },
   "description": "Defines an empty pool element type for Jigsaw Structures."
 }

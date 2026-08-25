@@ -307,7 +307,7 @@
                   "id": "textures",
                   "title": "Textures",
                   "description": "This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes and bundle open textures can be specified here too. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file.",
-                  "dataType": "object",
+                  "dataType": "string",
                   "defaultValue": {}
                 }
               ]
@@ -555,7 +555,6 @@
       },
       {
         "id": "minecraft:use_animation",
-        "title": "Animation",
         "description": "Use_animation specifies which animation is played when the player uses the item.",
         "dataType": "string",
         "alternates": [
@@ -568,51 +567,9 @@
               "fields": [
                 {
                   "id": "value",
-                  "title": "Animation",
+                  "title": "Value",
                   "description": "Specifies which animation to play when the the item is used.",
-                  "dataType": "string",
-                  "choices": [
-                    {
-                      "id": "block",
-                      "title": "Block"
-                    },
-                    {
-                      "id": "bow",
-                      "title": "Bow"
-                    },
-                    {
-                      "id": "brush",
-                      "title": "Brush"
-                    },
-                    {
-                      "id": "camera",
-                      "title": "Camera"
-                    },
-                    {
-                      "id": "crossbow",
-                      "title": "Crossbow"
-                    },
-                    {
-                      "id": "drink",
-                      "title": "Drink"
-                    },
-                    {
-                      "id": "eat",
-                      "title": "Eat"
-                    },
-                    {
-                      "id": "none",
-                      "title": "None"
-                    },
-                    {
-                      "id": "spear",
-                      "title": "Spear"
-                    },
-                    {
-                      "id": "spyglass",
-                      "title": "Spyglass"
-                    }
-                  ],
+                  "dataType": "object",
                   "defaultValue": "none"
                 }
               ]
@@ -634,6 +591,7 @@
         "dataType": "object",
         "subFormId": "item/minecraft_wearable"
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

@@ -99,7 +99,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "priority",
@@ -129,6 +130,7 @@
         "defaultValue": 1
       }
     ],
+    "dataVersion": "1.21.110",
     "samples": {
       "/vanilla/behavior_pack/entities/magma_cube.json": [
         {

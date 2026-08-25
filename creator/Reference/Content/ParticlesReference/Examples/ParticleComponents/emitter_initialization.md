@@ -18,15 +18,15 @@ Defines Molang expressions that run when the emitter is created and on each upda
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | creation_expression | 0 | Molang | Molang expression run once when the emitter is created. Use this to initialize variables. | 
-| creation_expression (as Named set of objects) | *not set* | Key/item pairs of [Creation Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| creation_expression (as Named set of objects) | *not set* | Key/item pairs of [Creation Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | creation_expression (as Decimal number) | *not set* | Decimal number |  | 
 | per_update_expression | 0 | Molang | Molang expression run each frame while the emitter is active. Use this to update variables based on time or other conditions. | 
-| per_update_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Update Expression (Item Molang Expression)](#item-molang-expression) items |  | 
+| per_update_expression (as Named set of objects) | *not set* | Key/item pairs of [Per Update Expression (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | per_update_expression (as Decimal number) | *not set* | Decimal number |  | 
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `creation_expression`
 

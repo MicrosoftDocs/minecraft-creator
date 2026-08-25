@@ -58,11 +58,13 @@
         "validity": [
           {
             "comparison": "pattern",
-            "value": "^(?:.)+:(?:.)+$"
+            "value": "^(?:.)+:(?:.)+$",
+            "patternFlags": "i"
           }
         ],
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.60"
   }
 }

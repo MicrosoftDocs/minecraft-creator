@@ -26,22 +26,22 @@ Limited to 64 instances.
 
 ## Material Instances Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| * (Material Instance Face) | *not set* | [*](#material-instance-face) item |  | 
-| * (as String) | *not set* | String |  | 
-| down (Material Instance Face) | *not set* | [Down](#material-instance-face) item |  | 
-| down (as String) | *not set* | String |  | 
-| east (Material Instance Face) | *not set* | [East](#material-instance-face) item |  | 
-| east (as String) | *not set* | String |  | 
-| north (Material Instance Face) | *not set* | [North](#material-instance-face) item |  | 
-| north (as String) | *not set* | String |  | 
-| south (Material Instance Face) | *not set* | [South](#material-instance-face) item |  | 
-| south (as String) | *not set* | String |  | 
-| up (Material Instance Face) | *not set* | [Up](#material-instance-face) item |  | 
-| up (as String) | *not set* | String |  | 
-| west (Material Instance Face) | *not set* | [West](#material-instance-face) item |  | 
-| west (as String) | *not set* | String |  | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| * (Material Instance Face) | *not set* | [*](#material-instance-face) item |  | Block Red Shrub: `{"texture":"red_shrub","render_method":"alpha_test_single_sided","ambient_occlusion":0}` | 
+| * (as String) | *not set* | String |  |  | 
+| down (Material Instance Face) | *not set* | [Down](#material-instance-face) item |  |  | 
+| down (as String) | *not set* | String |  |  | 
+| east (Material Instance Face) | *not set* | [East](#material-instance-face) item |  |  | 
+| east (as String) | *not set* | String |  |  | 
+| north (Material Instance Face) | *not set* | [North](#material-instance-face) item |  |  | 
+| north (as String) | *not set* | String |  |  | 
+| south (Material Instance Face) | *not set* | [South](#material-instance-face) item |  |  | 
+| south (as String) | *not set* | String |  |  | 
+| up (Material Instance Face) | *not set* | [Up](#material-instance-face) item |  |  | 
+| up (as String) | *not set* | String |  |  | 
+| west (Material Instance Face) | *not set* | [West](#material-instance-face) item |  |  | 
+| west (as String) | *not set* | String |  |  | 
 
 ### Material Instance Face
 Configures how a block face renders its texture, including transparency, culling, and lighting. Set the texture reference, choose render method (opaque, alpha_test, blend, or double_sided), control face culling, and configure ambient occlusion. Enables glass-like transparency, leaf rendering, and custom visual effects.
@@ -181,6 +181,19 @@ Tint multiplied to the color. Tint method logic varies, but often refers to the 
     "render_method": "blend",
     "face_dimming": true,
     "ambient_occlusion": 1
+  }
+}
+```
+
+#### [Block Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/red_shrub.block.json)
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "red_shrub",
+    "render_method": "alpha_test_single_sided",
+    "ambient_occlusion": 0
   }
 }
 ```

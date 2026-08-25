@@ -118,7 +118,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "elder_extra_magic_damage",
@@ -220,6 +221,7 @@
         ]
       }
     ],
+    "dataVersion": "1.26.0",
     "samples": {
       "/vanilla/behavior_pack/entities/elder_guardian.json": [
         {

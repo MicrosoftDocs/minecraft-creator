@@ -27,7 +27,10 @@
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.croak/",
-              "content": 4.5
+              "content": {
+                "min": 4.5,
+                "max": 4.5
+              }
             }
           ]
         }
@@ -66,10 +69,10 @@
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.croak/",
-              "content": [
-                10,
-                20
-              ]
+              "content": {
+                "min": 10,
+                "max": 20
+              }
             }
           ]
         }
@@ -95,7 +98,10 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.croak/",
           "content": {
-            "duration": 4.5,
+            "duration": {
+              "min": 4.5,
+              "max": 4.5
+            },
             "filters": {
               "all_of": [
                 {
@@ -108,10 +114,10 @@
                 }
               ]
             },
-            "interval": [
-              10,
-              20
-            ],
+            "interval": {
+              "min": 10,
+              "max": 20
+            },
             "priority": 9
           }
         }
@@ -141,7 +147,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "duration",
@@ -153,12 +160,15 @@
           "min": 4.5
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.croak/",
-              "content": 4.5
+              "content": {
+                "min": 4.5,
+                "max": 4.5
+              }
             }
           ]
         }
@@ -212,7 +222,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -250,15 +261,15 @@
           "min": 10
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.croak/",
-              "content": [
-                10,
-                20
-              ]
+              "content": {
+                "min": 10,
+                "max": 20
+              }
             }
           ]
         }
@@ -278,12 +289,16 @@
         }
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {
       "/vanilla/behavior_pack/entities/frog.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.croak/",
           "content": {
-            "duration": 4.5,
+            "duration": {
+              "min": 4.5,
+              "max": 4.5
+            },
             "filters": {
               "all_of": [
                 {
@@ -296,10 +311,10 @@
                 }
               ]
             },
-            "interval": [
-              10,
-              20
-            ],
+            "interval": {
+              "min": 10,
+              "max": 20
+            },
             "priority": 9
           }
         }

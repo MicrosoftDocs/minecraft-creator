@@ -13,15 +13,15 @@ ms.date: 02/11/2025
 Defines this entity's ability to trade with players.
 
 
-## Trade Table Properties
+## Entity Trade Table Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | convert_trades_economy | false | Boolean true/false | Determines when the mob transforms, if the trades should be converted when the new mob has a economy_trade_table. | 
-| display_name | *not set* | String | Name to be displayed while trading with this entity. | 
+| display_name |  | String | Name to be displayed while trading with this entity. | 
 | new_screen | false | Boolean true/false | Used to determine if trading with entity opens the new trade screen. | 
 | persist_trades | false | Boolean true/false | Determines if the trades should persist when the mob transforms. | 
-| table | *not set* | String | File path relative to the behavior pack root for this entity's trades. | 
+| table |  | String | File path relative to the behavior pack root for this entity's trades. | 
 
 ### convert_trades_economy
 

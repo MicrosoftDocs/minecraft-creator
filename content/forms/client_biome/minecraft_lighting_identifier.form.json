@@ -23,9 +23,10 @@
         "id": "lighting_identifier",
         "title": "Lighting Identifier",
         "description": "Identifier of lighting definition to use",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.70"
   }
 }

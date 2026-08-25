@@ -75,7 +75,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "priority",
@@ -92,6 +93,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {
       "/vanilla/behavior_pack/entities/silverfish.json": [
         {

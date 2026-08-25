@@ -72,7 +72,8 @@
         "dataType": "int",
         "defaultValue": 1
       }
-    ]
+    ],
+    "dataVersion": "1.21.60"
   },
   "description": "Configures group spawning behavior with min/max herd sizes. Allows running events on the first N entities spawned (initial_event) or after skipping M entities (event). Common for pack animals like wolves or swarm mobs like silverfish."
 }

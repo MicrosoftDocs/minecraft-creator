@@ -20,7 +20,7 @@ Sets how much damage the item can take before breaking, and allows the item to b
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| damage_chance | {"max":100,"min":100} | [Damage Chance](#item-intrange) item | Specifies the percentage chance of this item losing durability. | 
+| damage_chance | {"max":100,"min":100} | [Damage Chance](#block-intrange) item | Specifies the percentage chance of this item losing durability. | 
 | max_durability | *not set* | Integer number | Max durability is the amount of damage that this item can take before breaking. This is a required parameter and has a minimum of 0. | 
 
 ### damage_chance
@@ -28,11 +28,9 @@ Sets how much damage the item can take before breaking, and allows the item to b
 Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value.  Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected.
 
 
-### Item IntRange
-Specifies an integer range between minimum and maximum values for item properties requiring whole numbers. Used for stack count variations, discrete charge levels, or quantity ranges in loot tables. Ensures values stay within valid bounds for countable item properties.
+### Block IntRange
 
-
-#### Item IntRange Properties
+#### Block IntRange Properties
 
 **JSON path:** `damage_chance`
 

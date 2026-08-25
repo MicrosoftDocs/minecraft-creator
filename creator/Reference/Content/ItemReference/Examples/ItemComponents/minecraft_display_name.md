@@ -67,20 +67,20 @@ At sample with localication key:
 }
 ```
 
-#### [Trial Key](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/trial_key.json)
+#### [Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/red_shrub.json)
 
 
 ```json
 "minecraft:display_name": {
-  "value": "item.trial_key.name"
+  "value": "tile.red_shrub.name"
 }
 ```
 
-#### [Wind Charge](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/wind_charge.json)
+#### [Shelf Mushroom](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/shelf_mushroom.json)
 
 
 ```json
 "minecraft:display_name": {
-  "value": "item.wind_charge.name"
+  "value": "tile.shelf_mushroom.name"
 }
 ```

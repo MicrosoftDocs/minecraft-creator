@@ -17,4 +17,4 @@ Set the identifier used for color grading in Vibrant Visuals mode. Identifiers m
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| color_grading_identifier | *not set* | Object | Identifier of color_grading definition to use | 
+| color_grading_identifier | *not set* | String | Identifier of color_grading definition to use | 

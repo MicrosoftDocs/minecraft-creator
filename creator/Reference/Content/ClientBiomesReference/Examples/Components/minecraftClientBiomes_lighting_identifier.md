@@ -17,4 +17,4 @@ Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must r
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| lighting_identifier | *not set* | Object | Identifier of lighting definition to use | 
+| lighting_identifier | *not set* | String | Identifier of lighting definition to use | 

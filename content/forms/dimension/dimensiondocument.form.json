@@ -25,7 +25,8 @@
         "subFormId": "dimension/dimension",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.50"
   },
   "description": "Represents the root document for a custom dimension definition."
 }

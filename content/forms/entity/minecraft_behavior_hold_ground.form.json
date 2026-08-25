@@ -104,7 +104,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "min_radius",
@@ -141,6 +142,7 @@
         "subFormId": "entity/actordefinitiontrigger"
       }
     ],
+    "dataVersion": "1.26.20",
     "samples": {}
   }
 }

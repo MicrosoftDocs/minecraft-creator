@@ -172,7 +172,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "digs_in_daylight",
@@ -287,6 +288,7 @@
         }
       }
     ],
+    "dataVersion": "1.21.120",
     "samples": {
       "/vanilla/behavior_pack/entities/warden.json": [
         {

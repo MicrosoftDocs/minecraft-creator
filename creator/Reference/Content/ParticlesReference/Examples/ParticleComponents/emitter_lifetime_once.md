@@ -18,12 +18,12 @@ Creates a single-burst particle effect that runs once and stops. The emitter act
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | active_time | 0 | Molang | The time in seconds that the emitter is active. Can be a number or Molang expression. | 
-| active_time (as Named set of objects) | *not set* | Key/item pairs of [Active Time (Item Molang Expression)](#item-molang-expression) items |  | 
+| active_time (as Named set of objects) | *not set* | Key/item pairs of [Active Time (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | active_time (as Decimal number) | *not set* | Decimal number |  | 
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `active_time`
 

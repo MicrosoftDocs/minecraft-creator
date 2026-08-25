@@ -19,6 +19,7 @@
         "dataType": "string",
         "defaultValue": ""
       }
-    ]
+    ],
+    "dataVersion": "1.26.40"
   }
 }

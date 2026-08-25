@@ -1,0 +1,38 @@
+{
+  "id": "Base Memory Goal Definition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Base Memory Goal Definition",
+    "title": "Entity Base Memory Goal Definition",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ],
+        "mustMatchChoices": true
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.20"
+  }
+}

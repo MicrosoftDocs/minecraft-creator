@@ -57,12 +57,14 @@
               "dataType": "string",
               "defaultValue": ""
             }
-          ]
+          ],
+          "dataVersion": "1.20.50"
         },
         "alternates": [
           {
             "id": "block_filter",
-            "dataType": "string"
+            "dataType": "string",
+            "minLength": 1
           },
           {
             "id": "block_filter",
@@ -70,6 +72,7 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

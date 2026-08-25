@@ -14,6 +14,7 @@
         "dataType": "object",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

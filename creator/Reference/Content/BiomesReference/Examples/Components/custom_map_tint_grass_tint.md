@@ -19,7 +19,7 @@ Sets the color grass will be tinted by in this biome on the map.
 |:----------|:-------------|:----|:-----------|
 | tint | *not set* | String | Tint color used in this biome on the map. | 
 | tint (as Array of numbers) | *not set* | Array of numbers |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of grass tint to use. | 
+| type | tint | [Type](#type-choices) choices | Controls the type of grass tint to use. | 
 
 ### Type choices
 

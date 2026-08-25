@@ -352,7 +352,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "cooldown_time",
@@ -579,6 +580,7 @@
         "defaultValue": 30
       }
     ],
+    "dataVersion": "1.26.40",
     "samples": {
       "/vanilla/behavior_pack/entities/blaze.json": [
         {

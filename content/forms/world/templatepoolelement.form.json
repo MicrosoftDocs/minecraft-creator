@@ -42,7 +42,8 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   },
   "description": "Defines a weighted template pool element with structure and processor references."
 }

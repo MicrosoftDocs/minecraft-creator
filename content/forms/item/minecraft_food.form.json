@@ -154,6 +154,7 @@
         ]
       }
     ],
+    "dataVersion": "1.20.50",
     "samples": {}
   },
   "description": "Sets the item as a food component, allowing it to be edible to the player.",

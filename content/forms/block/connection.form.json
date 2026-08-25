@@ -21,8 +21,10 @@
             "title": "Minecraft:cardinal connections"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

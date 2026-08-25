@@ -21,14 +21,14 @@ The definitions for how a block behaves when detecting liquid. Only one rule def
 
 ## Block Liquid Detection Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| can_contain_liquid | false | Boolean true/false | Whether this block can contain the liquid. For example, if the liquid type is `water`, this means the block can be waterlogged. | 
-| detection_rules | *not set* | Array of [Detection Rules](#block-detection-rule) items |  | 
-| liquid_type | water | String | The type of liquid this detection rule is for. Currently, `water` is the only supported liquid type. If this field is omitted, `water` will be the liquid type by default. | 
-| on_liquid_touches | blocking | Minecraft Event Trigger | How the block reacts to flowing water. | 
-| stops_liquid_flowing_from_direction | *not set* | Array of strings | When a block contains a liquid, controls the directions in which the liquid can't flow out from the block. | 
-| use_liquid_clipping | false | Boolean true/false | Whether this block uses the encompassing collider to visually clip the liquid. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| can_contain_liquid | false | Boolean true/false | Whether this block can contain the liquid. For example, if the liquid type is `water`, this means the block can be waterlogged. |  | 
+| detection_rules | *not set* | Array of [Detection Rules](#block-detection-rule) items |  | Block Black Concrete Slab: `[{"liquid_type":"water","can_contain_liquid":true,"on_liquid_touches":"blocking"}]` | 
+| liquid_type | water | String | The type of liquid this detection rule is for. Currently, `water` is the only supported liquid type. If this field is omitted, `water` will be the liquid type by default. |  | 
+| on_liquid_touches | blocking | Minecraft Event Trigger | How the block reacts to flowing water. |  | 
+| stops_liquid_flowing_from_direction | *not set* | Array of strings | When a block contains a liquid, controls the directions in which the liquid can't flow out from the block. |  | 
+| use_liquid_clipping | false | Boolean true/false | Whether this block uses the encompassing collider to visually clip the liquid. |  | 
 
 ### on_liquid_touches
 
@@ -110,6 +110,21 @@ If true, the block uses its collision box to visually clip the liquid (reducing 
     {
       "liquid_type": "water",
       "on_liquid_touches": "popped"
+    }
+  ]
+}
+```
+
+#### [Block Black Concrete Slab](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_concrete_slab.block.json)
+
+
+```json
+"minecraft:liquid_detection": {
+  "detection_rules": [
+    {
+      "liquid_type": "water",
+      "can_contain_liquid": true,
+      "on_liquid_touches": "blocking"
     }
   ]
 }

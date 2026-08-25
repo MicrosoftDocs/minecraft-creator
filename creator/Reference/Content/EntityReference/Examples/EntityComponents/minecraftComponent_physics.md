@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Defines physics properties of an actor, including if it is affected by gravity or if it collides with objects.
 
 
-## Physics Properties
+## Entity Physics Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

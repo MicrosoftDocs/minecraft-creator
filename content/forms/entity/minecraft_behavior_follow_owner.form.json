@@ -189,7 +189,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "ignore_vibration",
@@ -296,6 +297,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.20",
     "samples": {
       "/vanilla/behavior_pack/entities/allay.json": [
         {

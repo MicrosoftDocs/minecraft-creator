@@ -26,23 +26,24 @@
         "id": "addition",
         "title": "Addition",
         "description": "Named sound that occasionally plays at the listener position",
-        "dataType": "object",
+        "dataType": "string",
         "defaultValue": ""
       },
       {
         "id": "loop",
         "title": "Loop",
         "description": "Named sound that loops while the listener position is inside the biome",
-        "dataType": "object",
+        "dataType": "string",
         "defaultValue": ""
       },
       {
         "id": "mood",
         "title": "Mood",
         "description": "Named sound that rarely plays at a nearby air block position when the light level is low. Biomes without an ambient mood sound will use the 'ambient.cave' sound.",
-        "dataType": "object",
+        "dataType": "string",
         "defaultValue": ""
       }
-    ]
+    ],
+    "dataVersion": "1.21.40"
   }
 }

@@ -333,7 +333,7 @@ Represents the replacement information used to determine the placement of the ov
 | amount | *not set* | Decimal number | Noise value used to determine whether or not the replacement is attempted, similar to a percentage. Must be in the range (0.0, 1.0]. Value must be <= 1. Value must be > 0. | 
 | dimension | *not set* | String | Dimension in which this replacement can happen. Can be either 'minecraft:overworld' or 'minecraft:nether'. | 
 | noise_frequency_scale | *not set* | Decimal number | Scaling value used to alter the frequency of replacement attempts. | 
-| targets | *not set* | Array of objects | Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces. Value must have at least 1 items. | 
+| targets | *not set* | Array of strings | Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces. Value must have at least 1 items. | 
 
 ###### noise_frequency_scale
 
@@ -396,7 +396,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
+| type | minecraft:overworld | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ###### Foundation Material (Foundation Material)
 
@@ -483,7 +483,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
+| type | minecraft:mesa | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ###### Clay Material (Clay Material)
 
@@ -525,7 +525,7 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
+| type | minecraft:swamp | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 ###### max_puddle_depth_below_sea_level
 
@@ -552,7 +552,7 @@ Generates surface on blocks with non-solid blocks above or below.
 | foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
 | sea_material | *not set* | String | Material used to replace air blocks below sea level. | 
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
+| type | minecraft:capped | [Type](#type-choices) choices | Controls the type of surface builder to use | 
 
 ###### Beach Material (Beach Material)
 
@@ -595,7 +595,7 @@ Marks a biome as using End dimension terrain generation. Biomes with this compon
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| type | *not set* | [Type](#type-choices) choices | Use default Minecraft End terrain generation. | 
+| type | minecraft:the_end | [Type](#type-choices) choices | Use default Minecraft End terrain generation. | 
 
 ##### Biome Surface Material Adjustments
 Specify fine-detail changes to blocks used in terrain generation (based on a noise function).

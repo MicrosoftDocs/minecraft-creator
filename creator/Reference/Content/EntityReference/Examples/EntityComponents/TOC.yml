@@ -34,6 +34,8 @@
   href: minecraftComponent_barter.md
 - name: minecraft:block_climber
   href: minecraftComponent_block_climber.md
+- name: minecraft:block_movement_slowdown_immunity
+  href: minecraftComponent_block_movement.slowdown_immunity.md
 - name: minecraft:block_sensor
   href: minecraftComponent_block_sensor.md
 - name: minecraft:body_rotation_always_follows_head

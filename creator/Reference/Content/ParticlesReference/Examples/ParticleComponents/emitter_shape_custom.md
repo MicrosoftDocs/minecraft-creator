@@ -18,15 +18,15 @@ Emits particles from positions calculated by custom Molang expressions. Unlike p
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | direction | [0, 0, 0] | Molang array | The direction of particle emission, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| direction (as Named set of objects) | *not set* | Key/item pairs of [Direction (Item Molang Expression)](#item-molang-expression) items |  | 
+| direction (as Named set of objects) | *not set* | Key/item pairs of [Direction (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | direction (as Decimal number) | *not set* | Decimal number |  | 
 | offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Item Molang Expression)](#item-molang-expression) items |  | 
+| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | offset (as Decimal number) | *not set* | Decimal number |  | 
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `direction`
 

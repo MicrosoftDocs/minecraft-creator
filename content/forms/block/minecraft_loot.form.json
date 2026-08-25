@@ -58,6 +58,7 @@
       "id": "string",
       "title": "String",
       "dataType": "string"
-    }
+    },
+    "samples": {}
   }
 }

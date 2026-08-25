@@ -24,7 +24,8 @@
         "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.60"
   },
   "description": "Specifies the generator type used for world generation in the dimension."
 }

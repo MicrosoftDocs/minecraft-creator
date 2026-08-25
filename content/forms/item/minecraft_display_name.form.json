@@ -59,21 +59,22 @@
               "content": "item.ominous_trial_key.name"
             }
           ],
-          "/vanilla/behavior_pack/items/trial_key.json": [
+          "/vanilla/behavior_pack/items/red_shrub.json": [
             {
               "path": "/minecraft:item/components/minecraft:display_name/",
-              "content": "item.trial_key.name"
+              "content": "tile.red_shrub.name"
             }
           ],
-          "/vanilla/behavior_pack/items/wind_charge.json": [
+          "/vanilla/behavior_pack/items/shelf_mushroom.json": [
             {
               "path": "/minecraft:item/components/minecraft:display_name/",
-              "content": "item.wind_charge.name"
+              "content": "tile.shelf_mushroom.name"
             }
           ]
         }
       }
     ],
+    "dataVersion": "1.20.50",
     "samples": {
       "/vanilla/behavior_pack/items/apple.json": [
         {
@@ -99,19 +100,19 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/items/trial_key.json": [
+      "/vanilla/behavior_pack/items/red_shrub.json": [
         {
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
-            "value": "item.trial_key.name"
+            "value": "tile.red_shrub.name"
           }
         }
       ],
-      "/vanilla/behavior_pack/items/wind_charge.json": [
+      "/vanilla/behavior_pack/items/shelf_mushroom.json": [
         {
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
-            "value": "item.wind_charge.name"
+            "value": "tile.shelf_mushroom.name"
           }
         }
       ]

@@ -45,10 +45,10 @@
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
-              "content": [
-                0,
-                16
-              ]
+              "content": {
+                "min": 0,
+                "max": 16
+              }
             }
           ]
         }
@@ -238,10 +238,10 @@
           "content": {
             "post_shoot_delay": 0.2,
             "attack_cooldown": 0.5,
-            "attack_range": [
-              0,
-              16
-            ],
+            "attack_range": {
+              "min": 0,
+              "max": 16
+            },
             "filters": {
               "all_of": [
                 {
@@ -300,15 +300,15 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
-              "content": [
-                0,
-                16
-              ]
+              "content": {
+                "min": 0,
+                "max": 16
+              }
             }
           ]
         }
@@ -331,7 +331,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "filters",
@@ -382,7 +383,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -424,7 +426,7 @@
         "id": "owner_anchor",
         "title": "Owner Anchor",
         "description": "Entity anchor for the projectile spawn location.",
-        "dataType": "object",
+        "dataType": "int",
         "defaultValue": 2,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze.json": [
@@ -566,7 +568,7 @@
         "id": "target_anchor",
         "title": "Target Anchor",
         "description": "Entity anchor for projectile target.",
-        "dataType": "object",
+        "dataType": "int",
         "defaultValue": 2
       },
       {
@@ -623,6 +625,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {
       "/vanilla/behavior_pack/entities/breeze.json": [
         {
@@ -630,10 +633,10 @@
           "content": {
             "post_shoot_delay": 0.2,
             "attack_cooldown": 0.5,
-            "attack_range": [
-              0,
-              16
-            ],
+            "attack_range": {
+              "min": 0,
+              "max": 16
+            },
             "filters": {
               "all_of": [
                 {

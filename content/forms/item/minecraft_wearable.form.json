@@ -57,9 +57,9 @@
       },
       {
         "id": "slot",
-        "title": "EquipmentSlot",
+        "title": "Slot",
         "description": "Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "slot.armor.body",
@@ -90,9 +90,11 @@
             "title": "Slot.weapon.offhand"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {}
   },
   "description": "Sets the wearable item component, which allows an item to be worn by a player in a specified equipment slot.",

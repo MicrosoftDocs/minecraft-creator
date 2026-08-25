@@ -22,9 +22,10 @@
       {
         "id": "identifier",
         "title": "Identifier",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

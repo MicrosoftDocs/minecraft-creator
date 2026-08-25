@@ -58,7 +58,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "delay_before_eating",
@@ -74,6 +75,7 @@
         "defaultValue": 0
       }
     ],
+    "dataVersion": "1.26.20",
     "samples": {}
   }
 }

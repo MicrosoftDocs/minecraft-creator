@@ -34,7 +34,8 @@
         "subFormId": "structure/jigsaw_structure_metadata_registry",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.80"
   },
   "description": "Defines the format version and jigsaw metadata registry."
 }

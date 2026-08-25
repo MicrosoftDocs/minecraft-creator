@@ -18,6 +18,14 @@
     "id": "minecraft:replaceable",
     "title": "Replaceable",
     "description": "A block with this component can be replaced when another block is placed in the same block position.\nExperimental toggles required: Upcoming Creator Features (in format versions before 1.21.60)",
-    "fields": []
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:replaceable/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

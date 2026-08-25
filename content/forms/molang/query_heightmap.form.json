@@ -18,7 +18,7 @@
   "generated_doNotEdit": {
     "id": "query.heightmap",
     "title": "Heightmap",
-    "description": "Queries Height Map",
+    "description": "Returns the heightmap value at the given (x, z) position.",
     "fields": []
   }
 }

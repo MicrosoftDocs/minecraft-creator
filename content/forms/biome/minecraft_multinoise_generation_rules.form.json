@@ -85,6 +85,7 @@
         "description": "Weight with which this biome should be generated, relative to other biomes.",
         "dataType": "float"
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   }
 }

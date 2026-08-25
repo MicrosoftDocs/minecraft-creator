@@ -42,7 +42,7 @@
       {
         "id": "uuid",
         "title": "Uuid",
-        "dataType": "object",
+        "dataType": "string",
         "validity": [
           {
             "comparison": "pattern",
@@ -57,7 +57,8 @@
         "dataType": "object",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "3.0.0"
   },
   "description": "Declares a module within the pack. Modules define what the pack contains: 'data' for behavior packs, 'resources' for resource packs, or 'script' for packs with JavaScript/TypeScript code. Script modules require an entry point file path."
 }

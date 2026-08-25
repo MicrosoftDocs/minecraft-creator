@@ -50,7 +50,6 @@
     "fields": [
       {
         "id": "direction",
-        "title": "Direction Type",
         "dataType": "string",
         "alternates": [
           {
@@ -62,7 +61,7 @@
               {
                 "id": "direction",
                 "dataType": "keyedObjectCollection",
-                "subFormId": "item/molang_expression"
+                "subFormId": "legacy/molang_expression"
               },
               {
                 "id": "direction",
@@ -82,7 +81,7 @@
           {
             "id": "half_dimensions",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "half_dimensions",
@@ -106,7 +105,7 @@
           {
             "id": "offset",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "offset",
@@ -120,7 +119,8 @@
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Emits particles from random positions within a rectangular box volume. Define the box using half_dimensions (distance from center to each edge) and offset from the emitter. Particles can emit outward from spawn points, inward toward center, or in custom directions. Ideal for area effects like smoke filling a room, rain in a region, or magic barriers."
 }

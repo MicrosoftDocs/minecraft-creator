@@ -58,6 +58,7 @@
         ],
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.60"
   }
 }

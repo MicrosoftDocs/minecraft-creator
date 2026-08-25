@@ -36,6 +36,7 @@
         "subFormId": "client_biome/client_biome_description",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.90"
   }
 }

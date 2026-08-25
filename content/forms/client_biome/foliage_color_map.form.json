@@ -21,9 +21,9 @@
     "fields": [
       {
         "id": "color_map",
-        "title": "Foliage Colormap",
+        "title": "Color Map",
         "description": "Color map from textures/colormap to determine color of foliage.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "birch",
@@ -50,8 +50,10 @@
             "title": "Swamp foliage"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.70"
   }
 }

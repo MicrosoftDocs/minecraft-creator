@@ -109,11 +109,14 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:black_candle_cake | lit |
 | minecraft:black_carpet |  |
 | minecraft:black_concrete |  |
+| minecraft:black_concrete_double_slab | minecraft:vertical_half |
 | minecraft:black_concrete_powder |  |
+| minecraft:black_concrete_slab | minecraft:vertical_half |
+| minecraft:black_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:black_glazed_terracotta | facing_direction |
 | minecraft:black_shulker_box |  |
 | minecraft:black_stained_glass |  |
-| minecraft:black_stained_glass_pane |  |
+| minecraft:black_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:black_terracotta |  |
 | minecraft:black_wool |  |
 | minecraft:black_wool_double_slab | minecraft:vertical_half |
@@ -129,13 +132,16 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:blue_candle_cake | lit |
 | minecraft:blue_carpet |  |
 | minecraft:blue_concrete |  |
+| minecraft:blue_concrete_double_slab | minecraft:vertical_half |
 | minecraft:blue_concrete_powder |  |
+| minecraft:blue_concrete_slab | minecraft:vertical_half |
+| minecraft:blue_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:blue_glazed_terracotta | facing_direction |
 | minecraft:blue_ice |  |
 | minecraft:blue_orchid |  |
 | minecraft:blue_shulker_box |  |
 | minecraft:blue_stained_glass |  |
-| minecraft:blue_stained_glass_pane |  |
+| minecraft:blue_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:blue_terracotta |  |
 | minecraft:blue_wool |  |
 | minecraft:blue_wool_double_slab | minecraft:vertical_half |
@@ -158,13 +164,16 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:brown_candle_cake | lit |
 | minecraft:brown_carpet |  |
 | minecraft:brown_concrete |  |
+| minecraft:brown_concrete_double_slab | minecraft:vertical_half |
 | minecraft:brown_concrete_powder |  |
+| minecraft:brown_concrete_slab | minecraft:vertical_half |
+| minecraft:brown_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:brown_glazed_terracotta | facing_direction |
 | minecraft:brown_mushroom |  |
 | minecraft:brown_mushroom_block | huge_mushroom_bits |
 | minecraft:brown_shulker_box |  |
 | minecraft:brown_stained_glass |  |
-| minecraft:brown_stained_glass_pane |  |
+| minecraft:brown_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:brown_terracotta |  |
 | minecraft:brown_wool |  |
 | minecraft:brown_wool_double_slab | minecraft:vertical_half |
@@ -210,6 +219,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cherry_slab | minecraft:vertical_half |
 | minecraft:cherry_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:cherry_standing_sign | ground_sign_direction |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:cherry_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:cherry_wall_sign | facing_direction |
 | minecraft:cherry_wood | pillar_axis |
@@ -219,9 +231,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chiseled_cinnabar |  |
 | minecraft:chiseled_copper |  |
 | minecraft:chiseled_deepslate |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:chiseled_nether_bricks |  |
 | minecraft:chiseled_polished_blackstone |  |
 | minecraft:chiseled_quartz_block | pillar_axis |
@@ -267,7 +276,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:composter | composter_fill_level |
 | minecraft:compound_creator | direction |
 | minecraft:conduit |  |
-| minecraft:copper_bars |  |
+| minecraft:copper_bars | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:copper_block |  |
 | minecraft:copper_bulb | lit, powered_bit |
 | minecraft:copper_chain | pillar_axis |
@@ -322,11 +331,14 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cyan_candle_cake | lit |
 | minecraft:cyan_carpet |  |
 | minecraft:cyan_concrete |  |
+| minecraft:cyan_concrete_double_slab | minecraft:vertical_half |
 | minecraft:cyan_concrete_powder |  |
+| minecraft:cyan_concrete_slab | minecraft:vertical_half |
+| minecraft:cyan_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:cyan_glazed_terracotta | facing_direction |
 | minecraft:cyan_shulker_box |  |
 | minecraft:cyan_stained_glass |  |
-| minecraft:cyan_stained_glass_pane |  |
+| minecraft:cyan_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:cyan_terracotta |  |
 | minecraft:cyan_wool |  |
 | minecraft:cyan_wool_double_slab | minecraft:vertical_half |
@@ -410,6 +422,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:diorite_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
 | minecraft:dirt |  |
 | minecraft:dirt_with_roots |  |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:dispenser | facing_direction, triggered_bit |
 | minecraft:double_cut_copper_slab | minecraft:vertical_half |
 | minecraft:dragon_egg |  |
@@ -422,9 +437,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:element_1 |  |
 | minecraft:element_10 |  |
 | minecraft:element_100 |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:element_101 |  |
 | minecraft:element_102 |  |
 | minecraft:element_103 |  |
@@ -556,7 +568,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:ender_chest | minecraft:cardinal_direction |
 | minecraft:exposed_chiseled_copper |  |
 | minecraft:exposed_copper |  |
-| minecraft:exposed_copper_bars |  |
+| minecraft:exposed_copper_bars | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:exposed_copper_bulb | lit, powered_bit |
 | minecraft:exposed_copper_chain | pillar_axis |
 | minecraft:exposed_copper_chest | minecraft:cardinal_direction |
@@ -590,7 +602,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:furnace | minecraft:cardinal_direction |
 | minecraft:gilded_blackstone |  |
 | minecraft:glass |  |
-| minecraft:glass_pane |  |
+| minecraft:glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:glow_frame | facing_direction, item_frame_map_bit, item_frame_photo_bit |
 | minecraft:glow_lichen | multi_face_direction_bits |
 | minecraft:glowstone |  |
@@ -610,11 +622,17 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:gray_candle_cake | lit |
 | minecraft:gray_carpet |  |
 | minecraft:gray_concrete |  |
+| minecraft:gray_concrete_double_slab | minecraft:vertical_half |
 | minecraft:gray_concrete_powder |  |
+| minecraft:gray_concrete_slab | minecraft:vertical_half |
+
+| Name | States |
+|:-----------|:-----------|
+| minecraft:gray_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:gray_glazed_terracotta | facing_direction |
 | minecraft:gray_shulker_box |  |
 | minecraft:gray_stained_glass |  |
-| minecraft:gray_stained_glass_pane |  |
+| minecraft:gray_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:gray_terracotta |  |
 | minecraft:gray_wool |  |
 | minecraft:gray_wool_double_slab | minecraft:vertical_half |
@@ -624,14 +642,14 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:green_candle_cake | lit |
 | minecraft:green_carpet |  |
 | minecraft:green_concrete |  |
+| minecraft:green_concrete_double_slab | minecraft:vertical_half |
 | minecraft:green_concrete_powder |  |
-
-| Name | States |
-|:-----------|:-----------|
+| minecraft:green_concrete_slab | minecraft:vertical_half |
+| minecraft:green_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:green_glazed_terracotta | facing_direction |
 | minecraft:green_shulker_box |  |
 | minecraft:green_stained_glass |  |
-| minecraft:green_stained_glass_pane |  |
+| minecraft:green_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:green_terracotta |  |
 | minecraft:green_wool |  |
 | minecraft:green_wool_double_slab | minecraft:vertical_half |
@@ -640,39 +658,39 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:grindstone | attachment, direction |
 | minecraft:hanging_roots |  |
 | minecraft:hard_black_stained_glass |  |
-| minecraft:hard_black_stained_glass_pane |  |
+| minecraft:hard_black_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_blue_stained_glass |  |
-| minecraft:hard_blue_stained_glass_pane |  |
+| minecraft:hard_blue_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_brown_stained_glass |  |
-| minecraft:hard_brown_stained_glass_pane |  |
+| minecraft:hard_brown_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_cyan_stained_glass |  |
-| minecraft:hard_cyan_stained_glass_pane |  |
+| minecraft:hard_cyan_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_glass |  |
-| minecraft:hard_glass_pane |  |
+| minecraft:hard_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_gray_stained_glass |  |
-| minecraft:hard_gray_stained_glass_pane |  |
+| minecraft:hard_gray_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_green_stained_glass |  |
-| minecraft:hard_green_stained_glass_pane |  |
+| minecraft:hard_green_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_light_blue_stained_glass |  |
-| minecraft:hard_light_blue_stained_glass_pane |  |
+| minecraft:hard_light_blue_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_light_gray_stained_glass |  |
-| minecraft:hard_light_gray_stained_glass_pane |  |
+| minecraft:hard_light_gray_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_lime_stained_glass |  |
-| minecraft:hard_lime_stained_glass_pane |  |
+| minecraft:hard_lime_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_magenta_stained_glass |  |
-| minecraft:hard_magenta_stained_glass_pane |  |
+| minecraft:hard_magenta_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_orange_stained_glass |  |
-| minecraft:hard_orange_stained_glass_pane |  |
+| minecraft:hard_orange_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_pink_stained_glass |  |
-| minecraft:hard_pink_stained_glass_pane |  |
+| minecraft:hard_pink_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_purple_stained_glass |  |
-| minecraft:hard_purple_stained_glass_pane |  |
+| minecraft:hard_purple_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_red_stained_glass |  |
-| minecraft:hard_red_stained_glass_pane |  |
+| minecraft:hard_red_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_white_stained_glass |  |
-| minecraft:hard_white_stained_glass_pane |  |
+| minecraft:hard_white_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hard_yellow_stained_glass |  |
-| minecraft:hard_yellow_stained_glass_pane |  |
+| minecraft:hard_yellow_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:hardened_clay |  |
 | minecraft:hay_block | deprecated, pillar_axis |
 | minecraft:heavy_core |  |
@@ -692,7 +710,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:infested_mossy_stone_bricks |  |
 | minecraft:infested_stone |  |
 | minecraft:infested_stone_bricks |  |
-| minecraft:iron_bars |  |
+| minecraft:iron_bars | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:iron_block |  |
 | minecraft:iron_chain | pillar_axis |
 | minecraft:iron_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
@@ -750,11 +768,14 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:light_blue_candle_cake | lit |
 | minecraft:light_blue_carpet |  |
 | minecraft:light_blue_concrete |  |
+| minecraft:light_blue_concrete_double_slab | minecraft:vertical_half |
 | minecraft:light_blue_concrete_powder |  |
+| minecraft:light_blue_concrete_slab | minecraft:vertical_half |
+| minecraft:light_blue_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:light_blue_glazed_terracotta | facing_direction |
 | minecraft:light_blue_shulker_box |  |
 | minecraft:light_blue_stained_glass |  |
-| minecraft:light_blue_stained_glass_pane |  |
+| minecraft:light_blue_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:light_blue_terracotta |  |
 | minecraft:light_blue_wool |  |
 | minecraft:light_blue_wool_double_slab | minecraft:vertical_half |
@@ -764,10 +785,13 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:light_gray_candle_cake | lit |
 | minecraft:light_gray_carpet |  |
 | minecraft:light_gray_concrete |  |
+| minecraft:light_gray_concrete_double_slab | minecraft:vertical_half |
 | minecraft:light_gray_concrete_powder |  |
+| minecraft:light_gray_concrete_slab | minecraft:vertical_half |
+| minecraft:light_gray_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:light_gray_shulker_box |  |
 | minecraft:light_gray_stained_glass |  |
-| minecraft:light_gray_stained_glass_pane |  |
+| minecraft:light_gray_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:light_gray_terracotta |  |
 | minecraft:light_gray_wool |  |
 | minecraft:light_gray_wool_double_slab | minecraft:vertical_half |
@@ -781,11 +805,14 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:lime_candle_cake | lit |
 | minecraft:lime_carpet |  |
 | minecraft:lime_concrete |  |
+| minecraft:lime_concrete_double_slab | minecraft:vertical_half |
 | minecraft:lime_concrete_powder |  |
+| minecraft:lime_concrete_slab | minecraft:vertical_half |
+| minecraft:lime_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:lime_glazed_terracotta | facing_direction |
 | minecraft:lime_shulker_box |  |
 | minecraft:lime_stained_glass |  |
-| minecraft:lime_stained_glass_pane |  |
+| minecraft:lime_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:lime_terracotta |  |
 | minecraft:lime_wool |  |
 | minecraft:lime_wool_double_slab | minecraft:vertical_half |
@@ -801,14 +828,20 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:lodestone |  |
 | minecraft:loom | direction |
 | minecraft:magenta_candle | candles, lit |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:magenta_candle_cake | lit |
 | minecraft:magenta_carpet |  |
 | minecraft:magenta_concrete |  |
+| minecraft:magenta_concrete_double_slab | minecraft:vertical_half |
 | minecraft:magenta_concrete_powder |  |
+| minecraft:magenta_concrete_slab | minecraft:vertical_half |
+| minecraft:magenta_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:magenta_glazed_terracotta | facing_direction |
 | minecraft:magenta_shulker_box |  |
 | minecraft:magenta_stained_glass |  |
-| minecraft:magenta_stained_glass_pane |  |
+| minecraft:magenta_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:magenta_terracotta |  |
 | minecraft:magenta_wool |  |
 | minecraft:magenta_wool_double_slab | minecraft:vertical_half |
@@ -828,9 +861,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mangrove_propagule | hanging, propagule_stage |
 | minecraft:mangrove_roots |  |
 | minecraft:mangrove_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:mangrove_slab | minecraft:vertical_half |
 | minecraft:mangrove_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:mangrove_standing_sign | ground_sign_direction |
@@ -898,12 +928,15 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:orange_candle_cake | lit |
 | minecraft:orange_carpet |  |
 | minecraft:orange_concrete |  |
+| minecraft:orange_concrete_double_slab | minecraft:vertical_half |
 | minecraft:orange_concrete_powder |  |
+| minecraft:orange_concrete_slab | minecraft:vertical_half |
+| minecraft:orange_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:orange_glazed_terracotta | facing_direction |
 | minecraft:orange_poplar_leaves | persistent_bit, update_bit |
 | minecraft:orange_shulker_box |  |
 | minecraft:orange_stained_glass |  |
-| minecraft:orange_stained_glass_pane |  |
+| minecraft:orange_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:orange_terracotta |  |
 | minecraft:orange_tulip |  |
 | minecraft:orange_wool |  |
@@ -913,7 +946,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:oxeye_daisy |  |
 | minecraft:oxidized_chiseled_copper |  |
 | minecraft:oxidized_copper |  |
-| minecraft:oxidized_copper_bars |  |
+| minecraft:oxidized_copper_bars | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:oxidized_copper_bulb | lit, powered_bit |
 | minecraft:oxidized_copper_chain | pillar_axis |
 | minecraft:oxidized_copper_chest | minecraft:cardinal_direction |
@@ -959,12 +992,15 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:pink_candle_cake | lit |
 | minecraft:pink_carpet |  |
 | minecraft:pink_concrete |  |
+| minecraft:pink_concrete_double_slab | minecraft:vertical_half |
 | minecraft:pink_concrete_powder |  |
+| minecraft:pink_concrete_slab | minecraft:vertical_half |
+| minecraft:pink_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:pink_glazed_terracotta | facing_direction |
 | minecraft:pink_petals | growth, minecraft:cardinal_direction |
 | minecraft:pink_shulker_box |  |
 | minecraft:pink_stained_glass |  |
-| minecraft:pink_stained_glass_pane |  |
+| minecraft:pink_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:pink_terracotta |  |
 | minecraft:pink_tulip |  |
 | minecraft:pink_wool |  |
@@ -995,6 +1031,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:polished_blackstone_slab | minecraft:vertical_half |
 | minecraft:polished_blackstone_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:polished_blackstone_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:polished_cinnabar |  |
 | minecraft:polished_cinnabar_double_slab | minecraft:vertical_half |
 | minecraft:polished_cinnabar_slab | minecraft:vertical_half |
@@ -1031,9 +1070,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:poplar_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:poplar_log | pillar_axis |
 | minecraft:poplar_planks |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:poplar_pressure_plate | redstone_signal |
 | minecraft:poplar_sapling | age_bit |
 | minecraft:poplar_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
@@ -1065,11 +1101,14 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:purple_candle_cake | lit |
 | minecraft:purple_carpet |  |
 | minecraft:purple_concrete |  |
+| minecraft:purple_concrete_double_slab | minecraft:vertical_half |
 | minecraft:purple_concrete_powder |  |
+| minecraft:purple_concrete_slab | minecraft:vertical_half |
+| minecraft:purple_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:purple_glazed_terracotta | facing_direction |
 | minecraft:purple_shulker_box |  |
 | minecraft:purple_stained_glass |  |
-| minecraft:purple_stained_glass_pane |  |
+| minecraft:purple_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:purple_terracotta |  |
 | minecraft:purple_wool |  |
 | minecraft:purple_wool_double_slab | minecraft:vertical_half |
@@ -1095,7 +1134,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:red_candle_cake | lit |
 | minecraft:red_carpet |  |
 | minecraft:red_concrete |  |
+| minecraft:red_concrete_double_slab | minecraft:vertical_half |
 | minecraft:red_concrete_powder |  |
+| minecraft:red_concrete_slab | minecraft:vertical_half |
+| minecraft:red_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:red_glazed_terracotta | facing_direction |
 | minecraft:red_mushroom |  |
 | minecraft:red_mushroom_block | huge_mushroom_bits |
@@ -1114,7 +1156,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:red_shrub |  |
 | minecraft:red_shulker_box |  |
 | minecraft:red_stained_glass |  |
-| minecraft:red_stained_glass_pane |  |
+| minecraft:red_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:red_terracotta |  |
 | minecraft:red_tulip |  |
 | minecraft:red_wool |  |
@@ -1153,7 +1195,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sea_lantern |  |
 | minecraft:sea_pickle | cluster_count, dead_bit |
 | minecraft:seagrass | sea_grass_type |
-| minecraft:shelf_mushroom | facing_direction, growth |
+| minecraft:shelf_mushroom | growth, minecraft:cardinal_direction |
 | minecraft:short_dry_grass |  |
 | minecraft:short_grass |  |
 | minecraft:shroomlight |  |
@@ -1192,6 +1234,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sponge |  |
 | minecraft:spore_blossom |  |
 | minecraft:spruce_button | button_pressed_bit, facing_direction |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:spruce_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:spruce_double_slab | minecraft:vertical_half |
 | minecraft:spruce_fence | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
@@ -1223,6 +1268,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stone_pressure_plate | redstone_signal |
 | minecraft:stone_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:stonecutter_block | minecraft:cardinal_direction |
+| minecraft:straw_bed | head_piece_bit, minecraft:cardinal_direction, occupied_bit |
 | minecraft:stripped_acacia_log | pillar_axis |
 | minecraft:stripped_acacia_wood | pillar_axis |
 | minecraft:stripped_bamboo_block | pillar_axis |
@@ -1234,9 +1280,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stripped_crimson_stem | pillar_axis |
 | minecraft:stripped_dark_oak_log | pillar_axis |
 | minecraft:stripped_dark_oak_wood | pillar_axis |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:stripped_jungle_log | pillar_axis |
 | minecraft:stripped_jungle_wood | pillar_axis |
 | minecraft:stripped_mangrove_log | pillar_axis |
@@ -1279,7 +1322,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:trapped_chest | minecraft:cardinal_direction |
 | minecraft:trial_spawner | ominous, trial_spawner_state |
-| minecraft:trip_wire | attached_bit, disarmed_bit, powered_bit, suspended_bit |
+| minecraft:trip_wire | attached_bit, disarmed_bit, minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west, powered_bit, suspended_bit |
 | minecraft:tripwire_hook | attached_bit, direction, powered_bit |
 | minecraft:tube_coral |  |
 | minecraft:tube_coral_block |  |
@@ -1333,7 +1376,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waterlily |  |
 | minecraft:waxed_chiseled_copper |  |
 | minecraft:waxed_copper |  |
-| minecraft:waxed_copper_bars |  |
+| minecraft:waxed_copper_bars | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:waxed_copper_bulb | lit, powered_bit |
 | minecraft:waxed_copper_chain | pillar_axis |
 | minecraft:waxed_copper_chest | minecraft:cardinal_direction |
@@ -1348,7 +1391,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_double_cut_copper_slab | minecraft:vertical_half |
 | minecraft:waxed_exposed_chiseled_copper |  |
 | minecraft:waxed_exposed_copper |  |
-| minecraft:waxed_exposed_copper_bars |  |
+| minecraft:waxed_exposed_copper_bars | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:waxed_exposed_copper_bulb | lit, powered_bit |
 | minecraft:waxed_exposed_copper_chain | pillar_axis |
 | minecraft:waxed_exposed_copper_chest | minecraft:cardinal_direction |
@@ -1365,7 +1408,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_lightning_rod | facing_direction, powered_bit |
 | minecraft:waxed_oxidized_chiseled_copper |  |
 | minecraft:waxed_oxidized_copper |  |
-| minecraft:waxed_oxidized_copper_bars |  |
+| minecraft:waxed_oxidized_copper_bars | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:waxed_oxidized_copper_bulb | lit, powered_bit |
 | minecraft:waxed_oxidized_copper_chain | pillar_axis |
 | minecraft:waxed_oxidized_copper_chest | minecraft:cardinal_direction |
@@ -1381,7 +1424,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_oxidized_lightning_rod | facing_direction, powered_bit |
 | minecraft:waxed_weathered_chiseled_copper |  |
 | minecraft:waxed_weathered_copper |  |
-| minecraft:waxed_weathered_copper_bars |  |
+| minecraft:waxed_weathered_copper_bars | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:waxed_weathered_copper_bulb | lit, powered_bit |
 | minecraft:waxed_weathered_copper_chain | pillar_axis |
 | minecraft:waxed_weathered_copper_chest | minecraft:cardinal_direction |
@@ -1394,10 +1437,13 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_weathered_cut_copper_slab | minecraft:vertical_half |
 | minecraft:waxed_weathered_cut_copper_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:waxed_weathered_double_cut_copper_slab | minecraft:vertical_half |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:waxed_weathered_lightning_rod | facing_direction, powered_bit |
 | minecraft:weathered_chiseled_copper |  |
 | minecraft:weathered_copper |  |
-| minecraft:weathered_copper_bars |  |
+| minecraft:weathered_copper_bars | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:weathered_copper_bulb | lit, powered_bit |
 | minecraft:weathered_copper_chain | pillar_axis |
 | minecraft:weathered_copper_chest | minecraft:cardinal_direction |
@@ -1419,11 +1465,14 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:white_candle_cake | lit |
 | minecraft:white_carpet |  |
 | minecraft:white_concrete |  |
+| minecraft:white_concrete_double_slab | minecraft:vertical_half |
 | minecraft:white_concrete_powder |  |
+| minecraft:white_concrete_slab | minecraft:vertical_half |
+| minecraft:white_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:white_glazed_terracotta | facing_direction |
 | minecraft:white_shulker_box |  |
 | minecraft:white_stained_glass |  |
-| minecraft:white_stained_glass_pane |  |
+| minecraft:white_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:white_terracotta |  |
 | minecraft:white_tulip |  |
 | minecraft:white_wool |  |
@@ -1437,18 +1486,18 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:wooden_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:wooden_pressure_plate | redstone_signal |
 | minecraft:yellow_candle | candles, lit |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:yellow_candle_cake | lit |
 | minecraft:yellow_carpet |  |
 | minecraft:yellow_concrete |  |
+| minecraft:yellow_concrete_double_slab | minecraft:vertical_half |
 | minecraft:yellow_concrete_powder |  |
+| minecraft:yellow_concrete_slab | minecraft:vertical_half |
+| minecraft:yellow_concrete_stairs | minecraft:corner, upside_down_bit, weirdo_direction |
 | minecraft:yellow_glazed_terracotta | facing_direction |
 | minecraft:yellow_poplar_leaves | persistent_bit, update_bit |
 | minecraft:yellow_shulker_box |  |
 | minecraft:yellow_stained_glass |  |
-| minecraft:yellow_stained_glass_pane |  |
+| minecraft:yellow_stained_glass_pane | minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_west |
 | minecraft:yellow_terracotta |  |
 | minecraft:yellow_wool |  |
 | minecraft:yellow_wool_double_slab | minecraft:vertical_half |

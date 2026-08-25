@@ -86,7 +86,7 @@
       {
         "id": "facing_camera_mode",
         "title": "Facing Camera Mode",
-        "dataType": "object"
+        "dataType": "string"
       },
       {
         "id": "size",
@@ -98,7 +98,7 @@
           {
             "id": "size",
             "dataType": "keyedObjectCollection",
-            "subFormId": "item/molang_expression"
+            "subFormId": "legacy/molang_expression"
           },
           {
             "id": "size",
@@ -112,7 +112,8 @@
         "title": "Uv",
         "dataType": "object"
       }
-    ]
+    ],
+    "dataVersion": "1.21.10"
   },
   "description": "Controls how particle sprites render and orient toward the camera. The facing_camera_mode determines billboard behavior: 'lookat_xyz' always faces the camera (classic sprites), 'rotate_y' only rotates vertically (tall flames), and direction modes align with particle velocity (arrows, sparks). Size controls particle dimensions using Molang for dynamic scaling."
 }

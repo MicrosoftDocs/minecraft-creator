@@ -22,8 +22,8 @@
     "fields": [
       {
         "id": "predicate_type",
-        "title": "BlockType",
-        "dataType": "string",
+        "title": "Predicate Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:always_true",
@@ -50,6 +50,8 @@
             "title": "Minecraft:tag match"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:tag_match",
         "isRequired": true
       },
       {
@@ -59,6 +61,7 @@
         "dataType": "string",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

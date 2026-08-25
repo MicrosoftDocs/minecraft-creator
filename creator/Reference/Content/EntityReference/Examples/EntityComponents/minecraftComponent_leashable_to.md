@@ -31,3 +31,12 @@ Allows players to leash entities to this entity, retrieve entities already leash
 ```json
 "minecraft:leashable_to": {}
 ```
+
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
+
+
+```json
+"minecraft:leashable_to": {
+  "unleash_on_removal": false
+}
+```

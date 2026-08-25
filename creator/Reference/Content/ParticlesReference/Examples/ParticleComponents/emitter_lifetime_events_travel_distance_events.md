@@ -18,5 +18,5 @@ Triggers particle events when the emitter has traveled a specified distance. Use
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | distance | *not set* | Decimal number |  | 
-| effects | *not set* | Array of objects |  | 
+| effects | *not set* | Array of strings |  | 
 | effects (as String) | *not set* | String |  | 

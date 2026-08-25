@@ -86,7 +86,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "goal_radius",
@@ -148,6 +149,7 @@
         "defaultValue": 1
       }
     ],
+    "dataVersion": "1.26.10",
     "samples": {}
   }
 }

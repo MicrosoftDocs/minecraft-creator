@@ -96,7 +96,8 @@ Walking style of the mob.
 ```json
 "minecraft:navigation.walk": {
   "can_path_over_water": true,
-  "avoid_damage_blocks": true
+  "avoid_damage_blocks": true,
+  "using_door_annotation": true
 }
 ```
 

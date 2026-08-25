@@ -98,7 +98,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "goal_radius",
@@ -137,6 +138,7 @@
         }
       }
     ],
+    "dataVersion": "1.21.130",
     "samples": {
       "/vanilla/behavior_pack/entities/warden.json": [
         {

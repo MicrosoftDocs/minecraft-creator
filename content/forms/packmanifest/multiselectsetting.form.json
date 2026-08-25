@@ -1,0 +1,75 @@
+{
+  "id": "MultiSelectSetting",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "MultiSelectSetting",
+    "title": "Packmanifest MultiSelectSetting",
+    "fields": [
+      {
+        "id": "defaults",
+        "title": "Defaults",
+        "dataType": "stringArray",
+        "maxLength": 20,
+        "isRequired": true
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "dataType": "string",
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^(?:(?!^(minecraft):).)+:(?:.)+$",
+            "patternFlags": "i"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "options",
+        "title": "Options",
+        "dataType": "objectArray",
+        "minLength": 2,
+        "maxLength": 20,
+        "subFormId": "packmanifest/dropdownoption",
+        "isRequired": true
+      },
+      {
+        "id": "text",
+        "title": "Text",
+        "dataType": "string",
+        "isRequired": true
+      },
+      {
+        "id": "type",
+        "title": "Type",
+        "dataType": "stringEnum",
+        "choices": [
+          {
+            "id": "dropdown",
+            "title": "Dropdown"
+          },
+          {
+            "id": "label",
+            "title": "Label"
+          },
+          {
+            "id": "multiselect",
+            "title": "Multiselect"
+          },
+          {
+            "id": "slider",
+            "title": "Slider"
+          },
+          {
+            "id": "toggle",
+            "title": "Toggle"
+          }
+        ],
+        "mustMatchChoices": true,
+        "isRequired": true
+      }
+    ],
+    "dataVersion": "3.0.0"
+  }
+}

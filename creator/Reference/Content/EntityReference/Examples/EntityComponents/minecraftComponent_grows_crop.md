@@ -13,11 +13,11 @@ ms.date: 02/11/2025
 Could increase crop growth when entity walks over crop.
 
 
-## Grows Crop Properties
+## Entity Grows Crop Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| chance | 0 | Decimal number | Value between 0-1. Chance of success per tick. | 
+| chance | 0 | Decimal number | Value between 0-1. Chance of success per tick | 
 | charges | 10 | Integer number | Number of charges | 
 
 ## Samples

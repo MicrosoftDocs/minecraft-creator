@@ -79,7 +79,8 @@
         "dataType": "objectArray",
         "subFormId": "packmanifest/subpack"
       }
-    ]
+    ],
+    "dataVersion": "3.0.0"
   },
   "description": "The root structure of a manifest.json file that defines an add-on pack. Every behavior pack and resource pack requires a manifest with a unique UUID, version info, and module declarations. This is the entry point Minecraft uses to identify and load your content."
 }

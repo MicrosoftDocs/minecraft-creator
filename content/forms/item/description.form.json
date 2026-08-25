@@ -30,7 +30,7 @@
         "id": "identifier",
         "title": "Identifier",
         "description": "Unique name for the item that must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla item.",
-        "dataType": "object",
+        "dataType": "string",
         "isRequired": true
       },
       {
@@ -45,6 +45,7 @@
         },
         "subFormId": "item/menu_category"
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

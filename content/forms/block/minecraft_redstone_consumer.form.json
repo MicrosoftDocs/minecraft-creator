@@ -51,6 +51,7 @@
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

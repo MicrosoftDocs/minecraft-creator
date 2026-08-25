@@ -40,8 +40,8 @@
       },
       {
         "id": "processor_type",
-        "title": "Jigsaw Processro Type",
-        "dataType": "string",
+        "title": "Processor Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:block_ignore",
@@ -60,8 +60,11 @@
             "title": "Minecraft:rule"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:capped",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

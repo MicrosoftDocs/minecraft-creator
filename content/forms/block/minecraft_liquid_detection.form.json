@@ -81,9 +81,156 @@
         "description": "Whether this block uses the encompassing collider to visually clip the liquid. The encompassing collider is the smallest single AABB that contains all of the block's colliders.\nA liquid's base visual shape is ALWAYS a quad, they do not have more subdivisions.\nWhen use_liquid_clipping is TRUE, the game will attempt to reduce the visible volume of water if the collision shape allows it. Eg. a wall will turn the water base shape into a rectangle on the side of the incoming water.\nWhen use_liquid_clipping is FALSE, the game will preserve the water base shape as a full square, no matter what the collision shape of the block they share space with is.",
         "defaultValue": false,
         "dataType": "boolean"
+      },
+      {
+        "id": "detection_rules",
+        "title": "Detection Rules",
+        "dataType": "objectArray",
+        "subForm": {
+          "id": "detection_rules",
+          "title": "Detection rules",
+          "fields": [
+            {
+              "id": "liquid_type",
+              "title": "Liquid type",
+              "dataType": "string",
+              "samples": {
+                "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+                  {
+                    "path": "liquid_type",
+                    "content": "water"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "can_contain_liquid",
+              "title": "Can contain liquid",
+              "dataType": "string",
+              "samples": {
+                "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+                  {
+                    "path": "can_contain_liquid",
+                    "content": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": "on_liquid_touches",
+              "title": "On liquid touches",
+              "dataType": "string",
+              "samples": {
+                "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+                  {
+                    "path": "on_liquid_touches",
+                    "content": "blocking"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:liquid_detection/",
+              "content": [
+                {
+                  "liquid_type": "water",
+                  "can_contain_liquid": true,
+                  "on_liquid_touches": "blocking"
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:liquid_detection/",
+              "content": [
+                {
+                  "liquid_type": "water",
+                  "can_contain_liquid": true,
+                  "on_liquid_touches": "blocking"
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
-    "samples": {}
+    "samples": {
+      "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:liquid_detection/",
+          "content": {
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "can_contain_liquid": true,
+                "on_liquid_touches": "blocking"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_concrete_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:liquid_detection/",
+          "content": {
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "can_contain_liquid": true,
+                "on_liquid_touches": "blocking"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:liquid_detection/",
+          "content": {
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "can_contain_liquid": true,
+                "on_liquid_touches": "blocking"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/black_wool_stairs.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:liquid_detection/",
+          "content": {
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "can_contain_liquid": true,
+                "on_liquid_touches": "blocking"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/blue_concrete_slab.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:liquid_detection/",
+          "content": {
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "can_contain_liquid": true,
+                "on_liquid_touches": "blocking"
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "generatedFromSchema_doNotEdit": {
     "id": "Liquid Detection",
@@ -99,6 +246,7 @@
         "subFormId": "block/detection_rule",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

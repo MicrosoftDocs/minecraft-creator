@@ -61,12 +61,14 @@
               "dataType": "string",
               "defaultValue": ""
             }
-          ]
+          ],
+          "dataVersion": "1.20.50"
         },
         "alternates": [
           {
             "id": "blocks_to_corner_with",
-            "dataType": "string"
+            "dataType": "string",
+            "minLength": 1
           },
           {
             "id": "blocks_to_corner_with",
@@ -98,6 +100,7 @@
             "title": "Minecraft:sixteen way rotation"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       },
       {
@@ -112,6 +115,7 @@
           }
         ]
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

@@ -34,6 +34,7 @@
         "subFormId": "biome/biome_description",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

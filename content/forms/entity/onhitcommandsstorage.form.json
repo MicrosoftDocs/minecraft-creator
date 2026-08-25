@@ -1,0 +1,132 @@
+{
+  "id": "OnHitCommandsStorage",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "OnHitCommandsStorage",
+    "title": "Entity OnHitCommandsStorage",
+    "fields": [
+      {
+        "id": "arrow_effect",
+        "title": "Arrow Effect",
+        "description": "Variant of `mob_effect` that derives the effects from the arrow's tipped-potion data and splits durations across the standard eight-arrow stack.",
+        "dataType": "object",
+        "subFormId": "entity/arroweffectsubcomponentdefinition"
+      },
+      {
+        "id": "catch_fire",
+        "title": "Catch Fire",
+        "description": "Causes the projectile to embed itself in the block it hits.",
+        "dataType": "object",
+        "subFormId": "entity/catchfiresubcomponentdefinition"
+      },
+      {
+        "id": "definition_event",
+        "title": "Definition Event",
+        "description": "Fires an entity event on the shooter, the projectile, the entity hit, and/or all entities in a splash radius.",
+        "dataType": "object",
+        "subFormId": "entity/actordefinitioneventsubcomponentdefinition"
+      },
+      {
+        "id": "douse_fire",
+        "title": "Douse Fire",
+        "description": "When the projectile is a water-effect potion, extinguishes fires and campfires at and around the hit block.",
+        "dataType": "object"
+      },
+      {
+        "id": "freeze_on_hit",
+        "title": "Freeze On Hit",
+        "description": "Freezes nearby water blocks to ice in a configurable volume around the impact (Education Edition chemistry feature).",
+        "dataType": "object",
+        "subFormId": "entity/freezeonhitsubcomponentdefinition"
+      },
+      {
+        "id": "grant_xp",
+        "title": "Grant Xp",
+        "description": "Drops experience orbs at the impact location.",
+        "dataType": "object",
+        "subFormId": "entity/grantxpsubcomponentdefinition"
+      },
+      {
+        "id": "hurt_owner",
+        "title": "Hurt Owner",
+        "description": "Damages the projectile's owner when the projectile lands.",
+        "dataType": "object",
+        "subFormId": "entity/hurtownersubcomponentdefinition"
+      },
+      {
+        "id": "ignite",
+        "title": "Ignite",
+        "description": "Triggers the entity's `on_ignite` definition when the projectile hits.",
+        "dataType": "object"
+      },
+      {
+        "id": "impact_damage",
+        "title": "Impact Damage",
+        "description": "Deals damage to the entity that was hit and optionally applies knockback, fire, channeling, and critical-hit scaling.",
+        "dataType": "object",
+        "subFormId": "entity/impactdamagesubcomponentdefinition"
+      },
+      {
+        "id": "mob_effect",
+        "title": "Mob Effect",
+        "description": "Applies one or more mob effects to the entity hit. Effects are described with an `effects` array of effect objects.",
+        "dataType": "object",
+        "subFormId": "entity/mobeffectsubcomponentdefinition"
+      },
+      {
+        "id": "particle_on_hit",
+        "title": "Particle On Hit",
+        "description": "Emits a particle effect at the impact location, optionally only for entity hits or only for non-entity hits.",
+        "dataType": "object",
+        "subFormId": "entity/particleonhitsubcomponentdefinition"
+      },
+      {
+        "id": "remove_on_hit",
+        "title": "Remove On Hit",
+        "description": "Removes the projectile from the world when it hits a block, entity, or (if `hit_water` is set) water.",
+        "dataType": "object"
+      },
+      {
+        "id": "spawn_aoe_cloud",
+        "title": "Spawn Aoe Cloud",
+        "description": "Spawns an area effect cloud at the impact point that applies potion effects to entities inside it over time",
+        "dataType": "object",
+        "subFormId": "entity/spawnaoecloudsubcomponentdefinition"
+      },
+      {
+        "id": "spawn_chance",
+        "title": "Spawn Chance",
+        "description": "Conditionally spawns one or two groups of entities at the impact location and optionally fires events on each spawned entity.",
+        "dataType": "object",
+        "subFormId": "entity/spawnchancesubcomponentdefinition"
+      },
+      {
+        "id": "stick_in_ground",
+        "title": "Stick In Ground",
+        "description": "Causes the projectile to embed itself in the block it hits.",
+        "dataType": "object",
+        "subFormId": "entity/stickingroundsubcomponentdefinition"
+      },
+      {
+        "id": "teleport_owner",
+        "title": "Teleport Owner",
+        "description": "Teleports the projectile's owner to the impact location.",
+        "dataType": "object"
+      },
+      {
+        "id": "thrown_potion_effect",
+        "title": "Thrown Potion Effect",
+        "description": "Applies the splash-potion effects of a thrown potion to nearby entities at the impact point.",
+        "dataType": "object",
+        "subFormId": "entity/thrownpotioneffectsubcomponentdefinition"
+      },
+      {
+        "id": "wind_burst_on_hit",
+        "title": "Wind Burst On Hit",
+        "description": "Releases an outward wind burst at the impact point that pushes nearby entities away.",
+        "dataType": "object"
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

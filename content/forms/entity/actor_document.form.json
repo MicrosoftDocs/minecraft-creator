@@ -74,7 +74,14 @@
         "title": "Events",
         "description": "Dynamic value",
         "dataType": "object"
+      },
+      {
+        "id": "upgrades",
+        "title": "Upgrades",
+        "description": "Dynamic value",
+        "dataType": "object"
       }
-    ]
+    ],
+    "dataVersion": "1.26.50"
   }
 }

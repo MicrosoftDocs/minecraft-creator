@@ -269,5 +269,699 @@
         "dataType": "float"
       }
     ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:projectile",
+    "title": "Entity Projectile",
+    "description": "Turns the entity into a projectile: a thrown or shot entity that flies along a ballistic arc and reacts when it impacts a block, a fluid, or another entity.",
+    "fields": [
+      {
+        "id": "anchor",
+        "title": "Anchor",
+        "description": "Reference point on the shooter used to position the projectile at spawn: `0` = origin (feet), `1` = eye height, `2` = middle of the bounding box.",
+        "dataType": "stringEnum",
+        "defaultValue": "origin",
+        "choices": [
+          {
+            "id": "eye_height",
+            "title": "Eye height"
+          },
+          {
+            "id": "middle",
+            "title": "Middle"
+          },
+          {
+            "id": "origin",
+            "title": "Origin"
+          }
+        ],
+        "mustMatchChoices": true
+      },
+      {
+        "id": "angle_offset",
+        "title": "Angle Offset",
+        "description": "Additional upwards pitch (in degrees) applied to the shooter's aim direction at launch. Negative values aim downward.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "catch_fire",
+        "title": "Catch Fire",
+        "description": "Legacy default for whether the projectile sets the entity hit on fire. Prefer the `catch_fire` on-hit subcomponent.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "crit_particle_on_hurt",
+        "title": "Crit Particle On Hurt",
+        "description": "If `true`, critical-hit particles are spawned on the projectile when it is struck.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "destroy_on_hurt",
+        "title": "Destroy On Hurt",
+        "description": "If `true`, the projectile is removed from the world when struck.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "gravity",
+        "title": "Gravity",
+        "description": "Downward acceleration (blocks per tick squared) applied each tick while in flight. Higher values make the projectile fall faster.",
+        "dataType": "float",
+        "defaultValue": 0.05000000074505806
+      },
+      {
+        "id": "hit_ground_sound",
+        "title": "Hit Ground Sound",
+        "description": "Identifier of the sound to play when the projectile hits a block. Defaults to `hit_sound` when empty.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "hit_nearest_passenger",
+        "title": "Hit Nearest Passenger",
+        "description": "If `true`, when the projectile hits a vehicle with at least one passenger, the on-hit behavior is applied to the passenger closest to the impact point instead of the vehicle itself.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "hit_sound",
+        "title": "Hit Sound",
+        "description": "Identifier of the sound to play when the projectile hits an entity. Also used for block hits when `hit_ground_sound` is not specified.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "hit_water",
+        "title": "Hit Water",
+        "description": "If `true`, the projectile treats water as a hit surface and stops on contact.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "homing",
+        "title": "Homing",
+        "description": "If `true`, the projectile steers towards an active target while in flight.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "ignored_entities",
+        "title": "Ignored Entities",
+        "description": "Array of entity identifiers that the projectile will pass through without registering a hit.",
+        "dataType": "stringArray",
+        "defaultValue": []
+      },
+      {
+        "id": "inertia",
+        "title": "Inertia",
+        "description": "Fraction of the projectile's velocity preserved each tick while traveling through air. Values below `1.0` cause it to slow down over time.",
+        "dataType": "float",
+        "defaultValue": 0.9900000095367432
+      },
+      {
+        "id": "is_dangerous",
+        "title": "Is Dangerous",
+        "description": "If `true`, the projectile is flagged as dangerous, affecting AI reactions and certain client-side behaviors.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "isolated_physics",
+        "title": "Isolated Physics",
+        "description": "If `true`, the projectile uses a dedicated ballistic physics path and ignores generic actor movement systems (friction, drag, etc.). Recommended for custom projectiles.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "lightning",
+        "title": "Lightning",
+        "description": "If `true`, the projectile can channel a lightning bolt when it hits an entity during a thunderstorm.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "liquid_inertia",
+        "title": "Liquid Inertia",
+        "description": "Fraction of the projectile's velocity preserved each tick while traveling through a fluid.",
+        "dataType": "float",
+        "defaultValue": 0.6000000238418579
+      },
+      {
+        "id": "multiple_targets",
+        "title": "Multiple Targets",
+        "description": "If `true`, the projectile can hit more than one entity over the course of its flight; if `false`, it stops at the first entity it hits. Projectiles launched with the Piercing enchantment have this value set to `true`.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "offset",
+        "title": "Offset",
+        "description": "Offset, relative to the `anchor`, at which the projectile is spawned when fired by the shooter.",
+        "dataType": "numberArray",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "alternates": [
+          {
+            "id": "offset",
+            "dataType": "object",
+            "subForm": {
+              "id": "offset",
+              "title": "Offset",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "on_fire_time",
+        "title": "Fire Time",
+        "description": "Duration in seconds for which an entity set on fire by this projectile remains burning. Applied both by the legacy top-level `catch_fire` flag and by the `catch_fire` on-hit subcomponent.",
+        "dataType": "float",
+        "defaultValue": 5
+      },
+      {
+        "id": "on_hit",
+        "title": "Hit",
+        "description": "Map of on-hit subcomponents that drive what happens when the projectile impacts a block, fluid, or entity. Each key is a subcomponent name and its value is that subcomponent's configuration.",
+        "dataType": "object",
+        "subFormId": "entity/onhitcommandsstorage"
+      },
+      {
+        "id": "particle",
+        "title": "Particle",
+        "description": "Particle effect emitted at the impact location when the projectile hits something.",
+        "dataType": "stringEnum",
+        "defaultValue": "iconcrack",
+        "choices": [
+          {
+            "id": "balloongas",
+            "title": "Balloongas"
+          },
+          {
+            "id": "bleach",
+            "title": "Bleach"
+          },
+          {
+            "id": "blockforcefield",
+            "title": "Blockforcefield"
+          },
+          {
+            "id": "blueflame",
+            "title": "Blueflame"
+          },
+          {
+            "id": "breezewindexplosion",
+            "title": "Breezewindexplosion"
+          },
+          {
+            "id": "bubble",
+            "title": "Bubble"
+          },
+          {
+            "id": "bubblecolumndown",
+            "title": "Bubblecolumndown"
+          },
+          {
+            "id": "bubblecolumnup",
+            "title": "Bubblecolumnup"
+          },
+          {
+            "id": "bubblemanual",
+            "title": "Bubblemanual"
+          },
+          {
+            "id": "campfiresmoke",
+            "title": "Campfiresmoke"
+          },
+          {
+            "id": "campfiresmoketall",
+            "title": "Campfiresmoketall"
+          },
+          {
+            "id": "candleflame",
+            "title": "Candleflame"
+          },
+          {
+            "id": "carrotboost",
+            "title": "Carrotboost"
+          },
+          {
+            "id": "coloredflame",
+            "title": "Coloredflame"
+          },
+          {
+            "id": "conduit",
+            "title": "Conduit"
+          },
+          {
+            "id": "creakingcrumble",
+            "title": "Creakingcrumble"
+          },
+          {
+            "id": "crit",
+            "title": "Crit"
+          },
+          {
+            "id": "dragonbreath",
+            "title": "Dragonbreath"
+          },
+          {
+            "id": "dragonbreathfire",
+            "title": "Dragonbreathfire"
+          },
+          {
+            "id": "dragonbreathtrail",
+            "title": "Dragonbreathtrail"
+          },
+          {
+            "id": "dragondestroyblock",
+            "title": "Dragondestroyblock"
+          },
+          {
+            "id": "driphoney",
+            "title": "Driphoney"
+          },
+          {
+            "id": "driplava",
+            "title": "Driplava"
+          },
+          {
+            "id": "dripwater",
+            "title": "Dripwater"
+          },
+          {
+            "id": "dustplume",
+            "title": "Dustplume"
+          },
+          {
+            "id": "electricspark",
+            "title": "Electricspark"
+          },
+          {
+            "id": "enchantingtable",
+            "title": "Enchantingtable"
+          },
+          {
+            "id": "endrod",
+            "title": "Endrod"
+          },
+          {
+            "id": "evaporation",
+            "title": "Evaporation"
+          },
+          {
+            "id": "explode",
+            "title": "Explode"
+          },
+          {
+            "id": "eyeblossomclose",
+            "title": "Eyeblossomclose"
+          },
+          {
+            "id": "eyeblossomopen",
+            "title": "Eyeblossomopen"
+          },
+          {
+            "id": "fallingborderdust",
+            "title": "Fallingborderdust"
+          },
+          {
+            "id": "fallingdust",
+            "title": "Fallingdust"
+          },
+          {
+            "id": "fireworks",
+            "title": "Fireworks"
+          },
+          {
+            "id": "fireworksoverlay",
+            "title": "Fireworksoverlay"
+          },
+          {
+            "id": "fireworksstarter",
+            "title": "Fireworksstarter"
+          },
+          {
+            "id": "flame",
+            "title": "Flame"
+          },
+          {
+            "id": "food",
+            "title": "Food"
+          },
+          {
+            "id": "greenflame",
+            "title": "Greenflame"
+          },
+          {
+            "id": "heart",
+            "title": "Heart"
+          },
+          {
+            "id": "hugeexplosion",
+            "title": "Hugeexplosion"
+          },
+          {
+            "id": "iconcrack",
+            "title": "Iconcrack"
+          },
+          {
+            "id": "ink",
+            "title": "Ink"
+          },
+          {
+            "id": "largeexplode",
+            "title": "Largeexplode"
+          },
+          {
+            "id": "largesmoke",
+            "title": "Largesmoke"
+          },
+          {
+            "id": "lava",
+            "title": "Lava"
+          },
+          {
+            "id": "mobappearance",
+            "title": "Mobappearance"
+          },
+          {
+            "id": "mobflame",
+            "title": "Mobflame"
+          },
+          {
+            "id": "mobspell",
+            "title": "Mobspell"
+          },
+          {
+            "id": "mobspellambient",
+            "title": "Mobspellambient"
+          },
+          {
+            "id": "mobspellinstantaneous",
+            "title": "Mobspellinstantaneous"
+          },
+          {
+            "id": "myceliumdust",
+            "title": "Myceliumdust"
+          },
+          {
+            "id": "none",
+            "title": "None"
+          },
+          {
+            "id": "note",
+            "title": "Note"
+          },
+          {
+            "id": "obsidiantear",
+            "title": "Obsidiantear"
+          },
+          {
+            "id": "orangepoplarleaves",
+            "title": "Orangepoplarleaves"
+          },
+          {
+            "id": "paleoakleaves",
+            "title": "Paleoakleaves"
+          },
+          {
+            "id": "pausemobgrowth",
+            "title": "Pausemobgrowth"
+          },
+          {
+            "id": "portal",
+            "title": "Portal"
+          },
+          {
+            "id": "portalreverse",
+            "title": "Portalreverse"
+          },
+          {
+            "id": "rainsplash",
+            "title": "Rainsplash"
+          },
+          {
+            "id": "reddust",
+            "title": "Reddust"
+          },
+          {
+            "id": "redpoplarleaves",
+            "title": "Redpoplarleaves"
+          },
+          {
+            "id": "resetmobgrowth",
+            "title": "Resetmobgrowth"
+          },
+          {
+            "id": "risingborderdust",
+            "title": "Risingborderdust"
+          },
+          {
+            "id": "sculksoul",
+            "title": "Sculksoul"
+          },
+          {
+            "id": "shriek",
+            "title": "Shriek"
+          },
+          {
+            "id": "shulkerbullet",
+            "title": "Shulkerbullet"
+          },
+          {
+            "id": "slime",
+            "title": "Slime"
+          },
+          {
+            "id": "smoke",
+            "title": "Smoke"
+          },
+          {
+            "id": "sneeze",
+            "title": "Sneeze"
+          },
+          {
+            "id": "snowballpoof",
+            "title": "Snowballpoof"
+          },
+          {
+            "id": "snowflake",
+            "title": "Snowflake"
+          },
+          {
+            "id": "sonicexplosion",
+            "title": "Sonicexplosion"
+          },
+          {
+            "id": "soul",
+            "title": "Soul"
+          },
+          {
+            "id": "sparkler",
+            "title": "Sparkler"
+          },
+          {
+            "id": "spit",
+            "title": "Spit"
+          },
+          {
+            "id": "stalactitedriplava",
+            "title": "Stalactitedriplava"
+          },
+          {
+            "id": "stalactitedripwater",
+            "title": "Stalactitedripwater"
+          },
+          {
+            "id": "sulfurcube",
+            "title": "Sulfurcube"
+          },
+          {
+            "id": "terrain",
+            "title": "Terrain"
+          },
+          {
+            "id": "totem",
+            "title": "Totem"
+          },
+          {
+            "id": "townaura",
+            "title": "Townaura"
+          },
+          {
+            "id": "trackingemitter",
+            "title": "Trackingemitter"
+          },
+          {
+            "id": "vaultconnection",
+            "title": "Vaultconnection"
+          },
+          {
+            "id": "villagerangry",
+            "title": "Villagerangry"
+          },
+          {
+            "id": "villagerhappy",
+            "title": "Villagerhappy"
+          },
+          {
+            "id": "watersplash",
+            "title": "Watersplash"
+          },
+          {
+            "id": "watersplashmanual",
+            "title": "Watersplashmanual"
+          },
+          {
+            "id": "waterwake",
+            "title": "Waterwake"
+          },
+          {
+            "id": "wax",
+            "title": "Wax"
+          },
+          {
+            "id": "whitesmoke",
+            "title": "Whitesmoke"
+          },
+          {
+            "id": "windexplosion",
+            "title": "Windexplosion"
+          },
+          {
+            "id": "witchspell",
+            "title": "Witchspell"
+          },
+          {
+            "id": "wolfarmorcrack",
+            "title": "Wolfarmorcrack"
+          },
+          {
+            "id": "yellowpoplarleaves",
+            "title": "Yellowpoplarleaves"
+          }
+        ],
+        "mustMatchChoices": true
+      },
+      {
+        "id": "potion_effect",
+        "title": "Potion Effect",
+        "description": "Default potion aux value associated with the projectile. Normally set programmatically by potion items; rarely useful at authoring time. A value matching the water potion is required for the `douse_fire` on-hit subcomponent to extinguish fires.",
+        "dataType": "int",
+        "defaultValue": -1
+      },
+      {
+        "id": "power",
+        "title": "Power",
+        "description": "Initial speed (in blocks per tick) at which the projectile is launched.",
+        "dataType": "float",
+        "defaultValue": 1.2999999523162842
+      },
+      {
+        "id": "reflect_immunity",
+        "title": "Reflect Immunity",
+        "description": "Duration in seconds after launch during which the projectile cannot be reflected by being struck.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "reflect_on_hurt",
+        "title": "Reflect On Hurt",
+        "description": "If `true`, the projectile reverses direction when struck, reflecting back towards the attacker.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "shoot_sound",
+        "title": "Shoot Sound",
+        "description": "Identifier of the sound to play when the projectile is fired.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "shoot_target",
+        "title": "Shoot Target",
+        "description": "If `true`, the projectile is aimed at the shooter's current target (when one exists) rather than straight ahead.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "should_bounce",
+        "title": "Should Bounce",
+        "description": "Controls whether the projectile bounces off entities on impact. `no` disables bouncing, `if_invulnerable` bounces only off invulnerable entities, and `if_no_damage_dealt` bounces whenever no damage is dealt to the target.",
+        "dataType": "stringEnum",
+        "defaultValue": "no",
+        "choices": [
+          {
+            "id": "if_invulnerable",
+            "title": "If invulnerable"
+          },
+          {
+            "id": "if_no_damage_dealt",
+            "title": "If no damage dealt"
+          },
+          {
+            "id": "no",
+            "title": "No"
+          }
+        ],
+        "mustMatchChoices": true
+      },
+      {
+        "id": "splash_range",
+        "title": "Splash Range",
+        "description": "Splash radius (in blocks) used when applying potion effects via the splash/lingering potion code path.",
+        "dataType": "float",
+        "defaultValue": 4
+      },
+      {
+        "id": "stop_on_hurt",
+        "title": "Stop On Hurt",
+        "description": "If `true`, the projectile has its velocity zeroed out when struck.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "uncertainty_base",
+        "title": "Uncertainty Base",
+        "description": "Base inaccuracy added to the launch direction. The total inaccuracy is `uncertainty_base - difficultyLevel * uncertainty_multiplier`.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "uncertainty_multiplier",
+        "title": "Uncertainty Multiplier",
+        "description": "Per-difficulty-level reduction in inaccuracy. See `uncertainty_base` for the full formula.",
+        "dataType": "float",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.50"
   }
 }

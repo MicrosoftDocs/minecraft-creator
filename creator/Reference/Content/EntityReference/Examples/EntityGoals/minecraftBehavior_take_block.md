@@ -31,8 +31,8 @@ AI goal that makes entities pick up blocks from the world, like Endermen grabbin
 | on_take | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Take](#entity-actordefinitiontrigger) item | Trigger ran if the entity does take a block. Self, Target, and Block are set. | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
 | requires_line_of_sight | true | Boolean true/false | If true, whether the entity needs line of sight to the block they are trying to take. | 
-| xz_range | {"max":2,"min":-2} | [Xz Range](#item-intrange) item | XZ range from which the entity will try and take blocks from. | 
-| y_range | {"max":3,"min":0} | [y Range](#item-intrange) item | Y range from which the entity will try and take blocks from. | 
+| xz_range | {"max":2,"min":-2} | [Xz Range](#block-intrange) item | XZ range from which the entity will try and take blocks from. | 
+| y_range | {"max":3,"min":0} | [y Range](#block-intrange) item | Y range from which the entity will try and take blocks from. | 
 
 ### Blocks
 
@@ -119,11 +119,9 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | self | Self | |
 | target | Target | |
 
-### Item IntRange
-Specifies an integer range between minimum and maximum values for item properties requiring whole numbers. Used for stack count variations, discrete charge levels, or quantity ranges in loot tables. Ensures values stay within valid bounds for countable item properties.
+### Block IntRange
 
-
-#### Item IntRange Properties
+#### Block IntRange Properties
 
 **JSON path:** `xz_range`
 

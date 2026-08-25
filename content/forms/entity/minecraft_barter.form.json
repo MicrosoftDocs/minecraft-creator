@@ -59,11 +59,34 @@
       {
         "id": "cooldown_after_being_attacked",
         "title": "Cooldown After Being Attacked",
-        "description": "Duration, in seconds, for which mob won't barter items if it was hurt",
-        "defaultValue": 0,
+        "description": "Duration, in seconds, for which mob won't barter items if it was hurt.",
+        "defaultValue": 10,
         "dataType": "int"
       }
     ],
+    "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:barter",
+    "title": "Entity Barter",
+    "description": "Enables the component to drop an item as a barter exchange.",
+    "fields": [
+      {
+        "id": "barter_table",
+        "title": "Barter Table",
+        "description": "Loot table that's used to drop a random item.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "cooldown_after_being_attacked",
+        "title": "Cooldown After Being Attacked",
+        "description": "Duration, in seconds, for which mob won't barter items if it was hurt.",
+        "dataType": "int",
+        "defaultValue": 10
+      }
+    ],
+    "dataVersion": "1.26.50",
     "samples": {}
   }
 }

@@ -56,7 +56,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
+| type | minecraft:overworld | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 #### Foundation Material (Foundation Material)
 
@@ -143,7 +143,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
+| type | minecraft:mesa | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 #### Clay Material (Clay Material)
 
@@ -185,7 +185,7 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
 | top_material | *not set* | String | Controls the block type used for the surface of this biome. | 
 | top_material (Top Material) | *not set* | [Top Material (Top Material)](#top-material-top-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
+| type | minecraft:swamp | [Type](#type-choices) choices | Controls the type of surface builder to use. | 
 
 #### max_puddle_depth_below_sea_level
 
@@ -212,7 +212,7 @@ Generates surface on blocks with non-solid blocks above or below.
 | foundation_material (Foundation Material) | *not set* | [Foundation Material (Foundation Material)](#foundation-material-foundation-material) item |  | 
 | sea_material | *not set* | String | Material used to replace air blocks below sea level. | 
 | sea_material (Sea Material) | *not set* | [Sea Material (Sea Material)](#sea-material-sea-material) item |  | 
-| type | *not set* | [Type](#type-choices) choices | Controls the type of surface builder to use | 
+| type | minecraft:capped | [Type](#type-choices) choices | Controls the type of surface builder to use | 
 
 #### Beach Material (Beach Material)
 
@@ -247,4 +247,4 @@ Marks a biome as using End dimension terrain generation. Biomes with this compon
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| type | *not set* | [Type](#type-choices) choices | Use default Minecraft End terrain generation. | 
+| type | minecraft:the_end | [Type](#type-choices) choices | Use default Minecraft End terrain generation. | 

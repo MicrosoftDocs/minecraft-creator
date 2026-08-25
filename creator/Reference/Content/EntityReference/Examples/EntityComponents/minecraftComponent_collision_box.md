@@ -13,12 +13,12 @@ ms.date: 02/11/2025
 Sets the width and height of the Entity's collision box.
 
 
-## Collision Box Properties
+## Entity Collision Box Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| height | 1 | Decimal number | Height of the collision box in blocks. A negative value will be assumed to be 0. | Allay: `0.6`, Armor Stand: `1.975`, Arrow: `0.25` | 
-| width | 1 | Decimal number | Width of the collision box in blocks. A negative value will be assumed to be 0. Min value is -100000000.000000 Max value is 100000000.000000 | Allay: `0.35`, Armor Stand: `0.5`, Arrow: `0.25` | 
+| height | 1.7999999523162842 | Decimal number | Height of the collision box in blocks. A negative value will be assumed to be 0. Value must be >= -100000000. Value must be <= 100000000. | Allay: `0.6`, Armor Stand: `1.975`, Arrow: `0.25` | 
+| width | 0.6000000238418579 | Decimal number | Width and Depth of the collision box in blocks. A negative value will be assumed to be 0. Value must be >= -100000000. Value must be <= 100000000. | Allay: `0.35`, Armor Stand: `0.5`, Arrow: `0.25` | 
 
 ## Samples
 

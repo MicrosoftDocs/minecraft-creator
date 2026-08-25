@@ -17,7 +17,7 @@ Allows an entity to attack the closest target within a given subset of specific 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| attack_interval (Item FloatRange) | {"max":0,"min":0} | [Attack Interval](#item-floatrange) item | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}` | 
+| attack_interval (Legacy FloatRange) | {"max":0,"min":0} | [Attack Interval](#legacy-floatrange) item | Time range (in seconds) between searching for an attack target, range is in (0, "attack_interval"]. | Cave Spider: `{"min":10,"max":10}`, `{"min":5,"max":5}` | 
 | attack_interval (as Integer number) | *not set* | Integer number |  |  | 
 | attack_interval\|attack_interval_min | *not set* | String |  |  | 
 | attack_owner | false | Boolean true/false | If true, this entity can attack its owner. |  | 
@@ -51,11 +51,9 @@ If "attack_interval" is 0 or isn't declared, then between attacks: scanning for 
 Probability (0-1) that the goal will succeed when a candidate target passes all filters. Lower values cause the mob to acquire targets less reliably; the default of 1 always acquires. This item requires a format version of at least 1.21.130.
 
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `attack_interval`
 

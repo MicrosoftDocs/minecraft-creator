@@ -1,0 +1,458 @@
+{
+  "id": "SpawnAoECloudSubcomponentDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "SpawnAoECloudSubcomponentDefinition",
+    "title": "Entity SpawnAoECloudSubcomponentDefinition",
+    "description": "Spawns an area effect cloud at the impact point that applies potion effects to entities inside it over time",
+    "fields": [
+      {
+        "id": "affect_owner",
+        "title": "Affect Owner",
+        "description": "If `true`, the projectile's owner can be affected by the cloud.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "How long, in seconds, the cloud persists before disappearing.",
+        "dataType": "int",
+        "defaultValue": 0,
+        "alternates": [
+          {
+            "id": "duration",
+            "dataType": "string"
+          }
+        ]
+      },
+      {
+        "id": "particle",
+        "title": "Particle",
+        "description": "Particle effect emitted by the cloud.",
+        "dataType": "stringEnum",
+        "defaultValue": "mobspellambient",
+        "choices": [
+          {
+            "id": "balloongas",
+            "title": "Balloongas"
+          },
+          {
+            "id": "bleach",
+            "title": "Bleach"
+          },
+          {
+            "id": "blockforcefield",
+            "title": "Blockforcefield"
+          },
+          {
+            "id": "blueflame",
+            "title": "Blueflame"
+          },
+          {
+            "id": "breezewindexplosion",
+            "title": "Breezewindexplosion"
+          },
+          {
+            "id": "bubble",
+            "title": "Bubble"
+          },
+          {
+            "id": "bubblecolumndown",
+            "title": "Bubblecolumndown"
+          },
+          {
+            "id": "bubblecolumnup",
+            "title": "Bubblecolumnup"
+          },
+          {
+            "id": "bubblemanual",
+            "title": "Bubblemanual"
+          },
+          {
+            "id": "campfiresmoke",
+            "title": "Campfiresmoke"
+          },
+          {
+            "id": "campfiresmoketall",
+            "title": "Campfiresmoketall"
+          },
+          {
+            "id": "candleflame",
+            "title": "Candleflame"
+          },
+          {
+            "id": "carrotboost",
+            "title": "Carrotboost"
+          },
+          {
+            "id": "coloredflame",
+            "title": "Coloredflame"
+          },
+          {
+            "id": "conduit",
+            "title": "Conduit"
+          },
+          {
+            "id": "creakingcrumble",
+            "title": "Creakingcrumble"
+          },
+          {
+            "id": "crit",
+            "title": "Crit"
+          },
+          {
+            "id": "dragonbreath",
+            "title": "Dragonbreath"
+          },
+          {
+            "id": "dragonbreathfire",
+            "title": "Dragonbreathfire"
+          },
+          {
+            "id": "dragonbreathtrail",
+            "title": "Dragonbreathtrail"
+          },
+          {
+            "id": "dragondestroyblock",
+            "title": "Dragondestroyblock"
+          },
+          {
+            "id": "driphoney",
+            "title": "Driphoney"
+          },
+          {
+            "id": "driplava",
+            "title": "Driplava"
+          },
+          {
+            "id": "dripwater",
+            "title": "Dripwater"
+          },
+          {
+            "id": "dustplume",
+            "title": "Dustplume"
+          },
+          {
+            "id": "electricspark",
+            "title": "Electricspark"
+          },
+          {
+            "id": "enchantingtable",
+            "title": "Enchantingtable"
+          },
+          {
+            "id": "endrod",
+            "title": "Endrod"
+          },
+          {
+            "id": "evaporation",
+            "title": "Evaporation"
+          },
+          {
+            "id": "explode",
+            "title": "Explode"
+          },
+          {
+            "id": "eyeblossomclose",
+            "title": "Eyeblossomclose"
+          },
+          {
+            "id": "eyeblossomopen",
+            "title": "Eyeblossomopen"
+          },
+          {
+            "id": "fallingborderdust",
+            "title": "Fallingborderdust"
+          },
+          {
+            "id": "fallingdust",
+            "title": "Fallingdust"
+          },
+          {
+            "id": "fireworks",
+            "title": "Fireworks"
+          },
+          {
+            "id": "fireworksoverlay",
+            "title": "Fireworksoverlay"
+          },
+          {
+            "id": "fireworksstarter",
+            "title": "Fireworksstarter"
+          },
+          {
+            "id": "flame",
+            "title": "Flame"
+          },
+          {
+            "id": "food",
+            "title": "Food"
+          },
+          {
+            "id": "greenflame",
+            "title": "Greenflame"
+          },
+          {
+            "id": "heart",
+            "title": "Heart"
+          },
+          {
+            "id": "hugeexplosion",
+            "title": "Hugeexplosion"
+          },
+          {
+            "id": "iconcrack",
+            "title": "Iconcrack"
+          },
+          {
+            "id": "ink",
+            "title": "Ink"
+          },
+          {
+            "id": "largeexplode",
+            "title": "Largeexplode"
+          },
+          {
+            "id": "largesmoke",
+            "title": "Largesmoke"
+          },
+          {
+            "id": "lava",
+            "title": "Lava"
+          },
+          {
+            "id": "mobappearance",
+            "title": "Mobappearance"
+          },
+          {
+            "id": "mobflame",
+            "title": "Mobflame"
+          },
+          {
+            "id": "mobspell",
+            "title": "Mobspell"
+          },
+          {
+            "id": "mobspellambient",
+            "title": "Mobspellambient"
+          },
+          {
+            "id": "mobspellinstantaneous",
+            "title": "Mobspellinstantaneous"
+          },
+          {
+            "id": "myceliumdust",
+            "title": "Myceliumdust"
+          },
+          {
+            "id": "none",
+            "title": "None"
+          },
+          {
+            "id": "note",
+            "title": "Note"
+          },
+          {
+            "id": "obsidiantear",
+            "title": "Obsidiantear"
+          },
+          {
+            "id": "orangepoplarleaves",
+            "title": "Orangepoplarleaves"
+          },
+          {
+            "id": "paleoakleaves",
+            "title": "Paleoakleaves"
+          },
+          {
+            "id": "pausemobgrowth",
+            "title": "Pausemobgrowth"
+          },
+          {
+            "id": "portal",
+            "title": "Portal"
+          },
+          {
+            "id": "portalreverse",
+            "title": "Portalreverse"
+          },
+          {
+            "id": "rainsplash",
+            "title": "Rainsplash"
+          },
+          {
+            "id": "reddust",
+            "title": "Reddust"
+          },
+          {
+            "id": "redpoplarleaves",
+            "title": "Redpoplarleaves"
+          },
+          {
+            "id": "resetmobgrowth",
+            "title": "Resetmobgrowth"
+          },
+          {
+            "id": "risingborderdust",
+            "title": "Risingborderdust"
+          },
+          {
+            "id": "sculksoul",
+            "title": "Sculksoul"
+          },
+          {
+            "id": "shriek",
+            "title": "Shriek"
+          },
+          {
+            "id": "shulkerbullet",
+            "title": "Shulkerbullet"
+          },
+          {
+            "id": "slime",
+            "title": "Slime"
+          },
+          {
+            "id": "smoke",
+            "title": "Smoke"
+          },
+          {
+            "id": "sneeze",
+            "title": "Sneeze"
+          },
+          {
+            "id": "snowballpoof",
+            "title": "Snowballpoof"
+          },
+          {
+            "id": "snowflake",
+            "title": "Snowflake"
+          },
+          {
+            "id": "sonicexplosion",
+            "title": "Sonicexplosion"
+          },
+          {
+            "id": "soul",
+            "title": "Soul"
+          },
+          {
+            "id": "sparkler",
+            "title": "Sparkler"
+          },
+          {
+            "id": "spit",
+            "title": "Spit"
+          },
+          {
+            "id": "stalactitedriplava",
+            "title": "Stalactitedriplava"
+          },
+          {
+            "id": "stalactitedripwater",
+            "title": "Stalactitedripwater"
+          },
+          {
+            "id": "sulfurcube",
+            "title": "Sulfurcube"
+          },
+          {
+            "id": "terrain",
+            "title": "Terrain"
+          },
+          {
+            "id": "totem",
+            "title": "Totem"
+          },
+          {
+            "id": "townaura",
+            "title": "Townaura"
+          },
+          {
+            "id": "trackingemitter",
+            "title": "Trackingemitter"
+          },
+          {
+            "id": "vaultconnection",
+            "title": "Vaultconnection"
+          },
+          {
+            "id": "villagerangry",
+            "title": "Villagerangry"
+          },
+          {
+            "id": "villagerhappy",
+            "title": "Villagerhappy"
+          },
+          {
+            "id": "watersplash",
+            "title": "Watersplash"
+          },
+          {
+            "id": "watersplashmanual",
+            "title": "Watersplashmanual"
+          },
+          {
+            "id": "waterwake",
+            "title": "Waterwake"
+          },
+          {
+            "id": "wax",
+            "title": "Wax"
+          },
+          {
+            "id": "whitesmoke",
+            "title": "Whitesmoke"
+          },
+          {
+            "id": "windexplosion",
+            "title": "Windexplosion"
+          },
+          {
+            "id": "witchspell",
+            "title": "Witchspell"
+          },
+          {
+            "id": "wolfarmorcrack",
+            "title": "Wolfarmorcrack"
+          },
+          {
+            "id": "yellowpoplarleaves",
+            "title": "Yellowpoplarleaves"
+          }
+        ],
+        "mustMatchChoices": true
+      },
+      {
+        "id": "potion",
+        "title": "Potion",
+        "description": "Aux value of the potion whose effects the cloud applies. When `-1`, the potion is taken from the projectile entity itself.",
+        "dataType": "int",
+        "defaultValue": -1
+      },
+      {
+        "id": "radius",
+        "title": "Radius",
+        "description": "Initial radius (in blocks) of the cloud.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "radius_on_use",
+        "title": "Radius On Use",
+        "description": "Amount the radius shrinks (or grows) each time the cloud applies its effects. `-1` keeps the radius unchanged.",
+        "dataType": "float",
+        "defaultValue": -1
+      },
+      {
+        "id": "reapplication_delay",
+        "title": "Reapplication Delay",
+        "description": "Number of ticks the cloud waits before re-applying its effects to the same entity.",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

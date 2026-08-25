@@ -59,9 +59,9 @@
       },
       {
         "id": "start_sound",
-        "title": "LevelSoundEvent",
+        "title": "Start Sound",
         "description": "Sound played when the item starts being used.",
-        "dataType": "string",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "absorb_block",
@@ -888,6 +888,10 @@
             "title": "Disappeared"
           },
           {
+            "id": "dismount",
+            "title": "Dismount"
+          },
+          {
             "id": "door.close",
             "title": "Door.close"
           },
@@ -1688,6 +1692,10 @@
             "title": "Mob.warning.baby"
           },
           {
+            "id": "mount",
+            "title": "Mount"
+          },
+          {
             "id": "multi_swap",
             "title": "Multi swap"
           },
@@ -2156,6 +2164,10 @@
             "title": "Step sand"
           },
           {
+            "id": "straw_bed.break_leave",
+            "title": "Straw bed.break leave"
+          },
+          {
             "id": "stun",
             "title": "Stun"
           },
@@ -2331,13 +2343,15 @@
             "id": "wind_charge.burst",
             "title": "Wind charge.burst"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "start_using",
-        "title": "StartUsing",
+        "title": "Start Using",
         "description": "Controls how using the item triggers start using behavior. \"if_first\" only starts if no other component has started using yet; \"always\" always restarts using. Defaults to \"if_first\".",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "if_first",
         "choices": [
           {
             "id": "always",
@@ -2348,7 +2362,7 @@
             "title": "If first"
           }
         ],
-        "defaultValue": "if_first",
+        "mustMatchChoices": true,
         "samples": {
           "/vanilla/behavior_pack/items/apple.json": [
             {
@@ -2374,6 +2388,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {
       "/vanilla/behavior_pack/items/apple.json": [
         {

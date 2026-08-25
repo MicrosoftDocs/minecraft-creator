@@ -23,7 +23,7 @@ Allows this entity to avoid certain blocks.
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | 
 | search_height | 0 | Integer number | Maximum distance to look for a block in y. | 
 | search_range | 0 | Integer number | Maximum distance to look for a block in xz. | 
-| sound_interval | {"max":8,"min":3} | [Sound Interval](#item-floatrange) item | The range of time in seconds to randomly wait before playing the sound again. | 
+| sound_interval | {"max":8,"min":3} | [Sound Interval](#legacy-floatrange) item | The range of time in seconds to randomly wait before playing the sound again. | 
 | sprint_speed_modifier | 1 | Decimal number | Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster. | 
 | target_blocks | [] | String | List of block types this mob avoids. | 
 | target_blocks (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
@@ -241,6 +241,7 @@ Allows this entity to avoid certain blocks.
 | deny | Deny | |
 | detach | Detach | |
 | disappeared | Disappeared | |
+| dismount | Dismount | |
 | door.close | Door.close | |
 | door.open | Door.open | |
 | drink | Drink | |
@@ -441,6 +442,7 @@ Allows this entity to avoid certain blocks.
 | mob.player.hurt_on_fire | Mob.player.hurt on fire | |
 | mob.warning | Mob.warning | |
 | mob.warning.baby | Mob.warning.baby | |
+| mount | Mount | |
 | multi_swap | Multi swap | |
 | nearby_close | Nearby close | |
 | nearby_closer | Nearby closer | |
@@ -558,6 +560,7 @@ Allows this entity to avoid certain blocks.
 | step.baby | Step.baby | |
 | step_lava | Step lava | |
 | step_sand | Step sand | |
+| straw_bed.break_leave | Straw bed.break leave | |
 | stun | Stun | |
 | swim | Swim | |
 | swoop | Swoop | |
@@ -660,11 +663,9 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | self | Self | |
 | target | Target | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `sound_interval`
 

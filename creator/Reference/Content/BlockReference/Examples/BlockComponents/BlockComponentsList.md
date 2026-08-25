@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 
 | Block Components | Description |
 |:-----|:----------|
-| [block_entity](./minecraftBlock_block_entity.md)| Requires Upcoming-Creator-Features enabled. |
+| [block_entity](./minecraftBlock_block_entity.md)| Adds per-instance metadata for this block. |
 | [minecraft:block_light_absorption](./minecraftBlock_block_light_absorption.md)| Legacy component (format_version < 1.19.40). |
 | [minecraft:block_light_emission](./minecraftBlock_block_light_emission.md)| Legacy component (format_version < 1.19.40). |
 | [minecraft:chest_obstruction](./minecraftBlock_chest_obstruction.md)| This defines how a block reacts to a chest being opened underneath it. |

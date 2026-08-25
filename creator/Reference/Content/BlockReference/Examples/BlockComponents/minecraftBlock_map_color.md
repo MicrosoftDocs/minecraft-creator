@@ -89,3 +89,17 @@ Tint multiplier applied to the map color. Typically references the biome's "rain
 ```json
 "minecraft:map_color": "#f30000"
 ```
+
+#### [Block Black Concrete Double Slab](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_concrete_double_slab.block.json)
+
+
+```json
+"minecraft:map_color": "#191919"
+```
+
+#### [Block Black Wool Double Slab](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_wool_double_slab.block.json)
+
+
+```json
+"minecraft:map_color": "#1D1D21"
+```

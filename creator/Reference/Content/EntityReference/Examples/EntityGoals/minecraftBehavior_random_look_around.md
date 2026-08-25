@@ -18,7 +18,7 @@ Allows the mob to randomly look around.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  |  | 
-| look_time | {"max":40,"min":20} | [Look Time](#item-intrange) item | The range of time in seconds the mob will stay looking in a random direction before looking elsewhere |  | 
+| look_time | {"max":40,"min":20} | [Look Time](#block-intrange) item | The range of time in seconds the mob will stay looking in a random direction before looking elsewhere |  | 
 | max_angle_of_view_horizontal | 180 | Decimal number | The rightmost angle a mob can look at on the horizontal plane with respect to its initial facing direction. |  | 
 | min_angle_of_view_horizontal | -180 | Decimal number | The leftmost angle a mob can look at on the horizontal plane with respect to its initial facing direction. |  | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `8`, Blaze: `5`, Cave Spider: `7` | 
@@ -32,11 +32,9 @@ Allows the mob to randomly look around.
 | look | Look | |
 | move | Move | |
 
-### Item IntRange
-Specifies an integer range between minimum and maximum values for item properties requiring whole numbers. Used for stack count variations, discrete charge levels, or quantity ranges in loot tables. Ensures values stay within valid bounds for countable item properties.
+### Block IntRange
 
-
-#### Item IntRange Properties
+#### Block IntRange Properties
 
 **JSON path:** `look_time`
 

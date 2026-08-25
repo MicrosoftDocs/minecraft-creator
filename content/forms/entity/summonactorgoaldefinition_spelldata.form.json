@@ -75,7 +75,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -128,9 +129,10 @@
       },
       {
         "id": "start_sound_event",
-        "title": "LevelSoundEvent",
+        "title": "Start Sound Event",
         "description": "The sound event to play when using this spell",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "undefined",
         "choices": [
           {
             "id": "absorb_block",
@@ -957,6 +959,10 @@
             "title": "Disappeared"
           },
           {
+            "id": "dismount",
+            "title": "Dismount"
+          },
+          {
             "id": "door.close",
             "title": "Door.close"
           },
@@ -1757,6 +1763,10 @@
             "title": "Mob.warning.baby"
           },
           {
+            "id": "mount",
+            "title": "Mount"
+          },
+          {
             "id": "multi_swap",
             "title": "Multi swap"
           },
@@ -2225,6 +2235,10 @@
             "title": "Step sand"
           },
           {
+            "id": "straw_bed.break_leave",
+            "title": "Straw bed.break leave"
+          },
+          {
             "id": "stun",
             "title": "Stun"
           },
@@ -2401,7 +2415,7 @@
             "title": "Wind charge.burst"
           }
         ],
-        "defaultValue": "undefined"
+        "mustMatchChoices": true
       },
       {
         "id": "weight",
@@ -2410,6 +2424,7 @@
         "dataType": "float",
         "defaultValue": 0
       }
-    ]
+    ],
+    "dataVersion": "1.26.40"
   }
 }

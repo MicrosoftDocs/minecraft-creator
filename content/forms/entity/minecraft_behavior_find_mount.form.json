@@ -197,7 +197,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "max_failed_attempts",
@@ -299,6 +300,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.20",
     "samples": {
       "/vanilla/behavior_pack/entities/drowned.json": [
         {

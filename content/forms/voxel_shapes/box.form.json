@@ -90,7 +90,8 @@
         ],
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   },
   "description": "Defines a bounding box with min and max coordinates."
 }

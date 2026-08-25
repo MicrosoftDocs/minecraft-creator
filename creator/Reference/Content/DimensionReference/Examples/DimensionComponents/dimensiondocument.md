@@ -42,21 +42,30 @@ Specifies the components that define dimension properties such as bounds and gen
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| minecraft:dimension_bounds | {"max":0,"min":0} | [Dimension Bounds](#dimension-bounds) item |  | 
+| minecraft:default_biome | *not set* | [Default Biome](#dimension-defaultbiome) item |  | 
+| minecraft:dimension_height | *not set* | [Dimension Height](#dimensionheight) item |  | 
 | minecraft:generation | *not set* | [Generation](#dimension-generation) item |  | 
 
-##### Dimension Bounds
-Defines the minimum and maximum vertical bounds for a dimension.
+##### Dimension DefaultBiome
 
+###### Dimension DefaultBiome Properties
 
-###### Dimension Bounds Properties
-
-**JSON path:** `minecraft:dimension > components > minecraft:dimension_bounds`
+**JSON path:** `minecraft:dimension > components > minecraft:default_biome`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| max | *not set* | Integer number |  | 
-| min | *not set* | Integer number |  | 
+| biome | *not set* | String |  | 
+
+##### DimensionHeight
+
+###### DimensionHeight Properties
+
+**JSON path:** `minecraft:dimension > components > minecraft:dimension_height`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| height_range | *not set* | Integer number |  | 
+| min_y | *not set* | Integer number |  | 
 
 ##### Dimension Generation
 Specifies the generator type used for world generation in the dimension.

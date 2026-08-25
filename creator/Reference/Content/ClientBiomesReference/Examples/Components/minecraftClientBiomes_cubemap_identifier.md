@@ -23,4 +23,4 @@ Set the identifier used for cubemap in Vibrant Visuals mode. Identifiers must re
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| cubemap_identifier | *not set* | Object | Identifier of cubemap definition to use | 
+| cubemap_identifier | *not set* | String | Identifier of cubemap definition to use | 

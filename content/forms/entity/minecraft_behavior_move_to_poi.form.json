@@ -63,13 +63,15 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "poi_type",
-        "title": "POIType",
+        "title": "Poi Type",
         "description": "Tells the goal what POI type it should be looking for",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": null,
         "choices": [
           {
             "id": "bed",
@@ -84,7 +86,7 @@
             "title": "Meeting area"
           }
         ],
-        "defaultValue": null
+        "mustMatchChoices": true
       },
       {
         "id": "priority",
@@ -99,6 +101,7 @@
         "dataType": "float",
         "defaultValue": 1
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

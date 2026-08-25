@@ -21,11 +21,11 @@ Sets the particles that will be used when block is destroyed.
 
 ## Block Destruction Particles Properties
 
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| particle_count | 100 | Integer number | Sets number of particles to spawn on block destruction. Value must be <= 255. | 
-| texture |  | String | The texture name used for the particle. | 
-| tint_method | none | [Tint Method](#tint-method-choices) choices | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. | 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| particle_count | 100 | Integer number | Sets number of particles to spawn on block destruction. Value must be <= 255. | Block Black Concrete Slab: `48` | 
+| texture |  | String | The texture name used for the particle. |  | 
+| tint_method | none | [Tint Method](#tint-method-choices) choices | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. |  | 
 
 ### Tint Method choices
 
@@ -38,3 +38,14 @@ Sets the particles that will be used when block is destroyed.
 | dry_foliage | Dry Foliage | |
 | grass | Grass | |
 | water | Water | |
+
+## Samples
+
+#### [Block Black Concrete Slab](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/black_concrete_slab.block.json)
+
+
+```json
+"minecraft:destruction_particles": {
+  "particle_count": 48
+}
+```

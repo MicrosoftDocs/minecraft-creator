@@ -22,6 +22,7 @@
         "id": "default",
         "title": "Default",
         "dataType": "string",
+        "minLength": 1,
         "isRequired": true
       },
       {
@@ -31,7 +32,8 @@
         "validity": [
           {
             "comparison": "pattern",
-            "value": "^(?:(?!^(minecraft):).)+:(?:.)+$"
+            "value": "^(?:(?!^(minecraft):).)+:(?:.)+$",
+            "patternFlags": "i"
           }
         ],
         "isRequired": true
@@ -53,8 +55,8 @@
       },
       {
         "id": "type",
-        "title": "SettingType",
-        "dataType": "string",
+        "title": "Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "dropdown",
@@ -65,6 +67,10 @@
             "title": "Label"
           },
           {
+            "id": "multiselect",
+            "title": "Multiselect"
+          },
+          {
             "id": "slider",
             "title": "Slider"
           },
@@ -73,9 +79,11 @@
             "title": "Toggle"
           }
         ],
+        "mustMatchChoices": true,
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "3.0.0"
   },
   "description": "A dropdown selection setting that appears in the pack's world settings UI. Players choose from predefined options like game modes or difficulty presets. Each option has an internal ID and display text."
 }

@@ -15,9 +15,10 @@
       },
       {
         "id": "extra_knockback_approach",
-        "title": "ExtraKnockbackApproach",
+        "title": "Extra Knockback Approach",
         "description": "Defines the approach for combining extra knockback from enchantments or sprinting:\n- \"reapply_default\": Reapplies knockback again with default knockback parameters, i.e. values not defined by this component.\n- \"multiply_reduced\": Multiplies the extra knockback with the base knockback and a reduction factor, and adds it to the base knockback.",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "reapply_default",
         "choices": [
           {
             "id": "multiply_reduced",
@@ -28,7 +29,7 @@
             "title": "Reapply default"
           }
         ],
-        "defaultValue": "reapply_default"
+        "mustMatchChoices": true
       },
       {
         "id": "filter",
@@ -79,7 +80,8 @@
               "description": "The value being compared with the test.",
               "dataType": "object"
             }
-          ]
+          ],
+          "dataVersion": "1.21.20"
         },
         "alternates": [
           {
@@ -97,9 +99,10 @@
       },
       {
         "id": "knockback_mode",
-        "title": "KnockbackMode",
+        "title": "Knockback Mode",
         "description": "Defines how knockback is applied to the target:\n- \"relative_horizontal\": Applies knockback along the horizontal direction from the attacker to the target.\n- \"hit_direction\": Applies knockback based on the hit direction and the point of impact (e.g. hits to the bottom of the entity or from below push it upward, hits on the left side of the entity push it to the right).",
-        "dataType": "string",
+        "dataType": "stringEnum",
+        "defaultValue": "relative_horizontal",
         "choices": [
           {
             "id": "hit_direction",
@@ -110,7 +113,7 @@
             "title": "Relative horizontal"
           }
         ],
-        "defaultValue": "relative_horizontal"
+        "mustMatchChoices": true
       },
       {
         "id": "scale_with_damage",
@@ -146,6 +149,7 @@
         "dataType": "float",
         "defaultValue": 0.4000000059604645
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

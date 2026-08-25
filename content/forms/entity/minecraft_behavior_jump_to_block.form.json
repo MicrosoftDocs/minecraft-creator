@@ -28,10 +28,10 @@
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
-              "content": [
-                5,
-                7
-              ]
+              "content": {
+                "min": 5,
+                "max": 7
+              }
             }
           ],
           "/vanilla/behavior_pack/entities/goat.json": [
@@ -55,7 +55,9 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
               "content": [
-                "minecraft:water"
+                {
+                  "name": "minecraft:water"
+                }
               ]
             }
           ]
@@ -128,8 +130,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
               "content": [
-                "minecraft:waterlily",
-                "minecraft:big_dripleaf"
+                {
+                  "name": "minecraft:waterlily"
+                },
+                {
+                  "name": "minecraft:big_dripleaf"
+                }
               ]
             }
           ]
@@ -240,20 +246,26 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
           "content": {
-            "cooldown_range": [
-              5,
-              7
-            ],
+            "cooldown_range": {
+              "min": 5,
+              "max": 7
+            },
             "priority": 10,
             "max_velocity": 1,
             "forbidden_blocks": [
-              "minecraft:water"
+              {
+                "name": "minecraft:water"
+              }
             ],
             "minimum_distance": 1,
             "minimum_path_length": 2,
             "preferred_blocks": [
-              "minecraft:waterlily",
-              "minecraft:big_dripleaf"
+              {
+                "name": "minecraft:waterlily"
+              },
+              {
+                "name": "minecraft:big_dripleaf"
+              }
             ],
             "preferred_blocks_chance": 0.5,
             "scale_factor": 0.6,
@@ -304,7 +316,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "cooldown_range",
@@ -316,15 +329,15 @@
           "min": 10
         },
         "technicalDescription": "Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected",
-        "subFormId": "item/floatrange",
+        "subFormId": "legacy/floatrange",
         "samples": {
           "/vanilla/behavior_pack/entities/frog.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
-              "content": [
-                5,
-                7
-              ]
+              "content": {
+                "min": 5,
+                "max": 7
+              }
             }
           ],
           "/vanilla/behavior_pack/entities/goat.json": [
@@ -355,7 +368,9 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
               "content": [
-                "minecraft:water"
+                {
+                  "name": "minecraft:water"
+                }
               ]
             }
           ]
@@ -435,8 +450,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
               "content": [
-                "minecraft:waterlily",
-                "minecraft:big_dripleaf"
+                {
+                  "name": "minecraft:waterlily"
+                },
+                {
+                  "name": "minecraft:big_dripleaf"
+                }
               ]
             }
           ]
@@ -567,25 +586,32 @@
         }
       }
     ],
+    "dataVersion": "1.26.20",
     "samples": {
       "/vanilla/behavior_pack/entities/frog.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
           "content": {
-            "cooldown_range": [
-              5,
-              7
-            ],
+            "cooldown_range": {
+              "min": 5,
+              "max": 7
+            },
             "priority": 10,
             "max_velocity": 1,
             "forbidden_blocks": [
-              "minecraft:water"
+              {
+                "name": "minecraft:water"
+              }
             ],
             "minimum_distance": 1,
             "minimum_path_length": 2,
             "preferred_blocks": [
-              "minecraft:waterlily",
-              "minecraft:big_dripleaf"
+              {
+                "name": "minecraft:waterlily"
+              },
+              {
+                "name": "minecraft:big_dripleaf"
+              }
             ],
             "preferred_blocks_chance": 0.5,
             "scale_factor": 0.6,

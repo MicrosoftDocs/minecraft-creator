@@ -20,16 +20,16 @@ Emits particles from random positions within a rectangular box volume. Define th
 | direction | *not set* | String | The direction of particle emission. Can be a string ('inwards' or 'outwards'), or an array of [x, y, z] Molang expressions. | 
 | direction (as Molang array) | *not set* | Molang array |  | 
 | half_dimensions | *not set* | Molang array | The half dimensions of the box, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| half_dimensions (as Named set of objects) | *not set* | Key/item pairs of [Half Dimensions (Item Molang Expression)](#item-molang-expression) items |  | 
+| half_dimensions (as Named set of objects) | *not set* | Key/item pairs of [Half Dimensions (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | half_dimensions (as Decimal number) | *not set* | Decimal number |  | 
 | offset | [0, 0, 0] | Molang array | The offset from the emitter position, as [x, y, z] Molang expressions or numbers. Value must have at least 3 items. Value must have at most 3 items. | 
-| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Item Molang Expression)](#item-molang-expression) items |  | 
+| offset (as Named set of objects) | *not set* | Key/item pairs of [Offset (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
 | offset (as Decimal number) | *not set* | Decimal number |  | 
 | surface_only | false | Boolean true/false |  | 
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `half_dimensions`
 

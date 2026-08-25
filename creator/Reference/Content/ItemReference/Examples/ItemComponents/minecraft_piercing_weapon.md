@@ -20,20 +20,18 @@ Allows an item to deal damage to all entities detected in a straight line along 
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| creative_reach | *not set* | [Creative Reach](#item-floatrange) item | Defines the reach used when the user is in Creative Mode. Defaults to "reach" if unspecified. | 
+| creative_reach | *not set* | [Creative Reach](#legacy-floatrange) item | Defines the reach used when the user is in Creative Mode. Defaults to "reach" if unspecified. | 
 | hitbox_margin | 0 | Decimal number | Added tolerance to the view vector raycast for detecting entity collisions. | 
-| reach | {"max":3,"min":0} | [Reach](#item-floatrange) item | Defines the range (in blocks) along the user's view vector where entities can be hit. | 
+| reach | {"max":3,"min":0} | [Reach](#legacy-floatrange) item | Defines the range (in blocks) along the user's view vector where entities can be hit. | 
 
 ### reach
 
 Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects.
 
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `creative_reach`
 

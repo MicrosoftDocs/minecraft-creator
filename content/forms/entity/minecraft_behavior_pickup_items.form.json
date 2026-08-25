@@ -176,7 +176,9 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": [
-                "minecraft:glow_ink_sac",
+                {
+                  "name": "minecraft:glow_ink_sac"
+                },
                 {
                   "tags": "q.all_tags('minecraft:is_spear')"
                 }
@@ -423,7 +425,9 @@
           "content": {
             "can_pickup_any_item": true,
             "excluded_items": [
-              "minecraft:glow_ink_sac",
+              {
+                "name": "minecraft:glow_ink_sac"
+              },
               {
                 "tags": "q.all_tags('minecraft:is_spear')"
               }
@@ -525,7 +529,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "cooldown_after_being_attacked",
@@ -561,7 +566,9 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": [
-                "minecraft:glow_ink_sac",
+                {
+                  "name": "minecraft:glow_ink_sac"
+                },
                 {
                   "tags": "q.all_tags('minecraft:is_spear')"
                 }
@@ -807,6 +814,7 @@
         "defaultValue": false
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {
       "/vanilla/behavior_pack/entities/allay.json": [
         {
@@ -848,7 +856,9 @@
           "content": {
             "can_pickup_any_item": true,
             "excluded_items": [
-              "minecraft:glow_ink_sac",
+              {
+                "name": "minecraft:glow_ink_sac"
+              },
               {
                 "tags": "q.all_tags('minecraft:is_spear')"
               }

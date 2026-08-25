@@ -27,6 +27,7 @@
         "subFormId": "world/randomgroupbindings",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.20"
   }
 }

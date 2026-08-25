@@ -22,7 +22,7 @@ Allows the entity to consume a block, replace the eaten block with another block
 | on_eat | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Eat](#entity-actordefinitiontrigger) item | The event to trigger when the block eating animation has completed. | Sheep: `{"event":"minecraft:on_eat_block","target":"self"}` | 
 | priority | 0 | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Sheep: `6` | 
 | success_chance | 0.019999999552965164 | Keyed set of strings | A molang expression defining the success chance the entity has to consume a block. | Sheep: `"query.is_baby ? 0.02 : 0.001"` | 
-| success_chance (as Named set of objects) | *not set* | Key/item pairs of [Success Chance (Item Molang Expression)](#item-molang-expression) items |  |  | 
+| success_chance (as Named set of objects) | *not set* | Key/item pairs of [Success Chance (Legacy Molang Expression)](#legacy-molang-expression) items |  |  | 
 | success_chance (as Decimal number) | *not set* | Decimal number |  |  | 
 | time_until_eat | 1.7999999523162842 | Decimal number | The amount of time (in seconds) it takes for the block to be eaten upon a successful eat attempt. | Sheep: `1.8` | 
 
@@ -94,9 +94,9 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | self | Self | |
 | target | Target | |
 
-### Item Molang Expression
+### Legacy Molang Expression
 
-#### Item Molang Expression Properties
+#### Legacy Molang Expression Properties
 
 **JSON path:** `success_chance`
 

@@ -68,8 +68,8 @@
       },
       {
         "id": "type",
-        "title": "SurfaceBuilderType",
-        "dataType": "string",
+        "title": "Type",
+        "dataType": "stringEnum",
         "choices": [
           {
             "id": "minecraft:capped",
@@ -100,8 +100,11 @@
             "title": "Minecraft:the end"
           }
         ],
+        "mustMatchChoices": true,
+        "defaultValue": "minecraft:noise_gradient",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.26.30"
   }
 }

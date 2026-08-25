@@ -24,9 +24,9 @@ Fires an event when this behavior starts, then waits for a duration before stopp
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | control_flags | [] | [Control Flags](#control-flags-choices) choices |  | Sniffer: `["move"]` | 
-| cooldown_range (Item FloatRange) | {"max":0,"min":0} | [Cooldown Range](#item-floatrange) item | Goal cooldown range in seconds. Can be a range object or a single number. | Sniffer: `{"min":0,"max":0}` | 
+| cooldown_range (Legacy FloatRange) | {"max":0,"min":0} | [Cooldown Range](#legacy-floatrange) item | Goal cooldown range in seconds. Can be a range object or a single number. | Sniffer: `{"min":0,"max":0}` | 
 | cooldown_range (as Decimal number) | *not set* | Decimal number |  |  | 
-| duration_range (Item FloatRange) | {"max":0,"min":0} | [Duration Range](#item-floatrange) item | Goal duration range in seconds. Can be a range object or a single number. | Sniffer: `{"min":2,"max":5}` | 
+| duration_range (Legacy FloatRange) | {"max":0,"min":0} | [Duration Range](#legacy-floatrange) item | Goal duration range in seconds. Can be a range object or a single number. | Sniffer: `{"min":2,"max":5}` | 
 | duration_range (as Decimal number) | *not set* | Decimal number |  |  | 
 | on_end | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [End](#entity-actordefinitiontrigger) item | Event(s) to run when the goal ends. | Sniffer: `{"event":"on_rising_end","target":"self"}` | 
 | on_start | {"event":"","filters":{"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null},"target":"self"} | [Start](#entity-actordefinitiontrigger) item | Event(s) to run when the goal starts. |  | 
@@ -40,11 +40,9 @@ Fires an event when this behavior starts, then waits for a duration before stopp
 | look | Look | |
 | move | Move | |
 
-### Item FloatRange
-Specifies a numeric range between minimum and maximum values for randomized item properties. Used for variable durability, damage ranges, or timing intervals. The game picks a random value within the range when the property is evaluated, adding natural variation to item behavior.
+### Legacy FloatRange
 
-
-#### Item FloatRange Properties
+#### Legacy FloatRange Properties
 
 **JSON path:** `cooldown_range`
 

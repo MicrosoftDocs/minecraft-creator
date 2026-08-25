@@ -1,0 +1,28 @@
+{
+  "id": "container",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "container",
+    "title": "Block Container",
+    "fields": [
+      {
+        "id": "slot_count",
+        "title": "Slot Count",
+        "description": "Sets the number of slots in the container.",
+        "dataType": "int",
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          },
+          {
+            "comparison": "<=",
+            "value": 54
+          }
+        ],
+        "isRequired": true
+      }
+    ],
+    "dataVersion": "1.26.20"
+  }
+}

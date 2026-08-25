@@ -33,6 +33,7 @@
         "dataType": "int",
         "defaultValue": 30
       }
-    ]
+    ],
+    "dataVersion": "1.26.40"
   }
 }

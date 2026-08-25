@@ -10,22 +10,26 @@
         "title": "X",
         "description": "Block state name that controls visual rotation around the x axis.",
         "dataType": "string",
-        "defaultValue": ""
+        "defaultValue": "",
+        "maxLength": 256
       },
       {
         "id": "y",
         "title": "Y",
         "description": "Block state name that controls visual rotation around the y axis.",
         "dataType": "string",
-        "defaultValue": ""
+        "defaultValue": "",
+        "maxLength": 256
       },
       {
         "id": "z",
         "title": "Z",
         "description": "Block state name that controls visual rotation around the z axis.",
         "dataType": "string",
-        "defaultValue": ""
+        "defaultValue": "",
+        "maxLength": 256
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

@@ -133,6 +133,7 @@
         "isRequired": true
       }
     ],
+    "dataVersion": "1.20.50",
     "samples": {}
   },
   "description": "Determines what enchantments can be applied to the item. Not all enchantments will have an effect on all item components.",

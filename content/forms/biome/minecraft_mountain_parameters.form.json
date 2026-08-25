@@ -135,7 +135,8 @@
               "description": "Enable for west-facing slopes",
               "dataType": "boolean"
             }
-          ]
+          ],
+          "dataVersion": "1.21.110"
         }
       },
       {
@@ -155,9 +156,11 @@
               "dataType": "boolean",
               "isRequired": true
             }
-          ]
+          ],
+          "dataVersion": "1.21.110"
         }
       }
-    ]
+    ],
+    "dataVersion": "1.21.110"
   }
 }

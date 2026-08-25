@@ -4,15 +4,23 @@
   "generatedFromSchema_doNotEdit": {
     "id": "block_entity",
     "title": "Block Entity",
-    "description": "Requires Upcoming-Creator-Features enabled. Adds per-instance metadata for this block.",
+    "description": "Adds per-instance metadata for this block.",
     "fields": [
+      {
+        "id": "container",
+        "title": "Container",
+        "description": "Adds a container to this block.",
+        "dataType": "object",
+        "subFormId": "block/container"
+      },
       {
         "id": "dynamic_properties",
         "title": "Dynamic Properties",
-        "description": "Requires Upcoming-Creator-Features enabled. Sets dynamic-properties capabilities on the block-entity. Dynamic-properties can store and retrieve variables on a block via scripting, more at https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server/blockdynamicpropertiescomponent.",
+        "description": "Dynamic-properties can store and retrieve variables on a block via scripting, more at https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server/blockdynamicpropertiescomponent.",
         "dataType": "boolean",
         "defaultValue": false
       }
-    ]
+    ],
+    "dataVersion": "1.26.20"
   }
 }

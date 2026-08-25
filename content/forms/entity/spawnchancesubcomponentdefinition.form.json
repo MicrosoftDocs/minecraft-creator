@@ -1,0 +1,74 @@
+{
+  "id": "SpawnChanceSubcomponentDefinition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "SpawnChanceSubcomponentDefinition",
+    "title": "Entity SpawnChanceSubcomponentDefinition",
+    "description": "Conditionally spawns one or two groups of entities at the impact location and optionally fires events on each spawned entity.",
+    "fields": [
+      {
+        "id": "first_spawn_chance",
+        "title": "First Spawn Chance",
+        "description": "Percent chance (0-1.0) that the first group spawns.",
+        "dataType": "float",
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "first_spawn_count",
+        "title": "First Spawn Count",
+        "description": "Number of entities spawned when the first roll succeeds.",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "on_spawn",
+        "title": "Spawn",
+        "description": "Array of entity event triggers to fire on each spawned entity.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/actordefinitiontrigger"
+      },
+      {
+        "id": "second_spawn_chance",
+        "title": "Second Spawn Chance",
+        "description": "Percent chance (0-1.0) that the second group spawns (rolled independently of the first).",
+        "dataType": "float",
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "second_spawn_count",
+        "title": "Second Spawn Count",
+        "description": "Number of entities spawned when the second roll succeeds.",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "spawn_baby",
+        "title": "Spawn Baby",
+        "description": "If `true`, spawned entities start as babies (where applicable).",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "spawn_definition",
+        "title": "Spawn Definition",
+        "description": "Identifier of the entity definition to spawn.",
+        "dataType": "string",
+        "defaultValue": ""
+      }
+    ],
+    "dataVersion": "1.26.50"
+  }
+}

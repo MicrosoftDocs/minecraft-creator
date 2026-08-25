@@ -161,7 +161,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "hover_height",
@@ -172,7 +173,7 @@
           "max": 0,
           "min": 0
         },
-        "subFormId": "item/intrange",
+        "subFormId": "block/intrange",
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {
@@ -267,6 +268,7 @@
         }
       }
     ],
+    "dataVersion": "1.26.20",
     "samples": {
       "/vanilla/behavior_pack/entities/allay.json": [
         {

@@ -48,10 +48,42 @@
             "value": 100
           }
         ],
-        "isRequired": true
+        "isRequired": true,
+        "samples": {
+          "/vanilla/behavior_pack/items/red_shrub.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:compostable/",
+              "content": 30
+            }
+          ],
+          "/vanilla/behavior_pack/items/shelf_mushroom.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:compostable/",
+              "content": 65
+            }
+          ]
+        }
       }
     ],
-    "samples": {}
+    "dataVersion": "1.26.30",
+    "samples": {
+      "/vanilla/behavior_pack/items/red_shrub.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:compostable/",
+          "content": {
+            "composting_chance": 30
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/shelf_mushroom.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:compostable/",
+          "content": {
+            "composting_chance": 65
+          }
+        }
+      ]
+    }
   },
   "versionIntroduced": "1.21.60"
 }

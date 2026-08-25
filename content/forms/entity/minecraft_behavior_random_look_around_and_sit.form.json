@@ -135,7 +135,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "max_angle_of_view_horizontal",
@@ -200,6 +201,7 @@
         "defaultValue": 0
       }
     ],
+    "dataVersion": "1.26.30",
     "samples": {}
   }
 }

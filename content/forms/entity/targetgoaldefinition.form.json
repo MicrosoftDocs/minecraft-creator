@@ -43,7 +43,8 @@
             "id": "move",
             "title": "Move"
           }
-        ]
+        ],
+        "mustMatchChoices": true
       },
       {
         "id": "entity_types",
@@ -122,7 +123,8 @@
                         "description": "The value being compared with the test.",
                         "dataType": "object"
                       }
-                    ]
+                    ],
+                    "dataVersion": "1.21.20"
                   },
                   "alternates": [
                     {
@@ -193,7 +195,8 @@
                   "dataType": "float",
                   "defaultValue": 1
                 }
-              ]
+              ],
+              "dataVersion": "1.21.120"
             }
           }
         ]
@@ -239,7 +242,8 @@
         "dataType": "float",
         "defaultValue": 0
       }
-    ]
+    ],
+    "dataVersion": "1.26.0"
   },
   "description": "Configures conditions for AI targeting goals like nearest_attackable_target or hurt_by_target. Defines filters that potential targets must pass, reselection timing, and target persistence. Controls which entities the mob will aggro on, how long it remembers targets, and when it switches to new threats."
 }

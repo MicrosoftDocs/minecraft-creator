@@ -63,7 +63,8 @@
         "subFormId": "spawn/spawn_description",
         "isRequired": true
       }
-    ]
+    ],
+    "dataVersion": "1.21.50"
   },
   "description": "Defines the complete spawn rules for an entity type, including population control group, spawn conditions (biome, light, difficulty, etc.), and herd configuration. This is the root structure of a spawn_rules JSON file in behavior packs."
 }

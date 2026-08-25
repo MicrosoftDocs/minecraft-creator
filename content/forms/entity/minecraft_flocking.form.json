@@ -335,5 +335,270 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:flocking",
+    "title": "Entity Flocking",
+    "description": "Allows entities to flock in groups in water or not.",
+    "fields": [
+      {
+        "id": "block_distance",
+        "title": "Block Distance",
+        "description": "The amount of blocks away the entity will look at to push away from.",
+        "dataType": "float",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "block_weight",
+        "title": "Block Weight",
+        "description": "The weight of the push back away from blocks.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "breach_influence",
+        "title": "Breach Influence",
+        "description": "The amount of push back given to a flocker that breaches out of the water.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "cohesion_threshold",
+        "title": "Cohesion Threshold",
+        "description": "The threshold in which to start applying cohesion.",
+        "dataType": "float",
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 6.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "cohesion_weight",
+        "title": "Cohesion Weight",
+        "description": "The weight applied for the cohesion steering of the flock.",
+        "dataType": "float",
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 1.85
+            }
+          ]
+        }
+      },
+      {
+        "id": "goal_weight",
+        "title": "Goal Weight",
+        "description": "The weight on which to apply on the goal output.",
+        "dataType": "float",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "high_flock_limit",
+        "title": "High Flock Limit",
+        "description": "Determines the high bound amount of entities that can be allowed in the flock.",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 8
+            }
+          ]
+        }
+      },
+      {
+        "id": "in_water",
+        "title": "In Water",
+        "description": "Tells the Flocking Component if the entity exists in water.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "influence_radius",
+        "title": "Influence Radius",
+        "description": "The area around the entity that allows others to be added to the flock.",
+        "dataType": "float",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "innner_cohesion_threshold",
+        "title": "Innner Cohesion Threshold",
+        "description": "The distance in which the flocker will stop applying cohesion.",
+        "dataType": "float",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 3.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "loner_chance",
+        "title": "Loner Chance",
+        "description": "The percentage chance between 0-1 that a fish will spawn and not want to join flocks. Invalid values will be capped at the end points.",
+        "dataType": "float",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 0.1
+            }
+          ]
+        }
+      },
+      {
+        "id": "low_flock_limit",
+        "title": "Low Flock Limit",
+        "description": "Determines the low bound amount of entities that can be allowed in the flock.",
+        "dataType": "int",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "match_variants",
+        "title": "Match Variants",
+        "description": "Tells the flockers that they can only match similar entities that also match the variant, mark variants, and color data of the other potential flockers.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "max_height",
+        "title": "Max Height",
+        "description": "The max height allowable in the air or water.",
+        "dataType": "float",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "min_height",
+        "title": "Min Height",
+        "description": "The min height allowable in the air or water.",
+        "dataType": "float",
+        "defaultValue": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "separation_threshold",
+        "title": "Separation Threshold",
+        "description": "The distance that is determined to be to close to another flocking and to start applying separation.",
+        "dataType": "float",
+        "defaultValue": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "separation_weight",
+        "title": "Separation Weight",
+        "description": "The weight applied to the separation of the flock.",
+        "dataType": "float",
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flocking/",
+              "content": 1.75
+            }
+          ]
+        }
+      },
+      {
+        "id": "use_center_of_mass",
+        "title": "Use Center Of Mass",
+        "description": "Tells the flockers that they will follow flocks based on the center of mass.",
+        "dataType": "boolean",
+        "defaultValue": false
+      }
+    ],
+    "dataVersion": "1.26.50",
+    "samples": {
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:flocking/",
+          "content": {
+            "in_water": false,
+            "match_variants": false,
+            "use_center_of_mass": false,
+            "low_flock_limit": 4,
+            "high_flock_limit": 8,
+            "goal_weight": 2,
+            "loner_chance": 0.1,
+            "influence_radius": 6,
+            "breach_influence": 0,
+            "separation_weight": 1.75,
+            "separation_threshold": 3,
+            "cohesion_weight": 1.85,
+            "cohesion_threshold": 6.5,
+            "innner_cohesion_threshold": 3.5,
+            "min_height": 4,
+            "max_height": 4,
+            "block_distance": 1,
+            "block_weight": 0
+          }
+        }
+      ]
+    }
   }
 }
