@@ -10,8 +10,8 @@ description: Changelog of the `@minecraft/server-ui` module
 # `@minecraft/server-ui` Changelog
 
 ## Version Changes
-- [2.3.0-beta.1.26.50-preview.26](#230-beta12650-preview26)
-- [2.2.0-rc.1.26.50-preview.26](#220-rc12650-preview26)
+- [2.3.0-beta.1.26.50-preview.27](#230-beta12650-preview27)
+- [2.2.0-rc.1.26.50-preview.27](#220-rc12650-preview27)
 - [2.1.0](#210)
 - [2.0.0](#200)
 - [1.3.0](#130)
@@ -19,12 +19,12 @@ description: Changelog of the `@minecraft/server-ui` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.3.0-beta.1.26.50-preview.26
-#### Added module peer dependency `@minecraft/server@2.11.0-beta.1.26.50-preview.26`
+## 2.3.0-beta.1.26.50-preview.27
+#### Added module peer dependency `@minecraft/server@2.11.0-beta.1.26.50-preview.27`
 #### Changed *[`MessageBox`](MessageBox.md)*
 - Added function *[`button1WithOptions`](MessageBox.md#button1withoptions)*
 - Added function *[`button2WithOptions`](MessageBox.md#button2withoptions)*
-## 2.2.0-rc.1.26.50-preview.26
+## 2.2.0-rc.1.26.50-preview.27
 #### Changed *[`CustomForm`](CustomForm.md)*
 - Added function *[`image`](CustomForm.md#image)*
 ## 2.1.0

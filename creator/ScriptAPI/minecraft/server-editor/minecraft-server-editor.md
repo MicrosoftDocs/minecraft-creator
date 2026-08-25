@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.50-preview.26"
+    "version": "0.1.0-beta.1.26.50-preview.27"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.26 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.50-beta.27 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.50-preview.26`
+- `0.1.0-beta.1.26.50-preview.27`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
