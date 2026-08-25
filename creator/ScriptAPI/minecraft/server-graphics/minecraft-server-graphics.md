@@ -21,14 +21,14 @@ The `@minecraft/server-graphics` module contains APIs to change graphics and ren
 ```json
 {
     "module_name": "@minecraft/server-graphics",
-    "version": "1.1.0-beta.1.26.50-preview.26"
+    "version": "1.1.0-beta.1.26.50-preview.27"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.50-beta.26 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.50-beta.27 of Minecraft.
 
 ## Available Versions
-- `1.1.0-beta.1.26.50-preview.26`
-- `1.0.0-rc.1.26.50-preview.26`
+- `1.1.0-beta.1.26.50-preview.27`
+- `1.0.0-rc.1.26.50-preview.27`
 
 ## Classes
 - [BiomeAtmospherics](BiomeAtmospherics.md)
