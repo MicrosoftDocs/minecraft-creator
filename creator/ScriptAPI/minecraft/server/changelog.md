@@ -10,7 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.11.0-beta.1.26.50-preview.27](#2110-beta12650-preview27)
+- [2.12.0-beta.1.26.60-preview.21](#2120-beta12660-preview21)
+- [2.10.0-rc.1.26.60-preview.21](#2100-rc12660-preview21)
 - [2.9.0](#290)
 - [2.8.0](#280)
 - [2.7.0](#270)
@@ -42,7 +43,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.11.0-beta.1.26.50-preview.27
+## 2.12.0-beta.1.26.60-preview.21
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -88,18 +89,13 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
 - Added property *[`firstUpdate`](BlockComponentRedstoneUpdateEvent.md#firstupdate)*
-#### Added *[`BlockDynamicPropertiesComponent`](BlockDynamicPropertiesComponent.md)*
-#### Added *[`BlockInstrumentComponent`](BlockInstrumentComponent.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
+#### Added *[`BlockRecipeCraftingComponent`](BlockRecipeCraftingComponent.md)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
-- Added function *[`getClosest`](BlockVolumeBase.md#getclosest)*
-- Added function *[`getFarthest`](BlockVolumeBase.md#getfarthest)*
 #### Changed *[`Camera`](Camera.md)*
-- Added function *[`addShake`](Camera.md#addshake)*
 - Added function *[`setCameraWithEase`](Camera.md#setcamerawithease)*
-- Added function *[`stopShaking`](Camera.md#stopshaking)*
 #### Added *[`CarryOverBlockEntityDataFunction`](CarryOverBlockEntityDataFunction.md)*
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
@@ -107,8 +103,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
 #### Changed *[`Dimension`](Dimension.md)*
 - Added property *[`poiManager`](Dimension.md#poimanager)*
-- Added function *[`cloneBlocks`](Dimension.md#cloneblocks)*
-- Added function *[`getBlocks`](Dimension.md#getblocks)*
 - Added function *[`getGeneratedStructures`](Dimension.md#getgeneratedstructures)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
@@ -128,22 +122,12 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`tamedToPlayer`](EntityIsTamedComponent.md#tamedtoplayer)*
 - Added property *[`tamedToPlayerId`](EntityIsTamedComponent.md#tamedtoplayerid)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
-#### Added *[`EntityStartSneakingAfterEvent`](EntityStartSneakingAfterEvent.md)*
-#### Added *[`EntityStartSneakingAfterEventSignal`](EntityStartSneakingAfterEventSignal.md)*
-#### Added *[`EntityStopSneakingAfterEvent`](EntityStopSneakingAfterEvent.md)*
-#### Added *[`EntityStopSneakingAfterEventSignal`](EntityStopSneakingAfterEventSignal.md)*
-#### Added *[`EntityTamedAfterEvent`](EntityTamedAfterEvent.md)*
-#### Added *[`EntityTamedAfterEventSignal`](EntityTamedAfterEventSignal.md)*
-#### Added *[`EntityTamedBeforeEvent`](EntityTamedBeforeEvent.md)*
-#### Added *[`EntityTamedBeforeEventSignal`](EntityTamedBeforeEventSignal.md)*
 #### Changed *[`EntityTypes`](EntityTypes.md)*
 - Changed function *[`get`](EntityTypes.md#get)*
   - Changed return type from [*EntityType*](EntityType.md) to *EntityType* | *undefined*
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
-#### Added *[`FogSettings`](FogSettings.md)*
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`playerWaypoints`](GameRules.md#playerwaypoints)*
-#### Added *[`ItemBlockDynamicPropertiesComponent`](ItemBlockDynamicPropertiesComponent.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
@@ -152,7 +136,6 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatMessagePrefix`](Player.md#chatmessageprefix)*
 - Added property *[`chatNamePrefix`](Player.md#chatnameprefix)*
 - Added property *[`chatNameSuffix`](Player.md#chatnamesuffix)*
-- Added property *[`fogSettings`](Player.md#fogsettings)*
 - Added property *[`persistentId`](Player.md#persistentid)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getPing`](Player.md#getping)*
@@ -160,6 +143,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
 - Added function *[`stopSound`](Player.md#stopsound)*
+#### Added *[`PlayerCraftRecipeAfterEvent`](PlayerCraftRecipeAfterEvent.md)*
+#### Added *[`PlayerCraftRecipeAfterEventSignal`](PlayerCraftRecipeAfterEventSignal.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
 #### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
@@ -173,26 +158,12 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from [*ItemStack*](ItemStack.md) (throws exceptions) to *ItemStack* (throws exceptions)
   - Changed argument `potionEffectType` type from [*PotionEffectType*](PotionEffectType.md) | *string* to *PotionEffectType* | *T*
   - Changed argument `potionDeliveryType` type from [*PotionDeliveryType*](PotionDeliveryType.md) | *string* to *PotionDeliveryType* | *U*
-#### Changed *[`PrimitiveShapesManager`](PrimitiveShapesManager.md)*
-- Added function *[`getShapes`](PrimitiveShapesManager.md#getshapes)*
+#### Added *[`RecipeCraftingContext`](RecipeCraftingContext.md)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Changed *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
 - Added property *[`baseColor`](SetBannerDetailsFunction.md#basecolor)*
 - Added property *[`patterns`](SetBannerDetailsFunction.md#patterns)*
-#### Added *[`SoundCompletedAfterEvent`](SoundCompletedAfterEvent.md)*
-#### Added *[`SoundCompletedAfterEventSignal`](SoundCompletedAfterEventSignal.md)*
-#### Changed *[`SoundDefinition`](SoundDefinition.md)*
-- Added property *[`durationInfo`](SoundDefinition.md#durationinfo)*
-- Added property *[`musicInfo`](SoundDefinition.md#musicinfo)*
-- Added property *[`soundEventId`](SoundDefinition.md#soundeventid)*
-- Added property *[`tags`](SoundDefinition.md#tags)*
-#### Added *[`SoundDefinitionRegistry`](SoundDefinitionRegistry.md)*
-#### Added *[`SoundDurationInfo`](SoundDurationInfo.md)*
 #### Changed *[`SoundInstance`](SoundInstance.md)*
-- Added property *[`durationInfo`](SoundInstance.md#durationinfo)*
-- Added property *[`id`](SoundInstance.md#id)*
-- Added property *[`recipient`](SoundInstance.md#recipient)*
-- Added property *[`soundEventId`](SoundInstance.md#soundeventid)*
 - Added function *[`fade`](SoundInstance.md#fade)*
 - Added function *[`pause`](SoundInstance.md#pause)*
 - Added function *[`resume`](SoundInstance.md#resume)*
@@ -210,25 +181,20 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
 - Added property *[`allowCheats`](World.md#allowcheats)*
-- Added property *[`soundDefinitionRegistry`](World.md#sounddefinitionregistry)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getClock`](World.md#getclock)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
-- Added property *[`entityStartSneaking`](WorldAfterEvents.md#entitystartsneaking)*
-- Added property *[`entityStopSneaking`](WorldAfterEvents.md#entitystopsneaking)*
-- Added property *[`entityTamed`](WorldAfterEvents.md#entitytamed)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
+- Added property *[`playerCraftRecipe`](WorldAfterEvents.md#playercraftrecipe)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
-- Added property *[`soundCompleted`](WorldAfterEvents.md#soundcompleted)*
 - Added property *[`worldClockOnPaused`](WorldAfterEvents.md#worldclockonpaused)*
 - Added property *[`worldClockOnResumed`](WorldAfterEvents.md#worldclockonresumed)*
 - Added property *[`worldClockOnTimeMarker`](WorldAfterEvents.md#worldclockontimemarker)*
 - Added property *[`worldClockOnTimeModified`](WorldAfterEvents.md#worldclockontimemodified)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
-- Added property *[`entityTamed`](WorldBeforeEvents.md#entitytamed)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 - Added property *[`worldClockOnRestart`](WorldBeforeEvents.md#worldclockonrestart)*
 #### Added *[`WorldClock`](WorldClock.md)*
@@ -244,10 +210,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WorldClockOnTimeModifiedAfterEventSignal`](WorldClockOnTimeModifiedAfterEventSignal.md)*
 #### Added *[`WorldClockRegistry`](WorldClockRegistry.md)*
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
-- Added value `DynamicProperties`
-- Added value `Instrument`
-#### Added enum [`CameraShakeType`](CameraShakeType.md)
-#### Added enum [`CloneMode`](CloneMode.md)
+- Added value `RecipeCrafting`
 #### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
 - Added value `UnexpectedEnumName`
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
@@ -256,11 +219,65 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)
 - Added value `PlayerWaypoints`
-#### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
-- Added value `BlockDynamicProperties`
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`PoiBlockOccupancyFilter`](PoiBlockOccupancyFilter.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+## 2.10.0-rc.1.26.60-preview.21
+#### Added *[`BlockDynamicPropertiesComponent`](BlockDynamicPropertiesComponent.md)*
+#### Added *[`BlockInstrumentComponent`](BlockInstrumentComponent.md)*
+#### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
+- Added function *[`getClosest`](BlockVolumeBase.md#getclosest)*
+- Added function *[`getFarthest`](BlockVolumeBase.md#getfarthest)*
+#### Changed *[`Camera`](Camera.md)*
+- Added function *[`addShake`](Camera.md#addshake)*
+- Added function *[`stopShaking`](Camera.md#stopshaking)*
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`cloneBlocks`](Dimension.md#cloneblocks)*
+- Added function *[`getBlocks`](Dimension.md#getblocks)*
+#### Added *[`EntityStartSneakingAfterEvent`](EntityStartSneakingAfterEvent.md)*
+#### Added *[`EntityStartSneakingAfterEventSignal`](EntityStartSneakingAfterEventSignal.md)*
+#### Added *[`EntityStopSneakingAfterEvent`](EntityStopSneakingAfterEvent.md)*
+#### Added *[`EntityStopSneakingAfterEventSignal`](EntityStopSneakingAfterEventSignal.md)*
+#### Added *[`EntityTamedAfterEvent`](EntityTamedAfterEvent.md)*
+#### Added *[`EntityTamedAfterEventSignal`](EntityTamedAfterEventSignal.md)*
+#### Added *[`EntityTamedBeforeEvent`](EntityTamedBeforeEvent.md)*
+#### Added *[`EntityTamedBeforeEventSignal`](EntityTamedBeforeEventSignal.md)*
+#### Added *[`FogSettings`](FogSettings.md)*
+#### Added *[`ItemBlockDynamicPropertiesComponent`](ItemBlockDynamicPropertiesComponent.md)*
+#### Changed *[`Player`](Player.md)*
+- Added property *[`fogSettings`](Player.md#fogsettings)*
+#### Changed *[`PrimitiveShapesManager`](PrimitiveShapesManager.md)*
+- Added function *[`getShapes`](PrimitiveShapesManager.md#getshapes)*
+#### Added *[`SoundCompletedAfterEvent`](SoundCompletedAfterEvent.md)*
+#### Added *[`SoundCompletedAfterEventSignal`](SoundCompletedAfterEventSignal.md)*
+#### Changed *[`SoundDefinition`](SoundDefinition.md)*
+- Added property *[`durationInfo`](SoundDefinition.md#durationinfo)*
+- Added property *[`musicInfo`](SoundDefinition.md#musicinfo)*
+- Added property *[`soundEventId`](SoundDefinition.md#soundeventid)*
+- Added property *[`tags`](SoundDefinition.md#tags)*
+#### Added *[`SoundDefinitionRegistry`](SoundDefinitionRegistry.md)*
+#### Added *[`SoundDurationInfo`](SoundDurationInfo.md)*
+#### Changed *[`SoundInstance`](SoundInstance.md)*
+- Added property *[`durationInfo`](SoundInstance.md#durationinfo)*
+- Added property *[`id`](SoundInstance.md#id)*
+- Added property *[`recipient`](SoundInstance.md#recipient)*
+- Added property *[`soundEventId`](SoundInstance.md#soundeventid)*
+#### Changed *[`World`](World.md)*
+- Added property *[`soundDefinitionRegistry`](World.md#sounddefinitionregistry)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`entityStartSneaking`](WorldAfterEvents.md#entitystartsneaking)*
+- Added property *[`entityStopSneaking`](WorldAfterEvents.md#entitystopsneaking)*
+- Added property *[`entityTamed`](WorldAfterEvents.md#entitytamed)*
+- Added property *[`soundCompleted`](WorldAfterEvents.md#soundcompleted)*
+#### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
+- Added property *[`entityTamed`](WorldBeforeEvents.md#entitytamed)*
+#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Added value `DynamicProperties`
+- Added value `Instrument`
+#### Added enum [`CameraShakeType`](CameraShakeType.md)
+#### Added enum [`CloneMode`](CloneMode.md)
+#### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
+- Added value `BlockDynamicProperties`
 ## 2.9.0
 #### Changed *[`Block`](Block.md)*
 - Added function *[`getParts`](Block.md#getparts)*

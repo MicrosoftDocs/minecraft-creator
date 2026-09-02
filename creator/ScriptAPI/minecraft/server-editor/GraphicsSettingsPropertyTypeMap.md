@@ -24,4 +24,6 @@ Defines type information for graphics settings properties.
     [GraphicsSettingsProperty.DisableWeatherRendering]?: boolean;
     [GraphicsSettingsProperty.DisableParticleRendering]?: boolean;
     [GraphicsSettingsProperty.DisableBlockEntityRendering]?: boolean;
+    [GraphicsSettingsProperty.DisableCloudRendering]?: boolean;
+    [GraphicsSettingsProperty.ShowChat]?: boolean;
 };`

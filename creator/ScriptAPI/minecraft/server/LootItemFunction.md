@@ -10,7 +10,6 @@ description: Contents of the @minecraft/server.LootItemFunction class.
 # LootItemFunction Class
 
 ## Classes that extend LootItemFunction
-- [*CarryOverBlockEntityDataFunction*](CarryOverBlockEntityDataFunction.md)
 - [*EnchantRandomEquipmentFunction*](EnchantRandomEquipmentFunction.md)
 - [*EnchantRandomlyFunction*](EnchantRandomlyFunction.md)
 - [*EnchantWithLevelsFunction*](EnchantWithLevelsFunction.md)
@@ -36,6 +35,7 @@ description: Contents of the @minecraft/server.LootItemFunction class.
 - [*SetStewEffectFunction*](SetStewEffectFunction.md)
 - [*SmeltItemFunction*](SmeltItemFunction.md)
 - [*SpecificEnchantFunction*](SpecificEnchantFunction.md)
+- [*CarryOverBlockEntityDataFunction*](CarryOverBlockEntityDataFunction.md)
 
 An abstract base class from which all loot item functions are derived. Loot item functions can modify loot drops in a variety of ways as they happen, optionally dependent on a set of conditions which must be met.
 

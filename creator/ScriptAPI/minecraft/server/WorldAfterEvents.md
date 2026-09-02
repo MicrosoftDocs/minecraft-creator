@@ -439,6 +439,21 @@ Type: [*PlayerCancelBreakingBlockAfterEventSignal*](PlayerCancelBreakingBlockAft
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerCraftRecipe**
+`read-only playerCraftRecipe: PlayerCraftRecipeAfterEventSignal;`
+
+This event fires when a player crafts a recipe.
+
+Type: [*PlayerCraftRecipeAfterEventSignal*](PlayerCraftRecipeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **playerDimensionChange**
 `read-only playerDimensionChange: PlayerDimensionChangeAfterEventSignal;`
 

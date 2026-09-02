@@ -13,6 +13,13 @@ Player Logger Properties.
 
 ## Properties
 
+### **alert**
+`alert?: boolean;`
+
+Overrides whether this message raises the Editor error state, which flashes the viewport and opens the log panel. When left unset the default applies, which is to raise it for error messages only. Set it to true to raise it for a lower severity message, or false to suppress it for an error.
+
+Type: *boolean*
+
 ### **channelMask**
 `channelMask?: LogChannel;`
 

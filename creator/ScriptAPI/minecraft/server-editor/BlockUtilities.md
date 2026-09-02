@@ -17,6 +17,7 @@ description: Contents of the @minecraft/server-editor.BlockUtilities class.
 - [getDimensionMaxLocation](#getdimensionmaxlocation)
 - [getDimensionMinLocation](#getdimensionminlocation)
 - [getFacePreviewSelection](#getfacepreviewselection)
+- [isHighPriorityFillBlock](#ishighpriorityfillblock)
 - [isLocationInsideCurrentDimensionBounds](#islocationinsidecurrentdimensionbounds)
 - [quickExtrude](#quickextrude)
 - [shrinkWrapVolume](#shrinkwrapvolume)
@@ -101,6 +102,21 @@ getFacePreviewSelection(properties?: QuickExtrudeProperties): minecraftserver.Li
 - **properties**?: [*QuickExtrudeProperties*](QuickExtrudeProperties.md) = `null`
 
 **Returns** [*@minecraft/server.ListBlockVolume*](../../../scriptapi/minecraft/server/ListBlockVolume.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+
+### **isHighPriorityFillBlock**
+`
+isHighPriorityFillBlock(block: minecraftserver.BlockPermutation | minecraftserver.BlockType | string, location: minecraftserver.Vector3): boolean
+`
+
+#### **Parameters**
+- **block**: [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) | *string*
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+**Returns** *boolean*
   
 Notes:
 - This function can't be called in restricted-execution mode.
