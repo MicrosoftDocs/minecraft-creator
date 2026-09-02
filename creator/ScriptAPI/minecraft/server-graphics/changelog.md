@@ -10,13 +10,13 @@ description: Changelog of the `@minecraft/server-graphics` module
 # `@minecraft/server-graphics` Changelog
 
 ## Version Changes
-- [1.1.0-beta.1.26.50-preview.27](#110-beta12650-preview27)
-- [1.0.0-rc.1.26.50-preview.27](#100-rc12650-preview27)
+- [1.1.0-beta.1.26.60-preview.21](#110-beta12660-preview21)
+- [1.0.0-rc.1.26.60-preview.21](#100-rc12660-preview21)
 
-## 1.1.0-beta.1.26.50-preview.27
+## 1.1.0-beta.1.26.60-preview.21
 #### Added module peer dependency `@minecraft/server@1.17.0`
 #### Added module peer dependency `@minecraft/server@2.0.0`
-#### Added module peer dependency `@minecraft/server@2.11.0-beta.1.26.50-preview.27`
+#### Added module peer dependency `@minecraft/server@2.12.0-beta.1.26.60-preview.21`
 #### Removed module peer dependency `@minecraft/server@2.3.0`
-## 1.0.0-rc.1.26.50-preview.27
+## 1.0.0-rc.1.26.60-preview.21
 #### Added `@minecraft/server-graphics` Module

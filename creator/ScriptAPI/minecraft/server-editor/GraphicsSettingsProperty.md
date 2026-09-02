@@ -14,6 +14,8 @@ Enumeration representing identifiers for graphics settings properties.
 ## Constants
 ### **DisableBlockEntityRendering**
 `DisableBlockEntityRendering = "DisableBlockEntityRendering"`
+### **DisableCloudRendering**
+`DisableCloudRendering = "DisableCloudRendering"`
 ### **DisableEntityRendering**
 `DisableEntityRendering = "DisableEntityRendering"`
 ### **DisableParticleRendering**
@@ -26,6 +28,8 @@ Enumeration representing identifiers for graphics settings properties.
 `GraphicsMode = "GraphicsMode"`
 ### **NightVision**
 `NightVision = "NightVision"`
+### **ShowChat**
+`ShowChat = "ShowChat"`
 ### **ShowChunkBoundaries**
 `ShowChunkBoundaries = "ShowChunkBoundaries"`
 ### **ShowCompass**

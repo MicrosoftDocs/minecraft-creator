@@ -20,10 +20,11 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.9.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.50-beta.27 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.21 of Minecraft.
 
 ## Available Versions
-- `2.11.0-beta.1.26.50-preview.27`
+- `2.12.0-beta.1.26.60-preview.21`
+- `2.10.0-rc.1.26.60-preview.21`
 - `2.9.0`
 - `2.8.0`
 - `2.7.0`
@@ -187,6 +188,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockPermutation](BlockPermutation.md)
 - [BlockPistonComponent](BlockPistonComponent.md)
 - [BlockPrecipitationInteractionsComponent](BlockPrecipitationInteractionsComponent.md)
+- [BlockRecipeCraftingComponent](BlockRecipeCraftingComponent.md)
 - [BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)
 - [BlockRedstoneProducerComponent](BlockRedstoneProducerComponent.md)
 - [BlockSignComponent](BlockSignComponent.md)
@@ -455,6 +457,8 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerButtonInputAfterEventSignal](PlayerButtonInputAfterEventSignal.md)
 - [PlayerCancelBreakingBlockAfterEvent](PlayerCancelBreakingBlockAfterEvent.md)
 - [PlayerCancelBreakingBlockAfterEventSignal](PlayerCancelBreakingBlockAfterEventSignal.md)
+- [PlayerCraftRecipeAfterEvent](PlayerCraftRecipeAfterEvent.md)
+- [PlayerCraftRecipeAfterEventSignal](PlayerCraftRecipeAfterEventSignal.md)
 - [PlayerCursorInventoryComponent](PlayerCursorInventoryComponent.md)
 - [PlayerDimensionChangeAfterEvent](PlayerDimensionChangeAfterEvent.md)
 - [PlayerDimensionChangeAfterEventSignal](PlayerDimensionChangeAfterEventSignal.md)
@@ -524,6 +528,7 @@ The following API versions are from a major version that is documented here: [*@
 - [RandomDifficultyChanceCondition](RandomDifficultyChanceCondition.md)
 - [RandomDyeFunction](RandomDyeFunction.md)
 - [RandomRegionalDifficultyChanceCondition](RandomRegionalDifficultyChanceCondition.md)
+- [RecipeCraftingContext](RecipeCraftingContext.md)
 - [Scoreboard](Scoreboard.md)
 - [ScoreboardIdentity](ScoreboardIdentity.md)
 - [ScoreboardObjective](ScoreboardObjective.md)
@@ -675,6 +680,7 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 - [PlayerAimAssistSettings](PlayerAimAssistSettings.md)
 - [PlayerBreakingBlockEventOptions](PlayerBreakingBlockEventOptions.md)
+- [PlayerCraftRecipeEventOptions](PlayerCraftRecipeEventOptions.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
 - [PlayerSwingEventOptions](PlayerSwingEventOptions.md)
 - [PlayerVisibilityRules](PlayerVisibilityRules.md)
@@ -745,6 +751,7 @@ The following API versions are from a major version that is documented here: [*@
 - [InvalidIteratorError](InvalidIteratorError.md)
 - [InvalidPotionDeliveryTypeError](InvalidPotionDeliveryTypeError.md)
 - [InvalidPotionEffectTypeError](InvalidPotionEffectTypeError.md)
+- [InvalidRecipeError](InvalidRecipeError.md)
 - [InvalidStructureError](InvalidStructureError.md)
 - [InvalidWaypointError](InvalidWaypointError.md)
 - [InvalidWaypointTextureSelectorError](InvalidWaypointTextureSelectorError.md)
