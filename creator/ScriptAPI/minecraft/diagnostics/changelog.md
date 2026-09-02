@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/diagnostics` module
 # `@minecraft/diagnostics` Changelog
 
 ## Version Changes
-- [1.0.0-beta.1.26.50-preview.27](#100-beta12650-preview27)
+- [1.0.0-beta.1.26.60-preview.21](#100-beta12660-preview21)
 
-## 1.0.0-beta.1.26.50-preview.27
+## 1.0.0-beta.1.26.60-preview.21
 #### Added `@minecraft/diagnostics` Module

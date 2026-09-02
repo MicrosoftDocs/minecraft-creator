@@ -18,38 +18,36 @@ Controls how the server saves to disk. Only available on dedicated server.
 
 ### **saveHold**
 `
-saveHold(): void
+saveHold(): Promise<void>
 `
 
 Disables the server writing to the world files and begins creating a snapshot.
+
+**Returns** Promise&lt;*void*&gt;
   
 Notes:
 - This function can't be called in restricted-execution mode.
-- This function can throw errors.
-  - Throws [*LevelStorageSaveStateChangeError*](LevelStorageSaveStateChangeError.md)
 
 ### **saveQuery**
 `
-saveQuery(): LevelStorageQuerySnapshotFile[]
+saveQuery(): Promise<LevelStorageQuerySnapshotFile[]>
 `
 
 Returns the path and size of every file in the current snapshot if a snapshot is being taken.
 
-**Returns** [*LevelStorageQuerySnapshotFile*](LevelStorageQuerySnapshotFile.md)[]
+**Returns** Promise&lt;[*LevelStorageQuerySnapshotFile*](LevelStorageQuerySnapshotFile.md)[]&gt;
   
 Notes:
 - This function can't be called in restricted-execution mode.
-- This function can throw errors.
-  - Throws [*LevelStorageSaveStateChangeError*](LevelStorageSaveStateChangeError.md)
 
 ### **saveResume**
 `
-saveResume(): void
+saveResume(): Promise<void>
 `
 
 Re-enables server writing world state to files and removes snapshot.
+
+**Returns** Promise&lt;*void*&gt;
   
 Notes:
 - This function can't be called in restricted-execution mode.
-- This function can throw errors.
-  - Throws [*LevelStorageSaveStateChangeError*](LevelStorageSaveStateChangeError.md)

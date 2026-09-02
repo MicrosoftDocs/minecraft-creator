@@ -98,6 +98,10 @@ Represents the unique type of network packet.
 `ClientboundDebugRendererPacket = "ClientboundDebugRendererPacket"`
 ### **ClientboundMapItemDataPacket**
 `ClientboundMapItemDataPacket = "ClientboundMapItemDataPacket"`
+### **ClientboundMatchmakingStatePacket**
+`ClientboundMatchmakingStatePacket = "ClientboundMatchmakingStatePacket"`
+### **ClientboundStonecutterSetRecipePacket**
+`ClientboundStonecutterSetRecipePacket = "ClientboundStonecutterSetRecipePacket"`
 ### **ClientboundTextureShiftPacket**
 `ClientboundTextureShiftPacket = "ClientboundTextureShiftPacket"`
 ### **ClientboundUpdateSoundDataPacket**
@@ -342,8 +346,12 @@ Represents the unique type of network packet.
 `ServerboundDiagnosticsPacket = "ServerboundDiagnosticsPacket"`
 ### **ServerboundLoadingScreenPacket**
 `ServerboundLoadingScreenPacket = "ServerboundLoadingScreenPacket"`
+### **ServerboundMatchmakingCancelPacket**
+`ServerboundMatchmakingCancelPacket = "ServerboundMatchmakingCancelPacket"`
 ### **ServerboundPackSettingChangePacket**
 `ServerboundPackSettingChangePacket = "ServerboundPackSettingChangePacket"`
+### **ServerboundStonecutterSetRecipePacket**
+`ServerboundStonecutterSetRecipePacket = "ServerboundStonecutterSetRecipePacket"`
 ### **ServerPlayerPostMovePositionPacket**
 `ServerPlayerPostMovePositionPacket = "ServerPlayerPostMovePositionPacket"`
 ### **ServerPresenceInfoPacket**

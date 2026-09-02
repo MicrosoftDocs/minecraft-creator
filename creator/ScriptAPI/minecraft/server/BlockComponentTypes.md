@@ -38,6 +38,8 @@ When present, this block has piston-like behavior. Contains additional propertie
 `PrecipitationInteractions = "minecraft:precipitation_interactions"`
 
 Represents a how a block interacts with precipitation (such as rain or snow).
+### **RecipeCrafting**
+`RecipeCrafting = "minecraft:recipe_crafting"`
 ### **RecordPlayer**
 `RecordPlayer = "minecraft:record_player"`
 

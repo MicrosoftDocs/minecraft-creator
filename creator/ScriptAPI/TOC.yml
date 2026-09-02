@@ -308,6 +308,8 @@
       href: minecraft/server/BlockPistonComponent.md
     - name: BlockPrecipitationInteractionsComponent
       href: minecraft/server/BlockPrecipitationInteractionsComponent.md
+    - name: BlockRecipeCraftingComponent
+      href: minecraft/server/BlockRecipeCraftingComponent.md
     - name: BlockRecordPlayerComponent
       href: minecraft/server/BlockRecordPlayerComponent.md
     - name: BlockRedstoneProducerComponent
@@ -844,6 +846,10 @@
       href: minecraft/server/PlayerCancelBreakingBlockAfterEvent.md
     - name: PlayerCancelBreakingBlockAfterEventSignal
       href: minecraft/server/PlayerCancelBreakingBlockAfterEventSignal.md
+    - name: PlayerCraftRecipeAfterEvent
+      href: minecraft/server/PlayerCraftRecipeAfterEvent.md
+    - name: PlayerCraftRecipeAfterEventSignal
+      href: minecraft/server/PlayerCraftRecipeAfterEventSignal.md
     - name: PlayerCursorInventoryComponent
       href: minecraft/server/PlayerCursorInventoryComponent.md
     - name: PlayerDimensionChangeAfterEvent
@@ -982,6 +988,8 @@
       href: minecraft/server/RandomDyeFunction.md
     - name: RandomRegionalDifficultyChanceCondition
       href: minecraft/server/RandomRegionalDifficultyChanceCondition.md
+    - name: RecipeCraftingContext
+      href: minecraft/server/RecipeCraftingContext.md
     - name: Scoreboard
       href: minecraft/server/Scoreboard.md
     - name: ScoreboardIdentity
@@ -1280,6 +1288,8 @@
       href: minecraft/server/PlayerAimAssistSettings.md
     - name: PlayerBreakingBlockEventOptions
       href: minecraft/server/PlayerBreakingBlockEventOptions.md
+    - name: PlayerCraftRecipeEventOptions
+      href: minecraft/server/PlayerCraftRecipeEventOptions.md
     - name: PlayerSoundOptions
       href: minecraft/server/PlayerSoundOptions.md
     - name: PlayerSwingEventOptions

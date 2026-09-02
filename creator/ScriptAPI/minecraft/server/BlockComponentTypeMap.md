@@ -25,12 +25,14 @@ type BlockComponentTypeMap = {
   'minecraft:movable': BlockMovableComponent;
   'minecraft:piston': BlockPistonComponent;
   'minecraft:precipitation_interactions': BlockPrecipitationInteractionsComponent;
+  'minecraft:recipe_crafting': BlockRecipeCraftingComponent;
   'minecraft:record_player': BlockRecordPlayerComponent;
   'minecraft:redstone_producer': BlockRedstoneProducerComponent;
   'minecraft:sign': BlockSignComponent;
   'movable': BlockMovableComponent;
   'piston': BlockPistonComponent;
   'precipitation_interactions': BlockPrecipitationInteractionsComponent;
+  'recipe_crafting': BlockRecipeCraftingComponent;
   'record_player': BlockRecordPlayerComponent;
   'redstone_producer': BlockRedstoneProducerComponent;
   'sign': BlockSignComponent;
