@@ -20,11 +20,11 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.9.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.21 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.23 of Minecraft.
 
 ## Available Versions
-- `2.12.0-beta.1.26.60-preview.21`
-- `2.10.0-rc.1.26.60-preview.21`
+- `2.12.0-beta.1.26.60-preview.23`
+- `2.10.0-rc.1.26.60-preview.23`
 - `2.9.0`
 - `2.8.0`
 - `2.7.0`

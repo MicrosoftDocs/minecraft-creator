@@ -2466,6 +2466,8 @@
       href: minecraft/server-ui/ObservableUIRawMessage.md
     - name: UIManager
       href: minecraft/server-ui/UIManager.md
+    - name: ButtonData
+      href: minecraft/server-ui/ButtonData.md
     - name: ButtonOptions
       href: minecraft/server-ui/ButtonOptions.md
     - name: DividerOptions
@@ -2490,6 +2492,8 @@
       href: minecraft/server-ui/ModalFormDataTextFieldOptions.md
     - name: ModalFormDataToggleOptions
       href: minecraft/server-ui/ModalFormDataToggleOptions.md
+    - name: MultiButtonRowOptions
+      href: minecraft/server-ui/MultiButtonRowOptions.md
     - name: ObservableOptions
       href: minecraft/server-ui/ObservableOptions.md
     - name: SliderOptions

@@ -21,13 +21,13 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
 ```json
 {
     "module_name": "@minecraft/server-net",
-    "version": "1.0.0-beta.1.26.60-preview.21"
+    "version": "1.0.0-beta.1.26.60-preview.23"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.60-beta.21 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.60-beta.23 of Minecraft.
 
 ## Available Versions
-- `1.0.0-beta.1.26.60-preview.21`
+- `1.0.0-beta.1.26.60-preview.23`
 
 ## Enumerations
 - [HttpRequestMethod](HttpRequestMethod.md)

@@ -24,6 +24,9 @@ A customizable data driven (DDUI) form that lets you add buttons, labels, toggle
 ::: moniker-end
 - [isShowing](#isshowing)
 - [label](#label)
+::: moniker range="=minecraft-bedrock-experimental"
+- [multiButtonRow](#multibuttonrow)
+::: moniker-end
 - [show](#show)
 - [slider](#slider)
 - [spacer](#spacer)
@@ -234,6 +237,33 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **multiButtonRow**
+`
+multiButtonRow(buttons: ButtonData[], options?: MultiButtonRowOptions): CustomForm
+`
+
+Adds a horizontal row of up to three clickable buttons to the form layout. Returns the form instance to allow method chaining.
+
+#### **Parameters**
+- **buttons**: [*ButtonData*](ButtonData.md)[]
+  
+  The buttons to display in the row.
+- **options**?: [*MultiButtonRowOptions*](MultiButtonRowOptions.md) = `null`
+  
+  Optional configuration for the row, such as visibility.
+
+**Returns** [*CustomForm*](CustomForm.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
+::: moniker-end
 
 ### **show**
 `

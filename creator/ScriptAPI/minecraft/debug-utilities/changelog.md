@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/debug-utilities` module
 # `@minecraft/debug-utilities` Changelog
 
 ## Version Changes
-- [1.0.0-beta.1.26.60-preview.21](#100-beta12660-preview21)
+- [1.0.0-beta.1.26.60-preview.23](#100-beta12660-preview23)
 
-## 1.0.0-beta.1.26.60-preview.21
+## 1.0.0-beta.1.26.60-preview.23
 #### Added `@minecraft/debug-utilities` Module
