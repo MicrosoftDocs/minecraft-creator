@@ -248,6 +248,8 @@
               href: Documents/scripting/custom-commands.md
             - name: Building with the Custom Dimension API
               href: Documents/scripting/custom-dimension-api-tutorial.md
+            - name: Introduction to World Clocks
+              href: Documents/WorldClocks.md
             - name: Game Loops and Timed Callbacks
               href: Documents/scripting/system-run-guide.md
             - name: Building Multiplayer-Aware Scripts
