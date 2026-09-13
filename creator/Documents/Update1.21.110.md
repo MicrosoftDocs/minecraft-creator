@@ -74,7 +74,7 @@ Looking ahead, here's what you can expect coming in future releases.
 - Block-entity interaction component - this supports recreating mobs that interact with blocks like the Creaking.
 - Snow tinting - Allows leaves to change to snow tinted textures over time.
 - Leashable - Allows mobs to be leashed to a custom block, like fences.
-On neighbor change - Allows for a custom block to understand when the block connected to one of their sides changes.
+- On neighbor change - Allows for a custom block to understand when the block connected to one of their sides changes.
 - Block precipitation - Controls when snow falls through a block (flowers) or builds (dirt) also controls rain falling through (flowers).
 - Block opacity - Allows creators to define if light can pass through a block from a gameplay perspective. Allowing for scenarios like grass to not turn to dirt when a custom block is on top of it.
 
