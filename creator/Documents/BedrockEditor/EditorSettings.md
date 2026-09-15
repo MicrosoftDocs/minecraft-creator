@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Settings
 description: "An overview of the Settings Pane in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2025
+ms.date: 09/04/2026
 ---
 
 # Editor Settings
@@ -35,8 +35,8 @@ You can change the color options for the following Editor interface elements:
 ### World visualization and navigation settings
 
 - **Show Invisible Blocks** -  Displays certain blocks that don’t render by default so you can see and edit them more easily.
-- **Show Chunk Boundries** - Shows the boundary lines between chunks (16×16 block areas).
+- **Show Chunk Boundaries** - Shows the boundary lines between chunks (16×16 block areas).
 - **Show Compass** - Toggles the directional compass at the top-right of the screen.
-- **Fly Speed** - Changes the vertical and horizonal fly speed to navigate around your world faster.
-- **Night Vision** - Turns on night vision to make editing underground and in dark places easier. 
-
+- **Fly Speed** - Changes the vertical and horizontal fly speed to navigate around your world faster.
+- **Night Vision** - Turns on night vision to make editing underground and in dark places easier.
+- **Render Clouds** - Toggles whether clouds render for you while editing. This is a client-local view setting and doesn't change project world data.

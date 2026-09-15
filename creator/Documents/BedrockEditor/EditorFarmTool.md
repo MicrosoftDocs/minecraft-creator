@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Farm Tool
 description: "An overview of the Farm Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/18/2026
+ms.date: 09/03/2026
 ---
 
 # Farm Tool
@@ -27,7 +27,7 @@ Use Farm to quickly generate a complete farm layout with crops, optional animals
 
 - **Width** (3–24): The width of your farm, in blocks.
 
-- **Fence**: The type of fence surrounding your farm. Options: Oak, Birch, Acacia, Bamboo, Cherry, Jungle, Spruce, Warped, and Crimson.
+- **Fence**: The type of fence surrounding your farm. Options: Oak, Birch, Acacia, Bamboo, Cherry, Jungle, Spruce, Warped, Crimson, Pale Oak, Dark Oak, Nether Brick, and Mangrove.
 
 - **Irrigation**: Check this box to add irrigation channels between the crops on your farm.
 

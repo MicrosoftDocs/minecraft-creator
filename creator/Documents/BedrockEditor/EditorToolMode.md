@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Modes
 description: "An overview of Tool Mode and Crosshair Mode in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2025
+ms.date: 09/04/2026
 ---
 
 # Tool Mode and Crosshair Mode
@@ -31,7 +31,7 @@ Think of the Tool Mode UI as a collection of containers. The menu bar contains m
 > [!NOTE]
 > The contents of these containers may change between versions of Editor.
 
-**Menu bar**: Located at the top of the screen. Currently has File, Edit, World Options, and Help.
+**Menu bar**: Located at the top of the screen. It includes the File, Edit, View, World, and Help menus.
 
 ![Editor UI with menu bar highlighted](Media/editor_overview_menu_bar.png)
 
@@ -39,7 +39,7 @@ Think of the Tool Mode UI as a collection of containers. The menu bar contains m
 
 ![Editor UI with the action bar highlighted](Media/editor_overview_action_bar.png)
 
-**Toolrail**: Located on the left side of the screen. Currently holds Selection, Brush, Paste Preview, Line, and Summon Tool. You can also select these tools using keyboard shortcuts, if they have one.
+**Toolrail**: Located on the left side of the screen. It contains Editor tools such as Selection, Brush, Primitives, Paste Preview, Line, and Summon. You can also select tools using keyboard shortcuts, when available. If the tools span multiple pages, use the mouse wheel over the tool rail to move between pages.
 
 ![Editor UI with the tool rail highlighted](Media/editor_overview_tool_rail.png)
 
@@ -68,6 +68,8 @@ Visit [Minecraft File Types](../MinecraftFileExtensions.md) to learn more about 
 
 - **Cursor Settings** - This gives you the option to toggle Project through Liquid on or off.
 
+- **Keyboard Settings** - Opens Input Mapping so you can review and customize shortcuts.
+
 - **Game menu** - Brings up the menu where you can Resume Editing, go into Minecraft settings, or Save & Quit.
 
 ### Edit
@@ -91,14 +93,16 @@ Check out our other guide for a complete list of the [Bedrock Editor hotkeys](Ed
 
 - **Navigation Logging** - Toggles this feature on or off.
 
-- **Deferred Lighting Settings** - Opens the Settings Editor.
+- **Vibrant Visuals** - Opens the Vibrant Visuals Settings panel.
+
+- **Structures** - Opens the Structures panel.
 
 
-### World Options
+### World
 
 - **Pause**
 
-- **Change Dimension**
+- **Dimensions** - Change dimensions or open the Dimensions Panel.
 
 - **Test World** 
 
@@ -108,12 +112,16 @@ Check out our other guide for a complete list of the [Bedrock Editor hotkeys](Ed
 
 - **Weather**
 
+- **Biome Data Assignment** - Opens the Fill Biomes tool.
+
 For more information about World Options, take a look at [Editor World Options](EditorWorldOptions.md).
 
 
 ### Help
 
-- **Quick start**:  Select this to reopen the welcome menu.
+- **What's New**: Select this to reopen the welcome menu and view the latest Editor changes.
+
+- **Control Help**: Opens a context-sensitive list of general and active-tool shortcuts.
 
 - **Documentation**: A quick link to our Editor documentation.
 

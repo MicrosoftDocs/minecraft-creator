@@ -1,19 +1,23 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Hotkeys
 description: "An overview of the keyboard input shortcuts in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/08/2025
+ms.date: 09/04/2026
 ---
 
 # Editor Hotkeys
 
 You can use the Keyboard Settings to view the default keyboard shortcuts and set custom keyboard shortcuts. Custom shortcuts are available in Editor and all Editor extensions!
 
+For a context-sensitive list while you work, press **F1** in Tool mode to open [Control Help](EditorControlHelp.md). Control Help displays general shortcuts and the shortcuts for the active tool, using your current key bindings.
+
+Open **File** > **Keyboard Settings**, or add Keyboard Settings to the Action Bar.
+
 To set a custom keyboard shortcut:
 
-1. Add the Keyboard Settings action to the hotbar if it's not already active, then open Keyboard Settings.
+1. Open Keyboard Settings.
 
 2. Use the left pane to locate the input you want to map. 
 
@@ -67,9 +71,10 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Fill Selection Contents | Ctrl+F | - |
 | Go To Next Navigation Position | Ctrl+] | - |
 | Go To Previous Navigation Position | Ctrl+[ | - |
+| Control Help | F1 | - |
 | Open Console | / | On |
-| Paste Preview| Ctrl+Shift+V | - |
-| Paste | Ctrl+V | - |
+| Paste Preview| Ctrl+V | - |
+| Paste | Ctrl+Shift+V | - |
 | Select Hotbar 1 | 1 | On |
 | Select Hotbar 2 | 2 | On |
 | Select Hotbar 3 | 3 | On |
@@ -132,11 +137,20 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Shrink Selection Right | Ctrl+Right Arrow | - |
 
 
-### Brush Paint
+### Brush
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Brush Paint Tool | Ctrl+B | - |
+| Brush Tool | Ctrl+B | - |
+
+### Primitives
+
+| Name | Shortcut | Exclusive |
+|:----|:----|:----|
+| Place Primitive | Enter | - |
+| Cancel Placement | Esc or Delete | - |
+| Nudge Forward/Back/Left/Right | Arrow keys | - |
+| Nudge Up/Down | PgUp/PgDn | - |
 
 
 ### Paste Preview
@@ -148,14 +162,15 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Adjacent Target Mode | - | On |
 | Block Target Mode | B | On |
 | Mouse Tracking | C | On |
+| Toggle Mode (Paste/Move) | M | On |
 | Move Offset Back | Ctrl+Shift+Down Arrow | - |
 | Move Offset Down | Ctrl+Shift+PgDn | - |
 | Move Offset Forward | Ctrl+Shift+Up Arrow | - |
 | Move Offset Left | Ctrl+Shift+Left Arrow | - |
 | Move Offset Right | Ctrl+Shift+Right Arrow | - |
 | Move Offset Up | Ctrl+Shift+PgUp | - |
-| Move Origin Back | Ctrl+Shift+Down Arrow | - |
-| Move Origin Down | Ctrl+Shift+PgDn | - |
+| Move Origin Back | Ctrl+Down Arrow | - |
+| Move Origin Down | Ctrl+PgDn | - |
 | Move Origin Forward | Ctrl+Up Arrow | - |
 | Move Origin Left | Ctrl+Left Arrow | - |
 | Move Origin Right | Ctrl+Right Arrow | - |
@@ -166,11 +181,11 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Move Preview Left | Left Arrow | On |
 | Move Preview Right | Right Arrow | On |
 | Move Preview Up | PgUp | On |
-| Paste at Cursor | Ctrl+F | - |
+| Paste at Cursor | Enter or Ctrl+V | - |
 | Rotate Preview Clockwise | R | On |
 | Rotate Preview Counter Clockwise | Shift+R | - |
-| Toggle Mirror X | X | On |
-| Toggle Mirror Z | Z | On |
+| Toggle Mirror X | Ctrl+Shift+X | On |
+| Toggle Mirror Z | Ctrl+Shift+Z | On |
 
 
 ### Line
@@ -264,7 +279,8 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Redo | `Ctrl Y` | Tool + Crosshair |
 | Cut | `Ctrl X` | Tool only |
 | Copy | `Ctrl C` | Tool only |
-| Paste | `Ctrl V` | Tool only |
+| Paste Preview | `Ctrl V` | Tool only |
+| Paste at cursor | `Ctrl Shift V` | Tool only |
 | Delete | `Delete` | Tool only |
 | Grapple teleport | Point at something and press `G` | Tool only |
 | Brush | `Ctrl B` | Tool only |
@@ -272,4 +288,3 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Toggle from Tool to Crosshair Mode | Crosshair Mode button or `Ctrl Tab` | Tool only |
 | Toggle from Crosshair Mode to Tool | `Esc` | Crosshair only
 | Get to Tool Mode from Crosshair Mode | `Esc` | Tool only |
-
