@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.BlockDynamicPropertiesComponent Class
 description: Contents of the @minecraft/server.BlockDynamicPropertiesComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockDynamicPropertiesComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*BlockComponent*](BlockComponent.md)

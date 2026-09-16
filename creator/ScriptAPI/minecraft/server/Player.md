@@ -108,17 +108,12 @@ Type: [*CommandPermissionLevel*](CommandPermissionLevel.md)
 Notes:
   - This property can't be edited in restricted-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **fogSettings**
 `read-only fogSettings: FogSettings;`
 
 Contains methods for manipulating the render distance fog settings of a Player.
 
 Type: [*FogSettings*](FogSettings.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **graphicsMode**
 `read-only graphicsMode: GraphicsMode;`

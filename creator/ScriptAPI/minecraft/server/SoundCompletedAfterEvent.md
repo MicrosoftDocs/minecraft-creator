@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.SoundCompletedAfterEvent Class
 description: Contents of the @minecraft/server.SoundCompletedAfterEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # SoundCompletedAfterEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information about a sound thats declared duration elapsed.
 

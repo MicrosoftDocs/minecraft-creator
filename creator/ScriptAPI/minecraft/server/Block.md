@@ -174,6 +174,9 @@ Type: *number*
 - [getSkyLightLevel](#getskylightlevel)
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
+::: moniker range="=minecraft-bedrock-experimental"
+- [hasScheduledNamedTick](#hasschedulednamedtick)
+::: moniker-end
 - [hasTag](#hastag)
 - [isLiquidBlocking](#isliquidblocking)
 - [liquidCanFlowFromDirection](#liquidcanflowfromdirection)
@@ -181,6 +184,12 @@ Type: *number*
 - [matches](#matches)
 - [north](#north)
 - [offset](#offset)
+::: moniker range="=minecraft-bedrock-experimental"
+- [removeScheduledNamedTick](#removeschedulednamedtick)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [scheduleNamedTick](#schedulenamedtick)
+::: moniker-end
 - [setPermutation](#setpermutation)
 - [setType](#settype)
 - [setWaterlogged](#setwaterlogged)
@@ -478,6 +487,25 @@ Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **hasScheduledNamedTick**
+`
+hasScheduledNamedTick(eventName: string): boolean
+`
+
+#### **Parameters**
+- **eventName**: *string*
+
+**Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
+
 ### **hasTag**
 `
 hasTag(tag: string): boolean
@@ -629,6 +657,54 @@ Returns a block at an offset relative vector to this block.
 Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **removeScheduledNamedTick**
+`
+removeScheduledNamedTick(eventName: string): void
+`
+
+Removes all scheduled named tick events from this block with the specified event name.
+
+#### **Parameters**
+- **eventName**: *string*
+  
+  Name of the scheduled event to remove.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **scheduleNamedTick**
+`
+scheduleNamedTick(eventName: string, tickDelay: number): void
+`
+
+Schedules a named tick event for this block. The event will be delivered to block custom components registered with the `onNamedTick` callback after the specified delay.
+
+#### **Parameters**
+- **eventName**: *string*
+  
+  Name of the event to schedule. Up to 31 characters.
+- **tickDelay**: *number*
+  * Minimum Bound: `1`
+  
+  Number of ticks to wait before the event is raised. Must be at least 1.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ### **setPermutation**
 `

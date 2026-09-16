@@ -13,7 +13,6 @@ Static metadata about a sound declared in a sound_definitions.json file.
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **durationInfo**
 `read-only durationInfo?: SoundDefinitionDurationInfo;`
 
@@ -21,11 +20,6 @@ Duration metadata declared for this sound. Undefined when the sound definition d
 
 Type: [*SoundDefinitionDurationInfo*](SoundDefinitionDurationInfo.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **musicInfo**
 `read-only musicInfo?: SoundDefinitionMusicInfo;`
 
@@ -33,11 +27,6 @@ Music metadata declared for this sound. Undefined when the sound definition does
 
 Type: [*SoundDefinitionMusicInfo*](SoundDefinitionMusicInfo.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **soundEventId**
 `read-only soundEventId: string;`
 
@@ -45,18 +34,9 @@ Identifier of the sound event this definition declares, in the form 'namespace:n
 
 Type: *string*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **tags**
 `read-only tags?: Record<string, string[]>;`
 
 Tag metadata declared for this sound, as a record mapping each tag name to its declared values. A tag declared with a single string value is exposed as a single-element array. Undefined when the sound definition does not specify any tags.
 
 Type: Record<*string*, *string*[]>
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end

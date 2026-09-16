@@ -17,14 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.9.0"
+    "version": "2.10.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.23 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.25 of Minecraft.
 
 ## Available Versions
-- `2.12.0-beta.1.26.60-preview.23`
-- `2.10.0-rc.1.26.60-preview.23`
+- `2.12.0-beta.1.26.60-preview.25`
+- `2.10.0`
 - `2.9.0`
 - `2.8.0`
 - `2.7.0`
@@ -160,6 +160,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockComponentBlockStateChangeEvent](BlockComponentBlockStateChangeEvent.md)
 - [BlockComponentEntityEvent](BlockComponentEntityEvent.md)
 - [BlockComponentEntityFallOnEvent](BlockComponentEntityFallOnEvent.md)
+- [BlockComponentNamedTickEvent](BlockComponentNamedTickEvent.md)
 - [BlockComponentOnPlaceEvent](BlockComponentOnPlaceEvent.md)
 - [BlockComponentPlayerBreakEvent](BlockComponentPlayerBreakEvent.md)
 - [BlockComponentPlayerInteractEvent](BlockComponentPlayerInteractEvent.md)

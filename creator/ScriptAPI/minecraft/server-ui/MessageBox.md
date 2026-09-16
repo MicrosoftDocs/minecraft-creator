@@ -12,7 +12,12 @@ description: Contents of the @minecraft/server-ui.MessageBox class.
 A simple message form with two buttons and a text body. Use this class to show a basic dialog to a player and handle the player's button selection.
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
 - [constructor](#constructor)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [constructor](#constructor)
+::: moniker-end
 - [body](#body)
 - [button1](#button1)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -22,10 +27,43 @@ A simple message form with two buttons and a text body. Use this class to show a
 ::: moniker range="=minecraft-bedrock-experimental"
 - [button2WithOptions](#button2withoptions)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [button3WithOptions](#button3withoptions)
+::: moniker-end
 - [close](#close)
 - [isShowing](#isshowing)
 - [show](#show)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **constructor**
+`
+new MessageBox(player: minecraftserver.Player, title: ObservableString | ObservableUIRawMessage | string | UIRawMessage, options?: MessageBoxOptions)
+`
+
+Creates a new MessageBox for the specified player with the given title.
+
+#### **Parameters**
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+  
+  The player to show this message box to.
+- **title**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The title text to display at the top of the message box.
+- **options**?: [*MessageBoxOptions*](MessageBoxOptions.md) = `null`
+  
+  Optional configuration for the message box, such as the button layout.
+
+**Returns** [*MessageBox*](MessageBox.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
 ### **constructor**
 `
 new MessageBox(player: minecraftserver.Player, title: ObservableString | ObservableUIRawMessage | string | UIRawMessage)
@@ -46,6 +84,7 @@ Creates a new MessageBox for the specified player with the given title.
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
+::: moniker-end
 
 ### **body**
 `
@@ -152,6 +191,33 @@ Sets the label and options for the second button of the message box. Returns the
 - **options**?: [*MessageBoxButtonOptions*](MessageBoxButtonOptions.md) = `null`
   
   Optional configuration for the second button, such as tooltip and image.
+
+**Returns** [*MessageBox*](MessageBox.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **button3WithOptions**
+`
+button3WithOptions(label: ObservableString | ObservableUIRawMessage | string | UIRawMessage, options?: MessageBoxButtonOptions): MessageBox
+`
+
+Sets the label and options for the third button of the message box. Returns the message box instance to allow method chaining.
+
+#### **Parameters**
+- **label**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The text label to display on the third button.
+- **options**?: [*MessageBoxButtonOptions*](MessageBoxButtonOptions.md) = `null`
+  
+  Optional configuration for the third button, such as tooltip and image.
 
 **Returns** [*MessageBox*](MessageBox.md)
 

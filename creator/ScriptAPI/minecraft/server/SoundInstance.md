@@ -13,7 +13,6 @@ Represents a handle to a sound that has been played. The handle is required to c
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **durationInfo**
 `read-only durationInfo?: SoundDurationInfo;`
 
@@ -21,11 +20,6 @@ Gets duration and playback information for this sound.
 
 Type: [*SoundDurationInfo*](SoundDurationInfo.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **id**
 `read-only id: string;`
 
@@ -33,11 +27,6 @@ Unique identifier of this sound instance.
 
 Type: *string*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **recipient**
 `read-only recipient?: Player;`
 
@@ -45,21 +34,12 @@ Gets the player this sound was played for.
 
 Type: [*Player*](Player.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **soundEventId**
 `read-only soundEventId: string;`
 
 Gets the identifier of the sound event this instance was started with.
 
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ## Methods
 ::: moniker range="=minecraft-bedrock-experimental"

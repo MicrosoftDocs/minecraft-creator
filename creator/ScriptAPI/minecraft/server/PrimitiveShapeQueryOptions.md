@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PrimitiveShapeQueryOptions Interface
 description: Contents of the @minecraft/server.PrimitiveShapeQueryOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PrimitiveShapeQueryOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains optional filters that control which primitive shapes are returned from a primitive shapes query.
 

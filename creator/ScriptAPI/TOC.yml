@@ -252,6 +252,8 @@
       href: minecraft/server/BlockComponentEntityEvent.md
     - name: BlockComponentEntityFallOnEvent
       href: minecraft/server/BlockComponentEntityFallOnEvent.md
+    - name: BlockComponentNamedTickEvent
+      href: minecraft/server/BlockComponentNamedTickEvent.md
     - name: BlockComponentOnPlaceEvent
       href: minecraft/server/BlockComponentOnPlaceEvent.md
     - name: BlockComponentPlayerBreakEvent
@@ -1586,10 +1588,14 @@
       href: minecraft/server-editor/WidgetComponentType.md
     - name: WidgetGizmoEventType
       href: minecraft/server-editor/WidgetGizmoEventType.md
+    - name: WidgetGizmoRotationEventType
+      href: minecraft/server-editor/WidgetGizmoRotationEventType.md
     - name: WidgetGizmoScaleMode
       href: minecraft/server-editor/WidgetGizmoScaleMode.md
     - name: WidgetGroupSelectionMode
       href: minecraft/server-editor/WidgetGroupSelectionMode.md
+    - name: WidgetGuideSensorDirection
+      href: minecraft/server-editor/WidgetGuideSensorDirection.md
     - name: WidgetMouseButtonActionType
       href: minecraft/server-editor/WidgetMouseButtonActionType.md
     - name: WorldGeneratorType
@@ -1818,6 +1824,10 @@
       href: minecraft/server-editor/WidgetComponentText.md
     - name: WidgetComponentVolumeOutline
       href: minecraft/server-editor/WidgetComponentVolumeOutline.md
+    - name: WidgetGizmoRotation
+      href: minecraft/server-editor/WidgetGizmoRotation.md
+    - name: WidgetGizmoRotationEvent
+      href: minecraft/server-editor/WidgetGizmoRotationEvent.md
     - name: WidgetGroup
       href: minecraft/server-editor/WidgetGroup.md
     - name: WidgetManager
@@ -2482,6 +2492,8 @@
       href: minecraft/server-ui/ImageOptions.md
     - name: MessageBoxButtonOptions
       href: minecraft/server-ui/MessageBoxButtonOptions.md
+    - name: MessageBoxOptions
+      href: minecraft/server-ui/MessageBoxOptions.md
     - name: MessageBoxResult
       href: minecraft/server-ui/MessageBoxResult.md
     - name: ModalFormDataDropdownOptions

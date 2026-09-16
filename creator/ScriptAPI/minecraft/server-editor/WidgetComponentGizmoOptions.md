@@ -12,6 +12,8 @@ description: Contents of the @minecraft/server-editor.WidgetComponentGizmoOption
 ## Extends
 - [*WidgetComponentBaseOptions*](WidgetComponentBaseOptions.md)
 
+Options used when creating a gizmo component. A gizmo must enable at least one translation axis or one rotation axis.
+
 ## Properties
 
 ### **axes**
@@ -28,6 +30,13 @@ Type: *boolean*
 `normalizedAutoOffset?: minecraftserver.Vector3;`
 
 Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+### **rotationAxes**
+`rotationAxes?: Axis;`
+
+The world axes that have rotation rings when the gizmo is created. Defaults to `Axis.None`. The value can be `Axis.None` when at least one translation axis is enabled.
+
+Type: [*Axis*](Axis.md)
 
 ### **scaleMode**
 `scaleMode?: WidgetGizmoScaleMode;`
