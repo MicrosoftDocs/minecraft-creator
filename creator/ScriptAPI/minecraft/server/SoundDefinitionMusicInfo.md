@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.SoundDefinitionMusicInfo Interface
 description: Contents of the @minecraft/server.SoundDefinitionMusicInfo class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # SoundDefinitionMusicInfo Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Music metadata declared on a sound definition. Each field is optional and is undefined when the sound definition does not declare a value for it.
 

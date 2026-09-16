@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.SoundDefinitionRegistry Class
 description: Contents of the @minecraft/server.SoundDefinitionRegistry class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # SoundDefinitionRegistry Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Provides read-only access to the sound definitions loaded for the current world.
 

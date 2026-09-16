@@ -10,8 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.12.0-beta.1.26.60-preview.23](#2120-beta12660-preview23)
-- [2.10.0-rc.1.26.60-preview.23](#2100-rc12660-preview23)
+- [2.12.0-beta.1.26.60-preview.25](#2120-beta12660-preview25)
+- [2.10.0](#2100)
 - [2.9.0](#290)
 - [2.8.0](#280)
 - [2.7.0](#270)
@@ -43,7 +43,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.12.0-beta.1.26.60-preview.23
+## 2.12.0-beta.1.26.60-preview.25
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -85,8 +85,12 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added function *[`canPlace`](Block.md#canplace)*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
+- Added function *[`hasScheduledNamedTick`](Block.md#hasschedulednamedtick)*
+- Added function *[`removeScheduledNamedTick`](Block.md#removeschedulednamedtick)*
+- Added function *[`scheduleNamedTick`](Block.md#schedulenamedtick)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
+#### Added *[`BlockComponentNamedTickEvent`](BlockComponentNamedTickEvent.md)*
 #### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
 - Added property *[`firstUpdate`](BlockComponentRedstoneUpdateEvent.md#firstupdate)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
@@ -158,6 +162,9 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from [*ItemStack*](ItemStack.md) (throws exceptions) to *ItemStack* (throws exceptions)
   - Changed argument `potionEffectType` type from [*PotionEffectType*](PotionEffectType.md) | *string* to *PotionEffectType* | *T*
   - Changed argument `potionDeliveryType` type from [*PotionDeliveryType*](PotionDeliveryType.md) | *string* to *PotionDeliveryType* | *U*
+#### Changed *[`PrimitiveShape`](PrimitiveShape.md)*
+- Added property *[`defaultVisibleToAll`](PrimitiveShape.md#defaultvisibletoall)*
+- Added property *[`hiddenFrom`](PrimitiveShape.md#hiddenfrom)*
 #### Added *[`RecipeCraftingContext`](RecipeCraftingContext.md)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Changed *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
@@ -222,7 +229,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`PoiBlockOccupancyFilter`](PoiBlockOccupancyFilter.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
-## 2.10.0-rc.1.26.60-preview.23
+## 2.10.0
 #### Added *[`BlockDynamicPropertiesComponent`](BlockDynamicPropertiesComponent.md)*
 #### Added *[`BlockInstrumentComponent`](BlockInstrumentComponent.md)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*

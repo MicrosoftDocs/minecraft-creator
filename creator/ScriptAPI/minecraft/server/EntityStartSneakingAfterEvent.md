@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EntityStartSneakingAfterEvent Class
 description: Contents of the @minecraft/server.EntityStartSneakingAfterEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityStartSneakingAfterEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains data related to an entity beginning to sneak.
 

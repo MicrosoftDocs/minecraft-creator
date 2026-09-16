@@ -244,6 +244,9 @@ Gets all the blocks in a volume that satisfy the filter.
   If set to true will suppress the UnloadedChunksError if some or all of the block volume is outside of the loaded chunks. Will only check the block locations that are within the loaded chunks in the volume.
 
 **Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns the ListBlockVolume that contains all the block locations that satisfied the block filter.
+
+> [!CAUTION]
+> This function is deprecated and will be removed in 2.0.0.
   
 Notes:
 - This function can throw errors.

@@ -30,6 +30,13 @@ Group entries for the dropdown.
 
 Type: *ITimelinePlayerGroup*[]
 
+### **hideGroupDropdown**
+`hideGroupDropdown?: boolean;`
+
+Hides the group dropdown. Use when there is only ever one group, so the dropdown would offer the user nothing to choose between.
+
+Type: *boolean*
+
 ### **onDurationChanged**
 `onDurationChanged?: (arg0: number) => void;`
 
@@ -72,12 +79,26 @@ Initial playback state.
 
 Type: *TimelinePlayerPlaybackState*
 
+### **playTooltip**
+`playTooltip?: BasicTooltipContent;`
+
+Tooltip shown when hovering the play/stop toggle.
+
+Type: *BasicTooltipContent*
+
 ### **precision**
 `precision?: number;`
 
 Decimal precision for keyframe time values.
 
 Type: *number*
+
+### **redistributeTooltip**
+`redistributeTooltip?: BasicTooltipContent;`
+
+Tooltip shown when hovering the redistribute button.
+
+Type: *BasicTooltipContent*
 
 ### **selectedGroupId**
 `selectedGroupId?: string;`

@@ -11,3 +11,10 @@ description: Contents of the @minecraft/server-editor.WidgetComponentGuideOption
 
 ## Extends
 - [*WidgetComponentBaseOptions*](WidgetComponentBaseOptions.md)
+
+## Properties
+
+### **directions**
+`directions?: WidgetGuideSensorDirection;`
+
+Type: [*WidgetGuideSensorDirection*](WidgetGuideSensorDirection.md)

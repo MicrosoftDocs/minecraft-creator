@@ -21,9 +21,7 @@ Returns whether the Camera is valid to access and use. A Camera is considered va
 Type: *boolean*
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [addShake](#addshake)
-::: moniker-end
 - [attachToEntity](#attachtoentity)
 - [clear](#clear)
 - [fade](#fade)
@@ -34,11 +32,8 @@ Type: *boolean*
 ::: moniker-end
 - [setDefaultCamera](#setdefaultcamera)
 - [setFov](#setfov)
-::: moniker range="=minecraft-bedrock-experimental"
 - [stopShaking](#stopshaking)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **addShake**
 `
 addShake(shakeCameraOptions: CameraShakeOptions): void
@@ -46,15 +41,11 @@ addShake(shakeCameraOptions: CameraShakeOptions): void
 
 #### **Parameters**
 - **shakeCameraOptions**: [*CameraShakeOptions*](CameraShakeOptions.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end
 
 ### **attachToEntity**
 `
@@ -187,17 +178,12 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **stopShaking**
 `
 stopShaking(): void
 `
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end

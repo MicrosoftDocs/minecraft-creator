@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.SoundDefinitionDurationInfo Interface
 description: Contents of the @minecraft/server.SoundDefinitionDurationInfo class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # SoundDefinitionDurationInfo Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Duration metadata declared in a sound definition.
 

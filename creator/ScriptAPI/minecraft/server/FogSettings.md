@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.FogSettings Class
 description: Contents of the @minecraft/server.FogSettings class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # FogSettings Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Provides access to the fog definitions stack of a player entity, allowing scripts to push, pop, remove, and query active fog definitions.
 

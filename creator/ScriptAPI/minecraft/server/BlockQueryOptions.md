@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.BlockQueryOptions Interface
 description: Contents of the @minecraft/server.BlockQueryOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockQueryOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*BlockFilter*](BlockFilter.md)

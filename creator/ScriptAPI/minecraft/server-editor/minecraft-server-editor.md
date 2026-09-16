@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.60-preview.23"
+    "version": "0.1.0-beta.1.26.60-preview.25"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.60-beta.23 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.60-beta.25 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.60-preview.23`
+- `0.1.0-beta.1.26.60-preview.25`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -108,8 +108,10 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.60-
 - [WidgetCollisionType](WidgetCollisionType.md)
 - [WidgetComponentType](WidgetComponentType.md)
 - [WidgetGizmoEventType](WidgetGizmoEventType.md)
+- [WidgetGizmoRotationEventType](WidgetGizmoRotationEventType.md)
 - [WidgetGizmoScaleMode](WidgetGizmoScaleMode.md)
 - [WidgetGroupSelectionMode](WidgetGroupSelectionMode.md)
+- [WidgetGuideSensorDirection](WidgetGuideSensorDirection.md)
 - [WidgetMouseButtonActionType](WidgetMouseButtonActionType.md)
 - [WorldGeneratorType](WorldGeneratorType.md)
 
@@ -293,6 +295,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.60-
 - [WidgetComponentSpline](WidgetComponentSpline.md)
 - [WidgetComponentText](WidgetComponentText.md)
 - [WidgetComponentVolumeOutline](WidgetComponentVolumeOutline.md)
+- [WidgetGizmoRotation](WidgetGizmoRotation.md)
+- [WidgetGizmoRotationEvent](WidgetGizmoRotationEvent.md)
 - [WidgetGroup](WidgetGroup.md)
 - [WidgetManager](WidgetManager.md)
 - [WidgetMouseButtonEventData](WidgetMouseButtonEventData.md)

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CameraShakeOptions Interface
 description: Contents of the @minecraft/server.CameraShakeOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CameraShakeOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Options for applying a camera shake effect to a player's camera via `Camera.addShake`. Each call to `addShake` queues a new independent shake event for the specified `type`; positional and rotational shakes are tracked in separate queues and run concurrently. The rendered intensity at any moment is the sum of all active events' intensities for that type, capped at `4.0`. Events expire naturally when their `duration` elapses.
 
