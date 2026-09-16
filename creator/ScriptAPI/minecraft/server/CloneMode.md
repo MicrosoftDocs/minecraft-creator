@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CloneMode Enumeration
 description: Contents of the @minecraft/server.CloneMode enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CloneMode Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 An enumeration for the clone modes used when cloning blocks.
 

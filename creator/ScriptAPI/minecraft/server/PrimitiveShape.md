@@ -30,6 +30,16 @@ The color of the shape.
 
 Type: [*RGBA*](RGBA.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **defaultVisibleToAll**
+`defaultVisibleToAll: boolean;`
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **dimension**
 `read-only dimension: Dimension;`
 
@@ -43,6 +53,16 @@ Type: [*Dimension*](Dimension.md)
 Returns true if the shape has a limited time span before being removed.
 
 Type: *boolean*
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **hiddenFrom**
+`hiddenFrom: Player[];`
+
+Type: [*Player*](Player.md)[]
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **location**
 `read-only location: Vector3;`

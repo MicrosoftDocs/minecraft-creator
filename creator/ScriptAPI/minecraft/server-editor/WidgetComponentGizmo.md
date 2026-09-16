@@ -35,6 +35,16 @@ Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.
 Notes:
   - This property can't be edited in restricted-execution mode.
 
+### **rotation**
+`read-only rotation: WidgetGizmoRotation;`
+
+The rotation rings for this gizmo. Rotation is configured and observed through the returned [*@minecraft/server-editor.WidgetGizmoRotation*](../../../scriptapi/minecraft/server-editor/WidgetGizmoRotation.md), and is disabled until at least one rotation axis is enabled on it.
+
+Type: [*WidgetGizmoRotation*](WidgetGizmoRotation.md)
+
+Notes:
+  - This property can throw errors when used.
+
 ### **scaleMode**
 `scaleMode: WidgetGizmoScaleMode;`
 

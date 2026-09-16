@@ -51,9 +51,7 @@ Type: [*PoiManager*](PoiManager.md)
 
 ## Methods
 - [calculateClosestBiomeFromSeed](#calculateclosestbiomefromseed)
-::: moniker range="=minecraft-bedrock-experimental"
 - [cloneBlocks](#cloneblocks)
-::: moniker-end
 - [containsBiomes](#containsbiomes)
 - [containsBlock](#containsblock)
 - [createExplosion](#createexplosion)
@@ -63,9 +61,7 @@ Type: [*PoiManager*](PoiManager.md)
 - [getBlockAbove](#getblockabove)
 - [getBlockBelow](#getblockbelow)
 - [getBlockFromRay](#getblockfromray)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getBlocks](#getblocks)
-::: moniker-end
 - [getEntities](#getentities)
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
@@ -124,7 +120,6 @@ Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **cloneBlocks**
 `
 cloneBlocks(beginLocation: Vector3, endLocation: Vector3, destination: Vector3, cloneMode: CloneMode, filter?: BlockFilter): void
@@ -148,15 +143,11 @@ Clones a region of blocks from one area of the dimension to another.
 - **filter**?: [*BlockFilter*](BlockFilter.md) = `null`
   
   An optional block filter used to include only matching blocks from the source area.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **containsBiomes**
 `
@@ -408,7 +399,6 @@ Gets the first block that intersects with a vector emanating from a location.
 Notes:
 - This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getBlocks**
 `
 getBlocks(volume: BlockVolumeBase, options: BlockQueryOptions, allowUnloadedChunks?: boolean): ListBlockVolume
@@ -428,14 +418,10 @@ Gets all the blocks in a volume that satisfy the block query options.
   If set to true will suppress the UnloadedChunksError if some or all of the block volume is outside of the loaded chunks. Will only check the block locations that are within the loaded chunks in the volume.
 
 **Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns the ListBlockVolume that contains all the block locations that satisfied the block query options.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*, [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*UnloadedChunksError*](UnloadedChunksError.md)
-::: moniker-end
 
 ### **getEntities**
 `

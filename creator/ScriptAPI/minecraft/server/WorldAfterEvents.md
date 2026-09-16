@@ -216,7 +216,6 @@ Type: [*EntitySpawnAfterEventSignal*](EntitySpawnAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityStartSneaking**
 `read-only entityStartSneaking: EntityStartSneakingAfterEventSignal;`
 
@@ -224,14 +223,9 @@ This event fires when an entity starts sneaking.
 
 Type: [*EntityStartSneakingAfterEventSignal*](EntityStartSneakingAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityStopSneaking**
 `read-only entityStopSneaking: EntityStopSneakingAfterEventSignal;`
 
@@ -239,14 +233,9 @@ This event fires when an entity stops sneaking.
 
 Type: [*EntityStopSneakingAfterEventSignal*](EntityStopSneakingAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entityTamed**
 `read-only entityTamed: EntityTamedAfterEventSignal;`
 
@@ -254,12 +243,8 @@ This event fires when an entity is tamed.
 
 Type: [*EntityTamedAfterEventSignal*](EntityTamedAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **entityUpgrade**
 `read-only entityUpgrade: EntityUpgradeAfterEventSignal;`
@@ -653,7 +638,6 @@ Type: [*ProjectileHitEntityAfterEventSignal*](ProjectileHitEntityAfterEventSigna
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **soundCompleted**
 `read-only soundCompleted: SoundCompletedAfterEventSignal;`
 
@@ -661,12 +645,8 @@ A tracked sound's declared duration elapsed.
 
 Type: [*SoundCompletedAfterEventSignal*](SoundCompletedAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **targetBlockHit**
 `read-only targetBlockHit: TargetBlockHitAfterEventSignal;`

@@ -33,6 +33,7 @@ new CuboidBrushShape(settings?: {
         depth?: number;
         minLength?: number;
         maxLength?: number;
+        maxBlockVolume?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;
@@ -54,6 +55,7 @@ Constructs a new instance of the `CuboidBrushShape` class
         depth?: number;
         minLength?: number;
         maxLength?: number;
+        maxBlockVolume?: number;
         xRotation?: number;
         yRotation?: number;
         zRotation?: number;

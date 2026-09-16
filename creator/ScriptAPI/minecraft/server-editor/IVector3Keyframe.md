@@ -18,6 +18,11 @@ A keyframe in a Vector3 Timeline Player entry
 
 Type: *string*
 
+### **name**
+`name?: LocalizedString;`
+
+Type: *LocalizedString*
+
 ### **time**
 `time: number;`
 

@@ -52,6 +52,16 @@ This function will be called when an entity falls onto the block that this custo
 
 Type: (arg0: [*BlockComponentEntityFallOnEvent*](BlockComponentEntityFallOnEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **onNamedTick**
+`onNamedTick?: (arg0: BlockComponentNamedTickEvent, arg1: CustomComponentParameters) => void;`
+
+Type: (arg0: [*BlockComponentNamedTickEvent*](BlockComponentNamedTickEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **onPlace**
 `onPlace?: (arg0: BlockComponentOnPlaceEvent, arg1: CustomComponentParameters) => void;`
 

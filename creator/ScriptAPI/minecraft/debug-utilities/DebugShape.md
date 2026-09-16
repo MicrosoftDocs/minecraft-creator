@@ -38,6 +38,13 @@ The color of the shape.
 
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
+### **defaultVisibleToAll**
+`defaultVisibleToAll: boolean;`
+
+Defaults to true. If set to true, we default to being visible to all players if visibleTo is empty - hiddenFrom still applies afterwards. If set to false, we default to hiding the shape from all players if visibleTo is empty.
+
+Type: *boolean*
+
 ### **dimension**
 `read-only dimension: minecraftserver.Dimension;`
 
@@ -51,6 +58,13 @@ Type: [*@minecraft/server.Dimension*](../../../scriptapi/minecraft/server/Dimens
 Returns true if the shape has a limited time span before being removed.
 
 Type: *boolean*
+
+### **hiddenFrom**
+`hiddenFrom: minecraftserver.Player[];`
+
+The list of players that this shape will be hidden from. If a player is listed in both this and visibleTo, this takes priority (it will be hidden from the player).
+
+Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)[]
 
 ### **location**
 `read-only location: minecraftserver.Vector3;`
@@ -100,7 +114,7 @@ Type: *number*
 ### **visibleTo**
 `visibleTo: minecraftserver.Player[];`
 
-The list of players that this shape will be visible to. If left empty, the shape will be visible to all players.
+The list of players that this shape will be visible to. If left empty and defaultVisibleToAll is true, the shape will be visible to all players, otherwise it will be hidden from all players.
 
 Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)[]
 

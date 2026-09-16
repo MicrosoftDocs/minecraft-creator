@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.SoundDefinitionFilter Interface
 description: Contents of the @minecraft/server.SoundDefinitionFilter class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # SoundDefinitionFilter Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Criteria used to narrow a set of sound definitions. Each field is optional and applies its constraint only when defined; a definition must satisfy every defined field to pass.
 
