@@ -1,6 +1,6 @@
 ---
-author: mikeam
-ms.author: mikeam
+author: alexdenfordskyboxlabs
+ms.author: jashir
 title: Debugging Scripts in Minecraft
 description: "A comprehensive guide to debugging scripts in Minecraft: Bedrock Edition, including console logging, the Visual Studio Code debugger, common error patterns, and troubleshooting techniques."
 ai-usage: ai-assisted
@@ -25,12 +25,12 @@ There are several approaches to debugging scripts in Minecraft, each with its ow
 
 | Approach               | Best For                           | Difficulty |
 |------------------------|------------------------------------|------------|
-| Console logging        | Quick checks, simple issues        | Easy       |
-| Content log            | JSON errors, pack loading issues   | Easy       |
-| VS Code debugger       | Complex logic, variable inspection | Medium     |
-| Custom tooling         | Variable inspection over time      | Medium     |
-| Visual debug utilities | Spatial issues, entity tracking    | Advanced   |
-| Script profiler        | Performance problems               | Advanced   |
+| [Console logging](#console-logging-basics)        | Quick checks, simple issues        | Easy       |
+| [Content log](#content-log)            | JSON errors, pack loading issues   | Easy       |
+| [VS Code debugger](#using-the-visual-studio-code-debugger)       | Complex logic, variable inspection | Medium     |
+| [Custom tooling](#custom-tooling)         | Variable inspection over time      | Medium     |
+| [Visual debug utilities](#visual-debug-utilities) | Spatial issues, entity tracking    | Advanced   |
+| [Script profiling](#script-profiling)        | Performance problems               | Advanced   |
 
 ## Console logging basics
 
@@ -55,9 +55,9 @@ To find the log file:
 2. Open the most recent `.log` file.
 3. Search for your debug messages.
 
-### Using console.log() and console.warn()
+### Content log
 
-The most reliable way to output debug information is `console.warn()`:
+The most reliable way to output debug information is `console.warn()` or `console.log()`:
 
 ```javascript
 import { world, system } from "@minecraft/server";
@@ -116,7 +116,7 @@ debugLog("spawning", `Spawned entity at ${location.x}, ${location.y}, ${location
 
 ## Using the Visual Studio Code debugger
 
-For complex issues, the Visual Studio Code debugger lets you pause execution, inspect variables, and step through code line by line. You can read detailed documentation for the debugger in its [Developer Tools section](./developer-tools.md#get-insight-into-your-code-with-minecraft-script-debugging).
+For complex issues, the Visual Studio Code debugger lets you pause execution, inspect variables, and step through code line by line. You can read detailed documentation for the debugger at [Minecraft VS Code Debugger](./vscode-debugger.md).
 
 ### Quick setup checklist
 
@@ -156,50 +156,7 @@ For complex issues, the Visual Studio Code debugger lets you pause execution, in
    /script debugger connect
    ```
 
-### Debugging techniques
-
-#### Setting breakpoints
-
-Click in the gutter (left margin) of your code to set breakpoints. When execution reaches that line, Minecraft pauses and Code shows the current state:
-
-![Breakpoint hit showing variables panel](./media/tools/breakpointhit.png)
-
-#### Conditional breakpoints
-
-Right-click on a breakpoint to add a condition. The breakpoint only triggers when the condition is true:
-
-```javascript
-// Only break when player health is low
-player.getComponent("health").currentValue < 5
-```
-
-#### Watch expressions
-
-In the Watch panel, add expressions to monitor, such as:
-
-- `player.name`
-- `entity.location`
-- `myVariable > 10`
-
-#### The debug console
-
-While paused, use the Debug Console to evaluate expressions:
-
-```javascript
-> world.getAllPlayers().length
-2
-> player.dimension.id
-"minecraft:overworld"
-```
-
-### Debugging tips
-
-1. Start simple: Begin with one breakpoint at the suspected problem area.
-2. Step through slowly: Use F10 (Step Over) to execute one line at a time.
-3. Check assumptions: Use the Watch panel to verify your assumptions about variable values.
-4. Look at the call stack: The Call Stack panel shows how you got to the current line.
-
-## Building tooling
+## Custom tooling
 
 As an alternative or adjunct to Visual Studio Code's debugger, you can create your own extensible tool set that monitors changes in values over time. This is similar to the Watch panel in Code, but runs entirely in-game, and can display more targeted or complex information.
 
@@ -249,75 +206,20 @@ function showVelocity(entity) {
 
 ## Script profiling
 
-When your script runs slowly, the profiler helps identify bottlenecks.
+When your script runs slowly, the profiler helps identify bottlenecks. For full details on how to profile your scripts, see [Performance in Scripting](./script-performance.md).
 
-### Running the profiler
 
-1. Start profiling in-game:
+#### Profiler commands
 
-   ```text
-   /script profiler start
-   ```
+- `/script profiler start` - Begin performance profiling session
+- `/script profiler stop` - End profiling and generate .cpuprofile file
 
-2. Play through your experience normally for a few minutes.
+#### Diagnostics commands
 
-3. Stop profiling:
+- `/script diagnostics startcapture` - Begin comprehensive diagnostics capture
+- `/script diagnostics stopcapture` - End diagnostics capture session
 
-   ```text
-   /script profiler stop
-   ```
 
-4. Open the generated `.cpuprofile` file in VS Code.
-
-### Reading profiler results
-
-The profiler shows:
-
-- Function names: Which functions were called
-- Self time: Time spent in the function itself
-- Total time: Time including called functions
-- Call count: How many times the function ran
-
-Look for:
-
-- Functions with high total time
-- Functions called more often than expected
-- Unexpected API calls that consume time
-
-### Improving loop performance
-
-Take advantage of filtering in API calls that support it, so only the objects you're interested in are returned rather than filtering within your script's loop. For instance, if you're only searching for zombies around the player, ask specifically for them in your `getEntities` call.
-
-```javascript
-// SLOW: Processing all entities every tick
-system.runInterval(() => {
-  const entities = overworld.getEntities();
-  for (const entity of entities) {
-    // Process every entity...
-  }
-}, 1);
-
-// BETTER: Filter entities and reduce frequency
-system.runInterval(() => {
-  const zombies = overworld.getEntities({
-    type: "minecraft:zombie",
-    maxDistance: 50,
-    location: player.location
-  });
-  for (const zombie of zombies) {
-    // Just process every zombie...
-  }
-}, 20); // Every second instead of every tick
-```
-
-That also shows another useful trick: the `getEntities` call is relatively time-consuming; you want to fetch its value _outside_ your loop, and use the cached value. If you know a value won't change (such as the size of the Overworld), it can be moved entirely out of the `runInterval` call:
-
-```javascript
-const overworld = world.getDimension("overworld");
-system.runInterval(() => {
-  // ... use cached overworld size here
-}, 1);
-```
 
 ## Debugging checklist
 
@@ -365,92 +267,9 @@ When encountering issues, work through this checklist:
 
 ## Resolving errors
 
-### Error: "Script threw an exception"
 
-This generic error means your script encountered a runtime error. Look at the accompanying stack trace:
 
-```text
-[Scripting][Error]-Script threw an exception: TypeError: Cannot read property 'x' of undefined
-    at checkPlayerLocation (scripts/main.js:45)
-    at mainTick (scripts/main.js:23)
-```
-
-This is often caused by accessing properties on `undefined` values, calling methods on objects that don't exist, or an out-of-bounds array index. Add checks for this in your code.
-
-```javascript
-// Before (problematic)
-const x = player.location.x;
-
-// After (safe)
-const location = player?.location;
-if (location) {
-  const x = location.x;
-}
-```
-
-### Error: "Module not found"
-
-Verify your **manifest.json** file includes the correct dependency and version:
-
-```json
-{
-  "dependencies": [
-    {
-      "module_name": "@minecraft/server",
-      "version": "1.17.0"
-    }
-  ]
-}
-```
-
-### Error: "Read-only property"
-
-Some properties in the Script API are read-only:
-
-```javascript
-// WRONG
-player.location.x = 100; // Error: location is read-only
-
-// CORRECT
-player.teleport({ x: 100, y: player.location.y, z: player.location.z });
-```
-
-### Error: "Unregistered event callback"
-
-If you see errors after `/reload`, event handlers may have been duplicated:
-
-```javascript
-// Problem: Multiple subscriptions after reload
-world.afterEvents.playerSpawn.subscribe(onPlayerSpawn);
-
-// Solution: Track subscription state
-let isSubscribed = false;
-
-function initializeEvents() {
-    if (!isSubscribed) {
-        world.afterEvents.playerSpawn.subscribe(onPlayerSpawn);
-        isSubscribed = true;
-    }
-}
-```
-
-### Error: "Failed to register custom component"
-
-Custom components must be registered during the startup event:
-
-```javascript
-// WRONG: Registering outside startup event
-world.beforeEvents.startup.subscribe((event) => {
-  // This is too late if other code already ran
-});
-
-// CORRECT: Use system.beforeEvents.startup
-system.beforeEvents.startup.subscribe((initEvent) => {
-  initEvent.blockComponentRegistry.registerCustomComponent('mypack:my_component', {
-    onStepOn: (e) => { /* ... */ }
-  });
-});
-```
+For a list of common issues, see [Common Scripting Errors in Minecraft](./common-errors.md).
 
 ## Related resources
 

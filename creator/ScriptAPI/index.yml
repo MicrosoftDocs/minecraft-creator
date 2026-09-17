@@ -8,8 +8,8 @@ metadata:
   description: "Landing page containing a high-level introduction of Script APIs for Minecraft: Bedrock Edition."  # Required; article description that is displayed in search results. < 160 chars.
   ms.service: minecraft-bedrock-edition
   ms.topic: landing-page # Required
-  author: mammerla #Required; your GitHub user alias, with correct capitalization.
-  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
+  author: alexdenfordskyboxlabs #Required; your GitHub user alias, with correct capitalization.
+  ms.author: jashir #Required; microsoft alias of author; optional team alias.
   ms.date: 09/07/2021 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
