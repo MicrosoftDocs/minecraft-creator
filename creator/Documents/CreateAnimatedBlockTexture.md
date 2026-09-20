@@ -33,7 +33,7 @@ resource_pack/
     textures/
         blocks/
             block_name.png
-        flipbook_texture.json
+        flipbook_textures.json
    manifest.json
 ```
 
@@ -41,7 +41,7 @@ resource_pack/
 
 2. Open the **textures** folder, then open the **blocks** folder. This is where the **.png** graphics files for blocks live.
 
-3. Open the **flipbook_texture.json** file and take a look at the contents. There is a large list of different flipbook textures. Notice how different textures have different properties.
+3. Open the **flipbook_textures.json** file and take a look at the contents. There is a large list of different flipbook textures. Notice how different textures have different properties.
 
 Here are some examples:
 
@@ -110,7 +110,7 @@ To get familiar with how block textures are animated, we're going to start with 
 
 1. Inside the **animation_resource_pack**, open the **textures** folder.
 
-2. Add a text file and name it **flipbook_texture.json**.
+2. Add a text file and name it **flipbook_textures.json**.
 
 3. Add this content, then save and close the file.
 
@@ -149,7 +149,7 @@ Now that we have a better idea how flipbook animated textures work on an already
 
 ## Add animation to a non-animated block: lapis lazuli ore
 
-Let's build on the existing animation pack by replacing the contents of your animation resource pack's **flipbook_texture.json** file with this:
+Let's build on the existing animation pack by replacing the contents of your animation resource pack's **flipbook_textures.json** file with this:
 
 ```json
 [
@@ -176,7 +176,7 @@ The original Vanilla lapis ore texture file, **lapis_ore.png**, looks like this:
 
 ![Image of an unedited lapis\_ore.png file. It has only one frame.](Media/CreateAnimatedBlockTexture/lapis_ore.png)
 
-The original file is 16 by 16 pixels. If we want to have a 6-frame animation like it says in the **flipbook_texture.json** file code (and we do), we need to open the graphic file and change the canvas size to be 96 pixels tall.
+The original file is 16 by 16 pixels. If we want to have a 6-frame animation like it says in the **flipbook_textures.json** file code (and we do), we need to open the graphic file and change the canvas size to be 96 pixels tall.
 
 ![Image of lapis\_ore graphic file with the canvas size changed to be 96 pixels tall.](Media/CreateAnimatedBlockTexture/lapis_ore_16_by_96.png)
 
@@ -196,7 +196,7 @@ Due to how textures are mapped onto blocks in the hotbar, all three visible side
 
 Download the completed sample [Custom Die block resource pack and behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks). You will need both the behavior pack and the resource pack for it to work.
 
-Navigate to **resource pack > textures**, add a **flipbook_texture.json** file, and insert this code:
+Navigate to **resource pack > textures**, add a **flipbook_textures.json** file, and insert this code:
 
 ```json
 [
@@ -220,7 +220,7 @@ In a creative world with the behavior pack and resource pack activated, give you
 
 ## A Multi-faceted animation: the Command Block
 
-For the purpose of this discussion, we are talking only about the basic "Vanilla" command block, not the ones with **conditional** or **chain** or **mipmap** in their names. They are all animated the same way. I'm mentioning this so that if you go digging for the code in the **flipbook_texture.json** file or for the graphics in the blocks folder of the Vanilla sample pack, you'll know to look for the ones whose names match the `"flipbook_texture":` line of the code.
+For the purpose of this discussion, we are talking only about the basic "Vanilla" command block, not the ones with **conditional** or **chain** or **mipmap** in their names. They are all animated the same way. I'm mentioning this so that if you go digging for the code in the **flipbook_textures.json** file or for the graphics in the blocks folder of the Vanilla sample pack, you'll know to look for the ones whose names match the `"flipbook_texture":` line of the code.
 
 If you take a really close look at a command block, you'll notice that the front, back, and sides of the block have different shapes with animated blinking dots on them.
 
