@@ -28,6 +28,7 @@ Creates a new ObservableString with the provided initial string value.
 
 #### **Parameters**
 - **data**: *string*
+  * Maximum Length: `5000`
   
   The initial string value for this observable.
 - **options**?: [*ObservableOptions*](ObservableOptions.md) = `null`
@@ -79,6 +80,7 @@ Updates the string value held by this observable. If the new value differs from 
 
 #### **Parameters**
 - **data**: *string*
+  * Maximum Length: `5000`
   
   The new string value to set.
   

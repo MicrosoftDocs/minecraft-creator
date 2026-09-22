@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.12.0-beta.1.26.60-preview.25](#2120-beta12660-preview25)
+- [2.12.0-beta.1.26.60-preview.28](#2120-beta12660-preview28)
 - [2.10.0](#2100)
 - [2.9.0](#290)
 - [2.8.0](#280)
@@ -43,7 +43,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.12.0-beta.1.26.60-preview.25
+## 2.12.0-beta.1.26.60-preview.28
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -93,6 +93,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BlockComponentNamedTickEvent`](BlockComponentNamedTickEvent.md)*
 #### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
 - Added property *[`firstUpdate`](BlockComponentRedstoneUpdateEvent.md#firstupdate)*
+#### Added *[`BlockEntityStorageComponent`](BlockEntityStorageComponent.md)*
+#### Added *[`BlockEntityStorageInfo`](BlockEntityStorageInfo.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Added *[`BlockRecipeCraftingComponent`](BlockRecipeCraftingComponent.md)*
@@ -217,6 +219,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WorldClockOnTimeModifiedAfterEventSignal`](WorldClockOnTimeModifiedAfterEventSignal.md)*
 #### Added *[`WorldClockRegistry`](WorldClockRegistry.md)*
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Added value `EntityStorage`
 - Added value `RecipeCrafting`
 #### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
 - Added value `UnexpectedEnumName`

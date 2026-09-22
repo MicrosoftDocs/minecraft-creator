@@ -18,7 +18,9 @@ A simple message form with two buttons and a text body. Use this class to show a
 ::: moniker range="=minecraft-bedrock-stable"
 - [constructor](#constructor)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [body](#body)
+::: moniker-end
 - [button1](#button1)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [button1WithOptions](#button1withoptions)
@@ -33,6 +35,9 @@ A simple message form with two buttons and a text body. Use this class to show a
 - [close](#close)
 - [isShowing](#isshowing)
 - [show](#show)
+::: moniker range="=minecraft-bedrock-stable"
+- [body](#body)
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **constructor**
@@ -86,9 +91,10 @@ Notes:
   - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **body**
 `
-body(body: ObservableString | ObservableUIRawMessage | string | UIRawMessage): MessageBox
+body(body: ObservableString | ObservableUIRawMessage | string | UIRawMessage, options?: MessageBoxBodyOptions): MessageBox
 `
 
 Sets the body text displayed in the message box. Returns the message box instance to allow method chaining.
@@ -97,13 +103,18 @@ Sets the body text displayed in the message box. Returns the message box instanc
 - **body**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
   
   The body text to display. Accepts either a plain string or an ObservableString.
+- **options**?: [*MessageBoxBodyOptions*](MessageBoxBodyOptions.md) = `null`
 
 **Returns** [*MessageBox*](MessageBox.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
+::: moniker-end
 
 ### **button1**
 `
@@ -267,3 +278,24 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*FormVisibilityError*](FormVisibilityError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
+
+::: moniker range="=minecraft-bedrock-stable"
+### **body**
+`
+body(body: ObservableString | ObservableUIRawMessage | string | UIRawMessage): MessageBox
+`
+
+Sets the body text displayed in the message box. Returns the message box instance to allow method chaining.
+
+#### **Parameters**
+- **body**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The body text to display. Accepts either a plain string or an ObservableString.
+
+**Returns** [*MessageBox*](MessageBox.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
+::: moniker-end
