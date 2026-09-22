@@ -388,6 +388,8 @@ Represents the unique type of network packet.
 `SetLastHurtByPacket = "SetLastHurtByPacket"`
 ### **SetLocalPlayerAsInitializedPacket**
 `SetLocalPlayerAsInitializedPacket = "SetLocalPlayerAsInitializedPacket"`
+### **SetPassengerOfBlockPacket**
+`SetPassengerOfBlockPacket = "SetPassengerOfBlockPacket"`
 ### **SetPlayerFurnaceOptionsPacket**
 `SetPlayerFurnaceOptionsPacket = "SetPlayerFurnaceOptionsPacket"`
 ### **SetPlayerGameTypePacket**
