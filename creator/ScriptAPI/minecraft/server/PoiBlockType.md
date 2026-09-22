@@ -51,7 +51,7 @@ Type: *number*
 
 ## Methods
 - [equals](#equals)
-- [has](#has)
+- [hasTag](#hastag)
 
 ### **equals**
 `
@@ -70,9 +70,9 @@ Tests whether this object and another object describe the same POI type.
 Notes:
 - This function can't be called in restricted-execution mode.
 
-### **has**
+### **hasTag**
 `
-has(tag: string): boolean
+hasTag(tag: string): boolean
 `
 
 Tests whether the type has the provided tag attribute

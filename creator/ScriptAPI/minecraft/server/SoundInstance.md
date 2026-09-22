@@ -68,7 +68,7 @@ Type: *string*
 fade(duration: number, targetVolume: number): void
 `
 
-Fades this sound instance from its current volume to the target volume over the specified duration. To fade in from silence, call `setVolume(0.0)` first; to fade out, pass a target volume of `0.0`.
+Fades this sound instance from its current volume multiplier to the target multiplier over the specified duration. Volume multipliers are relative to the selected sound variant's volume. To fade in from silence, call `setVolume(0.0)` first; to fade out, pass a target volume of `0.0`.
 
 #### **Parameters**
 - **duration**: *number*
@@ -78,7 +78,7 @@ Fades this sound instance from its current volume to the target volume over the 
 - **targetVolume**: *number*
   * Minimum Bound: `0`
   
-  Volume to fade to. Must be non-negative.
+  Volume multiplier to fade to, relative to the selected sound variant's volume. Must be non-negative.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -167,13 +167,13 @@ Notes:
 setVolume(volume: number): void
 `
 
-Sets the volume of this sound instance.
+Sets the volume multiplier of this sound instance relative to the volume of the selected sound variant.
 
 #### **Parameters**
 - **volume**: *number*
   * Bounds: [`0`, `10`]
   
-  Volume level between 0.0 and 10.0.
+  Volume multiplier between 0.0 and 10.0. A value of 1.0 uses the selected sound variant's volume.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

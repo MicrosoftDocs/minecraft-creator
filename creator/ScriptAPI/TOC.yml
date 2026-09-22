@@ -286,6 +286,10 @@
       href: minecraft/server/BlockCustomComponentInstance.md
     - name: BlockDynamicPropertiesComponent
       href: minecraft/server/BlockDynamicPropertiesComponent.md
+    - name: BlockEntityStorageComponent
+      href: minecraft/server/BlockEntityStorageComponent.md
+    - name: BlockEntityStorageInfo
+      href: minecraft/server/BlockEntityStorageInfo.md
     - name: BlockEvent
       href: minecraft/server/BlockEvent.md
     - name: BlockExplodeAfterEvent
@@ -2480,6 +2484,8 @@
       href: minecraft/server-ui/ButtonData.md
     - name: ButtonOptions
       href: minecraft/server-ui/ButtonOptions.md
+    - name: CustomFormOptions
+      href: minecraft/server-ui/CustomFormOptions.md
     - name: DividerOptions
       href: minecraft/server-ui/DividerOptions.md
     - name: DropdownItemData
@@ -2490,6 +2496,8 @@
       href: minecraft/server-ui/ImageDetails.md
     - name: ImageOptions
       href: minecraft/server-ui/ImageOptions.md
+    - name: MessageBoxBodyOptions
+      href: minecraft/server-ui/MessageBoxBodyOptions.md
     - name: MessageBoxButtonOptions
       href: minecraft/server-ui/MessageBoxButtonOptions.md
     - name: MessageBoxOptions

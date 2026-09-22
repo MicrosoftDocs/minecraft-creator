@@ -28,11 +28,11 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
     "version": "2.2.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.25 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.28 of Minecraft.
 
 ## Available Versions
-- `2.4.0-beta.1.26.60-preview.25`
-- `2.3.0-rc.1.26.60-preview.25`
+- `2.4.0-beta.1.26.60-preview.28`
+- `2.3.0-rc.1.26.60-preview.28`
 - `2.2.0`
 - `2.1.0`
 - `2.0.0`
@@ -72,11 +72,13 @@ The following API versions are from a major version that is documented here: [*@
 ## Interfaces
 - [ButtonData](ButtonData.md)
 - [ButtonOptions](ButtonOptions.md)
+- [CustomFormOptions](CustomFormOptions.md)
 - [DividerOptions](DividerOptions.md)
 - [DropdownItemData](DropdownItemData.md)
 - [DropdownOptions](DropdownOptions.md)
 - [ImageDetails](ImageDetails.md)
 - [ImageOptions](ImageOptions.md)
+- [MessageBoxBodyOptions](MessageBoxBodyOptions.md)
 - [MessageBoxButtonOptions](MessageBoxButtonOptions.md)
 - [MessageBoxOptions](MessageBoxOptions.md)
 - [MessageBoxResult](MessageBoxResult.md)

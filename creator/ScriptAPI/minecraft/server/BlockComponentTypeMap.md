@@ -13,11 +13,13 @@ description: Contents of the @minecraft/server.BlockComponentTypeMap type alias.
 ```ts
 type BlockComponentTypeMap = {
   'dynamic_properties': BlockDynamicPropertiesComponent;
+  'entity_storage': BlockEntityStorageComponent;
   'fluid_container': BlockFluidContainerComponent;
   'instrument_sound': BlockInstrumentComponent;
   'inventory': BlockInventoryComponent;
   'map_color': BlockMapColorComponent;
   'minecraft:dynamic_properties': BlockDynamicPropertiesComponent;
+  'minecraft:entity_storage': BlockEntityStorageComponent;
   'minecraft:fluid_container': BlockFluidContainerComponent;
   'minecraft:instrument_sound': BlockInstrumentComponent;
   'minecraft:inventory': BlockInventoryComponent;

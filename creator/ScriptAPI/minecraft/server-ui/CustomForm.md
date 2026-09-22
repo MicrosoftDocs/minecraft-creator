@@ -12,7 +12,12 @@ description: Contents of the @minecraft/server-ui.CustomForm class.
 A customizable data driven (DDUI) form that lets you add buttons, labels, toggles, dropdowns, sliders, text fields, and more. The form layout is built by calling methods to add components before calling show(). Any Observable values bound to form components will automatically update the UI when their values change.
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
 - [constructor](#constructor)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [constructor](#constructor)
+::: moniker-end
 - [button](#button)
 - [close](#close)
 - [closeButton](#closebutton)
@@ -31,6 +36,34 @@ A customizable data driven (DDUI) form that lets you add buttons, labels, toggle
 - [textField](#textfield)
 - [toggle](#toggle)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **constructor**
+`
+new CustomForm(player: minecraftserver.Player, title: ObservableString | ObservableUIRawMessage | string | UIRawMessage, options?: CustomFormOptions)
+`
+
+Creates a new CustomForm for the specified player with the given title.
+
+#### **Parameters**
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+  
+  The player to show this form to.
+- **title**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
+  
+  The title text to display at the top of the form.
+- **options**?: [*CustomFormOptions*](CustomFormOptions.md) = `null`
+
+**Returns** [*CustomForm*](CustomForm.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
 ### **constructor**
 `
 new CustomForm(player: minecraftserver.Player, title: ObservableString | ObservableUIRawMessage | string | UIRawMessage)
@@ -51,6 +84,7 @@ Creates a new CustomForm for the specified player with the given title.
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
+::: moniker-end
 
 ### **button**
 `
@@ -241,6 +275,7 @@ Adds a horizontal row of up to three clickable buttons to the form layout. Retur
 
 #### **Parameters**
 - **buttons**: [*ButtonData*](ButtonData.md)[]
+  * Maximum Length: `3`
   
   The buttons to display in the row.
 - **options**?: [*MultiButtonRowOptions*](MultiButtonRowOptions.md) = `null`
