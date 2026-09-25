@@ -44,5 +44,197 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:trail",
+    "title": "Entity Trail",
+    "description": "Causes an entity to leave a trail of blocks as it moves about the world. Obeys Mob Griefing rules.",
+    "fields": [
+      {
+        "id": "block_type",
+        "title": "Block Type",
+        "description": "The type of block that is spawned as a trail behind the entity. Solid blocks cannot be spawned at an offset of (0, 0, 0).",
+        "dataType": "string",
+        "defaultValue": "air"
+      },
+      {
+        "id": "force_replace_matched_blocks",
+        "title": "Force Replace Matched Blocks",
+        "description": "When true, the trail will replace blocks that match the replaceable blocks list even if normal placement rules prevent it.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "radius",
+        "title": "Radius",
+        "description": "When provided, the trail spawns blocks across a (2 * radius + 1) by (2 * radius + 1) horizontal area centered on the spawn offset. Uses the legacy four-corner sampling when omitted.",
+        "dataType": "int",
+        "defaultValue": -1,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": -1
+          },
+          {
+            "comparison": "<=",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "id": "replaceable_blocks",
+        "description": "A list of blocks that can be replaced by the trail block. If the block at the spawn offset is not in this list, the trail block will not spawn. If omitted it will default to only air blocks.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subForm": {
+          "id": "replaceable_blocks",
+          "title": "Replaceable Blocks",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": "string",
+              "defaultValue": ""
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": "int",
+              "defaultValue": {},
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": "string"
+                },
+                {
+                  "id": "states",
+                  "dataType": "boolean"
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": "string",
+              "defaultValue": ""
+            }
+          ],
+          "dataVersion": "1.20.50"
+        },
+        "alternates": [
+          {
+            "id": "replaceable_blocks",
+            "dataType": "string",
+            "minLength": 1
+          },
+          {
+            "id": "replaceable_blocks",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "spawn_filter",
+        "description": "One or more conditions that must be met in order to cause the chosen block type to spawn.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "spawn_filter",
+          "title": "Spawn Filter",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ],
+          "dataVersion": "1.21.20"
+        },
+        "alternates": [
+          {
+            "id": "spawn_filter",
+            "dataType": "object"
+          }
+        ]
+      },
+      {
+        "id": "spawn_offset",
+        "title": "Spawn Offset",
+        "description": "The offset from the entity's current position at which to spawn the block, capped at 16 blocks away.",
+        "dataType": "numberArray",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "alternates": [
+          {
+            "id": "spawn_offset",
+            "dataType": "object",
+            "subForm": {
+              "id": "spawn_offset",
+              "title": "Spawn Offset",
+              "fields": [
+                {
+                  "id": "x",
+                  "title": "X",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "y",
+                  "title": "Y",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "z",
+                  "title": "Z",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {}
   }
 }

@@ -116,5 +116,71 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:spell_effects",
+    "title": "Entity Spell Effects",
+    "description": "Defines the mob effects to add to and remove from the entity.",
+    "fields": [
+      {
+        "id": "add_effects",
+        "title": "Add Effects",
+        "description": "The effects to add to the entity after adding this component.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/mobeffectchangecomponenteffect",
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:add_raid_omen/minecraft:spell_effects/",
+              "content": [
+                {
+                  "display_on_screen_animation": true,
+                  "duration": 30,
+                  "effect": "raid_omen"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "remove_effects",
+        "title": "Remove Effects",
+        "description": "The identifiers of effects to remove from the entity after adding this component.",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:add_raid_omen/minecraft:spell_effects/",
+              "content": "bad_omen"
+            }
+          ]
+        }
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:add_raid_omen/minecraft:spell_effects/",
+          "content": {
+            "add_effects": [
+              {
+                "display_on_screen_animation": true,
+                "duration": 30,
+                "effect": "raid_omen"
+              }
+            ],
+            "remove_effects": "bad_omen"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:clear_raid_omen_spell_effect/minecraft:spell_effects/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

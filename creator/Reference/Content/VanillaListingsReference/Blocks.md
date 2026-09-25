@@ -242,7 +242,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chiseled_tuff |  |
 | minecraft:chiseled_tuff_bricks |  |
 | minecraft:chorus_flower | age |
-| minecraft:chorus_plant |  |
+| minecraft:chorus_plant | minecraft:connection_down, minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_up, minecraft:connection_west |
 | minecraft:cinnabar |  |
 | minecraft:cinnabar_brick_double_slab | minecraft:vertical_half |
 | minecraft:cinnabar_brick_slab | minecraft:vertical_half |
@@ -585,7 +585,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:farmland | moisturized_amount |
 | minecraft:fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:fern |  |
-| minecraft:fire | age |
+| minecraft:fire | age, minecraft:connection_east, minecraft:connection_north, minecraft:connection_south, minecraft:connection_up, minecraft:connection_west |
 | minecraft:fire_coral |  |
 | minecraft:fire_coral_block |  |
 | minecraft:fire_coral_fan | coral_fan_direction |
@@ -1167,7 +1167,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:redstone_lamp |  |
 | minecraft:redstone_ore |  |
 | minecraft:redstone_torch | torch_facing_direction |
-| minecraft:redstone_wire | redstone_signal |
+| minecraft:redstone_wire | redstone_east, redstone_north, redstone_signal, redstone_south, redstone_west |
 | minecraft:reeds | age |
 | minecraft:reinforced_deepslate |  |
 | minecraft:repeating_command_block | conditional_bit, facing_direction |

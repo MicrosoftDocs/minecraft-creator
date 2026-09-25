@@ -19,6 +19,12 @@
     "title": "Dimension Components",
     "fields": [
       {
+        "id": "minecraft:clouds",
+        "title": "Minecraft Clouds",
+        "dataType": "object",
+        "subFormId": "dimension/clouds"
+      },
+      {
         "id": "minecraft:default_biome",
         "title": "Minecraft Default Biome",
         "dataType": "object",

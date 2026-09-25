@@ -56,5 +56,28 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:movement.fly",
+    "title": "Entity Fly Movement",
+    "description": "This move control causes the mob to fly.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "dataType": "float",
+        "defaultValue": 30
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.fly/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

@@ -493,48 +493,30 @@
           "/vanilla/behavior_pack/entities/cushion.json": [
             {
               "path": "/minecraft:entity/components/minecraft:rideable/",
-              "content": {
-                "position": [
-                  0,
-                  0.1875,
-                  0
-                ],
-                "rotate_rider_by": -90
-              }
+              "content": [
+                {
+                  "position": [
+                    0,
+                    0.0625,
+                    0
+                  ],
+                  "rotate_rider_by": -90
+                }
+              ]
             }
           ],
           "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/",
-              "content": {
-                "position": [
-                  0,
-                  1.17,
-                  -0.3
-                ]
-              }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:rideable/",
-              "content": {
-                "position": [
-                  0,
-                  1.17,
-                  -0.3
-                ]
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/minecart.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:rideable/",
-              "content": {
-                "position": [
-                  0,
-                  -0.2,
-                  0
-                ]
-              }
+              "content": [
+                {
+                  "position": [
+                    0,
+                    1.17,
+                    -0.3
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -600,14 +582,16 @@
             "seat_count": 1,
             "interact_text": "action.interact.ride.cushion",
             "dismount_mode": "on_top_center",
-            "seats": {
-              "position": [
-                0,
-                0.1875,
-                0
-              ],
-              "rotate_rider_by": -90
-            }
+            "seats": [
+              {
+                "position": [
+                  0,
+                  0.0625,
+                  0
+                ],
+                "rotate_rider_by": -90
+              }
+            ]
           }
         }
       ],
@@ -620,13 +604,15 @@
               "player"
             ],
             "interact_text": "action.interact.mount",
-            "seats": {
-              "position": [
-                0,
-                1.17,
-                -0.3
-              ]
-            }
+            "seats": [
+              {
+                "position": [
+                  0,
+                  1.17,
+                  -0.3
+                ]
+              }
+            ]
           }
         },
         {
@@ -638,13 +624,434 @@
               "player"
             ],
             "interact_text": "action.interact.ride.horse",
+            "seats": [
+              {
+                "position": [
+                  0,
+                  1.17,
+                  -0.3
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rideable/",
+          "content": {
+            "interact_text": "action.interact.ride.minecart",
+            "pull_in_entities": true,
+            "seat_count": 1,
             "seats": {
               "position": [
                 0,
-                1.17,
-                -0.3
+                -0.2,
+                0
               ]
             }
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:rideable",
+    "title": "Entity Rideable",
+    "description": "Determines whether this entity can be ridden. Allows specifying the different seat positions and amount.",
+    "fields": [
+      {
+        "id": "controlling_seat",
+        "title": "Controlling Seat",
+        "description": "The seat that designates the driver of the entity. Entities with the \"minecraft:behavior.controlled_by_player\" goal ignore this field and give control to any player in any seat.",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "crouching_skip_interact",
+        "title": "Crouching Skip Interact",
+        "description": "If true, this entity can't be interacted with if the entity interacting with it is crouching.",
+        "dataType": "boolean",
+        "defaultValue": true,
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:rideable/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "dismount_mode",
+        "title": "Dismount Mode",
+        "description": "Defines where riders are placed when dismounting this entity:\n- \"default\", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found.\n- \"on_top_center\", riders are placed at the center of the top of the entity's collision box.",
+        "dataType": "stringEnum",
+        "defaultValue": "default",
+        "choices": [
+          {
+            "id": "default",
+            "title": "Default"
+          },
+          {
+            "id": "on_top_center",
+            "title": "On top center"
+          }
+        ],
+        "mustMatchChoices": true,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cushion.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rideable/",
+              "content": "on_top_center"
+            }
+          ]
+        }
+      },
+      {
+        "id": "family_types",
+        "title": "Family Types",
+        "description": "List of entities that can ride this entity.",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:rideable/",
+              "content": [
+                "baby_undead"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:rideable/",
+              "content": [
+                "baby_undead"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/",
+              "content": [
+                "player"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:rideable/",
+              "content": [
+                "player"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "interact_text",
+        "title": "Interact Text",
+        "description": "The text to display when the player can interact with the entity when playing with touch-screen controls.",
+        "dataType": "string",
+        "defaultValue": "",
+        "samples": {
+          "/vanilla/behavior_pack/entities/cushion.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rideable/",
+              "content": "action.interact.ride.cushion"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/",
+              "content": "action.interact.mount"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:rideable/",
+              "content": "action.interact.ride.horse"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/minecart.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rideable/",
+              "content": "action.interact.ride.minecart"
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_rider_enter_event",
+        "title": "Rider Enter Event",
+        "description": "Event to execute on the owner entity when an entity starts riding it.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "on_rider_exit_event",
+        "title": "Rider Exit Event",
+        "description": "Event to execute on the owner entity when an entity stops riding it.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "passenger_max_width",
+        "title": "Passenger Max Width",
+        "description": "The max width a mob can have to be a rider. A value of 0 ignores this parameter.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "pull_in_entities",
+        "title": "Pull In Entities",
+        "description": "If true, this entity will pull entities matching the specified \"family_types\" into any available seats. Entities that are leashed will only be pulled in if their distance to their leash holder is less than the \"hard_distance\" defined in their own \"minecraft:leashable\" component.",
+        "dataType": "boolean",
+        "defaultValue": false,
+        "samples": {
+          "/vanilla/behavior_pack/entities/minecart.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rideable/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "rider_can_interact",
+        "title": "Rider Can Interact",
+        "description": "If true, this entity will be picked when looked at by the rider.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "seat_count",
+        "title": "Seat Count",
+        "description": "The number of entities that can ride this entity at the same time.",
+        "dataType": "int",
+        "defaultValue": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:rideable/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:rideable/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "seats",
+        "title": "Seats",
+        "description": "The list of positions and number of riders for each position for entities riding this entity.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/seatdescription",
+        "samples": {
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  0.48,
+                  0
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  1.15,
+                  0
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cushion.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rideable/",
+              "content": [
+                {
+                  "position": [
+                    0,
+                    0.0625,
+                    0
+                  ],
+                  "rotate_rider_by": -90
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/",
+              "content": [
+                {
+                  "position": [
+                    0,
+                    1.17,
+                    -0.3
+                  ]
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:rideable/",
+              "content": [
+                {
+                  "position": [
+                    0,
+                    1.17,
+                    -0.3
+                  ]
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/minecart.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rideable/",
+              "content": {
+                "position": [
+                  0,
+                  -0.2,
+                  0
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:rideable/",
+          "content": {
+            "seat_count": 1,
+            "family_types": [
+              "baby_undead"
+            ],
+            "seats": {
+              "position": [
+                0,
+                0.48,
+                0
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:rideable/",
+          "content": {
+            "seat_count": 1,
+            "family_types": [
+              "baby_undead"
+            ],
+            "seats": {
+              "position": [
+                0,
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:rideable/",
+          "content": {
+            "seat_count": 1,
+            "family_types": [
+              "baby_undead"
+            ],
+            "seats": {
+              "position": [
+                0,
+                1.15,
+                0
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cushion.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rideable/",
+          "content": {
+            "seat_count": 1,
+            "interact_text": "action.interact.ride.cushion",
+            "dismount_mode": "on_top_center",
+            "seats": [
+              {
+                "position": [
+                  0,
+                  0.0625,
+                  0
+                ],
+                "rotate_rider_by": -90
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/",
+          "content": {
+            "seat_count": 1,
+            "family_types": [
+              "player"
+            ],
+            "interact_text": "action.interact.mount",
+            "seats": [
+              {
+                "position": [
+                  0,
+                  1.17,
+                  -0.3
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:rideable/",
+          "content": {
+            "seat_count": 1,
+            "crouching_skip_interact": true,
+            "family_types": [
+              "player"
+            ],
+            "interact_text": "action.interact.ride.horse",
+            "seats": [
+              {
+                "position": [
+                  0,
+                  1.17,
+                  -0.3
+                ]
+              }
+            ]
           }
         }
       ],

@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 Defines the entity's size interpolation based on the entity's age.
 
 
-## Scale By Age Properties
+## Entity Scale By Age Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

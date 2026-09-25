@@ -1,0 +1,32 @@
+{
+  "id": "SendEventStage",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "SendEventStage",
+    "title": "Entity SendEventStage",
+    "fields": [
+      {
+        "id": "base_delay",
+        "title": "Base Delay",
+        "description": "Amount of time in seconds before starting this step",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "event",
+        "title": "Event",
+        "description": "The event to send to the entity",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "sound_event",
+        "title": "Sound Event",
+        "description": "The sound event to play when this step happens",
+        "dataType": "string",
+        "defaultValue": ""
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}

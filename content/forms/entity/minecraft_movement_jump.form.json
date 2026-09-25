@@ -41,5 +41,32 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:movement.jump",
+    "title": "Entity Jump Movement",
+    "description": "Move control that causes the mob to jump as it moves with a specified delay between jumps.",
+    "fields": [
+      {
+        "id": "jump_delay",
+        "title": "Jump Delay",
+        "description": "Delay after landing when using the slime move control.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
+        "subFormId": "legacy/floatrange"
+      },
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "dataType": "float",
+        "defaultValue": 30
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {}
   }
 }

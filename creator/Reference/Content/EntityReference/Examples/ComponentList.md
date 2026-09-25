@@ -137,7 +137,7 @@ ms.date: 02/11/2025
 | [Dolphin Movement](EntityComponents/minecraftComponent_movement.dolphin.md)| This component can control how dolphins move, in a dolphin-esque style. |
 | [minecraft:movement.fly](EntityComponents/minecraftComponent_movement.fly.md)| This move control causes the mob to fly. |
 | [minecraft:movement.generic](EntityComponents/minecraftComponent_movement.generic.md)| This move control allows a mob to fly, swim, climb, etc. |
-| [Glide Movement](EntityComponents/minecraftComponent_movement.glide.md)| This move control causes the mob to glide. |
+| [minecraft:movement.glide](EntityComponents/minecraftComponent_movement.glide.md)| Move control for a flying mob that has a gliding movement |
 | [minecraft:movement.hover](EntityComponents/minecraftComponent_movement.hover.md)| This move control causes the mob to hover. |
 | [minecraft:movement.jump](EntityComponents/minecraftComponent_movement.jump.md)| Move control that causes the mob to jump as it moves with a specified delay between jumps. |
 | [minecraft:movement.skip](EntityComponents/minecraftComponent_movement.skip.md)| This move control causes the mob to hop as it moves. |
@@ -188,7 +188,7 @@ ms.date: 02/11/2025
 | [minecraft:spawn_entity](EntityComponents/minecraftComponent_spawn_entity.md)| Adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior). |
 | [minecraft:spawn_on_death](EntityComponents/minecraftComponent_spawn_on_death.md)| Component for spawning entities when an entity perishes. |
 | [minecraft:spell_effects](EntityComponents/minecraftComponent_spell_effects.md)| Allows an entity to add or remove status effects from itself. |
-| [minecraft:strength](EntityComponents/minecraftComponent_strength.md)| Defines the entity's strength to carry items. |
+| [minecraft:strength](EntityComponents/minecraftComponent_strength.md)| Defines the strength of this entity. |
 | [minecraft:suspect_tracking](EntityComponents/minecraftComponent_suspect_tracking.md)| Allows this entity to remember suspicious locations. |
 | [minecraft:tameable](EntityComponents/minecraftComponent_tameable.md)| This entity can be tamed |
 | [minecraft:tamemount](EntityComponents/minecraftComponent_tamemount.md)| Allows entities to flock in groups in water or not. |

@@ -42,9 +42,20 @@ Specifies the components that define dimension properties such as bounds and gen
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
+| minecraft:clouds | *not set* | [Clouds](#dimension-clouds) item |  | 
 | minecraft:default_biome | *not set* | [Default Biome](#dimension-defaultbiome) item |  | 
 | minecraft:dimension_height | *not set* | [Dimension Height](#dimensionheight) item |  | 
 | minecraft:generation | *not set* | [Generation](#dimension-generation) item |  | 
+
+##### Dimension Clouds
+
+###### Dimension Clouds Properties
+
+**JSON path:** `minecraft:dimension > components > minecraft:clouds`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| height | *not set* | Integer number |  | 
 
 ##### Dimension DefaultBiome
 

@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 This move control causes the mob to hover.
 
 
-## Hover Movement Properties
+## Entity Hover Movement Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

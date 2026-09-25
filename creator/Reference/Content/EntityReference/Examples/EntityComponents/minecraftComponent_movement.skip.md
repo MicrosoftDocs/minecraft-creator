@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 This move control causes the mob to hop as it moves.
 
 
-## Skip Movement Properties
+## Entity Skip Movement Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

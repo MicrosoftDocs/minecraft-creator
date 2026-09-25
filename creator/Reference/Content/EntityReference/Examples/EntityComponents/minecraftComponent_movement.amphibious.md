@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 This move control allows the mob to swim in water and walk on land.
 
 
-## Amphibious Movement Properties
+## Entity Amphibious Movement Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

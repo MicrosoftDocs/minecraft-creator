@@ -37,8 +37,7 @@
         "id": "grass",
         "title": "Grass",
         "description": "Controls whether the grass will use a custom tint color or a noise based tint color.",
-        "dataType": "object",
-        "isRequired": true
+        "dataType": "object"
       }
     ],
     "dataVersion": "1.21.110"

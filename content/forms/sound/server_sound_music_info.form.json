@@ -1,0 +1,36 @@
+{
+  "id": "Server Sound Music Info",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Server Sound Music Info",
+    "title": "Sound Server Sound Music Info",
+    "description": "Optional music metadata describing the sound.",
+    "fields": [
+      {
+        "id": "artist",
+        "title": "Artist",
+        "description": "Artist name. Authored either as literal display text or as a translation key.",
+        "dataType": "string"
+      },
+      {
+        "id": "genres",
+        "title": "Genres",
+        "description": "Free-form genre labels.",
+        "dataType": "stringArray"
+      },
+      {
+        "id": "moods",
+        "title": "Moods",
+        "description": "Free-form mood labels.",
+        "dataType": "stringArray"
+      },
+      {
+        "id": "title",
+        "title": "Title",
+        "description": "Display title for the track. Authored either as literal display text or as a translation key.",
+        "dataType": "string"
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}

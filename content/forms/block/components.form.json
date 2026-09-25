@@ -176,105 +176,10 @@
         "alternates": [
           {
             "id": "minecraft:collision_box",
-            "dataType": "object",
-            "subForm": {
-              "id": "minecraft:collision_box",
-              "title": "Collision Box",
-              "description": "Information for the collision box.",
-              "fields": [
-                {
-                  "id": "origin",
-                  "title": "Origin",
-                  "description": "Minimal position of the bounds of the collision box.",
-                  "dataType": "numberArray",
-                  "defaultValue": [
-                    -8,
-                    0,
-                    -8
-                  ],
-                  "technicalDescription": "There are different constraints for different indexes, please refer to member help for more details",
-                  "alternates": [
-                    {
-                      "id": "origin",
-                      "dataType": "object",
-                      "subForm": {
-                        "id": "origin",
-                        "title": "Origin",
-                        "fields": [
-                          {
-                            "id": "x",
-                            "title": "X",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          },
-                          {
-                            "id": "y",
-                            "title": "Y",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          },
-                          {
-                            "id": "z",
-                            "title": "Z",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "size",
-                  "title": "Size",
-                  "description": "Size of each side of the collision box.",
-                  "dataType": "numberArray",
-                  "defaultValue": [
-                    16,
-                    16,
-                    16
-                  ],
-                  "technicalDescription": "There are different constraints for different indexes, please refer to member help for more details",
-                  "alternates": [
-                    {
-                      "id": "size",
-                      "dataType": "object",
-                      "subForm": {
-                        "id": "size",
-                        "title": "Size",
-                        "fields": [
-                          {
-                            "id": "x",
-                            "title": "X",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          },
-                          {
-                            "id": "y",
-                            "title": "Y",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          },
-                          {
-                            "id": "z",
-                            "title": "Z",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              ],
-              "dataVersion": "1.26.20"
-            }
-          },
-          {
-            "id": "minecraft:collision_box",
-            "dataType": "object",
+            "dataType": "objectArray",
             "maxLength": 16,
-            "technicalDescription": "The total of each \"origin\" + \"size\" pair, must be inside the following limit: Vec3(-8,0,-8) and Vec3(8,24,8)"
+            "technicalDescription": "The total of each \"origin\" + \"size\" pair, must be inside the following limit: Vec3(-8,0,-8) and Vec3(8,24,8)",
+            "subFormId": "block/bounding_box_data"
           }
         ]
       },
@@ -917,7 +822,7 @@
         "isDeprecated": true
       }
     ],
-    "dataVersion": "1.26.20"
+    "dataVersion": "1.26.60"
   },
   "description": "Container for all components that define custom block behavior and properties. Components control collision, selection boxes, destruction time, light emission, flammability, placement rules, crafting table functionality, and more. Combine components to create unique blocks with specific gameplay characteristics."
 }

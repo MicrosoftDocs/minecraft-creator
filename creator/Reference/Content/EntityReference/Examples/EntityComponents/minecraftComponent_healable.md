@@ -16,40 +16,56 @@ How entities heal.
 > From 1.21.130, each entry in `items` accepts an optional `result_item` field. On a successful heal, the consumed item is replaced in the player's inventory with the specified item.
 
 
-## Healable Properties
+## Entity Healable Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| filters | *not set* | Minecraft filter | The filter group that defines the conditions for using this item to heal the entity. | Parrot: `{"operator":"!=","test":"is_riding","value":true}` | 
+| filters (Filters) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Filters](#filters) item | The filter group that defines the conditions for using this item to heal the entity. | Parrot: `{"operator":"!=","test":"is_riding","value":true}` | 
+| filters (as Object) | *not set* | Object |  |  | 
 | force_use | false | Boolean true/false | Determines if item can be used regardless of entity being at full health. | Parrot: `true` | 
-| items | *not set* | Array of [Items](#items) items | The array of items that can be used to heal this entity. | Llama: `[{"item":"wheat","heal_amount":2},{"item":"hay_block","heal_amount":10}]`, Parrot: `[{"effects":[{"amplifier":0,"chance":1,"duration":1000,"name":"fatal_poison"}],"heal_amount":0,"item":"cookie"}]` | 
+| items | [] | Array of [Items](#entity-healablecomponentfeeditem) items | The array of items that can be used to heal this entity. | Llama: `[{"item":"wheat","heal_amount":2},{"item":"hay_block","heal_amount":10}]`, Parrot: `[{"effects":[{"amplifier":0,"chance":1,"duration":1000,"name":"fatal_poison"}],"heal_amount":0,"item":"cookie"}]` | 
 
-### Items
-The array of items that can be used to heal this entity.
+### Filters
 
+#### Filters Properties
 
-#### Items Properties
+**JSON path:** `filters`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| domain | *not set* | Object | The domain the test should be performed in. | 
+| operator | *not set* | Object | The comparison to apply with 'value'. | 
+| subject | *not set* | Object | The subject of this filter test. | 
+| test | *not set* | String | The name of the test to apply. | 
+| value | *not set* | Object | The value being compared with the test. | 
+
+### Entity HealableComponentFeedItem
+
+#### Entity HealableComponentFeedItem Properties
 
 **JSON path:** `items`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| effects | *not set* | Array of [Effects](#effects) items |  | 
+| effects | [] | Array of [Effects](#entity-healablecomponenteffect) items | The effects to apply when this item is used to heal the entity. | 
 | heal_amount | 1 | Integer number | The amount of health this entity gains when fed this item. | 
-| item | *not set* | String | Item identifier that can be used to heal this entity. | 
+| item | {} | String | Item identifier that can be used to heal this entity. | 
+| item (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
+| result_item | {} | String | The feed item used will transform to this item upon successful interaction. | 
+| result_item (as Keyed set of strings) | *not set* | Keyed set of strings |  | 
 
-#### Effects
+#### Entity HealableComponentEffect
 
-##### Effects Properties
+##### Entity HealableComponentEffect Properties
 
 **JSON path:** `items > effects`
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| amplifier | *not set* | Decimal number |  | Parrot: `0` | 
-| chance | *not set* | Decimal number |  | Parrot: `1` | 
-| duration | *not set* | Decimal number |  | Parrot: `1000` | 
-| name | *not set* | String |  | Parrot: `"fatal_poison"` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| amplifier | 1 | Integer number | The amplifier of the effect. | 
+| chance | 1 | Decimal number | The chance that the effect is applied. | 
+| duration | 0 | Object | The duration of the effect in seconds, or "infinite". | 
+| name |  | String | The name of the effect to apply. | 
 
 ## Samples
 

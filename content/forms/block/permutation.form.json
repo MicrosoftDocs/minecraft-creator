@@ -44,7 +44,7 @@
         "isRequired": true
       }
     ],
-    "dataVersion": "1.26.20"
+    "dataVersion": "1.26.60"
   },
   "description": "Defines conditional component overrides based on block state values using Molang conditions. When the condition evaluates true, the permutation's components replace or merge with base components. Enables blocks that change appearance or behavior based on direction, power state, age, or custom properties."
 }

@@ -43,46 +43,97 @@
       {
         "id": "additional_slots_per_strength",
         "title": "Additional Slots Per Strength",
-        "description": "Number of slots that this entity can gain per extra strength",
+        "description": "Number of slots that this entity can gain per extra strength.",
         "defaultValue": 0,
         "dataType": "int"
       },
       {
         "id": "can_be_siphoned_from",
         "title": "Can Be Siphoned From",
-        "description": "If true, the contents of this inventory can be removed by a hopper",
+        "description": "If true, the contents of this inventory can be removed by a hopper.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "container_type",
         "title": "Container Type",
-        "description": "Type of container this entity has. Can be horse, minecart_chest, chest_boat, minecart_hopper, inventory, container or hopper",
+        "description": "Type of container this entity has. Can be horse, minecart_chest, chest_boat, minecart_hopper, inventory, container or hopper.",
         "defaultValue": "none",
         "dataType": "string"
       },
       {
         "id": "inventory_size",
         "title": "Inventory Size",
-        "description": "Number of slots the container has",
+        "description": "Number of slots the container has.",
         "defaultValue": 5,
         "dataType": "int"
       },
       {
         "id": "private",
         "title": "Private",
-        "description": "If true, the entity will not drop its inventory on death",
+        "description": "If true, the entity will not drop its inventory on death.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "restrict_to_owner",
         "title": "Restrict To Owner",
-        "description": "If true, the entity's inventory can only be accessed by its owner or itself",
+        "description": "If true, the entity's inventory can only be accessed by its owner or itself.",
         "defaultValue": false,
         "dataType": "boolean"
       }
     ],
+    "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:inventory",
+    "title": "Entity Inventory",
+    "description": "Defines this entity's inventory properties.",
+    "fields": [
+      {
+        "id": "additional_slots_per_strength",
+        "title": "Additional Slots Per Strength",
+        "description": "Number of slots that this entity can gain per extra strength.",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "can_be_siphoned_from",
+        "title": "Can Be Siphoned From",
+        "description": "If true, the contents of this inventory can be removed by a hopper.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "container_type",
+        "title": "Container Type",
+        "description": "Type of container this entity has. Can be horse, minecart_chest, chest_boat, minecart_hopper, inventory, container or hopper.",
+        "dataType": "string",
+        "defaultValue": "none"
+      },
+      {
+        "id": "inventory_size",
+        "title": "Inventory Size",
+        "description": "Number of slots the container has.",
+        "dataType": "int",
+        "defaultValue": 5
+      },
+      {
+        "id": "private",
+        "title": "Private",
+        "description": "If true, the entity will not drop its inventory on death.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "restrict_to_owner",
+        "title": "Restrict To Owner",
+        "description": "If true, the entity's inventory can only be accessed by its owner or itself.",
+        "dataType": "boolean",
+        "defaultValue": false
+      }
+    ],
+    "dataVersion": "1.26.60",
     "samples": {}
   }
 }
