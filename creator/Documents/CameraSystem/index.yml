@@ -36,10 +36,8 @@ landingContent:
         links:
           - text: minecraft/server.Camera Class
             url: ../../ScriptAPI/minecraft/server/Camera.md
-          - text: minecraft/server.CameraDefaultOptions Interface
-            url: ../../ScriptAPI/minecraft/server/CameraDefaultOptions.md
-          - text: minecraft/server.CameraEaseOptions Interface
-            url: ../../ScriptAPI/minecraft/server/CameraEaseOptions.md
+          - text: minecraft/server.EaseOptions Interface
+            url: ../../ScriptAPI/minecraft/server/EaseOptions.md
           - text: minecraft/server.CameraFadeOptions Interface
             url: ../../ScriptAPI/minecraft/server/CameraFadeOptions.md
           - text: minecraft/server.CameraFadeTimeOptions Interface
