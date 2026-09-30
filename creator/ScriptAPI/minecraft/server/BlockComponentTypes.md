@@ -42,6 +42,8 @@ When present, this block has piston-like behavior. Contains additional propertie
 Represents a how a block interacts with precipitation (such as rain or snow).
 ### **RecipeCrafting**
 `RecipeCrafting = "minecraft:recipe_crafting"`
+### **RecipeProcessing**
+`RecipeProcessing = "minecraft:recipe_processing"`
 ### **RecordPlayer**
 `RecordPlayer = "minecraft:record_player"`
 
@@ -54,3 +56,5 @@ Represents a block that can output a redstone signal.
 `Sign = "minecraft:sign"`
 
 Represents a block that can display text on it.
+### **VibrationProperties**
+`VibrationProperties = "minecraft:vibration_properties"`

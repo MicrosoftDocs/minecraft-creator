@@ -175,6 +175,19 @@ Type: [*PlayerInteractWithEntityBeforeEventSignal*](PlayerInteractWithEntityBefo
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerItemAttackEntity**
+`read-only playerItemAttackEntity: PlayerItemAttackEntityBeforeEventSignal;`
+
+Type: [*PlayerItemAttackEntityBeforeEventSignal*](PlayerItemAttackEntityBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **playerLeave**
 `read-only playerLeave: PlayerLeaveBeforeEventSignal;`
 

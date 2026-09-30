@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.60-preview.28"
+    "version": "0.1.0-beta.1.26.60-preview.29"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.60-beta.28 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.60-beta.29 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.60-preview.28`
+- `0.1.0-beta.1.26.60-preview.29`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -58,7 +58,6 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.60-
 - [EditorInputContext](EditorInputContext.md)
 - [EditorMode](EditorMode.md)
 - [EntityOperationType](EntityOperationType.md)
-- [ExportResult](ExportResult.md)
 - [FlattenMode](FlattenMode.md)
 - [GamePublishSetting](GamePublishSetting.md)
 - [GraphicsSettingsProperty](GraphicsSettingsProperty.md)
@@ -88,7 +87,6 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.60-
 - [PaintMode](PaintMode.md)
 - [PaneLayoutType](PaneLayoutType.md)
 - [Plane](Plane.md)
-- [PlaytestSessionResult](PlaytestSessionResult.md)
 - [PrimitiveType](PrimitiveType.md)
 - [ProgressIndicatorPropertyItemVariant](ProgressIndicatorPropertyItemVariant.md)
 - [ProjectExportType](ProjectExportType.md)
@@ -121,6 +119,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.60-
 - [ActivationFunctionType](ActivationFunctionType.md)
 - [AudioSettingsPropertyTypeMap](AudioSettingsPropertyTypeMap.md)
 - [BasicTooltipContent](BasicTooltipContent.md)
+- [BeforeSelectedModalToolChangedEventPayload](BeforeSelectedModalToolChangedEventPayload.md)
 - [BrushShapeSettings](BrushShapeSettings.md)
 - [ButtonPropertyItemSupportedActionTypes](ButtonPropertyItemSupportedActionTypes.md)
 - [ContinuousAction](ContinuousAction.md)
@@ -219,7 +218,6 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.60-
 - [EditorStructureManager](EditorStructureManager.md)
 - [EllipsoidBrushShape](EllipsoidBrushShape.md)
 - [EntityIdentifierObservableValidator](EntityIdentifierObservableValidator.md)
-- [ExportManager](ExportManager.md)
 - [Extension](Extension.md)
 - [ExtensionContext](ExtensionContext.md)
 - [ExtensionContextAfterEvents](ExtensionContextAfterEvents.md)
@@ -237,7 +235,6 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.60-
 - [NumberTaskPromise](NumberTaskPromise.md)
 - [ObservableValidator](ObservableValidator.md)
 - [PendingTransaction](PendingTransaction.md)
-- [PlaytestManager](PlaytestManager.md)
 - [ProbabilityBlockPaletteItem](ProbabilityBlockPaletteItem.md)
 - [ProjectAfterEvents](ProjectAfterEvents.md)
 - [PyramidBrushShape](PyramidBrushShape.md)
