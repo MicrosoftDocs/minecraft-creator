@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.12.0-beta.1.26.60-preview.28](#2120-beta12660-preview28)
+- [2.12.0-beta.1.26.60-preview.29](#2120-beta12660-preview29)
 - [2.10.0](#2100)
 - [2.9.0](#290)
 - [2.8.0](#280)
@@ -43,7 +43,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.12.0-beta.1.26.60-preview.28
+## 2.12.0-beta.1.26.60-preview.29
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -91,6 +91,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Added *[`BlockComponentNamedTickEvent`](BlockComponentNamedTickEvent.md)*
+#### Added *[`BlockComponentNeighborChangedAfterEvent`](BlockComponentNeighborChangedAfterEvent.md)*
 #### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
 - Added property *[`firstUpdate`](BlockComponentRedstoneUpdateEvent.md#firstupdate)*
 #### Added *[`BlockEntityStorageComponent`](BlockEntityStorageComponent.md)*
@@ -98,6 +99,8 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Added *[`BlockRecipeCraftingComponent`](BlockRecipeCraftingComponent.md)*
+#### Added *[`BlockRecipeProcessingComponent`](BlockRecipeProcessingComponent.md)*
+#### Added *[`BlockVibrationPropertiesComponent`](BlockVibrationPropertiesComponent.md)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Changed *[`Camera`](Camera.md)*
@@ -151,6 +154,12 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`stopSound`](Player.md#stopsound)*
 #### Added *[`PlayerCraftRecipeAfterEvent`](PlayerCraftRecipeAfterEvent.md)*
 #### Added *[`PlayerCraftRecipeAfterEventSignal`](PlayerCraftRecipeAfterEventSignal.md)*
+#### Added *[`PlayerCursorItemGrabAfterEvent`](PlayerCursorItemGrabAfterEvent.md)*
+#### Added *[`PlayerCursorItemGrabAfterEventSignal`](PlayerCursorItemGrabAfterEventSignal.md)*
+#### Added *[`PlayerCursorItemReleaseAfterEvent`](PlayerCursorItemReleaseAfterEvent.md)*
+#### Added *[`PlayerCursorItemReleaseAfterEventSignal`](PlayerCursorItemReleaseAfterEventSignal.md)*
+#### Added *[`PlayerItemAttackEntityBeforeEvent`](PlayerItemAttackEntityBeforeEvent.md)*
+#### Added *[`PlayerItemAttackEntityBeforeEventSignal`](PlayerItemAttackEntityBeforeEventSignal.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
 #### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
@@ -197,6 +206,8 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
 - Added property *[`playerCraftRecipe`](WorldAfterEvents.md#playercraftrecipe)*
+- Added property *[`playerCursorItemGrab`](WorldAfterEvents.md#playercursoritemgrab)*
+- Added property *[`playerCursorItemRelease`](WorldAfterEvents.md#playercursoritemrelease)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
 - Added property *[`worldClockOnPaused`](WorldAfterEvents.md#worldclockonpaused)*
 - Added property *[`worldClockOnResumed`](WorldAfterEvents.md#worldclockonresumed)*
@@ -204,6 +215,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`worldClockOnTimeModified`](WorldAfterEvents.md#worldclockontimemodified)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
+- Added property *[`playerItemAttackEntity`](WorldBeforeEvents.md#playeritemattackentity)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 - Added property *[`worldClockOnRestart`](WorldBeforeEvents.md#worldclockonrestart)*
 #### Added *[`WorldClock`](WorldClock.md)*
@@ -221,6 +233,8 @@ description: Changelog of the `@minecraft/server` module
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
 - Added value `EntityStorage`
 - Added value `RecipeCrafting`
+- Added value `RecipeProcessing`
+- Added value `VibrationProperties`
 #### Changed enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
 - Added value `UnexpectedEnumName`
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
