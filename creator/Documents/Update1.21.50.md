@@ -17,7 +17,7 @@ Minecraft Bedrock has been updated to 1.21.50 and there are a number of changes 
 Editor is now available on stable builds and is accessible via the Minecraft Launcher on Windows PC.
 
 Editor v0.8 added a number of new capabilities including:
-- Sculpting tools: [Flatten](./BedrockEditor/EditorFlattenTool.md), [Fill](./BedrockEditor/EditorFillTool.md), [Extrude](./BedrockEditor/EditorExtrudeTool.md), [Repeater](./BedrockEditor/EditorRepeaterTool.md)
+- Sculpting tools: [Flatten](./BedrockEditor/EditorTerrainTool.md#flatten-settings), [Fill](./BedrockEditor/EditorFillTool.md), [Extrude](./BedrockEditor/EditorExtrudeTool.md), [Repeater](./BedrockEditor/EditorRepeaterTool.md)
 - [Farm tool](./BedrockEditor/EditorFarmTool.md)
 - Compass & Fly Speed
 - Improved Block Picker
@@ -34,8 +34,8 @@ Editor v0.8 added a number of new capabilities including:
 - [minecraft:cannot_be_attacked](./../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_cannot_be_attacked.md) - When added to an entity it prevents other entities from attacking it unless they fulfill an exception filter, in vanilla it is added to Ghasts, creators can add their entities to the exception filter allowing them to then attack Ghasts.
 - [minecraft:ignore_cannot_be_attacked](./../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_ignore_cannot_be_attacked.md) - This allows content to have custom mobs which bypass the 'cannot_be_attacked' component (for example the one on the Ghast) without requiring a modification of the attacked mob's settings.
 - [behavior.summon_entity](../Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_summon_entity.md) - lets creators specify an event to be invoked on the summoned entity immediately after summon.
-- [play_sound](../Reference/Content/EntityReference/Examples/EntityEvents/minecraftEvents_play_sound.md) - this entity event response allows the owner entity to emit sounds
-- [emit_particle](../Reference/Content/EntityReference/Examples/EntityEvents/minecraftEvents_emit_particle.md) - this entity event response allows particles to be emitted at the center of the entity's bounding box.
+- [play_sound](../Reference/Content/EntityReference/Examples/EventActions/play_sound.md) - this entity event response allows the owner entity to emit sounds
+- [emit_particle](../Reference/Content/EntityReference/Examples/EventActions/emit_particle.md) - this entity event response allows particles to be emitted at the center of the entity's bounding box.
 
 ## World Gen
 
@@ -77,9 +77,9 @@ Another set of Creator APIs have been released out of beta and into stable (see:
     - [fillBlocks](../ScriptAPI/minecraft/server/Dimension.md#fillblocks)
 - **ItemUse Event API Improvements**
   - ItemUseOnBeforeEvent
-    - [isFirstEvent](../ScriptAPI/minecraft/server/ItemUseOnBeforeEvent.md#isfirstevent)
+    - [isFirstEvent](../PriorScriptAPI/minecraft/server-1xx/ItemUseOnBeforeEvent.md)
   - ItemUseOnAfterEvent
-    - [isFirstEvent](../ScriptAPI/minecraft/server/ItemUseOnAfterEvent.md#isfirstevent)
+    - [isFirstEvent](../PriorScriptAPI/minecraft/server-1xx/ItemUseOnAfterEvent.md#isfirstevent)
     
 ## What's Next
 
