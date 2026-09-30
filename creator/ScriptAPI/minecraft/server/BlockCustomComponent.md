@@ -62,6 +62,16 @@ Type: (arg0: [*BlockComponentNamedTickEvent*](BlockComponentNamedTickEvent.md), 
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **onNeighborChanged**
+`onNeighborChanged?: (arg0: BlockComponentNeighborChangedAfterEvent, arg1: CustomComponentParameters) => void;`
+
+Type: (arg0: [*BlockComponentNeighborChangedAfterEvent*](BlockComponentNeighborChangedAfterEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **onPlace**
 `onPlace?: (arg0: BlockComponentOnPlaceEvent, arg1: CustomComponentParameters) => void;`
 

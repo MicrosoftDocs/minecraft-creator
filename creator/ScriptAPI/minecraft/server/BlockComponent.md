@@ -27,6 +27,8 @@ description: Contents of the @minecraft/server.BlockComponent class.
 - [*BlockRedstoneProducerComponent*](BlockRedstoneProducerComponent.md)
 - [*BlockEntityStorageComponent*](BlockEntityStorageComponent.md)
 - [*BlockRecipeCraftingComponent*](BlockRecipeCraftingComponent.md)
+- [*BlockRecipeProcessingComponent*](BlockRecipeProcessingComponent.md)
+- [*BlockVibrationPropertiesComponent*](BlockVibrationPropertiesComponent.md)
 
 Base type for components associated with blocks.
 

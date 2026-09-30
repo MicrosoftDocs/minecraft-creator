@@ -439,6 +439,36 @@ Notes:
   - This property can be read in early-execution mode.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerCursorItemGrab**
+`read-only playerCursorItemGrab: PlayerCursorItemGrabAfterEventSignal;`
+
+Event signal that fires when a player grabs an item from a container to their cursor.
+
+Type: [*PlayerCursorItemGrabAfterEventSignal*](PlayerCursorItemGrabAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerCursorItemRelease**
+`read-only playerCursorItemRelease: PlayerCursorItemReleaseAfterEventSignal;`
+
+Event signal that fires when a player releases an item from their cursor into a container.
+
+Type: [*PlayerCursorItemReleaseAfterEventSignal*](PlayerCursorItemReleaseAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **playerDimensionChange**
 `read-only playerDimensionChange: PlayerDimensionChangeAfterEventSignal;`
 

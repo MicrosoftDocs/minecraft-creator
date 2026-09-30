@@ -100,6 +100,8 @@ Represents the unique type of network packet.
 `ClientboundMapItemDataPacket = "ClientboundMapItemDataPacket"`
 ### **ClientboundMatchmakingStatePacket**
 `ClientboundMatchmakingStatePacket = "ClientboundMatchmakingStatePacket"`
+### **ClientboundPlayAudioContentPacket**
+`ClientboundPlayAudioContentPacket = "ClientboundPlayAudioContentPacket"`
 ### **ClientboundStonecutterSetRecipePacket**
 `ClientboundStonecutterSetRecipePacket = "ClientboundStonecutterSetRecipePacket"`
 ### **ClientboundTextureShiftPacket**
@@ -338,6 +340,8 @@ Represents the unique type of network packet.
 `ScriptMessagePacket = "ScriptMessagePacket"`
 ### **SendPartyDestinationCookiePacket**
 `SendPartyDestinationCookiePacket = "SendPartyDestinationCookiePacket"`
+### **ServerboundCursorItemDragPacket**
+`ServerboundCursorItemDragPacket = "ServerboundCursorItemDragPacket"`
 ### **ServerboundDataDrivenScreenClosedPacket**
 `ServerboundDataDrivenScreenClosedPacket = "ServerboundDataDrivenScreenClosedPacket"`
 ### **ServerboundDataStorePacket**
@@ -350,6 +354,8 @@ Represents the unique type of network packet.
 `ServerboundMatchmakingCancelPacket = "ServerboundMatchmakingCancelPacket"`
 ### **ServerboundPackSettingChangePacket**
 `ServerboundPackSettingChangePacket = "ServerboundPackSettingChangePacket"`
+### **ServerboundRegisterAudioContentPacket**
+`ServerboundRegisterAudioContentPacket = "ServerboundRegisterAudioContentPacket"`
 ### **ServerboundStonecutterSetRecipePacket**
 `ServerboundStonecutterSetRecipePacket = "ServerboundStonecutterSetRecipePacket"`
 ### **ServerPlayerPostMovePositionPacket**

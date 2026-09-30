@@ -20,10 +20,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.10.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.28 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.29 of Minecraft.
 
 ## Available Versions
-- `2.12.0-beta.1.26.60-preview.28`
+- `2.12.0-beta.1.26.60-preview.29`
 - `2.10.0`
 - `2.9.0`
 - `2.8.0`
@@ -161,6 +161,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockComponentEntityEvent](BlockComponentEntityEvent.md)
 - [BlockComponentEntityFallOnEvent](BlockComponentEntityFallOnEvent.md)
 - [BlockComponentNamedTickEvent](BlockComponentNamedTickEvent.md)
+- [BlockComponentNeighborChangedAfterEvent](BlockComponentNeighborChangedAfterEvent.md)
 - [BlockComponentOnPlaceEvent](BlockComponentOnPlaceEvent.md)
 - [BlockComponentPlayerBreakEvent](BlockComponentPlayerBreakEvent.md)
 - [BlockComponentPlayerInteractEvent](BlockComponentPlayerInteractEvent.md)
@@ -192,6 +193,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockPistonComponent](BlockPistonComponent.md)
 - [BlockPrecipitationInteractionsComponent](BlockPrecipitationInteractionsComponent.md)
 - [BlockRecipeCraftingComponent](BlockRecipeCraftingComponent.md)
+- [BlockRecipeProcessingComponent](BlockRecipeProcessingComponent.md)
 - [BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)
 - [BlockRedstoneProducerComponent](BlockRedstoneProducerComponent.md)
 - [BlockSignComponent](BlockSignComponent.md)
@@ -199,6 +201,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockStateType](BlockStateType.md)
 - [BlockType](BlockType.md)
 - [BlockTypes](BlockTypes.md)
+- [BlockVibrationPropertiesComponent](BlockVibrationPropertiesComponent.md)
 - [BlockVolume](BlockVolume.md)
 - [BlockVolumeBase](BlockVolumeBase.md)
 - [ButtonPushAfterEvent](ButtonPushAfterEvent.md)
@@ -463,6 +466,10 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerCraftRecipeAfterEvent](PlayerCraftRecipeAfterEvent.md)
 - [PlayerCraftRecipeAfterEventSignal](PlayerCraftRecipeAfterEventSignal.md)
 - [PlayerCursorInventoryComponent](PlayerCursorInventoryComponent.md)
+- [PlayerCursorItemGrabAfterEvent](PlayerCursorItemGrabAfterEvent.md)
+- [PlayerCursorItemGrabAfterEventSignal](PlayerCursorItemGrabAfterEventSignal.md)
+- [PlayerCursorItemReleaseAfterEvent](PlayerCursorItemReleaseAfterEvent.md)
+- [PlayerCursorItemReleaseAfterEventSignal](PlayerCursorItemReleaseAfterEventSignal.md)
 - [PlayerDimensionChangeAfterEvent](PlayerDimensionChangeAfterEvent.md)
 - [PlayerDimensionChangeAfterEventSignal](PlayerDimensionChangeAfterEventSignal.md)
 - [PlayerEmoteAfterEvent](PlayerEmoteAfterEvent.md)
@@ -488,6 +495,8 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerInteractWithEntityBeforeEventSignal](PlayerInteractWithEntityBeforeEventSignal.md)
 - [PlayerInventoryItemChangeAfterEvent](PlayerInventoryItemChangeAfterEvent.md)
 - [PlayerInventoryItemChangeAfterEventSignal](PlayerInventoryItemChangeAfterEventSignal.md)
+- [PlayerItemAttackEntityBeforeEvent](PlayerItemAttackEntityBeforeEvent.md)
+- [PlayerItemAttackEntityBeforeEventSignal](PlayerItemAttackEntityBeforeEventSignal.md)
 - [PlayerJoinAfterEvent](PlayerJoinAfterEvent.md)
 - [PlayerJoinAfterEventSignal](PlayerJoinAfterEventSignal.md)
 - [PlayerLeaveAfterEvent](PlayerLeaveAfterEvent.md)
@@ -679,6 +688,7 @@ The following API versions are from a major version that is documented here: [*@
 - [LessThanComparison](LessThanComparison.md)
 - [LessThanOrEqualsComparison](LessThanOrEqualsComparison.md)
 - [MusicOptions](MusicOptions.md)
+- [NeighborChange](NeighborChange.md)
 - [NotEqualsComparison](NotEqualsComparison.md)
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 - [PlayerAimAssistSettings](PlayerAimAssistSettings.md)

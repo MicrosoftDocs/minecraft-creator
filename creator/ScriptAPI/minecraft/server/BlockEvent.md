@@ -39,6 +39,7 @@ description: Contents of the @minecraft/server.BlockEvent class.
 - [*PlayerCancelBreakingBlockAfterEvent*](PlayerCancelBreakingBlockAfterEvent.md)
 - [*PlayerStartBreakingBlockAfterEvent*](PlayerStartBreakingBlockAfterEvent.md)
 - [*BlockComponentNamedTickEvent*](BlockComponentNamedTickEvent.md)
+- [*BlockComponentNeighborChangedAfterEvent*](BlockComponentNeighborChangedAfterEvent.md)
 - [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)
 
 Contains information regarding an event that impacts a specific block.

@@ -60,11 +60,6 @@ This is used to access the players 3D block cursor and it's properties
 
 Type: [*Cursor*](Cursor.md)
 
-### **exportManager**
-`read-only exportManager: ExportManager;`
-
-Type: [*ExportManager*](ExportManager.md)
-
 ### **extensionInfo**
 `read-only extensionInfo: Extension;`
 
@@ -90,11 +85,6 @@ Type: [*MinimapManager*](MinimapManager.md)
 The current player which is the subject of the extension invocation
 
 Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
-
-### **playtest**
-`read-only playtest: PlaytestManager;`
-
-Type: [*PlaytestManager*](PlaytestManager.md)
 
 ### **selectionManager**
 `read-only selectionManager: SelectionManager;`

@@ -18,6 +18,13 @@ Tools within this container.
 
 Type: *IModalTool*[]
 
+### **onBeforeSelectedToolChanged**
+`onBeforeSelectedToolChanged: EventSink<BeforeSelectedModalToolChangedEventPayload>;`
+
+Provides an opportunity to cancel a selected-tool change before it is applied.
+
+Type: *EventSink<BeforeSelectedModalToolChangedEventPayload>*
+
 ### **onSelectedToolChanged**
 `onSelectedToolChanged: EventSink<SelectedModalToolChangedEventPayload>;`
 
