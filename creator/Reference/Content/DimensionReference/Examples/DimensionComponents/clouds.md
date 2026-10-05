@@ -15,4 +15,4 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| height | *not set* | Integer number |  | 
+| height | *not set* | Integer number | The Y coordinate at which clouds are rendered in the custom dimension. Defaults to 128 if this component is omitted. Value must be >= -512. Value must be <= 512. | 

@@ -35,7 +35,7 @@ This entity can be ridden.
 
 ### dismount_mode
 
-Defines where riders are placed when dismounting this entity: - "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found. - "on_top_center", riders are placed at the center of the top of the entity's collision box. This item requires a format version of at least 1.21.80.
+Defines where riders are placed when dismounting this entity: - "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found. - "on_top_center", riders are placed at the center of the top of the entity's collision box. - "look_direction", riders are placed at the center of the top neighboring block in the riders look direction on a block that is not lava. This item requires a format version of at least 1.21.80.
 
 ### pull_in_entities
 
@@ -48,6 +48,7 @@ If true, this entity will pull entities matching the specified "family_types" in
 |:-----------|:-----|:-----------|
 | default | Default | |
 | on_top_center | On Top Center | |
+| look_direction | Look direction | |
 
 ### Entity SeatDescription
 

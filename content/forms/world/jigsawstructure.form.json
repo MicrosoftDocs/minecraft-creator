@@ -334,6 +334,13 @@
         ]
       },
       {
+        "id": "on_placed",
+        "title": "Placed",
+        "description": "Name of callback used after this structure is placed in the world",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
         "id": "pool_aliases",
         "title": "Pool Aliases",
         "description": "Pool Aliases are used to determine which template pool can be a substitute.",

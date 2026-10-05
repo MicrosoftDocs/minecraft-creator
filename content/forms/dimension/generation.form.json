@@ -21,6 +21,7 @@
       {
         "id": "generator_type",
         "title": "Generator Type",
+        "description": "The world generator type used by the custom dimension.",
         "dataType": "string",
         "isRequired": true
       }

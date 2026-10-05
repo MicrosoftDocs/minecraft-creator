@@ -15,4 +15,4 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| biome | *not set* | String |  | 
+| biome | *not set* | String | The namespaced identifier of the biome used throughout the custom dimension. Defaults to minecraft:ocean if this component is omitted. | 

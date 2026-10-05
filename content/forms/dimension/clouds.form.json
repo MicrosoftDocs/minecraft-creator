@@ -8,15 +8,16 @@
       {
         "id": "height",
         "title": "Height",
+        "description": "The Y coordinate at which clouds are rendered in the custom dimension. Defaults to 128 if this component is omitted.",
         "dataType": "int",
         "validity": [
           {
             "comparison": ">=",
-            "value": -64
+            "value": -512
           },
           {
             "comparison": "<=",
-            "value": 320
+            "value": 512
           }
         ],
         "isRequired": true

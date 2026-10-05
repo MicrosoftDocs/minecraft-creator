@@ -30,8 +30,8 @@ This item can also be represented as a `Boolean true/false`.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| origin | [-8, 0, -8] | x, y, z coordinate array | Minimal position of the bounds of the collision box. "origin" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 24, 8), inclusive. | 
-| size | [16, 24, 16] | x, y, z coordinate array | Size of each side of the collision box. Size is specified as [x, y, z]. "origin" + "size" must be in the range (-8, 0, -8) to (8, 24, 8), inclusive. | 
+| max | [16, 24, 16] | x, y, z coordinate array | Maximum position of the bounds of the collision box. "max" is specified as [x, y, z] and must be in the range (0, 0, 0) to (16, 24, 16), inclusive. | 
+| min | [0, 0, 0] | x, y, z coordinate array | Minimal position of the bounds of the collision box. "min" is specified as [x, y, z] and must be in the range (0, 0, 0) to (16, 24, 16), inclusive. | 
 
 ## Samples
 
