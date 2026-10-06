@@ -10,8 +10,8 @@ description: Changelog of the `@minecraft/server-ui` module
 # `@minecraft/server-ui` Changelog
 
 ## Version Changes
-- [2.4.0-beta.1.26.60-preview.29](#240-beta12660-preview29)
-- [2.3.0-rc.1.26.60-preview.29](#230-rc12660-preview29)
+- [2.4.0-beta.1.26.60-preview.30](#240-beta12660-preview30)
+- [2.3.0-rc.1.26.60-preview.30](#230-rc12660-preview30)
 - [2.2.0](#220)
 - [2.1.0](#210)
 - [2.0.0](#200)
@@ -20,8 +20,8 @@ description: Changelog of the `@minecraft/server-ui` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.4.0-beta.1.26.60-preview.29
-#### Added module peer dependency `@minecraft/server@2.12.0-beta.1.26.60-preview.29`
+## 2.4.0-beta.1.26.60-preview.30
+#### Added module peer dependency `@minecraft/server@2.12.0-beta.1.26.60-preview.30`
 #### Changed *[`CustomForm`](CustomForm.md)*
 - Changed function *[`constructor`](CustomForm.md#constructor)*
   - Added argument `options`
@@ -32,7 +32,7 @@ description: Changelog of the `@minecraft/server-ui` module
 - Added function *[`button3WithOptions`](MessageBox.md#button3withoptions)*
 - Changed function *[`constructor`](MessageBox.md#constructor)*
   - Added argument `options`
-## 2.3.0-rc.1.26.60-preview.29
+## 2.3.0-rc.1.26.60-preview.30
 #### Changed *[`MessageBox`](MessageBox.md)*
 - Added function *[`button1WithOptions`](MessageBox.md#button1withoptions)*
 - Added function *[`button2WithOptions`](MessageBox.md#button2withoptions)*
