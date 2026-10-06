@@ -21,13 +21,13 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 ```json
 {
     "module_name": "@minecraft/server-gametest",
-    "version": "1.0.0-beta.1.26.60-preview.29"
+    "version": "1.0.0-beta.1.26.60-preview.30"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.60-beta.29 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.60-beta.30 of Minecraft.
 
 ## Available Versions
-- `1.0.0-beta.1.26.60-preview.29`
+- `1.0.0-beta.1.26.60-preview.30`
 
 ## Enumerations
 - [GameTestCompletedErrorReason](GameTestCompletedErrorReason.md)

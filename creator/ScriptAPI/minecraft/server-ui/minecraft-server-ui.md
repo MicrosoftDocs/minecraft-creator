@@ -28,11 +28,11 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
     "version": "2.2.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.29 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.30 of Minecraft.
 
 ## Available Versions
-- `2.4.0-beta.1.26.60-preview.29`
-- `2.3.0-rc.1.26.60-preview.29`
+- `2.4.0-beta.1.26.60-preview.30`
+- `2.3.0-rc.1.26.60-preview.30`
 - `2.2.0`
 - `2.1.0`
 - `2.0.0`
