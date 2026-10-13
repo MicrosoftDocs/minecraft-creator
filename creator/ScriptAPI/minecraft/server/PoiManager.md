@@ -12,10 +12,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
- 
-## Required Experiments
-- Poi
-
 
 Provides access to point-of-interest (POI) data in a dimension.
 

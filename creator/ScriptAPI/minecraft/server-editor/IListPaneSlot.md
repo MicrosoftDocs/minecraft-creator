@@ -58,6 +58,8 @@ Type: *LocalizedString*
 ## Methods
 - [getEntry](#getentry)
 - [getUserData](#getuserdata)
+- [setCreationTime](#setcreationtime)
+- [setModifiedTime](#setmodifiedtime)
 - [setSelected](#setselected)
 - [setTags](#settags)
 - [setTitle](#settitle)
@@ -86,6 +88,34 @@ getUserData(): unknown
 `
 
 **Returns** *unknown* - User data associated with the slot.
+
+### **setCreationTime**
+`
+setCreationTime(creationTime: number | undefined): void
+`
+
+Updates the slot creation time.
+
+#### **Parameters**
+- **creationTime**: *number* | *undefined*
+  
+  New creation time, or undefined to clear it.
+
+**Returns** *void*
+
+### **setModifiedTime**
+`
+setModifiedTime(modifiedTime: number | undefined): void
+`
+
+Updates the slot modified time.
+
+#### **Parameters**
+- **modifiedTime**: *number* | *undefined*
+  
+  New modified time, or undefined to clear it.
+
+**Returns** *void*
 
 ### **setSelected**
 `

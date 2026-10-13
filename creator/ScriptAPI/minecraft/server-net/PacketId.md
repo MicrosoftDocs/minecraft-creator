@@ -26,8 +26,6 @@ Represents the unique type of network packet.
 `AddPaintingPacket = "AddPaintingPacket"`
 ### **AddPlayerPacket**
 `AddPlayerPacket = "AddPlayerPacket"`
-### **AddVolumeEntityPacket**
-`AddVolumeEntityPacket = "AddVolumeEntityPacket"`
 ### **AgentActionEventPacket**
 `AgentActionEventPacket = "AgentActionEventPacket"`
 ### **AgentAnimationPacket**
@@ -78,6 +76,8 @@ Represents the unique type of network packet.
 `ChangeDimensionPacket = "ChangeDimensionPacket"`
 ### **ChangeMobPropertyPacket**
 `ChangeMobPropertyPacket = "ChangeMobPropertyPacket"`
+### **ChatPacket**
+`ChatPacket = "ChatPacket"`
 ### **ChunkRadiusUpdatedPacket**
 `ChunkRadiusUpdatedPacket = "ChunkRadiusUpdatedPacket"`
 ### **ClientboundAttributeLayerSyncPacket**
@@ -310,8 +310,6 @@ Represents the unique type of network packet.
 `RemoveActorPacket = "RemoveActorPacket"`
 ### **RemoveObjectivePacket**
 `RemoveObjectivePacket = "RemoveObjectivePacket"`
-### **RemoveVolumeEntityPacket**
-`RemoveVolumeEntityPacket = "RemoveVolumeEntityPacket"`
 ### **RequestAbilityPacket**
 `RequestAbilityPacket = "RequestAbilityPacket"`
 ### **RequestChunkRadiusPacket**

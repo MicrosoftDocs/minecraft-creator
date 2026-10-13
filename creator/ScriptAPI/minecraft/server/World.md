@@ -159,7 +159,9 @@ Type: [*TickingAreaManager*](TickingAreaManager.md)
 - [getPackSettings](#getpacksettings)
 - [getPlayers](#getplayers)
 - [getTimeOfDay](#gettimeofday)
+::: moniker range="=minecraft-bedrock-experimental"
 - [playMusic](#playmusic)
+::: moniker-end
 - [queueMusic](#queuemusic)
 - [sendMessage](#sendmessage)
 - [setAbsoluteTime](#setabsolutetime)
@@ -169,6 +171,9 @@ Type: [*TickingAreaManager*](TickingAreaManager.md)
 - [setDynamicProperty](#setdynamicproperty)
 - [setTimeOfDay](#settimeofday)
 - [stopMusic](#stopmusic)
+::: moniker range="=minecraft-bedrock-stable"
+- [playMusic](#playmusic)
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **broadcastClientMessage**
@@ -479,21 +484,27 @@ Returns the time of day.
 
 **Returns** *number* - The time of day, in ticks, between 0 and 24000.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playMusic**
 `
-playMusic(trackId: string, musicOptions?: MusicOptions): void
+playMusic(trackId: SoundDefinition | string, musicOptions?: MusicOptions): SoundInstance | undefined
 `
 
 Plays a particular music track for all players.
 
 #### **Parameters**
-- **trackId**: *string*
+- **trackId**: [*SoundDefinition*](SoundDefinition.md) | *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+
+**Returns** [*SoundInstance*](SoundInstance.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
 #### Examples
 
@@ -528,6 +539,7 @@ function playMusicAndSound(targetLocation: DimensionLocation) {
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/playMusicAndSound.ts) code sandbox.
+::: moniker-end
 
 ### **queueMusic**
 `
@@ -746,3 +758,55 @@ Stops any music tracks from playing.
   
 Notes:
 - This function can't be called in restricted-execution mode.
+
+::: moniker range="=minecraft-bedrock-stable"
+### **playMusic**
+`
+playMusic(trackId: string, musicOptions?: MusicOptions): void
+`
+
+Plays a particular music track for all players.
+
+#### **Parameters**
+- **trackId**: *string*
+- **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
+
+#### Examples
+
+##### ***playMusicAndSound.ts***
+
+```typescript
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, DimensionLocation } from '@minecraft/server';
+
+function playMusicAndSound(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  const musicOptions: MusicOptions = {
+    fade: 0.5,
+    loop: true,
+    volume: 1.0,
+  };
+  world.playMusic('music.menu', musicOptions);
+
+  const worldSoundOptions: WorldSoundOptions = {
+    pitch: 0.5,
+    volume: 4.0,
+  };
+  world.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
+
+  const playerSoundOptions: PlayerSoundOptions = {
+    pitch: 1.0,
+    volume: 1.0,
+  };
+
+  players[0].playSound('bucket.fill_water', playerSoundOptions);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/playMusicAndSound.ts) code sandbox.
+::: moniker-end

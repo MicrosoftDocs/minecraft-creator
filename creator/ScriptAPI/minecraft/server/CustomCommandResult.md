@@ -14,11 +14,11 @@ Interface returned from custom command callback function.
 ## Properties
 
 ### **message**
-`message?: string;`
+`message?: RawMessage | string;`
 
-Message displayed to chat after command execution.
+Message displayed to chat after command execution. Accepts a [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) or a plain string.
 
-Type: *string*
+Type: [*RawMessage*](RawMessage.md) | *string*
 
 ### **status**
 `status: CustomCommandStatus;`

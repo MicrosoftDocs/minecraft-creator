@@ -14,6 +14,8 @@ The types of item components that are accessible via function ItemStack.getCompo
 ## Constants
 ### **BlockDynamicProperties**
 `BlockDynamicProperties = "minecraft:block_actor_dynamic_properties"`
+### **BlockEntityStorage**
+`BlockEntityStorage = "minecraft:block_entity_storage"`
 ### **Book**
 `Book = "minecraft:book"`
 
