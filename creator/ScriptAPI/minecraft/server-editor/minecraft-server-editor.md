@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.60-preview.30"
+    "version": "0.1.0-beta.1.26.70-preview.20"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.60-beta.30 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.70-beta.20 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.60-preview.30`
+- `0.1.0-beta.1.26.70-preview.20`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -69,6 +69,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.60-
 - [LayoutFlex](LayoutFlex.md)
 - [LayoutSizeType](LayoutSizeType.md)
 - [ListPaneEntryType](ListPaneEntryType.md)
+- [ListPaneHeightType](ListPaneHeightType.md)
 - [ListPaneSlotVariant](ListPaneSlotVariant.md)
 - [ListPaneViewSortType](ListPaneViewSortType.md)
 - [ListViewControlFilterFlags](ListViewControlFilterFlags.md)
@@ -109,6 +110,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.60-
 - [WidgetGizmoRotationEventType](WidgetGizmoRotationEventType.md)
 - [WidgetGizmoScaleMode](WidgetGizmoScaleMode.md)
 - [WidgetGroupSelectionMode](WidgetGroupSelectionMode.md)
+- [WidgetGuideSensorBlockFilter](WidgetGuideSensorBlockFilter.md)
 - [WidgetGuideSensorDirection](WidgetGuideSensorDirection.md)
 - [WidgetMouseButtonActionType](WidgetMouseButtonActionType.md)
 - [WorldGeneratorType](WorldGeneratorType.md)
@@ -141,13 +143,16 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.60-
 - [LayoutSize](LayoutSize.md)
 - [ListPaneBoolEntryParams](ListPaneBoolEntryParams.md)
 - [ListPaneButtonEntryParams](ListPaneButtonEntryParams.md)
+- [ListPaneCategory](ListPaneCategory.md)
 - [ListPaneEntryMap](ListPaneEntryMap.md)
 - [ListPaneEntryParams](ListPaneEntryParams.md)
+- [ListPaneHeight](ListPaneHeight.md)
 - [ListPaneImageEntryParams](ListPaneImageEntryParams.md)
 - [ListPaneSlotConfiguration](ListPaneSlotConfiguration.md)
 - [ListPaneSlotCreationProps](ListPaneSlotCreationProps.md)
 - [ListPaneSlotLayoutEntry](ListPaneSlotLayoutEntry.md)
 - [ListPaneSlotLayoutSections](ListPaneSlotLayoutSections.md)
+- [ListPaneSortOption](ListPaneSortOption.md)
 - [ListPaneTextEntryParams](ListPaneTextEntryParams.md)
 - [ListPaneViewFilter](ListPaneViewFilter.md)
 - [ListViewControlActionState](ListViewControlActionState.md)

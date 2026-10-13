@@ -289,7 +289,9 @@ Notes:
 - [getSplitScreenSlot](#getsplitscreenslot)
 ::: moniker-end
 - [getTotalXp](#gettotalxp)
+::: moniker range="=minecraft-bedrock-experimental"
 - [playMusic](#playmusic)
+::: moniker-end
 - [playSound](#playsound)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [postClientMessage](#postclientmessage)
@@ -310,6 +312,9 @@ Notes:
 - [stopMusic](#stopmusic)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [stopSound](#stopsound)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-stable"
+- [playMusic](#playmusic)
 ::: moniker-end
 
 ### **addExperience**
@@ -500,24 +505,32 @@ getTotalXp(): number
 Notes:
 - This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playMusic**
 `
-playMusic(trackId: string, musicOptions?: MusicOptions): void
+playMusic(trackId: SoundDefinition | string, musicOptions?: MusicOptions): SoundInstance | undefined
 `
 
 Plays a music track that only this particular player can hear.
 
 #### **Parameters**
-- **trackId**: *string*
+- **trackId**: [*SoundDefinition*](SoundDefinition.md) | *string*
   
   Identifier of the music track to play.
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
   
   Additional options for the music track.
+
+**Returns** [*SoundInstance*](SoundInstance.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
+::: moniker-end
 
 ### **playSound**
 `
@@ -954,4 +967,25 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-stable"
+### **playMusic**
+`
+playMusic(trackId: string, musicOptions?: MusicOptions): void
+`
+
+Plays a music track that only this particular player can hear.
+
+#### **Parameters**
+- **trackId**: *string*
+  
+  Identifier of the music track to play.
+- **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
+  
+  Additional options for the music track.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
 ::: moniker-end

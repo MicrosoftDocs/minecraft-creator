@@ -24,5 +24,6 @@ description: Contents of the @minecraft/server.ItemComponent class.
 - [*ItemBookComponent*](ItemBookComponent.md)
 - [*ItemInventoryComponent*](ItemInventoryComponent.md)
 - [*ItemPotionComponent*](ItemPotionComponent.md)
+- [*ItemBlockEntityStorageComponent*](ItemBlockEntityStorageComponent.md)
 
 Base class for item components.

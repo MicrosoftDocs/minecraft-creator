@@ -20,10 +20,11 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.10.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.60-beta.30 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.70-beta.20 of Minecraft.
 
 ## Available Versions
-- `2.12.0-beta.1.26.60-preview.30`
+- `2.13.0-beta.1.26.70-preview.20`
+- `2.11.0-rc.1.26.70-preview.20`
 - `2.10.0`
 - `2.9.0`
 - `2.8.0`
@@ -112,6 +113,7 @@ The following API versions are from a major version that is documented here: [*@
 - [NamespaceNameErrorReason](NamespaceNameErrorReason.md)
 - [ObjectiveSortOrder](ObjectiveSortOrder.md)
 - [PaletteColor](PaletteColor.md)
+- [PassengerOfBlockEmoteType](PassengerOfBlockEmoteType.md)
 - [PlatformType](PlatformType.md)
 - [PlayerInventoryType](PlayerInventoryType.md)
 - [PlayerPermissionLevel](PlayerPermissionLevel.md)
@@ -385,6 +387,7 @@ The following API versions are from a major version that is documented here: [*@
 - [IsBabyCondition](IsBabyCondition.md)
 - [ISerializable](ISerializable.md)
 - [ItemBlockDynamicPropertiesComponent](ItemBlockDynamicPropertiesComponent.md)
+- [ItemBlockEntityStorageComponent](ItemBlockEntityStorageComponent.md)
 - [ItemBookComponent](ItemBookComponent.md)
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
@@ -710,6 +713,7 @@ The following API versions are from a major version that is documented here: [*@
 - [RGB](RGB.md)
 - [RGBA](RGBA.md)
 - [RotationKeyFrame](RotationKeyFrame.md)
+- [ScheduledNamedTick](ScheduledNamedTick.md)
 - [ScoreboardObjectiveDisplayOptions](ScoreboardObjectiveDisplayOptions.md)
 - [ScriptEventMessageFilterOptions](ScriptEventMessageFilterOptions.md)
 - [SoundDefinitionDurationInfo](SoundDefinitionDurationInfo.md)

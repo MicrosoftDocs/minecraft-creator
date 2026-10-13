@@ -182,6 +182,8 @@
       href: minecraft/server/ObjectiveSortOrder.md
     - name: PaletteColor
       href: minecraft/server/PaletteColor.md
+    - name: PassengerOfBlockEmoteType
+      href: minecraft/server/PassengerOfBlockEmoteType.md
     - name: PlatformType
       href: minecraft/server/PlatformType.md
     - name: PlayerInventoryType
@@ -702,6 +704,8 @@
       href: minecraft/server/ISerializable.md
     - name: ItemBlockDynamicPropertiesComponent
       href: minecraft/server/ItemBlockDynamicPropertiesComponent.md
+    - name: ItemBlockEntityStorageComponent
+      href: minecraft/server/ItemBlockEntityStorageComponent.md
     - name: ItemBookComponent
       href: minecraft/server/ItemBookComponent.md
     - name: ItemCompleteUseAfterEvent
@@ -1348,6 +1352,8 @@
       href: minecraft/server/RGBA.md
     - name: RotationKeyFrame
       href: minecraft/server/RotationKeyFrame.md
+    - name: ScheduledNamedTick
+      href: minecraft/server/ScheduledNamedTick.md
     - name: ScoreboardObjectiveDisplayOptions
       href: minecraft/server/ScoreboardObjectiveDisplayOptions.md
     - name: ScriptEventMessageFilterOptions
@@ -1534,6 +1540,8 @@
       href: minecraft/server-editor/LayoutSizeType.md
     - name: ListPaneEntryType
       href: minecraft/server-editor/ListPaneEntryType.md
+    - name: ListPaneHeightType
+      href: minecraft/server-editor/ListPaneHeightType.md
     - name: ListPaneSlotVariant
       href: minecraft/server-editor/ListPaneSlotVariant.md
     - name: ListPaneViewSortType
@@ -1614,6 +1622,8 @@
       href: minecraft/server-editor/WidgetGizmoScaleMode.md
     - name: WidgetGroupSelectionMode
       href: minecraft/server-editor/WidgetGroupSelectionMode.md
+    - name: WidgetGuideSensorBlockFilter
+      href: minecraft/server-editor/WidgetGuideSensorBlockFilter.md
     - name: WidgetGuideSensorDirection
       href: minecraft/server-editor/WidgetGuideSensorDirection.md
     - name: WidgetMouseButtonActionType
@@ -2270,10 +2280,14 @@
       href: minecraft/server-editor/ListPaneBoolEntryParams.md
     - name: ListPaneButtonEntryParams
       href: minecraft/server-editor/ListPaneButtonEntryParams.md
+    - name: ListPaneCategory
+      href: minecraft/server-editor/ListPaneCategory.md
     - name: ListPaneEntryMap
       href: minecraft/server-editor/ListPaneEntryMap.md
     - name: ListPaneEntryParams
       href: minecraft/server-editor/ListPaneEntryParams.md
+    - name: ListPaneHeight
+      href: minecraft/server-editor/ListPaneHeight.md
     - name: ListPaneImageEntryParams
       href: minecraft/server-editor/ListPaneImageEntryParams.md
     - name: ListPaneSlotConfiguration
@@ -2284,6 +2298,8 @@
       href: minecraft/server-editor/ListPaneSlotLayoutEntry.md
     - name: ListPaneSlotLayoutSections
       href: minecraft/server-editor/ListPaneSlotLayoutSections.md
+    - name: ListPaneSortOption
+      href: minecraft/server-editor/ListPaneSortOption.md
     - name: ListPaneTextEntryParams
       href: minecraft/server-editor/ListPaneTextEntryParams.md
     - name: ListPaneViewFilter

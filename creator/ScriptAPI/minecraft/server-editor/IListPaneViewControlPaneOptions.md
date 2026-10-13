@@ -56,8 +56,8 @@ Type: *{
     }*[]
 
 ### **sortOptions**
-`sortOptions?: ListPaneViewSortType[];`
+`sortOptions?: ListPaneSortOption[];`
 
-Custom sort options. If undefined, list pane sort options will be used.
+Built-in sort types and custom category IDs, in the order shown by the sort dropdown.
 
-Type: *ListPaneViewSortType*[]
+Type: *ListPaneSortOption*[]

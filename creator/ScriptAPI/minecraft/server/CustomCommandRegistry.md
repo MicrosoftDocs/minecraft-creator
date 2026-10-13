@@ -34,7 +34,7 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
-  - Throws [*CustomCommandError*](CustomCommandError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md)
+  - Throws [*CustomCommandError*](CustomCommandError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md), [*RawMessageError*](RawMessageError.md)
 
 ### **registerEnum**
 `
@@ -51,4 +51,4 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
-  - Throws [*CustomCommandError*](CustomCommandError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md)
+  - Throws [*CustomCommandError*](CustomCommandError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md), [*RawMessageError*](RawMessageError.md)

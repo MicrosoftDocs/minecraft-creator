@@ -12,3 +12,14 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Options for configuring a CustomForm.
+
+## Properties
+
+### **topCloseButtonVisible**
+`topCloseButtonVisible?: boolean | ObservableBoolean;`
+
+Controls whether the form's top-right close button is visible. Defaults to true.
+
+Type: *boolean* | [*ObservableBoolean*](ObservableBoolean.md)

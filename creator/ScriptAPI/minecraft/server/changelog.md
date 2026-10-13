@@ -10,7 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.12.0-beta.1.26.60-preview.30](#2120-beta12660-preview30)
+- [2.13.0-beta.1.26.70-preview.20](#2130-beta12670-preview20)
+- [2.11.0-rc.1.26.70-preview.20](#2110-rc12670-preview20)
 - [2.10.0](#2100)
 - [2.9.0](#290)
 - [2.8.0](#280)
@@ -43,7 +44,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.12.0-beta.1.26.60-preview.30
+## 2.13.0-beta.1.26.70-preview.20
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -84,9 +85,11 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added function *[`canPlace`](Block.md#canplace)*
+- Added function *[`getAllScheduledNamedTicks`](Block.md#getallschedulednamedticks)*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
+- Added function *[`getScheduledNamedTickCount`](Block.md#getschedulednamedtickcount)*
 - Added function *[`hasScheduledNamedTick`](Block.md#hasschedulednamedtick)*
-- Added function *[`removeScheduledNamedTick`](Block.md#removeschedulednamedtick)*
+- Added function *[`removeScheduledNamedTicks`](Block.md#removeschedulednamedticks)*
 - Added function *[`scheduleNamedTick`](Block.md#schedulenamedtick)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
@@ -119,17 +122,16 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `identifier` type from [*EntityType*](EntityType.md) | *string* to *EntityIdentifierType<NoInfer<T>>*
   - Changed argument `location` type from [*Vector3*](Vector3.md) to *Vector3*
   - Changed argument `options` type from [*SpawnEntityOptions*](SpawnEntityOptions.md) to *SpawnEntityOptions*
-- Added function *[`spawnXp`](Dimension.md#spawnxp)*
 - Added function *[`stopAllSounds`](Dimension.md#stopallsounds)*
 - Added function *[`stopSound`](Dimension.md#stopsound)*
 #### Changed *[`Entity`](Entity.md)*
+- Added property *[`isPassengerOfBlock`](Entity.md#ispassengerofblock)*
 - Added property *[`target`](Entity.md#target)*
+- Added function *[`startPassengerOfBlock`](Entity.md#startpassengerofblock)*
+- Added function *[`stopPassengerOfBlock`](Entity.md#stoppassengerofblock)*
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
-#### Changed *[`EntityIsTamedComponent`](EntityIsTamedComponent.md)*
-- Added property *[`tamedToPlayer`](EntityIsTamedComponent.md#tamedtoplayer)*
-- Added property *[`tamedToPlayerId`](EntityIsTamedComponent.md#tamedtoplayerid)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Changed *[`EntityTypes`](EntityTypes.md)*
 - Changed function *[`get`](EntityTypes.md#get)*
@@ -137,6 +139,7 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`playerWaypoints`](GameRules.md#playerwaypoints)*
+#### Added *[`ItemBlockEntityStorageComponent`](ItemBlockEntityStorageComponent.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
@@ -149,6 +152,9 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getPing`](Player.md#getping)*
 - Added function *[`getSplitScreenSlot`](Player.md#getsplitscreenslot)*
+- Changed function *[`playMusic`](Player.md#playmusic)*
+  - Changed return type from *void* (throws exceptions) to [*SoundInstance*](SoundInstance.md) (throws exceptions)
+  - Changed argument `trackId` type from *string* to [*SoundDefinition*](SoundDefinition.md) | *string*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
 - Added function *[`stopSound`](Player.md#stopsound)*
@@ -181,26 +187,16 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
 - Added property *[`baseColor`](SetBannerDetailsFunction.md#basecolor)*
 - Added property *[`patterns`](SetBannerDetailsFunction.md#patterns)*
-#### Changed *[`SoundInstance`](SoundInstance.md)*
-- Added function *[`fade`](SoundInstance.md#fade)*
-- Added function *[`pause`](SoundInstance.md#pause)*
-- Added function *[`resume`](SoundInstance.md#resume)*
-- Added function *[`seekTo`](SoundInstance.md#seekto)*
-- Added function *[`setPitch`](SoundInstance.md#setpitch)*
-- Added function *[`setVolume`](SoundInstance.md#setvolume)*
-#### Changed *[`StartupEvent`](StartupEvent.md)*
-- Added property *[`worldClockRegistry`](StartupEvent.md#worldclockregistry)*
 #### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 - Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
-#### Changed *[`TextPrimitive`](TextPrimitive.md)*
-- Added property *[`lineGapHeight`](TextPrimitive.md#linegapheight)*
-#### Added *[`TimeMarker`](TimeMarker.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
 - Added property *[`allowCheats`](World.md#allowcheats)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
-- Added function *[`getClock`](World.md#getclock)*
+- Changed function *[`playMusic`](World.md#playmusic)*
+  - Changed return type from *void* (throws exceptions) to [*SoundInstance*](SoundInstance.md) (throws exceptions)
+  - Changed argument `trackId` type from *string* to [*SoundDefinition*](SoundDefinition.md) | *string*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
@@ -209,27 +205,10 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`playerCursorItemGrab`](WorldAfterEvents.md#playercursoritemgrab)*
 - Added property *[`playerCursorItemRelease`](WorldAfterEvents.md#playercursoritemrelease)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
-- Added property *[`worldClockOnPaused`](WorldAfterEvents.md#worldclockonpaused)*
-- Added property *[`worldClockOnResumed`](WorldAfterEvents.md#worldclockonresumed)*
-- Added property *[`worldClockOnTimeMarker`](WorldAfterEvents.md#worldclockontimemarker)*
-- Added property *[`worldClockOnTimeModified`](WorldAfterEvents.md#worldclockontimemodified)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerItemAttackEntity`](WorldBeforeEvents.md#playeritemattackentity)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
-- Added property *[`worldClockOnRestart`](WorldBeforeEvents.md#worldclockonrestart)*
-#### Added *[`WorldClock`](WorldClock.md)*
-#### Added *[`WorldClockOnPausedAfterEvent`](WorldClockOnPausedAfterEvent.md)*
-#### Added *[`WorldClockOnPausedAfterEventSignal`](WorldClockOnPausedAfterEventSignal.md)*
-#### Added *[`WorldClockOnRestartBeforeEvent`](WorldClockOnRestartBeforeEvent.md)*
-#### Added *[`WorldClockOnRestartBeforeEventSignal`](WorldClockOnRestartBeforeEventSignal.md)*
-#### Added *[`WorldClockOnResumedAfterEvent`](WorldClockOnResumedAfterEvent.md)*
-#### Added *[`WorldClockOnResumedAfterEventSignal`](WorldClockOnResumedAfterEventSignal.md)*
-#### Added *[`WorldClockOnTimeMarkerAfterEvent`](WorldClockOnTimeMarkerAfterEvent.md)*
-#### Added *[`WorldClockOnTimeMarkerAfterEventSignal`](WorldClockOnTimeMarkerAfterEventSignal.md)*
-#### Added *[`WorldClockOnTimeModifiedAfterEvent`](WorldClockOnTimeModifiedAfterEvent.md)*
-#### Added *[`WorldClockOnTimeModifiedAfterEventSignal`](WorldClockOnTimeModifiedAfterEventSignal.md)*
-#### Added *[`WorldClockRegistry`](WorldClockRegistry.md)*
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
 - Added value `EntityStorage`
 - Added value `RecipeCrafting`
@@ -243,9 +222,51 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)
 - Added value `PlayerWaypoints`
+#### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
+- Added value `BlockEntityStorage`
+#### Added enum [`PassengerOfBlockEmoteType`](PassengerOfBlockEmoteType.md)
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`PoiBlockOccupancyFilter`](PoiBlockOccupancyFilter.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+## 2.11.0-rc.1.26.70-preview.20
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`spawnXp`](Dimension.md#spawnxp)*
+#### Changed *[`EntityIsTamedComponent`](EntityIsTamedComponent.md)*
+- Added property *[`tamedToPlayer`](EntityIsTamedComponent.md#tamedtoplayer)*
+- Added property *[`tamedToPlayerId`](EntityIsTamedComponent.md#tamedtoplayerid)*
+#### Changed *[`SoundInstance`](SoundInstance.md)*
+- Added function *[`fade`](SoundInstance.md#fade)*
+- Added function *[`pause`](SoundInstance.md#pause)*
+- Added function *[`resume`](SoundInstance.md#resume)*
+- Added function *[`seekTo`](SoundInstance.md#seekto)*
+- Added function *[`setPitch`](SoundInstance.md#setpitch)*
+- Added function *[`setVolume`](SoundInstance.md#setvolume)*
+#### Changed *[`StartupEvent`](StartupEvent.md)*
+- Added property *[`worldClockRegistry`](StartupEvent.md#worldclockregistry)*
+#### Changed *[`TextPrimitive`](TextPrimitive.md)*
+- Added property *[`lineGapHeight`](TextPrimitive.md#linegapheight)*
+#### Added *[`TimeMarker`](TimeMarker.md)*
+#### Changed *[`World`](World.md)*
+- Added function *[`getClock`](World.md#getclock)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`worldClockOnPaused`](WorldAfterEvents.md#worldclockonpaused)*
+- Added property *[`worldClockOnResumed`](WorldAfterEvents.md#worldclockonresumed)*
+- Added property *[`worldClockOnTimeMarker`](WorldAfterEvents.md#worldclockontimemarker)*
+- Added property *[`worldClockOnTimeModified`](WorldAfterEvents.md#worldclockontimemodified)*
+#### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
+- Added property *[`worldClockOnRestart`](WorldBeforeEvents.md#worldclockonrestart)*
+#### Added *[`WorldClock`](WorldClock.md)*
+#### Added *[`WorldClockOnPausedAfterEvent`](WorldClockOnPausedAfterEvent.md)*
+#### Added *[`WorldClockOnPausedAfterEventSignal`](WorldClockOnPausedAfterEventSignal.md)*
+#### Added *[`WorldClockOnRestartBeforeEvent`](WorldClockOnRestartBeforeEvent.md)*
+#### Added *[`WorldClockOnRestartBeforeEventSignal`](WorldClockOnRestartBeforeEventSignal.md)*
+#### Added *[`WorldClockOnResumedAfterEvent`](WorldClockOnResumedAfterEvent.md)*
+#### Added *[`WorldClockOnResumedAfterEventSignal`](WorldClockOnResumedAfterEventSignal.md)*
+#### Added *[`WorldClockOnTimeMarkerAfterEvent`](WorldClockOnTimeMarkerAfterEvent.md)*
+#### Added *[`WorldClockOnTimeMarkerAfterEventSignal`](WorldClockOnTimeMarkerAfterEventSignal.md)*
+#### Added *[`WorldClockOnTimeModifiedAfterEvent`](WorldClockOnTimeModifiedAfterEvent.md)*
+#### Added *[`WorldClockOnTimeModifiedAfterEventSignal`](WorldClockOnTimeModifiedAfterEventSignal.md)*
+#### Added *[`WorldClockRegistry`](WorldClockRegistry.md)*
 ## 2.10.0
 #### Added *[`BlockDynamicPropertiesComponent`](BlockDynamicPropertiesComponent.md)*
 #### Added *[`BlockInstrumentComponent`](BlockInstrumentComponent.md)*

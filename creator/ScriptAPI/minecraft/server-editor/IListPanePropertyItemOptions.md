@@ -16,6 +16,13 @@ Optional properties for List Pane property item
 
 ## Properties
 
+### **categories**
+`categories?: Record<string, ListPaneCategory>;`
+
+Categories available to sort or group list pane slots.
+
+Type: *Record<string, ListPaneCategory>*
+
 ### **defaultSlots**
 `defaultSlots?: ListPaneSlotCreationProps[];`
 
@@ -23,19 +30,19 @@ Default slots to initialize the list with. If undefined, the list will be empty.
 
 Type: *ListPaneSlotCreationProps*[]
 
-### **fixedHeight**
-`fixedHeight?: boolean;`
+### **height**
+`height?: number | ListPaneHeight;`
 
-If true, pane height will not change based on slot count. If undefined, it will default to false
+Height behavior for the list. A number is treated as an expand maximum for compatibility.
+
+Type: *number* | *ListPaneHeight*
+
+### **noMargins**
+`noMargins?: boolean;`
+
+Removes spacing around clickable list slots.
 
 Type: *boolean*
-
-### **height**
-`height?: number;`
-
-This will be the height of the list within the pane
-
-Type: *number*
 
 ### **onSlotClicked**
 `onSlotClicked?: (arg0: IListPaneSlot) => void;`
@@ -73,8 +80,8 @@ Filter properties for viewing subset of slots.
 Type: *ListPaneViewFilter*
 
 ### **viewSortType**
-`viewSortType?: ListPaneViewSortType;`
+`viewSortType?: ListPaneSortOption;`
 
-Sort type for the slots in the view. If undefined, default list order will be used.
+Built-in sort type or custom sort category ID to initially select.
 
-Type: *ListPaneViewSortType*
+Type: *ListPaneSortOption*
