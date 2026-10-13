@@ -13,6 +13,27 @@ List Pane slot optional properties
 
 ## Properties
 
+### **categories**
+`categories?: Record<string, string>;`
+
+Values associated with list pane category IDs.
+
+Type: *Record<string, string>*
+
+### **creationTime**
+`creationTime?: number;`
+
+Creation time used by the built-in creation-time sort options.
+
+Type: *number*
+
+### **modifiedTime**
+`modifiedTime?: number;`
+
+Modified time used by the built-in modified-time sort options.
+
+Type: *number*
+
 ### **tags**
 `tags?: string[];`
 

@@ -32,11 +32,11 @@ View control pane for the list
 Type: *IListViewControlPane* | *undefined*
 
 ### **viewSortType**
-`read-only viewSortType: ListPaneViewSortType;`
+`read-only viewSortType: ListPaneSortOption;`
 
-Current sorting type for the pane slots
+Current built-in sort type or custom sort category ID.
 
-Type: *ListPaneViewSortType*
+Type: *ListPaneSortOption*
 
 ## Methods
 - [addSlot](#addslot)
@@ -156,15 +156,15 @@ Filters displaying slots to match the define properties
 
 ### **setViewSortType**
 `
-setViewSortType(sortType: ListPaneViewSortType | undefined): void
+setViewSortType(sortType: ListPaneSortOption | undefined): void
 `
 
-Updates how slots will be sorted in the view
+Updates how slots will be sorted in the view.
 
 #### **Parameters**
-- **sortType**: *ListPaneViewSortType* | *undefined*
+- **sortType**: *ListPaneSortOption* | *undefined*
   
-  New sort type, it undefined Default will be used.
+  New built-in sort type or custom sort category ID. If undefined, the default will be used.
 
 **Returns** *void*
 

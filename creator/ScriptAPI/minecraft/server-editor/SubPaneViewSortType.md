@@ -12,11 +12,11 @@ description: Contents of the @minecraft/server-editor.SubPaneViewSortType enumer
 Determines how header sub panes managed by a sub pane view control will be sorted. `Custom` resolves each child's comparable value through a caller supplied function.
 
 ## Constants
-### **Default**
-`Default = 0`
 ### **AtoZ**
-`AtoZ = 1`
-### **ZtoA**
-`ZtoA = 2`
+`AtoZ = aToZ`
 ### **Custom**
-`Custom = 3`
+`Custom = custom`
+### **Default**
+`Default = default`
+### **ZtoA**
+`ZtoA = zToA`

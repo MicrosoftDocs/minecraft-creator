@@ -18,19 +18,23 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 Contains information regarding a named tick event for a specific block.
 
+## Properties
+
+### **name**
+`read-only name: string;`
+
+Name of the named tick event.
+
+Type: *string*
+
 ## Methods
-- [isName](#isname)
+- [isMine](#ismine)
 
-### **isName**
+### **isMine**
 `
-isName(eventName: string): boolean
+isMine(): boolean
 `
 
-Checks whether this named tick event has the specified name. Events are namespaced with their content UUID. Two named tick events with the same name but scheduled from different packs will not respond the same to this method.
+Checks whether this named tick event was scheduled by this pack.
 
-#### **Parameters**
-- **eventName**: *string*
-  
-  The name to check against this event.
-
-**Returns** *boolean* - Returns true if the event name matches the specified name; otherwise, false.
+**Returns** *boolean* - True if this named tick event was scheduled by this pack; otherwise, false.

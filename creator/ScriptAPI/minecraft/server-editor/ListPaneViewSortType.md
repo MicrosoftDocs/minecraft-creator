@@ -12,9 +12,19 @@ description: Contents of the @minecraft/server-editor.ListPaneViewSortType enume
 Determines how list pane slots will be sorted
 
 ## Constants
-### **Default**
-`Default = 0`
 ### **AtoZ**
-`AtoZ = 1`
+`AtoZ = listPane.aToZ`
+### **Default**
+`Default = listPane.default`
+### **NewestToOldest**
+`NewestToOldest = listPane.newestToOldest`
+### **OldestChangesFirst**
+`OldestChangesFirst = listPane.oldestChangesFirst`
+### **OldestToNewest**
+`OldestToNewest = listPane.oldestToNewest`
+### **RecentChangesFirst**
+`RecentChangesFirst = listPane.recentChangesFirst`
+### **Tag**
+`Tag = listPane.tag`
 ### **ZtoA**
-`ZtoA = 2`
+`ZtoA = listPane.zToA`

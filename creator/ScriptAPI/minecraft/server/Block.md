@@ -162,6 +162,9 @@ Type: *number*
 ::: moniker-end
 - [center](#center)
 - [east](#east)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getAllScheduledNamedTicks](#getallschedulednamedticks)
+::: moniker-end
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getItemStack](#getitemstack)
@@ -171,6 +174,9 @@ Type: *number*
 ::: moniker-end
 - [getParts](#getparts)
 - [getRedstonePower](#getredstonepower)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getScheduledNamedTickCount](#getschedulednamedtickcount)
+::: moniker-end
 - [getSkyLightLevel](#getskylightlevel)
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
@@ -185,7 +191,7 @@ Type: *number*
 - [north](#north)
 - [offset](#offset)
 ::: moniker range="=minecraft-bedrock-experimental"
-- [removeScheduledNamedTick](#removeschedulednamedtick)
+- [removeScheduledNamedTicks](#removeschedulednamedticks)
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [scheduleNamedTick](#schedulenamedtick)
@@ -333,6 +339,24 @@ Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **getAllScheduledNamedTicks**
+`
+getAllScheduledNamedTicks(): ScheduledNamedTick[]
+`
+
+Returns the named tick events scheduled at this block by the calling script pack.
+
+**Returns** [*ScheduledNamedTick*](ScheduledNamedTick.md)[] - The scheduled named tick events. Each event contains its eventName and the number of ticks until it is raised as tickDelay.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
+
 ### **getComponent**
 `
 getComponent(componentId: T): BlockComponentReturnType<T> | undefined
@@ -441,6 +465,24 @@ Returns the net redstone power of this block.
 Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getScheduledNamedTickCount**
+`
+getScheduledNamedTickCount(): number
+`
+
+Returns the number of named tick events scheduled at this block, regardless of which script pack scheduled them.
+
+**Returns** *number* - The number of named tick events currently scheduled at this block.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ### **getSkyLightLevel**
 `
@@ -659,9 +701,9 @@ Notes:
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
-### **removeScheduledNamedTick**
+### **removeScheduledNamedTicks**
 `
-removeScheduledNamedTick(eventName: string): void
+removeScheduledNamedTicks(eventName: string): void
 `
 
 Removes all scheduled named tick events from this block with the specified event name.

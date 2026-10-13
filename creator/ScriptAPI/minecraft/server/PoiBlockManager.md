@@ -12,10 +12,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
- 
-## Required Experiments
-- Poi
-
 
 Provides methods for querying and managing block-based points of interest in a dimension.
 

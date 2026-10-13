@@ -13,6 +13,6 @@ Determines how collection tree folders will be sorted
 
 ## Constants
 ### **AtoZ**
-`AtoZ = 0`
+`AtoZ = aToZ`
 ### **ZtoA**
-`ZtoA = 1`
+`ZtoA = zToA`

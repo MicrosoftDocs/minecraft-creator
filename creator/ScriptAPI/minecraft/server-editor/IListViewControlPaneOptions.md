@@ -18,6 +18,13 @@ Default actions
 
 Type: *ListViewControlAction*[]
 
+### **filterTooltip**
+`filterTooltip?: LocalizedString;`
+
+Localization key for the tooltip displayed when hovering the filter icon. Leave undefined or empty to suppress the tooltip.
+
+Type: *LocalizedString*
+
 ### **onActionClicked**
 `onActionClicked?: (arg0: string) => void;`
 

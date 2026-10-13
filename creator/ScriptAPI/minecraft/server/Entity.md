@@ -78,6 +78,22 @@ Notes:
   - This property can throw errors when used.
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **isPassengerOfBlock**
+`read-only isPassengerOfBlock: boolean;`
+
+Returns true if the entity is a passenger of a block.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
 ### **isSleeping**
 `read-only isSleeping: boolean;`
 
@@ -256,6 +272,12 @@ Type: *string*
 - [setOnFire](#setonfire)
 - [setProperty](#setproperty)
 - [setRotation](#setrotation)
+::: moniker range="=minecraft-bedrock-experimental"
+- [startPassengerOfBlock](#startpassengerofblock)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [stopPassengerOfBlock](#stoppassengerofblock)
+::: moniker-end
 - [teleport](#teleport)
 - [triggerEvent](#triggerevent)
 - [tryTeleport](#tryteleport)
@@ -1253,6 +1275,57 @@ Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **startPassengerOfBlock**
+`
+startPassengerOfBlock(blockPosition: Vector3, offset: Vector3, rotation: number, rotationLimit: number, emote: PassengerOfBlockEmoteType): void
+`
+
+Starts the entity as being a passenger of a block with the specified configuration.
+
+#### **Parameters**
+- **blockPosition**: [*Vector3*](Vector3.md)
+  
+  The integer block position to ride.
+- **offset**: [*Vector3*](Vector3.md)
+  
+  The offset from the block position.
+- **rotation**: *number*
+  
+  The rotation of the passenger on the block.
+- **rotationLimit**: *number*
+  
+  The maximum rotation range of the passenger on the block.
+- **emote**: [*PassengerOfBlockEmoteType*](PassengerOfBlockEmoteType.md)
+  
+  The pose of the passenger on the block.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **stopPassengerOfBlock**
+`
+stopPassengerOfBlock(): void
+`
+
+Stops the entity from being a passenger of a block.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
 
 ### **teleport**
 `

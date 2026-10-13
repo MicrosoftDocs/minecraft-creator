@@ -13,6 +13,7 @@ description: Contents of the @minecraft/server.ItemComponentTypeMap type alias.
 ```ts
 type ItemComponentTypeMap = {
   'block_actor_dynamic_properties': ItemBlockDynamicPropertiesComponent;
+  'block_entity_storage': ItemBlockEntityStorageComponent;
   'book': ItemBookComponent;
   'compostable': ItemCompostableComponent;
   'cooldown': ItemCooldownComponent;
@@ -22,6 +23,7 @@ type ItemComponentTypeMap = {
   'food': ItemFoodComponent;
   'inventory': ItemInventoryComponent;
   'minecraft:block_actor_dynamic_properties': ItemBlockDynamicPropertiesComponent;
+  'minecraft:block_entity_storage': ItemBlockEntityStorageComponent;
   'minecraft:book': ItemBookComponent;
   'minecraft:compostable': ItemCompostableComponent;
   'minecraft:cooldown': ItemCooldownComponent;

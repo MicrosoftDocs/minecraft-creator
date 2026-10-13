@@ -58,11 +58,12 @@ Notes:
 
 ### **beginPainting**
 `
-beginPainting(onComplete: (arg0: PaintCompletionState) => void): void
+beginPainting(onComplete: (arg0: PaintCompletionState) => void, pendingTransaction?: PendingTransaction): void
 `
 
 #### **Parameters**
 - **onComplete**: (arg0: [*PaintCompletionState*](PaintCompletionState.md)) => *void*
+- **pendingTransaction**?: [*PendingTransaction*](PendingTransaction.md) = `null`
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -349,11 +350,12 @@ Notes:
 
 ### **singlePaint**
 `
-singlePaint(onComplete: (arg0: PaintCompletionState) => void): void
+singlePaint(onComplete: (arg0: PaintCompletionState) => void, pendingTransaction?: PendingTransaction): void
 `
 
 #### **Parameters**
 - **onComplete**: (arg0: [*PaintCompletionState*](PaintCompletionState.md)) => *void*
+- **pendingTransaction**?: [*PendingTransaction*](PendingTransaction.md) = `null`
   
 Notes:
 - This function can't be called in restricted-execution mode.

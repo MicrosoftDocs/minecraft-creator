@@ -21,6 +21,13 @@ Options used when creating a gizmo component. A gizmo must enable at least one t
 
 Type: [*Axis*](Axis.md)
 
+### **constrainToBlockCenters**
+`constrainToBlockCenters?: boolean;`
+
+When true, dragging keeps the widget origin at least half a block inside each worldBoundsMin and worldBoundsMax face, instead of constraining the combined component bounds. Intended for widgets whose origin is a block center. Defaults to false.
+
+Type: *boolean*
+
 ### **enablePlanes**
 `enablePlanes?: boolean;`
 

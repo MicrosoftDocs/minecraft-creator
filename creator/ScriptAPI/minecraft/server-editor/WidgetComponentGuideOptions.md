@@ -12,7 +12,16 @@ description: Contents of the @minecraft/server-editor.WidgetComponentGuideOption
 ## Extends
 - [*WidgetComponentBaseOptions*](WidgetComponentBaseOptions.md)
 
+Options for widget guide sensors, including probe directions and which blocks stop the rays.
+
 ## Properties
+
+### **blockFilter**
+`blockFilter?: WidgetGuideSensorBlockFilter;`
+
+Selects which blocks stop the guide rays. Defaults to WidgetGuideSensorBlockFilter.Any. Boundary walls are unaffected by this option.
+
+Type: [*WidgetGuideSensorBlockFilter*](WidgetGuideSensorBlockFilter.md)
 
 ### **directions**
 `directions?: WidgetGuideSensorDirection;`
