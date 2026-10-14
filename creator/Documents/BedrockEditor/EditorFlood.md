@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Flood
 description: "An overview of the Flood Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/18/2026
+ms.date: 09/03/2026
 ---
 
 # Flood Tool
@@ -23,6 +23,9 @@ The Flood Tool fills areas of your world with water or lava. Click a surface blo
 
 3. Click a surface block in the world. An air block above a solid block is required to place the water level indicator. A gizmo widget appears at the clicked location showing the current flood level.
    ![Flood widget](../BedrockEditor/Media/flood/floodwidgit.gif)
+
+   > [!NOTE]
+   > If Editor can't establish a valid liquid level at the selected location, it displays an error and does not apply a flood. Select an air block above a solid block and try again.
 
 4. Use **Page Up** and **Page Down** to raise or lower the water level indicator. The tool recalculates the flood area each time you adjust the level.
    ![Flood size adjusted](../BedrockEditor/Media/flood/floodpgs.gif)

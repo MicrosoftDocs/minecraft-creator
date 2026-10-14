@@ -13,6 +13,7 @@ ms.date: 02/11/2025
 | Dimensions | Description |
 |:-----|:----------|
 | [Bounds](DimensionComponents/bounds.md)| Defines the minimum and maximum vertical bounds for a dimension. |
+| [Clouds](DimensionComponents/clouds.md)|  |
 | [Components](DimensionComponents/components.md)| Specifies the components that define dimension properties such as bounds and generation. |
 | [DefaultBiome](DimensionComponents/defaultbiome.md)|  |
 | [Description](DimensionComponents/description.md)| Declares the unique identifier for a custom dimension that players can travel to. |

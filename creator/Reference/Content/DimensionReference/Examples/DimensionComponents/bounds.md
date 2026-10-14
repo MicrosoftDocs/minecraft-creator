@@ -17,5 +17,5 @@ Defines the minimum and maximum vertical bounds for a dimension.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| max | *not set* | Integer number |  | 
-| min | *not set* | Integer number |  | 
+| max | *not set* | Integer number | The maximum Y coordinate of the custom dimension. Defaults to 0 if this component is omitted. Value must be >= -512. Value must be <= 512. | 
+| min | *not set* | Integer number | The minimum Y coordinate of the custom dimension. Defaults to 0 if this component is omitted. Value must be >= -512. Value must be <= 512. | 

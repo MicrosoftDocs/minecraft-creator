@@ -35,9 +35,8 @@ The description identifier of the geometry and material used to render the item 
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| bone_visibility | {} | Keyed set of strings | A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a Molang expression that tells whether the bone should be visible or not (value). | 
-| bone_visibility (as Named set of objects) | *not set* | Key/item pairs of [Bone Visibility (Legacy Molang Expression)](#legacy-molang-expression) items |  | 
-| bone_visibility (as Decimal number) | *not set* | Decimal number |  | 
+| bone_visibility | {} | Object | A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a Molang expression that tells whether the bone should be visible or not (value). | 
+| bone_visibility (as Keyed collection of boolean values) | *not set* | Keyed collection of boolean values |  | 
 | culling |  | String | Which block_culling .json file to use when rendering this block. Value must have at most 256 items. | 
 | culling_layer | *not set* | String | A string that allows culling rule to group multiple blocks together when comparing them. | 
 | culling_shape |  | String | Currently only available with the VoxelShape experiment on. | 
@@ -65,17 +64,6 @@ The description identifier of the geometry to use to render this block. This ide
 
 A field that is either a Boolean or an array of strings, max size 64 strings. This field locks UV orientation for all/some bones in the geometry, regardless of how the block is rotated using "minecraft:transformation" component. For performance reasons it's recommended to use the Boolean.
 
-
-#### Legacy Molang Expression
-
-##### Legacy Molang Expression Properties
-
-**JSON path:** `geometry > bone_visibility`
-
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| expression | *not set* | String |  | 
-| version | *not set* | Integer number |  | 
 
 #### Block NWayVisualRotation
 

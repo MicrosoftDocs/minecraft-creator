@@ -16,7 +16,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:strength",
     "title": "Strength",
-    "description": "Defines the entity's strength to carry items.",
+    "description": "Defines the strength of this entity.",
     "fields": [
       {
         "id": "max",
@@ -33,6 +33,29 @@
         "dataType": "int"
       }
     ],
+    "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:strength",
+    "title": "Entity Strength",
+    "description": "Defines the strength of this entity.",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "description": "The maximum strength of this entity",
+        "dataType": "int",
+        "defaultValue": 5
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The initial value of the strength",
+        "dataType": "int",
+        "defaultValue": 1
+      }
+    ],
+    "dataVersion": "1.26.60",
     "samples": {}
   }
 }

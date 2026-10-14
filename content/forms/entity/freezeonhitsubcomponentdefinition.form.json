@@ -29,7 +29,7 @@
         "title": "Size",
         "description": "Half-extent of the freezing volume (in blocks).",
         "dataType": "float",
-        "defaultValue": 0
+        "defaultValue": 1
       },
       {
         "id": "snap_to_block",

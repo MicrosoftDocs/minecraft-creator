@@ -13,11 +13,11 @@ ms.date: 02/11/2025
 Defines the entity's movement on the rails. An entity with this component is only allowed to move on the rail.
 
 
-## Rail Movement Properties
+## Entity Rail Movement Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| max_speed | 0.4 | Decimal number | Maximum speed that this entity will move at when on the rail. | 
+| max_speed | 0.4000000059604645 | Decimal number | Maximum speed that this entity will move at when on the rail. | 
 
 ## Samples
 

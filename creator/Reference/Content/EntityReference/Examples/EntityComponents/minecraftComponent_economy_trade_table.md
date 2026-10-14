@@ -13,38 +13,32 @@ ms.date: 02/11/2025
 Defines this entity's ability to trade with players.
 
 
-## Economy Trade Table Properties
+## Entity Economy Trade Table Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| convert_trades_economy | false | Boolean true/false | Determines when the mob transforms, if the trades should be converted when the new mob has a economy_trade_table. | 
-| cured_discount | *not set* | Range of integers | How much should the discount be modified by when the player has cured the Zombie Villager. | 
-| display_name | *not set* | String | Name to be displayed while trading with this entity | 
-| hero_demand_discount | -4 | Integer number | Used in legacy prices to determine how much should Demand be modified by when the player has the Hero of the Village mob effect | 
-| max_cured_discount | *not set* | Range of integers | The max the discount can be modified by when the player has cured the Zombie Villager. | 
-| max_nearby_cured_discount | -200 | Integer number | The max the discount can be modified by when the player has cured a nearby Zombie Villager. Only used when use_legacy_price_formula is true, otherwise max_cured_discount (low) is used. | 
-| nearby_cured_discount | -20 | Integer number | How much should the discount be modified by when the player has cured a nearby Zombie Villager | 
-| new_screen | false | Boolean true/false | Used to determine if trading with entity opens the new trade screen | 
-| persist_trades | false | Boolean true/false | Determines if the trades should persist when the mob transforms. | 
-| show_trade_screen | true | Boolean true/false | Show an in game trade screen when interacting with the mob. | 
-| table | *not set* | String | File path relative to the resource pack root for this entity's trades | 
-| use_legacy_price_formula | false | Boolean true/false | Determines whether the legacy formula is used to determines the trade prices. | 
+| convert_trades_economy | false | Boolean true/false | Whether legacy trade data is converted into economy trade data. | 
+| cured_discount | {"max":-20,"min":-25} | [Cured Discount](#block-intrange) item | Range of cured villager discounts applied to trade prices. | 
+| display_name |  | String | The entity localization key used for the trading UI display name. | 
+| hero_demand_discount | -4 | Integer number | Additional demand discount applied while the player has Hero of the Village. | 
+| max_cured_discount | {"max":-20,"min":-25} | [Max Cured Discount](#block-intrange) item | Maximum allowed range for cured villager discounts. | 
+| max_nearby_cured_discount | -200 | Integer number | Most negative nearby cured villager discount allowed by legacy pricing. | 
+| nearby_cured_discount | -20 | Integer number | Nearby cured villager discount step applied by legacy pricing. | 
+| new_screen | false | Boolean true/false | Whether this trader uses the newer trade screen implementation. | 
+| persist_trades | false | Boolean true/false | Whether generated offers are persisted with the actor save data. | 
+| show_trade_screen | true | Boolean true/false | Whether interacting with this trader opens the trade screen. | 
+| table |  | String | Path to the trade table JSON that defines available offers. | 
+| use_legacy_price_formula | false | Boolean true/false | Whether legacy price calculations are used instead of the newer pricing formula. | 
 
-### convert_trades_economy
+### Block IntRange
 
-Determines when the mob transforms, if the trades should be converted when the new mob has a economy_trade_table. When the trades are converted, the mob will generate a new trade list with their new trade table, but then it will try to convert any of the same trades over to have the same enchantments and user data. For example, if the original has a Emerald to Enchanted Iron Sword (Sharpness 1), and the new trade also has an Emerald for Enchanted Iron Sword, then the enchantment will be Sharpness 1.
+#### Block IntRange Properties
 
-### cured_discount
+**JSON path:** `cured_discount`
 
-How much should the discount be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (When use_legacy_price_formula is true this is the low-tier trade discount and high-tier trade discount, otherwise it is the minor positive gossip and major positive gossip.).
-
-### max_cured_discount
-
-The max the discount can be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (When use_legacy_price_formula is true this is the low-tier trade discount and high-tier trade discount, otherwise it is the minor positive gossip and major positive gossip.).
-
-### persist_trades
-
-Determines if the trades should persist when the mob transforms. This makes it so that the next time the mob is transformed to something with a trade_table or economy_trade_table, then it keeps their trades.
-
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 0 | Integer number |  | 
+| min | 0 | Integer number |  | 
 
 ## Samples

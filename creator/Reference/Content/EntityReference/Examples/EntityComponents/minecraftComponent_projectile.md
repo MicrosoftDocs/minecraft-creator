@@ -49,6 +49,7 @@ Turns the entity into a projectile: a thrown or shot entity that flies along a b
 | shoot_target | true | Boolean true/false | If `true`, the projectile is aimed at the shooter's current target (when one exists) rather than straight ahead. | 
 | should_bounce | no | [Should Bounce](#should-bounce-choices) choices | Controls whether the projectile bounces off entities on impact. | 
 | splash_range | 4 | Decimal number | Splash radius (in blocks) used when applying potion effects via the splash/lingering potion code path. | 
+| spread_fire | true | Boolean true/false | If `true`, when hitting an entity and the projectile is on fire, spread the fire to the entity. | 
 | stop_on_hurt | false | Boolean true/false | If `true`, the projectile has its velocity zeroed out when struck. | 
 | uncertainty_base | 0 | Decimal number | Base inaccuracy added to the launch direction. The total inaccuracy is `uncertainty_base - difficultyLevel * uncertainty_multiplier`. | 
 | uncertainty_multiplier | 0 | Decimal number | Per-difficulty-level reduction in inaccuracy. See `uncertainty_base` for the full formula. | 
@@ -227,7 +228,7 @@ Freezes nearby water blocks to ice in a configurable volume around the impact (E
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | shape | cube | [Shape](#shape-choices) choices | Shape of the freezing volume. Allowed values: `cube`, `sphere`. | 
-| size | 0 | Decimal number | Half-extent of the freezing volume (in blocks). | 
+| size | 1 | Decimal number | Half-extent of the freezing volume (in blocks). | 
 | snap_to_block | false | Boolean true/false | If `true`, the freezing volume is centered on the hit block's center instead of the precise impact point. | 
 
 ### Shape choices

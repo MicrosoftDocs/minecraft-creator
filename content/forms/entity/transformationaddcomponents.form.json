@@ -1,0 +1,19 @@
+{
+  "id": "TransformationAddComponents",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "TransformationAddComponents",
+    "title": "Entity TransformationAddComponents",
+    "description": "List of components to add to the entity after the transformation",
+    "fields": [
+      {
+        "id": "component_groups",
+        "title": "Component Groups",
+        "description": "Names of component groups to add",
+        "dataType": "stringArray",
+        "defaultValue": []
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}

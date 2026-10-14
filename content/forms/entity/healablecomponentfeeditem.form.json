@@ -1,0 +1,52 @@
+{
+  "id": "HealableComponentFeedItem",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "HealableComponentFeedItem",
+    "title": "Entity HealableComponentFeedItem",
+    "fields": [
+      {
+        "id": "effects",
+        "title": "Effects",
+        "description": "The effects to apply when this item is used to heal the entity.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/healablecomponenteffect"
+      },
+      {
+        "id": "heal_amount",
+        "title": "Heal Amount",
+        "description": "The amount of health this entity gains when fed this item.",
+        "dataType": "int",
+        "defaultValue": 1
+      },
+      {
+        "id": "item",
+        "title": "Item",
+        "description": "Item identifier that can be used to heal this entity.",
+        "dataType": "string",
+        "defaultValue": {},
+        "alternates": [
+          {
+            "id": "item",
+            "dataType": "keyedStringCollection"
+          }
+        ]
+      },
+      {
+        "id": "result_item",
+        "title": "Result Item",
+        "description": "The feed item used will transform to this item upon successful interaction.",
+        "dataType": "string",
+        "defaultValue": {},
+        "alternates": [
+          {
+            "id": "result_item",
+            "dataType": "keyedStringCollection"
+          }
+        ]
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}

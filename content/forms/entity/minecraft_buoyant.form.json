@@ -117,5 +117,154 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:buoyant",
+    "title": "Entity Buoyant",
+    "description": "Enables an entity to float on the specified liquid blocks.",
+    "fields": [
+      {
+        "id": "apply_gravity",
+        "title": "Apply Gravity",
+        "description": "Applies gravity each tick. Causes \"movement_type\" to be more impactful, but also gravity to be applied more intensely outside liquids.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "base_buoyancy",
+        "title": "Base Buoyancy",
+        "description": "Base buoyancy used to calculate how much will a entity float.",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "big_wave_probability",
+        "title": "Big Wave Probability",
+        "description": "Probability for a big wave hitting the entity. Only used if \"movement_type\" is \"waves\".",
+        "dataType": "float",
+        "defaultValue": 0.029999999329447746
+      },
+      {
+        "id": "big_wave_speed",
+        "title": "Big Wave Speed",
+        "description": "Multiplier for the speed to make a big wave. Triggered depending on \"big_wave_probability\".",
+        "dataType": "float",
+        "defaultValue": 10
+      },
+      {
+        "id": "can_auto_step_from_liquid",
+        "title": "Can Auto Step From Liquid",
+        "description": "Whether the entity can move out of a liquid block to a neighboring solid block if pushed against it.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "drag_down_on_buoyancy_removed",
+        "title": "Drag Down On Buoyancy Removed",
+        "description": "How much an entity will be dragged down when the component is removed.",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "liquid_blocks",
+        "description": "List of blocks this entity can float on. Must be a liquid block.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subForm": {
+          "id": "liquid_blocks",
+          "title": "Liquid Blocks",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": "string",
+              "defaultValue": ""
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": "int",
+              "defaultValue": {},
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": "string"
+                },
+                {
+                  "id": "states",
+                  "dataType": "boolean"
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": "string",
+              "defaultValue": ""
+            }
+          ],
+          "dataVersion": "1.20.50"
+        },
+        "alternates": [
+          {
+            "id": "liquid_blocks",
+            "dataType": "string",
+            "minLength": 1
+          },
+          {
+            "id": "liquid_blocks",
+            "dataType": "object"
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/xp_orb.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:buoyant/",
+              "content": [
+                "minecraft:flowing_water",
+                "minecraft:water"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "movement_type",
+        "title": "Movement Type",
+        "description": "Type of vertical movement applied to the entity:\n\"waves\", simulates wave movement based on the entity speed.\n\"bobbing\", simulates waves going through.\n\"none\", simulates waves going through.",
+        "dataType": "stringEnum",
+        "defaultValue": "waves",
+        "choices": [
+          {
+            "id": "bobbing",
+            "title": "Bobbing"
+          },
+          {
+            "id": "none",
+            "title": "None"
+          },
+          {
+            "id": "waves",
+            "title": "Waves"
+          }
+        ],
+        "mustMatchChoices": true
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {
+      "/vanilla/behavior_pack/entities/xp_orb.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:buoyant/",
+          "content": {
+            "apply_gravity": false,
+            "liquid_blocks": [
+              "minecraft:flowing_water",
+              "minecraft:water"
+            ]
+          }
+        }
+      ]
+    }
   }
 }

@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Overview
 description: "An overview of the parts of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/18/2026
+ms.date: 09/04/2026
 ---
 
 # Editor Overview
@@ -89,11 +89,13 @@ You can move Editor windows by clicking and dragging them by the title bar.
 
 Click the double "up arrows" in the corner to collapse the windows upwards so you can tuck them out of the way if you don't want to close them.
 
+If a floating window has more tabs than fit on one page, use the mouse wheel over the tabs to move between pages.
+
 If you do want to close the window, click the X in the corner. Some windows can be re-opened with a keyboard shortcut.
 
 ## What's New
 
-![Animation of the parts of the Quick Start Welcome screen](Media/editor_quick_start.png)
+![Animation of the parts of the What's New welcome screen](Media/editor_quick_start.png)
 
 | Tab          | Content                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -117,6 +119,10 @@ Before we dive into the Tool Mode UI, you might want to take a moment to familia
 - Look-to-teleport: In Tool Mode, point your cursor at a block in the distance, and hit `G` on your keyboard. You will be "Grapple teleported" there. This function does not work in Crosshair Mode.
 
 - Directional Compass: In the upper-right corner of the editor window, the directional compass will show you which cardinal direction you are facing. You can even click a direction to snap your view to face it.
+
+- Viewport gizmos: Move, resize, and rotation gizmos maintain a consistent size on screen as you move the camera, so their controls remain selectable from a distance.
+
+To see the general shortcuts and the shortcuts for your active tool, press **F1** to open [Control Help](EditorControlHelp.md).
 
 ## Editor and Bedrock Dedicated Server
 

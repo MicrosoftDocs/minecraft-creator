@@ -27,5 +27,21 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:movement.skip",
+    "title": "Entity Skip Movement",
+    "description": "This move control causes the mob to hop as it moves.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "dataType": "float",
+        "defaultValue": 30
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {}
   }
 }
