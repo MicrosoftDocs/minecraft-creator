@@ -54,5 +54,48 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:movement.sway",
+    "title": "Entity Sway Movement",
+    "description": "This move control causes the mob to sway side to side giving the impression it is swimming.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "dataType": "float",
+        "defaultValue": 30
+      },
+      {
+        "id": "sway_amplitude",
+        "title": "Sway Amplitude",
+        "description": "Strength of the sway movement.",
+        "dataType": "float",
+        "defaultValue": 0.05000000074505806
+      },
+      {
+        "id": "sway_frequency",
+        "title": "Sway Frequency",
+        "description": "Multiplier for the frequency of the sway movement.",
+        "dataType": "float",
+        "defaultValue": 0.5
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.sway/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.sway/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

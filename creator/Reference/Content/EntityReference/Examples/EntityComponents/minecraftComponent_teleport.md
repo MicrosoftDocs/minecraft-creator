@@ -13,19 +13,32 @@ ms.date: 02/11/2025
 Defines an entity's teleporting behavior.
 
 
-## Teleport Properties
+## Entity Teleport Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| dark_teleport_chance | 0.01 | Decimal number | Modifies the chance that the entity will teleport if the entity is in darkness | 
-| light_teleport_chance | 0.01 | Decimal number | Modifies the chance that the entity will teleport if the entity is in daylight | 
+| dark_teleport_chance | 0.009999999776482582 | Decimal number | Modifies the chance that the entity will teleport if the entity is in darkness | 
+| light_teleport_chance | 0.009999999776482582 | Decimal number | Modifies the chance that the entity will teleport if the entity is in daylight | 
 | max_random_teleport_time | 20 | Decimal number | Maximum amount of time in seconds between random teleports | 
 | min_random_teleport_time | 0 | Decimal number | Minimum amount of time in seconds between random teleports | 
-| projectile_filter | *not set* | Minecraft filter | Conditions that determine which projectiles cause the entity to attempt to teleport. If omitted, all projectiles cause a teleport attempt | 
-| random_teleport_cube | [32, 16, 32] | x, y, z coordinate array | Entity will teleport to a random position within the area defined by this cube | 
+| projectile_filter | *not set* | Object | Conditions that determine which projectiles cause the entity to attempt to teleport. If omitted, all projectiles cause a teleport attempt | 
+| random_teleport_cube | [32, 16, 32] | Array of numbers | Entity will teleport to a random position within the area defined by this cube | 
+| random_teleport_cube (Random Teleport Cube) | *not set* | [Random Teleport Cube (Random Teleport Cube)](#random-teleport-cube-random-teleport-cube) item |  | 
 | random_teleports | true | Boolean true/false | If true, the entity will teleport randomly | 
 | target_distance | 16 | Decimal number | Maximum distance the entity will teleport when chasing a target | 
 | target_teleport_chance | 1 | Decimal number | The chance that the entity will teleport between 0.0 and 1.0. 1.0 means 100% | 
 | teleports_on_projectile_hit | false | Boolean true/false | If true, the entity will attempt to teleport away from projectiles about to hit it | 
+
+### Random Teleport Cube (Random Teleport Cube)
+
+#### Random Teleport Cube Properties
+
+**JSON path:** `random_teleport_cube`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| x | 0 | Decimal number |  | 
+| y | 0 | Decimal number |  | 
+| z | 0 | Decimal number |  | 
 
 ## Samples

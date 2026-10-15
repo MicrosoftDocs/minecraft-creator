@@ -248,6 +248,8 @@
               href: Documents/scripting/custom-commands.md
             - name: Building with the Custom Dimension API
               href: Documents/scripting/custom-dimension-api-tutorial.md
+            - name: Introduction to World Clocks
+              href: Documents/WorldClocks.md
             - name: Game Loops and Timed Callbacks
               href: Documents/scripting/system-run-guide.md
             - name: Building Multiplayer-Aware Scripts
@@ -258,8 +260,14 @@
               href: Documents/scripting/world-apis.md
             - name: Debugging Scripts
               href: Documents/scripting/debugging-scripts.md
+            - name: Minecraft VS Code Debugger
+              href: Documents/scripting/vscode-debugger.md
+            - name: Common Scripting Errors in Minecraft
+              href: Documents/scripting/common-errors.md
             - name: Error Handling Best Practices
               href: Documents/scripting/error-handling.md
+            - name: Performance in Scripting
+              href: Documents/scripting/script-performance.md
             - name: Scripting V2 Overview
               href: Documents/scripting/v2-overview.md
             - name: Script Module Versioning
@@ -532,6 +540,8 @@
               href: Documents/BedrockEditor/EditorTutorial.md
             - name: Action Bar
               href: Documents/BedrockEditor/EditorActionBar.md
+            - name: Control Help
+              href: Documents/BedrockEditor/EditorControlHelp.md
             - name: Vibrant Visuals
               href: Documents/BedrockEditor/EditorVibrantVisuals.md
             - name: Keyboard Inputs
@@ -551,6 +561,8 @@
                   href: Documents/BedrockEditor/EditorSelectionTool.md
                 - name: Brush Tool
                   href: Documents/BedrockEditor/EditorBrushTool.md
+                - name: Primitives Tool
+                  href: Documents/BedrockEditor/EditorPrimitivesTool.md
                 - name: Pencil Tool
                   href: Documents/BedrockEditor/EditorPencilTool.md
                 - name: Line Tool
@@ -573,7 +585,7 @@
                   href: Documents/BedrockEditor/EditorFlood.md
                 - name: Chunk Management
                   href: Documents/BedrockEditor/EditorChunkManagement.md
-                - name: Camera Tool
+                - name: Cinematic Tool
                   href: Documents/BedrockEditor/EditorCameraTool.md
                 - name: Jigsaws
                   href: Documents/BedrockEditor/EditorJigsaws.md

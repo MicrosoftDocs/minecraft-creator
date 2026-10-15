@@ -10,10 +10,10 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:strength
 
-Defines the entity's strength to carry items.
+Defines the strength of this entity.
 
 
-## Strength Properties
+## Entity Strength Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

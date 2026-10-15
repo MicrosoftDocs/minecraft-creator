@@ -58,5 +58,52 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:rail_movement",
+    "title": "Entity Rail Movement",
+    "description": "Defines the entity's movement on the rails. An entity with this component is only allowed to move on the rail.",
+    "fields": [
+      {
+        "id": "max_speed",
+        "title": "Max Speed",
+        "description": "Maximum speed that this entity will move at when on the rail.",
+        "dataType": "float",
+        "defaultValue": 0.4000000059604645
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {
+      "/vanilla/behavior_pack/entities/chest_minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rail_movement/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/command_block_minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rail_movement/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hopper_minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rail_movement/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rail_movement/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tnt_minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rail_movement/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

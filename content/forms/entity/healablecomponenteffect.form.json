@@ -1,0 +1,39 @@
+{
+  "id": "HealableComponentEffect",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "HealableComponentEffect",
+    "title": "Entity HealableComponentEffect",
+    "fields": [
+      {
+        "id": "amplifier",
+        "title": "Amplifier",
+        "description": "The amplifier of the effect.",
+        "dataType": "int",
+        "defaultValue": 1
+      },
+      {
+        "id": "chance",
+        "title": "Chance",
+        "description": "The chance that the effect is applied.",
+        "dataType": "float",
+        "defaultValue": 1
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "The duration of the effect in seconds, or \"infinite\".",
+        "dataType": "object",
+        "defaultValue": 0
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "description": "The name of the effect to apply.",
+        "dataType": "string",
+        "defaultValue": ""
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}

@@ -21,6 +21,7 @@ ms.date: 02/11/2025
 - [Fancy Trunk](#fancy-trunk)
 - [Mangrove Roots](#mangrove-roots)
 - [Mangrove Trunk](#mangrove-trunk)
+- [Mega Trunk](#mega-trunk)
 - [Poplar Canopy](#poplar-canopy)
 - [Random Spread Canopy](#random-spread-canopy)
 - [Trunk](#trunk)
@@ -378,8 +379,15 @@ Places a tree in the world. A tree consists of a column that is anchored to a ba
 
 ### Mega Trunk
 
-Same structure as [Mangrove Trunk](#mangrove-trunk).
+#### Mega Trunk Properties
 
+**JSON path:** `mega_trunk`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| branches | *not set* | [Branches](#branches) item | Configuration object for branches. | 
+| trunk_decoration | *not set* | [Trunk Decoration](#trunk-decoration) item | Configuration object for the trunk decoration. | 
+| trunk_height | *not set* | [Trunk Height](#trunk-height) item | Configuration object for the trunk height. | 
 
 ### Poplar Canopy
 

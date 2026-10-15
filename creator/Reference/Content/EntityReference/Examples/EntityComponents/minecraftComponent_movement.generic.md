@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 This move control allows a mob to fly, swim, climb, etc.
 
 
-## Generic Movement Properties
+## Entity Generic Movement Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

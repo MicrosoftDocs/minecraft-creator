@@ -1,15 +1,17 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Action Bar
 description: "An overview of the Action Bar part of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2025
+ms.date: 09/04/2026
 ---
 
 # Editor Action Bar
 
 The Action Bar gives you one‑click access to common actions like Undo/Redo, Reload, and mode switching. It lives below the menu bar, with configurable slots on either side of the UI. To add an action to the bar, press the [+] on either the right or left side and choose the action you want to add to the bar from the menu. 
+
+If Action Bar items span multiple pages, use the mouse wheel over the Action Bar to move between pages.
 > [!TIP]
 > To remove an Action, click the little triangle in the lower left corner of the action and choose **Clear** from the drop-down menu.
 
@@ -18,7 +20,9 @@ The Action Bar gives you one‑click access to common actions like Undo/Redo, Re
 
 ## Details
 
-The Action Bar has quick functions like **undo** and **redo** that affect the things you do to the world, including some of the actions you can do in Crosshair Mode. Common Action Bar commands include: Undo, Redo, Attach Debugger, Keyboard Settings (Input Mapping), Reload, and the Crosshair/Tool Mode toggle.
+The Action Bar has quick functions like **undo** and **redo** that affect the things you do to the world, including some of the actions you can do in Crosshair Mode. Common Action Bar commands include: Undo, Redo, Attach Debugger, Keyboard Settings (Input Mapping), Control Help, Reload, and the Crosshair/Tool Mode toggle.
+
+Control Help displays general shortcuts and shortcuts for the active tool. For more information, see [Control Help](EditorControlHelp.md).
 
 > [!TIP]
 > Action Bar commands are just shortcuts&mdash;every Action Bar button corresponds to an action that can also be triggered from menus or via a keyboard shortcut. Extensions can register their own Action Bar items through the Editor UI API. See `IActionBar`, `IActionBarItem`, and the predefined `CoreActionBarItemType` list in the Script API docs.
@@ -48,6 +52,6 @@ Some Action Bar items have default shortcuts. For the full list, see [Editor Hot
 | Redo | `Ctrl Y` |
 | Attach Debugger | - |
 | Input Mapping | - |
+| Control Help | `F1` |
 | Reload | - |
 | Crosshair Mode| `Ctrl Tab` |
-

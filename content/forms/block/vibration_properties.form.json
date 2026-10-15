@@ -1,0 +1,23 @@
+{
+  "id": "Vibration Properties",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Vibration Properties",
+    "title": "Block Vibration Properties",
+    "fields": [
+      {
+        "id": "damper_vibrations",
+        "title": "Damper Vibrations",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "occlude_vibrations",
+        "title": "Occlude Vibrations",
+        "dataType": "boolean",
+        "defaultValue": false
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}

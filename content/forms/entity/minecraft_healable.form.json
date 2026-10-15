@@ -103,6 +103,45 @@
           "description": "The array of items that can be used to heal this entity.",
           "fields": [
             {
+              "id": "effects",
+              "title": "Effects",
+              "description": "The effects to apply when this item is used to heal the entity.",
+              "dataType": "objectArray",
+              "subForm": {
+                "id": "",
+                "description": "The effects to apply when this item is used to heal the entity.",
+                "fields": [
+                  {
+                    "id": "amplifier",
+                    "title": "Amplifier",
+                    "description": "The amplifier of the effect.",
+                    "defaultValue": 1,
+                    "dataType": "int"
+                  },
+                  {
+                    "id": "chance",
+                    "title": "Chance",
+                    "description": "The chance that the effect is applied.",
+                    "defaultValue": 1,
+                    "dataType": "float"
+                  },
+                  {
+                    "id": "duration",
+                    "title": "Duration",
+                    "description": "The duration of the effect in seconds, or \"infinite\".",
+                    "defaultValue": "0",
+                    "dataType": "string"
+                  },
+                  {
+                    "id": "name",
+                    "title": "Name",
+                    "description": "The name of the effect to apply.",
+                    "dataType": "string"
+                  }
+                ]
+              }
+            },
+            {
               "id": "heal_amount",
               "title": "Heal Amount",
               "description": "The amount of health this entity gains when fed this item.",
@@ -116,67 +155,10 @@
               "dataType": "string"
             },
             {
-              "id": "effects",
-              "title": "Effects",
-              "dataType": "objectArray",
-              "subForm": {
-                "id": "effects",
-                "title": "Effects",
-                "fields": [
-                  {
-                    "id": "amplifier",
-                    "title": "Amplifier",
-                    "dataType": "number",
-                    "samples": {
-                      "/vanilla/behavior_pack/entities/parrot.json": [
-                        {
-                          "path": "amplifier",
-                          "content": 0
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "id": "chance",
-                    "title": "Chance",
-                    "dataType": "number",
-                    "samples": {
-                      "/vanilla/behavior_pack/entities/parrot.json": [
-                        {
-                          "path": "chance",
-                          "content": 1
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "id": "duration",
-                    "title": "Duration",
-                    "dataType": "number",
-                    "samples": {
-                      "/vanilla/behavior_pack/entities/parrot.json": [
-                        {
-                          "path": "duration",
-                          "content": 1000
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "id": "name",
-                    "title": "Name",
-                    "dataType": "string",
-                    "samples": {
-                      "/vanilla/behavior_pack/entities/parrot.json": [
-                        {
-                          "path": "name",
-                          "content": "fatal_poison"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
+              "id": "result_item",
+              "title": "Result Item",
+              "description": "The feed item used will transform to this item upon successful interaction.",
+              "dataType": "string"
             }
           ]
         },
@@ -218,6 +200,246 @@
         }
       }
     ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "wheat",
+                "heal_amount": 2
+              },
+              {
+                "item": "hay_block",
+                "heal_amount": 10
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "filters": {
+              "operator": "!=",
+              "test": "is_riding",
+              "value": true
+            },
+            "force_use": true,
+            "items": [
+              {
+                "effects": [
+                  {
+                    "amplifier": 0,
+                    "chance": 1,
+                    "duration": 1000,
+                    "name": "fatal_poison"
+                  }
+                ],
+                "heal_amount": 0,
+                "item": "cookie"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "torchflower_seeds",
+                "heal_amount": 2
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "wheat",
+                "heal_amount": 2
+              },
+              {
+                "item": "hay_block",
+                "heal_amount": 10
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:healable",
+    "title": "Entity Healable",
+    "description": "Defines the interactions with this entity for healing it.",
+    "fields": [
+      {
+        "id": "filters",
+        "description": "The filter group that defines the conditions for using this item to heal the entity.",
+        "dataType": "object",
+        "defaultValue": {
+          "AND": null,
+          "NOT": null,
+          "OR": null,
+          "all": null,
+          "all_of": null,
+          "any": null,
+          "any_of": null,
+          "none_of": null
+        },
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": "object"
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": "object"
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": "object"
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": "string",
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": "object"
+            }
+          ],
+          "dataVersion": "1.21.20"
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": "object"
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": {
+                "operator": "!=",
+                "test": "is_riding",
+                "value": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "force_use",
+        "title": "Force Use",
+        "description": "Determines if item can be used regardless of entity being at full health.",
+        "dataType": "boolean",
+        "defaultValue": false,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "items",
+        "title": "Items",
+        "description": "The array of items that can be used to heal this entity.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/healablecomponentfeeditem",
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": [
+                {
+                  "item": "wheat",
+                  "heal_amount": 2
+                },
+                {
+                  "item": "hay_block",
+                  "heal_amount": 10
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": [
+                {
+                  "effects": [
+                    {
+                      "amplifier": 0,
+                      "chance": 1,
+                      "duration": 1000,
+                      "name": "fatal_poison"
+                    }
+                  ],
+                  "heal_amount": 0,
+                  "item": "cookie"
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": [
+                {
+                  "item": "torchflower_seeds",
+                  "heal_amount": 2
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": [
+                {
+                  "item": "wheat",
+                  "heal_amount": 2
+                },
+                {
+                  "item": "hay_block",
+                  "heal_amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "dataVersion": "1.26.60",
     "samples": {
       "/vanilla/behavior_pack/entities/llama.json": [
         {

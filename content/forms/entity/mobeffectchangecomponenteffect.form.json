@@ -1,0 +1,53 @@
+{
+  "id": "MobEffectChangeComponentEffect",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "MobEffectChangeComponentEffect",
+    "title": "Entity MobEffectChangeComponentEffect",
+    "fields": [
+      {
+        "id": "ambient",
+        "title": "Ambient",
+        "description": "Whether the effect is ambient.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "amplifier",
+        "title": "Amplifier",
+        "description": "The amplifier of the effect.",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "display_on_screen_animation",
+        "title": "Display On Screen Animation",
+        "description": "Whether the effect displays an on-screen animation.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "The duration of the effect in seconds, or \"infinite\".",
+        "dataType": "object",
+        "defaultValue": 0
+      },
+      {
+        "id": "effect",
+        "title": "Effect",
+        "description": "The name of the effect to apply.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "visible",
+        "title": "Visible",
+        "description": "Whether the effect is visible.",
+        "dataType": "boolean",
+        "defaultValue": true
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}

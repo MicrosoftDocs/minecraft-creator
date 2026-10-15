@@ -112,84 +112,187 @@
       {
         "id": "convert_trades_economy",
         "title": "Convert Trades Economy",
-        "description": "Determines when the mob transforms, if the trades should be converted when the new mob has a economy_trade_table. When the trades are converted, the mob will generate a new trade list with their new trade table, but then it will try to convert any of the same trades over to have the same enchantments and user data. For example, if the original has a Emerald to Enchanted Iron Sword (Sharpness 1), and the new trade also has an Emerald for Enchanted Iron Sword, then the enchantment will be Sharpness 1.",
+        "description": "Whether legacy trade data is converted into economy trade data.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "cured_discount",
         "title": "Cured Discount",
-        "description": "How much should the discount be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (When use_legacy_price_formula is true this is the low-tier trade discount and high-tier trade discount, otherwise it is the minor positive gossip and major positive gossip.)",
-        "dataType": "intRange"
+        "description": "Range of cured villager discounts applied to trade prices.",
+        "defaultValue": "{ \"min\": -25, \"max\": -20 }",
+        "dataType": "objectArray"
       },
       {
         "id": "display_name",
         "title": "Display Name",
-        "description": "Name to be displayed while trading with this entity",
+        "description": "The entity localization key used for the trading UI display name.",
         "dataType": "string"
       },
       {
         "id": "hero_demand_discount",
         "title": "Hero Demand Discount",
-        "description": "Used in legacy prices to determine how much should Demand be modified by when the player has the Hero of the Village mob effect",
+        "description": "Additional demand discount applied while the player has Hero of the Village.",
         "defaultValue": -4,
         "dataType": "int"
       },
       {
         "id": "max_cured_discount",
         "title": "Max Cured Discount",
-        "description": "The max the discount can be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (When use_legacy_price_formula is true this is the low-tier trade discount and high-tier trade discount, otherwise it is the minor positive gossip and major positive gossip.)",
-        "dataType": "intRange"
+        "description": "Maximum allowed range for cured villager discounts.",
+        "defaultValue": "{ \"min\": -25, \"max\": -20 }",
+        "dataType": "objectArray"
       },
       {
         "id": "max_nearby_cured_discount",
         "title": "Max Nearby Cured Discount",
-        "description": "The max the discount can be modified by when the player has cured a nearby Zombie Villager. Only used when use_legacy_price_formula is true, otherwise max_cured_discount (low) is used.",
+        "description": "Most negative nearby cured villager discount allowed by legacy pricing.",
         "defaultValue": -200,
         "dataType": "int"
       },
       {
         "id": "nearby_cured_discount",
         "title": "Nearby Cured Discount",
-        "description": "How much should the discount be modified by when the player has cured a nearby Zombie Villager",
+        "description": "Nearby cured villager discount step applied by legacy pricing.",
         "defaultValue": -20,
         "dataType": "int"
       },
       {
         "id": "new_screen",
         "title": "New Screen",
-        "description": "Used to determine if trading with entity opens the new trade screen",
+        "description": "Whether this trader uses the newer trade screen implementation.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "persist_trades",
         "title": "Persist Trades",
-        "description": "Determines if the trades should persist when the mob transforms. This makes it so that the next time the mob is transformed to something with a trade_table or economy_trade_table, then it keeps their trades.",
+        "description": "Whether generated offers are persisted with the actor save data.",
         "defaultValue": false,
         "dataType": "boolean"
       },
       {
         "id": "show_trade_screen",
         "title": "Show Trade Screen",
-        "description": "Show an in game trade screen when interacting with the mob.",
+        "description": "Whether interacting with this trader opens the trade screen.",
         "defaultValue": true,
         "dataType": "boolean"
       },
       {
         "id": "table",
         "title": "Table",
-        "description": "File path relative to the resource pack root for this entity's trades",
+        "description": "Path to the trade table JSON that defines available offers.",
         "dataType": "string"
       },
       {
         "id": "use_legacy_price_formula",
         "title": "Use Legacy Price Formula",
-        "description": "Determines whether the legacy formula is used to determines the trade prices.",
+        "description": "Whether legacy price calculations are used instead of the newer pricing formula.",
         "defaultValue": false,
         "dataType": "boolean"
       }
     ],
+    "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:economy_trade_table",
+    "title": "Entity Economy Trade Table",
+    "description": "Defines this entity's ability to trade with players.",
+    "fields": [
+      {
+        "id": "convert_trades_economy",
+        "title": "Convert Trades Economy",
+        "description": "Whether legacy trade data is converted into economy trade data.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "cured_discount",
+        "title": "Cured Discount",
+        "description": "Range of cured villager discounts applied to trade prices.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": -20,
+          "min": -25
+        },
+        "subFormId": "block/intrange"
+      },
+      {
+        "id": "display_name",
+        "title": "Display Name",
+        "description": "The entity localization key used for the trading UI display name.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "hero_demand_discount",
+        "title": "Hero Demand Discount",
+        "description": "Additional demand discount applied while the player has Hero of the Village.",
+        "dataType": "int",
+        "defaultValue": -4
+      },
+      {
+        "id": "max_cured_discount",
+        "title": "Max Cured Discount",
+        "description": "Maximum allowed range for cured villager discounts.",
+        "dataType": "object",
+        "defaultValue": {
+          "max": -20,
+          "min": -25
+        },
+        "subFormId": "block/intrange"
+      },
+      {
+        "id": "max_nearby_cured_discount",
+        "title": "Max Nearby Cured Discount",
+        "description": "Most negative nearby cured villager discount allowed by legacy pricing.",
+        "dataType": "int",
+        "defaultValue": -200
+      },
+      {
+        "id": "nearby_cured_discount",
+        "title": "Nearby Cured Discount",
+        "description": "Nearby cured villager discount step applied by legacy pricing.",
+        "dataType": "int",
+        "defaultValue": -20
+      },
+      {
+        "id": "new_screen",
+        "title": "New Screen",
+        "description": "Whether this trader uses the newer trade screen implementation.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "persist_trades",
+        "title": "Persist Trades",
+        "description": "Whether generated offers are persisted with the actor save data.",
+        "dataType": "boolean",
+        "defaultValue": false
+      },
+      {
+        "id": "show_trade_screen",
+        "title": "Show Trade Screen",
+        "description": "Whether interacting with this trader opens the trade screen.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
+        "id": "table",
+        "title": "Table",
+        "description": "Path to the trade table JSON that defines available offers.",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
+        "id": "use_legacy_price_formula",
+        "title": "Use Legacy Price Formula",
+        "description": "Whether legacy price calculations are used instead of the newer pricing formula.",
+        "dataType": "boolean",
+        "defaultValue": false
+      }
+    ],
+    "dataVersion": "1.26.60",
     "samples": {}
   }
 }

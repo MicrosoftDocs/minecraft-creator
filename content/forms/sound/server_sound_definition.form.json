@@ -1,0 +1,64 @@
+{
+  "id": "Server Sound Definition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Server Sound Definition",
+    "title": "Sound Server Sound Definition",
+    "description": "A single server-authoritative sound definition.",
+    "fields": [
+      {
+        "id": "broadcast_range",
+        "title": "Broadcast Range",
+        "description": "Optional range in blocks. When set, a broadcast play sound is delivered to players within this range of the sound. The effective range is capped by the player's view distance: players who are not within the sound's range and do not have the surrounding chunks loaded will not hear it, regardless of how large this value is.",
+        "dataType": "float"
+      },
+      {
+        "id": "duration_info",
+        "title": "Duration Info",
+        "description": "Optional server-authoritative duration metadata.",
+        "dataType": "object",
+        "subFormId": "sound/server_sound_duration_info"
+      },
+      {
+        "id": "music_info",
+        "title": "Music Info",
+        "description": "Optional music metadata.",
+        "dataType": "object",
+        "subFormId": "sound/server_sound_music_info"
+      },
+      {
+        "id": "sound_event_name",
+        "title": "Sound Event Name",
+        "description": "The namespaced sound event ID used to play this sound.",
+        "dataType": "string",
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^\\S+$",
+            "patternFlags": "i"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "tags",
+        "title": "Tags",
+        "description": "Optional pack-defined key-value tags. Each value may be a single string or an array of strings.",
+        "dataType": "stringArray",
+        "alternates": [
+          {
+            "id": "tags",
+            "dataType": "string",
+            "validity": [
+              {
+                "comparison": "pattern",
+                "value": "^\\S+$"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}

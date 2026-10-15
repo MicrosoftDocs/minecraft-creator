@@ -57,18 +57,13 @@
                   "id": "bone_visibility",
                   "title": "Bone Visibility",
                   "description": "A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a Molang expression that tells whether the bone should be visible or not (value). The expression is limited to using the \"query.block_state()\" query. When using \"bone_visibility\" in geometry components in the \"permutations\" section, you must also have a default version of the geometry component with \"bone_visibility\" in the \"components\" section.",
-                  "dataType": "keyedStringCollection",
+                  "dataType": "object",
                   "defaultValue": {},
                   "maxLength": 64,
                   "alternates": [
                     {
                       "id": "bone_visibility",
-                      "dataType": "keyedObjectCollection",
-                      "subFormId": "legacy/molang_expression"
-                    },
-                    {
-                      "id": "bone_visibility",
-                      "dataType": "float"
+                      "dataType": "keyedBooleanCollection"
                     }
                   ]
                 },

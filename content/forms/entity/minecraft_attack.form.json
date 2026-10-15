@@ -110,5 +110,69 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:attack",
+    "title": "Entity Attack",
+    "description": "Defines an entity's melee attack and any additional effects on it.",
+    "fields": [
+      {
+        "id": "damage",
+        "title": "Damage",
+        "description": "Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it.",
+        "dataType": "float",
+        "defaultValue": {
+          "max": 0,
+          "min": 0
+        },
+        "alternates": [
+          {
+            "id": "damage",
+            "dataType": "object",
+            "subForm": {
+              "id": "damage",
+              "title": "Damage",
+              "fields": [
+                {
+                  "id": "max",
+                  "title": "Max",
+                  "dataType": "float",
+                  "defaultValue": 0
+                },
+                {
+                  "id": "min",
+                  "title": "Min",
+                  "dataType": "float",
+                  "defaultValue": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "effect_amplifier",
+        "title": "Effect Amplifier",
+        "description": "Amplifier level (potion tier) of the status ailment applied to the damaged entity. Higher values increase the strength of the effect.",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "effect_duration",
+        "title": "Effect Duration",
+        "description": "Duration in seconds of the status ailment applied to the damaged entity. Can also be \"infinite\".",
+        "dataType": "object",
+        "defaultValue": 0
+      },
+      {
+        "id": "effect_name",
+        "title": "Effect Name",
+        "description": "Identifier of the status ailment to apply to an entity attacked by this entity's melee attack.",
+        "dataType": "string",
+        "defaultValue": ""
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {}
   }
 }

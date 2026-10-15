@@ -13,26 +13,27 @@ ms.date: 02/11/2025
 Allows an entity to add or remove status effects from itself. Similarly to `addrider`, this component performs a one-time operation on the entity when added. Removing the component will not change the entity's current effects. Adding different versions of the component multiple times will perform each one in turn. Once the component has been added, it will not provide any further functionality. There is one exception to this behavior: if this component is present on a player, its effects will be re-applied every time the player enters the world. To avoid this, remove the component shortly after adding it, or add an empty component to replace it.
 
 
-## Spell Effects Properties
+## Entity Spell Effects Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| add_effects | *not set* | Array of [Add Effects](#add-effects) items | List of effects to add to this entity. | Player: `[{"display_on_screen_animation":true,"duration":30,"effect":"raid_omen"}]` | 
-| remove_effects | *not set* | String | List of identifiers of effects to be removed from this entity after adding this component | Player: `"bad_omen"` | 
+| add_effects | [] | Array of [Add Effects](#entity-mobeffectchangecomponenteffect) items | List of effects to add to this entity. | Player: `[{"display_on_screen_animation":true,"duration":30,"effect":"raid_omen"}]` | 
+| remove_effects | [] | Array of strings | The identifiers of effects to remove from the entity after adding this component. | Player: `"bad_omen"` | 
 
-### Add Effects
-List of effects to add to this entity after adding this component.
+### Entity MobEffectChangeComponentEffect
 
-
-#### Spell Effect Entry Properties
+#### Entity MobEffectChangeComponentEffect Properties
 
 **JSON path:** `add_effects`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| display_on_screen_animation | *not set* | Boolean true/false | Whether to show a screen animation when this effect is applied. | 
-| duration | *not set* | Decimal number |  | 
-| effect | *not set* | String | Effect to add to this entity. Includes 'duration' in seconds, 'amplifier' level, 'ambient' if it is to be considered an ambient effect, and 'visible' if the effect should be visible | 
+| ambient | false | Boolean true/false | Whether the effect is ambient. | 
+| amplifier | 0 | Integer number | The amplifier of the effect. | 
+| display_on_screen_animation | false | Boolean true/false | Whether the effect displays an on-screen animation. | 
+| duration | 0 | Object | The duration of the effect in seconds, or "infinite". | 
+| effect |  | String | The name of the effect to apply. | 
+| visible | true | Boolean true/false | Whether the effect is visible. | 
 
 ## Samples
 

@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Custom Dimensions
 description: "An overview of the Custom Dimensions manager in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/18/2026
+ms.date: 09/04/2026
 ---
 
 # Custom Dimensions
@@ -27,7 +27,9 @@ You can add a new dimension to your world with these steps:
    > [!WARNING]
    > You can't delete a dimension from your world once you add it.
 
-4. Click a dimension in the panel list to teleport to it, or use the **Dimensions** submenu in the menu bar to teleport from anywhere.
+4. Click a dimension in the panel list to teleport to it, or use **World** > **Dimensions** in the menu bar to teleport from anywhere.
+   > [!NOTE]
+   > Editor returns you to your last-known position in a dimension. On your first visit to a dimension, you arrive at its origin.
    > [!TIP]
    > The ***teleport to player*** feature in the navigation panel respects the target player's dimension, teleporting you across dimensions if needed.
 
@@ -35,13 +37,13 @@ You can add a new dimension to your world with these steps:
 
 Once you've created your custom dimension(s), you can use the Editor to instantly teleport to and from the standard dimensions:
 
-1. Open the Custom Dimensions panel from the Action Bar or from the **World Options** menu.
+1. Open the Custom Dimensions panel from the Action Bar or select **World** > **Dimensions** > **Dimensions Panel**.
 
 2. The panel lists all available dimensions in two groups:
    - **Standard Minecraft**: Overworld, Nether, and The End, each with a dimension-specific icon.
    - **Custom dimensions**: Grouped by namespace in collapsible sections.
    > [!TIP]
-   > Custom dimensions also appear in the **Dimensions** submenu under World Options in the menu bar, grouped by namespace.
+   > Custom dimensions also appear under **World** > **Dimensions**, grouped by namespace. A checkmark identifies your current dimension.
 
 3. Click any dimension in the list to instantly teleport to it.
 

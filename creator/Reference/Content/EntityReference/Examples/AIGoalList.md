@@ -116,7 +116,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.open_door](EntityGoals/minecraftBehavior_open_door.md)| Allows the mob to open doors. |
 | [minecraft:behavior.owner_hurt_by_target](EntityGoals/minecraftBehavior_owner_hurt_by_target.md)| Allows the mob to target another mob that hurts their owner. |
 | [minecraft:behavior.owner_hurt_target](EntityGoals/minecraftBehavior_owner_hurt_target.md)| Allows the mob to target a mob that is hurt by their owner. |
-| [minecraft:behavior.panic](EntityGoals/minecraftBehavior_panic.md)| Allows the mob to enter the panic state, which makes it run around and away from the damage source that made it enter this state. |
+| [minecraft:behavior.panic](EntityGoals/minecraftBehavior_panic.md)| Allows a mob to panic when receiving damage, making it run around and away from the damage source that made it enter this state. |
 | [minecraft:behavior.pet_sleep_with_owner](EntityGoals/minecraftBehavior_pet_sleep_with_owner.md)| Allows the pet mob to move onto a bed with its owner while sleeping. |
 | [minecraft:behavior.pickup_items](EntityGoals/minecraftBehavior_pickup_items.md)| Allows the mob to pick up items on the ground. |
 | [minecraft:behavior.place_block](EntityGoals/minecraftBehavior_place_block.md)| AI goal that makes entities place blocks into the world, like Endermen placing their carried block or snow golems leaving snow trails. |

@@ -2242,8 +2242,9 @@
       {
         "id": "minecraft:annotation.break_door",
         "title": "Break Door Minecraft Annotation",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the actor to break doors assuming that that flags set up for the component to use in navigation",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_annotation_break_door"
       },
       {
         "id": "minecraft:annotation.open_door",
@@ -2267,8 +2268,9 @@
       {
         "id": "minecraft:attack",
         "title": "Minecraft Attack",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines an entity's melee attack and any additional effects on it.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_attack"
       },
       {
         "id": "minecraft:attack_cooldown",
@@ -2624,8 +2626,9 @@
       {
         "id": "minecraft:behavior.float_tempt",
         "title": "Float Tempt Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows a mob to be tempted by a player holding a specific item. Uses point-to-point movement. Designed for mobs that are floating (e.g. use the \"minecraft:navigation.float\" component).",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_float_tempt"
       },
       {
         "id": "minecraft:behavior.float_wander",
@@ -3022,8 +3025,9 @@
       {
         "id": "minecraft:behavior.panic",
         "title": "Panic Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows a mob to panic when receiving damage, making it run around and away from the damage source that made it enter this state.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_panic"
       },
       {
         "id": "minecraft:behavior.pet_sleep_with_owner",
@@ -3210,8 +3214,9 @@
       {
         "id": "minecraft:behavior.send_event",
         "title": "Send Event Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows the mob to send an event to another mob.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_send_event"
       },
       {
         "id": "minecraft:behavior.share_items",
@@ -3461,8 +3466,9 @@
       {
         "id": "minecraft:behavior.tempt",
         "title": "Tempt Minecraft Behavior",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Allows a mob to be tempted by a player holding a specific item. Uses pathfinding for movement.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_behavior_tempt"
       },
       {
         "id": "minecraft:behavior.timer_flag_1",
@@ -3634,8 +3640,9 @@
       {
         "id": "minecraft:buoyant",
         "title": "Minecraft Buoyant",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Enables an entity to float on the specified liquid blocks.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_buoyant"
       },
       {
         "id": "minecraft:burns_in_daylight",
@@ -3734,8 +3741,9 @@
       {
         "id": "minecraft:dash_action",
         "title": "Minecraft Dash Action",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Ability for a rideable entity to dash.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_dash_action"
       },
       {
         "id": "minecraft:default_look_angle",
@@ -3770,8 +3778,9 @@
       {
         "id": "minecraft:economy_trade_table",
         "title": "Minecraft Economy Trade Table",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines this entity's ability to trade with players.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_economy_trade_table"
       },
       {
         "id": "minecraft:entity_armor_equipment_slot_mapping",
@@ -3922,8 +3931,9 @@
       {
         "id": "minecraft:healable",
         "title": "Minecraft Healable",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines the interactions with this entity for healing it.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_healable"
       },
       {
         "id": "minecraft:health",
@@ -4004,8 +4014,9 @@
       {
         "id": "minecraft:inventory",
         "title": "Minecraft Inventory",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines this entity's inventory properties.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_inventory"
       },
       {
         "id": "minecraft:is_baby",
@@ -4208,14 +4219,16 @@
       {
         "id": "minecraft:movement.amphibious",
         "title": "Amphibious Minecraft Movement",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "This move control allows the mob to swim in water and walk on land.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_movement_amphibious"
       },
       {
         "id": "minecraft:movement.basic",
         "title": "Basic Minecraft Movement",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "This component accents the movement of an entity.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_movement_basic"
       },
       {
         "id": "minecraft:movement.dolphin",
@@ -4226,44 +4239,51 @@
       {
         "id": "minecraft:movement.fly",
         "title": "Fly Minecraft Movement",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "This move control causes the mob to fly.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_movement_fly"
       },
       {
         "id": "minecraft:movement.generic",
         "title": "Generic Minecraft Movement",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "This move control allows a mob to fly, swim, climb, etc.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_movement_generic"
       },
       {
         "id": "minecraft:movement.glide",
         "title": "Glide Minecraft Movement",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Move control for a flying mob that has a gliding movement",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_movement_glide"
       },
       {
         "id": "minecraft:movement.hover",
         "title": "Hover Minecraft Movement",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "This move control causes the mob to hover.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_movement_hover"
       },
       {
         "id": "minecraft:movement.jump",
         "title": "Jump Minecraft Movement",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Move control that causes the mob to jump as it moves with a specified delay between jumps.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_movement_jump"
       },
       {
         "id": "minecraft:movement.skip",
         "title": "Skip Minecraft Movement",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "This move control causes the mob to hop as it moves.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_movement_skip"
       },
       {
         "id": "minecraft:movement.sway",
         "title": "Sway Minecraft Movement",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "This move control causes the mob to sway side to side giving the impression it is swimming.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_movement_sway"
       },
       {
         "id": "minecraft:movement_sound_distance_offset",
@@ -4491,7 +4511,7 @@
       {
         "id": "minecraft:pushable_by_block",
         "title": "Minecraft Pushable By Block",
-        "description": "Dynamic value",
+        "description": "Allows the entity to be pushed by certain blocks, like Shulker Boxes and Pistons.",
         "dataType": "object"
       },
       {
@@ -4510,8 +4530,9 @@
       {
         "id": "minecraft:rail_movement",
         "title": "Minecraft Rail Movement",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines the entity's movement on the rails. An entity with this component is only allowed to move on the rail.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_rail_movement"
       },
       {
         "id": "minecraft:rail_sensor",
@@ -4539,8 +4560,9 @@
       {
         "id": "minecraft:rideable",
         "title": "Minecraft Rideable",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Determines whether this entity can be ridden. Allows specifying the different seat positions and amount.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_rideable"
       },
       {
         "id": "minecraft:rotation_axis_aligned",
@@ -4561,8 +4583,9 @@
       {
         "id": "minecraft:scale_by_age",
         "title": "Minecraft Scale By Age",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines the entity's size interpolation based on the entity's age.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_scale_by_age"
       },
       {
         "id": "minecraft:scheduler",
@@ -4573,8 +4596,9 @@
       {
         "id": "minecraft:shareables",
         "title": "Minecraft Shareables",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines a list of items the mob wants to share. Each item must have the following parameters:",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_shareables"
       },
       {
         "id": "minecraft:shooter",
@@ -4622,14 +4646,16 @@
       {
         "id": "minecraft:spell_effects",
         "title": "Minecraft Spell Effects",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines the mob effects to add to and remove from the entity.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_spell_effects"
       },
       {
         "id": "minecraft:strength",
         "title": "Minecraft Strength",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines the strength of this entity.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_strength"
       },
       {
         "id": "minecraft:suspect_tracking",
@@ -4659,8 +4685,9 @@
       {
         "id": "minecraft:teleport",
         "title": "Minecraft Teleport",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines an entity's teleporting behavior.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_teleport"
       },
       {
         "id": "minecraft:tick_world",
@@ -4672,8 +4699,9 @@
       {
         "id": "minecraft:timer",
         "title": "Minecraft Timer",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Adds a timer after which an event will fire.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_timer"
       },
       {
         "id": "minecraft:trade_resupply",
@@ -4691,14 +4719,16 @@
       {
         "id": "minecraft:trail",
         "title": "Minecraft Trail",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Causes an entity to leave a trail of blocks as it moves about the world. Obeys Mob Griefing rules.",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_trail"
       },
       {
         "id": "minecraft:transformation",
         "title": "Minecraft Transformation",
-        "description": "Dynamic value",
-        "dataType": "object"
+        "description": "Defines an entity's transformation from the current definition into another",
+        "dataType": "object",
+        "subFormId": "entity/minecraft_transformation"
       },
       {
         "id": "minecraft:transient",
@@ -4808,7 +4838,7 @@
         "subFormId": "entity/minecraft_wither_target_highest_damage"
       }
     ],
-    "dataVersion": "1.26.50"
+    "dataVersion": "1.26.60"
   },
   "description": "Registry of all available entity components that define mob capabilities. Components cover health, movement, combat, AI goals, interactions, physics, sensing, and rendering. Entities combine components to create unique creatures—adding minecraft:health for durability, minecraft:behavior.melee_attack for combat, or minecraft:rideable for mounts."
 }

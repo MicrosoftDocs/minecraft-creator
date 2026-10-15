@@ -21,7 +21,16 @@ Allows an entity to break doors, assuming that that flags set up for the compone
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | break_time | 12 | Integer number | The time in seconds required to break through doors. | 
-| min_difficulty | hard | String from a list of choices | The minimum difficulty that the world must be on for this entity to break doors. | 
+| min_difficulty | hard | [Min Difficulty](#min-difficulty-choices) choices | The minimum difficulty that the world must be on for this entity to break doors. | 
+
+### Min Difficulty choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| easy | Easy | |
+| hard | Hard | |
+| normal | Normal | |
+| peaceful | Peaceful | |
 
 ## Samples
 

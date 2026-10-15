@@ -128,13 +128,25 @@
           "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
             {
               "path": "/minecraft:block/components/minecraft:instrument_sound/",
-              "content": "note.bassattack"
+              "content": "note.bd"
             }
           ],
           "/vanilla/behavior_pack/blocks/black_concrete_slab.block.json": [
             {
               "path": "/minecraft:block/components/minecraft:instrument_sound/",
-              "content": "note.bassattack"
+              "content": "note.bd"
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_wool_double_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:instrument_sound/",
+              "content": "note.guitar"
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/black_wool_slab.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:instrument_sound/",
+              "content": "note.guitar"
             }
           ]
         }
@@ -151,7 +163,7 @@
         {
           "path": "/minecraft:block/components/minecraft:instrument_sound/",
           "content": {
-            "up": "note.bassattack"
+            "up": "note.bd"
           }
         }
       ],
@@ -159,7 +171,7 @@
         {
           "path": "/minecraft:block/components/minecraft:instrument_sound/",
           "content": {
-            "up": "note.bassattack"
+            "up": "note.bd"
           }
         }
       ],
@@ -167,23 +179,23 @@
         {
           "path": "/minecraft:block/components/minecraft:instrument_sound/",
           "content": {
-            "up": "note.bassattack"
+            "up": "note.bd"
           }
         }
       ],
-      "/vanilla/behavior_pack/blocks/blue_concrete_double_slab.block.json": [
+      "/vanilla/behavior_pack/blocks/black_wool_double_slab.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:instrument_sound/",
           "content": {
-            "up": "note.bassattack"
+            "up": "note.guitar"
           }
         }
       ],
-      "/vanilla/behavior_pack/blocks/blue_concrete_slab.block.json": [
+      "/vanilla/behavior_pack/blocks/black_wool_slab.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:instrument_sound/",
           "content": {
-            "up": "note.bassattack"
+            "up": "note.guitar"
           }
         }
       ]

@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Vibrant Visuals
 description: "Overview, settings, and usage of Vibrant Visuals in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/18/2026
+ms.date: 09/04/2026
 ---
 
 # Vibrant Visuals in Bedrock Editor
@@ -17,9 +17,9 @@ Open Minecraft Editor and add Vibrant Visuals to the Action Bar to get started, 
 
 ![Vibrant Visuals Enabled](Media/VibrantVisualsScreenshots/VibrantVisualsEnabled.png)
 
-- **Generate Resource Pack**: A template on mctools.dev for a new resource pack with the Vibrant Visuals settings you've configured.
+- **Generate Resource Pack**: Exports all edited Vibrant Visuals configurations to a resource pack. Enter a pack name in the export dialog; after the export finishes, Editor reports the generated pack path in the log.
 
-- **Export to Clipboard**: Copys the JSON of the current visual setting to your device's clipboard. You can use this to quickly modify parts of a resource pack without the need to generate a completely new one.
+- **Export to Clipboard**: Copies the JSON of the current visual setting to your device's clipboard. You can use this to quickly modify parts of a resource pack without the need to generate a completely new one.
 
 > [!TIP]
 > You can reset the current visual settings to the Editor default by clicking **Revert Changes** near the top of the Vibrant Visuals menu at any time.
@@ -298,6 +298,8 @@ Shadow settings determine the way shadows render in your world.
 ### Texel Size
 
 Changes the size of texel-based shadows (ranges from 1 - 1024).
+
+Texel Size applies only to **Blocky Shadows** and is disabled when **Soft Shadows** is selected.
 
 > [!TIP]
 > A texel is basically a pixel, but for a texture pack instead of an image. For a more detailed explanation, check out [Mozilla’s article on Texels](https://developer.mozilla.org/en-US/docs/Glossary/Texel).
