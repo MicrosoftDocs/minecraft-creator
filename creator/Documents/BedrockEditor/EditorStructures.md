@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Structures Panel
 description: "An overview of the Structures Panel part of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/18/2026
+ms.date: 09/04/2026
 ---
 
 # Structures
@@ -16,7 +16,7 @@ The Structures Panel is routinely synchronized, so you'll also be able to see an
 > [!TIP]
 > Advanced workflows like EditorStructure, EditorStructureManager, and StructureSource use the Editor Structures API. These workflows power features like tags, search by name/ID, and creating from clipboard content.
 
-The Structures panel isn't added to the Action Bar by default. Click the **+** button to add it.
+The Structures panel isn't added to the Action Bar by default. Click the **+** button to add it, or open **View** > **Structures**.
 
 ## Saving a structure
 
@@ -25,6 +25,8 @@ The Structures panel isn't added to the Action Bar by default. Click the **+** b
 2. Press **Ctrl+C** to copy the selection to your clipboard.
 
 3. From Structures, name your structure and click **New from Clipboard**.
+
+When you update an existing structure from the clipboard, Editor asks you to confirm before overwriting it. This replacement can't be undone, and the update action is unavailable when the clipboard is empty.
 
 > [!TIP]
 > When editing a Prefab template, changes to structure offset, rotation, and mirror settings are auto-saved. There is no manual save button — your modifications are persisted automatically after a brief delay.
@@ -35,9 +37,9 @@ The Structures panel isn't added to the Action Bar by default. Click the **+** b
 
 2. Click **Copy to Clipboard**.
 
-3. Press **Ctrl+Shift+V** to begin Paste Preview.
+3. Press **Ctrl+V** to begin Paste Preview.
 
-4. Position, rotate, and mirror as needed, then right-click to place the structure.
+4. Position, rotate, and mirror as needed, then press **Enter** or left-click in **Paste** mode to place the structure.
 
 ### Structure management
 
@@ -62,11 +64,11 @@ These shortcuts support common Structures workflows. Check out [Editor Hotkeys](
 | Name                                             | Shortcut     | Description                                   |
 | :----------------------------------------------- | :----------- | :-------------------------------------------- |
 | Copy Selection                                   | Ctrl+C       | Copies the current selection to the clipboard |
-| Paste Preview                                    | Ctrl+Shift+V | Opens Paste Preview from clipboard            |
-| Paste at Cursor (Paste Preview)                  | Ctrl+F       | Commits the paste at the cursor target        |
+| Paste Preview                                    | Ctrl+V       | Opens Paste Preview from clipboard            |
+| Paste at Cursor (Paste Preview)                  | Enter or Ctrl+V | Commits the paste at the preview position  |
 | Clear Preview (Paste Preview)                    | Ctrl+D       | Clears the current preview                    |
 | Rotate Preview Clockwise (Paste Preview)         | R            | While in Paste Preview                        |
 | Rotate Preview Counter Clockwise (Paste Preview) | Shift+R      | While in Paste Preview                        |
 
 > [!NOTE]
-> Paste Preview also supports moving and mirroring the preview with arrow keys, PgUp/PgDn, X, and Z. Refer to the Paste Preview section in Editor Hotkeys for the complete list.
+> Paste Preview also supports moving and mirroring the preview with arrow keys, PgUp/PgDn, Ctrl+Shift+X, and Ctrl+Shift+Z. Refer to the Paste Preview section in Editor Hotkeys for the complete list.

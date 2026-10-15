@@ -2,6 +2,8 @@
   href: ../DimensionList.md
 - name: Bounds
   href: bounds.md
+- name: Clouds
+  href: clouds.md
 - name: Components
   href: components.md
 - name: DefaultBiome

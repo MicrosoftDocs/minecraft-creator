@@ -79,5 +79,54 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:annotation.break_door",
+    "title": "Entity Break Door Annotation",
+    "description": "Allows the actor to break doors assuming that that flags set up for the component to use in navigation",
+    "fields": [
+      {
+        "id": "break_time",
+        "title": "Break Time",
+        "description": "The time in seconds required to break through doors.",
+        "dataType": "float",
+        "defaultValue": 12
+      },
+      {
+        "id": "min_difficulty",
+        "title": "Min Difficulty",
+        "description": "The minimum difficulty that the world must be on for this entity to break doors.",
+        "dataType": "stringEnum",
+        "defaultValue": "hard",
+        "choices": [
+          {
+            "id": "easy",
+            "title": "Easy"
+          },
+          {
+            "id": "hard",
+            "title": "Hard"
+          },
+          {
+            "id": "normal",
+            "title": "Normal"
+          },
+          {
+            "id": "peaceful",
+            "title": "Peaceful"
+          }
+        ],
+        "mustMatchChoices": true
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:can_break_doors/minecraft:annotation.break_door/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

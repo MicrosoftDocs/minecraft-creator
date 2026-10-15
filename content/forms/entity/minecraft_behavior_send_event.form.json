@@ -163,5 +163,49 @@
       }
     ],
     "samples": {}
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.send_event",
+    "title": "Entity Send Event Behavior",
+    "description": "Allows the mob to send an event to another mob.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": "stringArray",
+        "defaultValue": [],
+        "choices": [
+          {
+            "id": "jump",
+            "title": "Jump"
+          },
+          {
+            "id": "look",
+            "title": "Look"
+          },
+          {
+            "id": "move",
+            "title": "Move"
+          }
+        ],
+        "mustMatchChoices": true
+      },
+      {
+        "id": "event_choices",
+        "title": "Event Choices",
+        "description": "List of spell options to select from. One is randomly chosen each time the goal activates.",
+        "dataType": "objectArray",
+        "defaultValue": [],
+        "subFormId": "entity/sendeventchoice"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {}
   }
 }

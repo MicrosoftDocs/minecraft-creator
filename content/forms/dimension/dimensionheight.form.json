@@ -8,6 +8,7 @@
       {
         "id": "height_range",
         "title": "Height Range",
+        "description": "The total vertical height of the custom dimension. Defaults to 384 if this component is omitted.",
         "dataType": "int",
         "validity": [
           {
@@ -24,6 +25,7 @@
       {
         "id": "min_y",
         "title": "Min Y",
+        "description": "The minimum Y coordinate of the custom dimension. Defaults to -64 if this component is omitted.",
         "dataType": "int",
         "validity": [
           {

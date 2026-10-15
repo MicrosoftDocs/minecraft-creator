@@ -176,105 +176,10 @@
         "alternates": [
           {
             "id": "minecraft:collision_box",
-            "dataType": "object",
-            "subForm": {
-              "id": "minecraft:collision_box",
-              "title": "Collision Box",
-              "description": "Information for the collision box.",
-              "fields": [
-                {
-                  "id": "origin",
-                  "title": "Origin",
-                  "description": "Minimal position of the bounds of the collision box.",
-                  "dataType": "numberArray",
-                  "defaultValue": [
-                    -8,
-                    0,
-                    -8
-                  ],
-                  "technicalDescription": "There are different constraints for different indexes, please refer to member help for more details",
-                  "alternates": [
-                    {
-                      "id": "origin",
-                      "dataType": "object",
-                      "subForm": {
-                        "id": "origin",
-                        "title": "Origin",
-                        "fields": [
-                          {
-                            "id": "x",
-                            "title": "X",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          },
-                          {
-                            "id": "y",
-                            "title": "Y",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          },
-                          {
-                            "id": "z",
-                            "title": "Z",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "size",
-                  "title": "Size",
-                  "description": "Size of each side of the collision box.",
-                  "dataType": "numberArray",
-                  "defaultValue": [
-                    16,
-                    16,
-                    16
-                  ],
-                  "technicalDescription": "There are different constraints for different indexes, please refer to member help for more details",
-                  "alternates": [
-                    {
-                      "id": "size",
-                      "dataType": "object",
-                      "subForm": {
-                        "id": "size",
-                        "title": "Size",
-                        "fields": [
-                          {
-                            "id": "x",
-                            "title": "X",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          },
-                          {
-                            "id": "y",
-                            "title": "Y",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          },
-                          {
-                            "id": "z",
-                            "title": "Z",
-                            "dataType": "float",
-                            "defaultValue": 0
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              ],
-              "dataVersion": "1.26.20"
-            }
-          },
-          {
-            "id": "minecraft:collision_box",
-            "dataType": "object",
+            "dataType": "objectArray",
             "maxLength": 16,
-            "technicalDescription": "The total of each \"origin\" + \"size\" pair, must be inside the following limit: Vec3(-8,0,-8) and Vec3(8,24,8)"
+            "technicalDescription": "The area covered by all boxes must be within Vec3(0,0,0) to Vec3(16,24,16)",
+            "subFormId": "block/bounding_box_data"
           }
         ]
       },
@@ -460,18 +365,13 @@
                   "id": "bone_visibility",
                   "title": "Bone Visibility",
                   "description": "A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a Molang expression that tells whether the bone should be visible or not (value). The expression is limited to using the \"query.block_state()\" query. When using \"bone_visibility\" in geometry components in the \"permutations\" section, you must also have a default version of the geometry component with \"bone_visibility\" in the \"components\" section.",
-                  "dataType": "keyedStringCollection",
+                  "dataType": "object",
                   "defaultValue": {},
                   "maxLength": 64,
                   "alternates": [
                     {
                       "id": "bone_visibility",
-                      "dataType": "keyedObjectCollection",
-                      "subFormId": "legacy/molang_expression"
-                    },
-                    {
-                      "id": "bone_visibility",
-                      "dataType": "float"
+                      "dataType": "keyedBooleanCollection"
                     }
                   ]
                 },
@@ -915,9 +815,15 @@
         "title": "Minecraft Unit Cube",
         "dataType": "object",
         "isDeprecated": true
+      },
+      {
+        "id": "minecraft:vibration_properties",
+        "title": "Minecraft Vibration Properties",
+        "dataType": "object",
+        "subFormId": "block/vibration_properties"
       }
     ],
-    "dataVersion": "1.26.20"
+    "dataVersion": "1.26.60"
   },
   "description": "Container for all components that define custom block behavior and properties. Components control collision, selection boxes, destruction time, light emission, flammability, placement rules, crafting table functionality, and more. Combine components to create unique blocks with specific gameplay characteristics."
 }

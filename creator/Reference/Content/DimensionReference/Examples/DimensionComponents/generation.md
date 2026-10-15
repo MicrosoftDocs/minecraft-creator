@@ -17,4 +17,4 @@ Specifies the generator type used for world generation in the dimension.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| generator_type | *not set* | String |  | 
+| generator_type | *not set* | String | The world generator type used by the custom dimension. | 

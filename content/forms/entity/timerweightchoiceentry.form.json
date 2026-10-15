@@ -1,0 +1,23 @@
+{
+  "id": "TimerWeightChoiceEntry",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "TimerWeightChoiceEntry",
+    "title": "Entity TimerWeightChoiceEntry",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "weight",
+        "title": "Weight",
+        "dataType": "int",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}

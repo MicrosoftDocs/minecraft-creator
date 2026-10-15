@@ -100,5 +100,52 @@
         }
       ]
     }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:movement.basic",
+    "title": "Entity Basic Movement",
+    "description": "This component accents the movement of an entity.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "dataType": "float",
+        "defaultValue": 30
+      }
+    ],
+    "dataVersion": "1.26.60",
+    "samples": {
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ]
+    }
   }
 }

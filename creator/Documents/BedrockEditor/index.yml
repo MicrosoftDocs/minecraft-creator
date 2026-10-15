@@ -8,9 +8,9 @@ metadata:
   description: "Minecraft's Bedrock Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock." # Required; article description that is displayed in search results. < 160 chars.
   ms.service: minecraft-bedrock-edition
   ms.topic: landing-page # Required
-  author: mammerla #Required; your GitHub user alias, with correct capitalization.
-  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/31/2024 #Required; mm/dd/yyyy format.
+  author: brian-schwartz #Required; your GitHub user alias, with correct capitalization.
+  ms.author: brisch #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/04/2026 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -28,8 +28,8 @@ landingContent:
             url: EditorToolMode.md
           - text: World Options
             url: EditorWorldOptions.md
-          - text: Action Bar
-            url: EditorActionBar.md
+          - text: Control Help
+            url: EditorControlHelp.md
           - text: Action Bar
             url: EditorActionBar.md
           - text: Settings
@@ -46,6 +46,8 @@ landingContent:
             url: EditorSelectionTool.md
           - text: Brush Tool
             url: EditorBrushTool.md
+          - text: Primitives Tool
+            url: EditorPrimitivesTool.md
           - text: Extrude Tool
             url: EditorExtrudeTool.md
           - text: Farm Tool
@@ -54,14 +56,20 @@ landingContent:
             url: EditorFillTool.md
           - text: Fill Biomes Tool
             url: EditorFillBiomesTool.md
-          - text: Custom Mesh Tool
-            url: EditorCustomMeshTool.md
           - text: Repeater Tool
             url: EditorRepeaterTool.md
           - text: Terrain Tool
             url: EditorTerrainTool.md
           - text: Summon Tool
             url: EditorSummonTool.md
+  - title: Specialized tools
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Custom Mesh Tool
+            url: EditorCustomMeshTool.md
+          - text: Cinematic Tool
+            url: EditorCameraTool.md
   - title: Inspectors and Panels
     linkLists:
       - linkListType: reference

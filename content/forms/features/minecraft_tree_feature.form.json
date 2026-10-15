@@ -1544,13 +1544,6 @@
         "subForm": {
           "fields": [
             {
-              "dataType": "int",
-              "id": "trunk_width",
-              "title": "Trunk Width",
-              "description": "The width of the tree trunk.",
-              "isRequired": true
-            },
-            {
               "dataType": "object",
               "id": "trunk_height",
               "title": "Trunk Height",

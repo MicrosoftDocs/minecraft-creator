@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Block Inspector
 description: "An overview of the Block Inspector in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/05/2025
+ms.date: 09/04/2026
 ---
 
 # Editor Block Inspector
@@ -23,6 +23,8 @@ The Block Inspector lets you view and modify block properties to fine tune block
 2. Aim at a block and left-click to inspect it.
 3. Review the block's details and components, expanding the sections as needed.
 4. Adjust the block's properties via the drop-downs to set valid values.
+
+The selected block remains highlighted with a bounding box so you can identify which block is being inspected.
 
 
 ## Inspector Pane

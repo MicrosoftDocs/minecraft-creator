@@ -250,7 +250,7 @@
   href: minecraftComponent_movement.fly.md
 - name: minecraft:movement.generic
   href: minecraftComponent_movement.generic.md
-- name: Glide Movement
+- name: minecraft:movement.glide
   href: minecraftComponent_movement.glide.md
 - name: minecraft:movement.hover
   href: minecraftComponent_movement.hover.md

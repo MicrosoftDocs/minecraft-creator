@@ -1,6 +1,6 @@
 ---
 author: chipotle
-ms.author: mikeam
+ms.author: jashir
 title: Building Multiplayer-Aware Scripts
 description: "A guide to writing Minecraft scripts that work correctly in multiplayer scenarios, including synchronization, player management, and avoiding common pitfalls."
 ai-usage: ai-assisted
@@ -160,16 +160,16 @@ Earlier, we described the implications of Minecraft: Bedrock Edition's multiplay
 - Don't treat the game as if it's always single-player. It might be that way in testing, but it won't necessarily be when it's released!
 
     ```javascript
-    // BAD: Assumes one player
+    // ❌ BAD: Assumes one player
     const player = world.getAllPlayers()[0];
     player.sendMessage("Hello!");
 
-    // GOOD: Handle all players
+    // ✅ GOOD: Handle all players
     for (const player of world.getAllPlayers()) {
         player.sendMessage("Hello!");
     }
 
-    // GOOD: Target specific player from event
+    // ✅ GOOD: Target specific player from event
     world.afterEvents.itemUse.subscribe((event) => {
         const player = event.source;  // The player who used the item
         player.sendMessage("You used an item!");
@@ -211,7 +211,7 @@ Earlier, we described the implications of Minecraft: Bedrock Edition's multiplay
 - Watch out for race conditions.
 
     ```javascript
-    // BAD: Player might not be fully loaded
+    // ❌ BAD: Player might not be fully loaded
     world.afterEvents.playerSpawn.subscribe((event) => {
         if (event.initialSpawn) {
             // Player might not be ready for all operations
@@ -219,7 +219,7 @@ Earlier, we described the implications of Minecraft: Bedrock Edition's multiplay
         }
     });
 
-    // GOOD: Delay sensitive operations
+    // ✅ GOOD: Delay sensitive operations
     import { system } from "@minecraft/server";
 
     world.afterEvents.playerSpawn.subscribe((event) => {
@@ -241,12 +241,12 @@ Earlier, we described the implications of Minecraft: Bedrock Edition's multiplay
     ```javascript
     import { system } from "@minecraft/server";
 
-    // BAD: Player might have left
+    // ❌ BAD: Player might have left
     system.runTimeout(() => {
         player.sendMessage("Delayed message");
     }, 100);
 
-    // GOOD: Check player is still valid
+    // ✅ GOOD: Check player is still valid
     system.runTimeout(() => {
         if (player.isValid()) {
             player.sendMessage("Delayed message");

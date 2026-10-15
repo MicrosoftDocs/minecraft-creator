@@ -8,6 +8,7 @@
       {
         "id": "biome",
         "title": "Biome",
+        "description": "The namespaced identifier of the biome used throughout the custom dimension. Defaults to minecraft:ocean if this component is omitted.",
         "dataType": "string",
         "isRequired": true
       }

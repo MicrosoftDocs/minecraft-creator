@@ -1,17 +1,17 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor Brush Tool
 description: "An overview of the Brush Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/05/2025
+ms.date: 09/04/2026
 ---
 
 # Brush Tool
 
 Use the Brush to paint blocks in configurable shapes and sizes. Paint a single shape with one press or continuously while holding the mouse.
 
-![Brush Paint Tool](media/BrushScreenshots/BrushPaint.png)
+![Brush Tool](media/BrushScreenshots/BrushPaint.png)
 
 You can change the brush size, ranging from 1 to 16. Brush sizes are rendered as squares of the selected brush size. This means a brush size of 1 draws a 1x1 block shape. If you select a brush size of 3, you get a 3x3 block shape, or 9 total blocks arranged as a cube.
 
@@ -102,7 +102,7 @@ Here, you'll find sliders that adjust the radius of each of the Brush's axes to 
 
 ## Fill Constraints
 
-Block Filters determine what type of blocks are affected by the Brush Paint action and how your selection is filled.
+Block Filters determine what type of blocks are affected by the Brush action and how your selection is filled.
 
 ![Fil Constraints Menu](media/BrushScreenshots/FillConstraints.png)
 
@@ -112,7 +112,7 @@ Block Filters determine what type of blocks are affected by the Brush Paint acti
 
 - ### Mask
 
-    Lets you specify a list of block types to exclude from the Brush Paint action, preventing them from changing even when included in your selection.
+    Lets you specify a list of block types to exclude from the Brush action, preventing them from changing even when included in your selection.
 
 - ### Replace
 

@@ -1,0 +1,80 @@
+{
+  "id": "TransformationDelay",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "TransformationDelay",
+    "title": "Entity TransformationDelay",
+    "description": "Defines the properties of the delay for the transformation",
+    "fields": [
+      {
+        "id": "block_assist_chance",
+        "title": "Block Assist Chance",
+        "description": "Chance that the entity will look for nearby blocks that can speed up the transformation. Value must be between 0.0 and 1.0",
+        "dataType": "float",
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "block_chance",
+        "title": "Block Chance",
+        "description": "Chance that, once a block is found, will help speed up the transformation",
+        "dataType": "float",
+        "defaultValue": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "block_max",
+        "title": "Block Max",
+        "description": "Maximum number of blocks the entity will look for to aid in the transformation. If not defined or set to 0, it will be set to the block radius",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "block_radius",
+        "title": "Block Radius",
+        "description": "Distance in Blocks that the entity will search for blocks that can help the transformation",
+        "dataType": "int",
+        "defaultValue": 0
+      },
+      {
+        "id": "block_types",
+        "title": "Block Types",
+        "description": "List of blocks that can help the transformation of this entity",
+        "dataType": "stringArray",
+        "defaultValue": []
+      },
+      {
+        "id": "range_max",
+        "title": "Range Max",
+        "description": "Time in seconds to be added to value to have the maximum random time range value until the entity transforms (if non-zero then the time in seconds before the entity transforms will be random between value+range_min and value+range_max)",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "range_min",
+        "title": "Range Min",
+        "description": "Time in seconds to be added to value to have the minimum random time range value until the entity transforms (if non-zero then the time in seconds before the entity transforms will be random between value+range_min and value+range_max)",
+        "dataType": "float",
+        "defaultValue": 0
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "Time in seconds before the entity transforms",
+        "dataType": "float",
+        "defaultValue": 0
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}

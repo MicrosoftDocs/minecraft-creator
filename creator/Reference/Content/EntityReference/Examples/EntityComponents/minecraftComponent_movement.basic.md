@@ -13,7 +13,7 @@ ms.date: 02/11/2025
 This component accents the movement of an entity.
 
 
-## Basic Movement Properties
+## Entity Basic Movement Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|

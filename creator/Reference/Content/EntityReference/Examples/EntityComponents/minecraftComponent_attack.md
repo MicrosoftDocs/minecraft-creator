@@ -13,14 +13,15 @@ ms.date: 02/11/2025
 Defines an entity's melee attack damage and any additional status effects applied on hit. Typical damage values range from 3 (zombie, creeper) to 7-21 (iron golem).
 
 
-## Attack Properties
+## Entity Attack Properties
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| damage | *not set* | Range of floats | Range of the random amount of damage the melee attack deals. | 
+| damage | {"max":0,"min":0} | Range of floats | Range of the random amount of damage the melee attack deals. | 
+| damage (Damage) | *not set* | [Damage (Damage)](#damage-damage) item |  | 
 | effect_amplifier | 0 | Integer number | Amplifier level (potion tier) of the status ailment applied to the damaged entity. | 
 | effect_duration | 0 | Decimal number | Duration in seconds of the status ailment applied to the damaged entity. | 
-| effect_name | *not set* | String | Identifier of the status ailment to apply to an entity attacked by this entity's melee attack. | 
+| effect_name |  | String | Identifier of the status ailment to apply to an entity attacked by this entity's melee attack. | 
 
 ### damage
 
@@ -30,5 +31,16 @@ Range of the random amount of damage the melee attack deals. A negative value ca
 
 Amplifier level (potion tier) of the status ailment applied to the damaged entity. Higher values increase the strength of the effect. Fixed in format version 1.26.30: `effect_amplifier` is now actually applied to the inflicted status effect, so amplifier-sensitive effects such as Hunger now scale correctly when triggered by a mob's melee attack. Prior versions silently ignored this value.
 
+
+### Damage (Damage)
+
+#### Damage Properties
+
+**JSON path:** `damage`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| max | 0 | Decimal number |  | 
+| min | 0 | Decimal number |  | 
 
 ## Samples

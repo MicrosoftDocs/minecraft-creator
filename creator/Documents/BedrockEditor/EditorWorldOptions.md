@@ -1,10 +1,10 @@
 ---
-author: cam-wilkerson
-ms.author: v-cwilkerson
+author: brian-schwartz
+ms.author: brisch
 title: Minecraft Bedrock Editor World Options
 description: "An overview of the World Options in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2025
+ms.date: 09/04/2026
 ---
 
 # Editor World Options
@@ -31,6 +31,8 @@ Opens the Test World panel, where you can test your Editor project as a playable
 
 > [!Note]
 > Test World is only available when hosting a single-player world.
+
+Run `/reload all` while testing to reload Test World content without requiring a separate vanilla client connection.
 
 ![Test world settings window](Media/editor_test_settings.png)
 
@@ -82,7 +84,9 @@ Opens **Time Settings**, where you can:
 
 ## Navigation Panel
 
-Contains a toggle that reveals a birds-eye view mini-map that you can click to teleport to specific coordinates. You can add markers to locations in your world and they'll show up as colored flags within your mini-map in **Stored Locations**.
+Contains a toggle that reveals a bird's-eye view minimap that you can click to teleport to specific coordinates. Hover over the map to see user-friendly biome and block names.
+
+You can add markers to locations in your world, and they'll appear as colored flags in **Stored Locations**. Locations are stored separately for each dimension and shared with all clients in the project. In the Nether, the minimap scans below the bedrock ceiling so useful terrain is visible.
 
 
 ## Weather

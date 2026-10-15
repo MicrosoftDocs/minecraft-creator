@@ -1180,7 +1180,7 @@ Determines how long an item takes to use in combination with components such as 
 |:----------|:-------------|:----|:-----------|:------------- |
 | emit_vibrations | true | Boolean true/false | Whether vibrations are emitted when the item starts or stops being used. |  | 
 | movement_modifier | *not set* | Decimal number | Multiplier applied to the player's movement speed while the item is in use. Value must be <= 1. | Apple: `0.35` | 
-| start_sound | *not set* | [Start Sound](#sound-event-choices) choices | Sound played when the item starts being used. |  | 
+| start_sound | *not set* | String | Sound played when the item starts being used. Accepts the name of any sound event defined in `sound_definitions.json`, including the built-in vanilla sound events. |  | 
 | start_using | always | [Start Using](#start-using-choices) choices | When the player begins using the item. | Apple: `"always"` | 
 | use_duration | 0 | Decimal number | Time, in seconds, that the item takes to use. | Apple: `1.6` | 
 

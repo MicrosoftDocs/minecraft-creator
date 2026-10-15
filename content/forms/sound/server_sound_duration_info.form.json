@@ -1,0 +1,37 @@
+{
+  "id": "Server Sound Duration Info",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Server Sound Duration Info",
+    "title": "Sound Server Sound Duration Info",
+    "description": "Server-authoritative duration metadata. When present, the server tracks the sound's lifetime.",
+    "fields": [
+      {
+        "id": "mode",
+        "title": "Mode",
+        "description": "How the duration drains: \"game_time\" decrements by tick, \"real_time\" decrements by wall-clock time.",
+        "dataType": "stringEnum",
+        "choices": [
+          {
+            "id": "game_time",
+            "title": "Game time"
+          },
+          {
+            "id": "real_time",
+            "title": "Real time"
+          }
+        ],
+        "mustMatchChoices": true,
+        "isRequired": true
+      },
+      {
+        "id": "seconds",
+        "title": "Seconds",
+        "description": "Duration in seconds.",
+        "dataType": "float",
+        "isRequired": true
+      }
+    ],
+    "dataVersion": "1.26.60"
+  }
+}
