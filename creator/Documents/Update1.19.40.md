@@ -31,7 +31,7 @@ Recipes can now use item tags directly instead of item names. This should make w
 
 **Improvements to /loot:**
 
- We've added another Java-parity overload to the /loot command. */loot replace block* allows you to directly target containers and populate slots with items from a specified loot source. This source could be a loot table that already exists in Minecraft, a custom loot table, or a loot table associated with an entity. Read up on how to use this new capability: [Loot Replace Block](LootReplaceBlock.md).
+ We've added another Java-parity overload to the /loot command. */loot replace block* allows you to directly target containers and populate slots with items from a specified loot source. This source could be a loot table that already exists in Minecraft, a custom loot table, or a loot table associated with an entity. Read up on how to use this new capability: [Loot Replace Block](../Commands/commands/loot.md).
 
 **Entity Properties (*Experimental*):**
 
