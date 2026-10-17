@@ -20,7 +20,7 @@ In this guide you'll learn the following:
 > - Requirements for publishing a project to a Realm
 > - How to select a Realm slot
 > - How to configure Realm options
-> - How to publish/dowload a backup Realm
+> - How to publish/download a backup Realm
 
 
 ## Requirements
@@ -43,7 +43,7 @@ The Publish to Realms Pane can be opened via the Action Bar or **File -> Publish
 
 - **Selecting your Realm and slot**: If you have an active Realms subscription your Realm(s) appear in the drop down automatically. Once selected you can specify the world slot you want to publish your Realm to.
 
-- **Publish options**: Similar to Export, publishing to Realms contains settings you can cusomize before publishing. 
+- **Publish options**: Similar to Export, publishing to Realms contains settings you can customize before publishing. 
     ![Image of the Realms Pane.](Media/editor_realms_pane.png)
 
 - **Download**: The Download button saves the world in the current selected Realm slot to the minecraftWorlds folder. This is a great way to backup your world before publishing. 
@@ -54,7 +54,7 @@ The Publish to Realms Pane can be opened via the Action Bar or **File -> Publish
 
 Publishing to Realms uploads your current project to a chosen Realm slot so you and others can play or test across platforms without manual export/import. 
 
-1. Navigate to Realms from the Minecraft laucher home page. Your Realm(s) will automatically appear in the Realm dropdown if you have an active subscription.
+1. Navigate to Realms from the Minecraft launcher home page. Your Realm(s) will automatically appear in the Realm dropdown if you have an active subscription.
 
 2. Choose the Realm you want to work in, then select the world slot you want to publish to.
 
