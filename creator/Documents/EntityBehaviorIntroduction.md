@@ -139,19 +139,19 @@ In this example, a component group is defined which can cause the entity to beco
 
 ```json
 {
-    "format_version":"1.19.0",
+    "format_version": "1.19.0",
     "minecraft:entity": {
         "description": {
-            "identifier":"sample:example",
-            "is_spawnable":true,
-            "is_summonable":true
+            "identifier": "sample:example",
+            "is_spawnable": true,
+            "is_summonable": true
         },
-        "components":{
+        "components": {
             "minecraft:physics": {
             }
         },
         "component_groups": {
-            "sample:baby":{
+            "sample:baby": {
                 "minecraft:behavior.follow_parent": {
                     
                 },
@@ -161,14 +161,14 @@ In this example, a component group is defined which can cause the entity to beco
             }
         },
         "events": {
-            "sample:add_baby": {  
+            "sample:add_baby": {
                 "add": {
-                 "component_groups": { 
-                    ["baby"]
+                    "component_groups": [
+                        "baby"
+                    ]
                 }
             }
         }
-      }
     }
 }
 ```
