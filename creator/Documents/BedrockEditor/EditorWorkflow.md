@@ -4,10 +4,12 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Workflow
 description: "A step-by-step guide for creating, importing and exporting projects and worlds in Minecraft Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2025
+ms.date: 09/28/2026
 ---
 
 # Editor Workflow
+
+An Editor project is an editable world with Editor-specific data. Exporting a playable world (`.mcworld`) creates a separate copy for gameplay without Editor-specific data or Editor extensions. To preserve those features for future editing, keep your project or export a project backup (`.mcproject`).
 
 In this guide you'll learn the following:
 
@@ -15,6 +17,7 @@ In this guide you'll learn the following:
 >
 > - How to create a new project
 > - How to export a playable world
+> - How to back up an editable project
 > - How to import projects/worlds into Editor.
 > - How to use and navigate the export panel
 
@@ -56,6 +59,9 @@ The Export Notes section tells you what version of Minecraft your world will be 
 
 ![Editor Export Notes](media/editor_export_notes.png)
 
+## Back up an Editor project
+
+To share your editable project or keep a separate backup, go to **File** > **Export** and select **Project Backup** as the export type. Editor saves a `.mcproject` archive that can be imported into Editor. A playable `.mcworld` export is not a project backup; changing its file extension does not restore the Editor-specific data removed during export.
 
 ## Import a world or project
 1. Launch Editor and click Play.
@@ -162,11 +168,11 @@ If you want to know more, check out this article to help you learn all about [Mi
 
 - If the editor is closed when you double-click the **.mcworld** file, Minecraft will launch normally and automatically import the file to your world. The world you created in Editor will be listed among any other Minecraft worlds you already have. However, if Editor is still running, double-clicking the file will cause it to be imported into Editor instead.
 
-- To send your project file to someone else so they can work with it in Editor, copy the exported file in **com.mojang/projectbackups** and change the extension to **.mcproject**. Other creators who have the Editor installed can select it.
+- To send your project to someone else for editing, share a `.mcproject` project backup rather than a playable `.mcworld` export.
 
 ### File structure information
 
-As you probably already know, when you create a world in Minecraft, that world is stored in **com.Mojang/minecraftWorlds**. When you create a project in Editor, that file is also considered a world, so it's stored in the **minecraftWorlds** folder too. The difference is that project files are invisible to non-Editor versions of Minecraft unless you import them. However, once you edit them, project files go into the **projectbackups** folder.
+Minecraft stores both playable worlds and Editor projects in **com.mojang/minecraftWorlds**. Editor projects appear in Editor, not in the usual playable-world list. Exported archives are separate files: use a `.mcworld` for gameplay or a `.mcproject` project backup for further editing.
 
 
 ## Try it: Create, export, and open

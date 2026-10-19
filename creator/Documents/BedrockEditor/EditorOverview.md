@@ -4,12 +4,12 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Overview
 description: "An overview of the parts of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 09/28/2026
 ---
 
 # Editor Overview
 
-This overview is intended to introduce you to the parts of the Editor interface and the tools. The keyboard shortcuts, also known as keybindings, have been provided with each tool and in the table at the end of this document.
+This overview introduces Editor projects, the Editor interface, and its tools. For keyboard shortcuts, also known as keybindings, see [Control Help](EditorControlHelp.md).
 
 For a more in-depth experience using the tools to accomplish basic tasks, take a look at the [Editor Tutorial](EditorTutorial.md).
 
@@ -24,13 +24,9 @@ In this manual, you will learn the following:
 >
 > - What the difference is between a project and a world
 > - How to create a project
-> - How to customize the user interface and project world settings
-> - What all the parts of the UI are and where to find them
-> - How to save a project
-> - How to open an existing project
-> - How to export a project as a world
-> - How to open a world created from a project
-> - Where Editor stores exported and saved files
+> - How to create a project and adjust the Editor interface
+> - How to navigate in Editor
+> - Where to learn about exporting a playable world and backing up a project
 
 ## Requirements
 
@@ -45,6 +41,12 @@ To get started, you need the following:
 It's recommended that the following be completed before beginning this tutorial.
 
 - [How to get Minecraft Bedrock Editor](EditorInstallation.md)
+
+## Editor projects and playable worlds
+
+An **Editor project** is a world you work on in Editor. It contains the world you're building as well as Editor-specific data, such as data used by Editor extensions. Projects appear in Editor rather than in the usual list of playable Minecraft worlds.
+
+To play or share your work as a regular Minecraft world, export the project as a **playable world** (`.mcworld`). Exporting creates a separate world for gameplay; it doesn't replace your Editor project. The playable export does not include Editor-specific data or Editor extensions, so keep the project if you want to continue editing with those features. To share or back up an editable project, export a **project backup** (`.mcproject`) instead. See [Editor Workflow](EditorWorkflow.md) for import and export steps.
 
 ## Creating an Editor project
 
