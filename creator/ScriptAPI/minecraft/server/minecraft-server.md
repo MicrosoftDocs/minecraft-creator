@@ -20,11 +20,11 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.10.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.70-beta.20 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.70-beta.21 of Minecraft.
 
 ## Available Versions
-- `2.13.0-beta.1.26.70-preview.20`
-- `2.11.0-rc.1.26.70-preview.20`
+- `2.13.0-beta.1.26.70-preview.21`
+- `2.11.0-rc.1.26.70-preview.21`
 - `2.10.0`
 - `2.9.0`
 - `2.8.0`
@@ -632,6 +632,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockQueryOptions](BlockQueryOptions.md)
 - [BlockRaycastHit](BlockRaycastHit.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
+- [BlockSearchOptions](BlockSearchOptions.md)
 - [CameraAttachOptions](CameraAttachOptions.md)
 - [CameraFadeOptions](CameraFadeOptions.md)
 - [CameraFadeTimeOptions](CameraFadeTimeOptions.md)

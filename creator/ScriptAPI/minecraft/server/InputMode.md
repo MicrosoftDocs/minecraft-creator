@@ -16,6 +16,10 @@ Describes the type of input of a device.
 `Gamepad = "Gamepad"`
 
 Gamepad input.
+### **GamepadAndMouse**
+`GamepadAndMouse = "GamepadAndMouse"`
+
+Gamepad and mouse input.
 ### **KeyboardAndMouse**
 `KeyboardAndMouse = "KeyboardAndMouse"`
 

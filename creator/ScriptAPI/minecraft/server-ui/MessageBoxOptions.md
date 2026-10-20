@@ -6,20 +6,21 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.MessageBoxOptions Interface
 description: Contents of the @minecraft/server-ui.MessageBoxOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # MessageBoxOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Options for configuring a message box.
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **showHorizontalButtons**
 `showHorizontalButtons: boolean;`
 
 Sets the desired layout for the buttons. True displays the buttons horizontally, false displays them vertically. Defaults to false.
 
 Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
