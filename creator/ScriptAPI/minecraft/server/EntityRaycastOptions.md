@@ -40,6 +40,21 @@ Type: *boolean*
 ### **maxDistance**
 `maxDistance?: number;`
 
-Maximum distance, in blocks, to process the raycast.
+Maximum raycast distance, in blocks.
 
 Type: *number*
+
+Notes:
+  - This property has a bounds of [`-2147483648`, `2147483647`]
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **usePreciseRaycast**
+`usePreciseRaycast?: boolean;`
+
+When true, keeps fractional distances and checks the full ray. Defaults to false. When true, negative distances throw InvalidArgumentError.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

@@ -100,6 +100,8 @@ Represents the unique type of network packet.
 `ClientboundMapItemDataPacket = "ClientboundMapItemDataPacket"`
 ### **ClientboundMatchmakingStatePacket**
 `ClientboundMatchmakingStatePacket = "ClientboundMatchmakingStatePacket"`
+### **ClientboundOnlineMusicPlaybackResponsePacket**
+`ClientboundOnlineMusicPlaybackResponsePacket = "ClientboundOnlineMusicPlaybackResponsePacket"`
 ### **ClientboundPlayAudioContentPacket**
 `ClientboundPlayAudioContentPacket = "ClientboundPlayAudioContentPacket"`
 ### **ClientboundStonecutterSetRecipePacket**
@@ -354,6 +356,8 @@ Represents the unique type of network packet.
 `ServerboundPackSettingChangePacket = "ServerboundPackSettingChangePacket"`
 ### **ServerboundRegisterAudioContentPacket**
 `ServerboundRegisterAudioContentPacket = "ServerboundRegisterAudioContentPacket"`
+### **ServerboundRequestOnlineMusicPlaybackPacket**
+`ServerboundRequestOnlineMusicPlaybackPacket = "ServerboundRequestOnlineMusicPlaybackPacket"`
 ### **ServerboundStonecutterSetRecipePacket**
 `ServerboundStonecutterSetRecipePacket = "ServerboundStonecutterSetRecipePacket"`
 ### **ServerPlayerPostMovePositionPacket**

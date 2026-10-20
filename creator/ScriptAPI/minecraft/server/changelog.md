@@ -10,8 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.13.0-beta.1.26.70-preview.20](#2130-beta12670-preview20)
-- [2.11.0-rc.1.26.70-preview.20](#2110-rc12670-preview20)
+- [2.13.0-beta.1.26.70-preview.21](#2130-beta12670-preview21)
+- [2.11.0-rc.1.26.70-preview.21](#2110-rc12670-preview21)
 - [2.10.0](#2100)
 - [2.9.0](#290)
 - [2.8.0](#280)
@@ -44,7 +44,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.13.0-beta.1.26.70-preview.20
+## 2.13.0-beta.1.26.70-preview.21
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -222,13 +222,15 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)
 - Added value `PlayerWaypoints`
+#### Changed enum [`InputMode`](InputMode.md)
+- Added value `GamepadAndMouse`
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `BlockEntityStorage`
 #### Added enum [`PassengerOfBlockEmoteType`](PassengerOfBlockEmoteType.md)
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`PoiBlockOccupancyFilter`](PoiBlockOccupancyFilter.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
-## 2.11.0-rc.1.26.70-preview.20
+## 2.11.0-rc.1.26.70-preview.21
 #### Changed *[`Dimension`](Dimension.md)*
 - Added function *[`spawnXp`](Dimension.md#spawnxp)*
 #### Changed *[`EntityIsTamedComponent`](EntityIsTamedComponent.md)*

@@ -12,12 +12,7 @@ description: Contents of the @minecraft/server-ui.MessageBox class.
 A simple message form with two buttons and a text body. Use this class to show a basic dialog to a player and handle the player's button selection.
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [constructor](#constructor)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-stable"
-- [constructor](#constructor)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [body](#body)
 ::: moniker-end
@@ -39,7 +34,6 @@ A simple message form with two buttons and a text body. Use this class to show a
 - [body](#body)
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **constructor**
 `
 new MessageBox(player: minecraftserver.Player, title: ObservableString | ObservableUIRawMessage | string | UIRawMessage, options?: MessageBoxOptions)
@@ -59,37 +53,10 @@ Creates a new MessageBox for the specified player with the given title.
   Optional configuration for the message box, such as the button layout.
 
 **Returns** [*MessageBox*](MessageBox.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-stable"
-### **constructor**
-`
-new MessageBox(player: minecraftserver.Player, title: ObservableString | ObservableUIRawMessage | string | UIRawMessage)
-`
-
-Creates a new MessageBox for the specified player with the given title.
-
-#### **Parameters**
-- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
-  
-  The player to show this message box to.
-- **title**: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
-  
-  The title text to display at the top of the message box.
-
-**Returns** [*MessageBox*](MessageBox.md)
-  
-Notes:
-- This function can throw errors.
-  - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **body**
