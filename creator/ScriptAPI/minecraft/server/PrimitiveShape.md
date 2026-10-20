@@ -34,6 +34,8 @@ Type: [*RGBA*](RGBA.md)
 ### **defaultVisibleToAll**
 `defaultVisibleToAll: boolean;`
 
+Defaults to true. If set to true, we default to being visible to all players if visibleTo is empty - hiddenFrom still applies afterwards. If set to false, we default to hiding the shape from all players if visibleTo is empty.
+
 Type: *boolean*
 
 > [!CAUTION]
@@ -57,6 +59,8 @@ Type: *boolean*
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **hiddenFrom**
 `hiddenFrom: Player[];`
+
+The list of players that this shape will be hidden from. If a player is listed in both this and visibleTo, this takes priority (it will be hidden from the player).
 
 Type: [*Player*](Player.md)[]
 

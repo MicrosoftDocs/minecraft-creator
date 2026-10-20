@@ -1190,6 +1190,8 @@
       href: minecraft/server/BlockRaycastHit.md
     - name: BlockRaycastOptions
       href: minecraft/server/BlockRaycastOptions.md
+    - name: BlockSearchOptions
+      href: minecraft/server/BlockSearchOptions.md
     - name: CameraAttachOptions
       href: minecraft/server/CameraAttachOptions.md
     - name: CameraFadeOptions

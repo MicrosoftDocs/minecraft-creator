@@ -66,6 +66,6 @@ Notes:
 ## Constants
 
 ### **componentId**
-`static read-only componentId = "minecraft:block_actor_dynamic_properties";`
+`static read-only componentId = "minecraft:block_dynamic_properties";`
 
 Type: *string*

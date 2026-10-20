@@ -36,6 +36,9 @@ Type: *boolean*
 ### **maxDistance**
 `maxDistance?: number;`
 
-Maximum distance, in blocks, to process the raycast.
+Maximum raycast distance, in blocks.
 
 Type: *number*
+
+Notes:
+  - This property has a bounds of [`-2147483648`, `2147483647`]
