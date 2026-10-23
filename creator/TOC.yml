@@ -516,6 +516,8 @@
               href: Documents/CustomBlockOversized.md
         - name: Voxel Shapes
           href: Documents/VoxelShapes.md
+        - name: Introduction to Points of Interest
+          href: Documents/PointsOfInterest.md
     - name: Tools and Libraries
       items:
         - name: Commonly Used Tools
