@@ -96,6 +96,8 @@
               href: Documents/AddCustomDieBlock.md
             - name: "Get Fancy: Create a Sushi Block"
               href: Documents/AdvancedCustomBlocks.md
+            - name: "Block Entity: Create a Mob Vault"
+              href: Documents/BlockEntity.md
             - name: Create an Animated Block Texture
               href: Documents/CreateAnimatedBlockTexture.md
             - name: Create a Variations Block Texture
@@ -496,6 +498,8 @@
               href: Documents/AddCustomDieBlock.md
             - name: "Create a Sushi Block: Advanced Custom Blocks"
               href: Documents/AdvancedCustomBlocks.md
+            - name: "Block Entity: Create a Mob Vault"
+              href: Documents/BlockEntity.md
             - name: Using Block Traits
               href: Documents/intro-block-traits.md
             - name: Create a Multi-Block
@@ -512,6 +516,8 @@
               href: Documents/CustomBlockOversized.md
         - name: Voxel Shapes
           href: Documents/VoxelShapes.md
+        - name: Introduction to Points of Interest
+          href: Documents/PointsOfInterest.md
     - name: Tools and Libraries
       items:
         - name: Commonly Used Tools

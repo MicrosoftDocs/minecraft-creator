@@ -4,12 +4,12 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Installation
 description: "A guide detailing the process of installing and testing Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/08/2025
+ms.date: 09/28/2026
 ---
 
 # How to get Minecraft Editor
 
-Minecraft's Bedrock Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock. The Editor is available in Retail and Preview editions of Minecraft Bedrock. You can access the Editor either through the Minecraft Launcher or a shortcut you create on your computer desktop.
+Minecraft's Bedrock Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock. Editor is available in both the retail version of Minecraft for Windows and Minecraft Preview. Launch it from the Minecraft Launcher's **Creator Tools** tab or with a desktop shortcut; opening Minecraft from its usual Play button does not open Editor.
 
 > [!NOTE]
 > Images in this document may vary slightly from what you have on your screen.
@@ -52,7 +52,7 @@ Once the Minecraft Launcher is installed, navigate to the Creator Tools tab. Fro
 
 ![Image of Minecraft Launcher app to install versions of Bedrock](Media/editor_launcher_install.png)
 
-To switch the target version, select the version from the drop-down.
+To switch between retail and Preview, select the version from the drop-down.
 
 ![Image of Minecraft Launcher app install versions](Media/editor_launcher_version.png)
 
@@ -60,7 +60,7 @@ After you install Bedrock, a **Create** button appears under the Creator Tools t
 
 ![Image of Minecraft Launcher app to launch Editor](Media/editor_launcher_create.png)
 
-To launch Editor, click Create. The Launcher opens Bedrock in Editor mode.
+To launch Editor in the selected version, click **Create**. The Launcher opens Bedrock in Editor mode.
 
 ## Make a Shortcut
 
@@ -71,13 +71,11 @@ Alternatively, if you already have Bedrock installed and want to create a shortc
 
 2. For the location of the item, enter the following:
 
-    `minecraft://creator/?Editor=true`
+    - Retail: `minecraft://creator/?Editor=true`
+    - Preview: `minecraft-preview://creator/?Editor=true`
 
-    or
+    Use the URI for the version you installed. The `Editor=true` parameter is case-sensitive.
 
-    `minecraft-preview://creator/?Editor=true`
-
-    This is case-sensitive and needs to match exactly.
     ![Editor create shortcut path](Media/editor_shortcut.png)
 
 3. Click **Next** and give your shortcut a name like **Minecraft Editor**.
@@ -103,24 +101,12 @@ Use the Launcher’s Create button or the desktop shortcut to open Editor. Openi
 
 Three things to check:  
 
-- Is the desktop shortcut set up correctly? Remember it is case-sensitive and needs to match exactly. Ensure it says the following: **`minecraft://creator/?Editor=true`**.
+- Does the shortcut use the URI for the version you installed? Use **`minecraft://creator/?Editor=true`** for retail or **`minecraft-preview://creator/?Editor=true`** for Preview. Check the case of `Editor=true`.
 
 - Did you install Bedrock? If not, you need to do that.
 
-- Do you have both Bedrock Preview and Bedrock (Retail) installed? You may have selected a checkbox that says "Always open" for Bedrock (Retail) even if you are trying to open a Preview version. To fix this, perform the following steps:
+- If both versions are installed, check that the shortcut starts the version you intended. If Windows prompts you to choose an app for the URI, select the corresponding Minecraft or Minecraft Preview app.
 
-    1. Press **Windows + I** to open the Settings app.
-
-    2. Select **Apps** and click **Default apps**.
-
-    3. Scroll down to **Minecraft** and select it.
-
-    4. Scroll down and find the **MINECRAFT** entry (it should also say Minecraft | URL:minecraft) and click it.
-
-    5. In the pop-up, select **Minecraft** and click **OK**.
-
-    ![Apps > Default Apps window where you can set Minecraft Preview as the default app.](Media/editor_install_select_default_app.png)
-
-- If you would like to open Editor a different way, you can open a file explorer window and enter **`minecraft://creator/?Editor=true`** into the path:
+- You can also enter the URI for your installed version in the File Explorer address bar to launch Editor:
 
     ![File explorer window with the Editor shortcut as the path](Media/editor_install_file_explorer_path.png)
