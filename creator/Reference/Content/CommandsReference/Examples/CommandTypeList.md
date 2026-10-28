@@ -47,7 +47,7 @@ ms.date: 02/11/2025
 | [Scoreboard Objective](CommandTypes/type_objectivename.md)| Name of a scoreboard objective. |
 | [Scoreboard Operation](CommandTypes/type_operator.md)| Mathematical operation for scoreboard calculations. |
 | [Function Path](CommandTypes/type_pathcommand.md)| Path to a function file within a behavior pack. |
-| [Player Selector](CommandTypes/type_player.selector.md)| Targets one or more players. |
+| [Player Selector](CommandTypes/type_player_selector.md)| Targets one or more players. |
 | [Block Position](CommandTypes/type_position.md)| A 3D block position (integer coordinates). |
 | [Position (x y z)](CommandTypes/type_position_float.md)| A 3D position in the world. |
 | [Suffixed Value](CommandTypes/type_postfixvalue.md)| A value with a unit suffix. |

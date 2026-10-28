@@ -10,7 +10,7 @@ ms.date: 02/11/2025
 
 # `/scoreboard` Command
 
-Tracks and displays scores for various objectives. See more information about its use in the [Scoreboards Objectives Commands documentation](/creator/documents/scoreboardintroduction#scoreboard-objectives-commands) page.
+Tracks and displays scores for various objectives. See more information about its use in the [Scoreboards Objectives Commands documentation](../../../../../Documents/ScoreboardIntroduction.md#objective-commands) page.
 
 | | |
 |:---|:---|
