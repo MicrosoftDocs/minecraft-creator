@@ -17,13 +17,9 @@ A simple message form with two buttons and a text body. Use this class to show a
 - [body](#body)
 ::: moniker-end
 - [button1](#button1)
-::: moniker range="=minecraft-bedrock-experimental"
 - [button1WithOptions](#button1withoptions)
-::: moniker-end
 - [button2](#button2)
-::: moniker range="=minecraft-bedrock-experimental"
 - [button2WithOptions](#button2withoptions)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [button3WithOptions](#button3withoptions)
 ::: moniker-end
@@ -105,7 +101,6 @@ Notes:
 - This function can throw errors.
   - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **button1WithOptions**
 `
 button1WithOptions(label: ObservableString | ObservableUIRawMessage | string | UIRawMessage, options?: MessageBoxButtonOptions): MessageBox
@@ -122,15 +117,11 @@ Sets the label and options for the first button of the message box. Returns the 
   Optional configuration for the first button, such as tooltip and image.
 
 **Returns** [*MessageBox*](MessageBox.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
-::: moniker-end
 
 ### **button2**
 `
@@ -154,7 +145,6 @@ Notes:
 - This function can throw errors.
   - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **button2WithOptions**
 `
 button2WithOptions(label: ObservableString | ObservableUIRawMessage | string | UIRawMessage, options?: MessageBoxButtonOptions): MessageBox
@@ -171,15 +161,11 @@ Sets the label and options for the second button of the message box. Returns the
   Optional configuration for the second button, such as tooltip and image.
 
 **Returns** [*MessageBox*](MessageBox.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*InvalidFormModificationError*](InvalidFormModificationError.md)
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **button3WithOptions**

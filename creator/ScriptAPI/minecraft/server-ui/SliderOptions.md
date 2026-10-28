@@ -46,17 +46,12 @@ The increment amount between each slider step. Defaults to 1 if not specified.
 
 Type: *number* | [*ObservableNumber*](ObservableNumber.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **tooltip**
 `tooltip?: ObservableString | ObservableUIRawMessage | string | UIRawMessage;`
 
 Text shown in a tooltip when the player hovers over the slider.
 
 Type: [*ObservableString*](ObservableString.md) | [*ObservableUIRawMessage*](ObservableUIRawMessage.md) | *string* | [*UIRawMessage*](UIRawMessage.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **visible**
 `visible?: boolean | ObservableBoolean;`

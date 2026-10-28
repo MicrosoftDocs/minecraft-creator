@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.WorldClockOnPausedAfterEventSignal Class
 description: Contents of the @minecraft/server.WorldClockOnPausedAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WorldClockOnPausedAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to a [*@minecraft/server.WorldClock*](../../../scriptapi/minecraft/server/WorldClock.md) being paused.
 

@@ -16,7 +16,6 @@ When added, this component signifies that this entity is currently tamed.
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **tamedToPlayer**
 `read-only tamedToPlayer?: Player;`
 
@@ -24,15 +23,10 @@ Returns the player that has tamed the entity, or 'undefined' if the entity has n
 
 Type: [*Player*](Player.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **tamedToPlayerId**
 `read-only tamedToPlayerId?: string;`
 
@@ -40,13 +34,9 @@ Returns the id of the player that has tamed the entity, or 'undefined' if the en
 
 Type: *string*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end
 
 ## Constants
 

@@ -26,6 +26,7 @@ description: Contents of the @minecraft/server.BlockComponent class.
 - [*BlockPrecipitationInteractionsComponent*](BlockPrecipitationInteractionsComponent.md)
 - [*BlockRedstoneProducerComponent*](BlockRedstoneProducerComponent.md)
 - [*BlockEntityStorageComponent*](BlockEntityStorageComponent.md)
+- [*BlockItemFrameComponent*](BlockItemFrameComponent.md)
 - [*BlockRecipeCraftingComponent*](BlockRecipeCraftingComponent.md)
 - [*BlockRecipeProcessingComponent*](BlockRecipeProcessingComponent.md)
 - [*BlockVibrationPropertiesComponent*](BlockVibrationPropertiesComponent.md)

@@ -16,6 +16,7 @@ Represents a UI session for a given player
 - [navigateToDocumentation](#navigatetodocumentation)
 - [navigateToFeedback](#navigatetofeedback)
 - [navigateToPauseScreen](#navigatetopausescreen)
+- [navigateToRealmsHub](#navigatetorealmshub)
 - [navigateToSamples](#navigatetosamples)
 - [saveAndExit](#saveandexit)
 - [showKeyboardSettings](#showkeyboardsettings)
@@ -58,6 +59,15 @@ navigateToPauseScreen(): void
 `
 
 Navigates to the pause screen
+
+**Returns** *void*
+
+### **navigateToRealmsHub**
+`
+navigateToRealmsHub(): void
+`
+
+Navigates to the Realms Hub screen for the current Realm
 
 **Returns** *void*
 

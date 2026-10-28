@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.WorldClockOnResumedAfterEvent Class
 description: Contents of the @minecraft/server.WorldClockOnResumedAfterEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WorldClockOnResumedAfterEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information related to a [*@minecraft/server.WorldClock*](../../../scriptapi/minecraft/server/WorldClock.md) being resumed.
 

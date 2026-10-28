@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.WorldClockOnTimeMarkerAfterEventSignal Class
 description: Contents of the @minecraft/server.WorldClockOnTimeMarkerAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WorldClockOnTimeMarkerAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to when the time of a [*@minecraft/server.WorldClock*](../../../scriptapi/minecraft/server/WorldClock.md) hits a [*@minecraft/server.TimeMarker*](../../../scriptapi/minecraft/server/TimeMarker.md).
 

@@ -24,6 +24,10 @@ The types of block components that are accessible via function Block.getComponen
 `Inventory = "minecraft:inventory"`
 
 Represents the inventory of a block in the world. Used with blocks like chests.
+### **ItemFrame**
+`ItemFrame = "minecraft:item_frame"`
+
+Represents an item frame block and provides access to the item displayed in the frame.
 ### **MapColor**
 `MapColor = "minecraft:map_color"`
 

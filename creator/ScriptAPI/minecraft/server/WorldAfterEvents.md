@@ -708,7 +708,6 @@ Type: [*WeatherChangeAfterEventSignal*](WeatherChangeAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **worldClockOnPaused**
 `read-only worldClockOnPaused: WorldClockOnPausedAfterEventSignal;`
 
@@ -716,14 +715,9 @@ This event fires when a [*@minecraft/server.WorldClock*](../../../scriptapi/mine
 
 Type: [*WorldClockOnPausedAfterEventSignal*](WorldClockOnPausedAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **worldClockOnResumed**
 `read-only worldClockOnResumed: WorldClockOnResumedAfterEventSignal;`
 
@@ -731,14 +725,9 @@ This event fires when a [*@minecraft/server.WorldClock*](../../../scriptapi/mine
 
 Type: [*WorldClockOnResumedAfterEventSignal*](WorldClockOnResumedAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **worldClockOnTimeMarker**
 `read-only worldClockOnTimeMarker: WorldClockOnTimeMarkerAfterEventSignal;`
 
@@ -746,14 +735,9 @@ This event fires when the time of a [*@minecraft/server.WorldClock*](../../../sc
 
 Type: [*WorldClockOnTimeMarkerAfterEventSignal*](WorldClockOnTimeMarkerAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **worldClockOnTimeModified**
 `read-only worldClockOnTimeModified: WorldClockOnTimeModifiedAfterEventSignal;`
 
@@ -761,12 +745,8 @@ This event fires when a [*@minecraft/server.WorldClock*](../../../scriptapi/mine
 
 Type: [*WorldClockOnTimeModifiedAfterEventSignal*](WorldClockOnTimeModifiedAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **worldLoad**
 `read-only worldLoad: WorldLoadAfterEventSignal;`

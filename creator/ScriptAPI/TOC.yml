@@ -162,6 +162,8 @@
       href: minecraft/server/InputPermissionCategory.md
     - name: ItemComponentTypes
       href: minecraft/server/ItemComponentTypes.md
+    - name: ItemFrameRotation
+      href: minecraft/server/ItemFrameRotation.md
     - name: ItemLockMode
       href: minecraft/server/ItemLockMode.md
     - name: LiquidSettings
@@ -306,6 +308,8 @@
       href: minecraft/server/BlockInstrumentComponent.md
     - name: BlockInventoryComponent
       href: minecraft/server/BlockInventoryComponent.md
+    - name: BlockItemFrameComponent
+      href: minecraft/server/BlockItemFrameComponent.md
     - name: BlockLocationIterator
       href: minecraft/server/BlockLocationIterator.md
     - name: BlockMapColorComponent
