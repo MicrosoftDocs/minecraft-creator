@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.WorldClockRegistry Class
 description: Contents of the @minecraft/server.WorldClockRegistry class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WorldClockRegistry Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Provides the functionality for registering custom world clocks. World clocks can only be registered during the system startup event.
 

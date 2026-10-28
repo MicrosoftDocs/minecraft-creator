@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.WorldClockRegistrationOptions Interface
 description: Contents of the @minecraft/server.WorldClockRegistrationOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WorldClockRegistrationOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains additional options for registering world clocks.
 

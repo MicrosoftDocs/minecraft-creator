@@ -221,7 +221,6 @@ Type: [*WeatherChangeBeforeEventSignal*](WeatherChangeBeforeEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **worldClockOnRestart**
 `read-only worldClockOnRestart: WorldClockOnRestartBeforeEventSignal;`
 
@@ -229,9 +228,5 @@ This event fires when a [*@minecraft/server.WorldClock*](../../../scriptapi/mine
 
 Type: [*WorldClockOnRestartBeforeEventSignal*](WorldClockOnRestartBeforeEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
