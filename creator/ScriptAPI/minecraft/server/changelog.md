@@ -10,8 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.13.0-beta.1.26.70-preview.21](#2130-beta12670-preview21)
-- [2.11.0-rc.1.26.70-preview.21](#2110-rc12670-preview21)
+- [2.13.0-beta.1.26.70-preview.22](#2130-beta12670-preview22)
+- [2.11.0](#2110)
 - [2.10.0](#2100)
 - [2.9.0](#290)
 - [2.8.0](#280)
@@ -44,7 +44,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.13.0-beta.1.26.70-preview.21
+## 2.13.0-beta.1.26.70-preview.22
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -99,6 +99,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`firstUpdate`](BlockComponentRedstoneUpdateEvent.md#firstupdate)*
 #### Added *[`BlockEntityStorageComponent`](BlockEntityStorageComponent.md)*
 #### Added *[`BlockEntityStorageInfo`](BlockEntityStorageInfo.md)*
+#### Added *[`BlockItemFrameComponent`](BlockItemFrameComponent.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Added *[`BlockRecipeCraftingComponent`](BlockRecipeCraftingComponent.md)*
@@ -211,6 +212,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
 - Added value `EntityStorage`
+- Added value `ItemFrame`
 - Added value `RecipeCrafting`
 - Added value `RecipeProcessing`
 - Added value `VibrationProperties`
@@ -226,11 +228,12 @@ description: Changelog of the `@minecraft/server` module
 - Added value `GamepadAndMouse`
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `BlockEntityStorage`
+#### Added enum [`ItemFrameRotation`](ItemFrameRotation.md)
 #### Added enum [`PassengerOfBlockEmoteType`](PassengerOfBlockEmoteType.md)
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`PoiBlockOccupancyFilter`](PoiBlockOccupancyFilter.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
-## 2.11.0-rc.1.26.70-preview.21
+## 2.11.0
 #### Changed *[`Dimension`](Dimension.md)*
 - Added function *[`spawnXp`](Dimension.md#spawnxp)*
 #### Changed *[`EntityIsTamedComponent`](EntityIsTamedComponent.md)*

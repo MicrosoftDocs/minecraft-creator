@@ -42,27 +42,14 @@ Gets the identifier of the sound event this instance was started with.
 Type: *string*
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [fade](#fade)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [pause](#pause)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [resume](#resume)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [seekTo](#seekto)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [setPitch](#setpitch)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [setVolume](#setvolume)
-::: moniker-end
 - [stop](#stop)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **fade**
 `
 fade(duration: number, targetVolume: number): void
@@ -79,45 +66,30 @@ Fades this sound instance from its current volume multiplier to the target multi
   * Minimum Bound: `0`
   
   Volume multiplier to fade to, relative to the selected sound variant's volume. Must be non-negative.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **pause**
 `
 pause(): void
 `
 
 Pauses this sound.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **resume**
 `
 resume(): void
 `
 
 Resumes this sound after a pause.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **seekTo**
 `
 seekTo(seconds: number): void
@@ -130,17 +102,12 @@ Sets the playback position of this sound instance.
   * Bounds: [`0`, `107374184`]
   
   Position to seek to in seconds. Must be non-negative.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setPitch**
 `
 setPitch(pitch: number): void
@@ -153,15 +120,10 @@ Sets the pitch of this sound instance.
   * Bounds: [`0.009999999776482582`, `10`]
   
   Pitch multiplier between 0.01 and 10.0. A value of 1.0 is normal pitch.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setVolume**
 `
 setVolume(volume: number): void
@@ -174,13 +136,9 @@ Sets the volume multiplier of this sound instance relative to the volume of the 
   * Bounds: [`0`, `10`]
   
   Volume multiplier between 0.0 and 10.0. A value of 1.0 uses the selected sound variant's volume.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in restricted-execution mode.
-::: moniker-end
 
 ### **stop**
 `

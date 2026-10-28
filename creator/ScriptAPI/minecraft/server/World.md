@@ -143,9 +143,7 @@ Type: [*TickingAreaManager*](TickingAreaManager.md)
 - [getAbsoluteTime](#getabsolutetime)
 - [getAimAssist](#getaimassist)
 - [getAllPlayers](#getallplayers)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getClock](#getclock)
-::: moniker-end
 - [getDay](#getday)
 - [getDefaultSpawnLocation](#getdefaultspawnlocation)
 - [getDifficulty](#getdifficulty)
@@ -236,7 +234,6 @@ Notes:
 - This function can throw errors.
   - Throws [*CommandError*](CommandError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getClock**
 `
 getClock(name: string): WorldClock
@@ -250,14 +247,10 @@ Retrieves a world clock by its name.
   The name of the world clock to retrieve.
 
 **Returns** [*WorldClock*](WorldClock.md) - The [*@minecraft/server.WorldClock*](../../../scriptapi/minecraft/server/WorldClock.md) with the given name.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*WorldClockNotFoundError*](WorldClockNotFoundError.md)
-::: moniker-end
 
 ### **getDay**
 `

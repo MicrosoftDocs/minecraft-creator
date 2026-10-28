@@ -17,14 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.10.0"
+    "version": "2.11.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.70-beta.21 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.70-beta.22 of Minecraft.
 
 ## Available Versions
-- `2.13.0-beta.1.26.70-preview.21`
-- `2.11.0-rc.1.26.70-preview.21`
+- `2.13.0-beta.1.26.70-preview.22`
+- `2.11.0`
 - `2.10.0`
 - `2.9.0`
 - `2.8.0`
@@ -103,6 +103,7 @@ The following API versions are from a major version that is documented here: [*@
 - [InputMode](InputMode.md)
 - [InputPermissionCategory](InputPermissionCategory.md)
 - [ItemComponentTypes](ItemComponentTypes.md)
+- [ItemFrameRotation](ItemFrameRotation.md)
 - [ItemLockMode](ItemLockMode.md)
 - [LiquidSettings](LiquidSettings.md)
 - [LiquidType](LiquidType.md)
@@ -188,6 +189,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockFluidContainerComponent](BlockFluidContainerComponent.md)
 - [BlockInstrumentComponent](BlockInstrumentComponent.md)
 - [BlockInventoryComponent](BlockInventoryComponent.md)
+- [BlockItemFrameComponent](BlockItemFrameComponent.md)
 - [BlockLocationIterator](BlockLocationIterator.md)
 - [BlockMapColorComponent](BlockMapColorComponent.md)
 - [BlockMovableComponent](BlockMovableComponent.md)

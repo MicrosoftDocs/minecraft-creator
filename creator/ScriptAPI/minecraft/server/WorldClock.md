@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.WorldClock Class
 description: Contents of the @minecraft/server.WorldClock class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WorldClock Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A class that represents a particular clock within a world.
 
