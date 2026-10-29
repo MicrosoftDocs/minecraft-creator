@@ -1,10 +1,10 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Repeater Tool
 description: "An overview of the Repeater Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/09/2025
+ms.date: 10/14/2026
 ---
 
 # Repeater Tool
@@ -20,20 +20,20 @@ The Repeater makes one or more copies of your current selection at regular offse
 
 Spacing refers to the size of the area between each repetition. If you leave the value for an axis at 0, the selection will not repeat along that axis.
 
-- **Auto spacing**: Calculates spacing from your selection’s bounding box plus 1 block in each axis. This places copies edge‑to‑edge without overlap by default.
+- **Auto spacing**: Uses the inclusive size of the selection's bounding box on each axis: maximum coordinate minus minimum coordinate plus one. This places copies edge-to-edge without an extra gap.
 
 - **Manual control**: Edit X, Y, Z spacing values to change the offset on the corresponding axis.
 
 - **Zero spacing**: Setting an axis to 0 prevents movement along that axis (useful for staying in a single line or plane).
 
 > [!TIP]
-> The maximum value for each axis is the size of your world,but very large spacing values and very high copy counts can impact performance while previewing.
+> Spacing affects how many repetitions are available. If you increase spacing, the tool can lower the maximum repetition count to keep the preview within its limits.
 
 
 ## Line
 Makes a one‑dimensional row of copies along the direction implied by non‑zero spacing values.
 
-- **Repetitions**: Set how many copies to make, from 1 to 100 (default is 5). Each copy is offset by multiples of the spacing.
+- **Repetitions**: Set how many copies to make. The default is 5, and the general range is 1 to 100. The maximum can be lower depending on spacing and preview limits. Each copy is offset by a multiple of the spacing.
 
 - **Preview**: Shows a row of outlined instances; edit values to update live, then click Apply to write them to the world in one transaction (Undo with Ctrl+Z).
 
@@ -67,7 +67,7 @@ When selected, repetition counts for the X, Y, and Z axes are set independently 
 
 4. Verify the preview looks correct.
 
-4. Click **Apply** to place all copies at once. The operation is performed as a single action so you can Undo.
+5. Click **Apply** to place all copies at once. The operation is performed as a single action so you can Undo.
 
 ![Animation of the repeater tool.](Media/editor_repeater_tool.gif)
 

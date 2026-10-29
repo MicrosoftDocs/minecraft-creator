@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page # Required
   author: brian-schwartz #Required; your GitHub user alias, with correct capitalization.
   ms.author: brisch #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/04/2026 #Required; mm/dd/yyyy format.
+  ms.date: 10/14/2026 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -38,7 +38,7 @@ landingContent:
             url: EditorCustomDimensions.md
           - text: Paste Preview
             url: EditorPastePreview.md
-  - title: Tools
+  - title: Build and edit blocks
     linkLists:
       - linkListType: reference
         links:
@@ -48,8 +48,18 @@ landingContent:
             url: EditorBrushTool.md
           - text: Primitives Tool
             url: EditorPrimitivesTool.md
+          - text: Pencil Tool
+            url: EditorPencilTool.md
+          - text: Line Tool
+            url: EditorLineTool.md
+          - text: Ruler Tool
+            url: EditorRulerTool.md
           - text: Extrude Tool
             url: EditorExtrudeTool.md
+  - title: Shape terrain and populate worlds
+    linkLists:
+      - linkListType: reference
+        links:
           - text: Farm Tool
             url: EditorFarmTool.md
           - text: Fill Tool
@@ -68,8 +78,20 @@ landingContent:
         links:
           - text: Custom Mesh Tool
             url: EditorCustomMeshTool.md
+          - text: Layouts
+            url: EditorLayouts.md
           - text: Cinematic Tool
             url: EditorCameraTool.md
+          - text: Flood Tool
+            url: EditorFlood.md
+          - text: Chunk Management
+            url: EditorChunkManagement.md
+          - text: Jigsaws
+            url: EditorJigsaws.md
+          - text: Scale Tool
+            url: EditorScaleTool.md
+          - text: Vibrant Visuals
+            url: EditorVibrantVisuals.md
   - title: Inspectors and Panels
     linkLists:
       - linkListType: reference
@@ -94,5 +116,7 @@ landingContent:
             url: EditorTutorial.md
           - text: Editor Create, Import, Export a World
             url: EditorWorkflow.md
+          - text: Publish to Realms
+            url: EditorRealms.md
           - text: Editor Extensions Introduction
             url: EditorExtensionsIntroduction.md

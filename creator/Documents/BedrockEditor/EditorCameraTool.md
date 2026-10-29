@@ -4,7 +4,7 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Cinematic Tool
 description: "An overview of the Cinematic Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 10/15/2026
 ---
 
 # Cinematic Tool
@@ -86,12 +86,12 @@ Select **Copy Code** to copy a TypeScript function to the clipboard. The generat
 2. Navigate to the starting position for your camera path and click **+** to add the first keyframe.
 
 3. Move to subsequent positions, adding keyframes along the desired path.
-    ![Viewing cinematic keyframes](../BedrockEditor/media/camera/lookaround.gif)
+    ![Viewing Cinematic keyframes and the camera path from different positions](Media/Camera/lookaround.gif)
 
 4. Adjust the **Spline Type**, **Total Duration**, and individual keyframe settings as needed.
 
 5. Select **Preview Cinematic** or use the Cinematic Timeline to preview the camera path.
-    ![Preview Animation](../BedrockEditor/media/camera/previewanimation.gif)
+    ![Previewing a cinematic camera path through a cave](Media/Camera/previewanimation.gif)
 
 6. Select **Copy Code** to generate a script you can use in your add-on.
 

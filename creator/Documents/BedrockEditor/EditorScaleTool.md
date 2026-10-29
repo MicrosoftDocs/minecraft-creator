@@ -1,15 +1,17 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Scale Tool
 description: "An overview of the Scale Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 02/10/2026
+ms.date: 10/14/2026
 ---
 
 # Scale
 
 Scale resizes your current selection in the world. It uses nearest-neighbor sampling to enlarge or shrink builds, preserving block types while adjusting proportions. A green bounding box preview shows the scaled result before you apply it.
+
+![Animation showing a selected building enlarged with the Scale tool](Media/GIFs/scale-tool.gif)
 
 ## How scaling works
 

@@ -548,6 +548,8 @@
               href: Documents/BedrockEditor/EditorActionBar.md
             - name: Control Help
               href: Documents/BedrockEditor/EditorControlHelp.md
+            - name: Settings
+              href: Documents/BedrockEditor/EditorSettings.md
             - name: Vibrant Visuals
               href: Documents/BedrockEditor/EditorVibrantVisuals.md
             - name: Keyboard Inputs
@@ -558,6 +560,8 @@
               href: Documents/BedrockEditor/EditorToolMode.md
             - name: Workflow
               href: Documents/BedrockEditor/EditorWorkflow.md
+            - name: Publish to Realms
+              href: Documents/BedrockEditor/EditorRealms.md
             - name: World Options
               href: Documents/BedrockEditor/EditorWorldOptions.md
 
@@ -601,6 +605,8 @@
                   href: Documents/BedrockEditor/EditorFillBiomesTool.md
                 - name: Custom Mesh
                   href: Documents/BedrockEditor/EditorCustomMeshTool.md
+                - name: Layouts
+                  href: Documents/BedrockEditor/EditorLayouts.md
                 - name: Inspectors and Panels
                   items:
                     - name: Block Inspector

@@ -1,27 +1,27 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Extrude Tool
 description: "An overview of the Extrude Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/08/2025
+ms.date: 10/14/2026
 ---
 
 # Extrude Tool
 
 Use Extrude to add or subtract layers of blocks around the face you click. It grows or carves volumes outward from that face, constrained by your Face Size and Layer Count settings.
 
-![Gif of Extrude Tool on Garden](Media/GIFs/Extrude.gif)
+![Animation showing Extrude adding layers to a brick structure](Media/GIFs/Extrude.gif)
 
 ## Quick Extrude Mode
 
-Toggle between **Grow** and **Shrink** to control whether Extrude adds layers outward or removes layers inward from the clicked face.
+Choose **Expand** to add layers outward from the clicked face, or **Remove** to remove layers inward. The default is Expand. Select the mode in the panel; **Ctrl+click** doesn't invert it.
 
 ## Settings
 
-- **Face Size** (1–32): Determines the radius of blocks that will be extruded around the cursor, centered on the block face you click.
+- **Face Size** (1–100; default: 32): Controls the size of the area sampled around the block face you click.
 
-- **Layer Count** (1–16): The number of layers that will be added or subtracted from the block that you click.
+- **Layer Count** (1–32; default: 1): The number of layers that will be added or subtracted from the block that you click.
 
 - **Contiguous Selection Type**: Sets which types of blocks are included in the extrusion. Options:
 
@@ -44,13 +44,13 @@ Toggle between **Grow** and **Shrink** to control whether Extrude adds layers ou
 
 #### Use Extrude
 
-1. Select Extrude from the tool rail on the left of the Editor and add it to your action bar.
+1. Select **Extrude** from the tool rail on the left of the Editor.
     > [!TIP]
-    > Press **Ctrl+Shift+E** to switch to Extrude.
+    > Press **Ctrl+Shift+E** to switch to **Extrude**.
 
 2. Set the **Face Size** and the **Layer Count**.
 
-3. Click the block face you want to Extrude from to add or remove layers across the footprint..
+3. Click the block face you want to extrude from to add or remove layers across the footprint.
     ![Animation of the extrude tool.](Media/editor_extrude_tool.gif)
 
 
