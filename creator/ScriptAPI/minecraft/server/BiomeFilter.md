@@ -9,24 +9,58 @@ description: Contents of the @minecraft/server.BiomeFilter class.
 ---
 # BiomeFilter Interface
 
+Options to include or exclude biomes based on biome names, tags, or namespaces. If no include options are added it will select all biomes that are not rejected by the exclude options. If at least one include option is added the biome must match one of the include options to not be rejected.
+
 ## Properties
 
 ### **excludeBiomes**
 `excludeBiomes?: string[];`
 
+Array of biome names that the filter should reject if any matches.
+
 Type: *string*[]
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **excludeNamespaces**
+`excludeNamespaces?: string[];`
+
+Array of namespaces that the filter should reject if the biome belongs to at least one.
+
+Type: *string*[]
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **excludeTags**
 `excludeTags?: string[];`
+
+Array of biome tags that the filter should reject if any matches.
 
 Type: *string*[]
 
 ### **includeBiomes**
 `includeBiomes?: string[];`
 
+Array of biome names that the filter should select if at least one matches.
+
 Type: *string*[]
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **includeNamespaces**
+`includeNamespaces?: string[];`
+
+Array of namespaces that the filter should select if the biome belongs to at least one.
+
+Type: *string*[]
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **includeTags**
 `includeTags?: string[];`
+
+Array of biome tags that the filter should select if at least one matches.
 
 Type: *string*[]

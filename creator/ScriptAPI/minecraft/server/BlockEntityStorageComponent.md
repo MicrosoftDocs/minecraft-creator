@@ -16,13 +16,15 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*BlockComponent*](BlockComponent.md)
 
-Represents storage for entities associated with a block entity. This component is available on blocks whose behavior pack definition enables entity storage with the `minecraft:block_entity` component. Stored entities are serialized and removed from the world until they are released or transferred. A block can store up to four entities. Entity storage is scoped to the content pack accessing it.
+Represents storage for entities associated with a block entity. This component is available on blocks whose behavior pack definition enables entity storage with the `minecraft:block_entity` component. Stored entities are serialized and removed from the world until they are released, transferred, or permanently removed. A block can store up to four entities across all content packs. Entity storage operations are scoped to the content pack accessing it, except for totalSize, which counts entities across all content packs.
 
 ## Methods
 - [getEntities](#getentities)
 - [release](#release)
+- [remove](#remove)
 - [size](#size)
 - [store](#store)
+- [totalSize](#totalsize)
 - [transfer](#transfer)
 
 ### **getEntities**
@@ -51,6 +53,23 @@ Releases a stored entity from this block's entity storage and spawns it back int
   The unique ID of the stored entity. Use the value returned by [*@minecraft/server.BlockEntityStorageComponent.store*](../../../scriptapi/minecraft/server/BlockEntityStorageComponent.md#store) or the `uniqueId` property from [*@minecraft/server.BlockEntityStorageInfo*](../../../scriptapi/minecraft/server/BlockEntityStorageInfo.md).
 
 **Returns** [*Entity*](Entity.md) - The released [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md). The released entity receives a new runtime ID.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidBlockComponentError*](InvalidBlockComponentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+### **remove**
+`
+remove(entityId: string): void
+`
+
+Permanently removes a stored entity from the current content pack's storage without releasing it into the world. No entity, experience, or item drops are spawned.
+
+#### **Parameters**
+- **entityId**: *string*
+  
+  The unique ID of an entity stored by the current content pack. Use the value returned by [*@minecraft/server.BlockEntityStorageComponent.store*](../../../scriptapi/minecraft/server/BlockEntityStorageComponent.md#store) or the `uniqueId` property from [*@minecraft/server.BlockEntityStorageInfo*](../../../scriptapi/minecraft/server/BlockEntityStorageInfo.md).
   
 Notes:
 - This function can't be called in restricted-execution mode.
@@ -86,6 +105,19 @@ Serializes and stores an entity in this block's entity storage. The entity is re
   
 Notes:
 - This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidBlockComponentError*](InvalidBlockComponentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+### **totalSize**
+`
+totalSize(): number
+`
+
+Returns the total number of entities stored in this block's entity storage across all content packs.
+
+**Returns** *number* - The number of stored entities across all content packs.
+  
+Notes:
 - This function can throw errors.
   - Throws *Error*, [*InvalidBlockComponentError*](InvalidBlockComponentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 

@@ -87,7 +87,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [TimeOfDay](TimeOfDay.md)
 - [WeatherType](WeatherType.md)
 
-# Type Aliases
+## Type Aliases
 - [BlockComponentReturnType](BlockComponentReturnType.md)
 - [BlockComponentTypeMap](BlockComponentTypeMap.md)
 - [BlockStateArg](BlockStateArg.md)

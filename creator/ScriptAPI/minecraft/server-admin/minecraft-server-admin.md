@@ -21,13 +21,13 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
 ```json
 {
     "module_name": "@minecraft/server-admin",
-    "version": "1.0.0-beta.1.26.70-preview.22"
+    "version": "1.0.0-beta.1.26.70-preview.23"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.70-beta.22 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.70-beta.23 of Minecraft.
 
 ## Available Versions
-- `1.0.0-beta.1.26.70-preview.22`
+- `1.0.0-beta.1.26.70-preview.23`
 
 ## Classes
 - [AdminBeforeEvents](AdminBeforeEvents.md)
@@ -46,6 +46,7 @@ This is version 1.x.x of this module, which is the latest as of version 1.26.70-
 - [AllowListEntryNameInfo](AllowListEntryNameInfo.md)
 - [TransferPlayerIpPortOptions](TransferPlayerIpPortOptions.md)
 - [TransferPlayerNetherNetOptions](TransferPlayerNetherNetOptions.md)
+- [TransferPlayerUIOptions](TransferPlayerUIOptions.md)
 
 ## Errors
 - [AllowListFileReloadError](AllowListFileReloadError.md)
@@ -114,7 +115,7 @@ Notes:
 
 ### **transferPlayer**
 `
-transferPlayer(player: minecraftserver.Player, options: TransferPlayerIpPortOptions | TransferPlayerNetherNetOptions): void
+transferPlayer(player: minecraftserver.Player, options: TransferPlayerIpPortOptions | TransferPlayerNetherNetOptions, UIOptions?: TransferPlayerUIOptions): void
 `
 
 Transfer player to another server.
@@ -126,10 +127,14 @@ Transfer player to another server.
 - **options**: [*TransferPlayerIpPortOptions*](TransferPlayerIpPortOptions.md) | [*TransferPlayerNetherNetOptions*](TransferPlayerNetherNetOptions.md)
   
   Options for where to send the player.
+- **UIOptions**?: [*TransferPlayerUIOptions*](TransferPlayerUIOptions.md) = ``
+  
+  Optional progress screen settings. Text fields accept strings or RawMessage values with client-side localization.
   
 Notes:
 - This function can't be called in restricted-execution mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.RawMessageError*](../../../scriptapi/minecraft/server/RawMessageError.md)
 
 ## Objects
   

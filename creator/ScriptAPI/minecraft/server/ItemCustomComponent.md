@@ -48,6 +48,18 @@ This function will be called when an item containing this component is used to m
 
 Type: (arg0: [*ItemComponentMineBlockEvent*](ItemComponentMineBlockEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **onReleaseUse**
+`onReleaseUse?: (arg0: ItemComponentReleaseUseEvent, arg1: CustomComponentParameters) => void;`
+
+This function will be called when a player releases use of an item containing this component. It will only be called if the item has the minecraft:use_duration component.
+
+Type: (arg0: [*ItemComponentReleaseUseEvent*](ItemComponentReleaseUseEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **onUse**
 `onUse?: (arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) => void;`
 
