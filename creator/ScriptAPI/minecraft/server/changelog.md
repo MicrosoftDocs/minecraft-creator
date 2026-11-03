@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.13.0-beta.1.26.70-preview.22](#2130-beta12670-preview22)
+- [2.13.0-beta.1.26.70-preview.23](#2130-beta12670-preview23)
 - [2.11.0](#2110)
 - [2.10.0](#2100)
 - [2.9.0](#290)
@@ -44,7 +44,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.13.0-beta.1.26.70-preview.22
+## 2.13.0-beta.1.26.70-preview.23
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -141,6 +141,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`playerWaypoints`](GameRules.md#playerwaypoints)*
 #### Added *[`ItemBlockEntityStorageComponent`](ItemBlockEntityStorageComponent.md)*
+#### Added *[`ItemComponentReleaseUseEvent`](ItemComponentReleaseUseEvent.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
@@ -165,6 +166,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerCursorItemGrabAfterEventSignal`](PlayerCursorItemGrabAfterEventSignal.md)*
 #### Added *[`PlayerCursorItemReleaseAfterEvent`](PlayerCursorItemReleaseAfterEvent.md)*
 #### Added *[`PlayerCursorItemReleaseAfterEventSignal`](PlayerCursorItemReleaseAfterEventSignal.md)*
+#### Changed *[`PlayerDimensionChangeAfterEvent`](PlayerDimensionChangeAfterEvent.md)*
+- Added property *[`source`](PlayerDimensionChangeAfterEvent.md#source)*
 #### Added *[`PlayerItemAttackEntityBeforeEvent`](PlayerItemAttackEntityBeforeEvent.md)*
 #### Added *[`PlayerItemAttackEntityBeforeEventSignal`](PlayerItemAttackEntityBeforeEventSignal.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
@@ -175,6 +178,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PoiBlockManager`](PoiBlockManager.md)*
 #### Added *[`PoiBlockType`](PoiBlockType.md)*
 #### Added *[`PoiManager`](PoiManager.md)*
+#### Added *[`PortalActivateAfterEvent`](PortalActivateAfterEvent.md)*
+#### Added *[`PortalActivateAfterEventSignal`](PortalActivateAfterEventSignal.md)*
 #### Changed *[`Potions`](Potions.md)*
 - Changed function *[`resolve`](Potions.md#resolve)*
   - Changed return type from [*ItemStack*](ItemStack.md) (throws exceptions) to *ItemStack* (throws exceptions)
@@ -206,6 +211,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`playerCursorItemGrab`](WorldAfterEvents.md#playercursoritemgrab)*
 - Added property *[`playerCursorItemRelease`](WorldAfterEvents.md#playercursoritemrelease)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
+- Added property *[`portalActivate`](WorldAfterEvents.md#portalactivate)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerItemAttackEntity`](WorldBeforeEvents.md#playeritemattackentity)*
@@ -230,6 +236,7 @@ description: Changelog of the `@minecraft/server` module
 - Added value `BlockEntityStorage`
 #### Added enum [`ItemFrameRotation`](ItemFrameRotation.md)
 #### Added enum [`PassengerOfBlockEmoteType`](PassengerOfBlockEmoteType.md)
+#### Added enum [`PlayerDimensionChangeSource`](PlayerDimensionChangeSource.md)
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`PoiBlockOccupancyFilter`](PoiBlockOccupancyFilter.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)

@@ -16,13 +16,15 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*ItemComponent*](ItemComponent.md)
 
-Stores serialized non-player mobs on an item stack. Each calling behavior pack can only access its manifest UUID bucket. All buckets share a four-entity limit. Available on item stacks even when empty. Destroying the item discards its storage without spawning entities. Data is compatible with entity-storage block carry-over and placement.
+Stores serialized non-player mobs on an item stack. Each calling behavior pack can only access its manifest UUID bucket, except for totalSize, which counts entities across all packs. All buckets share a four-entity limit. Stored entities can be permanently removed without spawning them. Available on item stacks even when empty. Destroying the item discards its storage without spawning entities. Data is compatible with entity-storage block carry-over and placement.
 
 ## Methods
 - [getEntities](#getentities)
 - [release](#release)
+- [remove](#remove)
 - [size](#size)
 - [store](#store)
+- [totalSize](#totalsize)
 - [transfer](#transfer)
 
 ### **getEntities**
@@ -60,6 +62,23 @@ Notes:
 - This function can throw errors.
   - Throws *Error*, [*InvalidItemStackError*](InvalidItemStackError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+### **remove**
+`
+remove(entityId: string): void
+`
+
+Permanently removes a stored entity from the calling pack's bucket without releasing it into the world. No entity, experience, or item drops are spawned. The removal is saved to the item stack.
+
+#### **Parameters**
+- **entityId**: *string*
+  
+  A stored entity ID in the calling pack's bucket.
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidItemStackError*](InvalidItemStackError.md)
+
 ### **size**
 `
 size(): number
@@ -89,6 +108,19 @@ Serializes and despawns a non-player mob into the calling pack's item storage. M
   
 Notes:
 - This function can't be called in restricted-execution mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **totalSize**
+`
+totalSize(): number
+`
+
+Returns the total number of entities stored on this item stack across all content packs.
+
+**Returns** *number* - The number of stored entities across all content packs.
+  
+Notes:
 - This function can throw errors.
   - Throws *Error*, [*InvalidItemStackError*](InvalidItemStackError.md)
 

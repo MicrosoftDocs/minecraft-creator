@@ -20,10 +20,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.11.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.70-beta.22 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.70-beta.23 of Minecraft.
 
 ## Available Versions
-- `2.13.0-beta.1.26.70-preview.22`
+- `2.13.0-beta.1.26.70-preview.23`
 - `2.11.0`
 - `2.10.0`
 - `2.9.0`
@@ -116,6 +116,7 @@ The following API versions are from a major version that is documented here: [*@
 - [PaletteColor](PaletteColor.md)
 - [PassengerOfBlockEmoteType](PassengerOfBlockEmoteType.md)
 - [PlatformType](PlatformType.md)
+- [PlayerDimensionChangeSource](PlayerDimensionChangeSource.md)
 - [PlayerInventoryType](PlayerInventoryType.md)
 - [PlayerPermissionLevel](PlayerPermissionLevel.md)
 - [PlayerSplitScreenSlot](PlayerSplitScreenSlot.md)
@@ -136,7 +137,7 @@ The following API versions are from a major version that is documented here: [*@
 - [WaypointTexture](WaypointTexture.md)
 - [WeatherType](WeatherType.md)
 
-# Type Aliases
+## Type Aliases
 - [BlockComponentReturnType](BlockComponentReturnType.md)
 - [BlockComponentTypeMap](BlockComponentTypeMap.md)
 - [BlockStateArg](BlockStateArg.md)
@@ -401,6 +402,7 @@ The following API versions are from a major version that is documented here: [*@
 - [ItemComponentHitEntityEvent](ItemComponentHitEntityEvent.md)
 - [ItemComponentMineBlockEvent](ItemComponentMineBlockEvent.md)
 - [ItemComponentRegistry](ItemComponentRegistry.md)
+- [ItemComponentReleaseUseEvent](ItemComponentReleaseUseEvent.md)
 - [ItemComponentUseEvent](ItemComponentUseEvent.md)
 - [ItemComponentUseOnEvent](ItemComponentUseOnEvent.md)
 - [ItemCompostableComponent](ItemCompostableComponent.md)
@@ -525,6 +527,8 @@ The following API versions are from a major version that is documented here: [*@
 - [PoiBlockManager](PoiBlockManager.md)
 - [PoiBlockType](PoiBlockType.md)
 - [PoiManager](PoiManager.md)
+- [PortalActivateAfterEvent](PortalActivateAfterEvent.md)
+- [PortalActivateAfterEventSignal](PortalActivateAfterEventSignal.md)
 - [PotionDeliveryType](PotionDeliveryType.md)
 - [PotionEffectType](PotionEffectType.md)
 - [Potions](Potions.md)

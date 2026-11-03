@@ -34,6 +34,18 @@ Handle to the player that is changing dimensions.
 
 Type: [*Player*](Player.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **source**
+`read-only source: PlayerDimensionChangeSource;`
+
+What caused the player to change dimensions, see [*@minecraft/server.PlayerDimensionChangeSource*](../../../scriptapi/minecraft/server/PlayerDimensionChangeSource.md).
+
+Type: [*PlayerDimensionChangeSource*](PlayerDimensionChangeSource.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **toDimension**
 `read-only toDimension: Dimension;`
 

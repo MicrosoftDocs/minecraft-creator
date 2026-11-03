@@ -628,6 +628,21 @@ Notes:
   - This property can be read in early-execution mode.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **portalActivate**
+`read-only portalActivate: PortalActivateAfterEventSignal;`
+
+Fires after a portal is successfully activated, with an initiating player when known. Currently fires for Nether portals only, including activation by fire without a player. Does not fire merely for frame construction or for failed activation attempts.
+
+Type: [*PortalActivateAfterEventSignal*](PortalActivateAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **pressurePlatePop**
 `read-only pressurePlatePop: PressurePlatePopAfterEventSignal;`
 
