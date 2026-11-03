@@ -21,13 +21,13 @@ Contains debug utility functions.
 ```json
 {
     "module_name": "@minecraft/debug-utilities",
-    "version": "1.0.0-beta.1.26.70-preview.22"
+    "version": "1.0.0-beta.1.26.70-preview.23"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.26.70-beta.22 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.26.70-beta.23 of Minecraft.
 
 ## Available Versions
-- `1.0.0-beta.1.26.70-preview.22`
+- `1.0.0-beta.1.26.70-preview.23`
 
 ## Enumerations
 - [DiagnosticsChartDisplayType](DiagnosticsChartDisplayType.md)

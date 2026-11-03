@@ -34,6 +34,18 @@ Excludes entities that have a name that match one of the specified values.
 
 Type: *string*[]
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **excludeNamespaces**
+`excludeNamespaces?: string[];`
+
+Excludes entities that have a namespace that matches one of the specified values.
+
+Type: *string*[]
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **excludeTags**
 `excludeTags?: string[];`
 
@@ -110,6 +122,18 @@ Type: *number*
 Includes entities with the specified name.
 
 Type: *string*
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **namespaces**
+`namespaces?: string[];`
+
+Includes entities with the specified namespace.
+
+Type: *string*[]
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **propertyOptions**
 `propertyOptions?: EntityQueryPropertyOptions[];`

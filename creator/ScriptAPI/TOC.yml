@@ -188,6 +188,8 @@
       href: minecraft/server/PassengerOfBlockEmoteType.md
     - name: PlatformType
       href: minecraft/server/PlatformType.md
+    - name: PlayerDimensionChangeSource
+      href: minecraft/server/PlayerDimensionChangeSource.md
     - name: PlayerInventoryType
       href: minecraft/server/PlayerInventoryType.md
     - name: PlayerPermissionLevel
@@ -732,6 +734,8 @@
       href: minecraft/server/ItemComponentMineBlockEvent.md
     - name: ItemComponentRegistry
       href: minecraft/server/ItemComponentRegistry.md
+    - name: ItemComponentReleaseUseEvent
+      href: minecraft/server/ItemComponentReleaseUseEvent.md
     - name: ItemComponentUseEvent
       href: minecraft/server/ItemComponentUseEvent.md
     - name: ItemComponentUseOnEvent
@@ -980,6 +984,10 @@
       href: minecraft/server/PoiBlockType.md
     - name: PoiManager
       href: minecraft/server/PoiManager.md
+    - name: PortalActivateAfterEvent
+      href: minecraft/server/PortalActivateAfterEvent.md
+    - name: PortalActivateAfterEventSignal
+      href: minecraft/server/PortalActivateAfterEventSignal.md
     - name: PotionDeliveryType
       href: minecraft/server/PotionDeliveryType.md
     - name: PotionEffectType
@@ -1458,6 +1466,8 @@
       href: minecraft/server-admin/TransferPlayerIpPortOptions.md
     - name: TransferPlayerNetherNetOptions
       href: minecraft/server-admin/TransferPlayerNetherNetOptions.md
+    - name: TransferPlayerUIOptions
+      href: minecraft/server-admin/TransferPlayerUIOptions.md
   - name: minecraft/server-editor
     items:
     - name: minecraft/server-editor

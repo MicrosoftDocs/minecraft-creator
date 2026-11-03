@@ -100,6 +100,8 @@ Represents the unique type of network packet.
 `ClientboundMapItemDataPacket = "ClientboundMapItemDataPacket"`
 ### **ClientboundMatchmakingStatePacket**
 `ClientboundMatchmakingStatePacket = "ClientboundMatchmakingStatePacket"`
+### **ClientboundMusicPlaybackFailurePacket**
+`ClientboundMusicPlaybackFailurePacket = "ClientboundMusicPlaybackFailurePacket"`
 ### **ClientboundOnlineMusicPlaybackResponsePacket**
 `ClientboundOnlineMusicPlaybackResponsePacket = "ClientboundOnlineMusicPlaybackResponsePacket"`
 ### **ClientboundPlayAudioContentPacket**
@@ -288,6 +290,8 @@ Represents the unique type of network packet.
 `PlayerSkinPacket = "PlayerSkinPacket"`
 ### **PlayerStartItemCooldownPacket**
 `PlayerStartItemCooldownPacket = "PlayerStartItemCooldownPacket"`
+### **PlayerToggleArmorVisibilityRequestPacket**
+`PlayerToggleArmorVisibilityRequestPacket = "PlayerToggleArmorVisibilityRequestPacket"`
 ### **PlayerToggleCrafterSlotRequestPacket**
 `PlayerToggleCrafterSlotRequestPacket = "PlayerToggleCrafterSlotRequestPacket"`
 ### **PlayerUpdateEntityOverridesPacket**

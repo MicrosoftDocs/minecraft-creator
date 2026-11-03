@@ -9,9 +9,21 @@ description: Contents of the @minecraft/server.BlockFilter class.
 ---
 # BlockFilter Interface
 
-Options to include or exclude blocks based on type, tag or permutation. If no include options are added it will select all blocks that are not rejected by the exclude options. If at least one include option is added the block must match one of the include options to not be rejected.
+Options to include or exclude blocks based on type, tag, permutation, or namespaces. If no include options are added it will select all blocks that are not rejected by the exclude options. If at least one include option is added the block must match one of the include options to not be rejected.
 
 ## Properties
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **excludeNamespaces**
+`excludeNamespaces?: string[];`
+
+Array of namespaces that the filter should reject if the block belongs to at least one.
+
+Type: *string*[]
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **excludePermutations**
 `excludePermutations?: BlockPermutation[];`
@@ -33,6 +45,18 @@ Type: *string*[]
 Array of block types that the filter should reject if any matches.
 
 Type: *string*[]
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **includeNamespaces**
+`includeNamespaces?: string[];`
+
+Array of namespaces that the filter should select if the block belongs to at least one.
+
+Type: *string*[]
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **includePermutations**
 `includePermutations?: BlockPermutation[];`
