@@ -1,10 +1,11 @@
 ---
-author: VassilAnguelov
-ms.author: vassil.anguelov@skyboxlabs.com
+author: mammerla
+ms.author: mikeam
 title: "Feature Documentation - minecraft:multi_block_feature"
 description: "Describes the minecraft:multi_block_feature feature type"
+ai-usage: ai-assisted
 ms.service: minecraft-bedrock-edition
-ms.date: 07/28/2026 
+ms.date: 02/11/2025 
 ---
 
 # Feature Documentation - minecraft:multi_block_feature
@@ -19,11 +20,9 @@ Places a multi-block in the world as a biome decoration feature. A multi-block m
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| format_version | *not set* | String | Feature requires minimum version `1.26.50` | 
 | description | *not set* | [Description](#description) item |  | 
-| places_block | *not set* | Array of [Places Block](#places-block) items |  | 
-| enforce_placement_rules | *not set* | Boolean true/false | If true, enforce the block's canPlace check. Which can optionally come from the placement filter component. | 
-| may_replace | *not set* | Array of strings | List of blocks that may be replaced by this multi-block. Other multi-blocks can never be replaced. | 
+| enforce_placement_rules | *not set* | Boolean true/false | If true, enforce the multi-blocks mayPlace checks. | 
+| may_replace | *not set* | Array of strings |  | 
 | randomize_rotation | *not set* | Boolean true/false | If true, randomizes the block's cardinal orientation. | 
 
 ### Description
@@ -35,37 +34,3 @@ Places a multi-block in the world as a biome decoration feature. A multi-block m
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
 | identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. | 
-
-### Places Block
-
-#### Places Block Properties
-
-**JSON path:** `places_block`
-
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| block | *not set* | Object | Reference to the multi-block to be placed. Must be the first part of a multi-block. | 
-
-## Samples
-
-#### Example
-
-
-```json
-{
-  "format_version": "1.26.50",
-  "minecraft:multi_block_feature": {
-    "description": {
-      "identifier": "example:horizontal_log_feature"
-    },
-    "places_block": "example:horizontal_log",
-    "randomize_rotation": true,
-    "enforce_placement_rules": true,
-    "may_replace": [
-      "minecraft:air",
-      "minecraft:grass",
-      "minecraft:dirt"
-    ]
-  }
-}
-```

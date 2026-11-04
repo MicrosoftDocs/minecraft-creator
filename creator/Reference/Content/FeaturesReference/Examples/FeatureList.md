@@ -14,6 +14,7 @@ ms.date: 02/11/2025
 |:-----|:----------|
 | [minecraft:aggregate_feature](Features/minecraft_aggregate_feature.md)| Places a collection of features in an arbitrary order. |
 | [minecraft:cave_carver_feature](Features/minecraft_cave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. |
+| [minecraft:crevasse_feature](Features/minecraft_crevasse_feature.md)|  |
 | [minecraft:fossil_feature](Features/minecraft_fossil_feature.md)| Generates a skeletal structure composed of bone blocks and parametric ore blocks. |
 | [minecraft:geode_feature](Features/minecraft_geode_feature.md)| generates a rock formation to simulate a geode. |
 | [minecraft:growing_plant_feature](Features/minecraft_growing_plant_feature.md)| Places a growing plant in the world. |
@@ -21,7 +22,7 @@ ms.date: 02/11/2025
 | [minecraft:horizontal_tree_decoration_feature](Features/minecraft_horizontal_tree_decoration_feature.md)|  |
 | [minecraft:multiface_feature](Features/minecraft_multiface_feature.md)| Places multiface blocks on floors/walls/ceilings. |
 | [minecraft:multipart_block_column_feature](Features/minecraft_multipart_block_column_feature.md)|  |
-| [minecraft:multi_block_feature](Features/minecraft_multi_block_feature.md)|  |
+| [minecraft:multi_block_feature](Features/minecraft_multi_block_feature.md)| Places a multi-block in the world as a biome decoration feature. |
 | [minecraft:nether_cave_carver_feature](Features/minecraft_nether_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. |
 | [minecraft:ore_feature](Features/minecraft_ore_feature.md)| Places a vein of blocks to simulate ore deposits. |
 | [minecraft:partially_exposed_blob_feature](Features/minecraft_partially_exposed_blob_feature.md)| Generates a blob of the specified block with the specified dimensions. |

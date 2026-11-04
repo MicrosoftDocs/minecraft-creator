@@ -17,12 +17,12 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| attack_interval | {"max":-1,"min":-1} | [Attack Interval](#legacy-floatrange) item | Reload-time range (in seconds), when not using a charged shot. | Blaze: `{"min":3,"max":5}`, Bogged: `3.5`, `2.5` | 
+| attack_interval | {"max":-1,"min":-1} | [Attack Interval](#legacy-floatrange) item | Reload-time range (in seconds), when not using a charged shot. | Blaze: `{"min":3,"max":5}`, Bogged: `{"min":3.5,"max":3.5}`, `{"min":2.5,"max":2.5}` | 
 | attack_interval_max | 0 | Decimal number | Maximum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance. |  | 
 | attack_interval_min | 0 | Decimal number | Minimum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance. |  | 
-| attack_radius | 0 | Decimal number | Minimum distance to target before this entity will attempt to shoot. | Bogged: `15` | 
+| attack_radius | 0 | Decimal number | Minimum distance to target before this entity will attempt to shoot. |  | 
 | attack_radius_min | 0 | Decimal number | Minimum distance the target can be for this mob to fire. If the target is closer, this mob will move first before firing |  | 
-| attack_range | {"max":0,"min":0} | [Attack Range](#legacy-floatrange) item | Range of distances from the target within which the entity can perform a ranged attack. Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | Blaze: `{"min":0,"max":48}`, Drowned: `{"min":0,"max":10}`, Llama: `{"max":64}` | 
+| attack_range | {"max":0,"min":0} | [Attack Range](#legacy-floatrange) item | Range of distances from the target within which the entity can perform a ranged attack. Check that the limits imposed on the range (minimum, maximum and maximum distance between values) are respected | Blaze: `{"min":0,"max":48}`, Bogged: `{"min":0,"max":15}`, Drowned: `{"min":0,"max":10}` | 
 | burst_interval | 0 | Decimal number | Time (in seconds) between each individual shot when firing a burst of shots from a charged up attack. Value must be > 0. | Blaze: `0.3` | 
 | burst_shots | 1 | Integer number | Number of shots fired every time the attacking entity uses a charged up attack. | Blaze: `3` | 
 | charge_charged_trigger | 0 | Decimal number | Time (in seconds, then add "charge_shoot_trigger"), before a charged up attack is done charging. Charge-time decays while target is not in sight. Value must be > 0. | Llama: `1` | 
@@ -101,8 +101,14 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior
 
 ```json
 "minecraft:behavior.ranged_attack": {
-  "attack_interval": 3.5,
-  "attack_radius": 15,
+  "attack_interval": {
+    "min": 3.5,
+    "max": 3.5
+  },
+  "attack_range": {
+    "min": 0,
+    "max": 15
+  },
   "priority": 0
 }
 ```
@@ -111,8 +117,14 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:beh
 
 ```json
 "minecraft:behavior.ranged_attack": {
-  "attack_interval": 2.5,
-  "attack_radius": 15,
+  "attack_interval": {
+    "min": 2.5,
+    "max": 2.5
+  },
+  "attack_range": {
+    "min": 0,
+    "max": 15
+  },
   "priority": 0
 }
 ```
@@ -156,8 +168,14 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior
 
 ```json
 "minecraft:behavior.ranged_attack": {
-  "attack_interval": 3.5,
-  "attack_radius": 15,
+  "attack_interval": {
+    "min": 3.5,
+    "max": 3.5
+  },
+  "attack_range": {
+    "min": 0,
+    "max": 15
+  },
   "priority": 1
 }
 ```
@@ -166,8 +184,14 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack_hard/minecraft:beh
 
 ```json
 "minecraft:behavior.ranged_attack": {
-  "attack_interval": 2.5,
-  "attack_radius": 15,
+  "attack_interval": {
+    "min": 2.5,
+    "max": 2.5
+  },
+  "attack_range": {
+    "min": 0,
+    "max": 15
+  },
   "priority": 1
 }
 ```

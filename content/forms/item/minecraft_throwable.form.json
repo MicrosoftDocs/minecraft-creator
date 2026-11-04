@@ -42,6 +42,12 @@
         "dataType": "boolean",
         "defaultValue": false,
         "samples": {
+          "/vanilla/behavior_pack/items/ice_ball.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:throwable/",
+              "content": true
+            }
+          ],
           "/vanilla/behavior_pack/items/wind_charge.json": [
             {
               "path": "/minecraft:item/components/minecraft:throwable/",
@@ -104,6 +110,14 @@
     ],
     "dataVersion": "1.20.50",
     "samples": {
+      "/vanilla/behavior_pack/items/ice_ball.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:throwable/",
+          "content": {
+            "do_swing_animation": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/items/wind_charge.json": [
         {
           "path": "/minecraft:item/components/minecraft:throwable/",

@@ -73,6 +73,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [fishing_hook](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/fishing_hook.json) | 77 | 77 |
 | [fox](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/fox.json) | 4985 | 121 |
 | [frog](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/frog.json) | 4996 | 132 |
+| frostbite | 199579 | 155 |
 | [ghast](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/ghast.json) | 2857 | 41 |
 | [glow_squid](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/glow_squid.json) | 9089 | 129 |
 | [goat](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/goat.json) | 4992 | 128 |
@@ -82,6 +83,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [hopper_minecart](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/hopper_minecart.json) | 524384 | 96 |
 | [horse](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/horse.json) | 2118423 | 23 |
 | [husk](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/husk.json) | 199471 | 47 |
+| ice_ball | 4194460 | 156 |
 | ice_bomb | 4194410 | 106 |
 | [iron_golem](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/iron_golem.json) | 788 | 20 |
 | item | 64 | 64 |

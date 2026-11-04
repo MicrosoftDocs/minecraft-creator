@@ -89,6 +89,12 @@
           }
         ],
         "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence[0]/filters/",
+              "content": "not"
+            }
+          ],
           "/vanilla/behavior_pack/entities/sheep.json": [
             {
               "path": "/minecraft:entity/components/minecraft:interact/interactions[0]/on_interact/filters/all_of[2]/",
@@ -165,18 +171,20 @@
         "description": "(Required) The component name to look for",
         "dataType": "string",
         "samples": {
-          "/vanilla/behavior_pack/entities/sheep.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:interact/interactions[0]/on_interact/filters/all_of[2]/",
+              "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence[0]/filters/",
               "content": "minecraft:is_baby"
             },
+            {
+              "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence[1]/filters/",
+              "content": "minecraft:is_baby"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/sheep.json": [
             {
               "path": "/minecraft:entity/components/minecraft:interact/interactions[0]/on_interact/filters/all_of[3]/",
               "content": "minecraft:is_dyeable"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:on_eat_block/sequence[1]/filters/",
-              "content": "minecraft:is_baby"
             }
           ]
         }
@@ -186,13 +194,13 @@
         "title": "Test",
         "dataType": "string",
         "samples": {
-          "/vanilla/behavior_pack/entities/sheep.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:interact/interactions[0]/on_interact/filters/all_of[2]/",
+              "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence[0]/filters/",
               "content": "has_component"
             },
             {
-              "path": "/minecraft:entity/components/minecraft:interact/interactions[0]/on_interact/filters/all_of[3]/",
+              "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence[1]/filters/",
               "content": "has_component"
             }
           ]
@@ -208,6 +216,23 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"has_component\", \"value\": \"minecraft:explode\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence[0]/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "not",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence[1]/filters/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_baby"
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/sheep.json": [

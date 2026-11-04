@@ -26,7 +26,7 @@ Turns the entity into a projectile: a thrown or shot entity that flies along a b
 | hit_ground_sound |  | String | Identifier of the sound to play when the projectile hits a block. Defaults to `hit_sound` when empty. | 
 | hit_nearest_passenger | false | Boolean true/false | If `true`, when the projectile hits a vehicle with at least one passenger, the on-hit behavior is applied to the passenger closest to the impact point instead of the vehicle itself. | 
 | hit_sound |  | String | Identifier of the sound to play when the projectile hits an entity. Also used for block hits when `hit_ground_sound` is not specified. | 
-| hit_water | false | Boolean true/false | If `true`, the projectile treats water as a hit surface and stops on contact. | 
+| hit_water | false | Boolean true/false | If `true`, the projectile treats water as a hit surface and stops on contact. (Education Edition chemistry feature) | 
 | homing | false | Boolean true/false | If `true`, the projectile steers towards an active target while in flight. | 
 | ignored_entities | [] | Array of strings | Array of entity identifiers that the projectile will pass through without registering a hit. | 
 | inertia | 0.9900000095367432 | Decimal number | Fraction of the projectile's velocity preserved each tick while traveling through air. Values below `1.0` cause it to slow down over time. | 
@@ -115,7 +115,7 @@ Controls whether the projectile bounces off entities on impact. `no` disables bo
 | grant_xp | *not set* | [Grant Xp](#entity-grantxpsubcomponentdefinition) item | Drops experience orbs at the impact location. | 
 | hurt_owner | *not set* | [Hurt Owner](#entity-hurtownersubcomponentdefinition) item | Damages the projectile's owner when the projectile lands. | 
 | ignite | *not set* | Object | Triggers the entity's `on_ignite` definition when the projectile hits. | 
-| impact_damage | *not set* | [Impact Damage](#entity-impactdamagesubcomponentdefinition) item | Deals damage to the entity that was hit and optionally applies knockback, fire, channeling, and critical-hit scaling. | 
+| impact_damage | *not set* | [Impact Damage](#entity-impactdamagesubcomponentdefinition) item |  | 
 | mob_effect | *not set* | [Mob Effect](#entity-mobeffectsubcomponentdefinition) item | Applies one or more mob effects to the entity hit. Effects are described with an `effects` array of effect objects. | 
 | particle_on_hit | *not set* | [Particle On Hit](#entity-particleonhitsubcomponentdefinition) item | Emits a particle effect at the impact location, optionally only for entity hits or only for non-entity hits. | 
 | remove_on_hit | *not set* | Object | Removes the projectile from the world when it hits a block, entity, or (if `hit_water` is set) water. | 
@@ -266,8 +266,6 @@ Damages the projectile's owner when the projectile lands.
 | owner_damage | 0 | Decimal number | Amount of damage to deal to the owner. | 
 
 #### Entity ImpactDamageSubcomponentDefinition
-Deals damage to the entity that was hit and optionally applies knockback, fire, channeling, and critical-hit scaling.
-
 
 ##### Entity ImpactDamageSubcomponentDefinition Properties
 
@@ -280,6 +278,7 @@ Deals damage to the entity that was hit and optionally applies knockback, fire, 
 | ceil_pre_critical_damage | false | Boolean true/false | If `true`, rounds the projectile's damage up to the next integer before the critical-hit multiplier is applied. | 
 | channeling | false | Boolean true/false | If `true`, the projectile can call down a lightning bolt on the entity hit during a thunderstorm. | 
 | damage | {"max":0,"min":0} | [Damage](#legacy-floatrange) item | Range of damage to apply on impact. A random value in `[min, max]` is rolled per hit and the velocity-scaled `power_multiplier` term is added to it to define the projectile's base damage. | 
+| death_message_override | *not set* | String | A localization key to use as the death message when the impact damage kills an entity. | 
 | destroy_on_hit | false | Boolean true/false | If `true`, the projectile is removed when it deals damage to an entity. | 
 | destroy_on_hit_requires_damage | true | Boolean true/false | If `true`, `destroy_on_hit` only triggers when at least one point of damage is actually dealt (targets that fully absorb damage will not destroy the projectile). | 
 | difficulty_randomization | none | [Difficulty Randomization](#difficulty-randomization-choices) choices | Controls how world difficulty contributes to the rolled damage. | 
@@ -288,7 +287,12 @@ Deals damage to the entity that was hit and optionally applies knockback, fire, 
 | max_critical_damage | 2147483647 | Integer number | If specified, sets the maximum damage after critical damage has been applied. Enchantments have already been applied at this point, so this clamps the final damage value of critical hits. | 
 | min_critical_damage | 0 | Integer number | If specified, sets the minimum damage after critical damage has been applied. Enchantments have already been applied at this point, so this clamps the final damage value of critical hits. | 
 | power_multiplier | 0 | Decimal number | Multiplied by the projectile's velocity and added to the rolled `damage` to define the projectile's base damage, so it can be used on its own to scale damage by the projectile's velocity. | 
+| scale_damage_with_difficulty | true | Boolean true/false | If `true`, scales impact damage with the world's difficulty. | 
 | set_last_hurt_requires_damage | true | Boolean true/false | If `true`, the projectile only registers as the last hurt-by source on the target when at least one point of damage is actually dealt. | 
+
+##### death_message_override
+
+A localization key to use as the death message when the impact damage kills an entity. If omitted, the default death message for projectiles is used. `%1$s` is the name of the killed entity and `%2$s` is the name of the projectile's owner, or of the projectile itself if it has no owner.
 
 ##### difficulty_randomization
 
@@ -420,6 +424,7 @@ Emits a particle effect at the impact location, optionally only for entity hits 
 | greenflame | Greenflame | |
 | heart | Heart | |
 | hugeexplosion | Hugeexplosion | |
+| iceballbreak | Iceballbreak | |
 | iconcrack | Iconcrack | |
 | ink | Ink | |
 | largeexplode | Largeexplode | |

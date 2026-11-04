@@ -847,8 +847,16 @@
             "title": "Convert to frog"
           },
           {
+            "id": "convert_to_frostbite",
+            "title": "Convert to frostbite"
+          },
+          {
             "id": "convert_to_stray",
             "title": "Convert to stray"
+          },
+          {
+            "id": "convert_to_zombie",
+            "title": "Convert to zombie"
           },
           {
             "id": "converted_to_zombified",
@@ -861,6 +869,10 @@
           {
             "id": "copper.wax.on",
             "title": "Copper.wax.on"
+          },
+          {
+            "id": "crack",
+            "title": "Crack"
           },
           {
             "id": "crafter.craft",
@@ -1203,6 +1215,10 @@
             "title": "Hurt.screamer"
           },
           {
+            "id": "ice_ball.throw",
+            "title": "Ice ball.throw"
+          },
+          {
             "id": "icebomb.hit",
             "title": "Icebomb.hit"
           },
@@ -1261,6 +1277,10 @@
           {
             "id": "imitate.evocation_illager",
             "title": "Imitate.evocation illager"
+          },
+          {
+            "id": "imitate.frostbite",
+            "title": "Imitate.frostbite"
           },
           {
             "id": "imitate.ghast",
@@ -2009,6 +2029,10 @@
           {
             "id": "record.far",
             "title": "Record.far"
+          },
+          {
+            "id": "record.flurry",
+            "title": "Record.flurry"
           },
           {
             "id": "record.lava_chicken",

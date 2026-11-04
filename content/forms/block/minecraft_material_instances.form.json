@@ -396,10 +396,10 @@
               "title": "Texture",
               "dataType": "string",
               "samples": {
-                "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+                "/vanilla/behavior_pack/blocks/chiseled_packed_ice.block.json": [
                   {
                     "path": "texture",
-                    "content": "red_shrub"
+                    "content": "chiseled_packed_ice"
                   }
                 ]
               }
@@ -409,23 +409,10 @@
               "title": "Render method",
               "dataType": "string",
               "samples": {
-                "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+                "/vanilla/behavior_pack/blocks/chiseled_packed_ice.block.json": [
                   {
                     "path": "render_method",
-                    "content": "alpha_test_single_sided"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "ambient_occlusion",
-              "title": "Ambient occlusion",
-              "dataType": "number",
-              "samples": {
-                "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
-                  {
-                    "path": "ambient_occlusion",
-                    "content": 0
+                    "content": "opaque"
                   }
                 ]
               }
@@ -433,13 +420,48 @@
           ]
         },
         "samples": {
-          "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+          "/vanilla/behavior_pack/blocks/chiseled_packed_ice.block.json": [
             {
               "path": "/minecraft:block/components/minecraft:material_instances/",
               "content": {
-                "texture": "red_shrub",
-                "render_method": "alpha_test_single_sided",
-                "ambient_occlusion": 0
+                "texture": "chiseled_packed_ice",
+                "render_method": "opaque"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/chiseled_soulshale.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "chiseled_soulshale",
+                "render_method": "opaque"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/packed_ice_bricks.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "packed_ice_bricks",
+                "render_method": "opaque"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/packed_ice_bricks_chiseled.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "chiseled_packed_ice",
+                "render_method": "opaque"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/polished_calcite.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "polished_calcite",
+                "render_method": "opaque"
               }
             }
           ]
@@ -447,14 +469,57 @@
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+      "/vanilla/behavior_pack/blocks/chiseled_packed_ice.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:material_instances/",
           "content": {
             "*": {
-              "texture": "red_shrub",
-              "render_method": "alpha_test_single_sided",
-              "ambient_occlusion": 0
+              "texture": "chiseled_packed_ice",
+              "render_method": "opaque"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/chiseled_soulshale.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "chiseled_soulshale",
+              "render_method": "opaque"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/packed_ice_bricks.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "packed_ice_bricks",
+              "render_method": "opaque"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/packed_ice_bricks_chiseled.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "chiseled_packed_ice",
+              "render_method": "opaque"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/polished_calcite.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "polished_calcite",
+              "render_method": "opaque"
             }
           }
         }
@@ -471,13 +536,48 @@
         "title": "<key>",
         "dataType": "string",
         "samples": {
-          "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+          "/vanilla/behavior_pack/blocks/chiseled_packed_ice.block.json": [
             {
               "path": "/minecraft:block/components/minecraft:material_instances/",
               "content": {
-                "texture": "red_shrub",
-                "render_method": "alpha_test_single_sided",
-                "ambient_occlusion": 0
+                "texture": "chiseled_packed_ice",
+                "render_method": "opaque"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/chiseled_soulshale.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "chiseled_soulshale",
+                "render_method": "opaque"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/packed_ice_bricks.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "packed_ice_bricks",
+                "render_method": "opaque"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/packed_ice_bricks_chiseled.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "chiseled_packed_ice",
+                "render_method": "opaque"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/polished_calcite.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "polished_calcite",
+                "render_method": "opaque"
               }
             }
           ]
@@ -486,14 +586,57 @@
     ],
     "dataVersion": "1.26.20",
     "samples": {
-      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+      "/vanilla/behavior_pack/blocks/chiseled_packed_ice.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:material_instances/",
           "content": {
             "*": {
-              "texture": "red_shrub",
-              "render_method": "alpha_test_single_sided",
-              "ambient_occlusion": 0
+              "texture": "chiseled_packed_ice",
+              "render_method": "opaque"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/chiseled_soulshale.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "chiseled_soulshale",
+              "render_method": "opaque"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/packed_ice_bricks.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "packed_ice_bricks",
+              "render_method": "opaque"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/packed_ice_bricks_chiseled.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "chiseled_packed_ice",
+              "render_method": "opaque"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/polished_calcite.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "polished_calcite",
+              "render_method": "opaque"
             }
           }
         }

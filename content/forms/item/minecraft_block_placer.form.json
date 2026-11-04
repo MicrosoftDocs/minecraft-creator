@@ -52,6 +52,18 @@
         "dataType": "string",
         "isRequired": true,
         "samples": {
+          "/vanilla/behavior_pack/items/ice_crystal.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:block_placer/",
+              "content": "minecraft:ice_crystal"
+            }
+          ],
+          "/vanilla/behavior_pack/items/icicle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:block_placer/",
+              "content": "minecraft:icicle"
+            }
+          ],
           "/vanilla/behavior_pack/items/red_shrub.json": [
             {
               "path": "/minecraft:item/components/minecraft:block_placer/",
@@ -73,13 +85,13 @@
         "dataType": "boolean",
         "defaultValue": false,
         "samples": {
-          "/vanilla/behavior_pack/items/red_shrub.json": [
+          "/vanilla/behavior_pack/items/ice_crystal.json": [
             {
               "path": "/minecraft:item/components/minecraft:block_placer/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/items/shelf_mushroom.json": [
+          "/vanilla/behavior_pack/items/icicle.json": [
             {
               "path": "/minecraft:item/components/minecraft:block_placer/",
               "content": true
@@ -144,6 +156,24 @@
     ],
     "dataVersion": "1.26.30",
     "samples": {
+      "/vanilla/behavior_pack/items/ice_crystal.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:block_placer/",
+          "content": {
+            "block": "minecraft:ice_crystal",
+            "replace_block_item": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/icicle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:block_placer/",
+          "content": {
+            "block": "minecraft:icicle",
+            "replace_block_item": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/items/red_shrub.json": [
         {
           "path": "/minecraft:item/components/minecraft:block_placer/",
