@@ -4,7 +4,7 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Vibrant Visuals
 description: "Overview, settings, and usage of Vibrant Visuals in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 10/14/2026
 ---
 
 # Vibrant Visuals in Bedrock Editor
@@ -183,7 +183,7 @@ Controls the color of the atmosphere’s horizon.
 Adjusts the strength of the atmosphere’s Rayleigh scattering.
 
 > [!TIP]
-> Rayleigh scattering refers to the way that particles that are significantly smaller/larger than a light ray’s wavelength scatter that light as it passes through them. For a more technical explanation, check out [this article on Rayleigh scattering](https://en.wikipedia.org/wiki/Rayleigh_scattering).
+> Rayleigh scattering describes how particles much smaller than the wavelength of light scatter that light. For a more technical explanation, see [this article on Rayleigh scattering](https://en.wikipedia.org/wiki/Rayleigh_scattering).
 
 ### Sun Mie Strength
 

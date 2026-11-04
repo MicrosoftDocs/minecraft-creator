@@ -4,7 +4,7 @@ ms.author: brisch
 title: Minecraft Bedrock Editor World Options
 description: "An overview of the World Options in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 10/14/2026
 ---
 
 # Editor World Options
@@ -30,7 +30,7 @@ Changes the active editing dimension. Go here to switch to the Nether or the End
 Opens the Test World panel, where you can test your Editor project as a playable Minecraft world. While you are playing, you can press **Esc** and click **Return to Editor** at any time to end your test and resume editing your project. No changes you make while testing will be saved to your project.
 
 > [!Note]
-> Test World is only available when hosting a single-player world.
+> Test World is available when hosting a local single-player project. It isn't available while editing a project hosted on Realms or a Bedrock Dedicated Server.
 
 Run `/reload all` while testing to reload Test World content without requiring a separate vanilla client connection.
 

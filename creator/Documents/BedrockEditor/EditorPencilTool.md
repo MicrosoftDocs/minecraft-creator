@@ -1,10 +1,10 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Pencil Tool
 description: "An overview of the Pencil Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2025
+ms.date: 10/14/2026
 ---
 
 # Pencil Tool
@@ -111,7 +111,7 @@ Sets the Pencil's offset from the cursor's location.
 
 Block Filters determine what type of blocks are included/excluded from the Pencil action and how your selection is filled.
 
-![Fil Constraints Menu](media/BrushScreenshots/FillConstraints.png)
+![Fill Constraints menu](Media/BrushScreenshots/FillConstraints.png)
 
 - **Disabled**
 

@@ -4,12 +4,14 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Custom Mesh Tool
 description: "An overview of the Custom Mesh Tool (Structure Import) in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/03/2026
+ms.date: 10/14/2026
 ---
 
 # Custom Mesh Tool
 
 The Custom Mesh tool lets you import 3D mesh files and voxelize them into Minecraft blocks. Use Custom Mesh to import an STL, glTF, or GLB file, preview the wireframe in your world, adjust its transform, and place it as a block structure. If the mesh contains vertex color data, you can map its predominant colors to different block types.
+
+![Animation showing an imported wireframe mesh positioned and converted into blocks](Media/GIFs/custom-mesh-tool-introduction.gif)
 
 ## Using the Custom Mesh tool
 
@@ -17,7 +19,7 @@ The Custom Mesh tool lets you import 3D mesh files and voxelize them into Minecr
 
 2. Click **Import** to open the file picker, then select the `.stl`, `.gltf`, or `.glb` file you want to convert into a structure.
    > [!NOTE]
-   > Files exceeding 50 MB or 200,000 triangles will be rejected.
+   > Files exceeding 50 MiB (52,428,800 bytes) or 200,000 triangles will be rejected.
 
 3. A gold wireframe preview of the mesh appears in the world after the file finishes importing. You can view the mesh name, triangle count, and file size from the tool pane.
 
@@ -49,7 +51,7 @@ Use **Change Mesh** to import a different file without leaving the tool. Click *
 
 | Limit                      | Value            |
 | :------------------------- | :--------------- |
-| Maximum file size          | 50 MB            |
+| Maximum file size          | 50 MiB (52,428,800 bytes) |
 | Maximum preview triangles  | 200,000          |
 | Maximum blocks per axis    | 256              |
 | Maximum total block volume | 4,000,000 blocks |

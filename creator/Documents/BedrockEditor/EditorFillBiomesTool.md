@@ -4,7 +4,7 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Fill Biomes Tool
 description: "An overview of the Fill Biomes Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 10/14/2026
 ---
 
 # Fill Biomes Tool
@@ -15,7 +15,7 @@ The Fill Biomes tool lets you reassign the biome of any region in your world wit
 
 1. Open **Fill Biomes** by selecting it from the tool rail or Action Bar. You can also open **Biome Data Assignment** from the **World** menu.
 
-2. Use **Selection** to highlight the region where you want to change the biome. The selection you make defines the 3D volume that will be affected.
+2. Use **Selection** to highlight the region where you want to change the biome. By default, the selection defines the affected 3D volume. Options to include the area above or below the selection can extend it to the dimension's height limits.
 
 3. Choose a **Target Biome** from the biome dropdown. This is the biome that will be applied to the selected region.
 
@@ -26,7 +26,7 @@ The Fill Biomes tool lets you reassign the biome of any region in your world wit
 6. Click **Fill** to apply the biome change. A confirmation dialog appears before the operation is committed.
 
    > [!NOTE]
-   > The fill operation respects the full vertical extent of the selection. Larger selections take a bit longer to process. Changes to loaded chunks synchronize in real time.
+   > The fill respects the selection's vertical extent unless you enable the options to include the area above or below it. Larger selections take longer to process. Changes to loaded chunks synchronize in real time.
 
 ## Mask options
 

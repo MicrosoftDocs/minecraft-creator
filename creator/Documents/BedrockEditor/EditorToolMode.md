@@ -4,7 +4,7 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Modes
 description: "An overview of Tool Mode and Crosshair Mode in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 10/14/2026
 ---
 
 # Tool Mode and Crosshair Mode
@@ -17,13 +17,15 @@ The two modes within Editor are Tool Mode and Crosshair Mode.
 
 **Crosshair Mode** has more precise, single-block editing capabilities. It also uses the usual Minecraft keybindings you can see on the Settings > Controls > Keyboard & Mouse screen. Move the mouse to look around.
 
+In **Tool Mode**, hold the right mouse button to look around and navigate with **W**, **A**, **S**, **D**, **E** (up), and **Q** (down). These are Editor viewport controls, not Crosshair Mode's gameplay bindings.
+
 ![Crosshair mode has no user interface and looks like the Minecraft game](Media/editor_overview_crosshair_mode.png)
 
 In a new project, before you touch anything, you are in Tool Mode.
 
-If you're ever not sure which mode you are in, press **Esc**. If you're in Crosshair mode, you'll go back into Tool Mode - if you're in Tool Mode already, nothing will happen.
+Press **Esc** in Crosshair Mode to return to Tool Mode. In Tool Mode, **Esc** can have a tool-specific effect, such as releasing an anchored Primitives preview.
 
-> [!PRACTICE]
+> [!TIP]
 > In the top right corner of the screen, select the "Crosshair Mode" button or press **Ctrl+Tab** to go into Crosshair Mode. Note the differences. To go back to Tool Mode, you can press **Ctrl+Tab** again or press **Esc**. You can also go from Tool Mode to Crosshair Mode by clicking the Crosshair Mode button in the upper right corner.
 
 Think of the Tool Mode UI as a collection of containers. The menu bar contains menus. The action bar contains buttons that do simple functions like Undo and Redo. The toolrail contains more complicated tools that have their own configuration windows where you can change the settings.
@@ -35,11 +37,13 @@ Think of the Tool Mode UI as a collection of containers. The menu bar contains m
 
 ![Editor UI with menu bar highlighted](Media/editor_overview_menu_bar.png)
 
-**Action bar**: Located below the menu bar. Currently has Undo, Redo, Attach Debugger, Input Mapping, Reload, and Crosshair Mode.
+**Action bar**: Located below the menu bar. Add shortcuts for common actions with the **+** buttons. Its contents depend on your configuration. See [Editor Action Bar](EditorActionBar.md).
 
 ![Editor UI with the action bar highlighted](Media/editor_overview_action_bar.png)
 
 **Toolrail**: Located on the left side of the screen. It contains Editor tools such as Selection, Brush, Primitives, Paste Preview, Line, and Summon. You can also select tools using keyboard shortcuts, when available. If the tools span multiple pages, use the mouse wheel over the tool rail to move between pages.
+
+Use the [Layouts tool](EditorLayouts.md) to place reusable groups of structures. Add **Layouts Management** to the Action Bar to create and manage layouts.
 
 ![Editor UI with the tool rail highlighted](Media/editor_overview_tool_rail.png)
 
@@ -47,8 +51,8 @@ Think of the Tool Mode UI as a collection of containers. The menu bar contains m
 
 ### File
 
-#### Export as:
-When you're ready to share your project (or just see it in-game) select **File > Export as > Playable world** to create a .mcworld file. Save your new file to the **projectbackups** folder located inside **com.mojang**.
+#### Export
+When you're ready to play your local project outside Editor, select **File** > **Export**, choose **Playable World**, and select **Export**. This creates a local playable world directory. Choose **Shareable World (.mcworld)** for an archive, or **Backup Editor Project** for an editable `.mcproject` backup. See [Editor Workflow](EditorWorkflow.md) for file locations.
 
 > [!NOTE]
 > If you don't know how to find your com.mojang folder, there are instructions in the Bedrock [Getting Started](../GettingStarted.md) tutorial.
@@ -62,11 +66,7 @@ After the file is imported, it is converted to an .mcproject file.
 
 Visit [Minecraft File Types](../MinecraftFileExtensions.md) to learn more about Minecraft file types like .mcproject and .mcworld.
 
-- **UI settings** - This is where you can adjust the UI Scale, Font, and Theme color settings of the Editor UI.
-
-  ![Editor UI Settings screen in Redstone theme](Media/editor_overview_ui_settings_redstone.png)
-
-- **Cursor Settings** - This gives you the option to toggle Project through Liquid on or off.
+- **Settings** - Opens **Control**, **Interface**, and **World View** settings. Change the movement speed multiplier under Control, UI Scale/Font/Theme under Interface, or chunk boundaries and other visualization options under World View. See [Editor Settings](EditorSettings.md).
 
 - **Keyboard Settings** - Opens Input Mapping so you can review and customize shortcuts.
 

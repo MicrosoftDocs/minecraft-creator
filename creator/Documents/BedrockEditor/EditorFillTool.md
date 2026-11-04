@@ -1,10 +1,10 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Fill Tool
 description: "An overview of the Fill Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/08/2025
+ms.date: 10/14/2026
 ---
 
 # Fill Tool
@@ -22,8 +22,7 @@ You can open the fill tool window by clicking the fill tool button on the left s
 
 2. Choose the **Area Limit** in the fill tool window and decide whether or not to Restrict to Selection.
     > [!NOTE]
-    > Area Limit sets the maximum reach of Smart Fill in all directions around the clicked block. Range: 1–16. When Restrict to Selection is enabled, only blocks inside your current Selection are filled. Fills operate in 3D and dissimilar blocks or boundaries 
-    halt the spread.
+    > Area Limit sets the maximum reach of Smart Fill in all directions around the clicked block. Range: 1–100; default: 16. When Restrict to Selection is enabled, only blocks inside your current Selection are filled. Fills operate in 3D, and dissimilar blocks or boundaries halt the spread.
 
 3. Use the Block Picker to choose the type of block you want to replace the terrain with.
 
