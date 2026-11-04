@@ -52,7 +52,7 @@
         ]
       }
     ],
-    "dataVersion": "1.21.10"
+    "dataVersion": "1.26.70"
   },
   "description": "Runs Molang expressions when each individual particle spawns to initialize per-particle variables. Unlike emitter_initialization which runs once per emitter, this executes for every particle—enabling randomized properties, unique trajectories, or per-particle state that persists through the particle's lifetime."
 }

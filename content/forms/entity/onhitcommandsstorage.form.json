@@ -62,7 +62,6 @@
       {
         "id": "impact_damage",
         "title": "Impact Damage",
-        "description": "Deals damage to the entity that was hit and optionally applies knockback, fire, channeling, and critical-hit scaling.",
         "dataType": "object",
         "subFormId": "entity/impactdamagesubcomponentdefinition"
       },
@@ -127,6 +126,6 @@
         "dataType": "object"
       }
     ],
-    "dataVersion": "1.26.50"
+    "dataVersion": "1.26.70"
   }
 }

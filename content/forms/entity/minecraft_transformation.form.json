@@ -1080,8 +1080,16 @@
             "title": "Convert to frog"
           },
           {
+            "id": "convert_to_frostbite",
+            "title": "Convert to frostbite"
+          },
+          {
             "id": "convert_to_stray",
             "title": "Convert to stray"
+          },
+          {
+            "id": "convert_to_zombie",
+            "title": "Convert to zombie"
           },
           {
             "id": "converted_to_zombified",
@@ -1094,6 +1102,10 @@
           {
             "id": "copper.wax.on",
             "title": "Copper.wax.on"
+          },
+          {
+            "id": "crack",
+            "title": "Crack"
           },
           {
             "id": "crafter.craft",
@@ -1436,6 +1448,10 @@
             "title": "Hurt.screamer"
           },
           {
+            "id": "ice_ball.throw",
+            "title": "Ice ball.throw"
+          },
+          {
             "id": "icebomb.hit",
             "title": "Icebomb.hit"
           },
@@ -1494,6 +1510,10 @@
           {
             "id": "imitate.evocation_illager",
             "title": "Imitate.evocation illager"
+          },
+          {
+            "id": "imitate.frostbite",
+            "title": "Imitate.frostbite"
           },
           {
             "id": "imitate.ghast",
@@ -2244,6 +2264,10 @@
             "title": "Record.far"
           },
           {
+            "id": "record.flurry",
+            "title": "Record.flurry"
+          },
+          {
             "id": "record.lava_chicken",
             "title": "Record.lava chicken"
           },
@@ -2667,6 +2691,20 @@
         },
         "subFormId": "entity/transformationdelay",
         "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/",
+              "content": {
+                "value": 15
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/",
+              "content": {
+                "value": 15
+              }
+            }
+          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",
@@ -2676,7 +2714,9 @@
           "/vanilla/behavior_pack/entities/stray.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:revert_to_skeleton/minecraft:transformation/",
-              "content": 0.5
+              "content": {
+                "value": 0.5
+              }
             }
           ]
         }
@@ -2710,6 +2750,16 @@
         "dataType": "string",
         "defaultValue": "",
         "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/",
+              "content": "minecraft:zombie<minecraft:as_adult>"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/",
+              "content": "minecraft:zombie<minecraft:as_baby>"
+            }
+          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",
@@ -2759,9 +2809,13 @@
         "dataType": "boolean",
         "defaultValue": false,
         "samples": {
-          "/vanilla/behavior_pack/entities/skeleton.json": [
+          "/vanilla/behavior_pack/entities/drowned.json": [
             {
-              "path": "/minecraft:entity/component_groups/become_stray/minecraft:transformation/",
+              "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/",
+              "content": true
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/",
               "content": true
             }
           ]
@@ -3487,8 +3541,16 @@
             "title": "Convert to frog"
           },
           {
+            "id": "convert_to_frostbite",
+            "title": "Convert to frostbite"
+          },
+          {
             "id": "convert_to_stray",
             "title": "Convert to stray"
+          },
+          {
+            "id": "convert_to_zombie",
+            "title": "Convert to zombie"
           },
           {
             "id": "converted_to_zombified",
@@ -3501,6 +3563,10 @@
           {
             "id": "copper.wax.on",
             "title": "Copper.wax.on"
+          },
+          {
+            "id": "crack",
+            "title": "Crack"
           },
           {
             "id": "crafter.craft",
@@ -3843,6 +3909,10 @@
             "title": "Hurt.screamer"
           },
           {
+            "id": "ice_ball.throw",
+            "title": "Ice ball.throw"
+          },
+          {
             "id": "icebomb.hit",
             "title": "Icebomb.hit"
           },
@@ -3901,6 +3971,10 @@
           {
             "id": "imitate.evocation_illager",
             "title": "Imitate.evocation illager"
+          },
+          {
+            "id": "imitate.frostbite",
+            "title": "Imitate.frostbite"
           },
           {
             "id": "imitate.ghast",
@@ -4651,6 +4725,10 @@
             "title": "Record.far"
           },
           {
+            "id": "record.flurry",
+            "title": "Record.flurry"
+          },
+          {
             "id": "record.lava_chicken",
             "title": "Record.lava chicken"
           },
@@ -5057,6 +5135,20 @@
         ],
         "mustMatchChoices": true,
         "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/",
+              "content": [
+                "convert_to_zombie"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/",
+              "content": [
+                "convert_to_zombie"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",
@@ -5066,7 +5158,9 @@
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
               "path": "/minecraft:entity/component_groups/become_stray/minecraft:transformation/",
-              "content": "convert_to_stray"
+              "content": [
+                "convert_to_stray"
+              ]
             }
           ]
         }
@@ -5074,6 +5168,34 @@
     ],
     "dataVersion": "1.26.60",
     "samples": {
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/",
+          "content": {
+            "delay": {
+              "value": 15
+            },
+            "preserve_equipment": true,
+            "into": "minecraft:zombie<minecraft:as_adult>",
+            "transformation_sound": [
+              "convert_to_zombie"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/",
+          "content": {
+            "delay": {
+              "value": 15
+            },
+            "preserve_equipment": true,
+            "into": "minecraft:zombie<minecraft:as_baby>",
+            "transformation_sound": [
+              "convert_to_zombie"
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/pig.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:pig_transform/minecraft:transformation/",
@@ -5092,7 +5214,9 @@
             "into": "minecraft:stray",
             "keep_level": true,
             "preserve_equipment": true,
-            "transformation_sound": "convert_to_stray"
+            "transformation_sound": [
+              "convert_to_stray"
+            ]
           }
         }
       ],
@@ -5100,7 +5224,9 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:revert_to_skeleton/minecraft:transformation/",
           "content": {
-            "delay": 0.5,
+            "delay": {
+              "value": 0.5
+            },
             "into": "minecraft:skeleton"
           }
         }

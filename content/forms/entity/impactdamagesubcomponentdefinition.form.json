@@ -4,7 +4,6 @@
   "generatedFromSchema_doNotEdit": {
     "id": "ImpactDamageSubcomponentDefinition",
     "title": "Entity ImpactDamageSubcomponentDefinition",
-    "description": "Deals damage to the entity that was hit and optionally applies knockback, fire, channeling, and critical-hit scaling.",
     "fields": [
       {
         "id": "apply_knockback_to_blocking_targets",
@@ -44,6 +43,12 @@
           "min": 0
         },
         "subFormId": "legacy/floatrange"
+      },
+      {
+        "id": "death_message_override",
+        "title": "Death Message Override",
+        "description": "A localization key to use as the death message when the impact damage kills an entity. If omitted, the default death message for projectiles is used. `%1$s` is the name of the killed entity and `%2$s` is the name of the projectile's owner, or of the projectile itself if it has no owner.",
+        "dataType": "string"
       },
       {
         "id": "destroy_on_hit",
@@ -117,6 +122,13 @@
         "defaultValue": 0
       },
       {
+        "id": "scale_damage_with_difficulty",
+        "title": "Scale Damage With Difficulty",
+        "description": "If `true`, scales impact damage with the world's difficulty.",
+        "dataType": "boolean",
+        "defaultValue": true
+      },
+      {
         "id": "set_last_hurt_requires_damage",
         "title": "Set Last Hurt Requires Damage",
         "description": "If `true`, the projectile only registers as the last hurt-by source on the target when at least one point of damage is actually dealt.",
@@ -124,6 +136,6 @@
         "defaultValue": true
       }
     ],
-    "dataVersion": "1.26.50"
+    "dataVersion": "1.26.70"
   }
 }

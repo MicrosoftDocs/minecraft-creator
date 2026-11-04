@@ -124,7 +124,7 @@
         ]
       }
     ],
-    "dataVersion": "1.21.10"
+    "dataVersion": "1.26.70"
   },
   "description": "Applies physics simulation to particle movement including gravity, acceleration, and air resistance. Linear acceleration adds constant force (gravity pulls down, wind pushes sideways), while drag slows particles over time. Rotation acceleration and drag control spinning. Creates natural-feeling motion for smoke rising, debris falling, or leaves drifting."
 }

@@ -3672,6 +3672,12 @@
         "dataType": "object"
       },
       {
+        "id": "minecraft:can_stand_on_brittle_ice",
+        "title": "Minecraft Can Stand On Brittle Ice",
+        "description": "Defines whether a mob can stand on brittle ice without it cracking.",
+        "dataType": "object"
+      },
+      {
         "id": "minecraft:can_stand_on_powder_snow",
         "title": "Minecraft Can Stand On Powder Snow",
         "description": "Defines whether an entity can stand on powder snow without sinking.",
@@ -3875,7 +3881,7 @@
       {
         "id": "minecraft:freezing_immune",
         "title": "Minecraft Freezing Immune",
-        "description": "Defines whether an entity should be affected by freezing.",
+        "description": "Prevents freezing buildup from powder snow and the Freezing mob effect, but does not prevent the mob effect from being applied or displaying particles. Use minecraft:mob_effect_immunity to block the Freezing mob effect.",
         "dataType": "object"
       },
       {
@@ -4838,7 +4844,7 @@
         "subFormId": "entity/minecraft_wither_target_highest_damage"
       }
     ],
-    "dataVersion": "1.26.60"
+    "dataVersion": "1.26.70"
   },
   "description": "Registry of all available entity components that define mob capabilities. Components cover health, movement, combat, AI goals, interactions, physics, sensing, and rendering. Entities combine components to create unique creatures—adding minecraft:health for durability, minecraft:behavior.melee_attack for combat, or minecraft:rideable for mounts."
 }

@@ -61,37 +61,14 @@
       {
         "path": "JSON (object)",
         "content": {
-          "origin": [
-            -8,
+          "min": [
             0,
-            -8
+            0,
+            0
           ],
-          "size": [
+          "max": [
             16,
             16,
-            16
-          ]
-        }
-      }
-    ],
-    "Block Fabricator": [
-      {
-        "path": "https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json",
-        "content": true
-      }
-    ],
-    "Block Leaf Pile": [
-      {
-        "path": "https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json",
-        "content": {
-          "origin": [
-            -8,
-            2,
-            -8
-          ],
-          "size": [
-            16,
-            4,
             16
           ]
         }
@@ -104,26 +81,45 @@
     "description": "Defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used.",
     "fields": [
       {
-        "id": "max",
-        "title": "Max",
-        "description": "Maximum position of the bounds of the collision box. \"max\" is specified as [x, y, z] and must be in the range (0, 0, 0) to (16, 24, 16), inclusive.",
-        "defaultValue": [
-          16,
-          24,
-          16
-        ],
-        "dataType": "point3"
+        "id": "Using a voxel shape",
+        "title": "Using a Voxel Shape",
+        "description": "Currently only available with the VoxelShape experiment on. When using the minecraft namespace, the only currently available collision shapes are: \"minecraft:empty\" or \"minecraft:unit_cube\". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character.",
+        "defaultValue": "custom:shape_name",
+        "dataType": "string"
       },
       {
-        "id": "min",
-        "title": "Min",
-        "description": "Minimal position of the bounds of the collision box. \"min\" is specified as [x, y, z] and must be in the range (0, 0, 0) to (16, 24, 16), inclusive.",
-        "defaultValue": [
-          0,
-          0,
-          0
-        ],
-        "dataType": "point3"
+        "id": "Using custom boxes",
+        "title": "Using Custom Boxes",
+        "description": "An array of boxes that define the area of the block that collides with entities.",
+        "dataType": "objectArray",
+        "subForm": {
+          "id": "",
+          "description": "An array of boxes that define the area of the block that collides with entities.",
+          "fields": [
+            {
+              "id": "max",
+              "title": "Max",
+              "description": "Maximum position of the bounds of the collision box. \"max\" is specified as [x, y, z] and must be in the range (0, 0, 0) to (16, 24, 16), inclusive.",
+              "defaultValue": [
+                16,
+                24,
+                16
+              ],
+              "dataType": "point3"
+            },
+            {
+              "id": "min",
+              "title": "Min",
+              "description": "Minimal position of the bounds of the collision box. \"min\" is specified as [x, y, z] and must be in the range (0, 0, 0) to (16, 24, 16), inclusive.",
+              "defaultValue": [
+                0,
+                0,
+                0
+              ],
+              "dataType": "point3"
+            }
+          ]
+        }
       }
     ],
     "scalarField": {

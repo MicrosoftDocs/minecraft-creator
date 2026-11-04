@@ -208,6 +208,7 @@ Filters allow data objects to specify test criteria which allows their use. Filt
 | greenflame | Greenflame | |
 | heart | Heart | |
 | hugeexplosion | Hugeexplosion | |
+| iceballbreak | Iceballbreak | |
 | iconcrack | Iconcrack | |
 | ink | Ink | |
 | largeexplode | Largeexplode | |

@@ -154,7 +154,9 @@
           "/vanilla/behavior_pack/entities/player.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:add_raid_omen/minecraft:spell_effects/",
-              "content": "bad_omen"
+              "content": [
+                "bad_omen"
+              ]
             }
           ]
         }
@@ -173,7 +175,9 @@
                 "effect": "raid_omen"
               }
             ],
-            "remove_effects": "bad_omen"
+            "remove_effects": [
+              "bad_omen"
+            ]
           }
         },
         {

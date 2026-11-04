@@ -11,7 +11,7 @@
       {
         "id": "obstruction_rule",
         "title": "Obstruction Rule",
-        "description": "[optional] How the block should be evaluated by a chest during chest opening. Must be one of the following options:\n\"always\" - Will always oba chest from opening when directly above it.\n\"never\" - Will never obstruct a chest from opening when directly above it.\n\"shape\" - Will use the Blocks AABB shape to determine if the chest is obstructed from opening when directly above it; this is the default value if no rule is provided.",
+        "description": "[optional] How the block should be evaluated by a chest during chest opening. Must be one of the following options:\n\"always\" - Will always oba chest from opening when directly above it.\n\"never\" - Will never obstruct a chest from opening when directly above it.\n\"shape\" - Will use the Blocks collision shape to determine if the chest is obstructed from opening when directly above it; this is the default value if no rule is provided.\nA Block can define its collision shape by adding a collision component.",
         "defaultValue": "shape",
         "dataType": "string",
         "samples": {

@@ -28,4 +28,6 @@ Adds per-instance metadata for this block.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
+| show_ui_on_interaction | true | Boolean true/false | Determines whether interacting with this block opens its container UI. Defaults to true. When false, normal block interaction events can run instead. | 
 | slot_count | *not set* | Integer number | Sets the number of slots in the container. Value must be >= 1. Value must be <= 54. | 
+| title | *not set* | String | Optional container title, stored as a language file key or raw text. Must be nonempty and at most 256 characters. Value must have at least 1 items. Value must have at most 256 items. | 

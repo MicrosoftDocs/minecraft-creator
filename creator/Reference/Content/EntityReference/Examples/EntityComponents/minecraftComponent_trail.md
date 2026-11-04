@@ -17,27 +17,74 @@ Causes an entity to leave a trail of blocks as it moves about the world. Obeys M
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
-| block_type | air | String | The type of block that is spawned as a trail behind the entity. Solid blocks cannot be spawned at an offset of (0, 0, 0). | 
-| force_replace_matched_blocks | false | Boolean true/false | When true, the trail will replace blocks that match the replaceable blocks list even if normal placement rules prevent it. | 
-| radius | -1 | Integer number | When provided, the trail spawns blocks across a (2 * radius + 1) by (2 * radius + 1) horizontal area centered on the spawn offset. | 
-| replaceable_blocks (Replaceable Blocks) | [] | Array of [Replaceable Blocks](#replaceable-blocks) items | A list of blocks that can be replaced by the trail block. If the block at the spawn offset is not in this list, the trail block will not spawn. If omitted it will default to only air blocks. | 
-| replaceable_blocks (as String) | *not set* | String |  | 
-| replaceable_blocks (as Object) | *not set* | Object |  | 
-| spawn_filter (Spawn Filter) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Spawn Filter](#spawn-filter) item | One or more conditions that must be met in order to cause the chosen block type to spawn. | 
-| spawn_filter (Alternate 1) | *not set* | Object |  | 
-| spawn_offset | [0, 0, 0] | Array of numbers | The offset from the entity's current position at which to spawn the block, capped at 16 blocks away. | 
-| spawn_offset (Spawn Offset) | *not set* | [Spawn Offset (Spawn Offset)](#spawn-offset-spawn-offset) item |  | 
+| block_type | air | String | The type of block that is placed. Solid blocks cannot be placed at the entity's position when offset is [0, 0, 0]. | 
+| extent | 0 | Integer number | Maximum horizontal distance from the center at which blocks can be placed. Value must be <= 16. | 
+| offset | [0, 0, 0] | Array of numbers | Offset from the entity's position used to determine where trail blocks are placed and placement checks are applied, capped at 16 blocks away. | 
+| offset (Offset) | *not set* | [Offset (Offset)](#offset-offset) item |  | 
+| place_only_on_block_position_change | false | Boolean true/false | When true, trail blocks are only placed on ticks where the bottom of the entity moves into a different block position, or where the entity lands (goes from airborne to grounded). | 
+| placement_checks | block | [Placement Checks](#placement-checks-choices) choices | Controls the checks applied at each trail block placement position before placing the trail block. | 
+| placement_conditions | [[object Object]] | Array of [Placement Conditions](#entity-trail-placement-conditions-entry) items | Conditions that must all be satisfied relative to the trail block placement position. | 
+| placement_filter (Placement Filter) | {"AND":null,"NOT":null,"OR":null,"all":null,"all_of":null,"any":null,"any_of":null,"none_of":null} | [Placement Filter](#placement-filter) item | One or more conditions that must be met in order to cause the chosen block type to be placed. | 
+| placement_filter (Alternate 1) | *not set* | Object |  | 
+| shape | corners | [Shape](#shape-choices) choices | Controls the horizontal placement pattern. 'corners' places four corner blocks, 'square' fills a square, and 'circle' fills a circular disk. Defaults to 'corners'. | 
+| spawn_filter | *not set* | Minecraft filter | Conditions that must be met for the trail block to be placed. | 
+| spawn_offset | [0, 0, 0] | x, y, z coordinate array | Offset from the entity's position where the trail block is placed. | 
 
-### radius
+### offset
 
-When provided, the trail spawns blocks across a (2 * radius + 1) by (2 * radius + 1) horizontal area centered on the spawn offset. Uses the legacy four-corner sampling when omitted. Value must be >= -1. Value must be <= 16.
+Offset from the entity's position used to determine where trail blocks are placed and placement checks are applied, capped at 16 blocks away. X and Z are relative to the entity's orientation and rotate to its nearest cardinal facing; Y is a vertical offset.
+
+### place_only_on_block_position_change
+
+When true, trail blocks are only placed on ticks where the bottom of the entity moves into a different block position, or where the entity lands (goes from airborne to grounded). Standing still or moving within the same block does not place blocks. Defaults to false.
+
+### placement_checks
+
+Controls the checks applied at each trail block placement position before placing the trail block. 'none' applies no placement checks, 'block' applies block placement conditions, and 'standard' applies standard block placement rules, including clearance from entities that obblock placement.
+
+### placement_conditions
+
+Conditions that must all be satisfied relative to the trail block placement position. Block types within one condition are alternatives. When omitted, defaults to [{ "y_offset": 0, "block_types": ["minecraft:air"] }]. Value must have at least 1 items.
 
 
-### Replaceable Blocks
+### Offset (Offset)
 
-#### Replaceable Blocks Properties
+#### Offset Properties
 
-**JSON path:** `replaceable_blocks`
+**JSON path:** `offset`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| x | 0 | Decimal number |  | 
+| y | 0 | Decimal number |  | 
+| z | 0 | Decimal number |  | 
+
+### Placement Checks choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | |
+| none | None | |
+| standard | Standard | |
+
+### Entity Trail Placement Conditions Entry
+
+#### Entity Trail Placement Conditions Entry Properties
+
+**JSON path:** `placement_conditions`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| block_types (Block Types) | [] | Array of [Block Types](#block-types) items | Block types that satisfy this condition at its vertical offset from the placement position. Value must have at least 1 items. | 
+| block_types (as String) | *not set* | String |  | 
+| block_types (as Object) | *not set* | Object |  | 
+| y_offset | 0 | Integer number | Vertical offset from the trail block placement position. Defaults to 0. Value must be >= -16. Value must be <= 16. | 
+
+#### Block Types
+
+##### Block Types Properties
+
+**JSON path:** `placement_conditions > block_types`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -47,11 +94,11 @@ When provided, the trail spawns blocks across a (2 * radius + 1) by (2 * radius 
 | states (as Boolean true/false) | *not set* | Boolean true/false |  | 
 | tags |  | String |  | 
 
-### Spawn Filter
+### Placement Filter
 
-#### Spawn Filter Properties
+#### Placement Filter Properties
 
-**JSON path:** `spawn_filter`
+**JSON path:** `placement_filter`
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
@@ -61,16 +108,12 @@ When provided, the trail spawns blocks across a (2 * radius + 1) by (2 * radius 
 | test | *not set* | String | The name of the test to apply. | 
 | value | *not set* | Object | The value being compared with the test. | 
 
-### Spawn Offset (Spawn Offset)
+### Shape choices
 
-#### Spawn Offset Properties
-
-**JSON path:** `spawn_offset`
-
-|Name       |Default Value |Type |Description |
-|:----------|:-------------|:----|:-----------|
-| x | 0 | Decimal number |  | 
-| y | 0 | Decimal number |  | 
-| z | 0 | Decimal number |  | 
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| circle | Circle | |
+| corners | Corners | |
+| square | Square | |
 
 ## Samples

@@ -75,7 +75,7 @@
         "isRequired": true
       }
     ],
-    "dataVersion": "1.21.10"
+    "dataVersion": "1.26.70"
   },
   "description": "Creates animation curves using linear interpolation between keyframe values. Define input range and corresponding output values; the curve linearly blends between adjacent keyframes. Simpler than bezier curves but effective for straightforward animations like size growing, alpha fading, or color shifting over particle lifetime."
 }

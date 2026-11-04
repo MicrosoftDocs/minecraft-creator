@@ -4,6 +4,8 @@
   href: minecraft_aggregate_feature.md
 - name: minecraft:cave_carver_feature
   href: minecraft_cave_carver_feature.md
+- name: minecraft:crevasse_feature
+  href: minecraft_crevasse_feature.md
 - name: minecraft:fossil_feature
   href: minecraft_fossil_feature.md
 - name: minecraft:geode_feature

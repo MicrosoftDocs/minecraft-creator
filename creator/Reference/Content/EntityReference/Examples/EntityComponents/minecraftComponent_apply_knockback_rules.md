@@ -315,6 +315,21 @@ Defines how knockback is applied to the target: - "relative_horizontal": Applies
       "scale_with_damage": true,
       "knockback_mode": "hit_direction",
       "extra_knockback_approach": "multiply_reduced"
+    },
+    {
+      "filter": {
+        "test": "enum_property",
+        "subject": "other",
+        "domain": "minecraft:sulfur_cube_archetype",
+        "value": "cold"
+      },
+      "horizontal_power": 0.265,
+      "vertical_power": 0.09,
+      "vertical_velocity_cap": 8,
+      "slowdown_scale": 1,
+      "scale_with_damage": true,
+      "knockback_mode": "hit_direction",
+      "extra_knockback_approach": "multiply_reduced"
     }
   ]
 }

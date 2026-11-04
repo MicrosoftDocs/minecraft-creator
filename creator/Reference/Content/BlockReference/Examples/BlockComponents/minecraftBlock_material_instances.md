@@ -28,7 +28,7 @@ Limited to 64 instances.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| * (Material Instance Face) | *not set* | [*](#material-instance-face) item |  | Block Red Shrub: `{"texture":"red_shrub","render_method":"alpha_test_single_sided","ambient_occlusion":0}` | 
+| * (Material Instance Face) | *not set* | [*](#material-instance-face) item |  | Block Chiseled Packed Ice: `{"texture":"chiseled_packed_ice","render_method":"opaque"}`, Block Chiseled Soulshale: `{"texture":"chiseled_soulshale","render_method":"opaque"}`, Block Packed Ice Bricks: `{"texture":"packed_ice_bricks","render_method":"opaque"}` | 
 | * (as String) | *not set* | String |  |  | 
 | down (Material Instance Face) | *not set* | [Down](#material-instance-face) item |  |  | 
 | down (as String) | *not set* | String |  |  | 
@@ -185,15 +185,50 @@ Tint multiplied to the color. Tint method logic varies, but often refers to the 
 }
 ```
 
-#### [Block Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/red_shrub.block.json)
+#### [Block Chiseled Packed Ice](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/chiseled_packed_ice.block.json)
 
 
 ```json
 "minecraft:material_instances": {
   "*": {
-    "texture": "red_shrub",
-    "render_method": "alpha_test_single_sided",
-    "ambient_occlusion": 0
+    "texture": "chiseled_packed_ice",
+    "render_method": "opaque"
+  }
+}
+```
+
+#### [Block Chiseled Soulshale](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/chiseled_soulshale.block.json)
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "chiseled_soulshale",
+    "render_method": "opaque"
+  }
+}
+```
+
+#### [Block Packed Ice Bricks](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/packed_ice_bricks.block.json)
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "packed_ice_bricks",
+    "render_method": "opaque"
+  }
+}
+```
+
+#### [Block Polished Calcite](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/polished_calcite.block.json)
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "polished_calcite",
+    "render_method": "opaque"
   }
 }
 ```
