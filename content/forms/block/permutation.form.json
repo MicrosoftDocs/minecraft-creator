@@ -22,7 +22,7 @@
         "id": "components",
         "title": "Components",
         "dataType": "object",
-        "technicalDescription": "Blocks with precipitation interactions \"snowlogging\" must have collision box disabled",
+        "technicalDescription": "The \"random_offset\" must not push the \"collision_box\" outside the unit block limit. Block with \"geometry\" set at \"minecraft:geometry.full_block\" cannot have a \"random_offset\". Blocks with precipitation interactions \"snowlogging\" must have collision box disabled.",
         "subFormId": "block/components",
         "isRequired": true
       },
@@ -44,7 +44,7 @@
         "isRequired": true
       }
     ],
-    "dataVersion": "1.26.60"
+    "dataVersion": "1.26.70"
   },
   "description": "Defines conditional component overrides based on block state values using Molang conditions. When the condition evaluates true, the permutation's components replace or merge with base components. Enables blocks that change appearance or behavior based on direction, power state, age, or custom properties."
 }

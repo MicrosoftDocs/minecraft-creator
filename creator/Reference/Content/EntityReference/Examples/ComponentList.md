@@ -199,6 +199,7 @@ ms.date: 02/11/2025
 | [Trade Resupply](EntityComponents/minecraftComponent_trade_resupply.md)| Resupplies an entity's trade. |
 | [minecraft:trade_table](EntityComponents/minecraftComponent_trade_table.md)| Defines this entity's ability to trade with players. |
 | [minecraft:trail](EntityComponents/minecraftComponent_trail.md)| Causes an entity to leave a trail of blocks as it moves about the world. |
+| [minecraft:trail placement_conditions entry](EntityComponents/minecraftComponent_trail_placement_conditions_entry.md)|  |
 | [minecraft:transformation](EntityComponents/minecraftComponent_transformation.md)| Defines an entity's transformation from the current definition into another |
 | [minecraft:transient](EntityComponents/minecraftComponent_transient.md)| An entity with this component will NEVER persist, and forever disappear when unloaded. |
 | [Trust](EntityComponents/minecraftComponent_trust.md)| Allows this entity to trust multiple players. |

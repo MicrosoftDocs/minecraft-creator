@@ -1,15 +1,15 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Workflow
 description: "A step-by-step guide for creating, importing and exporting projects and worlds in Minecraft Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/28/2026
+ms.date: 10/14/2026
 ---
 
 # Editor Workflow
 
-An Editor project is an editable world with Editor-specific data. Exporting a playable world (`.mcworld`) creates a separate copy for gameplay without Editor-specific data or Editor extensions. To preserve those features for future editing, keep your project or export a project backup (`.mcproject`).
+An Editor project is an editable world with Editor-specific data. Exporting a playable world creates a separate copy for gameplay without Editor-specific data or Editor extensions. Choose **Playable World** for a local world directory or **Shareable World (.mcworld)** for an archive. To preserve Editor-specific features for future editing, keep your project or use **Backup Editor Project** to create an `.mcproject` archive.
 
 In this guide you'll learn the following:
 
@@ -20,6 +20,9 @@ In this guide you'll learn the following:
 > - How to back up an editable project
 > - How to import projects/worlds into Editor.
 > - How to use and navigate the export panel
+
+> [!NOTE]
+> Export, Test World, and Publish to Realms are local-project workflows. These commands aren't available while editing a project hosted on Realms or a Bedrock Dedicated Server.
 
 ## Create a project
 
@@ -32,36 +35,54 @@ In this guide you'll learn the following:
 4. (Optional) Select the brush tool (`Ctrl+B`) and draw something by clicking on the ground a few times.
 
 
-## Export a playable world
+## Choose an export type
 
-Keep in mind that the **projectbackups** folder does not exist until the first time you export a project from the Editor. If you need a reminder about how to find the **com.mojang** folder on your computer, take a look at the [Getting Started](../GettingStarted.md) article before you continue.
+Select **File** > **Export** and choose the output that matches your goal.
+
+| Export type | Output | Location |
+| :--- | :--- | :--- |
+| **Playable World** | An uncompressed playable copy of the world, not an `.mcworld` file | The active app's `minecraftWorlds` directory |
+| **Shareable World (.mcworld)** | A timestamped `.mcworld` archive for sharing and importing | The active app's `com.mojang\archive` directory |
+| **Backup Editor Project** | A timestamped `.mcproject` archive that preserves the editable project | The active app's `com.mojang\archive` directory |
+| **World Template** | A timestamped `.mctemplate` archive | The active app's `com.mojang\archive` directory |
+
+The full app data path depends on the installed edition and platform. Use the output path reported when export completes rather than assuming a fixed Windows package path.
+
+> [!NOTE]
+> World exports convert a copy of the project for play and bake layout instances into that copy. Your working project's layouts remain linked. **Backup Editor Project** preserves the editable project without baking layouts or applying the playable-world settings.
+
+## Export a playable world
 
 1. Go to the **File** menu and select **Export**. 
 
-2. Select **Playable World** as the Export type to export a playable Minecraft world.
+2. Select **Playable World** as the export type to create a local playable copy.
 
-3. Configure the world's settings, then click **Export**. You'll receive confirmation messages when the export has begun and whenever it has finished. A temporary chat message will display the path to **projectbackups** in the **com.mojang** directory. For more information on the export world settings, see [Export World Settings](#export-world-settings) below.
+3. Configure the world's settings, then select **Export** and wait for completion. The reported output path points to the copied world directory. For more information about the settings, see [Export World Settings](#export-world-settings).
 
-4. From **File**, select Game menu (`Ctrl+Q`) and choose **Save & Quit** to close the Editor.
+4. Open the Game menu (**Ctrl+Q**), select **Save & Quit**, and close Editor.
 
-5. Go to **com.mojang/projectbackups** and locate your .mcworld file.
+5. Launch the same edition of Minecraft normally, without the Editor shortcut, and open the exported copy from the world list.
 
-    > [!NOTE]
-    > The .mcworld file should be a file with the name you gave it, appended to the date, time, and a **.mcworld** extension.
+## Export an archive to share or back up
 
-### Export World Settings
+1. Select **File** > **Export**.
+1. Choose **Shareable World (.mcworld)** to share a playable world, **Backup Editor Project** to share or preserve an editable project, or **World Template** to create a template archive.
+1. Configure any settings available for that export type, and then select **Export**.
+1. Wait for export to finish and use the reported path to locate the archive.
 
-When you export your editor project, you can configure the settings that you would like to apply to your world. Go to **File** -> **Export** to open the **Export Panel**. From there, you can adjust the settings and then finish exporting your world.
+Share the `.mcproject` produced by **Backup Editor Project** with another Editor user. Don't substitute renaming an `.mcworld` file: changing a filename doesn't restore Editor data or perform the project-backup export.
+
+## Export World Settings
+
+For world exports, configure the settings you want applied to the playable copy in the Export panel. These settings aren't applied to a **Backup Editor Project** export.
 
 ### Export Notes
 
-The Export Notes section tells you what version of Minecraft your world will be exported as. If you want to create a playable world for a previous version, you'll have to use [Chunker](../ChunkerOverview.md).
-
-![Editor Export Notes](media/editor_export_notes.png)
+The Export Notes section identifies the Minecraft version used for the export. Export isn't a downgrade operation. If you need a different target version, review [Chunker](../ChunkerOverview.md) and its supported conversions before converting a copy of the world.
 
 ## Back up an Editor project
 
-To share your editable project or keep a separate backup, go to **File** > **Export** and select **Project Backup** as the export type. Editor saves a `.mcproject` archive that can be imported into Editor. A playable `.mcworld` export is not a project backup; changing its file extension does not restore the Editor-specific data removed during export.
+To share your editable project or keep a separate backup, go to **File** > **Export** and select **Backup Editor Project** as the export type. Editor saves a `.mcproject` archive that can be imported into Editor. A playable `.mcworld` export is not a project backup; changing its file extension does not restore the Editor-specific data removed during export.
 
 ## Import a world or project
 1. Launch Editor and click Play.
@@ -81,9 +102,9 @@ To share your editable project or keep a separate backup, go to **File** > **Exp
 
 - **Difficulty**: Use the drop-down to choose **Peaceful**, **Easy**, **Normal**, or **Hard**.
 
-- **Hardcore**: Check this box to export your world as a Hardcore world. When you check this box, the **Game Mode** is automatically set to **Survival** (but you can also choose **Adventure** difficulty), the **Difficulty** is set to **Hard**, and **Cheats** are disabled.
+- **Hardcore**: Check this box to export your world as a Hardcore world. When you check this box, the **Game Mode** is automatically set to **Survival** (but you can also choose **Adventure** mode), the **Difficulty** is set to **Hard**, and **Cheats** are disabled.
 
-    ![Editor Export General Settings](media/editor_export_general_settings.png)
+    ![Editor Export General Settings](Media/editor_export_general_settings.png)
 
 ### Advanced Settings
 
@@ -99,7 +120,7 @@ To share your editable project or keep a separate backup, go to **File** > **Exp
 
 - **Show days played**: Check this box to show players their playtime in your world.
 
-- **Recipe unlocking**: Check this box to unlock all crafting recipes for players when they start in your world.
+- **Recipe unlocking**: Enables unlocking crafting recipes through play. When disabled, recipes are available from the start.
 
 - **Fire spreads**: Check this box to enable fire spreading in your world. If this is not checked, fire will not spread to flammable blocks and remain on the block where it was set.
 
@@ -115,11 +136,11 @@ To share your editable project or keep a separate backup, go to **File** > **Exp
 
 - **Immediate respawn**: Check this box to enable skipping the death screen for players in your world. If this is not checked, players will see the death screen when they are killed and can click a button to respawn when they choose.
 
-- **Respawn radius**: Enter a distance (in blocks) to determine how far away a player can randomly respawn from the nearest respawn block.
+- **Respawn radius**: Sets the world's respawn radius in blocks. The control accepts values from 0 to 128.
 
-- **Simulation radius**: Enter a distance (in blocks) to determine how far away mobs can spawn or despawn from players. This distance must be an even number from 4 to 12.
+- **Simulation radius**: Sets the distance, in chunks, around players where the world is simulated. Choose an even number from 4 to 12. A chunk is 16 blocks wide and 16 blocks long; this setting isn't a block-distance limit for mob spawning.
 
-    ![Editor Export Advanced Settings](media/editor_export_advanced_settings.png)
+    ![Editor Export Advanced Settings](Media/editor_export_advanced_settings.png)
 
 ### Multiplayer Settings
 
@@ -133,7 +154,7 @@ To share your editable project or keep a separate backup, go to **File** > **Exp
 
 - **Friendly fire**: Check this box to enable players damaging one another.
 
-    ![Editor Export Multiplayer Settings](media/editor_export_multiplayer_settings.png)
+    ![Editor Export Multiplayer Settings](Media/editor_export_multiplayer_settings.png)
 
 ### Cheats Settings
 
@@ -151,33 +172,33 @@ To share your editable project or keep a separate backup, go to **File** > **Exp
 
 - **Entities drop loot**: Check this box to enable non-mob entities to drop loot when killed. If this is not checked, non-mob entities will not drop loot upon death.
 
-- **Weather cycle**: Check this box to enable the weather cycle in your world. If this is not checked, your world will always have sunny weather and will not change.
+- **Weather cycle**: Enables changes in weather. When disabled, the current weather type is locked; disabling the cycle doesn't clear rain or thunder.
 
 - **Command blocks**: Check this box to enable command blocks in your world. If this is not checked, players will not be able to use command blocks in your world.
 
 - **Education features**: Check this box to enable the features found in Minecraft Education Edition in your world.
 
-- **Random tick speed**: Enter a time (in ticks) for the world to choose random blocks for event updates. This controls world events like how fast crops and tress grow. Each tick in Minecraft is 50 milliseconds (or 0.05 seconds).
+- **Random tick speed**: Controls how frequently random block updates occur, affecting processes such as crop growth. This setting doesn't change the duration of a game tick.
 
-    ![Editor Export Cheats Settings](media/editor_export_cheats.png)
+    ![Editor Export Cheats Settings](Media/editor_export_cheats.png)
 
 
 ## File types and locations
 
-If you want to know more, check out this article to help you learn all about [Minecraft File Extensions](../MinecraftFileExtensions.md).
+For details about archive formats, see [Minecraft File Extensions](../MinecraftFileExtensions.md).
 
-- If the editor is closed when you double-click the **.mcworld** file, Minecraft will launch normally and automatically import the file to your world. The world you created in Editor will be listed among any other Minecraft worlds you already have. However, if Editor is still running, double-clicking the file will cause it to be imported into Editor instead.
-
-- To send your project to someone else for editing, share a `.mcproject` project backup rather than a playable `.mcworld` export.
+- Import a shareable `.mcworld` into Minecraft to play it, or use Editor's import control to edit it.
+- Use a `.mcproject` backup to transfer an editable Editor project.
+- **Playable World** creates a local world directory. It doesn't create an archive that needs to be double-clicked or imported.
 
 ### File structure information
 
-Minecraft stores both playable worlds and Editor projects in **com.mojang/minecraftWorlds**. Editor projects appear in Editor, not in the usual playable-world list. Exported archives are separate files: use a `.mcworld` for gameplay or a `.mcproject` project backup for further editing.
+Working projects and local playable worlds use the active app's `minecraftWorlds` storage. Editor projects appear in Editor, not in the usual playable-world list. Exported archives use `com.mojang\archive`. Editing a project doesn't move it into the archive directory. Always use the export completion path to identify a particular exported copy.
 
 
 ## Try it: Create, export, and open
 
 1. Create a new project and make a small edit.
-2. Export the project as a Playable World and note the **projectbackups** path.
-3. Open the Game menu (`Ctrl+Q`) and **Save & Quit**.
-4. Double-click the exported .mcworld to open it in Minecraft (or in Editor, if Editor is running).
+2. Export it as **Playable World** and note the reported world-directory path.
+3. Open the Game menu (**Ctrl+Q**), select **Save & Quit**, and close Editor.
+4. Launch Minecraft normally and open the exported copy from the world list.

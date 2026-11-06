@@ -34,9 +34,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/ControlSchemes.md
     #card
-    - title: "1.26.40 Update Summary"
+    - title: "1.26.60 Update Changelog"
       itemType: whats-new
-      url: Documents/Update1.26.40.md
+      url: "https://feedback.minecraft.net/hc/en-us/articles/49852828563853-Minecraft-Bedrock-Edition-26-60-Changelog"
     #card
     - title: "Minecraft Bedrock Editor"
       itemType: whats-new

@@ -151,7 +151,7 @@ ms.date: 02/11/2025
 | [query.is_emoting](queryfunctions/query_is_emoting.md)| Returns 1.0 if the entity is emoting, else it returns 0.0. |
 | [query.is_enchanted](queryfunctions/query_is_enchanted.md)| Returns 1.0 if the entity is enchanted, else it returns 0.0. |
 | [query.is_fire_immune](queryfunctions/query_is_fire_immune.md)| Returns 1.0 if the entity is immune to fire (has the `fire_immune` component), else it returns 0.0. |
-| [query.is_first_person](queryfunctions/query_is_first_person.md)| Returns 1.0 if the entity is being rendered in first person mode, else it returns 0.0. |
+| [query.is_first_person](queryfunctions/query_is_first_person.md)| DEPRECATED (Use 'variable.is_first_person'): Always returns 0.0. |
 | [query.is_ghost](queryfunctions/query_is_ghost.md)| Returns 1.0 if an entity is a ghost, else it returns 0.0. |
 | [query.is_gliding](queryfunctions/query_is_gliding.md)| Returns 1.0 if the entity is gliding, else it returns 0.0. |
 | [query.is_grazing](queryfunctions/query_is_grazing.md)| Returns 1.0 if the entity is grazing, or 0.0 if not. |
@@ -192,7 +192,7 @@ ms.date: 02/11/2025
 | [query.is_pregnant](queryfunctions/query_is_pregnant.md)| Returns 1.0 if the entity is pregnant, else it returns 0.0. |
 | [query.is_ram_attacking](queryfunctions/query_is_ram_attacking.md)| Returns 1.0 if the entity is using a ram attack, else it returns 0.0. |
 | [query.is_resting](queryfunctions/query_is_resting.md)| Returns 1.0 if the entity is resting, else it returns 0.0. |
-| [query.is_riding](queryfunctions/query_is_riding.md)| Returns 1.0 if the entity is riding, else it returns 0.0. |
+| [query.is_riding](queryfunctions/query_is_riding.md)| Returns 1.0 if the entity is riding a vehicle or sitting on a block, else it returns 0.0. |
 | [query.is_riding_any_entity_of_type](queryfunctions/query_is_riding_any_entity_of_type.md)| Returns whether or not the entity is currently riding an entity of any of the designated types. |
 | [query.is_rising](queryfunctions/query_is_rising.md)| Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0. |
 | [query.is_roaring](queryfunctions/query_is_roaring.md)| Returns 1.0 if the entity is currently roaring, else it returns 0.0. |
@@ -230,10 +230,10 @@ ms.date: 02/11/2025
 | [query.item_remaining_use_duration](queryfunctions/query_item_remaining_use_duration.md)| Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense. |
 | [query.item_slot_to_bone_name](queryfunctions/query_item_slot_to_bone_name.md)| This function returns the name of the bone this entity has mapped to that slot. |
 | [query.key_frame_lerp_time](queryfunctions/query_key_frame_lerp_time.md)| Returns the ratio between the previous and next key frames. |
-| [query.kinetic_weapon_damage_duration](queryfunctions/query_kinetic_weapon_damage_duration.md)| Returns the "max_duration" value of "damage_conditions" from the main-hand item's "minecraft:kinetic_weapon" component, or 0 if the component is not present. |
-| [query.kinetic_weapon_delay](queryfunctions/query_kinetic_weapon_delay.md)| Returns the "delay" value from the main-hand item's "minecraft:kinetic_weapon" component, or 0 if the component is not present. |
-| [query.kinetic_weapon_dismount_duration](queryfunctions/query_kinetic_weapon_dismount_duration.md)| Returns the "max_duration" value of "dismount_conditions" from the main-hand item's "minecraft:kinetic_weapon" component, or 0 if the component is not present. |
-| [query.kinetic_weapon_knockback_duration](queryfunctions/query_kinetic_weapon_knockback_duration.md)| Returns the "max_duration" value of "knockback_conditions" from the main-hand item's "minecraft:kinetic_weapon" component, or 0 if the component is not present. |
+| [query.kinetic_weapon_damage_duration](queryfunctions/query_kinetic_weapon_damage_duration.md)| Returns the "max_duration" value of "damage_conditions" from the active-hand item's "minecraft:kinetic_weapon" component. |
+| [query.kinetic_weapon_delay](queryfunctions/query_kinetic_weapon_delay.md)| Returns the "delay" value from the active-hand item's "minecraft:kinetic_weapon" component. |
+| [query.kinetic_weapon_dismount_duration](queryfunctions/query_kinetic_weapon_dismount_duration.md)| Returns the "max_duration" value of "dismount_conditions" from the active-hand item's "minecraft:kinetic_weapon" component. |
+| [query.kinetic_weapon_knockback_duration](queryfunctions/query_kinetic_weapon_knockback_duration.md)| Returns the "max_duration" value of "knockback_conditions" from the active-hand item's "minecraft:kinetic_weapon" component. |
 | [query.last_frame_time](queryfunctions/query_last_frame_time.md)| Returns the time in *seconds* of the last frame. |
 | [query.last_hit_by_player](queryfunctions/query_last_hit_by_player.md)| Returns 1.0 if the entity was last hit by the player, else it returns 0.0. |
 | [query.last_input_mode_is_any](queryfunctions/query_last_input_mode_is_any.md)| Takes one or more arguments ('keyboard_and_mouse', 'touch', or 'gamepad'). |

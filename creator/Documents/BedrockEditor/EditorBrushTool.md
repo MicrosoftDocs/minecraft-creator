@@ -4,24 +4,24 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Brush Tool
 description: "An overview of the Brush Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 10/14/2026
 ---
 
 # Brush Tool
 
 Use the Brush to paint blocks in configurable shapes and sizes. Paint a single shape with one press or continuously while holding the mouse.
 
-![Brush Tool](media/BrushScreenshots/BrushPaint.png)
+![Brush Tool](Media/BrushScreenshots/BrushPaint.png)
 
-You can change the brush size, ranging from 1 to 16. Brush sizes are rendered as squares of the selected brush size. This means a brush size of 1 draws a 1x1 block shape. If you select a brush size of 3, you get a 3x3 block shape, or 9 total blocks arranged as a cube.
+Use **Shape Settings** to adjust the dimensions of the selected brush. The controls depend on the shape: a cuboid uses side lengths, while curved shapes use radius controls. For example, a cuboid with a width, height, and depth of 3 fills a 3 x 3 x 3 volume containing 27 blocks.
 
-You can click once once to place one block shape, or click and drag to place blocks everywhere you touch. This should make it easier to build up shapes from the ground - like mountains!
+Click once to place one brush shape, or click and drag to paint continuously. Use this to build up features such as mountains.
 
 ![Animation showing how to paint with blocks](Media/GIFs/Brush.gif)
 
 ## Cursor Settings
 
-![Cursor Settings Menu](media/BrushScreenshots/CursorSettings.png)
+![Cursor Settings Menu](Media/BrushScreenshots/CursorSettings.png)
 
 ### Input Methods
 
@@ -53,7 +53,7 @@ You can click once once to place one block shape, or click and drag to place blo
 
 ## Brush Settings
 
-![Brush Settings Menu](media/BrushScreenshots/BrushSettings.png)
+![Brush Settings Menu](Media/BrushScreenshots/BrushSettings.png)
 
 - ### Brush Types
 
@@ -81,7 +81,7 @@ Here, you'll find sliders that adjust the radius of each of the Brush's axes to 
 > [!NOTE]
 > Cylinder, Cone, and Pyramid brushes also include an axis of extrusion. 
 
-![Shape Settings Menu](media/BrushScreenshots/ShapeSettings.png)
+![Shape Settings Menu](Media/BrushScreenshots/ShapeSettings.png)
 
 - ### Uniform
 
@@ -104,7 +104,7 @@ Here, you'll find sliders that adjust the radius of each of the Brush's axes to 
 
 Block Filters determine what type of blocks are affected by the Brush action and how your selection is filled.
 
-![Fil Constraints Menu](media/BrushScreenshots/FillConstraints.png)
+![Fill Constraints menu](Media/BrushScreenshots/FillConstraints.png)
 
 - ### Disabled
 
@@ -128,7 +128,7 @@ Block Filters determine what type of blocks are affected by the Brush action and
     > [!TIP]
     > Pressing **Ctrl+B** also switches to Brush. 
 
-3. Set the Brush to Uniform Cuboid with a Length of 1, then use the block picker to choose a type of log.
+3. Choose a uniform **Cuboid** brush with a side length of 1, then use the Block Picker to choose a type of log.
 
 4. Find a clear place on the ground and place one log block.
 
@@ -136,7 +136,7 @@ Block Filters determine what type of blocks are affected by the Brush action and
 
     ![Brush tool was used to draw logs stacked up like a tree trunk](Media/editor_overview_brush_log.png)
 
-6. Change the Brush to Uniform Ellipsoid with a Length of 3, change the block type to Leaves, then click the top of your log stack to put leaves around the top of your tree.
+6. Choose a uniform **Ellipsoid** brush with a radius of 3, change the block type to leaves, then click the top of your log stack to put leaves around the top of your tree.
 
     ![Brush tool was used to draw leaves at the top of the tree trunk](Media/editor_overview_brush_leaves.png)
 

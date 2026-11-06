@@ -41,6 +41,7 @@ ms.date: 02/11/2025
 | [has_target](Filters/has_target.md)| Returns true if the subject entity has a valid target. |
 | [has_trade_supply](Filters/has_trade_supply.md)| Tests whether the target has any trade supply left. |
 | [home_distance](Filters/home_distance.md)| Tests the distance between the subject and its home. |
+| [horizontal_speed](Filters/horizontal_speed.md)| Tests the subject entity's horizontal speed in meters per second. |
 | [hourly_clock_time](Filters/hourly_clock_time.md)| Compares the current 24 hour time with an int value in the range[0, 24000] |
 | [inactivity_timer](Filters/inactivity_timer.md)| Tests if the specified duration in seconds of inactivity for despawning has been reached. |
 | [int_property](Filters/int_property.md)| Returns true when the int actor property matches the value provided. |
@@ -112,10 +113,12 @@ ms.date: 02/11/2025
 | [random_chance](Filters/random_chance.md)| Returns true if the random chance rolls 0 out of a specified max range. |
 | [redstone_strength_at_position](Filters/redstone_strength_at_position.md)| Tests the redstone strength at the subject's position. |
 | [rider_count](Filters/rider_count.md)| Returns the number of riders on this entity. |
+| [speed](Filters/speed.md)| Tests the subject entity's speed in meters per second. |
 | [surface_mob](Filters/surface_mob.md)| Tests if the subject is a surface mob. |
 | [taking_fire_damage](Filters/taking_fire_damage.md)| Tests if the subject is taking fire damage. |
 | [target_distance](Filters/target_distance.md)| Tests the distance between the calling entity and its target. |
 | [trusts](Filters/trusts.md)| Returns true if the subject is trusted by entity. |
+| [vertical_speed](Filters/vertical_speed.md)| Tests the subject entity's signed vertical speed in meters per second. |
 | [was_last_hurt_by](Filters/was_last_hurt_by.md)| Tests if the subject is the last player who attacked the entity in the last 400 seconds, or the last mob to do so in the last 60 seconds. |
 | [weather](Filters/weather.md)| Tests the current weather in the dimension against a provided weather value. |
 | [weather_at_position](Filters/weather_at_position.md)| Tests the current weather, at the actor's position, against a provided weather value. |

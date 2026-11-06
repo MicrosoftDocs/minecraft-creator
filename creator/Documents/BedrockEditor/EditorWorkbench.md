@@ -1,10 +1,10 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Workbench Tool
 description: "An overview of the Workbench Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/02/2025
+ms.date: 10/14/2026
 ---
 
 # Editor Workbench Tool
@@ -16,8 +16,8 @@ Workbench lets you change block states and properties directly in Tool Mode with
 
 ## Using Workbench
 
-1. Open Workbench from the tool rail (left toolbar) or add it to your Action Bar.
-2. Hover over the block you want to modify and use one of the quick-action clicks above to toggle or cycle its state.
+1. Open Workbench from the tool rail (left toolbar).
+2. Hover over the block you want to modify and use one of the quick-action clicks below to toggle or cycle its state.
 3. Repeat clicks or try modifier combinations to reach the desired state.
 
 > [!NOTE]

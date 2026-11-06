@@ -53,22 +53,22 @@
               "content": "item.breeze_rod.name"
             }
           ],
-          "/vanilla/behavior_pack/items/ominous_trial_key.json": [
+          "/vanilla/behavior_pack/items/ice_ball.json": [
             {
               "path": "/minecraft:item/components/minecraft:display_name/",
-              "content": "item.ominous_trial_key.name"
+              "content": "item.ice_ball.name"
             }
           ],
-          "/vanilla/behavior_pack/items/red_shrub.json": [
+          "/vanilla/behavior_pack/items/ice_crystal.json": [
             {
               "path": "/minecraft:item/components/minecraft:display_name/",
-              "content": "tile.red_shrub.name"
+              "content": "tile.ice_crystal.name"
             }
           ],
-          "/vanilla/behavior_pack/items/shelf_mushroom.json": [
+          "/vanilla/behavior_pack/items/icicle.json": [
             {
               "path": "/minecraft:item/components/minecraft:display_name/",
-              "content": "tile.shelf_mushroom.name"
+              "content": "tile.icicle.name"
             }
           ]
         }
@@ -92,27 +92,27 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/items/ominous_trial_key.json": [
+      "/vanilla/behavior_pack/items/ice_ball.json": [
         {
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
-            "value": "item.ominous_trial_key.name"
+            "value": "item.ice_ball.name"
           }
         }
       ],
-      "/vanilla/behavior_pack/items/red_shrub.json": [
+      "/vanilla/behavior_pack/items/ice_crystal.json": [
         {
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
-            "value": "tile.red_shrub.name"
+            "value": "tile.ice_crystal.name"
           }
         }
       ],
-      "/vanilla/behavior_pack/items/shelf_mushroom.json": [
+      "/vanilla/behavior_pack/items/icicle.json": [
         {
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
-            "value": "tile.shelf_mushroom.name"
+            "value": "tile.icicle.name"
           }
         }
       ]

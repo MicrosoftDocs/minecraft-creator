@@ -58,6 +58,8 @@
   href: has_trade_supply.md
 - name: home_distance
   href: home_distance.md
+- name: horizontal_speed
+  href: horizontal_speed.md
 - name: hourly_clock_time
   href: hourly_clock_time.md
 - name: inactivity_timer
@@ -200,6 +202,8 @@
   href: redstone_strength_at_position.md
 - name: rider_count
   href: rider_count.md
+- name: speed
+  href: speed.md
 - name: surface_mob
   href: surface_mob.md
 - name: taking_fire_damage
@@ -208,6 +212,8 @@
   href: target_distance.md
 - name: trusts
   href: trusts.md
+- name: vertical_speed
+  href: vertical_speed.md
 - name: was_last_hurt_by
   href: was_last_hurt_by.md
 - name: weather

@@ -37,6 +37,38 @@
       "id": "integer",
       "title": "Integer",
       "dataType": "int"
+    },
+    "samples": {
+      "/vanilla/behavior_pack/blocks/chiseled_packed_ice.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:light_dampening/",
+          "content": 15
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/chiseled_soulshale.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:light_dampening/",
+          "content": 15
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/packed_ice_bricks.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:light_dampening/",
+          "content": 15
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/polished_calcite.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:light_dampening/",
+          "content": 15
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/polished_calcite_bricks.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:light_dampening/",
+          "content": 15
+        }
+      ]
     }
   }
 }

@@ -165,6 +165,60 @@ At /minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environm
 }
 ```
 
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+At /minecraft:entity/component_groups/minecraft:look_to_start_transformations/minecraft:environment_sensor/: 
+
+```json
+"minecraft:environment_sensor": {
+  "triggers": [
+    {
+      "event": "minecraft:start_transforming_into_zombie",
+      "filters": {
+        "all_of": [
+          {
+            "test": "in_block",
+            "value": "minecraft:powder_snow"
+          },
+          {
+            "test": "has_equipment_tag",
+            "domain": "armor",
+            "operator": "not",
+            "value": "minecraft:leather_tier"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/: 
+
+```json
+"minecraft:environment_sensor": {
+  "triggers": [
+    {
+      "event": "minecraft:stop_transforming",
+      "filters": {
+        "any_of": [
+          {
+            "test": "in_block",
+            "operator": "not",
+            "value": "minecraft:powder_snow"
+          },
+          {
+            "test": "has_equipment_tag",
+            "domain": "armor",
+            "value": "minecraft:leather_tier"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
 #### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
 
 

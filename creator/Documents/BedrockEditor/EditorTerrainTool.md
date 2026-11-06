@@ -1,10 +1,10 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Terrain Tool
 description: "Sculpt terrain with Flatten, Elevation, Smooth, and Roughen modes in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2025
+ms.date: 10/14/2026
 ---
 
 # Terrain Tool
@@ -13,7 +13,7 @@ Sculpt your world with four modes in one tool: Flatten, Elevation, Smooth, and R
 
 ![Animation of the terrain tool.](Media/GIFs/Terrain.gif)
 
-Add Terrain to your Action Bar, open it, pick a mode, and click‑drag to paint over blocks. Terrain uses the Editor brush system, so you can choose shapes, adjust size, and set an offset from the cursor.
+Select **Terrain** from the tool rail, choose a mode, then click-and-drag to paint over blocks. Terrain uses the Editor brush system, so you can choose shapes, adjust size, and set an offset from the cursor.
 
 
 ## Flatten settings

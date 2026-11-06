@@ -106,14 +106,14 @@
                   "isRequired": true
                 }
               ],
-              "dataVersion": "1.21.10"
+              "dataVersion": "1.26.70"
             }
           }
         ],
         "isRequired": true
       }
     ],
-    "dataVersion": "1.21.10"
+    "dataVersion": "1.26.70"
   },
   "description": "Applies color tinting to particle textures, from simple solid colors to complex gradients. Use hex colors for static tints, RGBA arrays with Molang for dynamic colors, or gradient objects to blend between colors over particle lifetime. Essential for flames fading orange-to-gray, magical auras shifting colors, or any effect needing color variation."
 }

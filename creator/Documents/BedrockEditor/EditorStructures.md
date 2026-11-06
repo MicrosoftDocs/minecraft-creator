@@ -4,7 +4,7 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Structures Panel
 description: "An overview of the Structures Panel part of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 10/14/2026
 ---
 
 # Structures
@@ -29,7 +29,7 @@ The Structures panel isn't added to the Action Bar by default. Click the **+** b
 When you update an existing structure from the clipboard, Editor asks you to confirm before overwriting it. This replacement can't be undone, and the update action is unavailable when the clipboard is empty.
 
 > [!TIP]
-> When editing a Prefab template, changes to structure offset, rotation, and mirror settings are auto-saved. There is no manual save button — your modifications are persisted automatically after a brief delay.
+> Use [Layouts](EditorLayouts.md) to arrange saved structures into reusable groups. Instances remain linked to their layout and underlying structures until you bake them into blocks.
 
 ## Placing a structure
 
@@ -51,7 +51,7 @@ Use our built in structure management tools to help you find structures faster:
 
 - **Search**
 
-  You can refine your search by filtering by display name or ID pattern, tags (i.e. "roofs", "terrain", ets), or source (i.e. project, world/level, Behavior Pack, or file-imported entries).
+  You can refine your search by filtering by display name or ID pattern, tags (for example, "roofs" or "terrain"), or source (for example, project, world/level, behavior pack, or file-imported entries).
 
 - **Naming**
 

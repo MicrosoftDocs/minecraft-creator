@@ -27,7 +27,7 @@ This defines how a block reacts to a chest being opened underneath it.
 
 ### obstruction_rule
 
-[optional] How the block should be evaluated by a chest during chest opening. Must be one of the following options: "always" - Will always oba chest from opening when directly above it. "never" - Will never obstruct a chest from opening when directly above it. "shape" - Will use the Blocks AABB shape to determine if the chest is obstructed from opening when directly above it; this is the default value if no rule is provided.
+[optional] How the block should be evaluated by a chest during chest opening. Must be one of the following options: "always" - Will always oba chest from opening when directly above it. "never" - Will never obstruct a chest from opening when directly above it. "shape" - Will use the Blocks collision shape to determine if the chest is obstructed from opening when directly above it; this is the default value if no rule is provided. A Block can define its collision shape by adding a collision component.
 
 
 ### Obstruction Rule choices

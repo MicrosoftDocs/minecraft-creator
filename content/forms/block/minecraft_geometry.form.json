@@ -262,10 +262,16 @@
         "description": "The description identifier of the geometry to use to render this block.",
         "dataType": "string",
         "samples": {
-          "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+          "/vanilla/behavior_pack/blocks/chiseled_packed_ice.block.json": [
             {
               "path": "/minecraft:block/components/minecraft:geometry/",
-              "content": "minecraft:geometry.cross"
+              "content": "minecraft:geometry.full_block"
+            }
+          ],
+          "/vanilla/behavior_pack/blocks/chiseled_soulshale.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:geometry/",
+              "content": "minecraft:geometry.full_block"
             }
           ]
         }
@@ -283,11 +289,43 @@
       "dataType": "string"
     },
     "samples": {
-      "/vanilla/behavior_pack/blocks/red_shrub.block.json": [
+      "/vanilla/behavior_pack/blocks/chiseled_packed_ice.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:geometry/",
           "content": {
-            "identifier": "minecraft:geometry.cross"
+            "identifier": "minecraft:geometry.full_block"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/chiseled_soulshale.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "minecraft:geometry.full_block"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/packed_ice_bricks.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "minecraft:geometry.full_block"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/packed_ice_bricks_chiseled.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "minecraft:geometry.full_block"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/blocks/polished_calcite.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "minecraft:geometry.full_block"
           }
         }
       ]

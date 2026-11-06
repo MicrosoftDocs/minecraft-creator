@@ -54,3 +54,5 @@ Allows mob to move towards its target leader.
 | subject | *not set* | Object | The subject of this filter test. | 
 | test | *not set* | String | The name of the test to apply. | 
 | value | *not set* | Object | The value being compared with the test. | 
+
+## Samples

@@ -1,10 +1,10 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Installation
 description: "A guide detailing the process of installing and testing Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/28/2026
+ms.date: 10/14/2026
 ---
 
 # How to get Minecraft Editor
@@ -76,8 +76,6 @@ Alternatively, if you already have Bedrock installed and want to create a shortc
 
     Use the URI for the version you installed. The `Editor=true` parameter is case-sensitive.
 
-    ![Editor create shortcut path](Media/editor_shortcut.png)
-
 3. Click **Next** and give your shortcut a name like **Minecraft Editor**.
 
 4. Click **Finish**. Your Editor shortcut has been created! You should see the shortcut created on your desktop and it should automatically have the Minecraft icon if you set it up correctly. If the icon does not populate, don't worry.
@@ -99,14 +97,14 @@ Use the Launcher’s Create button or the desktop shortcut to open Editor. Openi
 
 ### I added the desktop shortcut, but it won't open the Editor. What's going on?  
 
-Three things to check:  
+Check the following:
 
 - Does the shortcut use the URI for the version you installed? Use **`minecraft://creator/?Editor=true`** for retail or **`minecraft-preview://creator/?Editor=true`** for Preview. Check the case of `Editor=true`.
 
 - Did you install Bedrock? If not, you need to do that.
 
-- If both versions are installed, check that the shortcut starts the version you intended. If Windows prompts you to choose an app for the URI, select the corresponding Minecraft or Minecraft Preview app.
+- If both editions are installed, check that the shortcut starts the version you intended. If Windows prompts you to choose an app, select Minecraft or Minecraft Preview to match the URI. If Windows doesn't open the expected app, check the corresponding protocol association in Windows **Settings** > **Apps** > **Default apps**.
 
-- You can also enter the URI for your installed version in the File Explorer address bar to launch Editor:
+- Close a running Minecraft instance before using the Editor shortcut. The Editor launch argument is applied during startup; it doesn't switch an already initialized game into Editor mode.
 
-    ![File explorer window with the Editor shortcut as the path](Media/editor_install_file_explorer_path.png)
+- You can also open File Explorer, enter `minecraft://creator/?Editor=true` (Retail) or `minecraft-preview://creator/?Editor=true` (Preview) in the address bar, and press **Enter**.

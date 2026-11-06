@@ -42,7 +42,7 @@
         "isRequired": true
       }
     ],
-    "dataVersion": "1.21.10"
+    "dataVersion": "1.26.70"
   },
   "description": "Spawns all particles in a single instant burst when the emitter activates. Unlike steady emission that spawns particles over time, this creates an immediate cloud of particles—perfect for explosions, block destruction debris, potion splash impacts, ender teleportation effects, and any effect that needs an instantaneous particle release."
 }

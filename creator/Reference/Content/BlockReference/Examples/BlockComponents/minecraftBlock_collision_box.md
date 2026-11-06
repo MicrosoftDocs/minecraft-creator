@@ -30,6 +30,24 @@ This item can also be represented as a `Boolean true/false`.
 
 |Name       |Default Value |Type |Description |
 |:----------|:-------------|:----|:-----------|
+| Using a voxel shape | custom:shape_name | String | Currently only available with the VoxelShape experiment on. | 
+| Using custom boxes | *not set* | Array of [Using Custom Boxes](#using-custom-boxes) items | An array of boxes that define the area of the block that collides with entities. | 
+
+### Using a voxel shape
+
+Currently only available with the VoxelShape experiment on. When using the minecraft namespace, the only currently available collision shapes are: "minecraft:empty" or "minecraft:unit_cube". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character.
+
+
+### Using Custom Boxes
+An array of boxes that define the area of the block that collides with entities.
+
+
+#### Using Custom Boxes Properties
+
+**JSON path:** `Using custom boxes`
+
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
 | max | [16, 24, 16] | x, y, z coordinate array | Maximum position of the bounds of the collision box. "max" is specified as [x, y, z] and must be in the range (0, 0, 0) to (16, 24, 16), inclusive. | 
 | min | [0, 0, 0] | x, y, z coordinate array | Minimal position of the bounds of the collision box. "min" is specified as [x, y, z] and must be in the range (0, 0, 0) to (16, 24, 16), inclusive. | 
 
@@ -38,39 +56,14 @@ This item can also be represented as a `Boolean true/false`.
 
 ```json
 "minecraft:collision_box": {
-  "origin": [
-    -8,
+  "min": [
     0,
-    -8
+    0,
+    0
   ],
-  "size": [
+  "max": [
     16,
     16,
-    16
-  ]
-}
-```
-
-#### Block Fabricator
-
-
-```json
-"minecraft:collision_box": true
-```
-
-#### Block Leaf Pile
-
-
-```json
-"minecraft:collision_box": {
-  "origin": [
-    -8,
-    2,
-    -8
-  ],
-  "size": [
-    16,
-    4,
     16
   ]
 }

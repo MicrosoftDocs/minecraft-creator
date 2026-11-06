@@ -356,7 +356,7 @@
       {
         "id": "hit_water",
         "title": "Hit Water",
-        "description": "If `true`, the projectile treats water as a hit surface and stops on contact.",
+        "description": "If `true`, the projectile treats water as a hit surface and stops on contact. (Education Edition chemistry feature)",
         "dataType": "boolean",
         "defaultValue": false
       },
@@ -645,6 +645,10 @@
           {
             "id": "hugeexplosion",
             "title": "Hugeexplosion"
+          },
+          {
+            "id": "iceballbreak",
+            "title": "Iceballbreak"
           },
           {
             "id": "iconcrack",
@@ -969,6 +973,6 @@
         "defaultValue": 0
       }
     ],
-    "dataVersion": "1.26.50"
+    "dataVersion": "1.26.70"
   }
 }

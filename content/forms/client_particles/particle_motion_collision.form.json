@@ -101,7 +101,7 @@
                   "defaultValue": 2
                 }
               ],
-              "dataVersion": "1.21.10"
+              "dataVersion": "1.26.70"
             }
           }
         ]
@@ -113,7 +113,7 @@
         "defaultValue": false
       }
     ],
-    "dataVersion": "1.21.10"
+    "dataVersion": "1.26.70"
   },
   "description": "Enables particle collision with world geometry. Configure collision radius, bounce coefficient (how much velocity is retained), friction to slow sliding, and whether to expire on impact. Essential for physical particles like rain hitting ground, debris bouncing off surfaces, or arrows embedding in blocks."
 }

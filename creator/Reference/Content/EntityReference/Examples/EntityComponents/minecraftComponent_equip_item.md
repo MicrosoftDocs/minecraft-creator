@@ -18,7 +18,7 @@ The entity puts on the desired equipment.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | can_wear_armor | false | Boolean true/false | If true, the entity can pick up and wear armor items from the ground. |  | 
-| excluded_items | *not set* | Array of [Excluded Items](#excluded-items) items | List of items that the entity should not equip. | Bogged: `[{"item":"minecraft:banner:15"}]` | 
+| excluded_items | *not set* | Array of [Excluded Items](#excluded-items) items | List of items that the entity should not equip. | Bogged: `[{"item":"minecraft:banner:15"},{"item":"minecraft:wolf_armor"},{"tags":"q.any_tag('minecraft:horse_armor', 'minecraft:nautilus_armor')"}]` | 
 
 ### Excluded Items
 
@@ -40,6 +40,12 @@ The entity puts on the desired equipment.
   "excluded_items": [
     {
       "item": "minecraft:banner:15"
+    },
+    {
+      "item": "minecraft:wolf_armor"
+    },
+    {
+      "tags": "q.any_tag('minecraft:horse_armor', 'minecraft:nautilus_armor')"
     }
   ]
 }
