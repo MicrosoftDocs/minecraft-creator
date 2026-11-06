@@ -17,10 +17,10 @@ Returns true when the subject entity contains the named component.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Sheep: `"!="` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Drowned: `"not"`, Sheep: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Sheep: `"self"` | 
-| test | *not set* | String |  | Sheep: `"has_component"` | 
-| value | *not set* | String | (Required) The component name to look for | Sheep: `"minecraft:is_baby"`, `"minecraft:is_dyeable"` | 
+| test | *not set* | String |  | Drowned: `"has_component"` | 
+| value | *not set* | String | (Required) The component name to look for | Drowned: `"minecraft:is_baby"`, Sheep: `"minecraft:is_dyeable"` | 
 
 ### Operator choices
 
@@ -61,6 +61,27 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "has_component", "value": "minecraft:explode" }
+```
+
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+At /minecraft:entity/events/minecraft:convert_to_zombie/sequence[0]/filters/: 
+
+```json
+{
+  "test": "has_component",
+  "operator": "not",
+  "value": "minecraft:is_baby"
+}
+```
+
+At /minecraft:entity/events/minecraft:convert_to_zombie/sequence[1]/filters/: 
+
+```json
+{
+  "test": "has_component",
+  "value": "minecraft:is_baby"
+}
 ```
 
 #### [Sheep](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sheep.json)

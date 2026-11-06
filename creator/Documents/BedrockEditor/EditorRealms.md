@@ -1,15 +1,15 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Publish to Realms
 description: "An overview of Publishing to Realms in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/08/2025
+ms.date: 10/14/2026
 ---
 
 # Publish to Realms
 
-Publish to Realms allows you to directly publish your Editor Project directly to Realms making testing on cross platforms with additional users even easier.
+Publish to Realms uploads a playable copy of your Editor project to a Realm so that you can test it across platforms with other players.
 
 In this guide you'll learn the following:
 
@@ -20,7 +20,7 @@ In this guide you'll learn the following:
 > - Requirements for publishing a project to a Realm
 > - How to select a Realm slot
 > - How to configure Realm options
-> - How to publish/dowload a backup Realm
+> - How to publish a world and download a backup
 
 
 ## Requirements
@@ -31,6 +31,7 @@ In this guide you'll learn the following:
 
 - For Preview builds, you need a Preview Realm set up before entering Editor mode.
 
+- Open a local Editor project. **Publish to Realms** isn't available while editing a project hosted on Realms or a Bedrock Dedicated Server.
 
 ## Overview
 
@@ -54,7 +55,7 @@ The Publish to Realms Pane can be opened via the Action Bar or **File -> Publish
 
 Publishing to Realms uploads your current project to a chosen Realm slot so you and others can play or test across platforms without manual export/import. 
 
-1. Navigate to Realms from the Minecraft laucher home page. Your Realm(s) will automatically appear in the Realm dropdown if you have an active subscription.
+1. In your local Editor project, select **File** > **Publish to Realms**, or open the panel from the Action Bar. Your available Realms appear in the Realm dropdown when you're signed in with an active subscription.
 
 2. Choose the Realm you want to work in, then select the world slot you want to publish to.
 

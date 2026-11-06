@@ -65,7 +65,7 @@
         ]
       }
     ],
-    "dataVersion": "1.21.10"
+    "dataVersion": "1.26.70"
   },
   "description": "Controls individual particle lifetimes using Molang expressions. The max_lifetime sets the absolute duration limit, while expiration_expression can terminate particles early when conditions are met (like leaving a certain area). Enables dynamic particle populations that respond to game state beyond simple time-based expiration."
 }

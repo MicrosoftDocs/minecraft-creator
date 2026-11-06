@@ -374,6 +374,8 @@
   href: minecraftComponent_trade_table.md
 - name: minecraft:trail
   href: minecraftComponent_trail.md
+- name: minecraft:trail placement_conditions entry
+  href: minecraftComponent_trail_placement_conditions_entry.md
 - name: minecraft:transformation
   href: minecraftComponent_transformation.md
 - name: minecraft:transient

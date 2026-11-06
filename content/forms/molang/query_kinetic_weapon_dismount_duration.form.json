@@ -18,7 +18,7 @@
   "generated_doNotEdit": {
     "id": "query.kinetic_weapon_dismount_duration",
     "title": "Kinetic Weapon Dismount Duration",
-    "description": "Returns the \"max_duration\" value of \"dismount_conditions\" from the main-hand item's \"minecraft:kinetic_weapon\" component, or 0 if the component is not present.",
+    "description": "Returns the \"max_duration\" value of \"dismount_conditions\" from the active-hand item's \"minecraft:kinetic_weapon\" component. Returns 0 if the component is not present.",
     "fields": []
   }
 }

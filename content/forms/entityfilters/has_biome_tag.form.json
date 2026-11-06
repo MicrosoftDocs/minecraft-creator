@@ -176,6 +176,76 @@
               "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[1]/filters/",
               "content": "spawns_cold_variant_farm_animals"
             }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[0]/",
+              "content": "desert"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[1]/",
+              "content": "jungle"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[2]/",
+              "content": "savanna"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[3]/",
+              "content": "mesa"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[4]/",
+              "content": "nether"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[5]/all_of[0]/",
+              "content": "warm"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[5]/all_of[1]/",
+              "content": "ocean"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[6]/all_of[0]/",
+              "content": "lukewarm"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[6]/all_of[1]/",
+              "content": "ocean"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[7]/",
+              "content": "mangrove_swamp"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/",
+              "content": "spawns_cold_variant_frogs"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[1]/",
+              "content": "jungle"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[2]/",
+              "content": "savanna"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[3]/",
+              "content": "mesa"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[5]/all_of[0]/",
+              "content": "warm"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[6]/all_of[0]/",
+              "content": "lukewarm"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[2]/filters/",
+              "content": "spawns_cold_variant_frogs"
+            }
           ]
         }
       },
@@ -270,6 +340,162 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[0]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "desert"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[1]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "jungle"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[2]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "savanna"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[3]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "mesa"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[4]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "nether"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[5]/all_of[0]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "warm"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[5]/all_of[1]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "ocean"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[6]/all_of[0]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "lukewarm"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[6]/all_of[1]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "ocean"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/filters/any_of[7]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "mangrove_swamp"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[2]/filters/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "spawns_cold_variant_frogs"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[0]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "desert"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[1]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "jungle"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[2]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "savanna"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[3]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "mesa"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[4]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "nether"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[5]/all_of[0]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "warm"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[5]/all_of[1]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "ocean"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[6]/all_of[0]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "lukewarm"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[6]/all_of[1]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "ocean"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[1]/filters/any_of[7]/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "mangrove_swamp"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence[2]/filters/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "spawns_cold_variant_frogs"
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/pig.json": [
         {
           "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[0]/filters/",
@@ -283,22 +509,6 @@
           "content": {
             "test": "has_biome_tag",
             "value": "spawns_cold_variant_farm_animals"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/sheep.json": [
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[0]/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "spawns_cold_variant_farm_animals"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence[1]/first_valid[1]/filters/",
-          "content": {
-            "test": "has_biome_tag",
-            "value": "spawns_warm_variant_farm_animals"
           }
         }
       ]

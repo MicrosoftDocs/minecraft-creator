@@ -1,10 +1,10 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Summon Tool
 description: "An overview of the Summon Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2025
+ms.date: 10/14/2026
 ---
 
 # Summon Tool
@@ -14,8 +14,8 @@ Place entities into your world quickly. Some entities have random visual or vari
 ## Settings
 
 - **Entity Type**: Choose the type of entity to place from the drop-down.
-- **Entity Offset** (0–8 per axis): Shifts the placement position relative to the cursor in X, Y, and Z.
-- **Grid Alignment** (1–8 per axis): Snaps entity placement to a grid with the specified spacing in each axis.
+- **Offset** (0–8 per axis; default: 0): Shifts the placement position in X, Y, and Z.
+- **Grid Snap** (1–8 per axis; default: 1): Snaps entity placement to a grid with the specified spacing in each axis. Each placement spawns one entity.
 - **Rotation** (-360 to 360): Sets the entity's facing direction in degrees. You can also use the **Shift+Mouse Wheel** to rotate in 10° increments.
 
 ## Using the summon tool

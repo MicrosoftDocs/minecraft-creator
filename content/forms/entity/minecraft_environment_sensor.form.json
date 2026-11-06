@@ -223,6 +223,52 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:look_to_start_transformations/minecraft:environment_sensor/",
+              "content": [
+                {
+                  "event": "minecraft:start_transforming_into_zombie",
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "in_block",
+                        "value": "minecraft:powder_snow"
+                      },
+                      {
+                        "test": "has_equipment_tag",
+                        "domain": "armor",
+                        "operator": "not",
+                        "value": "minecraft:leather_tier"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/",
+              "content": [
+                {
+                  "event": "minecraft:stop_transforming",
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "in_block",
+                        "operator": "not",
+                        "value": "minecraft:powder_snow"
+                      },
+                      {
+                        "test": "has_equipment_tag",
+                        "domain": "armor",
+                        "value": "minecraft:leather_tier"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/player.json": [
             {
               "path": "/minecraft:entity/components/minecraft:environment_sensor/",
@@ -241,30 +287,6 @@
                       "value": true
                     }
                   ]
-                }
-              }
-            }
-          ],
-          "/vanilla/behavior_pack/entities/spider.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/",
-              "content": {
-                "event": "minecraft:become_neutral",
-                "filters": {
-                  "operator": ">",
-                  "test": "is_brightness",
-                  "value": 0.49
-                }
-              }
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/",
-              "content": {
-                "event": "minecraft:become_hostile",
-                "filters": {
-                  "operator": "<",
-                  "test": "is_brightness",
-                  "value": 0.49
                 }
               }
             }
@@ -407,6 +429,56 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:look_to_start_transformations/minecraft:environment_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "event": "minecraft:start_transforming_into_zombie",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "in_block",
+                      "value": "minecraft:powder_snow"
+                    },
+                    {
+                      "test": "has_equipment_tag",
+                      "domain": "armor",
+                      "operator": "not",
+                      "value": "minecraft:leather_tier"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "event": "minecraft:stop_transforming",
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "in_block",
+                      "operator": "not",
+                      "value": "minecraft:powder_snow"
+                    },
+                    {
+                      "test": "has_equipment_tag",
+                      "domain": "armor",
+                      "value": "minecraft:leather_tier"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/player.json": [
         {
           "path": "/minecraft:entity/components/minecraft:environment_sensor/",
@@ -426,34 +498,6 @@
                     "value": true
                   }
                 ]
-              }
-            }
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/spider.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/",
-          "content": {
-            "triggers": {
-              "event": "minecraft:become_neutral",
-              "filters": {
-                "operator": ">",
-                "test": "is_brightness",
-                "value": 0.49
-              }
-            }
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/",
-          "content": {
-            "triggers": {
-              "event": "minecraft:become_hostile",
-              "filters": {
-                "operator": "<",
-                "test": "is_brightness",
-                "value": 0.49
               }
             }
           }

@@ -35,6 +35,12 @@
         "isRequired": true
       },
       {
+        "id": "selection_text",
+        "title": "Selection Text",
+        "dataType": "string",
+        "defaultValue": ""
+      },
+      {
         "id": "text",
         "title": "Text",
         "dataType": "string",

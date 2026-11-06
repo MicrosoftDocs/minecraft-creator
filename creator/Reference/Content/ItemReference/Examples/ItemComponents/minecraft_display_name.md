@@ -20,7 +20,7 @@ Sets the item display name within Minecraft: Bedrock Edition. This component may
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value |  | String | Name shown for an item. | Apple: `"item.apple.name"`, Breeze Rod: `"item.breeze_rod.name"`, Ominous Trial Key: `"item.ominous_trial_key.name"` | 
+| value |  | String | Name shown for an item. | Apple: `"item.apple.name"`, Breeze Rod: `"item.breeze_rod.name"`, Ice Ball: `"item.ice_ball.name"` | 
 
 ## Samples
 
@@ -58,29 +58,29 @@ At sample with localication key:
 }
 ```
 
-#### [Ominous Trial Key](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/ominous_trial_key.json)
+#### [Ice Ball](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/ice_ball.json)
 
 
 ```json
 "minecraft:display_name": {
-  "value": "item.ominous_trial_key.name"
+  "value": "item.ice_ball.name"
 }
 ```
 
-#### [Red Shrub](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/red_shrub.json)
+#### [Ice Crystal](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/ice_crystal.json)
 
 
 ```json
 "minecraft:display_name": {
-  "value": "tile.red_shrub.name"
+  "value": "tile.ice_crystal.name"
 }
 ```
 
-#### [Shelf Mushroom](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/shelf_mushroom.json)
+#### [Icicle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/icicle.json)
 
 
 ```json
 "minecraft:display_name": {
-  "value": "tile.shelf_mushroom.name"
+  "value": "tile.icicle.name"
 }
 ```

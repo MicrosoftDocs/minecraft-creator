@@ -4,7 +4,7 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Paste Preview
 description: "An overview of the Paste Preview part of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 10/14/2026
 ---
 
 # Paste Preview
@@ -14,7 +14,7 @@ Paste Preview lets you position, rotate, mirror, and offset your clipboard conte
 Paste Preview has two modes:
 
 - **Paste**: The preview follows the cursor. Click or press **Enter** to paste.
-- **Move**: The preview freezes in place so you can reposition it with the move gizmo or exact coordinates. Switch between modes by pressing **M**.
+- **Compose**: The preview stops following the cursor so you can reposition it with the move gizmo or exact coordinates. Press **Enter** to paste. Switch between modes by pressing **M**.
 
 ![Paste confirmed](Media/GIFs/PastePreview.gif)
 
@@ -30,7 +30,7 @@ Paste Preview has two modes:
 4. Hover over the ground where you want the copied or cut blocks to be pasted. A preview appears with an outline of the clipboard item.
     ![Paste preview placed](Media/editor_overview_paste_preview_copied_house_preview.png)
 
-5. To position the preview precisely, select **Move** or press **M**. Drag the move gizmo, enter exact **Position** coordinates, or nudge the preview with the keyboard (see shortcuts).
+5. To position the preview precisely, select **Compose** or press **M**. Drag the move gizmo, enter exact **Position** coordinates, or nudge the preview with the keyboard (see shortcuts).
     ![Keyboard nudging](Media/PastePreviewKeyboardPgUpDn.gif)
 
    > [!TIP]
@@ -44,11 +44,11 @@ Paste Preview has two modes:
 
 ### Placement control pane
 
-- **Mode**: Switches between **Paste** mode, where the preview follows the cursor, and **Move** mode, where the preview stays in place and displays the move gizmo and position fields.
+- **Mode**: Switches between **Paste**, where the preview follows the cursor, and **Compose**, where the preview stays in place and displays the move gizmo and position fields.
 
-- **Position**: Sets the preview's world coordinates while in **Move** mode.
+- **Position**: Sets the preview's world coordinates while in **Compose** mode.
 
-- **Origin**: The placement anchor in world coordinates; rotations and mirror actions pivot around this point. Editing X/Y/Z moves the preview anchor.
+- **Origin**: The placement anchor and rotation/mirror pivot **within the clipboard**, measured from its bottom-left-back corner. These aren't world coordinates. Each axis accepts values from 0 to the clipboard size on that axis minus 1, including fractional values.
 
 - **Offset**: Defines an additional offset from the placement point to the clipboard item's internal origin.
 
@@ -65,7 +65,7 @@ These shortcuts work while the Paste Preview is active. For the full list of sho
 |Command|Shortcut|Alternate|
 |:---|:---|:---|
 |Open Paste Preview|**Ctrl** + **V**|-|
-|Toggle Paste/Move mode|**M**|-|
+|Toggle Paste/Compose mode|**M**|-|
 |Commit paste|**Enter**|**Ctrl** + **V**|
 |Move Origin (anchor)|**Ctrl** + **Up/Down/Left/Right**|**Ctrl** + **Page Up/Page Down**|
 |Nudge Offset (relative)|**Ctrl** + **Shift** + **Up/Down/Left/Right**|**Ctrl** + **Shift** + **Page Up/Page Down**|
@@ -76,8 +76,8 @@ These shortcuts work while the Paste Preview is active. For the full list of sho
 
 ## Tips
 
-- Use origin for world‑space placement and offset for fine, relative alignment.
+- Use **Position** in **Compose** mode for world-space placement and **Offset** for relative alignment.
 
-- If the clip seems to pivot oddly, check the origin rotation and mirror use it as the pivot.
+- If the clipboard rotates or mirrors around an unexpected point, check its internal **Origin**.
 
 - For large structures, pick a stable anchor (like a corner) before rotating.

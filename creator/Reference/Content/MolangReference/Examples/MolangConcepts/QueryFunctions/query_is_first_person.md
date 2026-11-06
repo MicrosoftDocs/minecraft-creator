@@ -10,4 +10,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_first_person
 
-Returns 1.0 if the entity is being rendered in first person mode, else it returns 0.0.
+DEPRECATED (Use 'variable.is_first_person'): Always returns 0.0.

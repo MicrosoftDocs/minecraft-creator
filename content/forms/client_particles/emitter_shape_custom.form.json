@@ -91,7 +91,7 @@
         ]
       }
     ],
-    "dataVersion": "1.21.10"
+    "dataVersion": "1.26.70"
   },
   "description": "Emits particles from positions calculated by custom Molang expressions. Unlike preset shapes, this gives complete control over spawn locations using math expressions that can create rings, spirals, waves, or any procedural pattern. Use the offset expressions to define X, Y, Z coordinates relative to the emitter for complex artistic effects."
 }

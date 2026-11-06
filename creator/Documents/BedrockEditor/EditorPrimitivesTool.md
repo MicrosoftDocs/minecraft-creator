@@ -4,7 +4,7 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Primitives Tool
 description: "An overview of the Primitives Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 10/14/2026
 ---
 
 # Primitives Tool
@@ -38,6 +38,8 @@ Primitives can contain up to 5,000,000 blocks. Dimension controls also have thes
 | Pyramid | 256-block base sides and 128-block height |
 
 If the configured shape exceeds the total block limit, reduce one or more dimensions before placing it.
+
+Pyramid base dimensions must be odd numbers, so not every integer up to the dimension limit is a valid pyramid width or depth.
 
 ## Keyboard shortcuts
 

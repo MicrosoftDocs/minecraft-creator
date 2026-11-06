@@ -4,7 +4,7 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Hotkeys
 description: "An overview of the keyboard input shortcuts in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2026
+ms.date: 10/14/2026
 ---
 
 # Editor Hotkeys
@@ -96,12 +96,14 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 |:----|:----|:----|
 | Fly to Cursor | G | On |
 | Fly to Selection | Ctrl+Shift+F | On |
-| Move Back | S or Shift+S | On |
+| Move Back | S | On |
 | Move Up | E | On |
 | Move Down | Q | On |
-| Move Forward | W or Shift+W | On |
-| Move Left | A or Shift+A | On |
-| Move Right | D or Shift+D | On |
+| Move Forward | W | On |
+| Move Left | A | On |
+| Move Right | D | On |
+| Decrease Move Speed Multiplier | Shift+Q | - |
+| Increase Move Speed Multiplier | Shift+E | - |
 
 
 ## Modal Tools
@@ -162,7 +164,7 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Adjacent Target Mode | - | On |
 | Block Target Mode | B | On |
 | Mouse Tracking | C | On |
-| Toggle Mode (Paste/Move) | M | On |
+| Toggle Mode (Paste/Compose) | M | On |
 | Move Offset Back | Ctrl+Shift+Down Arrow | - |
 | Move Offset Down | Ctrl+Shift+PgDn | - |
 | Move Offset Forward | Ctrl+Shift+Up Arrow | - |
@@ -204,12 +206,12 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Delete Contents | Shift+Delete | - |
 | Delete Contents and Deselect | Delete | On |
 | Delete Selected | Delete | - |
-| Move Selected Back | Down Arrow | On |
-| Move Selected Up | PgUp | On |
-| Move Selected Down | PgDn | On |
-| Move Selected Forward | Up Arrow | On |
-| Move Selected Left | Left Arrow | On |
-| Move Selected Right | Right Arrow | On |
+| Move Selected Back | Ctrl+Shift+Down Arrow | - |
+| Move Selected Up | Ctrl+Shift+PgUp | - |
+| Move Selected Down | Ctrl+Shift+PgDn | - |
+| Move Selected Forward | Ctrl+Shift+Up Arrow | - |
+| Move Selected Left | Ctrl+Shift+Left Arrow | - |
+| Move Selected Right | Ctrl+Shift+Right Arrow | - |
 
 
 ### Terrain
@@ -217,7 +219,7 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 | Terrain Tool | Ctrl+T | - |
-| Cycle Terrain Modes (Flatten/Smooth/Roughen) | Ctrl+T | - |
+| Cycle Terrain Modes (Flatten/Elevation/Smooth/Roughen) | Ctrl+T | - |
 | Flatten: Both | Shift+F | - |
 | Flatten: Down | Shift+D | - |
 | Flatten: Up | Shift+U | - |
@@ -238,7 +240,7 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Primary Action (Left-click equivalent) | (Numpad +) | - |
 | Secondary Action (Shift+Left-click) | Shift+(Numpad +) | - |
 | Tertiary Action (Ctrl+Left-click) | Ctrl+(Numpad +) | - |
-| Quaternary Action (Ctrl+Shift+Left-click) | Ctrl+Shift+(Numpad +)
+| Quaternary Action (Ctrl+Shift+Left-click) | Ctrl+Shift+(Numpad +) | - |
 
 
 ### Summon
@@ -256,35 +258,13 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Move Selected Up | PgUp | On |
 
 
-## Legacy Mapping List
+## Tool Mode and Crosshair Mode controls
 
-| Action | Keyboard Shortcut | Mode |
-|:----|:----|:----|
-| Forward | `W` (*Tool: Hold down right mouse button*) | Tool + Crosshair |
-| Left | `A` (*Tool: Hold down right mouse button*)| Tool + Crosshair |
-| Backward | `S` (*Tool: Hold down right mouse button*)| Tool + Crosshair |
-| Right | `D` (*Tool: Hold down right mouse button*)| Tool + Crosshair |
-| Up | `Space` (*Tool: Hold down right mouse button*)| Tool + Crosshair |
-| Down | `Shift` (*Tool: Hold down right mouse button*)| Tool + Crosshair |
-| Increase speed | Quickly press `W` twice (_*Tool: Hold down right mouse button_)| Tool + Crosshair |
-| Fly toggle | Quickly press `space` twice | Crosshair |
-| Display 3D cursor - baseline for Tool Mode | `Esc` | Tool only |
-| Selection mode | `Ctrl S` | Tool only |
-| Selection: Single block | Single left mouse click | Tool only |
-| Selection: 2-step XZ region selection | Left mouse click while holding `Shift` | Tool only |
-| Selection: 3-step XZY region selection | Left mouse click while holding `Shift` for XZ, and to select Y move your cursor and press `Alt` while left clicking | Tool only |
-| Deselect | `Ctrl D` | Tool only |
-| Fill | Select an area and either `Ctrl F` while in Selection mode or use Fill in the Selection panel | Tool only |
-| Undo | `Ctrl Z` or `Ctrl Delete` (if `/effect` is applied) | Tool + Crosshair |
-| Redo | `Ctrl Y` | Tool + Crosshair |
-| Cut | `Ctrl X` | Tool only |
-| Copy | `Ctrl C` | Tool only |
-| Paste Preview | `Ctrl V` | Tool only |
-| Paste at cursor | `Ctrl Shift V` | Tool only |
-| Delete | `Delete` | Tool only |
-| Grapple teleport | Point at something and press `G` | Tool only |
-| Brush | `Ctrl B` | Tool only |
-| Open cmd window | `/` | Tool + Crosshair |
-| Toggle from Tool to Crosshair Mode | Crosshair Mode button or `Ctrl Tab` | Tool only |
-| Toggle from Crosshair Mode to Tool | `Esc` | Crosshair only
-| Get to Tool Mode from Crosshair Mode | `Esc` | Tool only |
+In Tool Mode, hold the right mouse button while navigating with **W**, **A**, **S**, **D**, **E** (up), and **Q** (down). Crosshair Mode uses Minecraft's gameplay bindings instead. View those bindings in **Settings** > **Controls** > **Keyboard & Mouse**; don't use the gameplay movement bindings as a reference for Editor's viewport.
+
+Use **Ctrl+Tab** to switch modes. Press **Esc** in Crosshair Mode to return to Tool Mode.
+
+Selection gestures depend on whether **2-Point Selection** is enabled. See [Selection Tool](EditorSelectionTool.md#marquee-selection) for the two-corner workflow and the distinction from the default three-point workflow.
+
+> [!NOTE]
+> The Flood tool and Viewport **Fly to Selection** action both have **Ctrl+Shift+F** as a default binding in different input maps. Use the tool rail to open [Flood](EditorFlood.md) directly, or review and customize the bindings in Keyboard Settings.

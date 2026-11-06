@@ -18,12 +18,11 @@ Returns true when the subject entity is inside a specified Block type.
 
 ## In Block Properties
 
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Skeleton: `"not"` | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Skeleton: `"self"` | 
-| test | *not set* | String |  | Skeleton: `"in_block"` | 
-| value | *not set* | String | (Optional) A string value. | Skeleton: `"minecraft:powder_snow"` | 
+|Name       |Default Value |Type |Description |
+|:----------|:-------------|:----|:-----------|
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | 
+| value | *not set* | String | (Optional) A string value. | 
 
 ### Operator choices
 
@@ -64,36 +63,4 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "in_block" }
-```
-
-#### [Skeleton](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton.json)
-
-At /minecraft:entity/components/minecraft:environment_sensor/triggers[2]/filters/: 
-
-```json
-{
-  "subject": "self",
-  "test": "in_block",
-  "value": "minecraft:powder_snow"
-}
-```
-
-At /minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers[0]/filters/: 
-
-```json
-{
-  "operator": "not",
-  "test": "in_block",
-  "subject": "self",
-  "value": "minecraft:powder_snow"
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers[1]/filters/: 
-
-```json
-{
-  "test": "in_block",
-  "value": "minecraft:powder_snow"
-}
 ```

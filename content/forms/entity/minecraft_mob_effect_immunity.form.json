@@ -32,6 +32,14 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/polar_bear.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
+              "content": [
+                "freezing"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/silverfish.json": [
             {
               "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
@@ -47,6 +55,14 @@
                 "oozing"
               ]
             }
+          ],
+          "/vanilla/behavior_pack/entities/snow_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
+              "content": [
+                "freezing"
+              ]
+            }
           ]
         }
       }
@@ -58,6 +74,16 @@
           "content": {
             "mob_effects": [
               "weakness"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
+          "content": {
+            "mob_effects": [
+              "freezing"
             ]
           }
         }
@@ -78,6 +104,16 @@
           "content": {
             "mob_effects": [
               "oozing"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:mob_effect_immunity/",
+          "content": {
+            "mob_effects": [
+              "freezing"
             ]
           }
         }

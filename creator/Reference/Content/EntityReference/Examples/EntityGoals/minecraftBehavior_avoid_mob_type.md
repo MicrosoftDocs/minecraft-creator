@@ -221,10 +221,13 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | convert_mooshroom | Convert mooshroom | |
 | convert_to_drowned | Convert to drowned | |
 | convert_to_frog | Convert to frog | |
+| convert_to_frostbite | Convert to frostbite | |
 | convert_to_stray | Convert to stray | |
+| convert_to_zombie | Convert to zombie | |
 | converted_to_zombified | Converted to zombified | |
 | copper.wax.off | Copper.wax.off | |
 | copper.wax.on | Copper.wax.on | |
+| crack | Crack | |
 | crafter.craft | Crafter.craft | |
 | crafter.disable_slot | Crafter.disable slot | |
 | crafter.fail | Crafter.fail | |
@@ -310,6 +313,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | hurt.in.water | Hurt.in.water | |
 | hurt.reduced | Hurt.reduced | |
 | hurt.screamer | Hurt.screamer | |
+| ice_ball.throw | Ice ball.throw | |
 | icebomb.hit | Icebomb.hit | |
 | ignite | Ignite | |
 | imitate.blaze | Imitate.blaze | |
@@ -325,6 +329,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | imitate.enderman | Imitate.enderman | |
 | imitate.endermite | Imitate.endermite | |
 | imitate.evocation_illager | Imitate.evocation illager | |
+| imitate.frostbite | Imitate.frostbite | |
 | imitate.ghast | Imitate.ghast | |
 | imitate.guardian | Imitate.guardian | |
 | imitate.happy_ghast | Imitate.happy ghast | |
@@ -512,6 +517,7 @@ Allows the entity to run away from other entities that meet the criteria specifi
 | record.creator | Record.creator | |
 | record.creator_music_box | Record.creator music box | |
 | record.far | Record.far | |
+| record.flurry | Record.flurry | |
 | record.lava_chicken | Record.lava chicken | |
 | record.mall | Record.mall | |
 | record.mellohi | Record.mellohi | |

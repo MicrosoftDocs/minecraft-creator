@@ -49,7 +49,8 @@
         "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
         "dataType": "int"
       }
-    ]
+    ],
+    "samples": {}
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:behavior.follow_target_leader",
@@ -178,6 +179,7 @@
         "defaultValue": 0
       }
     ],
-    "dataVersion": "1.26.30"
+    "dataVersion": "1.26.30",
+    "samples": {}
   }
 }

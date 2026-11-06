@@ -10,7 +10,7 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_kinetic_weapon_knockback_duration
 
-Returns the "max_duration" value of "knockback_conditions" from the main-hand item's "minecraft:kinetic_weapon" component, or 0 if the component is not present.
+Returns the "max_duration" value of "knockback_conditions" from the active-hand item's "minecraft:kinetic_weapon" component. Returns 0 if the component is not present.
 
 > [!Note]
 > This item requires a format version of at least 1.21.130.

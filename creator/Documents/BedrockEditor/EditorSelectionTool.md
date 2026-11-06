@@ -1,10 +1,10 @@
 ---
 author: cam-wilkerson
-ms.author: v-cwilkerson
+ms.author: ropoer
 title: Minecraft Bedrock Editor Selection Tool
 description: "An overview of the Selection Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/04/2025
+ms.date: 10/14/2026
 ---
 
 # Selection Tool
@@ -22,7 +22,7 @@ Editor supports three different Selection modes so you can pick the one that mak
 
 ### Marquee Selection
 
-Marquee creates a selection area when you choose the X, Y, and Z coordinates (in that order). Selections can include air, but you can't choose air as a coordinate.
+Marquee creates a rectangular selection. By default, it uses a three-point workflow to define the base and height. Enable **2-Point Selection** for the two-corner workflow below. Use **Ctrl** when adding a separate selection volume, not when choosing the opposite corner of the current volume.
 
 ![Animation of how to use Freeform Selection](Media/Freeform.gif)
 
@@ -40,13 +40,13 @@ You might have noticed another white box, hovering in the center of your selecti
 
 #### Practice using Marquee Selection:
 
-1. Choose Marquee as the Selection Mode.
+1. Choose **Marquee** as the Selection Mode and enable **2-Point Selection**.
 
 2. Click a block on the ground in front of you with your cursor to choose the block that will hold the X coordinate.
 
-3. Hold **Shift** and click another block to chooses the Z coordinate. A square with X and Z as opposite corners will appear on the ground.
+3. Hold **Shift** and click another block to choose the opposite corner in the X-Z plane. A rectangle appears between the two blocks.
 
-4. To add the Y coordinate, hold **Alt** and click somewhere above the square.
+4. Adjust the height with a corner's resize gizmo or the Y value under **Transform** > **Size**.
 
 5. Deselect the selection (**Ctrl+D**) before moving on to the next practice.
 
@@ -56,7 +56,7 @@ Creates a selection with the same mechanic as the Brush Paint Tool to create a m
 
 #### Brush Settings
 
-![Brush Settings Menu](media/SelectionScreenshots/BrushSettings.png)
+![Brush Settings menu](Media/SelectionScreenshots/BrushSettings.png)
 
 > [!Note]
 > These settings are only visible in the Selection menu when Freehand Brush Mode is selected.
@@ -104,7 +104,7 @@ Creates a selection with the same mechanic as the Brush Paint Tool to create a m
 Block Filters determine what type of blocks are included/excluded from the Brush Paint action and how your selection is filled.
 
 
-![Fill Constraints Menu](media/BrushScreenshots/FillConstraints.png)
+![Fill Constraints menu](Media/BrushScreenshots/FillConstraints.png)
 
 - Disabled
 
@@ -123,14 +123,14 @@ Block Filters determine what type of blocks are included/excluded from the Brush
 Used to select entire structures from blocks that are connected to each other in the world. Magic Select can help you quickly adjust, copy, or paste structures to add richness your world.
 
 > [!Note]
-> Magic Select is best used to select isolated structures since it creats a selection out of all connected blocks beside and above the initial selected block. All connected structures will be grouped together (i.e. adjacent trees that are connected by touching leaf blocks).
+> Magic Select is best used to select isolated structures because it creates a selection from connected blocks beside and above the initial block. Connected structures are grouped together, such as adjacent trees with touching leaves.
 
 
 ## Quick Actions
 
 These are some of the helper tools you'll use the most with Selection, so we put them together at the top to make them easy to find.
 
-![Selection Quick Actions](media/SelectionScreenshots/QuickActions.png)
+![Selection Quick Actions](Media/SelectionScreenshots/QuickActions.png)
 
 ### Deselect
 
@@ -165,7 +165,7 @@ Deletes the blocks in the current selection, leaving only air behind.
 
 ## Trim Actions
 
-![Trim Actions Menu](media/SelectionScreenshots/TrimActions.png)
+![Trim Actions menu](Media/SelectionScreenshots/TrimActions.png)
 
 ### Trim Selection
 Trims the current selection to fit only the solid blocks within it.
@@ -175,12 +175,12 @@ Removes air blocks from the selection, leaving only the specified blocks.
 
 ### Hollow Selection
 
-Retains the outline of your selection while changing all interior blocks to air.
+Changes the selection to the enclosed interior blocks. This action changes only what is selected; it doesn't remove blocks from the world. To remove the selected interior blocks, use **Delete** afterward.
 
 
 ## Cursor Settings
 
-![Cursor Settings](media/SelectionScreenshots/CursorSettings.png)
+![Cursor Settings](Media/SelectionScreenshots/CursorSettings.png)
 
 ### Input Modes
 
@@ -243,7 +243,7 @@ In the Transform section, you can move and fine-tune your selection by entering 
 
 ### Origin
 
-Represents the world-coordinates for the center of your selection.
+Represents the minimum X, Y, and Z world coordinates of the selection's bounding box, not its center.
 
 #### Practice transforming the selection's origin:
 

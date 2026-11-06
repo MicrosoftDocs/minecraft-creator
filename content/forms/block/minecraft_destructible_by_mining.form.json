@@ -378,6 +378,13 @@
     "description": "Describes the destructible by mining properties for this block. If set to true, the block will take the default number of seconds to destroy. If set to false, this block is indestructible by mining. If the component is omitted, the block will take the default number of seconds to destroy.",
     "fields": [
       {
+        "id": "base_time_to_destroy",
+        "title": "Base Time To Destroy",
+        "description": "Sets the number of server simulation ticks it takes to mine the block with base equipment. Greater numbers result in greater mining times. A negative number means the block can't be mined.",
+        "defaultValue": 0,
+        "dataType": "float"
+      },
+      {
         "id": "item_specific_speeds",
         "title": "Item Specific Speeds",
         "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
@@ -403,11 +410,11 @@
             "samples": [
               {
                 "path": "Example1",
-                "content": "{\n\t\"minecraft:destructible_by_mining\": {\n\t\t\"seconds_to_destroy\": 10,\n\t\t\"item_specific_speeds\": [\n\t\t\t{\n\t\t\t\t\"item\": { \"tags\": \"q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') \" },\n\t\t\t\t\"destroy_speed\": 5.0\n\t\t\t}\n\t\t]\n\t}\n}"
+                "content": "{\n\t\"minecraft:destructible_by_mining\": {\n\t\t\"base_time_to_destroy\": 10,\n\t\t\"item_specific_speeds\": [\n\t\t\t{\n\t\t\t\t\"item\": { \"tags\": \"q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') \" },\n\t\t\t\t\"destroy_speed\": 5.0\n\t\t\t}\n\t\t]\n\t}\n}"
               },
               {
                 "path": "Example2",
-                "content": "{\n\t\"minecraft:destructible_by_mining\": {\n\t\t\"seconds_to_destroy\": 10,\n\t\t\"item_specific_speeds\": [\n\t\t\t{\n\t\t\t\t\"item\": \"minecraft:iron_pickaxe\",\n\t\t\t\t\"destroy_speed\": 5.0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"item\": \"minecraft:diamond_pickaxe\",\n\t\t\t\t\"destroy_speed\": 2.0\n\t\t\t}\n\t\t]\n\t}\n}"
+                "content": "{\n\t\"minecraft:destructible_by_mining\": {\n\t\t\"base_time_to_destroy\": 10,\n\t\t\"item_specific_speeds\": [\n\t\t\t{\n\t\t\t\t\"item\": \"minecraft:iron_pickaxe\",\n\t\t\t\t\"destroy_speed\": 5.0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"item\": \"minecraft:diamond_pickaxe\",\n\t\t\t\t\"destroy_speed\": 2.0\n\t\t\t}\n\t\t]\n\t}\n}"
               }
             ]
           }
@@ -416,11 +423,11 @@
           "samples": [
             {
               "path": "Example1",
-              "content": "{\n\t\"minecraft:destructible_by_mining\": {\n\t\t\"seconds_to_destroy\": 10,\n\t\t\"item_specific_speeds\": [\n\t\t\t{\n\t\t\t\t\"item\": { \"tags\": \"q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') \" },\n\t\t\t\t\"destroy_speed\": 5.0\n\t\t\t}\n\t\t]\n\t}\n}"
+              "content": "{\n\t\"minecraft:destructible_by_mining\": {\n\t\t\"base_time_to_destroy\": 10,\n\t\t\"item_specific_speeds\": [\n\t\t\t{\n\t\t\t\t\"item\": { \"tags\": \"q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') \" },\n\t\t\t\t\"destroy_speed\": 5.0\n\t\t\t}\n\t\t]\n\t}\n}"
             },
             {
               "path": "Example2",
-              "content": "{\n\t\"minecraft:destructible_by_mining\": {\n\t\t\"seconds_to_destroy\": 10,\n\t\t\"item_specific_speeds\": [\n\t\t\t{\n\t\t\t\t\"item\": \"minecraft:iron_pickaxe\",\n\t\t\t\t\"destroy_speed\": 5.0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"item\": \"minecraft:diamond_pickaxe\",\n\t\t\t\t\"destroy_speed\": 2.0\n\t\t\t}\n\t\t]\n\t}\n}"
+              "content": "{\n\t\"minecraft:destructible_by_mining\": {\n\t\t\"base_time_to_destroy\": 10,\n\t\t\"item_specific_speeds\": [\n\t\t\t{\n\t\t\t\t\"item\": \"minecraft:iron_pickaxe\",\n\t\t\t\t\"destroy_speed\": 5.0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"item\": \"minecraft:diamond_pickaxe\",\n\t\t\t\t\"destroy_speed\": 2.0\n\t\t\t}\n\t\t]\n\t}\n}"
             }
           ]
         }
@@ -428,9 +435,7 @@
       {
         "id": "seconds_to_destroy",
         "title": "Seconds To Destroy",
-        "description": "Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times.",
-        "defaultValue": 0,
-        "dataType": "float",
+        "dataType": "number",
         "samples": {
           "/vanilla/behavior_pack/blocks/black_concrete_double_slab.block.json": [
             {

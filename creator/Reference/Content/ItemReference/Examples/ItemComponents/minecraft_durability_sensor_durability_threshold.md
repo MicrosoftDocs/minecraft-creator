@@ -67,6 +67,7 @@ Defines both the durability threshold, and the effects emitted when that thresho
 | greenflame | Greenflame | |
 | heart | Heart | |
 | hugeexplosion | Hugeexplosion | |
+| iceballbreak | Iceballbreak | |
 | iconcrack | Iconcrack | |
 | ink | Ink | |
 | largeexplode | Largeexplode | |

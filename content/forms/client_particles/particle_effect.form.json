@@ -91,7 +91,7 @@
               "isRequired": true
             }
           ],
-          "dataVersion": "1.21.10"
+          "dataVersion": "1.26.70"
         },
         "alternates": []
       },
@@ -110,6 +110,6 @@
         "subFormId": "client_particles/particle_event_node"
       }
     ],
-    "dataVersion": "1.21.10"
+    "dataVersion": "1.26.70"
   }
 }

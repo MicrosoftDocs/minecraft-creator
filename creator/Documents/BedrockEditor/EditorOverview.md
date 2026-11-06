@@ -4,12 +4,12 @@ ms.author: brisch
 title: Minecraft Bedrock Editor Overview
 description: "An overview of the parts of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 09/28/2026
+ms.date: 10/14/2026
 ---
 
 # Editor Overview
 
-This overview introduces Editor projects, the Editor interface, and its tools. For keyboard shortcuts, also known as keybindings, see [Control Help](EditorControlHelp.md).
+This overview introduces Editor projects, the Editor interface, and its tools. For keyboard shortcuts, also known as keybindings, see [Control Help](EditorControlHelp.md), each tool's guide, or [Editor Hotkeys](EditorKeyboardInputs.md).
 
 For a more in-depth experience using the tools to accomplish basic tasks, take a look at the [Editor Tutorial](EditorTutorial.md).
 
@@ -24,7 +24,7 @@ In this manual, you will learn the following:
 >
 > - What the difference is between a project and a world
 > - How to create a project
-> - How to create a project and adjust the Editor interface
+> - How to adjust the Editor interface
 > - How to navigate in Editor
 > - Where to learn about exporting a playable world and backing up a project
 
@@ -46,7 +46,7 @@ It's recommended that the following be completed before beginning this tutorial.
 
 An **Editor project** is a world you work on in Editor. It contains the world you're building as well as Editor-specific data, such as data used by Editor extensions. Projects appear in Editor rather than in the usual list of playable Minecraft worlds.
 
-To play or share your work as a regular Minecraft world, export the project as a **playable world** (`.mcworld`). Exporting creates a separate world for gameplay; it doesn't replace your Editor project. The playable export does not include Editor-specific data or Editor extensions, so keep the project if you want to continue editing with those features. To share or back up an editable project, export a **project backup** (`.mcproject`) instead. See [Editor Workflow](EditorWorkflow.md) for import and export steps.
+To play your work as a regular Minecraft world, export the project as **Playable World** to create a local playable copy. To share it, choose **Shareable World (.mcworld)** to create an archive. Exporting creates a separate world for gameplay; it doesn't replace your Editor project. The playable export does not include Editor-specific data or Editor extensions, so keep the project if you want to continue editing with those features. To share or back up an editable project, choose **Backup Editor Project** to create an `.mcproject` archive instead. See [Editor Workflow](EditorWorkflow.md) for import and export steps.
 
 ## Creating an Editor project
 
@@ -56,7 +56,7 @@ After you launch Editor, you get a screen that says "Create New Project."
 
 While you're creating a project, you can configure the name, export settings, and the usual settings for a Minecraft world.
 
-Export settings will apply when you export as a playable world from the Editor (.mcworld).
+Export settings apply when you export a playable world or shareable world archive from Editor.
 
 ![Image of the Minecraft Editor configuration page](Media/editor_overview_project_settings.png)
 
@@ -69,21 +69,17 @@ New projects load with a Welcome screen. If you close it and you want it open ag
 
 Editor looks like your usual Minecraft game with a user interface (UI) on top of it. Before we get started, let's make sure that UI looks okay for your monitor resolution and preferences.
 
-Go to the **File** menu and select **UI Settings**.
-
-![Editor User Interface appearance settings showing UI scale, font, and theme drop-down menus](Media/editor_overview_ui_settings.png)
+Select **File** > **Settings**, and then expand **Interface**.
 
 > - UI Scale - Makes the menu bar and windows larger or smaller in relation to the project world.
 > - Font - Changes the size of the text in the windows.
 > - Theme - Changes the colors used in the UI.
 
-After you make a selection from the UI Settings menu, your changes are reflected immediately.
-
-Hint: If you accidentally adjust things to where you can't read the settings to fix it, press the `Alt F4` keys on your keyboard to close Editor. Then, launch Editor again and create a new project. (This is part of why we're doing this first.)
+Changes to these settings are reflected immediately.
 
 Editor works with [Minecraft Accessibility](https://www.minecraft.net/accessibility) features.
 
-When you're happy with the UI Settings, you can click the X to close the UI Settings window.
+When you're happy with the appearance, close the Settings panel. See [Editor Settings](EditorSettings.md) for navigation, sound, and world-view options.
 
 ## Editor UI Windows: Move, Minimize, Close
 
@@ -97,16 +93,13 @@ If you do want to close the window, click the X in the corner. Some windows can 
 
 ## What's New
 
-![Animation of the parts of the What's New welcome screen](Media/editor_quick_start.png)
+Open **Help** > **What's New** to learn about Editor updates. The U6 update introduces [Layouts](EditorLayouts.md), which lets you arrange saved structures into reusable groups and place linked instances throughout your project.
 
-| Tab          | Content                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Introduction | Welcome to Minecraft Editor, a tool designed to help you create stunning worlds in Bedrock with ease. <br> <br> You may find these links helpful on your journey: <br> <br> <ul> <li> [Documentation](https://aka.ms/BedrockEditorDocs) </li> <li> [Report problems and give feedback](https://aka.ms/BedrockEditorFeedback) </li> <li> [Editor Community](https://aka.ms/BedrockEditorCommunity) </li></ul> <br> To reopen What's New, you can find it under the 'Help' menu. |
-| Movement     | To navigate in the Editor, you'll need a keyboard and mouse. Trackpads or controllers aren't recommended. <br> <br> To move around in Editor: <br> <br><ul> <li> Hold down the right mouse button to look around. </li><li> While holding the right mouse button, move horizontally with `WASD` and vertically with `SHIFT` and `SPACE`. </li></ul>                                                                                                                            |
-| Tools        | You can find tools on the left rail. Each tool allows you to edit your world in different ways. <br> <br>Click on the Information button ("i") at the top right corner of each tool to learn more about how it works.                                                                                                                                                                                                                                                          |
-| Actions      | Actions are shortcuts that live at the top of your screen. Hit the “+” button in the Action Bar to customize which are displayed.<br> <br>At the top center of your screen is the Block Hotbar. Click once to change the active block, click twice to open the Block Picker to customize the Hotbar.<br> <br> You can create a new Hotbar by clicking the Hotbar Menu button to the right.                                                                                     |
+Tools are on the left tool rail. Open a tool's information panel to learn how to use it, or press **F1** for [Control Help](EditorControlHelp.md). Use the **+** buttons to customize your [Action Bar](EditorActionBar.md).
 
-|
+The block hotbar is separate from the Action Bar. Select a slot to change the active block, or double-click a slot to open the Block Picker.
+
+For more help, see the [Editor documentation](https://aka.ms/BedrockEditorDocs), [feedback site](https://aka.ms/BedrockEditorFeedback), and [Editor Community](https://aka.ms/BedrockEditorCommunity).
 
 ## Movement
 
@@ -114,9 +107,9 @@ Before we dive into the Tool Mode UI, you might want to take a moment to familia
 
 - Unlock the camera: In Tool mode, hold down the right mouse button to look around. In Crosshair Mode, you do not need to hold down the right mouse button.
 
-- Moving around: In Tool Mode, hold the right mouse button down while you press `W`, `A`, `S`, `D`, `Space`, and `Shift` keys. You do not need to hold down the right mouse button to use the same keys to move around in Crosshair Mode.
+- Moving around: In Tool Mode, hold the right mouse button and use **W**, **A**, **S**, and **D** to move horizontally, **E** to move up, and **Q** to move down. Crosshair Mode uses Minecraft's gameplay controls instead; review them in **Settings** > **Controls** > **Keyboard & Mouse**.
 
-- Fly Speed: In Tool Mode, click the **View** menu and select **View Settings** to open the View Settings panel. From here, you can set your fly speed from 1 to 10 so that you can navigate your project faster.
+- Movement speed: Select **File** > **Settings** > **Control** and adjust **Move Speed Multiplier**. In the viewport, **Shift+E** increases speed and **Shift+Q** decreases it. See [Editor Settings](EditorSettings.md).
 
 - Look-to-teleport: In Tool Mode, point your cursor at a block in the distance, and hit `G` on your keyboard. You will be "Grapple teleported" there. This function does not work in Crosshair Mode.
 

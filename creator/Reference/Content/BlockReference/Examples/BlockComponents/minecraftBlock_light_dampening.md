@@ -18,3 +18,13 @@ The amount that light will be dampened when it passes through the block, in a ra
 ## Alternate Simple Representations
 
 This item can also be represented as a `Integer number`.
+
+
+## Samples
+
+#### [Block Chiseled Packed Ice](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/blocks/chiseled_packed_ice.block.json)
+
+
+```json
+"minecraft:light_dampening": 15
+```
