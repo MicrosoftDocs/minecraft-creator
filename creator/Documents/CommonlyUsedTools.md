@@ -35,6 +35,10 @@ Amulet is a utility tool designed to edit Minecraft maps. It can come in handy f
 
 Image Map is a small application for both Bedrock Edition and Java Edition that can convert images to Minecraft maps. This can be used to add custom banners and art inside of Minecraft worlds.
 
+### [Minecraft Pixel Art](https://minecraft-pixel-art.com/)
+
+Minecraft Pixel Art is a browser-based tool for turning images into block-by-block build plans. Creators can refine the result with curated block palettes, review material counts, follow layer-by-layer guidance, and export outputs for Minecraft: Java Edition workflows.
+
 ## Server-based tools
 
 Many commonly used tools are designed to be used on Java Edition servers utilizing a server software known as [Spigot](https://www.spigotmc.org/), which is based on the Craftbukkit API. The following tools are plugins that work on servers running this software.
