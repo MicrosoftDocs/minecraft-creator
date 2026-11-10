@@ -19,13 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ```json
 {
     "module_name": "@minecraft/server-editor",
-    "version": "0.1.0-beta.1.26.70-preview.23"
+    "version": "0.1.0-beta.1.26.70-preview.24"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.26.70-beta.23 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.26.70-beta.24 of Minecraft.
 
 ## Available Versions
-- `0.1.0-beta.1.26.70-preview.23`
+- `0.1.0-beta.1.26.70-preview.24`
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
@@ -52,9 +52,11 @@ This is version 0.x.x of this module, which is the latest as of version 1.26.70-
 - [CoreMenuType](CoreMenuType.md)
 - [CoreModalDialogType](CoreModalDialogType.md)
 - [CursorControlMode](CursorControlMode.md)
+- [CursorPrecisionMode](CursorPrecisionMode.md)
 - [CursorTargetMode](CursorTargetMode.md)
 - [DataPickerModalDialogVariant](DataPickerModalDialogVariant.md)
 - [DaylightCycle](DaylightCycle.md)
+- [DirectionAxisLock](DirectionAxisLock.md)
 - [EditorInputContext](EditorInputContext.md)
 - [EditorMode](EditorMode.md)
 - [EntityOperationType](EntityOperationType.md)

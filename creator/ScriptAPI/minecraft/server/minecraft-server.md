@@ -20,10 +20,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.11.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.26.70-beta.23 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.26.70-beta.24 of Minecraft.
 
 ## Available Versions
-- `2.13.0-beta.1.26.70-preview.23`
+- `2.13.0-beta.1.26.70-preview.24`
 - `2.11.0`
 - `2.10.0`
 - `2.9.0`
@@ -133,6 +133,8 @@ The following API versions are from a major version that is documented here: [*@
 - [TickingAreaErrorReason](TickingAreaErrorReason.md)
 - [TimeOfDay](TimeOfDay.md)
 - [TintMethod](TintMethod.md)
+- [VirtualContainerCloseReason](VirtualContainerCloseReason.md)
+- [VirtualContainerOpenErrorReason](VirtualContainerOpenErrorReason.md)
 - [WatchdogTerminateReason](WatchdogTerminateReason.md)
 - [WaypointTexture](WaypointTexture.md)
 - [WeatherType](WeatherType.md)
@@ -159,6 +161,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BiomeTypes](BiomeTypes.md)
 - [Block](Block.md)
 - [BlockBoundingBoxUtils](BlockBoundingBoxUtils.md)
+- [BlockClimbablePropertiesComponent](BlockClimbablePropertiesComponent.md)
 - [BlockComponent](BlockComponent.md)
 - [BlockComponentBlockBreakEvent](BlockComponentBlockBreakEvent.md)
 - [BlockComponentBlockStateChangeEvent](BlockComponentBlockStateChangeEvent.md)
@@ -502,8 +505,6 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerInteractWithEntityBeforeEventSignal](PlayerInteractWithEntityBeforeEventSignal.md)
 - [PlayerInventoryItemChangeAfterEvent](PlayerInventoryItemChangeAfterEvent.md)
 - [PlayerInventoryItemChangeAfterEventSignal](PlayerInventoryItemChangeAfterEventSignal.md)
-- [PlayerItemAttackEntityBeforeEvent](PlayerItemAttackEntityBeforeEvent.md)
-- [PlayerItemAttackEntityBeforeEventSignal](PlayerItemAttackEntityBeforeEventSignal.md)
 - [PlayerJoinAfterEvent](PlayerJoinAfterEvent.md)
 - [PlayerJoinAfterEventSignal](PlayerJoinAfterEventSignal.md)
 - [PlayerLeaveAfterEvent](PlayerLeaveAfterEvent.md)
@@ -598,6 +599,12 @@ The following API versions are from a major version that is documented here: [*@
 - [Trigger](Trigger.md)
 - [TripWireTripAfterEvent](TripWireTripAfterEvent.md)
 - [TripWireTripAfterEventSignal](TripWireTripAfterEventSignal.md)
+- [VirtualContainer](VirtualContainer.md)
+- [VirtualContainerCloseAfterEvent](VirtualContainerCloseAfterEvent.md)
+- [VirtualContainerCloseAfterEventSignal](VirtualContainerCloseAfterEventSignal.md)
+- [VirtualContainerItemChangeAfterEvent](VirtualContainerItemChangeAfterEvent.md)
+- [VirtualContainerItemChangeAfterEventSignal](VirtualContainerItemChangeAfterEventSignal.md)
+- [VirtualContainerManager](VirtualContainerManager.md)
 - [WatchdogTerminateBeforeEvent](WatchdogTerminateBeforeEvent.md)
 - [WatchdogTerminateBeforeEventSignal](WatchdogTerminateBeforeEventSignal.md)
 - [Waypoint](Waypoint.md)
@@ -738,6 +745,8 @@ The following API versions are from a major version that is documented here: [*@
 - [Vector2](Vector2.md)
 - [Vector3](Vector3.md)
 - [VectorXZ](VectorXZ.md)
+- [VirtualContainerEventOptions](VirtualContainerEventOptions.md)
+- [VirtualContainerOptions](VirtualContainerOptions.md)
 - [WaypointTextureBounds](WaypointTextureBounds.md)
 - [WaypointTextureSelector](WaypointTextureSelector.md)
 - [WorldClockEventOptions](WorldClockEventOptions.md)
@@ -792,6 +801,7 @@ The following API versions are from a major version that is documented here: [*@
 - [RawMessageError](RawMessageError.md)
 - [TickingAreaError](TickingAreaError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
+- [VirtualContainerOpenError](VirtualContainerOpenError.md)
 - [WorldClockAddTimeMarkerError](WorldClockAddTimeMarkerError.md)
 - [WorldClockInvalidRegistryError](WorldClockInvalidRegistryError.md)
 - [WorldClockInvalidTimeMarkerError](WorldClockInvalidTimeMarkerError.md)

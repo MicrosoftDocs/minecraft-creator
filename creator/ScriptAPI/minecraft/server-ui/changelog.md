@@ -10,8 +10,8 @@ description: Changelog of the `@minecraft/server-ui` module
 # `@minecraft/server-ui` Changelog
 
 ## Version Changes
-- [2.5.0-beta.1.26.70-preview.23](#250-beta12670-preview23)
-- [2.4.0-rc.1.26.70-preview.23](#240-rc12670-preview23)
+- [2.5.0-beta.1.26.70-preview.24](#250-beta12670-preview24)
+- [2.4.0-rc.1.26.70-preview.24](#240-rc12670-preview24)
 - [2.3.0](#230)
 - [2.2.0](#220)
 - [2.1.0](#210)
@@ -21,15 +21,15 @@ description: Changelog of the `@minecraft/server-ui` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.5.0-beta.1.26.70-preview.23
-#### Added module peer dependency `@minecraft/server@2.13.0-beta.1.26.70-preview.23`
+## 2.5.0-beta.1.26.70-preview.24
+#### Added module peer dependency `@minecraft/server@2.13.0-beta.1.26.70-preview.24`
 #### Changed *[`CustomForm`](CustomForm.md)*
 - Changed function *[`constructor`](CustomForm.md#constructor)*
   - Added argument `options`
 #### Changed *[`MessageBox`](MessageBox.md)*
 - Changed function *[`body`](MessageBox.md#body)*
   - Added argument `options`
-## 2.4.0-rc.1.26.70-preview.23
+## 2.4.0-rc.1.26.70-preview.24
 #### Changed *[`CustomForm`](CustomForm.md)*
 - Added function *[`multiButtonRow`](CustomForm.md#multibuttonrow)*
 #### Changed *[`MessageBox`](MessageBox.md)*

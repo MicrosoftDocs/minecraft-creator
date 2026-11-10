@@ -713,6 +713,36 @@ Type: [*TripWireTripAfterEventSignal*](TripWireTripAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **virtualContainerClose**
+`read-only virtualContainerClose: VirtualContainerCloseAfterEventSignal;`
+
+This event fires when a player's virtual container screen closes, with the container's contents at that moment.
+
+Type: [*VirtualContainerCloseAfterEventSignal*](VirtualContainerCloseAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **virtualContainerItemChange**
+`read-only virtualContainerItemChange: VirtualContainerItemChangeAfterEventSignal;`
+
+This event fires when a player changes a slot of a virtual container through its screen.
+
+Type: [*VirtualContainerItemChangeAfterEventSignal*](VirtualContainerItemChangeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **weatherChange**
 `read-only weatherChange: WeatherChangeAfterEventSignal;`
 

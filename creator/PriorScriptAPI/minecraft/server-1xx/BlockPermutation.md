@@ -107,7 +107,7 @@ Gets a state for the permutation.
 #### **Parameters**
 - **stateName**: *T*
   
-  Name of the block state who's value is to be returned.
+  Name of the block state whose value is to be returned.
 
 **Returns** *minecraftvanilladata.BlockStateSuperset[T]* | *undefined* - Returns the state if the permutation has it, else `undefined`.
 

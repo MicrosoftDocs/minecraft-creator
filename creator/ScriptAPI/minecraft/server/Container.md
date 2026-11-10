@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.Container class.
 ---
 # Container Class
 
+## Classes that extend Container
+- [*VirtualContainer*](VirtualContainer.md)
+
 Represents a container that can hold sets of items. Used with entities such as Players, Chest Minecarts, Llamas, and more.
 
 ## Properties
