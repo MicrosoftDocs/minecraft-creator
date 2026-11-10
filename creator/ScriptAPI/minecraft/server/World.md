@@ -135,6 +135,18 @@ Manager for adding, removing and querying pack specific ticking areas.
 
 Type: [*TickingAreaManager*](TickingAreaManager.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **virtualContainerManager**
+`read-only virtualContainerManager: VirtualContainerManager;`
+
+Manager for creating virtual containers, containers that only exist in memory.
+
+Type: [*VirtualContainerManager*](VirtualContainerManager.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ## Methods
 ::: moniker range="=minecraft-bedrock-experimental"
 - [broadcastClientMessage](#broadcastclientmessage)

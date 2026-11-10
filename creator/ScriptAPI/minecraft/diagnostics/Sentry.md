@@ -15,9 +15,11 @@ A class that allows hooking up reporting to Sentry.  See https://sentry.io/ for 
 - [addBreadcrumb](#addbreadcrumb)
 - [addTag](#addtag)
 - [captureException](#captureexception)
+- [getContexts](#getcontexts)
 - [getTags](#gettags)
 - [init](#init)
 - [removeTag](#removetag)
+- [setContext](#setcontext)
 
 ### **addBreadcrumb**
 `
@@ -72,6 +74,20 @@ Notes:
 - This function can throw errors.
   - Throws [*SentryUninitializedError*](SentryUninitializedError.md)
 
+### **getContexts**
+`
+getContexts(): Record<string, Record<string, boolean | number | string>>
+`
+
+Gets all contexts that have been added to the Sentry session.  See Sentry documentation for more details: https://develop.sentry.dev/sdk/foundations/envelopes/event-payloads/contexts/
+
+**Returns** Record<*string*, Record<*string*, *boolean* | *number* | *string*>> - All contexts that have been added to the session, keyed by context name.
+  
+Notes:
+- This function can be called in early-execution mode.
+- This function can throw errors.
+  - Throws [*SentryUninitializedError*](SentryUninitializedError.md)
+
 ### **getTags**
 `
 getTags(): Record<string, string>
@@ -110,6 +126,26 @@ Removes a tag to the Sentry session.  See Sentry documentation for more details:
 
 #### **Parameters**
 - **name**: *string*
+  
+Notes:
+- This function can be called in early-execution mode.
+- This function can throw errors.
+  - Throws [*SentryUninitializedError*](SentryUninitializedError.md)
+
+### **setContext**
+`
+setContext(name: string, context?: Record<string, boolean | number | string>): void
+`
+
+Sets a named context on the Sentry session.  Contexts are sent with every subsequent Sentry event and are useful for attaching structured data about the current state of the game or script.  If a context with the same name already exists, it is replaced.  If no context value is provided, the named context is removed.  See Sentry documentation for more details: https://develop.sentry.dev/sdk/foundations/envelopes/event-payloads/contexts/
+
+#### **Parameters**
+- **name**: *string*
+  
+  The name of the context.
+- **context**?: Record<*string*, *boolean* | *number* | *string*> = `null`
+  
+  The key/value data of the context, or undefined to remove the context.  Include a `type` key to specify the Sentry context type when it differs from the context name.
   
 Notes:
 - This function can be called in early-execution mode.

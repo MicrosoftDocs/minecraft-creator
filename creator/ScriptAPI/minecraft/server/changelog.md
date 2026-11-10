@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.13.0-beta.1.26.70-preview.23](#2130-beta12670-preview23)
+- [2.13.0-beta.1.26.70-preview.24](#2130-beta12670-preview24)
 - [2.11.0](#2110)
 - [2.10.0](#2100)
 - [2.9.0](#290)
@@ -44,7 +44,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.13.0-beta.1.26.70-preview.23
+## 2.13.0-beta.1.26.70-preview.24
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
@@ -93,6 +93,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`scheduleNamedTick`](Block.md#schedulenamedtick)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
+#### Added *[`BlockClimbablePropertiesComponent`](BlockClimbablePropertiesComponent.md)*
 #### Added *[`BlockComponentNamedTickEvent`](BlockComponentNamedTickEvent.md)*
 #### Added *[`BlockComponentNeighborChangedAfterEvent`](BlockComponentNeighborChangedAfterEvent.md)*
 #### Changed *[`BlockComponentRedstoneUpdateEvent`](BlockComponentRedstoneUpdateEvent.md)*
@@ -118,6 +119,8 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`poiManager`](Dimension.md#poimanager)*
 - Added function *[`getGeneratedStructures`](Dimension.md#getgeneratedstructures)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
+- Changed function *[`playSound`](Dimension.md#playsound)*
+  - Changed argument `location` type from [*Vector3*](Vector3.md) to [*Entity*](Entity.md) | [*Vector3*](Vector3.md)
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
   - Changed return type from [*Entity*](Entity.md) (throws exceptions) to *Entity* (throws exceptions)
   - Changed argument `identifier` type from [*EntityType*](EntityType.md) | *string* to *EntityIdentifierType<NoInfer<T>>*
@@ -168,8 +171,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerCursorItemReleaseAfterEventSignal`](PlayerCursorItemReleaseAfterEventSignal.md)*
 #### Changed *[`PlayerDimensionChangeAfterEvent`](PlayerDimensionChangeAfterEvent.md)*
 - Added property *[`source`](PlayerDimensionChangeAfterEvent.md#source)*
-#### Added *[`PlayerItemAttackEntityBeforeEvent`](PlayerItemAttackEntityBeforeEvent.md)*
-#### Added *[`PlayerItemAttackEntityBeforeEventSignal`](PlayerItemAttackEntityBeforeEventSignal.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
 #### Added *[`PlayerUseNameTagAfterEvent`](PlayerUseNameTagAfterEvent.md)*
@@ -193,12 +194,21 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`SetBannerDetailsFunction`](SetBannerDetailsFunction.md)*
 - Added property *[`baseColor`](SetBannerDetailsFunction.md#basecolor)*
 - Added property *[`patterns`](SetBannerDetailsFunction.md#patterns)*
+#### Changed *[`SoundInstance`](SoundInstance.md)*
+- Added property *[`attachedEntity`](SoundInstance.md#attachedentity)*
 #### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 - Added property *[`watchdogTerminate`](SystemBeforeEvents.md#watchdogterminate)*
+#### Added *[`VirtualContainer`](VirtualContainer.md)*
+#### Added *[`VirtualContainerCloseAfterEvent`](VirtualContainerCloseAfterEvent.md)*
+#### Added *[`VirtualContainerCloseAfterEventSignal`](VirtualContainerCloseAfterEventSignal.md)*
+#### Added *[`VirtualContainerItemChangeAfterEvent`](VirtualContainerItemChangeAfterEvent.md)*
+#### Added *[`VirtualContainerItemChangeAfterEventSignal`](VirtualContainerItemChangeAfterEventSignal.md)*
+#### Added *[`VirtualContainerManager`](VirtualContainerManager.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
 - Added property *[`allowCheats`](World.md#allowcheats)*
+- Added property *[`virtualContainerManager`](World.md#virtualcontainermanager)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Changed function *[`playMusic`](World.md#playmusic)*
   - Changed return type from *void* (throws exceptions) to [*SoundInstance*](SoundInstance.md) (throws exceptions)
@@ -212,11 +222,13 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`playerCursorItemRelease`](WorldAfterEvents.md#playercursoritemrelease)*
 - Added property *[`playerUseNameTag`](WorldAfterEvents.md#playerusenametag)*
 - Added property *[`portalActivate`](WorldAfterEvents.md#portalactivate)*
+- Added property *[`virtualContainerClose`](WorldAfterEvents.md#virtualcontainerclose)*
+- Added property *[`virtualContainerItemChange`](WorldAfterEvents.md#virtualcontaineritemchange)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
-- Added property *[`playerItemAttackEntity`](WorldBeforeEvents.md#playeritemattackentity)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Added value `ClimbableProperties`
 - Added value `EntityStorage`
 - Added value `ItemFrame`
 - Added value `RecipeCrafting`
@@ -239,6 +251,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`PlayerDimensionChangeSource`](PlayerDimensionChangeSource.md)
 #### Added enum [`PlayerWaypointsMode`](PlayerWaypointsMode.md)
 #### Added enum [`PoiBlockOccupancyFilter`](PoiBlockOccupancyFilter.md)
+#### Added enum [`VirtualContainerCloseReason`](VirtualContainerCloseReason.md)
+#### Added enum [`VirtualContainerOpenErrorReason`](VirtualContainerOpenErrorReason.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 ## 2.11.0
 #### Changed *[`Dimension`](Dimension.md)*

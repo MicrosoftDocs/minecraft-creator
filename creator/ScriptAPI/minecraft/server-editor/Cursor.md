@@ -52,6 +52,7 @@ Notes:
   - This property can throw errors when used.
 
 ## Methods
+- [getCollisionPoint](#getcollisionpoint)
 - [getDefaultProperties](#getdefaultproperties)
 - [getPosition](#getposition)
 - [getProperties](#getproperties)
@@ -64,6 +65,17 @@ Notes:
 - [setProperties](#setproperties)
 - [show](#show)
 - [updatePropertiesById](#updatepropertiesbyid)
+
+### **getCollisionPoint**
+`
+getCollisionPoint(): minecraftserver.Vector3
+`
+
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+  
+Notes:
+- This function can't be called in restricted-execution mode.
+- This function can throw errors.
 
 ### **getDefaultProperties**
 `

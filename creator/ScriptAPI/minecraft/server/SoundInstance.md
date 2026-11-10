@@ -13,6 +13,18 @@ Represents a handle to a sound that has been played. The handle is required to c
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **attachedEntity**
+`read-only attachedEntity?: Entity;`
+
+The attached entity, or undefined if the sound is not attached to an entity.
+
+Type: [*Entity*](Entity.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **durationInfo**
 `read-only durationInfo?: SoundDurationInfo;`
 

@@ -731,7 +731,7 @@ Notes:
 
 ### **playSound**
 `
-playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): SoundInstance
+playSound(soundId: string, location: Entity | Vector3, soundOptions?: WorldSoundOptions): SoundInstance
 `
 
 Plays a sound for all players.
@@ -740,7 +740,7 @@ Plays a sound for all players.
 - **soundId**: *string*
   
   Identifier of the sound.
-- **location**: [*Vector3*](Vector3.md)
+- **location**: [*Entity*](Entity.md) | [*Vector3*](Vector3.md)
   
   Location of the sound.
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`

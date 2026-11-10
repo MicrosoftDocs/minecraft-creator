@@ -34,6 +34,11 @@ Enum representing the cursor control mode
 
 Type: [*CursorControlMode*](CursorControlMode.md)
 
+### **directionAxisLock**
+`directionAxisLock?: DirectionAxisLock;`
+
+Type: [*DirectionAxisLock*](DirectionAxisLock.md)
+
 ### **fillColor**
 `fillColor?: minecraftserver.RGBA;`
 
@@ -48,12 +53,22 @@ This is only used when [controlMode] is set to `Fixed`
 
 Type: *number*
 
+### **offset**
+`offset?: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
 ### **outlineColor**
 `outlineColor?: minecraftserver.RGBA;`
 
 A [Color] Property representing the color of the block cursor object outline
 
 Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
+
+### **precisionMode**
+`precisionMode?: CursorPrecisionMode;`
+
+Type: [*CursorPrecisionMode*](CursorPrecisionMode.md)
 
 ### **projectThroughLiquid**
 `projectThroughLiquid?: boolean;`
