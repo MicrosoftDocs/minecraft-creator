@@ -113,6 +113,10 @@ McSkin3D is software designed entirely with skin creation in mind. It has many f
 
 LookatMySkin is a skin previewer that allows you to edit a skin in your program of choice and instantly see it previewed on a 3D player model. It has a variety of features, such as limb posing, zoom, and adjustable background color. This can also be useful for taking screenshots of skins or quickly checking skins for oddities when posed in different ways.
 
+### [MCToolLab Skin Editor](https://mctoollab.com/skin)
+
+MCToolLab Skin Editor is a free browser-based tool for editing standard 64 × 64 Minecraft skin PNGs. You can paint the 2D texture, combine selected parts from another compatible skin, preview Classic and Slim models in 3D, and export a PNG. The editor works locally in your browser and does not require an account. It does not support HD skins, painting directly on the 3D preview, or uploading to a Minecraft account.
+
 ## What's next?
 
 While there are many more tools that exist and are constantly being created to make Minecraft content creation easier, this is a great place to start. Creators should check back here often for newly added content and take advantage of all the available tools at their disposal.
