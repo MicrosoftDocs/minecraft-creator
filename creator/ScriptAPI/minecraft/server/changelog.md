@@ -10,7 +10,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.13.0-beta.1.26.70-preview.24](#2130-beta12670-preview24)
+- [2.13.0-beta.1.26.70-preview.26](#2130-beta12670-preview26)
 - [2.11.0](#2110)
 - [2.10.0](#2100)
 - [2.9.0](#290)
@@ -44,7 +44,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.13.0-beta.1.26.70-preview.24
+## 2.13.0-beta.1.26.70-preview.26
 #### Changed *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 - Changed function *[`setBlockPriorities`](AimAssistCategorySettings.md#setblockpriorities)*
   - Changed return type from *void* to *void*
