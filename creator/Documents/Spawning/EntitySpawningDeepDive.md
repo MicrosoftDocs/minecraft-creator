@@ -829,4 +829,4 @@ Use the following commands to test:
 
 - [Introduction to Add Entity](../IntroductionToAddEntity.md)
 - [Biome Overview](../Biomes/BiomeOverview.md)
-- [Spawn Rules Reference](../Reference/Content/EntityReference/Examples/EntitySpawnRules.md)
+- [Spawn Rules Reference](../../Reference/Content/SpawnRulesReference/Examples/SpawnRulesList.md)

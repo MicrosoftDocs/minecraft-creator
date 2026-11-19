@@ -108,7 +108,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Entity Behavior List
-            url: Examples/EntityList.md
+            url: Examples/AIGoalList.md
           - text: Entity JSON ID List
             url: Examples/ClientEntityDocumentation/IDLists.md
 

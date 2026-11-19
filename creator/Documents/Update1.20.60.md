@@ -17,7 +17,7 @@ Minecraft Bedrock has been updated to 1.20.60 and there are a number of changes 
 
 ## Entities
 
-- [queue_command](../Reference/Content/EntityReference/Examples/EntityEvents/minecraftEvents_queue_command.md) - An Entity event that allows for triggering of commands.
+- [queue_command](../Reference/Content/EntityReference/Examples/EventActions/queue_command.md) - An Entity event that allows for triggering of commands.
 
 
 ## Molang

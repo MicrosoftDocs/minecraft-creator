@@ -7,7 +7,7 @@
     },
     {
       "source_path": "Reference/Content/EntityReference/Examples/EntityEvents/minecraftEvents_emit_particle.md",
-      "redirect_url": "/minecraft/creator/reference/EntityReference/Examples/EventActions/emit_particle",
+      "redirect_url": "/minecraft/creator/reference/content/EntityReference/Examples/EventActions/emit_particle",
       "redirect_document_id": false
     },
     {
@@ -17,12 +17,12 @@
     },
     {
       "source_path": "Reference/Content/EntityReference/Examples/EntityEvents/minecraftEvents_play_sound.md",
-      "redirect_url": "/minecraft/creator/reference/EntityReference/Examples/EventActions/play_sound",
+      "redirect_url": "/minecraft/creator/reference/content/EntityReference/Examples/EventActions/play_sound",
       "redirect_document_id": false
     },
     {
       "source_path": "Reference/Content/EntityReference/Examples/EntityEvents/minecraftEvents_queue_command.md",
-      "redirect_url": "/minecraft/creator/reference/EntityReference/Examples/EventActions/queue_command",
+      "redirect_url": "/minecraft/creator/reference/content/EntityReference/Examples/EventActions/queue_command",
       "redirect_document_id": false
     },
     {
