@@ -12,6 +12,7 @@ description: Contents of the @minecraft/server.BlockComponentTypeMap type alias.
 ## Declaration
 ```ts
 type BlockComponentTypeMap = {
+  'climbable': BlockClimbablePropertiesComponent;
   'dynamic_properties': BlockDynamicPropertiesComponent;
   'entity_storage': BlockEntityStorageComponent;
   'fluid_container': BlockFluidContainerComponent;
@@ -19,6 +20,7 @@ type BlockComponentTypeMap = {
   'inventory': BlockInventoryComponent;
   'item_frame': BlockItemFrameComponent;
   'map_color': BlockMapColorComponent;
+  'minecraft:climbable': BlockClimbablePropertiesComponent;
   'minecraft:dynamic_properties': BlockDynamicPropertiesComponent;
   'minecraft:entity_storage': BlockEntityStorageComponent;
   'minecraft:fluid_container': BlockFluidContainerComponent;

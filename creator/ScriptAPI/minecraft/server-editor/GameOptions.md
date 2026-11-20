@@ -126,6 +126,11 @@ Type: *boolean*
 
 Type: *boolean*
 
+### **keepAnnotations**
+`keepAnnotations?: boolean;`
+
+Type: *boolean*
+
 ### **keepInventory**
 `keepInventory?: boolean;`
 

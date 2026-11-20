@@ -492,5 +492,9 @@ Represents the unique type of network packet.
 `UpdateSubChunkBlocksPacket = "UpdateSubChunkBlocksPacket"`
 ### **UpdateTradePacket**
 `UpdateTradePacket = "UpdateTradePacket"`
+### **VirtualContainerClosePacket**
+`VirtualContainerClosePacket = "VirtualContainerClosePacket"`
+### **VirtualContainerOpenPacket**
+`VirtualContainerOpenPacket = "VirtualContainerOpenPacket"`
 ### **VoxelShapesPacket**
 `VoxelShapesPacket = "VoxelShapesPacket"`
