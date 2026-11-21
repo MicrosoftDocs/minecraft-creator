@@ -18,6 +18,12 @@ There are a wide variety of tools that have been created for the purpose of incr
 
 Map creation is one of the largest and most time-consuming components of content creation. That being said, there are a significant number of map creation tools available to make this process significantly more efficient.
 
+### [WorldSwitch](https://worldswitchapp.com/en)
+
+WorldSwitch is a browser-based tool for converting Minecraft worlds between Java Edition and Bedrock Edition in both directions. It focuses on preserving supported world and player data, including blocks, entities, inventories, containers, villager trades, and world settings. It analyzes uploaded worlds before conversion and provides documentation on supported features and limitations. No software installation is required. Small worlds can be converted for free, while larger conversions require a one-time payment.
+
+WorldSwitch also publishes a [conversion benchmark](https://worldswitchapp.com/en/benchmark) with detailed results, testing methodology, and publicly available verification tools for examining conversion accuracy across different converters.
+
 ### [Chunker](https://github.com/HiveGamesOSS/Chunker/)
 
 Chunker is a Java-based tool for Minecraft: Bedrock Edition worlds. It's specifically useful for converting worlds between Minecraft: Java Edition and Bedrock Edition, as well as easily configuring world settings. Conversion includes level settings, chunk data (such as blocks and biomes), dimensions, and more. To learn more about using Chunker, you can begin with the [Chunker Overview](ChunkerOverview.md) guide, which goes over the steps needed to do simple conversions and leads to more advanced features of the tool.
